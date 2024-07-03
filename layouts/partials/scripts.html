@@ -1,0 +1,3 @@
+{{with resources.Get "js/main.js" | js.Build (dict "minify" true) | fingerprint}}
+<script src="{{.RelPermalink}}" defer></script>
+{{end}}

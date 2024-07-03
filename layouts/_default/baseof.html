@@ -1,0 +1,13 @@
+<!-- layouts/index.html -->
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+{{partial "head.html" .}}
+
+<body class="min-h-lvh bg-[#0B0B0F]">
+    {{partial "header.html" .}}
+    {{block "main" . }}{{ end }}
+    {{partial "footer.html" .}}
+</body> 
+{{partial "scripts.html" .}}
+</html>

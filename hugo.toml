@@ -1,0 +1,16 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Pactus.org | Pactus'
+
+[params]
+  mainCSS = "css/main.css"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "FAQ"
+    url = "/about/faq/"
+    weight = 2
