@@ -6,8 +6,15 @@
     <description>Recent content in Abouts on Pactus.org | Pactus</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jul 2024 18:33:05 +0330</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2024 20:24:48 +0330</lastBuildDate>
     <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What_is_pactus</title>
+      <link>http://localhost:1313/about/what-is-pactus/</link>
+      <pubDate>Sun, 07 Jul 2024 20:24:48 +0330</pubDate>
+      <guid>http://localhost:1313/about/what-is-pactus/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Roadmap</title>
       <link>http://localhost:1313/about/roadmap/</link>
