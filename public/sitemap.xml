@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/community/</loc>
+    <lastmod>2024-07-07T17:41:22+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/download/</loc>
+    <lastmod>2024-07-07T15:13:14+03:30</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2024-07-06T13:42:36+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2024-07-01T18:33:05+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/roadmap/</loc>
+    <lastmod>2024-07-01T18:33:05+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/faq/</loc>
+    <lastmod>2024-07-01T18:19:11+03:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>

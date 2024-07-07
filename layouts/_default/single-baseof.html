@@ -4,9 +4,10 @@
 
 {{partial "head.html" .}}
 
-<body class="min-h-lvh bg-[#0B0B0F] flex flex-col min-h-screen">
+<body class="bg-[#0B0B0F] flex flex-col min-h-screen">
     {{partial "header.html" .}}
-    <svg height="1018" viewBox="0 0 1732 1018" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute max-w-full max-h-full top-0 m-auto left-0 right-0 min-w-full">
+    <svg height="1018" viewBox="0 0 1732 1018" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="absolute max-w-full max-h-full top-0 m-auto left-0 right-0 min-w-full">
         <g filter="url(#filter0_f_1236_18335)">
             <rect x="279" y="-672" width="1173" height="1190" rx="100" fill="#87B7FF" fill-opacity="0.21" />
         </g>
@@ -20,7 +21,16 @@
         </defs>
     </svg>
 
-    {{block "main" . }}{{ end }}
+    <div class="drawer">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+            {{block "main" . }}{{ end }}
+        </div>
+        <div class="drawer-side z-50">
+            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+            {{partial "drawer.html"}}
+        </div>
+    </div>
     {{partial "single-footer.html" .}}
 </body>
 {{partial "scripts.html" .}}
