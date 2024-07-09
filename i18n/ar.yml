@@ -1,0 +1,474 @@
+dict:
+  pactus: "بكتوس"
+  pactus_blockchain: "بلوكشين بكتوس"
+  about: حول
+  about_pactus: حول بكتوس
+  toc: جدول المحتويات
+  language: اللغة
+  improve_translation: تحسين الترجمة
+  edit_this_page: عدل هذه الصفحة
+  resources: الموارد
+  know_more: اعرف المزيد
+  join_community: انضم إلى المجتمع
+  contributing: المساهمة
+  outdated_translation: الترجمة قديمة. يمكنك قراءتها، لكن قد لا تكون دقيقة.
+  pactus_project: مشروع بكتوس
+  download_pactus: تحميل بكتوس
+  block_explorer: Block explorer
+  source_code: Source code
+  laboratory: Laboratory
+  pips: PIPs
+  whitepaper: Whitepaper
+  get_started: ابدأ
+  become_a_validator: كن مُعالجًا
+  protocol: البروتوكول
+  tutorial: الدليل التعليمي
+  api_reference: مرجع الواجهة البرمجية
+  documentation: وثائق
+
+  home:
+    title: الصفحة الرئيسية
+    motto: Building decentralized future together!
+    run_a_node: <br>
+      تشغيل عقدة
+    run_a_node_desc: >
+      قم بتنزيل أحدث إصدار من بلوكشين بكتوس، وقم بإنشاء محفظتك وابدأ في المزامنة مع الشبكة.
+      تم تصميم بكتوس ليكون خفيف الوزن وسهل الاستخدام، مما يجعل التشغيل بسيطًا.
+    get_some_coins: <br>
+      احصل على بعض العملات
+    get_some_coins_desc: >
+      بمجرد تشغيل عقدتك وبدء تشغيلها، ستحتاج إلى الحصول على بعض العملات لتصبح مُصدِّق.
+      يمكنك الانضمام إلى مجتمعنا واستلام بعض عملات الحصة مجانًا.
+    become_a_validator: <br>
+      كن مُصدِّق
+    become_a_validator_desc: >
+      من خلال تعيين بعض العملات، ستتحول عقدتك إلى مصدق وبالتالي،
+      في كل مرة تقترح فيها كتلة، ستتم مكافأتك بعملة جديدة كمكافأة للكتلة.
+    improve_pactus: <br>
+      جعل بكتوس أفضل
+    improve_pactus_desc: >
+      هناك العديد من الطرق التي يمكنك من خلالها دعم بكتوس ومساعدته في النمو.
+      لنعمل معًا لجعل بكتوس أفضل!
+    partners: Our Partners
+    validators: Our Validators
+
+  community:
+    title: المجتمع
+    join: انضم إلى مجتمع بكتوس
+    welcome: >
+      من خلال الانضمام إلى مجتمع بكتوس، تصبح جزءًا من شبكة عالمية من المبتكرين والمفكرين والفاعلين الذين يتحدون برؤية مشتركة
+      لبناء مستقبل أفضل مع تقنية البلوكشين. سواء كنت مطورًا أو رائد أعمال أو مستثمرًا أو مجرد عاشق للبلوكشين، هناك مكان لك
+      هنا في بكتوس.
+      <br>
+      إذًا، لنتحد ونحدث تغييرًا!
+    discord: بكتوس على ديسكورد
+    telegram: بكتوس على تيليجرام
+    twitter: بكتوس على تويتر
+    instagram: بكتوس على إنستاجرام
+    linkedin: بكتوس على لينكدإن
+    bitcoin_talk: Pactus on Bitcoin Talk
+    community_ran: >
+      To explore the communities managed by members of the community, you can follow the links below.
+    telegram_chat: Pactus Chat
+    nigeria: Pactus Nigeria
+    facebook: Pactus on Facebook
+    nodesync: NodeSync.Top Community
+    wechat: WeChat Community - Please Join Discord and Request Invite from Community
+
+  what_is:
+    title: ما هو بكتوس؟
+    sec_1_title: بكتوس هو بلوكشين يركز على التوزيع
+    sec_1_desc: >
+      يعتمد بكتوس على مبدأ أنه يمكن تحقيق نظام عادل وشفاف فقط من خلال التوزيع. على عكس العديد من منصات البلوكشين الأخرى،
+      يهدف بكتوس إلى القضاء على إمكانية المركزية والتلاعب من خلال إزالة الحاجة إلى التفويض والمُعدِّنين.
+      يتيح ذلك لأي شخص أن يصبح جزءًا من النظام البيئي ويضمن أن تظل المنصة موزعة بالفعل.
+    sec_2_title: بكتوس هو بلوكشين سهل الاستخدام
+    sec_2_desc: >
+      يهدف بكتوس إلى إنشاء بلوكشين سهل الاستخدام يمكن استخدامه بسهولة من قبل أي شخص، وليس فقط خبراء التقنية.
+      يتم تصميم بروتوكولنا ليكون بسيطًا وسهل الصيانة والتطوير.
+      يقدم بكتوس تطبيق واجهة المستخدم الرسومية البسيطة التي يسهل للمستخدمين تشغيل عقدة.
+    sec_3_title: يستخدم بكتوس نموذج رسوم مبني على النسبة المئوية
+    sec_3_desc: >
+      تُحسَب رسوم المعاملات استنادًا إلى نموذج النسبة المئوية مع رسوم دنيا وعليا.
+      توفر هذه المعايير تحكمًا أكبر في هيكل الرسوم وتمنع الدفع الزائد أو الدفع الناقص.
+      يضمن النموذج المبني على النسبة المئوية النزاهة والقدرة على التنبؤ، ويمكن تعديله من خلال الإجماع بين جميع المصادقين.
+    sec_4_title: تخزين متفرد ولامركزي في بكتوس
+    sec_4_desc: >
+      في بكتوس، يمكن للمستخدمين شراء ملف تخزين مخصص يمكن تجديده سنويًا،
+      مما يؤدي إلى تخفيض التكاليف المتعلقة بالتخزين وتنفيذ العقود الذكية.
+      يمكن أن تمهد هذه الميزة الفريدة الطريق لبروتوكولات جديدة في المنصات الموزعة.
+
+  blog:
+    title: مدونة
+    back: « Back to the blog list
+    all_posts: جميع المقالات
+
+  learn:
+    title: تعلم
+    reference: المرجع
+    welcome: >
+      هنا يمكنك العثور على الوثائق التقنية لمشروع بكتوس.
+
+  roadmap:
+    title: خارطة الطريق
+    completed_task: المهمة المكتملة
+    ongoing_task: المهمة الجارية
+    upcoming_task: المهمة القادمة
+
+  download:
+    title: تنزيل
+    welcome: على هذه الصفحة يمكنك العثور على كيفية تحميل والحصول على أحدث إصدار من برنامج بكتوس.
+    compile_from_source_code: تجميع من شفرة المصدر
+    project_pactus_is_distributed: >
+      يتم توزيع مشروع بكتوس كبرنامج مفتوح المصدر، لذا فإن الطريقة المفضلة لتثبيته هي استنساخ شفرة المصدر من
+      مستودع [جيت هاب](https://github.com/pactus-project/pactus) وتجميع شفرة المصدر.
+    instructions_for_compiling: >
+      تتوفر تعليمات تجميع بكتوس على صفحة [التثبيت](https://github.com/pactus-project/pactus/blob/main/docs/install.md).
+    stable_releases: تنزيل الإصدارات المستقرة
+    stable_releases_desc: >
+      يمكنك أيضًا تنزيل أحدث إصدارات بكتوس المستقرة.
+      يتم تحديث هذه الإصدارات تلقائيًا عند إصدار نسخة جديدة في
+      [مستودع جيت هاب](https://github.com/pactus-project/pactus).
+    download_gui: >
+      يمكنك تشغيل بكتوس في وضع واجهة المستخدم الرسومية (GUI) وهو مناسب للمبتدئين والمستخدمين المتقدمين.
+    pactus_gui: واجهة المستخدم الرسومية لـ بكتوس (GUI)
+    pactus_cli: واجهة سطر الأوامر لـ بكتوس (CLI)
+    untrusted_app: >
+      <b>تطبيق غير موثوق</b>
+      <br><br>
+      كن على علم بأن الثنائيات المجمعة مسبقًا لا يتم شحنها مع أي
+      <a href="https://pactus.org/user-guides/pactus-gui/#code-certificate-issue">شهادة توقيع الكود</a>.
+      من المحتمل أن تكون الثنائيات المجمعة مسبقًا غير موثوقة على نظام ويندوز
+      و ماك أو إس.
+    gui_after_download: >
+      بمجرد تنزيل واجهة بكتوس الرسومية (GUI)، يمكنك اتباع هذا البرنامج التعليمي لإعداد عقدتك وتشغيلها:
+    download_cli: >
+      يمكن للمستخدم المتقدم تشغيل بكتوس في وضع واجهة سطر الأوامر (CLI).
+    cli_after_download: >
+      بمجرد تنزيل بكتوس CLI، يمكنك اتباع هذا البرنامج التعليمي لإعداد عقدتك وتشغيلها:
+    docker: حاوية دوكر
+    docker_desc: >
+      يمكن للمستخدم المتقدم الحصول على صورة بكتوس دوكر من [Docker Hub](https://hub.docker.com/r/pactus/pactus).
+    docker_after_download: >
+      يمكنك اتباع هذا البرنامج التعليمي لإعداد عقدتك وتشغيلها باستخدام دوكر:
+    downloader_script: Downloader script
+    downloader_script_explained: >
+      For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like)
+      (e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows),
+      there is a downloader script available.
+      This script can download the archived file, verify it, and extract it for you.
+      To use it, simply run the following command in your terminal:
+
+  faq:
+    title: الأسئلة المتكررة
+    read_more: Read more
+    general: عام
+    validator: المُصدّق
+    economy: Economy
+    consensus: إجماع
+    transaction: معاملة
+    fee: رسوم
+    welcome: >
+      تهدف هذه الصفحة الشائعة الاستخدام (الأسئلة المتكررة) إلى توفير معلومات مفيدة وإرشادات حول الأسئلة
+      الشائعة والمخاوف المتعلقة بـ بكتوس.
+    pactus_meaning: ما معنى "بكتوس"؟
+    pactus_meaning_answer: >
+      [version: 1] كلمة "Pactus" ذات أصل لاتيني
+       وتعني "الاتفاق معًا" أو "عقد" أو "معاملة". في الإنجليزية، يتم استخراج مصطلح "Pact" من الكلمة اللاتينية "Pactus".
+    pactus_vs_bitcoin: ما الفرق بين بكتوس وبيتكوين؟
+    pactus_vs_bitcoin_answer: >
+      [version: 1] بكتوس وبيتكوين هما نوعان مختلفان من شبكات البلوكتشين. بينما يستخدم بيتكوين
+       عملية تسمى "إثبات العمل" لتأمين شبكته، يستخدم بكتوس طريقة مختلفة تسمى "إثبات الحصة". هذا يعني أنه بدلاً من التعدين،
+      يكون المصدقون مسؤولين
+      عن التصويت على
+      الكتل الواردة ويجب أن يمتلكوا مبلغًا معينًا من عملة الشبكة، المعروفة باسم "الحصة"، كوديعة أمان لمنع السلوك الخبيث.
+    pactus_vs_ethereum: ما الفرق بين بكتوس وإيثيريوم؟
+    pactus_vs_ethereum_answer: >
+      [version: 1] بكتوس و إيثيريوم هما شبكتي بلوكتشين تعتمدان على إثبات الحصة، لكنهما
+      يختلفان في نهجهما لتشغيل المصدق. يمكن أن يكون تشغيل المصدق في إيثيريوم تحديًا ويتطلب حصةً بحد أدنى 32 عملة إيثيريوم.
+      بالمقابل، صُمم بكتوس ليكون أكثر قابلية للاستخدام للمستخدمين العاديين. لا يوجد متطلب حصة دنيا، ويمكنك تشغيل عقدة بكتوس
+      على أي نظام تشغيل بمعدات أساسية. يعكس هذا النهج التزامنا بتعزيز التوزيع وجعل تقنية البلوكتشين متاحة لجمهور أوسع.
+    validators: ما هي المُعالِجين؟
+    validators_answer: >
+      [version: 1] يتحمّل المعالجون في بكتوس مسؤولية معالجة المعاملات وإنشاء الكتل وبالتالي، يساعدون في تأمين الشبكة والحفاظ على انحيازها.
+      يستخدمون عملاتهم الخاصة كرهان لضمان أمان الشبكة وتلقي مكافآت عن مساهماتهم.
+    validators_rewarded: كيف يتم مكافأة المعالجين؟
+    validators_rewarded_answer: >
+      [version: 1] بمجرد أن يقترح المعالج كتلة صالحة ويتم قبولها من قِبل الشبكة، يحصل المعالج على عملة واحدة كمكافأة للكتلة.
+      تعتبر المكافأة حافزًا يتم إعطاؤه للمعالجين على مساهماتهم في أمان وسلامة الشبكة، مما يساعد على الحفاظ على سير العمل بسلاسة.
+    flat_reward: ما هو حجم مكافأة الكتلة في بكتوس؟
+    flat_reward_answer: >
+      [version: 1] تكون مكافأة الكتلة في بكتوس ثابتة، وهي عملة واحدة دائمًا لكل كتلة.
+      تساعد هذه الخطة الثابتة للمكافأة على ضمان البساطة والعدالة وتوزيع العملة بشكل أفضل.
+    coins_per_day: How many PAC coins are generated per day?
+    coins_per_day_answer: >
+      [version: 1] Daily, a total amount of 8640 PAC is generated. This figure translates to 241,000 every 28 days and 3,153,600 per year.
+    unlimited_validators: ما هو عدد المعالجين الذي يدعمه بكتوس؟
+    unlimited_validators_answer: >
+      [version: 1] بكتوس عبارة عن بلوكتشين حقيقي للإثبات بالحصة، مما يعني أنه لا يوجد حد لعدد المعالجين في الشبكة.
+      ومع ذلك، فإن لجنة مكونة من 21 معالجًا مسؤولة عن إنشاء الكتل.
+      من المهم الإشارة إلى أن أعضاء اللجنة ليسوا ثابتين ويتغيرون مع مرور الوقت.
+    min_and_max_stake: ما هي الحدود الدنيا والعليا للرهان الممكنة؟
+    min_and_max_stake_answer: >
+      [version: 1] في بكتوس، لا يوجد حد أدنى لتجميد العملات، ولكن الحد الأقصى للعملات التي يمكنك تجميدها هو 1000 عملة.
+      إذا كنت ترغب في تجميد أكثر من 1000 عملة، يمكنك تشغيل محقق جديد.
+      تشغيل العديد من المحققين يحافظ على توزيع الشبكة بشكل أفضل ويساعد على الحفاظ على أمانها واستقرارها.
+    min_hardware_requirements: What are the minimum hardware requirements?
+    min_hardware_requirements_answer: >
+      [version: 1] After thorough testing on multiple machines, we can conclude that the reccomended minimum hardware<br>
+      requirements are as follows:<br><br>
+      VPS:<br>
+      * CPU's: 1/2 physical core / 1vCPU<br>
+      * RAM: 1 GB Ram<br>
+      * Storage (SSD): 20 GB NVMe Drive<br>
+      * Network: stable internet connection with 1 TBps speed<br><br>
+      PC:<br>
+      * CPU's: 2 physical cores / 4vCPU<br>
+      * RAM: 4 GB Ram<br>
+      * Storage (SSD): 64 GB SSD Drive<br>
+      * Network: stable internet connection with over 15 MBps speed<br><br>
+      **Note** These specifications have been tested and provide an availabilty score of over 0.9.
+    total_supply: ما هو إجمالي إمدادات عملة بكتوس؟
+    total_supply_answer: >
+      [version: 1] بكتوس لديها إجمالي إمدادات 21 مليون عملة، وكل عملة مقسمة إلى 1 مليار وحدة.
+      كل 10 ثوانٍ، يتم إنشاء عملة جديدة، مما يؤدي إلى 8،640 عملة جديدة في اليوم وحوالي 3 ملايين في السنة.
+      سيتم إنشاء جميع العملات في غضون 7 سنوات.
+    unique_blockchain: هل بكتوس هي نسخة من أي بلوكشين أخرى؟
+    unique_blockchain_answer: >
+      [version: 1] لا، بكتوس ليست نسخة أو مشتقة من أي بلوكشين آخر.
+      إنها بروتوكول بلوكشين جديد وفريد تم تصميمه من الصفر.
+      آلية التوافق المستخدمة في بكتوس فريدة وتم إنشاؤها خصيصًا لحل مشكلة قابلية توسع محققي الحصة الأدلة بلوكشين.
+    treasury_account: ما هو حساب الخزانة؟
+    treasury_account_answer: >
+      [version: 1] حساب الخزانة هو حساب خاص في بلوكشين بكتوس يحتوي على إجمالي إمدادات العملات والذي يبلغ 21 مليون عملة.
+      يتم إنشاؤه في وقت النشأة وليس له زوج مفاتيح مرتبط به، مما يعني عدم إمكانية الوصول إليه أو التحكم فيه من قبل أي شخص.
+      في كل مرة يتم إنشاء بلوك، يتم نقل عملة واحدة من حساب الخزانة إلى حساب المقترح كمكافأة للبلوك.
+    without_ico: Did Pactus have an ICO?
+    without_ico_answer: >
+      [version: 1] لا، بكتوس ليس لديها ICO (Initial Coin Offering) ولا توجد حسابات محددة مسبقًا أو محظوظة في بكتوس.
+      يبدأ بلوكشين بكتوس من الصفر وتتم طباعة جميع العملات من خلال آلية التوافق.
+      هذا يضمن توزيع العملات بشكل عادل وعدم وجود تمركز للثروة.
+    no_pre_sales: Where can I buy Pactus coins?
+    no_pre_sales_answer: >
+      [version: 1] Pactus does not have any pre-sales coins.
+      The only way to obtain Pactus coins at the moment is by installing the Pactus software and actively participating in block validation.
+      By engaging in the network and contributing to block validation, you will be rewarded with Pactus coins.
+    fee_model: كيف يتم حساب رسوم المعاملات في بكتوس؟
+    fee_model_answer: >
+      [version: 1] تتم حساب رسوم المعاملات في بكتوس باستخدام نموذج رسوم يعتمد على النسبة المئوية.
+      هذا يعني أن الرسوم تشكل نسبة مئوية من المبلغ المحول، مع وجود حد أدنى وحد أقصى للرسوم.
+      معلمات النسبة المئوية والحد الأدنى للرسوم والحد الأقصى للرسوم هي جزء من معلمات بلوكشين ويمكن تغييرها باتفاق بين جميع المحققين.
+    fee_min_max: ما هو الحد الأدنى والأقصى للرسوم؟
+    fee_min_max_answer: >
+      [version: 1] تم تصميم هذه المعلمات لتوفير مزيد من السيطرة على هيكل الرسوم وضمان بقاء الرسوم داخل نطاق معين.
+      إذا كانت الرسوم المحسوبة للمعاملة تقل عن الحد الأدنى للرسوم، يتم استخدام الحد الأدنى للرسوم بدلاً من ذلك.
+      بالمثل، إذا تجاوزت الرسوم المحسوبة الحد الأقصى للرسوم، يتم استخدام الحد الأقصى للرسوم بدلاً من ذلك.
+      يساعد هذا على منع المستخدمين من دفع رسوم زائدة أو غير كافية للمعاملات ويوفر مزيدًا من الثب
+    why_percentage_fee: لماذا تم اختيار نموذج رسوم يعتمد على النسبة المئوية لـ بكتوس؟
+    why_percentage_fee_answer: >
+      [version: 1] تم اختيار نموذج الرسوم المعتمد على النسبة المئوية لـ بكتوس لأنه يوفر هيكلًا للرسوم أكثر إنصافًا وتوقعًا للمستخدمين،
+      حيث تكون الرسوم متناسبة مع المبلغ المحول.
+      كما أنه يسمح بمرونة أكبر في ضبط هيكل الرسوم لمواءمتها بشكل أفضل مع احتياجات البلوكشين ومستخدميه،
+      حيث يمكن تغيير معلمات النسبة المئوية والحد الأدنى للرسوم والحد الأقصى للرسوم من خلال آلية التوافق المتفق عليها بين جميع المحققين.
+    why_develop_pactus: لماذا تم تطوير بكتوس؟
+    why_develop_pactus_answer: >
+      [version: 1] تم تطوير بكتوس بهدف توسيع مقياس بلوكشين دون التأثير على الأمان والتفرد.
+      ولتحقيق ذلك، يستخدم بكتوس آلية توافق فريدة تمكّن من إنشاء بلوك في 10 ثوانٍ فقط.
+      وعلاوة على ذلك، تم تصميم بكتوس لتكون أكثر إمكانية الوصول لجميع المستخدمين، بغض النظر عن خبراتهم التقنية أو مواردهم المالية.
+      <br><br>
+      تعكس التزامنا بالتفرد والعدالة في قرارنا
+       بالبدء في بلوكشين بكتوس من الصفر وضمان طباعة جميع العملات من خلال آلية التوافق، بدلاً من إجراء ICO أو حسابات محظوظة.
+    what_pactus_solved: ما المشكلات التي يحلّها بكتوس ولا يحلّها غيرها من البلوكتشينات؟
+    what_pactus_solved_answer: >
+      [version: 1] تحاول بكتوس حلّ العديد من المشاكل التي تواجهها شبكات البلوكتشين الأخرى،
+      بما في ذلك مشكلات القابلية للتوسع، والوصول، والعدالة في التوزيع، وتكلفة التخزين.
+      <br><br>
+      <b>مشكلات القابلية للتوسع:</b>
+      تتميز بكتوس بآلية اتفاق فريدة من نوعها تم تصميمها خصيصًا للتعامل مع مشكلة القابلية للتوسع،
+      دون التضحية بالأمان واللامركزية.
+      <br><br>
+      <b>الوصول:</b>
+      تم تصميم تشغيل المعالج على بكتوس بحيث يكون أكثر وصولًا للمستخدمين العاديين مقارنة بالبلوكتشينات الأخرى.
+      <br><br>
+      <b>العدالة في التوزيع:</b>
+      تمتلك بكتوس نموذجًا عادلاً وشفافًا لتوزيع العملات، بهدف منع تراكم الثروة.
+      <br><br>
+      <b>تكلفة التخزين:</b>
+      توفر بكتوس حلًا جديدًا لمشكلة التخزين، حيث يمكن للمستخدمين تخصيص ملفات تخزين مخصصة،
+      مما يقلل من تكلفة التخزين ويبسط العقود الذكية.
+    how_pactus_works: كيف تعمل بلوكشين بكتوس؟
+    how_pactus_works_answer: >
+      [version: 1] يعمل بكتوس بواسطة لجنة من المصادقين المسؤولين عن إنشاء كتل جديدة.
+      تتكون اللجنة من 21 مصادقًا، ومع ذلك، تتغير أعضاء اللجنة بشكل عشوائي مع مرور الوقت.
+      كل 10 ثوانٍ، يجمع مصادق في اللجنة يُعرف باسم "المقترح" جميع المعاملات الصالحة، ويضيفها إلى كتلة،
+      ويشاركها مع المصادقين الآخرين في اللجنة.
+      إذا أكد أكثر من 2/3 من أصحاب المصلحة
+      في اللجنة على الكتلة المقترحة بتوقيعهم عليها، يتم تأكيد الكتلة ويتم تنفيذ جميع المعاملات داخل الكتلة.
+      يتكرر هذه العملية كل 10 ثوانٍ.
+    how_enter_committee: كيف يمكن لمصادق الانضمام إلى اللجنة؟
+    how_enter_committee_answer: >
+      [version: 1] للانضمام إلى اللجنة في بكتوس، يشارك المصادقون في عملية قرعة أو تصفية تحدث في كل كتلة.
+      في هذه العملية، يقوم المصادقون بإنشاء رقم عشوائي قابل للإثبات بين الصفر وإجمالي العملات المرهونة،
+      وإذا كان الرقم أقل من مرهوناتهم، يمكنهم إرسال معاملة تسمى معاملة التصفية مع دليل التصفية.
+      بمجرد تضمين معاملة التصفية في كتلة، يحل المصادق محل أقدم عضو في اللجنة.
+    fork_possibility: هل من الممكن أن يكون هناك بلوكين صحيحين في نفس الوقت؟
+    fork_possibility_answer: >
+      [version: 1] لا يمكن أن يكون هناك بلوكين صحيحين في نفس الوقت في سلسلة بكتوس.
+      يمنع خوارزمية الاتفاق في بكتوس إمكانية وجود اثنين من المقترحين في نفس الوقت.
+      هذا يضمن عدم حدوث فورك في الشبكة.
+    multiple_committee_entry: هل يمكن للمحققين العديدة الدخول إلى اللجنة في وقت واحد؟
+    multiple_committee_entry_answer: >
+      [version: 1] عملية الفرز العشوائي في بكتوس هي عشوائية، لذلك فمن الممكن أن يدخل أكثر من محقق إلى اللجنة في وقت واحد،
+      أو لا يدخل أي محقق على الإطلاق. ومع ذلك، لكي تعتبر عملية الفرز صالحة وتتم إضافتها إلى البلوك،
+      يجب أن تستوفي شرطين:
+      لا يمكن تغيير أكثر من 1/3 من حصة اللجنة، و
+      لا يمكن إزالة محقق لم يتاح له فرصة تقديم اقتراح لبلوك بعد.
+    proposer_selection: كيف يتم اختيار مقترحي البلوك في اللجنة؟
+    proposer_selection_answer: >
+      [version: 1] يتم اختيار مقترح البلوك داخل اللجنة بناءً على وقت دخوله إلى اللجنة.
+      وهذا يعني أن عملية الاختيار تتبع ترتيب "الأولوية لأولئك الذين يدخلون أولاً".
+    transfer_transaction: ما هي عملية تحويل الأموال؟
+    transfer_transaction_answer: >
+      [version: 1] عملية تحويل الأموال هي نوع من العمليات التي تسمح للمستخدمين بتحويل عملات بكتوس من حساب واحد إلى آخر.
+    bond_transaction: ما هي عملية الرهن؟
+    bond_transaction_answer: >
+      [version: 1] عملية الرهن هي نوع من العمليات التي تسمح لك بأن تصبح محققاً من خلال رهن بعض العملات.
+      عند إرسال عملية رهن، سيصبح عقدك محققًا.
+      يحدد مقدار الرهن قوتك في الاتفاق.
+    sortition_transaction: ما هي عملية الفرز؟
+    sortition_transaction_answer: >
+      [version: 1] عملية الفرز هي نوع من العمليات التي تسمح للمحققين بالدخول إلى اللجنة.
+    unbond_transaction: ما هي عملية الغاء الرهن؟
+    unbond_transaction_answer: >
+      [version: 1] عملية الغاء الرهن هي نوع من العمليات التي تسمح لك بإلغاء رهنك كمحقق.
+      عند إرسال عملية الغاء الرهن، لن تكون قادراً بعد ذلك على إرسال عمليات الفرز أو الرهن.
+    withdraw_transaction: ما هي عملية السحب؟
+    withdraw_transaction_answer: >
+      [version: 1] عملية السحب هي نوع من العمليات التي تسمح للمحققين بسحب عملاتهم التي تم رهنها من الشبكة.
+    multiple_validators: Can I run multiple validators on one computer?
+    multiple_validators_answer: >
+      [version: 1] The Pactus software allows you to run up to 32 validators on a single node.
+      Running multiple validators may require slightly more memory, but it has no impact on storage,
+      and has a negligible effect on CPU and networking usage.
+      Running multiple validators on a single node enables users to distribute their stake across multiple validators,
+      especially when they want to stake more than the maximum stake per validator.
+      This eliminates the need for additional resources and simplifies node management.
+    staking_limit: Why is there a limit for maximum stake?
+    staking_limit_answer: >
+      [version: 1] The limit for the maximum stake per validator enhances decentralization and
+      prevents validators from gaining too much power, which could potentially lead them to control the committee.
+      The maximum staking limit is part of the consensus parameters and can be changed in the future through consensus among the validators.
+    genesis_allocation: How are Genesis Coins allocated in Pactus?
+    genesis_allocation_answer: >
+      [version: 1] The initial allocation of Genesis Coins in the Pactus blockchain is distributed as follows:
+      <br><br>
+      <table>
+        <caption>Genesis Coin Allocation for Pactus</caption>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Coin Allocation</th>
+                <th>Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Treasury</td>
+                <td>21 Million coins</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>Foundation</td>
+                <td>8.4 Million coins</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>VC Allocation</td>
+                <td>6.3 Million coins</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>Team and Operations</td>
+                <td>4.2 Million coins</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Community</td>
+                <td>2.1 Million coins</td>
+                <td>5%</td>
+            </tr>
+        </tbody>
+      </table>
+    treasury_distribution: How are Treasury coins distributed?
+    treasury_distribution_answer: >
+      [version: 1] Treasury coins are distributed as block rewards to the block proposers.
+      Every 10 seconds, one coin from the Treasury account transfers to the block proposer account.
+      This process is called "coin minting".
+      As a result, the total number of Pactus coins in circulation gradually increases over time as new blocks are added to the blockchain.
+      Every day, 8,640 coins are minted, resulting in approximately 3 million coins being minted annually by the Treasury account.
+    block_confirmation: How much is the block confirmation in the Pactus Blockchain?
+    block_confirmation_answer: >
+      [version: 1] Block confirmation refers to the number of blocks that need to be created
+      before a transaction is considered final and irreversible. In Pactus, block confirmation is immediate,
+      meaning that once a transaction is added to a block, it is considered confirmed and cannot be reversed.
+    support_distribution: How will the Support coins be spent?
+    support_distribution_answer: >
+      The support accounts are designed to provide financial backing for the project.
+      Initially, Pactus Genesis contained only the Treasury accounts without any Backup or Support accounts.
+      The introduction of support coins was a strategic response to the absence of investors,
+      despite the significant progress of the project.
+      <br><br>
+      These coins are allocated in several ways:
+      <ul>
+        <li><b>Community</b>:
+          This portion will mainly support the community.
+          As part of this, the participants on Testnets receive initial staking coins to
+          setup their validator and secure the Mainnet.
+        </li>
+        <li><b>Team and Operations</b>:
+          Another portion supports the project team.
+          Team members receive a monthly distribution of these coins, which is estimated to sustain the team for over six years.
+        </li>
+        <li><b>Venture Capital (VC) Allocation</b>:
+          Another portion is set aside for any potential venture capitalists who
+          might show interest in investing in the project in the future.
+        </li>
+        <li><b>Foundation</b>:
+          The foundation coins are reserved for future use, potentially in supporting strong projects that align with Pactus's objectives.
+        </li>
+      </ul>
+
+      Transparency is a key aspect of this allocation, as all movements of these
+      coins are trackable due to the fully transparent nature of the blockchain.
+
+  guide:
+    title: دلائل المستخدم
+    welcome: هنا، يمكنك العثور على بعض التوجيهات لمساعدتك على استخدام والتفاعل مع بلوكشين بكتوس.
+    back: « Back to the user guides list
+    beginner: مبتدئ
+    advanced: متقدم
+    run_pactus_gui: كيفية تشغيل بكتوس في الوضع الرسومي؟
+    run_pactus_cli: كيفية تشغيل بكتوس في وضع سطر الأوامر؟
+    run_pactus_docker: كيفية تشغيل بكتوس باستخدام دوكر؟
+    send_transactions_gui: كيفية إرسال المعاملات في الوضع الرسومي؟
+    use_wallet_cli: كيفية استخدام المحفظة في وضع سطر الأوامر؟
+    reduce_network: How to reduce the network usage?
+    run_pactus_metrics: How to run Pactus Metrics?
+    grpc-sign-transactions: How to sign transaction using gRPC?
+    grpc-basic-auth: How to secure gRPC using basic authentication?
+    wallet_seed_important: >
+      <b>Wallet seed is important<b>
+      <br><br>
+      Keep your wallet seed phrase private and secure.
+      If someone else gains access to your seed phrase, they can control your wallet and funds.
+    by_running_pactus: >
+      By running a Pactus node, you contribute to the decentralization and security of the Pactus blockchain network.
+      Thank you for your participation!
+    default_ports: Default Ports
+    default_ports_explained: >
+      The default network ports in Pactus are defined as follows. It is recommended not to change these default ports:
+
+        - [P2P](https://libp2p.io/) port is set to 21888. P2P supports both UDP and TCP protocols.
+        - [gRPC](https://grpc.io/) port is set to 50051. The gRPC module is enabled by default for localhost.
+        - [gRPC-gateway](https://grpc-ecosystem.github.io/grpc-gateway/) is set to 8080. gRPC-gateway is disabled by default.
+        - [Nanomsg](https://nanomsg.org/) port is set to 40899. The Nanomsg service is disabled by default.

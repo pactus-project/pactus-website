@@ -1,16 +1,10 @@
-{{define "title"}}{{.Page.Title}}{{end}}
 {{define "main"}}
 <section class="container mx-auto px-4 py-8 pt-[8rem] relative z-20 flex-grow pb-20">
     <div class="grid grid-cols-3">
         <div class="col-span-2">
-            <h1 class="text-2xl text-neutral-50 font-medium text-left">FAQ</h1>
-            <p class="mt-6 text-lg">This FAQ (Frequently Asked Questions) page aims to provide helpful information
-                and
-                guidance on common
-                questions and concerns related to Pactus.
-            </p>
+            <h1 class="text-2xl text-neutral-50 font-medium text-left">{{.Title}}</h1>
+            <p class="mt-6 text-lg">{{.Description}}</p>
         </div>
-
         <div class="col-span-1 text-right" style="text-align: -webkit-right;">
             <svg width="128" height="129" viewBox="0 0 128 129" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1250_14702)">
@@ -48,66 +42,40 @@
 
         </div>
     </div>
-    <div class="mt-10 justify-between flex md:grid md:grid-cols-6 overflow-y-scroll gap-3 mad:gap-6 md:overflow-y-auto">
+    <div
+        class="mt-10 justify-between flex md:grid md:grid-cols-{{len .Site.Data.faq}} overflow-y-scroll gap-3 mad:gap-6 md:overflow-y-auto">
+        {{range $i, $item := .Site.Data.faq}}
+        {{$titleKey := T (printf "dict.faq.%s" $item.title)}}
         <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn" type="radio" name="options"
-                aria-label="General" checked />
+            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
+                type="radio" name="options" aria-label="{{$titleKey }}" {{if eq $i 0 print}}checked{{end}} />
         </div>
-        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-
-            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn " type="radio" name="options" aria-label="Validator" />
-        </div>
-
-        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-
-            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn" type="radio" name="options" aria-label="Consensus" />
-        </div>
-
-        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-
-            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn" type="radio" name="options" aria-label="Economy" />
-        </div>
-
-        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-
-            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn" type="radio" name="options" aria-label="Transaction" />
-        </div>
-
-        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-
-            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn" type="radio" name="options" aria-label="Fee" />
-        </div>
-
+        {{end}}
     </div>
     <div class="mt-10 bg-[#141B25] rounded-xl p-10 md:p-20">
-        <div class="join join-vertical w-full">
-            <div class="collapse collapse-plus join-item border-b-2 border-[#34363f]">
-                <input type="radio" name="my-accordion-3" checked="checked" />
-                <div class="collapse-title text-2xl text-neutral-50 font-bold">Click to open this one and close others
-                </div>
+        {{range $i,$group := .Site.Data.faq}}
+        <div class="join join-vertical w-full" id="{{$group.title}}">
+            {{range $j, $item := $group.items}}
+            {{$titleKey := T (printf "dict.faq.%s" $item.id)}}
+            <div class="collapse collapse-plus join-item border-b-2">
+                <input type="radio" name="my-accordion-3" {{if eq $j 0}}checked="checked" {{end}} />
+                <div class="collapse-title text-2xl text-neutral-50 font-bold">{{$titleKey}}</div>
                 <div class="collapse-content">
-                    <p>The word "Pactus" is of Latin origin and means "to agree together", "contract", or "transact". In
-                        English, the term "Pact" is derived from the Latin word "Pactus".
+                    <p>
+                        {{ if isset $item "img" }}
+                        <img src="{{ .Site.BaseURL }}/images/{{ $item.img }}" />
+                        {{ end }}
+
                     </p>
+                    {{ if isset $item "more" }}
+                    <a href="{{$item.more}}" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-3">{{T
+                        "dict.faq.read_more" }}...</a>
+                    {{ end }}
                 </div>
             </div>
-            <div class="collapse collapse-plus join-item border-b-2 border-[#34363f]">
-                <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title text-2xl font-medium text-neutral-50">Click to open this one and close others
-                </div>
-                <div class="collapse-content">
-                    <p>hello</p>
-                </div>
-            </div>
-            <div class="collapse collapse-plus join-item ">
-                <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title text-2xl font-medium text-neutral-50">Click to open this one and close others
-                </div>
-                <div class="collapse-content">
-                    <p>hello</p>
-                </div>
-            </div>
+            {{end}}
         </div>
+        {{end}}
     </div>
 </section>
 {{end}}
