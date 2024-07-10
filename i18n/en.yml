@@ -204,7 +204,7 @@ dict:
       the validator receives one coin as a block reward.
       The reward is an incentive given to validators for their contribution to the network.
     flat_reward: How much is the block reward in Pactus?
-    flat_reward_answer: >
+    flat_reward_answer: > 
       [version: 1] Block reward in Pactus is fixed, and it is always one coin per block.
       This flat reward scheme helps to ensure simplicity, fairness and better coin distribution.
     coins_per_day: How many PAC coins are generated per day?
@@ -362,9 +362,10 @@ dict:
     genesis_allocation_answer: >
       [version: 1] The initial allocation of Genesis Coins in the Pactus blockchain is distributed as follows:
       <br><br>
-      <table>
+      <div class="overflow-x-auto">
+      <table class="table w-full table-zebra">
         <caption>Genesis Coin Allocation for Pactus</caption>
-        <thead>
+        <thead class="text-left">
             <tr>
                 <th>Category</th>
                 <th>Coin Allocation</th>
@@ -399,6 +400,7 @@ dict:
             </tr>
         </tbody>
       </table>
+      </div>
     treasury_distribution: How will the Treasury coins be distributed?
     treasury_distribution_answer: >
       [version: 1] Treasury coins are distributed as block rewards to the block proposers.
@@ -413,7 +415,7 @@ dict:
       meaning that once a transaction is added to a block, it is considered confirmed and cannot be reversed.
     support_distribution: How will the Support coins be spent?
     support_distribution_answer: >
-      The support accounts are designed to provide financial backing for the project.
+      [version: 1] The support accounts are designed to provide financial backing for the project.
       Initially, Pactus Genesis contained only the Treasury accounts without any Backup or Support accounts.
       The introduction of support coins was a strategic response to the absence of investors,
       despite the significant progress of the project.

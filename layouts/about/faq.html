@@ -48,34 +48,61 @@
         {{$titleKey := T (printf "dict.faq.%s" $item.title)}}
         <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
             <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
-                type="radio" name="options" aria-label="{{$titleKey }}" {{if eq $i 0 print}}checked{{end}} />
+                type="radio" name="groups" aria-label="{{$titleKey}}" {{if eq $i 0}}checked{{end}}
+                aria-value="{{$item.title}}" />
         </div>
         {{end}}
     </div>
-    <div class="mt-10 bg-[#141B25] rounded-xl p-10 md:p-20">
+    <div class="mt-10 bg-[#141B25] rounded-xl p-10 md:p-20" id="grouds-bundler">
         {{range $i,$group := .Site.Data.faq}}
-        <div class="join join-vertical w-full" id="{{$group.title}}">
+        <div class="join join-vertical w-full" id="{{$group.title}}" id="{{$group.title}}">
             {{range $j, $item := $group.items}}
             {{$titleKey := T (printf "dict.faq.%s" $item.id)}}
-            <div class="collapse collapse-plus join-item border-b-2">
-                <input type="radio" name="my-accordion-3" {{if eq $j 0}}checked="checked" {{end}} />
-                <div class="collapse-title text-2xl text-neutral-50 font-bold">{{$titleKey}}</div>
+            <div class="collapse collapse-plus join-item">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">{{$titleKey}}</div>
                 <div class="collapse-content">
-                    <p>
-                        {{ if isset $item "img" }}
-                        <img src="{{ .Site.BaseURL }}/images/{{ $item.img }}" />
-                        {{ end }}
+                    <p class="md:text-lg">
+                        {{ $a_key := printf "%s_answer" $item.id }}
+                        {{ $en := T (printf "dict.faq.%s" $a_key) "en" }}
+                        {{ $tr := T (printf "dict.faq.%s" $a_key) .Lang }}
 
+                    <p>{{  index (split $tr "]") 1 | safeHTML}}</p> 
                     </p>
+                    {{ with .Params.img }}
+                    <img src="{{ .Site.BaseURL }}/assets/images/{{ . }}" alt="{{ T (printf " dict.faq.%s" $item.id)
+                        }}" />
+                    {{ end }}
                     {{ if isset $item "more" }}
-                    <a href="{{$item.more}}" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-3">{{T
+                    <a href="{{$item.more}}" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">{{T
                         "dict.faq.read_more" }}...</a>
                     {{ end }}
                 </div>
+            </div>
+            <div class="justify-center w-full text-center" style="text-align: -webkit-center;">
+                <div class="divider w-9/12"></div>
             </div>
             {{end}}
         </div>
         {{end}}
     </div>
 </section>
+{{end}}
+{{define "page_script"}}
+<script>
+    $(document).ready(function () {
+        $("#grouds-bundler").children().each(i => {
+            if (i !== 0) {
+                $(`#${$("#grouds-bundler").children().eq(i).attr("id")}`).hide();
+            }
+        })
+        $("input[type=radio][name=groups]").change(() => {
+            const value = $("input[type=radio][name=groups]:checked").attr("aria-value");
+            if ($(this).attr("aria-value") !== value) {
+                $("#grouds-bundler div.join").hide();
+                $(`#${value}`).show();
+            }
+        })
+    })
+</script>
 {{end}}
