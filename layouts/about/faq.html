@@ -46,7 +46,7 @@
         class="mt-10 justify-between flex md:grid md:grid-cols-{{len .Site.Data.faq}} overflow-y-scroll gap-3 mad:gap-6 md:overflow-y-auto">
         {{range $i, $item := .Site.Data.faq}}
         {{$titleKey := T (printf "dict.faq.%s" $item.title)}}
-        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
             <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
                 type="radio" name="groups" aria-label="{{$titleKey}}" {{if eq $i 0}}checked{{end}}
                 aria-value="{{$item.title}}" />
@@ -59,7 +59,7 @@
             {{range $j, $item := $group.items}}
             {{$titleKey := T (printf "dict.faq.%s" $item.id)}}
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="{{$group.title}}" {{if eq $j 0}}checked{{end}}/>
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">{{$titleKey}}</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">

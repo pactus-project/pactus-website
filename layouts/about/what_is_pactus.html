@@ -1,13 +1,15 @@
 {{define "title"}}{{.Page.Title}}{{end}}
 {{define "main"}}
 <section class="container mx-auto px-4 py-8 pt-[8rem] relative z-20 flex-grow pb-20">
-    <div class="w-full h-full p-10 md:p-20 justify-center text-center border border-[#C3C3C3] rounded-xl">
-        <h1
+    <div class="w-full h-full p-10 md:p-20 justify-center text-center border border-[#C3C3C3] rounded-xl grid-cols-4">
+        <div></div>
+        <div class="col-span-2">
+            <h1
             class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999]">
             Need more information?</h1>
-        <p class="mt-5 text text-2xl font-light">We will contact you to get to know us more.</p>
+        <p class="mt-5 text text-2xl md:text-3xl font-light text-[#6F6C90]">We will contact you to get to know us more.</p>
         <div class="flex gap-x-3 place-content-center place-items-center mt-14">
-            <label class="input flex items-center shadow-top-left-to-bottom-right gap-2 glass bg-transparent">
+            <label class="input flex items-center shadow-top-left-to-bottom-right gap-2 glass bg-transparent md:w-[458px] md:h-[58px]">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                     class="h-4 w-4 opacity-70">
                     <path
@@ -18,7 +20,7 @@
                 <input type="text" class="grow" placeholder="Enter your email address" />
             </label>
             <button
-                class="btn rounded-xl !md:w-[138px] text-neutral-50 text-sm bg-[#217AFF] border-none hover:bg-[#217AFF] hover:opacity-80"
+                class="btn rounded-xl md:btn-lg md:h-full text-neutral-50 text-sm bg-[#217AFF] border-none hover:bg-[#217AFF] hover:opacity-80"
                 href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf">Subscribe</button>
         </div>
         <div class="flex gap-x-3 place-content-center place-items-center mt-14">
@@ -33,6 +35,8 @@
             <div class="mr-2 text-neutral-50 inline">It's <a class="text-[#217AFF] mr-1 ml-1">100% free </a> and we will
                 never send more than one email per month</div>
         </div>
+        </div>
+        <div></div>
     </div>
     <div class="w-full h-full p-10 border border-[#C3C3C3] rounded-xl mt-10">
         <h1 class="text-neutral-50 text-bold flex">
@@ -44,37 +48,33 @@
             <span class="ml-3 mt-2 text-xl font-bold">What is Pactus?</span>
         </h1>
         <div class="divider"></div>
-        <div class="mt-10 bg-[#141B25] rounded-xl p-10 md:p-20">
-            <div class="join join-vertical w-full">
-                <div class="collapse collapse-plus join-item border-b-2 border-[#34363f]">
-                    <input type="radio" name="my-accordion-3" checked="checked" />
-                    <div class="collapse-title text-2xl text-neutral-50 font-bold">Click to open this one and close
-                        others
-                    </div>
-                    <div class="collapse-content">
-                        <p>The word "Pactus" is of Latin origin and means "to agree together", "contract", or
-                            "transact". In
-                            English, the term "Pact" is derived from the Latin word "Pactus".
-                        </p>
-                    </div>
+        <div>
+            <div class="collapse collapse-arrow bg-[#141B25] p-5 what-is-according">
+                <input type="radio" name="my-accordion-2" checked="checked"/>
+                <div class="collapse-title text-xl font-medium text-neutral-50">{{T "dict.what_is.sec_1_title"}}</div>
+                <div class="collapse-content">
+                    <p>{{T "dict.what_is.sec_1_desc"}}</p>
                 </div>
-                <div class="collapse collapse-plus join-item border-b-2 border-[#34363f]">
-                    <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title text-2xl font-medium text-neutral-50">Click to open this one and close
-                        others
-                    </div>
-                    <div class="collapse-content">
-                        <p>hello</p>
-                    </div>
+            </div>
+            <div class="collapse collapse-arrow bg-[#141B25] mt-5 p-5 what-is-according">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium text-neutral-50">{{T "dict.what_is.sec_2_title"}}</div>
+                <div class="collapse-content">
+                    <p>{{T "dict.what_is.sec_2_desc"}}</p>
                 </div>
-                <div class="collapse collapse-plus join-item ">
-                    <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title text-2xl font-medium text-neutral-50">Click to open this one and close
-                        others
-                    </div>
-                    <div class="collapse-content">
-                        <p>hello</p>
-                    </div>
+            </div>
+            <div class="collapse collapse-arrow bg-[#141B25] mt-5 p-5 what-is-according">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium text-neutral-50">{{T "dict.what_is.sec_3_title"}}</div>
+                <div class="collapse-content">
+                    <p>{{T "dict.what_is.sec_3_desc"}}</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-[#141B25] mt-5 p-5 what-is-according">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium text-neutral-50">{{T "dict.what_is.sec_3_title"}}</div>
+                <div class="collapse-content">
+                    <p>{{T "dict.what_is.sec_3_desc"}}</p>
                 </div>
             </div>
         </div>

@@ -76,7 +76,7 @@
             <li class="icon-target"><a href="http://localhost:1313//en/about/what-is-pactus"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../../../icons/system-regular-76-newspaper.json" colors="primary:#fff,secondary:#fff">
             </lord-icon>What is Pactus?</a></li>
-            <li class="icon-target"><a><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
+            <li class="icon-target"><a href="http://localhost:1313//en/about/roadmap"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../../../icons/system-regular-24-view-1.json" colors="primary:#fff,secondary:#fff">
             </lord-icon>Roadmap</a></li>
             <li class="icon-target"><a href="http://localhost:1313//en/about/faq"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
@@ -146,6 +146,20 @@
     <div class="drawer flex-grow">
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content">
+            <svg width="696" height="2190" class="absolute max-h-full" viewBox="0 0 696 2190" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.28" filter="url(#filter0_f_1239_16982)">
+                    <rect x="-977" y="500" width="1173" height="1190" rx="100" fill="#87B7FF" fill-opacity="0.21" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_1239_16982" x="-1477" y="0" width="2173" height="2190"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_1239_16982" />
+                    </filter>
+                </defs>
+            </svg>
+
             
 <section class="container mx-auto px-4 py-8 pt-[8rem] relative z-20 flex-grow pb-20">
     <div class="grid grid-cols-3">
@@ -194,35 +208,35 @@
         class="mt-10 justify-between flex md:grid md:grid-cols-5 overflow-y-scroll gap-3 mad:gap-6 md:overflow-y-auto">
         
         
-        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
             <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
                 type="radio" name="groups" aria-label="General" checked
                 aria-value="general" />
         </div>
         
         
-        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
             <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
                 type="radio" name="groups" aria-label="Validator" 
                 aria-value="validator" />
         </div>
         
         
-        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
             <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
                 type="radio" name="groups" aria-label="Consensus" 
                 aria-value="consensus" />
         </div>
         
         
-        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
             <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
                 type="radio" name="groups" aria-label="Economy" 
                 aria-value="economy" />
         </div>
         
         
-        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+        <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
             <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
                 type="radio" name="groups" aria-label="Transaction" 
                 aria-value="transaction" />
@@ -235,7 +249,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="general" checked/>
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What does &#34;Pactus&#34; mean?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -256,7 +270,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="general" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Is Pactus a copy of any other blockchain?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -277,7 +291,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="general" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Did Pactus have an ICO?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -298,7 +312,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="general" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Where can I buy Pactus coins?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -319,7 +333,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="general" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Why was  Pactus developed?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -340,7 +354,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="general" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What problems does Pactus solve that other blockchains don&#39;t?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -361,7 +375,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="general" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How is Pactus different from Bitcoin?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -382,7 +396,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="general" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How is Pactus different from Ethereum?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -407,7 +421,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="validator" checked/>
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What are validators?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -430,7 +444,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="validator" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How many validators does Pactus have?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -453,7 +467,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="validator" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What are the minimum and maximum amounts I can stake?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -474,7 +488,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="validator" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What are the minimum hardware requirements?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -497,7 +511,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="validator" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Why is there a limit for maximum stake?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -518,7 +532,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="validator" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Can I run multiple validators on one computer?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -541,7 +555,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="validator" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How do validators get rewarded?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -564,7 +578,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="validator" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How much is the block reward in Pactus?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -587,7 +601,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="validator" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How many PAC coins are generated per day?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -612,7 +626,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="consensus" checked/>
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How does Pactus blockchain work?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -635,7 +649,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="consensus" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How can a validator enter to the committee?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -658,7 +672,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="consensus" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How are block proposers selected in the committee?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -681,7 +695,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="consensus" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Can multiple validators enter the committee at once?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -702,7 +716,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="consensus" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Is it possible to have two valid blocks at the same time?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -725,7 +739,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="consensus" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How much is the block confirmation in the Pactus Blockchain?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -752,7 +766,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="economy" checked/>
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is the total supply of Pactus coins?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -773,7 +787,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="economy" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How are Genesis Coins allocated in Pactus?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -830,7 +844,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="economy" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is the Treasury account?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -853,7 +867,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="economy" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How will the Treasury coins be distributed?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -876,7 +890,7 @@
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="economy" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How will the Support coins be spent?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -919,7 +933,7 @@ Transparency is a key aspect of this allocation, as all movements of these coins
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="transaction" checked/>
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is a Transfer transaction?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -942,7 +956,7 @@ Transparency is a key aspect of this allocation, as all movements of these coins
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="transaction" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is a Bond transaction?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -965,7 +979,7 @@ Transparency is a key aspect of this allocation, as all movements of these coins
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="transaction" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is a Sortition transaction?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -988,7 +1002,7 @@ Transparency is a key aspect of this allocation, as all movements of these coins
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="transaction" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is an Unbond transaction?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -1011,7 +1025,7 @@ Transparency is a key aspect of this allocation, as all movements of these coins
             
             
             <div class="collapse collapse-plus join-item">
-                <input type="radio" name="my-accordion-3" />
+                <input type="radio" name="transaction" />
                 <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is a Withdraw transaction?</div>
                 <div class="collapse-content">
                     <p class="md:text-lg">
@@ -1048,7 +1062,7 @@ Transparency is a key aspect of this allocation, as all movements of these coins
             <li class="icon-target"><a href="//about/what-is-pactus"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../../../icons/system-regular-76-newspaper.json" colors="primary:#fff,secondary:#fff">
             </lord-icon>What is Pactus?</a></li>
-            <li class="icon-target"><a><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
+            <li class="icon-target"><a href="//about/roadmap"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../../../icons/system-regular-24-view-1.json" colors="primary:#fff,secondary:#fff">
             </lord-icon>Roadmap</a></li>
             <li class="icon-target"><a href="//about/faq"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"

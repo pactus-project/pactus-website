@@ -76,7 +76,7 @@
             <li class="icon-target"><a href="http://localhost:1313//en/about/what-is-pactus"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../../../icons/system-regular-76-newspaper.json" colors="primary:#fff,secondary:#fff">
             </lord-icon>What is Pactus?</a></li>
-            <li class="icon-target"><a><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
+            <li class="icon-target"><a href="http://localhost:1313//en/about/roadmap"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../../../icons/system-regular-24-view-1.json" colors="primary:#fff,secondary:#fff">
             </lord-icon>Roadmap</a></li>
             <li class="icon-target"><a href="http://localhost:1313//en/about/faq"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
@@ -146,15 +146,31 @@
     <div class="drawer flex-grow">
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content">
+            <svg width="696" height="2190" class="absolute max-h-full" viewBox="0 0 696 2190" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.28" filter="url(#filter0_f_1239_16982)">
+                    <rect x="-977" y="500" width="1173" height="1190" rx="100" fill="#87B7FF" fill-opacity="0.21" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_1239_16982" x="-1477" y="0" width="2173" height="2190"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_1239_16982" />
+                    </filter>
+                </defs>
+            </svg>
+
             
 <section class="container mx-auto px-4 py-8 pt-[8rem] relative z-20 flex-grow pb-20">
-    <div class="w-full h-full p-10 md:p-20 justify-center text-center border border-[#C3C3C3] rounded-xl">
-        <h1
+    <div class="w-full h-full p-10 md:p-20 justify-center text-center border border-[#C3C3C3] rounded-xl grid-cols-4">
+        <div></div>
+        <div class="col-span-2">
+            <h1
             class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999]">
             Need more information?</h1>
-        <p class="mt-5 text text-2xl font-light">We will contact you to get to know us more.</p>
+        <p class="mt-5 text text-2xl md:text-3xl font-light text-[#6F6C90]">We will contact you to get to know us more.</p>
         <div class="flex gap-x-3 place-content-center place-items-center mt-14">
-            <label class="input flex items-center shadow-top-left-to-bottom-right gap-2 glass bg-transparent">
+            <label class="input flex items-center shadow-top-left-to-bottom-right gap-2 glass bg-transparent md:w-[458px] md:h-[58px]">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                     class="h-4 w-4 opacity-70">
                     <path
@@ -165,7 +181,7 @@
                 <input type="text" class="grow" placeholder="Enter your email address" />
             </label>
             <button
-                class="btn rounded-xl !md:w-[138px] text-neutral-50 text-sm bg-[#217AFF] border-none hover:bg-[#217AFF] hover:opacity-80"
+                class="btn rounded-xl md:btn-lg md:h-full text-neutral-50 text-sm bg-[#217AFF] border-none hover:bg-[#217AFF] hover:opacity-80"
                 href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf">Subscribe</button>
         </div>
         <div class="flex gap-x-3 place-content-center place-items-center mt-14">
@@ -180,6 +196,8 @@
             <div class="mr-2 text-neutral-50 inline">It's <a class="text-[#217AFF] mr-1 ml-1">100% free </a> and we will
                 never send more than one email per month</div>
         </div>
+        </div>
+        <div></div>
     </div>
     <div class="w-full h-full p-10 border border-[#C3C3C3] rounded-xl mt-10">
         <h1 class="text-neutral-50 text-bold flex">
@@ -191,37 +209,37 @@
             <span class="ml-3 mt-2 text-xl font-bold">What is Pactus?</span>
         </h1>
         <div class="divider"></div>
-        <div class="mt-10 bg-[#141B25] rounded-xl p-10 md:p-20">
-            <div class="join join-vertical w-full">
-                <div class="collapse collapse-plus join-item border-b-2 border-[#34363f]">
-                    <input type="radio" name="my-accordion-3" checked="checked" />
-                    <div class="collapse-title text-2xl text-neutral-50 font-bold">Click to open this one and close
-                        others
-                    </div>
-                    <div class="collapse-content">
-                        <p>The word "Pactus" is of Latin origin and means "to agree together", "contract", or
-                            "transact". In
-                            English, the term "Pact" is derived from the Latin word "Pactus".
-                        </p>
-                    </div>
+        <div>
+            <div class="collapse collapse-arrow bg-[#141B25] p-5 what-is-according">
+                <input type="radio" name="my-accordion-2" checked="checked"/>
+                <div class="collapse-title text-xl font-medium text-neutral-50">Pactus is a blockchain focused on decentralization</div>
+                <div class="collapse-content">
+                    <p>Pactus is built on the principle that a fair and transparent system can only be achieved through decentralization. Unlike many other blockchain platforms, Pactus aims to eliminate the potential for centralization and manipulation by removing the need for delegation and miners. This allows anyone to become a part of the ecosystem and ensures that the platform remains truly decentralized.
+</p>
                 </div>
-                <div class="collapse collapse-plus join-item border-b-2 border-[#34363f]">
-                    <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title text-2xl font-medium text-neutral-50">Click to open this one and close
-                        others
-                    </div>
-                    <div class="collapse-content">
-                        <p>hello</p>
-                    </div>
+            </div>
+            <div class="collapse collapse-arrow bg-[#141B25] mt-5 p-5 what-is-according">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium text-neutral-50">Pactus is a user-friendly blockchain</div>
+                <div class="collapse-content">
+                    <p>Pactus aims to create a user-friendly blockchain that can be easily used by anyone, not just tech experts. Our protocol is designed to be simple, easy to maintain, and develop. Pactus offers a simple GUI application that makes it easy for users to run a node.
+</p>
                 </div>
-                <div class="collapse collapse-plus join-item ">
-                    <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title text-2xl font-medium text-neutral-50">Click to open this one and close
-                        others
-                    </div>
-                    <div class="collapse-content">
-                        <p>hello</p>
-                    </div>
+            </div>
+            <div class="collapse collapse-arrow bg-[#141B25] mt-5 p-5 what-is-according">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium text-neutral-50">Pactus uses a percentage-based fee model</div>
+                <div class="collapse-content">
+                    <p>Transaction fees are calculated based on a percentage model with a minimum and maximum fee. These parameters provide greater control over the fee structure and prevent overpaying or underpaying. The percentage-based model ensures fairness and predictability, and can be adjusted through consensus among all validators.
+</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-[#141B25] mt-5 p-5 what-is-according">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium text-neutral-50">Pactus uses a percentage-based fee model</div>
+                <div class="collapse-content">
+                    <p>Transaction fees are calculated based on a percentage model with a minimum and maximum fee. These parameters provide greater control over the fee structure and prevent overpaying or underpaying. The percentage-based model ensures fairness and predictability, and can be adjusted through consensus among all validators.
+</p>
                 </div>
             </div>
         </div>
@@ -240,7 +258,7 @@
             <li class="icon-target"><a href="//about/what-is-pactus"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../../../icons/system-regular-76-newspaper.json" colors="primary:#fff,secondary:#fff">
             </lord-icon>What is Pactus?</a></li>
-            <li class="icon-target"><a><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
+            <li class="icon-target"><a href="//about/roadmap"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../../../icons/system-regular-24-view-1.json" colors="primary:#fff,secondary:#fff">
             </lord-icon>Roadmap</a></li>
             <li class="icon-target"><a href="//about/faq"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"

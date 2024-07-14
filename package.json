@@ -6,7 +6,8 @@
   "scripts": {
     "build:css": "postcss assets/css/main.css -o static/css/main.css",
     "watch:css": "postcss assets/css/main.css -o static/css/main.css --watch",
-    "start": "concurrently \"hugo server -D --noHTTPCache\" \"npm run watch:css\""
+    "start": "concurrently \"hugo server -D --noHTTPCache\" \"npm run watch:css\"",
+    "clean:destination": "hugo --cleanDestinationDir" 
   },
   "keywords": [],
   "author": "",

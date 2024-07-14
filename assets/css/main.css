@@ -7,4 +7,10 @@
     background-color: #217AFF !important;
     color: white;
   }
+  .what-is-according:has(input:checked) {
+    border: 2px solid #fff;
+  }
+  .faq-btn-parent:has(input:checked) {
+    background-image: none !important;
+  }
 }
