@@ -24,7 +24,7 @@
     <div class="drawer flex-grow">
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content">
-            <svg width="696" height="2190" class="absolute max-h-full" viewBox="0 0 696 2190" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="absolute max-h-full" viewBox="0 0 696 2190" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.28" filter="url(#filter0_f_1239_16982)">
                     <rect x="-977" y="500" width="1173" height="1190" rx="100" fill="#87B7FF" fill-opacity="0.21" />
                 </g>
@@ -42,7 +42,7 @@
         </div>
         <div class="drawer-side z-50">
             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-            {{partial "drawer.html"}}
+            {{partial "drawer.html" .}}
         </div>
     </div>
     {{partial "single-footer.html" .}}

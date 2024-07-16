@@ -1,12 +1,10 @@
 {{define "title"}}{{.Page.Title}}{{end}}
 {{define "main"}}
-<section class="container mx-auto px-4 py-8 pt-[8rem] relative z-20 flex-grow pb-20">
+<section class="container mx-auto px-4 py-10 pt-[10rem] md:pt-[12rem] relative z-20 flex-grow pb-20">
     <div class="grid grid-cols-3">
         <div class="col-span-2">
-            <h1 class="text-2xl text-neutral-50 font-medium text-left">Download Pactus</h1>
-            <p class="mt-10 text-lg">On this page you can find how to download and get the latest version of the Pactus
-                software.
-            </p>
+            <h1 class="text-2xl text-neutral-50 font-medium text-left">{{T "dict.download_pactus"}}</h1>
+            <p class="mt-10 text-lg">{{T "dict.download.welcome"}}</p>
         </div>
 
         <div class="col-span-1 text-right" style="text-align: -webkit-right;">
@@ -30,33 +28,27 @@
         </div>
     </div>
     <div class="mt-20">
-        <h1 class="text-2xl text-neutral-50 font-medium text-left">🏗️ Compile from Source Code</h1>
-        <p class="mt-10 text-lg">Project Pactus is distributed as open source software, so the preferred way for
-            installing it is to clone the source code from the GitHub repository and compile the source code.
-        </p>
-        <p class="text-lg">Instructions for compiling Pactus is provided on the install page.
-        </p>
+        <h1 class="text-2xl text-neutral-50 font-medium text-left">🏗️ {{T "dict.download.compile_from_source_code"}}</h1>
+        <p class="mt-10 text-lg">{{T "dict.download.project_pactus_is_distributed"}}</p>
+        <p class="mt-10 text-lg">{{T "dict.dict.download.instructions_for_compiling"}}</p>
     </div>
     <div class="mt-20">
-        <h1 class="text-2xl text-neutral-50 font-medium text-left">⬇️ Download Stable Releases</h1>
-        <p class="mt-10 text-lg">You can also download the latest stable releases of Pactus. These releases are updated
-            automatically when a new version is released in GitHub repository.
+        <h1 class="text-2xl text-neutral-50 font-medium text-left">⬇️ {{T "dict.download.stable_releases"}}</h1>
+        <p class="mt-10 text-lg">{{T "dict.download.stable_releases_desc"}}
         </p>
     </div>
     <div class="mt-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <div class="p-5 border border-neutral-400 rounded-xl hover:bg-[#2b2b4b] cursor-pointer">
-                <h1 class="font-bold text-xl text-neutral-50">Pactus Graphical User Interface (GUI)</h1>
-                <p class="mt-5 text-neutral-50">You can run Pactus in a graphical user interface (GUI) mode and it is
-                    suitable for both
-                    beginners and advanced users.</p>
+            <div class="p-5 border border-neutral-400 rounded-xl bg-[#2b2b4b] hover:bg-[#2b2b4b] cursor-pointer" id="gui-btn">
+                <h1 class="font-bold text-xl text-neutral-50">{{T "dict.download.pactus_gui"}}</h1>
+                <p class="mt-5 text-neutral-50">{{T "dict.download.download_gui"}}</p>
                 <div class="w-full text-center" style="text-align: -webkit-center;">
                     <img src="/images/pactus-gui.png" class="mt-5" alt="">
                 </div>
             </div>
-            <div class="p-5 border border-neutral-400 rounded-xl hover:bg-[#2b2b4b] cursor-pointer">
-                <h1 class="font-bold text-xl text-neutral-50">Pactus Command Line Interface (CLI)</h1>
-                <p class="mt-5 text-neutral-50">Advanced users can run Pactus in command line interface (CLI) mode..</p>
+            <div class="p-5 border border-neutral-400 rounded-xl hover:bg-[#000] cursor-pointer" id="cli-btn">
+                <h1 class="font-bold text-xl text-neutral-50">{{T "dict.download.pactus_cli"}}</h1>
+                <p class="mt-5 text-neutral-50">{{T "dict.download.download_cli"}}</p>
                 <div class="w-full text-center" style="text-align: -webkit-center;">
                     <img src="/images/pactus-cli.png" class="mt-5" alt="">
                 </div>
@@ -67,8 +59,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14">
             <div>
                 <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-                    <button
-                        class="btn md:btn-lg md:text-lg w-full h-full rounded-xl no-animation bg-[#141B25] text-neutral-50">Windows</button>
+                    <div class="md:text-lg w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center h-[64px]">Windows</div>
                 </div>
                 <div class="flex mt-5 items-center">
                     <span class="text-neutral-50 text-bold">.zip</span>
@@ -124,18 +115,24 @@
         </div>
     </div>
     <div class="mt-20">
-        <h1 class="text-2xl text-neutral-50 font-medium text-left">Downloader script</h1>
-        <p class="mt-10 text-lg">For Unix-like systems (e.g., Linux, macOS, or MSYS2 on Windows), there is a downloader script available. This script can download the archived file, verify it, and extract it for you. To use it, simply run the following command in your terminal:        </p>
+        <h1 class="text-2xl text-neutral-50 font-medium text-left" id="downloader_script">{{T "dict.download.downloader_script"}}</h1>
+        <p class="mt-10 text-lg">{{T "dict.download.downloader_script_explained"}}</p>
         <div class="mockup-code mt-5">
             <pre
-              data-prefix="~"><code>curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v1.1.4/pactus_do</code></pre>
-          </div>
+                data-prefix="~"><code>curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v1.1.4/pactus_do</code></pre>
+        </div>
     </div>
     <div class="mt-20">
-        <h1 class="text-2xl text-neutral-50 font-medium text-left">🐳 Docker Container</h1>
-        <p class="mt-10 text-lg">Advanced users can get the Pactus docker image from Docker Hub.
-        </p>
-        <p class="text-lg">You may follow this tutorial to set up and run your node using Docker: How to run Pactus using Docker?</p>
+        <h1 class="text-2xl text-neutral-50 font-medium text-left">🐳 {{T "dict.download.docker"}}</h1>
+        <p class="mt-10 text-lg">{{T "dict.download.docker_desc"}}</p>
+        <p class="text-lg">{{T "dict.download.docker_after_download" }} [{{ T "dict.guide.run_pactus_docker" }}](https://docs.pactus.org/get-started/pactus-docker)</p>
     </div>
 </section>
+{{end}}
+{{define "page_script"}}
+<script>
+    $(document).ready(function () {
+        
+    })
+</script>
 {{end}}

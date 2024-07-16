@@ -100,7 +100,7 @@
             const value = $("input[type=radio][name=groups]:checked").attr("aria-value");
             if ($(this).attr("aria-value") !== value) {
                 $("#grouds-bundler div.join").hide();
-                $(`#${value}`).show();
+                $(`#${value}`).fadeIn();
             }
         })
     })

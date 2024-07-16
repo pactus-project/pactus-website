@@ -1,0 +1,148 @@
+gui:
+  os:
+    - windows:
+      title: Windows 
+      icon: "svg icon"
+      kind:
+        - zip:
+          format: .zip
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz
+        - exe:
+          format: .exe
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+    - macos:
+      title: MacOS 
+      icon: "svg icon"
+      kind:
+        - zip:
+          format: .zip
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz
+        - exe:
+          format: .exe
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+    - linux:
+      title: Linux 
+      icon: "svg icon"
+      kind:
+        - zip:
+          format: .zip
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz
+        - exe:
+          format: .exe
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+    - android:
+      title: Android 
+      icon: "svg icon"
+      kind:
+        - zip:
+          format: .zip
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz
+        - exe:
+          format: .exe
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+cli:
+  os:
+    - windows:
+      title: Windows 
+      icon: "svg icon"
+      kind:
+        - zip:
+          format: .zip
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz
+        - exe:
+          format: .exe
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+    - macos:
+      title: MacOS 
+      icon: "svg icon"
+      kind:
+        - zip:
+          format: .zip
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz
+        - exe:
+          format: .exe
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+    - linux:
+      title: linux 
+      icon: "svg icon"
+      kind:
+        - zip:
+          format: .zip
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz
+        - exe:
+          format: .exe
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+    - android:
+      title: android 
+      icon: "svg icon"
+      kind:
+        - zip:
+          format: .zip
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz
+        - exe:
+          format: .exe
+          arch: 
+            - title: amd64
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
+            - title: arm64_installer
+              link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
