@@ -1,12 +1,9 @@
 +++
 title = 'Contributing'
-draft = false
 layout = 'contributing'
 type = 'contributing'
 +++
-
-# Contributing
-As an open-source platform, Pactus blockchain empowers from its community.
+As an open-source platform, Pactus blockchain empoers from its community.
 Whether you're a developer, designer, or enthusiast, your contributions can make a meaningful impact.
 
 There are several ways to support the Pactus project:
@@ -19,9 +16,9 @@ ensure the network keeps running safe and decentralized.
 
 These guides can help you to run and configure your node:
 
-- [How to run Pactus in Graphic Mode?](https://docs.pactus.org/get-started/pactus-gui)
-- [How to run Pactus in Command Line Mode?](https://docs.pactus.org/get-started/pactus-daemon)
-- [How to run Pactus using Docker?](https://docs.pactus.org/get-started/pactus-docker)
+- [{{< translate "dict.guide.run_pactus_gui">}}](https://docs.pactus.org/get-started/pactus-gui)
+- [{{< translate "dict.guide.run_pactus_cli">}}](https://docs.pactus.org/get-started/pactus-daemon)
+- [{{< translate "dict.guide.run_pactus_docker">}}](https://docs.pactus.org/get-started/pactus-docker)
 
 ## Become a Validator
 
@@ -33,8 +30,8 @@ for contributing to the network's security and decentralization.
 To become a validator, you will need to stake a certain amount of Pactus coins.
 These guides can help you to send a Bond transaction and stake some coins:
 
-- [How to send transactions in Graphic Mode?](https://docs.pactus.org/tutorials/send-transaction-gui/)
-- [How to use wallet in Command Line Mode?](https://docs.pactus.org/tutorials/pactus-wallet)
+- [{{< translate "dict.guide.send_transactions_gui">}}](https://docs.pactus.org/tutorials/send-transaction-gui/)
+- [{{< translate "dict.guide.use_wallet_cli">}}](https://docs.pactus.org/tutorials/pactus-wallet)
 
 ## Develop
 

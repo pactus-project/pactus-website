@@ -1,16 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind typography;
 
 @layer components {
   .faq-btn:is(input[type="radio"]:checked) {
     background-color: #217AFF !important;
     color: white;
   }
+
   .what-is-according:has(input:checked) {
     border: 2px solid #fff;
   }
+
   .faq-btn-parent:has(input:checked) {
     background-image: none !important;
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

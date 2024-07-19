@@ -8,18 +8,11 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Community</title>
-      <link>http://localhost:1313/en/community/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/community/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Contributing</title>
       <link>http://localhost:1313/en/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/contributing/</guid>
-      <description>Contributing As an open-source platform, Pactus blockchain empowers from its community. Whether you&amp;rsquo;re a developer, designer, or enthusiast, your contributions can make a meaningful impact.&#xA;There are several ways to support the Pactus project:&#xA;Run a Node One of the most effective ways to contribute to the Pactus network is by running a node. A &amp;ldquo;node&amp;rdquo; is a software program that downloads a copy of the Pactus blockchain and ensure the network keeps running safe and decentralized.</description>
+      <description>As an open-source platform, Pactus blockchain empoers from its community. Whether you&amp;rsquo;re a developer, designer, or enthusiast, your contributions can make a meaningful impact.&#xA;There are several ways to support the Pactus project:&#xA;Run a Node One of the most effective ways to contribute to the Pactus network is by running a node. A &amp;ldquo;node&amp;rdquo; is a software program that downloads a copy of the Pactus blockchain and ensure the network keeps running safe and decentralized.</description>
     </item>
     <item>
       <title>Download</title>
@@ -33,6 +26,13 @@
       <link>http://localhost:1313/en/about/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/about/faq/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Join the Pactus community</title>
+      <link>http://localhost:1313/en/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/community/</guid>
       <description></description>
     </item>
     <item>

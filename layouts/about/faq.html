@@ -1,8 +1,8 @@
 {{define "main"}}
-<section class="container mx-auto px-4 py-8 pt-[8rem] relative z-20 flex-grow pb-20">
+<section class="container mx-auto px-4 py-8 md:pt-[10rem] pt-[8rem] relative z-20 flex-grow pb-20">
     <div class="grid grid-cols-3">
         <div class="col-span-2">
-            <h1 class="text-2xl text-neutral-50 font-medium text-left">{{.Title}}</h1>
+            <h1 class="md:text-4xl text-2xl text-bold text-neutral-50 font-medium text-left">{{.Title}}</h1>
             <p class="mt-6 text-lg">{{.Description}}</p>
         </div>
         <div class="col-span-1 text-right" style="text-align: -webkit-right;">
@@ -47,7 +47,7 @@
         {{range $i, $item := .Site.Data.faq}}
         {{$titleKey := T (printf "dict.faq.%s" $item.title)}}
         <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
-            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
+            <input class="btn btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
                 type="radio" name="groups" aria-label="{{$titleKey}}" {{if eq $i 0}}checked{{end}}
                 aria-value="{{$item.title}}" />
         </div>
@@ -58,23 +58,37 @@
         <div class="join join-vertical w-full" id="{{$group.title}}" id="{{$group.title}}">
             {{range $j, $item := $group.items}}
             {{$titleKey := T (printf "dict.faq.%s" $item.id)}}
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="{{$group.title}}" {{if eq $j 0}}checked{{end}}/>
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">{{$titleKey}}</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        {{ $a_key := printf "%s_answer" $item.id }}
-                        {{ $en := T (printf "dict.faq.%s" $a_key) "en" }}
-                        {{ $tr := T (printf "dict.faq.%s" $a_key) .Lang }}
+            <div class="collapse join-item">
+                <input type="checkbox" name="{{$group.title}}" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>{{$titleKey}}</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    {{ $a_key := printf "%s_answer" $item.id }}
+                    {{ $en := T (printf "dict.faq.%s" $a_key) "en" }}
+                    {{ $tr := T (printf "dict.faq.%s" $a_key) .Lang }}
 
-                    <p>{{  index (split $tr "]") 1 | safeHTML}}</p> 
-                    </p>
+                    {{ index (split $tr "]") 1 | safeHTML}}
                     {{ with .Params.img }}
                     <img src="{{ .Site.BaseURL }}/assets/images/{{ . }}" alt="{{ T (printf " dict.faq.%s" $item.id)
                         }}" />
                     {{ end }}
                     {{ if isset $item "more" }}
-                    <a href="{{$item.more}}" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">{{T
+                    <a href="{{$item.more}}" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">{{T
                         "dict.faq.read_more" }}...</a>
                     {{ end }}
                 </div>

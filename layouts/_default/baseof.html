@@ -4,9 +4,9 @@
 
 {{partial "head.html" .}}
 
-<body class="min-h-lvh bg-[#0B0B0F]">
+<body class="bg-[#141B25] flex flex-col min-h-screen">
     {{partial "header.html" .}}
-    <div class="drawer">
+    <div class="drawer flex-grow">
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content">
             {{block "main" . }}{{ end }}
@@ -19,5 +19,5 @@
     {{partial "footer.html" .}}
 </body>
 {{partial "scripts.html" .}}
-
+{{block "page_script" .}}{{end}}
 </html>

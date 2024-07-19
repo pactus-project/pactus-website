@@ -35,6 +35,7 @@
     <link rel="shortcut icon" type="image/png" href="../favicon-128x128.png" />
     <link rel="icon" type="image/png" sizes="128x128" href="../favicon-128x128.png" />
     <link rel="icon" type="image/png" sizes="64x64" href="../favicon-64x64.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="../favicon-64x64.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
     <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5" />
@@ -42,9 +43,10 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#0B0B0F" />
 
+    <link href="../css/swiper-bundle.min.css"/>
 </head>
 
-<body class="min-h-lvh bg-[#0B0B0F]">
+<body class="bg-[#141B25] flex flex-col min-h-screen">
     <header class="w-full z-[51] fixed top-0 backdrop-blur-sm">
     <div class="navbar container mx-auto">
         <div class="navbar-start">
@@ -108,8 +110,8 @@
         </ul>
     </details>
 </li>
-<li><a href="../blog">博客</a></li>
-<li><a href="../download">下载</a></li>
+<li><a href="http://localhost:1313//zh/blog">博客</a></li>
+<li><a href="http://localhost:1313//zh/download">下载</a></li>
 <li>
     <details>
         <summary>资源</summary>
@@ -129,18 +131,18 @@
         </div>
     </div>
 </header>
-    <div class="drawer">
+    <div class="drawer flex-grow">
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content">
             
 <img src="../images/landing-top-bg.svg" alt="" class="min-w-full absolute -top-10">
 <section class="z-10 relative" style="position: relative;">
-    <div class="text-center z-20 pt-[10rem] md:pt-[15rem] bg-transparent">
+    <div class="text-center px-5 md:px-0 z-20 pt-[10rem] md:pt-[15rem] bg-transparent">
         <h1
             class="font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999]">
             Welcome to Pactus</h1>
         <h1
-            class="mt-4 font-bold text-3xl md:text-[2.5rem] text-transparent bg-clip-text bg-gradient-to-r from-[#5670CE] to-[#31ABC6]">
+            class="mt-4 font-bold text-2xl md:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-[#5670CE] to-[#31ABC6]">
             Where Community Builds Trust!</h1>
         <h1 class="mt-14 font-bold md:text-lg text-neutral-50">Pactus is a community-run blockchain technology with
             a<br class="hidden md:block"> revolutionary, secure, Solid State Proof of Stake Consensus.<br
@@ -149,16 +151,16 @@
     </div>
     <div class="mt-10 text-center items-center w-full">
         <div class="flex gap-x-2 justify-center">
-            <a href="../"
+            <a href="https://docs.pactus.org/get-started/become-a-validator" target="_blank"
                 class="btn text-neutral-50 rounded-lg bg-[#217AFF] hover:bg-[#217AFF] hover:bg-opacity-80">Become a
                 validator</a>
-            <a href="../" class="btn btn-ghost rounded-lg shadow-top-left-to-bottom-right text-neutral-50">Join
-                Community</a>
+            <a href="http://localhost:1313//zh/community"
+                class="btn btn-ghost rounded-lg shadow-top-left-to-bottom-right text-neutral-50">Join Community</a>
         </div>
     </div>
     <div class="mt-[7rem] text-center items-center w-full">
         <div
-            class="gap-x-0 container mx-auto grid grid-cols-1 md:grid-cols-4 gap-y-8 grid-flow-row justify-items-center items-center justify-center text-center">
+            class="gap-x-0 container mx-auto grid grid-cols-2 lg:grid-cols-4 md:grid-cols-2 gap-y-8 grid-flow-row justify-items-center items-center justify-center text-center md:px-40">
             <a href="#">
                 <svg width="214" height="40" viewBox="0 0 214 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -276,16 +278,17 @@
     <div class="mt-[6rem] z-10 relative">
         <div class="container mx-auto p-0 rounded-xl pt-10 bg-empower-trust relative z-0 bg-[#15161C]">
             <div class="flex flex-col items-center justify-center">
-                <h1 class="font-bold text-4xl md:text-5xl text-neutral-50">
+                <h1
+                    class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] to-[#999999]">
                     Empowering Trust</h1>
                 <h1
-                    class="font-extralight text-3xl md:text-4xl text-transparent bg-clip-text mt-4 bg-gradient-to-b from-[#FFFFFF] to-[#999999]">
+                    class="font-extralight text-3xl md:text-5xl text-transparent bg-clip-text mt-4 bg-gradient-to-b from-[#FFFFFF] to-[#999999]">
                     One Block at a Time</h1>
             </div>
             <div class="mt-10 grid grid-cols-1 md:grid-cols-2 pb-20">
-                <div class="block md:border-r-2 md:border-[#9C9C9C] md:pr-10">
+                <div class="block md:border-r-2 md:border-[#9C9C9C] md:pr-20">
                     <div
-                        class="p-5 bg-[#0B0B0F] md:shadow-[5px_0px_6px_#5940F6] md:rounded-tr-2xl md:rounded-br-2xl mt-5 text-center md:text-left md:pl-28">
+                        class="p-5 py-10 bg-[#0B0B0F] md:shadow-get-pac md:drop-shadow-lg md:rounded-tr-2xl md:rounded-br-2xl mt-5 text-center md:text-left md:pl-28">
                         <h1 class="text-[#0F6CBD] font-bold text-3xl">Get PAC</h1>
                         <p class="mt-5 text-neutral-50">
                             Before you can utilize all that Pactus has to offer, you will need to obtain our native
@@ -294,12 +297,12 @@
                         </p>
                     </div>
                     <div class="mt-14 md:pl-24 text-center md:text-left">
-                        <a href="#" class="btn btn-ghost text-xl md:text-3xl text-neutral-50 font-medium">Become a
-                            Validator</a>
+                        <a href="https://docs.pactus.org/get-started/become-a-validator" target="_blank"
+                            class="btn btn-ghost text-xl md:text-2xl text-neutral-50 font-medium">Become a Validator</a>
                     </div>
                     <div class="mt-14 md:pl-24 text-center md:text-left">
-                        <a href="#" class="btn btn-ghost text-xl md:text-3xl text-neutral-50 font-medium">Make Pactus
-                            Better</a>
+                        <a href="http://localhost:1313//zh/contributing"
+                            class="btn btn-ghost text-xl md:text-2xl text-neutral-50 font-medium">Make Pactus Better</a>
                     </div>
                 </div>
                 <div class="text-center justify-self-center hidden md:block">
@@ -308,71 +311,36 @@
             </div>
         </div>
     </div>
+    <img src="../images/roadmap-bg.svg" class="absolute right-0 -z-20 min-w-full max-h-full" alt="">
+    <img class="absolute -z-10 right-9" src="../images/chains.svg" alt="">
     <div class="mt-[6rem]">
-        <img src="../images/roadmap-bg.svg" class="absolute right-0 -z-20 min-w-full" alt="">
-        <img src="../images/landing-roadmap.svg" class="min-w-full" alt="">
-    </div>
-    <div class="mt-[6rem]">
+
         <div class="container mx-auto">
-            <h1 class="font-bold text-5xl text-neutral-50">News Room</h1>
-            <div class="overflow-y-scroll max-h-96 mt-10 grid grid-flow-row gap-y-5">
-                <div class="container mx-auto">
-                    <div class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                        <h1 class="text-2xl font-bold text-neutral-50">Get PAC</h1>
-                        <h6 class="font-medium text-sm">06 July 2024</h6>
-                        <p class="mt-5 text-neutral-50">Before you can utilize all that Pactus has to offer, you will
-                            need
-                            to obtain our native coin. PAC is a currency that can be exchanged for products, services
-                            and
-                            other currencies with a percentage fee based model of 0.01% per tx...</p>
-                        <br><br>
-                        <a href="#" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read More</a>
+            <h1
+                class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999] self-center">
+                NewsRoom</h1>
+            <div class="h-96 w-full">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
                     </div>
-                </div>
-                <div class="container mx-auto">
-                    <div class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                        <h1 class="text-2xl font-bold text-neutral-50">Get PAC</h1>
-                        <h6 class="font-medium text-sm">06 July 2024</h6>
-                        <p class="mt-5 text-neutral-50">Before you can utilize all that Pactus has to offer, you will
-                            need
-                            to obtain our native coin. PAC is a currency that can be exchanged for products, services
-                            and
-                            other currencies with a percentage fee based model of 0.01% per tx...</p>
-                        <br><br>
-                        <a href="#" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read More</a>
-                    </div>
-                </div>
-                <div class="container mx-auto">
-                    <div class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                        <h1 class="text-2xl font-bold text-neutral-50">Get PAC</h1>
-                        <h6 class="font-medium text-sm">06 July 2024</h6>
-                        <p class="mt-5 text-neutral-50">Before you can utilize all that Pactus has to offer, you will
-                            need
-                            to obtain our native coin. PAC is a currency that can be exchanged for products, services
-                            and
-                            other currencies with a percentage fee based model of 0.01% per tx...</p>
-                        <br><br>
-                        <a href="#" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read More</a>
-                    </div>
-                </div>
-                <div class="container mx-auto">
-                    <div class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                        <h1 class="text-2xl font-bold text-neutral-50">Get PAC</h1>
-                        <h6 class="font-medium text-sm">06 July 2024</h6>
-                        <p class="mt-5 text-neutral-50">Before you can utilize all that Pactus has to offer, you will
-                            need
-                            to obtain our native coin. PAC is a currency that can be exchanged for products, services
-                            and
-                            other currencies with a percentage fee based model of 0.01% per tx...</p>
-                        <br><br>
-                        <a href="#" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read More</a>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
+            
         </div>
     </div>
     <div class="mt-[6rem] text-center">
-        <svg height="954" viewBox="0 0 954 954" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute max-w-full max-h-full m-auto left-0 right-0">
+        <svg height="954" viewBox="0 0 954 954" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="absolute max-w-full max-h-full m-auto left-0 right-0">
             <circle cx="477" cy="477" r="477" fill="url(#paint0_radial_1812_11454)" fill-opacity="0.15" />
             <defs>
                 <radialGradient id="paint0_radial_1812_11454" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
@@ -400,13 +368,13 @@
     <details>
         <summary>关于</summary>
         <ul class="p-2 w-max md:shadow-top-left-to-bottom-right md:bg-[#15161C] bg-transparent">
-            <li class="icon-target"><a href="//about/what-is-pactus"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
+            <li class="icon-target"><a href="http://localhost:1313//zh/about/what-is-pactus"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../icons/system-regular-76-newspaper.json" colors="primary:#fff,secondary:#fff">
             </lord-icon>什么是帕图斯？</a></li>
-            <li class="icon-target"><a href="//about/roadmap"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
+            <li class="icon-target"><a href="http://localhost:1313//zh/about/roadmap"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../icons/system-regular-24-view-1.json" colors="primary:#fff,secondary:#fff">
             </lord-icon>路线图</a></li>
-            <li class="icon-target"><a href="//about/faq"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
+            <li class="icon-target"><a href="http://localhost:1313//zh/about/faq"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../icons/system-regular-140-help-center.json" colors="primary:#fff,secondary:#fff">
             </lord-icon>常见问题解答</a></li>
         </ul>
@@ -434,14 +402,14 @@
         </ul>
     </details>
 </li>
-<li><a href="../blog">博客</a></li>
-<li><a href="../download">下载</a></li>
+<li><a href="http://localhost:1313//zh/blog">博客</a></li>
+<li><a href="http://localhost:1313//zh/download">下载</a></li>
 <li>
     <details>
         <summary>资源</summary>
         <ul class="p-2 w-max md:shadow-top-left-to-bottom-right md:bg-[#15161C] bg-transparent">
-            <li class="icon-target"><a href="//community">社区</a></li>
-            <li class="icon-target"><a href="//contributing">贡献</a></li>
+            <li class="icon-target"><a href="http://localhost:1313//zh/community">社区</a></li>
+            <li class="icon-target"><a href="http://localhost:1313//zh/contributing">贡献</a></li>
             <li class="icon-target"><a href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" target="_blank">Whitepaper<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#cecece" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg></a></li>
             <li class="icon-target"><a href="https://pacviewer.com/" target="_blank">区块浏览器<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#cecece" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg></a></li>
             <li class="icon-target"><a href="https://github.com/pactus-project/" target="_blank">Source code<svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#cecece" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg></a></li>
@@ -576,40 +544,18 @@
 </footer>
 </body>
 
-<script src="../js/jquery.min.js"></script>
-
-
 <script src="../js/main.76ff2161dac401d6e950d3165867e747b991a6ced5d91d9dadbe9640c4c931ef.js"></script>
 
+<script src="../js/swiper-bundle.min.js"></script>
 
-
-
-<script src="../js/mathjax.js"></script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['\\[', '\\]'], ['$$', '$$']], ,
-        displayMath: [['\[','\]', ['$', '$']]],
-        processEscapes: true,
-        processEnvironments: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-        TeX: { equationNumbers: { autoNumber: "AMS" },
-             extensions: ["AMSmath.js", "AMSsymbols.js"] }
-      }
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
     });
-    </script>
-
-<script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        // Fix <code> tags after MathJax finishes running. This is a
-        // hack to overcome a shortcoming of Markdown. Discussion at
-        // https://github.com/mojombo/jekyll/issues/199
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i = 0; i &lt; all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-    </script>
-
+</script>
 
 </html>

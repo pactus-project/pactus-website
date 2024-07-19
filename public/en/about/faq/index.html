@@ -34,13 +34,13 @@
     <link rel="shortcut icon" type="image/png" href="../../../favicon-128x128.png" />
     <link rel="icon" type="image/png" sizes="128x128" href="../../../favicon-128x128.png" />
     <link rel="icon" type="image/png" sizes="64x64" href="../../../favicon-64x64.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="../../../favicon-64x64.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon-16x16.png" />
     <link rel="mask-icon" href="../../../safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="manifest" href="../../../site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#0B0B0F" />
-
 </head>
 
 <body class="bg-[#0B0B0F] flex flex-col min-h-screen">
@@ -161,10 +161,10 @@
             </svg>
 
             
-<section class="container mx-auto px-4 py-8 pt-[8rem] relative z-20 flex-grow pb-20">
+<section class="container mx-auto px-4 py-8 md:pt-[10rem] pt-[8rem] relative z-20 flex-grow pb-20">
     <div class="grid grid-cols-3">
         <div class="col-span-2">
-            <h1 class="text-2xl text-neutral-50 font-medium text-left">FAQ</h1>
+            <h1 class="md:text-4xl text-2xl text-bold text-neutral-50 font-medium text-left">FAQ</h1>
             <p class="mt-6 text-lg">This FAQ (Frequently Asked Questions) page aims to provide helpful information and guidance on common questions and concerns related to Pactus.</p>
         </div>
         <div class="col-span-1 text-right" style="text-align: -webkit-right;">
@@ -209,35 +209,35 @@
         
         
         <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
-            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
+            <input class="btn btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
                 type="radio" name="groups" aria-label="General" checked
                 aria-value="general" />
         </div>
         
         
         <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
-            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
+            <input class="btn btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
                 type="radio" name="groups" aria-label="Validator" 
                 aria-value="validator" />
         </div>
         
         
         <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
-            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
+            <input class="btn btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
                 type="radio" name="groups" aria-label="Consensus" 
                 aria-value="consensus" />
         </div>
         
         
         <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
-            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
+            <input class="btn btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
                 type="radio" name="groups" aria-label="Economy" 
                 aria-value="economy" />
         </div>
         
         
         <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
-            <input class="btn md:btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
+            <input class="btn btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn"
                 type="radio" name="groups" aria-label="Transaction" 
                 aria-value="transaction" />
         </div>
@@ -248,18 +248,32 @@
         <div class="join join-vertical w-full" id="general" id="general">
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="general" checked/>
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What does &#34;Pactus&#34; mean?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="general" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>What does &#34;Pactus&#34; mean?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> The word "Pactus" is of Latin origin and means "to agree together", "contract", or "transact". In English, the term "Pact" is derived from the Latin word "Pactus".
-</p> 
-                    </p>
+                     The word "Pactus" is of Latin origin and means "to agree together", "contract", or "transact". In English, the term "Pact" is derived from the Latin word "Pactus".
+
                     
                     
                 </div>
@@ -269,18 +283,32 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="general" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Is Pactus a copy of any other blockchain?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="general" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>Is Pactus a copy of any other blockchain?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> No, Pactus is not a copy or a derivative of any other blockchain. It is a new and unique blockchain protocol that has been designed from scratch. The consensus mechanism used in Pactus is unique and specifically created to solve the scalability issue of validators in the Proof of Stake blockchains.
-</p> 
-                    </p>
+                     No, Pactus is not a copy or a derivative of any other blockchain. It is a new and unique blockchain protocol that has been designed from scratch. The consensus mechanism used in Pactus is unique and specifically created to solve the scalability issue of validators in the Proof of Stake blockchains.
+
                     
                     
                 </div>
@@ -290,18 +318,32 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="general" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Did Pactus have an ICO?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="general" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>Did Pactus have an ICO?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> No, Pactus didn't have any ICO or Initial Coin Offering.
-</p> 
-                    </p>
+                     No, Pactus didn't have any ICO or Initial Coin Offering.
+
                     
                     
                 </div>
@@ -311,18 +353,32 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="general" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Where can I buy Pactus coins?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="general" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>Where can I buy Pactus coins?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Pactus does not have any pre-sales coins. The only way to obtain Pactus coins at the moment is by installing the Pactus software and actively participating in block validation. By engaging in the network and contributing to block validation, you will be rewarded with Pactus coins.
-</p> 
-                    </p>
+                     Pactus does not have any pre-sales coins. The only way to obtain Pactus coins at the moment is by installing the Pactus software and actively participating in block validation. By engaging in the network and contributing to block validation, you will be rewarded with Pactus coins.
+
                     
                     
                 </div>
@@ -332,18 +388,32 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="general" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Why was  Pactus developed?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="general" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>Why was  Pactus developed?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Pactus was developed with the goal of scaling blockchain without compromising security and decentralization. To achieve this, Pactus utilizes a unique consensus mechanism that enables the creation of blocks in just 10 seconds. Moreover, Pactus was designed to be more accessible to all users, regardless of their technical expertise or financial resources.
-</p> 
-                    </p>
+                     Pactus was developed with the goal of scaling blockchain without compromising security and decentralization. To achieve this, Pactus utilizes a unique consensus mechanism that enables the creation of blocks in just 10 seconds. Moreover, Pactus was designed to be more accessible to all users, regardless of their technical expertise or financial resources.
+
                     
                     
                 </div>
@@ -353,18 +423,32 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="general" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What problems does Pactus solve that other blockchains don&#39;t?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="general" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>What problems does Pactus solve that other blockchains don&#39;t?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Pactus tries to solve several problems faced by other blockchain networks, including: <br><br> <b>Scalability:</b> Pactus has a unique consensus mechanism that is specifically designed to address the scalability issue without sacrificing the security and decentralization. <br><br> <b>Accessibility:</b> Running a node on Pactus is designed to be more accessible to normal users compared to other blockchains. <br><br> <b>Storage cost:</b> Pactus offers a novel storage solution by allowing users to allocate dedicated storage files, reducing storage costs and simplifying the smart contracts.
-</p> 
-                    </p>
+                     Pactus tries to solve several problems faced by other blockchain networks, including: <br><br> <b>Scalability:</b> Pactus has a unique consensus mechanism that is specifically designed to address the scalability issue without sacrificing the security and decentralization. <br><br> <b>Accessibility:</b> Running a node on Pactus is designed to be more accessible to normal users compared to other blockchains. <br><br> <b>Storage cost:</b> Pactus offers a novel storage solution by allowing users to allocate dedicated storage files, reducing storage costs and simplifying the smart contracts.
+
                     
                     
                 </div>
@@ -374,18 +458,32 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="general" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How is Pactus different from Bitcoin?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="general" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How is Pactus different from Bitcoin?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Pactus and Bitcoin are two different types of blockchain networks. While Bitcoin uses a process called "Proof of Work" to secure its network, Pactus uses a different method called "Proof of Stake". This means that instead of mining, validators are responsible for voting on incoming blocks and must hold a certain amount of the network's coin, known as "stake", as a security deposit to prevent malicious behavior.
-</p> 
-                    </p>
+                     Pactus and Bitcoin are two different types of blockchain networks. While Bitcoin uses a process called "Proof of Work" to secure its network, Pactus uses a different method called "Proof of Stake". This means that instead of mining, validators are responsible for voting on incoming blocks and must hold a certain amount of the network's coin, known as "stake", as a security deposit to prevent malicious behavior.
+
                     
                     
                 </div>
@@ -395,18 +493,32 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="general" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How is Pactus different from Ethereum?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="general" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How is Pactus different from Ethereum?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Pactus and Ethereum are both Proof of Stake blockchains, but they differ in their approach to running a validator. Running a validator on Ethereum can be challenging and requires 32 Ethereum coins to stake. In Pactus, there is no fixed amount for staking. Pactus is specifically designed to be more accessible to normal users, and you can run the Pactus blockchain on your personal computer with basic hardware.
-</p> 
-                    </p>
+                     Pactus and Ethereum are both Proof of Stake blockchains, but they differ in their approach to running a validator. Running a validator on Ethereum can be challenging and requires 32 Ethereum coins to stake. In Pactus, there is no fixed amount for staking. Pactus is specifically designed to be more accessible to normal users, and you can run the Pactus blockchain on your personal computer with basic hardware.
+
                     
                     
                 </div>
@@ -420,21 +532,35 @@
         <div class="join join-vertical w-full" id="validator" id="validator">
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="validator" checked/>
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What are validators?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="validator" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>What are validators?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Validators on Pactus are responsible for processing transactions and creating blocks and, by doing so, helping to secure the network and keep it decentralized. They use their own coins as a stake to ensure the network's security and receive rewards for their contributions.
-</p> 
-                    </p>
+                     Validators on Pactus are responsible for processing transactions and creating blocks and, by doing so, helping to secure the network and keep it decentralized. They use their own coins as a stake to ensure the network's security and receive rewards for their contributions.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/blockchain/validator/" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/blockchain/validator/" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -443,21 +569,35 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="validator" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How many validators does Pactus have?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="validator" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How many validators does Pactus have?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Pactus is a real Proof of Stake blockchain, which means there is no limit on the number of validators in the network. However, a committee of 51 validators is responsible for creating blocks. It's important to note that the committee members are not fixed and they change over time.
-</p> 
-                    </p>
+                     Pactus is a real Proof of Stake blockchain, which means there is no limit on the number of validators in the network. However, a committee of 51 validators is responsible for creating blocks. It's important to note that the committee members are not fixed and they change over time.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/consensus/proof-of-stake/" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/consensus/proof-of-stake/" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -466,62 +606,32 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="validator" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What are the minimum and maximum amounts I can stake?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
-
-                    <p> In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 1000 coins. If you want to stake more than 1000 coins, you can run a new validator. Running multiple validators keeps the network more decentralized and helps maintain its security and stability.
-</p> 
-                    </p>
-                    
-                    
+            <div class="collapse join-item">
+                <input type="checkbox" name="validator" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>What are the minimum and maximum amounts I can stake?</div>
                 </div>
-            </div>
-            <div class="justify-center w-full text-center" style="text-align: -webkit-center;">
-                <div class="divider w-9/12"></div>
-            </div>
-            
-            
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="validator" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What are the minimum hardware requirements?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> After thorough testing on multiple machines, we can conclude that the recommended minimum hardware requirements are as follows:<br><br> VPS:<br> * CPU's: 1/2 physical core / 1vCPU<br> * RAM: 1 GB Ram<br> * Storage (SSD): 20 GB NVMe Drive<br> * Network: stable internet connection with 1 TBps speed<br><br> PC:<br> * CPU's: 2 physical cores / 4vCPU<br> * RAM: 4 GB Ram<br> * Storage (SSD): 64 GB SSD Drive<br> * Network: stable internet connection with over 15 MBps speed<br><br> **Note** These specifications have been tested and provide an availability score of over 0.9.
-</p> 
-                    </p>
-                    
-                    
-                    <a href="https://pips.pactus.org/PIPs/pip-19" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
-                    
-                </div>
-            </div>
-            <div class="justify-center w-full text-center" style="text-align: -webkit-center;">
-                <div class="divider w-9/12"></div>
-            </div>
-            
-            
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="validator" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Why is there a limit for maximum stake?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+                     In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 1000 coins. If you want to stake more than 1000 coins, you can run a new validator. Running multiple validators keeps the network more decentralized and helps maintain its security and stability.
 
-                    <p> The limit for the maximum stake per validator enhances decentralization and prevents validators from gaining too much power, which could potentially lead them to control the committee. The maximum staking limit is part of the consensus parameters and can be changed in the future through consensus among the validators.
-</p> 
-                    </p>
                     
                     
                 </div>
@@ -531,21 +641,35 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="validator" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Can I run multiple validators on one computer?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="validator" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>What are the minimum hardware requirements?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> The Pactus software allows you to run up to 32 validators on a single node. Running multiple validators may require slightly more memory, but it has no impact on storage, and has a negligible effect on CPU and networking usage. Running multiple validators on a single node enables users to distribute their stake across multiple validators, especially when they want to stake more than the maximum stake per validator. This eliminates the need for additional resources and simplifies node management.
-</p> 
-                    </p>
+                     After thorough testing on multiple machines, we can conclude that the recommended minimum hardware requirements are as follows:<br><br> VPS:<br> * CPU's: 1/2 physical core / 1vCPU<br> * RAM: 1 GB Ram<br> * Storage (SSD): 20 GB NVMe Drive<br> * Network: stable internet connection with 1 TBps speed<br><br> PC:<br> * CPU's: 2 physical cores / 4vCPU<br> * RAM: 4 GB Ram<br> * Storage (SSD): 64 GB SSD Drive<br> * Network: stable internet connection with over 15 MBps speed<br><br> **Note** These specifications have been tested and provide an availability score of over 0.9.
+
                     
                     
-                    <a href="https://docs.pactus.org/get-started/pactus-gui/#number-of-validators" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://pips.pactus.org/PIPs/pip-19" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -554,21 +678,33 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="validator" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How do validators get rewarded?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="validator" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>Why is there a limit for maximum stake?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Once a validator proposes a valid block and it is accepted by the network, the validator receives one coin as a block reward. The reward is an incentive given to validators for their contribution to the network.
-</p> 
-                    </p>
+                     The limit for the maximum stake per validator enhances decentralization and prevents validators from gaining too much power, which could potentially lead them to control the committee. The maximum staking limit is part of the consensus parameters and can be changed in the future through consensus among the validators.
+
                     
-                    
-                    <a href="https://docs.pactus.org/protocol/blockchain/incentive" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -577,21 +713,35 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="validator" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How much is the block reward in Pactus?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="validator" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>Can I run multiple validators on one computer?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Block reward in Pactus is fixed, and it is always one coin per block. This flat reward scheme helps to ensure simplicity, fairness and better coin distribution.
-</p> 
-                    </p>
+                     The Pactus software allows you to run up to 32 validators on a single node. Running multiple validators may require slightly more memory, but it has no impact on storage, and has a negligible effect on CPU and networking usage. Running multiple validators on a single node enables users to distribute their stake across multiple validators, especially when they want to stake more than the maximum stake per validator. This eliminates the need for additional resources and simplifies node management.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/blockchain/incentive/#flat-reward" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/get-started/pactus-gui/#number-of-validators" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -600,18 +750,106 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="validator" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How many PAC coins are generated per day?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="validator" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How do validators get rewarded?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Daily, a total amount of 8640 PAC is generated. This figure translates to 241,000 every 28 days and 3,153,600 per year.
-</p> 
-                    </p>
+                     Once a validator proposes a valid block and it is accepted by the network, the validator receives one coin as a block reward. The reward is an incentive given to validators for their contribution to the network.
+
+                    
+                    
+                    <a href="https://docs.pactus.org/protocol/blockchain/incentive" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    
+                </div>
+            </div>
+            <div class="justify-center w-full text-center" style="text-align: -webkit-center;">
+                <div class="divider w-9/12"></div>
+            </div>
+            
+            
+            <div class="collapse join-item">
+                <input type="checkbox" name="validator" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How much is the block reward in Pactus?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
+
+                     Block reward in Pactus is fixed, and it is always one coin per block. This flat reward scheme helps to ensure simplicity, fairness and better coin distribution.
+
+                    
+                    
+                    <a href="https://docs.pactus.org/protocol/blockchain/incentive/#flat-reward" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    
+                </div>
+            </div>
+            <div class="justify-center w-full text-center" style="text-align: -webkit-center;">
+                <div class="divider w-9/12"></div>
+            </div>
+            
+            
+            <div class="collapse join-item">
+                <input type="checkbox" name="validator" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How many PAC coins are generated per day?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
+
+                     Daily, a total amount of 8640 PAC is generated. This figure translates to 241,000 every 28 days and 3,153,600 per year.
+
                     
                     
                 </div>
@@ -625,21 +863,35 @@
         <div class="join join-vertical w-full" id="consensus" id="consensus">
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="consensus" checked/>
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How does Pactus blockchain work?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="consensus" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How does Pactus blockchain work?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Pactus operates with a committee of validators who are responsible for creating new blocks. The committee consists of 51 validators, however, the members of the committee change randomly over time. Every 10 seconds, a validator in the committee known as the proposer collects all the valid transactions, adds them into a block, and shares it with other validators in the committee. If more than ⅔ of the stakeholders in the committee attest to the proposed block by signing it, the block gets committed and all the transactions inside the block will be executed. This process repeats every 10 seconds.
-</p> 
-                    </p>
+                     Pactus operates with a committee of validators who are responsible for creating new blocks. The committee consists of 51 validators, however, the members of the committee change randomly over time. Every 10 seconds, a validator in the committee known as the proposer collects all the valid transactions, adds them into a block, and shares it with other validators in the committee. If more than ⅔ of the stakeholders in the committee attest to the proposed block by signing it, the block gets committed and all the transactions inside the block will be executed. This process repeats every 10 seconds.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/consensus/proof-of-stake/" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/consensus/proof-of-stake/" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -648,21 +900,35 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="consensus" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How can a validator enter to the committee?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="consensus" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How can a validator enter to the committee?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> To enter the committee in Pactus, validators participate in a sortition process that occurs at each block. In this process, validators generate a provable random number between zero and the total staked coins, and if the number is less than their stake, they can send a transaction known as sortition transaction with the proof of sortition. Once the sortition transaction is included in a block, the validator replaces the oldest committee member.
-</p> 
-                    </p>
+                     To enter the committee in Pactus, validators participate in a sortition process that occurs at each block. In this process, validators generate a provable random number between zero and the total staked coins, and if the number is less than their stake, they can send a transaction known as sortition transaction with the proof of sortition. Once the sortition transaction is included in a block, the validator replaces the oldest committee member.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/consensus/sortition/" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/consensus/sortition/" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -671,21 +937,35 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="consensus" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How are block proposers selected in the committee?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="consensus" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How are block proposers selected in the committee?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> The block proposer inside the committee is selected based on the time they entered the committee. This means that the selection process follows a first-come, first-propose order.
-</p> 
-                    </p>
+                     The block proposer inside the committee is selected based on the time they entered the committee. This means that the selection process follows a first-come, first-propose order.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/consensus/committee/" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/consensus/committee/" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -694,18 +974,32 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="consensus" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Can multiple validators enter the committee at once?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="consensus" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>Can multiple validators enter the committee at once?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> The process of sortition in Pactus is random, so it's possible for more than one validator to enter the committee at once, or no validator at all. However, on average, one validator should join the committee at each block.
-</p> 
-                    </p>
+                     The process of sortition in Pactus is random, so it's possible for more than one validator to enter the committee at once, or no validator at all. However, on average, one validator should join the committee at each block.
+
                     
                     
                 </div>
@@ -715,21 +1009,35 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="consensus" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">Is it possible to have two valid blocks at the same time?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="consensus" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>Is it possible to have two valid blocks at the same time?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> It is not possible to have two valid blocks at the same time in Pactus blockchain. The consensus algorithm in Pactus prevents the possibility of having two block proposers at the same time. This ensures that there will be no fork in the network.
-</p> 
-                    </p>
+                     It is not possible to have two valid blocks at the same time in Pactus blockchain. The consensus algorithm in Pactus prevents the possibility of having two block proposers at the same time. This ensures that there will be no fork in the network.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/consensus/protocol/" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/consensus/protocol/" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -738,21 +1046,35 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="consensus" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How much is the block confirmation in the Pactus Blockchain?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="consensus" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How much is the block confirmation in the Pactus Blockchain?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Block confirmation refers to the number of blocks that need to be created before a transaction is considered final and irreversible. In Pactus, block confirmation is immediate, meaning that once a transaction is added to a block, it is considered confirmed and cannot be reversed.
-</p> 
-                    </p>
+                     Block confirmation refers to the number of blocks that need to be created before a transaction is considered final and irreversible. In Pactus, block confirmation is immediate, meaning that once a transaction is added to a block, it is considered confirmed and cannot be reversed.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/consensus/protocol/" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/consensus/protocol/" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -765,18 +1087,32 @@
         <div class="join join-vertical w-full" id="economy" id="economy">
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="economy" checked/>
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is the total supply of Pactus coins?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="economy" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>What is the total supply of Pactus coins?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Pactus has a total supply of 42 million coins, and each coin is divided into 1 billion units. $$ 1 \  PAC = 10^9 \  SatoshiPAC $$
-</p> 
-                    </p>
+                     Pactus has a total supply of 42 million coins, and each coin is divided into 1 billion units. $$ 1 \  PAC = 10^9 \  SatoshiPAC $$
+
                     
                     
                 </div>
@@ -786,16 +1122,31 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="economy" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How are Genesis Coins allocated in Pactus?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="economy" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How are Genesis Coins allocated in Pactus?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> The initial allocation of Genesis Coins in the Pactus blockchain is distributed as follows: <br><br> <div class="overflow-x-auto"> <table class="table w-full table-zebra">
+                     The initial allocation of Genesis Coins in the Pactus blockchain is distributed as follows: <br><br> <div class="overflow-x-auto"> <table class="table w-full table-zebra">
   <caption>Genesis Coin Allocation for Pactus</caption>
   <thead class="text-left">
       <tr>
@@ -832,8 +1183,7 @@
       </tr>
   </tbody>
 </table> </div>
-</p> 
-                    </p>
+
                     
                     
                 </div>
@@ -843,21 +1193,35 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="economy" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is the Treasury account?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="economy" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>What is the Treasury account?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> The Treasury account is a special account in Pactus blockchain that holds 21 million coins at the genesis time. It has no key pair associated with it, meaning it cannot be accessed or controlled by anyone. Every time a block is created, one coin from the Treasury account transfers to the proposer account as a block reward.
-</p> 
-                    </p>
+                     The Treasury account is a special account in Pactus blockchain that holds 21 million coins at the genesis time. It has no key pair associated with it, meaning it cannot be accessed or controlled by anyone. Every time a block is created, one coin from the Treasury account transfers to the proposer account as a block reward.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/blockchain/account/#treasury-account" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/blockchain/account/#treasury-account" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -866,21 +1230,35 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="economy" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How will the Treasury coins be distributed?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="economy" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How will the Treasury coins be distributed?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> Treasury coins are distributed as block rewards to the block proposers. Every 10 seconds, one coin from the Treasury account transfers to the block proposer account. This process is called "coin minting". As a result, the total number of Pactus coins in circulation gradually increases over time as new blocks are added to the blockchain. Every day, 8,640 coins are minted, resulting in approximately 3 million coins being minted annually by the Treasury account.
-</p> 
-                    </p>
+                     Treasury coins are distributed as block rewards to the block proposers. Every 10 seconds, one coin from the Treasury account transfers to the block proposer account. This process is called "coin minting". As a result, the total number of Pactus coins in circulation gradually increases over time as new blocks are added to the blockchain. Every day, 8,640 coins are minted, resulting in approximately 3 million coins being minted annually by the Treasury account.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/blockchain/incentive/#coin-distribution" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/blockchain/incentive/#coin-distribution" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -889,16 +1267,31 @@
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="economy" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">How will the Support coins be spent?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="economy" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>How will the Support coins be spent?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> The support accounts are designed to provide financial backing for the project. Initially, Pactus Genesis contained only the Treasury accounts without any Backup or Support accounts. The introduction of support coins was a strategic response to the absence of investors, despite the significant progress of the project. <br><br> These coins are allocated in several ways: <ul>
+                     The support accounts are designed to provide financial backing for the project. Initially, Pactus Genesis contained only the Treasury accounts without any Backup or Support accounts. The introduction of support coins was a strategic response to the absence of investors, despite the significant progress of the project. <br><br> These coins are allocated in several ways: <ul>
   <li><b>Community</b>:
     This portion will mainly support the community.
     As part of this, the participants on Testnets receive initial staking coins to
@@ -917,8 +1310,7 @@
   </li>
 </ul>
 Transparency is a key aspect of this allocation, as all movements of these coins are trackable due to the fully transparent nature of the blockchain.
-</p> 
-                    </p>
+
                     
                     
                 </div>
@@ -932,21 +1324,35 @@ Transparency is a key aspect of this allocation, as all movements of these coins
         <div class="join join-vertical w-full" id="transaction" id="transaction">
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="transaction" checked/>
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is a Transfer transaction?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="transaction" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>What is a Transfer transaction?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> A transfer transaction is a type of transaction that allows users to transfer Pactus coin from one account to another.
-</p> 
-                    </p>
+                     A transfer transaction is a type of transaction that allows users to transfer Pactus coin from one account to another.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/transaction/transfer/" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/transaction/transfer/" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -955,21 +1361,35 @@ Transparency is a key aspect of this allocation, as all movements of these coins
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="transaction" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is a Bond transaction?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="transaction" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>What is a Bond transaction?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> A bond transaction is a type of transaction that allows users to become a validator by staking some coins. The amount of stake determines the voting power in the consensus.
-</p> 
-                    </p>
+                     A bond transaction is a type of transaction that allows users to become a validator by staking some coins. The amount of stake determines the voting power in the consensus.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/transaction/bond/" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/transaction/bond/" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -978,21 +1398,35 @@ Transparency is a key aspect of this allocation, as all movements of these coins
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="transaction" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is a Sortition transaction?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="transaction" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>What is a Sortition transaction?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> A sortition transaction is a type of transaction that allows validators to enter the committee.
-</p> 
-                    </p>
+                     A sortition transaction is a type of transaction that allows validators to enter the committee.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/transaction/sortition/" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/transaction/sortition/" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -1001,21 +1435,35 @@ Transparency is a key aspect of this allocation, as all movements of these coins
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="transaction" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is an Unbond transaction?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="transaction" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>What is an Unbond transaction?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> An unbond transaction is a type of transaction that allows users to unbond their validator. Once a validator is unbonded, they can no longer participate in the consensus mechanism.
-</p> 
-                    </p>
+                     An unbond transaction is a type of transaction that allows users to unbond their validator. Once a validator is unbonded, they can no longer participate in the consensus mechanism.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/transaction/unbond/" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/transaction/unbond/" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -1024,21 +1472,35 @@ Transparency is a key aspect of this allocation, as all movements of these coins
             </div>
             
             
-            <div class="collapse collapse-plus join-item">
-                <input type="radio" name="transaction" />
-                <div class="collapse-title text-xl md:text-2xl text-neutral-50 font-bold">What is a Withdraw transaction?</div>
-                <div class="collapse-content">
-                    <p class="md:text-lg">
-                        
-                        
-                        
+            <div class="collapse join-item">
+                <input type="checkbox" name="transaction" class="peer" aria-checked="false"/>
+                <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
+                    <div>What is a Withdraw transaction?</div>
+                </div>
+                <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block" style="text-align: -webkit-center;">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="collapse-content prose lg:prose-xl">
+                    
+                    
+                    
 
-                    <p> A withdraw transaction is a type of transaction that allows a validator to withdraw their staked coins from the network.
-</p> 
-                    </p>
+                     A withdraw transaction is a type of transaction that allows a validator to withdraw their staked coins from the network.
+
                     
                     
-                    <a href="https://docs.pactus.org/protocol/transaction/withdraw/" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
+                    <a href="https://docs.pactus.org/protocol/transaction/withdraw/" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read more...</a>
                     
                 </div>
             </div>
@@ -1189,12 +1651,9 @@ Transparency is a key aspect of this allocation, as all movements of these coins
     </div>
 </footer>
 </body>
-
 <script src="../../../js/jquery.min.js"></script>
 
-
 <script src="../../../js/main.76ff2161dac401d6e950d3165867e747b991a6ced5d91d9dadbe9640c4c931ef.js"></script>
-
 
 
 
@@ -1223,8 +1682,7 @@ Transparency is a key aspect of this allocation, as all movements of these coins
             all[i].SourceElement().parentNode.className += ' has-jax';
         }
     });
-    </script>
-
+</script>
 
 <script>
     $(document).ready(function () {

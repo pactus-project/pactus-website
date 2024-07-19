@@ -23,8 +23,6 @@
                 href="http://localhost:1313/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/community/</loc>
-  </url><url>
     <loc>http://localhost:1313/en/contributing/</loc>
     <xhtml:link
                 rel="alternate"
@@ -62,6 +60,8 @@
                 hreflang="en"
                 href="http://localhost:1313/en/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/en/community/</loc>
   </url><url>
     <loc>http://localhost:1313/en/about/roadmap/</loc>
   </url><url>
