@@ -46,8 +46,10 @@
         </div>
     </div>
     {{partial "single-footer.html" .}}
+
+    {{partial "single-scripts.html" .}}
+    {{block "page_script" .}}{{end}}
 </body>
-{{partial "single-scripts.html" .}}
-{{block "page_script" .}}{{end}}
+
 
 </html>

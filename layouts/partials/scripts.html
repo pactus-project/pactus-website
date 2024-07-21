@@ -1,4 +1,11 @@
 {{with resources.Get "js/main.js" | js.Build (dict "minify" true) | fingerprint}}
 <script src="{{.RelPermalink}}"></script>
 {{end}}
+
+<script src="/js/aos.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        AOS.init();
+    });
+</script>
 <script src="/js/swiper-bundle.min.js"></script>

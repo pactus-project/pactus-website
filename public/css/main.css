@@ -3905,7 +3905,7 @@ html:has(.drawer-toggle:checked) {
   display: block;
   border-radius: 50%;
   margin-top: 5px;
-  border: 2px solid #6A6A6A;
+  border: 2px solid #6A6A6A !important;
   transition: all 0.5s;
 }
 

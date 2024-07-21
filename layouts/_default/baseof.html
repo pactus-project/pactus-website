@@ -17,7 +17,9 @@
         </div>
     </div>
     {{partial "footer.html" .}}
+
+    {{partial "scripts.html" .}}
+    {{block "page_script" .}}{{end}}
 </body>
-{{partial "scripts.html" .}}
-{{block "page_script" .}}{{end}}
+
 </html>

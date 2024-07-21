@@ -43,11 +43,13 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#0B0B0F" />
 
-    <link href="../css/swiper-bundle.min.css"/>
+
+    <link href="../css/aos.css" rel="stylesheet"/>
+    
 </head>
 
 <body class="bg-[#0B0B0F] flex flex-col min-h-screen">
-    <header class="w-full z-[51] fixed top-0 backdrop-blur-sm">
+    <header class="w-full z-[51] fixed top-0 backdrop-blur-sm font-bold">
     <div class="navbar container mx-auto">
         <div class="navbar-start">
             <div class="flex-none lg:hidden">
@@ -74,7 +76,7 @@
             <ul class="menu menu-horizontal px-1 gap-x-3 text-base content w-max">
                 <li>
     <details>
-        <summary>关于</summary>
+        <summary class="font-bold">关于</summary>
         <ul class="p-2 w-max md:shadow-top-left-to-bottom-right md:bg-[#15161C] bg-transparent">
             <li class="icon-target"><a href="http://localhost:1313//zh/about/what-is-pactus"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../icons/system-regular-76-newspaper.json" colors="primary:#fff,secondary:#fff">
@@ -90,7 +92,7 @@
 </li>
 <li>
     <details>
-        <summary>文档</summary>
+        <summary class="font-bold">文档</summary>
         <ul class="p-2 w-max grad md:shadow-top-left-to-bottom-right md:bg-[#15161C] bg-transparent">
             <li class="icon-target"><a href="https://docs.pactus.org/get-started/" target="_blank"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                         src="../icons/vduvxizq.json" colors="primary:#fff,secondary:#fff">
@@ -110,11 +112,11 @@
         </ul>
     </details>
 </li>
-<li><a href="http://localhost:1313//zh/blog">博客</a></li>
-<li><a href="http://localhost:1313//zh/download">下载</a></li>
+<li class="font-bold"><a href="http://localhost:1313//zh/blog">博客</a></li>
+<li class="font-bold"><a href="http://localhost:1313//zh/download">下载</a></li>
 <li>
     <details>
-        <summary>资源</summary>
+        <summary class="font-bold">资源</summary>
         <ul class="p-2 w-max md:shadow-top-left-to-bottom-right md:bg-[#15161C] bg-transparent">
             <li class="icon-target"><a href="http://localhost:1313//zh/community">社区</a></li>
             <li class="icon-target"><a href="http://localhost:1313//zh/contributing">贡献</a></li>
@@ -138,30 +140,30 @@
 <img src="../images/landing-top-bg.svg" alt="" class="min-w-full absolute -top-10">
 <section class="z-10 relative" style="position: relative;">
     <div class="text-center px-5 md:px-0 z-20 pt-[10rem] md:pt-[15rem] bg-transparent">
-        <h1
-            class="font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999]">
+        <h1 data-aos-duration="1000"
+            class="font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999]" data-aos="zoom-in">
             Welcome to Pactus</h1>
-        <h1
+        <h1 data-aos="zoom-in" data-aos-duration="1500"
             class="mt-4 font-bold text-2xl md:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-[#5670CE] to-[#31ABC6]">
             Where Community Builds Trust!</h1>
-        <h1 class="mt-14 font-bold md:text-lg text-neutral-50">Pactus is a community-run blockchain technology with
+        <h1 data-aos="zoom-in" data-aos-duration="2000" class="mt-14 font-bold md:text-lg text-neutral-50">Pactus is a community-run blockchain technology with
             a<br class="hidden md:block"> revolutionary, secure, Solid State Proof of Stake Consensus.<br
                 class="hidden md:block"> Come join us and build a
             decentralized future together!</h1>
     </div>
     <div class="mt-10 text-center items-center w-full">
-        <div class="flex gap-x-2 justify-center">
-            <a href="https://docs.pactus.org/get-started/become-a-validator" target="_blank"
-                class="btn text-neutral-50 rounded-lg bg-[#217AFF] hover:bg-[#217AFF] hover:bg-opacity-80">Become a
+        <div class="flex gap-x-2 justify-center" >
+            <a href="https://docs.pactus.org/get-started/become-a-validator" target="_blank" data-aos-duration="1000" data-aos="fade-right"
+                class="btn text-neutral-50 rounded-lg bg-[#217AFF] hover:bg-[#217AFF] hover:bg-opacity-80" >Become a
                 validator</a>
-            <a href="http://localhost:1313//zh/community"
+            <a href="http://localhost:1313//zh/community" data-aos-duration="1000" data-aos="fade-left"
                 class="btn btn-ghost rounded-lg shadow-top-left-to-bottom-right text-neutral-50">Join Community</a>
         </div>
     </div>
     <div class="mt-[7rem] text-center items-center w-full">
     <div
         class="gap-x-0 container mx-auto grid grid-cols-2 lg:grid-cols-4 md:grid-cols-2 gap-y-8 grid-flow-row justify-items-center items-center justify-center text-center md:px-40">
-        <a href="https://sensifai.com/" target="_blank">
+        <a href="https://sensifai.com/" data-aos-duration="1000" data-aos="fade-right" target="_blank">
             <svg width="214" height="40" viewBox="0 0 214 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M33.8127 19.7112C33.8127 27.5722 27.5562 33.7489 19.5652 33.7109C12.025 33.6754 5.64944 27.3896 5.73553 19.3814C5.81402 11.8705 12.1085 5.62783 19.7754 5.60753C27.8119 5.58724 33.9596 12.256 33.8152 19.7087L33.8127 19.7112ZM29.0703 19.904C29.0703 19.5446 28.8716 19.2075 28.5974 19.0448C28.4188 18.9387 28.208 18.9067 27.9993 18.9908C27.4042 19.2318 27.0067 18.9756 26.5586 18.7194C26.1383 18.4784 25.7179 18.2323 25.285 18.0142C25.2257 17.9843 25.1714 17.9541 25.1223 17.9219C24.9177 17.7876 24.8044 17.6191 24.8064 17.2938C24.8064 17.0177 24.6567 16.7617 24.4479 16.6015C24.2309 16.4349 23.9502 16.3719 23.7076 16.4973C23.282 16.7172 22.9779 16.6129 22.6774 16.4487C22.6373 16.4268 22.5973 16.4039 22.557 16.3805C22.5023 16.3487 22.4472 16.3161 22.3909 16.2842C21.9504 16.0356 21.5199 15.7667 21.0718 15.5359C20.93 15.4624 20.8206 15.3846 20.7406 15.2824C20.6577 15.1765 20.6063 15.0444 20.5831 14.8637C20.5394 14.5152 20.314 14.2225 20.0391 14.1014C19.8678 14.0259 19.6772 14.017 19.4994 14.1027C18.917 14.3843 18.5474 14.0875 18.122 13.8516C17.6637 13.5954 17.2181 13.3164 16.7522 13.0703C16.7082 13.0469 16.6669 13.0235 16.6285 12.9993C16.4174 12.866 16.2951 12.7078 16.3015 12.388C16.3079 12.0291 16.0977 11.7751 15.784 11.6542C15.723 11.6307 15.658 11.6123 15.59 11.5991C15.157 11.5179 14.7798 11.6422 14.5646 12.0607C14.3758 12.4291 14.3405 12.878 14.6644 13.1032C14.6677 13.1054 14.6709 13.1077 14.6742 13.1099L14.6771 13.1119C14.6792 13.1133 14.6814 13.1146 14.6836 13.116C14.7223 13.1408 14.7577 13.1663 14.7901 13.1924C15.201 13.5228 15.1292 13.947 15.1292 14.3843C15.1317 14.9119 15.1216 15.437 15.1343 15.9646C15.1419 16.2791 15.1013 16.515 14.7924 16.7281C14.3519 17.0325 14.2708 17.7681 14.6886 18.0497C15.1874 18.3871 15.1267 18.8132 15.1292 19.2673C15.1317 19.8355 15.1191 20.4012 15.1343 20.9694C15.1419 21.2509 15.0735 21.4437 14.8254 21.6289C14.3578 21.9789 14.2571 22.6864 14.6892 22.9871C14.6923 22.9893 14.6955 22.9914 14.6988 22.9936C14.703 22.9964 14.7071 22.9992 14.7112 23.0021C14.7159 23.0052 14.7204 23.0084 14.725 23.0116C15.1781 23.3303 15.1317 23.717 15.1317 24.1452C15.1317 24.612 15.1267 25.0762 15.1317 25.5429C15.1368 25.9462 15.1672 26.3115 14.7266 26.588C14.3696 26.8138 14.3671 27.2602 14.5291 27.6407C14.5721 27.7419 14.6269 27.8297 14.6916 27.9036C14.8783 28.1169 15.1481 28.215 15.4583 28.1886C15.8711 28.1531 16.2863 27.9223 16.2686 27.5088C16.2455 26.9279 16.587 26.7376 16.9605 26.5296C16.9964 26.5096 17.0325 26.4895 17.0687 26.4688C17.5422 26.1974 18.0131 25.9234 18.4739 25.6292C18.7145 25.477 18.8867 25.4389 19.1728 25.6013C19.8792 26.0097 20.5983 25.5911 20.6109 24.7718C20.616 24.4725 20.7147 24.3431 20.9477 24.2163C21.5528 23.889 22.1529 23.5542 22.7403 23.1991C23.0214 23.0291 23.2341 22.9758 23.5607 23.1585C24.0874 23.4527 24.7963 23.156 24.8343 22.5776C24.8744 21.9754 25.2304 21.7821 25.6287 21.5659C25.6583 21.5499 25.6881 21.5337 25.7179 21.5173C26.1433 21.2839 26.5687 21.048 26.9814 20.7969C27.2371 20.6421 27.4372 20.599 27.7461 20.7461C28.3917 21.0531 29.0652 20.5889 29.0678 19.9015L29.0703 19.904Z"
@@ -228,7 +230,7 @@
                     fill="#6B6B6B" />
             </svg>
         </a>
-        <a href="#">
+        <a href="#" data-aos-duration="1000" data-aos="fade-right">
             <svg width="160" height="50" viewBox="0 0 160 50" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="160" height="50" fill="url(#pattern0_1209_14336)" />
@@ -242,7 +244,7 @@
                 </defs>
             </svg>
         </a>
-        <a href="https://dezh.tech/" target="_blank">
+        <a href="https://dezh.tech/" target="_blank" data-aos-duration="1000" data-aos="fade-left">
             <svg width="152" height="46" viewBox="0 0 152 46" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g style="mix-blend-mode:exclusion">
@@ -258,7 +260,7 @@
                 </defs>
             </svg>
         </a>
-        <a href="#">
+        <a href="#" data-aos-duration="1000" data-aos="fade-left">
             <svg width="105" height="43" viewBox="0 0 105 43" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="105" height="43" fill="url(#pattern0_1209_14340)" />
@@ -278,7 +280,7 @@
     <div class="mt-[6rem] md:mt-[10rem] z-10 relative">
         <div class="container mx-auto p-0 rounded-xl pt-10 bg-empower-trust relative z-0 bg-[#15161C]">
             <div class="flex flex-col items-center justify-center">
-                <h1
+                <h1 data-aos="fade-up"
                     class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] to-[#999999]">
                     Empowering Trust</h1>
                 <h1
@@ -501,7 +503,7 @@
             <ul class="menu text-base-content min-h-full w-80 pt-[80px] pl-2 bg-[#15161C]">
     <li>
     <details>
-        <summary>关于</summary>
+        <summary class="font-bold">关于</summary>
         <ul class="p-2 w-max md:shadow-top-left-to-bottom-right md:bg-[#15161C] bg-transparent">
             <li class="icon-target"><a href="http://localhost:1313//zh/about/what-is-pactus"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                 src="../icons/system-regular-76-newspaper.json" colors="primary:#fff,secondary:#fff">
@@ -517,7 +519,7 @@
 </li>
 <li>
     <details>
-        <summary>文档</summary>
+        <summary class="font-bold">文档</summary>
         <ul class="p-2 w-max grad md:shadow-top-left-to-bottom-right md:bg-[#15161C] bg-transparent">
             <li class="icon-target"><a href="https://docs.pactus.org/get-started/" target="_blank"><lord-icon class="h-[25px] md:h-[30px]" target=".icon-target" trigger="hover"
                         src="../icons/vduvxizq.json" colors="primary:#fff,secondary:#fff">
@@ -537,11 +539,11 @@
         </ul>
     </details>
 </li>
-<li><a href="http://localhost:1313//zh/blog">博客</a></li>
-<li><a href="http://localhost:1313//zh/download">下载</a></li>
+<li class="font-bold"><a href="http://localhost:1313//zh/blog">博客</a></li>
+<li class="font-bold"><a href="http://localhost:1313//zh/download">下载</a></li>
 <li>
     <details>
-        <summary>资源</summary>
+        <summary class="font-bold">资源</summary>
         <ul class="p-2 w-max md:shadow-top-left-to-bottom-right md:bg-[#15161C] bg-transparent">
             <li class="icon-target"><a href="http://localhost:1313//zh/community">社区</a></li>
             <li class="icon-target"><a href="http://localhost:1313//zh/contributing">贡献</a></li>
@@ -677,12 +679,19 @@
         class="place-self-center place-items-center w-full justify-self-center pt-5 pb-5 font-bold text-neutral-20 border-t-[1px] border-[#3E4550] text-center z-20">
         &copy; Copyright Pactus 2020-2024</nav>
 </footer>
-</body>
 
+    
 <script src="../js/main.76ff2161dac401d6e950d3165867e747b991a6ced5d91d9dadbe9640c4c931ef.js"></script>
 
-<script src="../js/swiper-bundle.min.js"></script>
 
+<script src="../js/aos.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        AOS.init();
+    });
+</script>
+<script src="../js/swiper-bundle.min.js"></script>
+    
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         function updateSwiperHeight() {
@@ -702,7 +711,7 @@
         var swiper = new Swiper(".vertical-slide-carousel", {
             loop: false,
             direction: 'vertical',
-            mousewheelControl: false,
+            mousewheelControl: true ,
             mousewheel: {
                 releaseOnEdges: false,
             },
@@ -710,6 +719,7 @@
             slidesPerView: 2,
             pagination: {
                 el: ".swiper-pagination",
+                
             },
             autoplay: {
                 delay: 5000,
@@ -732,5 +742,7 @@
     });
 
 </script>
+
+</body>
 
 </html>
