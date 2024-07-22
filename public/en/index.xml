@@ -6,7 +6,15 @@
     <description>Recent content in Home on Pactus blockchain</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <lastBuildDate>Thu, 27 Jun 2024 09:04:54 +0330</lastBuildDate>
     <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pactus 1.3.0 (Warsaw) Released</title>
+      <link>http://localhost:1313/en/blog/2024/06/27/release-1-3-0/</link>
+      <pubDate>Thu, 27 Jun 2024 09:04:54 +0330</pubDate>
+      <guid>http://localhost:1313/en/blog/2024/06/27/release-1-3-0/</guid>
+      <description>Pactus Blockchain has released Version 1.3.0 (Warsaw), available for download. This release includes the Pactus GUI for both beginners and experienced users, the Pactus Daemon CLI for experienced users, the Pactus Shell for node interaction, and the Pactus Wallet for managing transactions without syncing the entire blockchain.</description>
+    </item>
     <item>
       <title>Contributing</title>
       <link>http://localhost:1313/en/contributing/</link>
@@ -19,7 +27,7 @@
       <link>http://localhost:1313/en/download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/download/</guid>
-      <description></description>
+      <description>Download Pactus On this page you can find how to download and get the latest version of the Pactus software. 🏗️ Compile from Source Code Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from the [GitHub](https://github.com/pactus-project/pactus) repository and compile the source code. Instructions for compiling Pactus is provided on the [install](https://github.com/pactus-project/pactus/blob/main/docs/install.md) page. ⬇️ Download Stable Releases You can also download the latest stable releases of Pactus.</description>
     </item>
     <item>
       <title>FAQ</title>

@@ -1,0 +1,30 @@
+{{define "title"}}{{.Page.Title}}{{end}}
+{{define "main"}}
+<section
+    class="container mx-auto px-4 py-8 pt-[8rem] md:pt-[10rem] relative z-20 flex-grow pb-20 flex flex-col min-h-full">
+    <div class="grid lg:grid-cols-6">
+        <div class="hidden lg:grid"></div>
+        <article class="col-span-4">
+            <h1 class="md:text-4xl text-3xl font-bold text-neutral-50 text-left">{{.Title}}</h1>
+            <div class="block mt-6">
+                <span class=" text text-[#696A75] font-medium">
+                    {{ dateFormat "January 2, 2006" .Page.Date }}
+                </span>
+            </div>
+            <img src="{{.Params.image}}" alt="{{.Title}}" class="rounded-xl mt-6">
+            <article class="prose lg:prose-xl mt-14">{{.Content }}</article>
+        </article>
+        <div class="hidden lg:grid"></div>
+    </div>
+    <div class="block text-center items-center">
+        <div class="mt-20 text-center items-center w-full">
+            <div class="flex gap-x-4 justify-center" data-aos-duration="1000" data-aos="fade-up">
+                <a href="#"
+                    class="btn btn-ghost rounded-lg shadow-top-left-to-bottom-right text-neutral-50">Previus</a>
+                <a href="#"
+                    class="btn text-neutral-50 rounded-lg bg-[#217AFF] hover:bg-[#217AFF] hover:bg-opacity-80">Next</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{end}}

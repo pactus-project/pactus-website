@@ -5,6 +5,9 @@ defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
 relativeURLs = true
 
+[permalinks]
+  blog = "/blog/:year/:month/:day/:slug/"
+
 [params]
   mainCSS = "css/main.css"
   subtitle = 'Building decentralized future together!'

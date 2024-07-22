@@ -27,7 +27,8 @@
             </svg>
         </div>
     </div>
-    <div class="mt-20">
+    <article class="prose lg:prose-xl">{{.Content }}</article>
+    <!-- <div class="mt-20">
         <h1 class="text-2xl text-neutral-50 font-medium text-left">🏗️ {{T "dict.download.compile_from_source_code"}}</h1>
         <p class="mt-10 text-lg">{{T "dict.download.project_pactus_is_distributed"}}</p>
         <p class="mt-10 text-lg">{{T "dict.dict.download.instructions_for_compiling"}}</p>
@@ -126,7 +127,7 @@
         <h1 class="text-2xl text-neutral-50 font-medium text-left">🐳 {{T "dict.download.docker"}}</h1>
         <p class="mt-10 text-lg">{{T "dict.download.docker_desc"}}</p>
         <p class="text-lg">{{T "dict.download.docker_after_download" }} [{{ T "dict.guide.run_pactus_docker" }}](https://docs.pactus.org/get-started/pactus-docker)</p>
-    </div>
+    </div> -->
 </section>
 {{end}}
 {{define "page_script"}}
