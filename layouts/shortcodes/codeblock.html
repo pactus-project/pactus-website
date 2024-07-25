@@ -1,0 +1,8 @@
+{{- $prefix := .Get 0 -}}
+<div class="relative group mockup-code">
+    <pre data-prefix="{{$prefix}}" class="!py-0 !my-0" style="padding-top: 0!important;padding-bottom: 0!important;margin: 3px;"><code>{{ .Inner | safeHTML }}</code></pre>
+    <button
+        class="absolute top-2 right-2 bg-gray-800 text-white p-1 rounded opacity-0 group-hover:opacity-100 copy-button">
+        Copy
+    </button>
+</div>

@@ -22,7 +22,30 @@
     text-align: -webkit-right;
   }
 
+  .prose h2:hover .group-hover\:opacity-100,
+  .prose h3:hover .group-hover\:opacity-100,
+  .prose h4:hover .group-hover\:opacity-100,
+  .prose h5:hover .group-hover\:opacity-100,
+  .prose h6:hover .group-hover\:opacity-100 {
+    opacity: 1;
+  }
+
+  /* Adjust icon size for different heading levels */
+  .prose h2 .group-hover\:opacity-100 svg {
+    @apply w-6 h-6;
+  }
+
+  .prose h3 .group-hover\:opacity-100 svg,
+  .prose h4 .group-hover\:opacity-100 svg {
+    @apply w-5 h-5;
+  }
+
+  .prose h5 .group-hover\:opacity-100 svg,
+  .prose h6 .group-hover\:opacity-100 svg {
+    @apply w-4 h-4;
+  }
 }
+
 
 .swiper-wrapper {
   width: 100%;

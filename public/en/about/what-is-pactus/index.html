@@ -455,8 +455,58 @@
 
     <script src="../../../js/jquery.min.js"></script>
 
-<script src="../../../js/main.76ff2161dac401d6e950d3165867e747b991a6ced5d91d9dadbe9640c4c931ef.js"></script>
+<script src="../../../js/main.9609b39f79308b4a9e9697cec5b4c45083d0219dd8c14009ca0c828792878add.js"></script>
 
+
+<script>
+  $(document).ready(function () {
+    $('.prose h2, .prose h3, .prose h4, .prose h5, .prose h6').each(function () {
+      var $header = $(this);
+      var id = $header.attr('id');
+
+      if (id) {
+        var $link = $('<a>', {
+          href: '#' + id,
+          class: 'ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200',
+          'aria-label': 'Link to this section'
+        }).append(
+          $('<svg>', {
+            xmlns: "http://www.w3.org/2000/svg",
+            fill: "none",
+            viewBox: "0 0 24 24",
+            'stroke-width': "1.5",
+            stroke: "currentColor",
+            class: "w-5 h-5"
+          }).append(
+            $('<path>', {
+              'stroke-linecap': "round",
+              'stroke-linejoin': "round",
+              d: "M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+            })
+          )
+        );
+
+        $header.append($link);
+        $header.addClass('group flex items-center');
+      }
+    });
+
+    $('.prose a[href^="#"]').on('click', function (event) {
+      event.preventDefault();
+
+      var target = $(this.getAttribute('href'));
+
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - 100 
+        }, 500); 
+
+        
+        history.pushState(null, null, this.getAttribute('href'));
+      }
+    });
+  });
+</script>
 
 
 <script src="../../../js/mathjax.js"></script>

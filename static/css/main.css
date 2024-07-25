@@ -3390,6 +3390,28 @@ html:has(.drawer-toggle:checked) {
 .faq-btn-parent:has(input:checked) {
     background-image: none !important;
   }
+.prose h2:hover .group-hover\:opacity-100,
+  .prose h3:hover .group-hover\:opacity-100,
+  .prose h4:hover .group-hover\:opacity-100,
+  .prose h5:hover .group-hover\:opacity-100,
+  .prose h6:hover .group-hover\:opacity-100 {
+    opacity: 1;
+  }
+/* Adjust icon size for different heading levels */
+.prose h2 .group-hover\:opacity-100 svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.prose h3 .group-hover\:opacity-100 svg,
+  .prose h4 .group-hover\:opacity-100 svg {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.prose h5 .group-hover\:opacity-100 svg,
+  .prose h6 .group-hover\:opacity-100 svg {
+  height: 1rem;
+  width: 1rem;
+}
 .collapse {
   visibility: collapse;
 }
@@ -3432,6 +3454,9 @@ html:has(.drawer-toggle:checked) {
 .right-10 {
   right: 2.5rem;
 }
+.right-2 {
+  right: 0.5rem;
+}
 .right-5 {
   right: 1.25rem;
 }
@@ -3440,6 +3465,9 @@ html:has(.drawer-toggle:checked) {
 }
 .top-0 {
   top: 0px;
+}
+.top-2 {
+  top: 0.5rem;
 }
 .top-7 {
   top: 1.75rem;
@@ -3484,11 +3512,18 @@ html:has(.drawer-toggle:checked) {
   margin-left: auto;
   margin-right: auto;
 }
+.\!my-0 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
 .ml-1 {
   margin-left: 0.25rem;
 }
 .ml-12 {
   margin-left: 3rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
 }
 .ml-3 {
   margin-left: 0.75rem;
@@ -3577,6 +3612,9 @@ html:has(.drawer-toggle:checked) {
 .h-4 {
   height: 1rem;
 }
+.h-5 {
+  height: 1.25rem;
+}
 .h-\[25px\] {
   height: 25px;
 }
@@ -3609,6 +3647,9 @@ html:has(.drawer-toggle:checked) {
 }
 .w-4 {
   width: 1rem;
+}
+.w-5 {
+  width: 1.25rem;
 }
 .w-6 {
   width: 1.5rem;
@@ -3762,6 +3803,9 @@ html:has(.drawer-toggle:checked) {
 .\!rounded-xl {
   border-radius: 0.75rem !important;
 }
+.rounded {
+  border-radius: 0.25rem;
+}
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -3859,12 +3903,6 @@ html:has(.drawer-toggle:checked) {
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
-.bg-\[url\(\"http\:\/\/localhost\:1313\/images\/warsal\.png\"\)\] {
-  background-image: url("http://localhost:1313/images/warsal.png");
-}
-.bg-\[url\(\"\"\)\] {
-  background-image: url("");
-}
 .from-\[\#5670CE\] {
   --tw-gradient-from: #5670CE var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(86 112 206 / 0) var(--tw-gradient-to-position);
@@ -3915,17 +3953,31 @@ html:has(.drawer-toggle:checked) {
 .p-0 {
   padding: 0px;
 }
+.p-1 {
+  padding: 0.25rem;
+}
 .p-10 {
   padding: 2.5rem;
 }
 .p-2 {
   padding: 0.5rem;
 }
+.p-4 {
+  padding: 1rem;
+}
 .p-5 {
   padding: 1.25rem;
 }
 .p-px {
   padding: 1px;
+}
+.\!px-10 {
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+}
+.\!px-8 {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 .px-1 {
   padding-left: 0.25rem;
@@ -3950,6 +4002,14 @@ html:has(.drawer-toggle:checked) {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.\!py-0 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 .pb-20 {
   padding-bottom: 5rem;
@@ -4081,6 +4141,9 @@ html:has(.drawer-toggle:checked) {
 .text-transparent {
   color: transparent;
 }
+.opacity-0 {
+  opacity: 0;
+}
 .opacity-70 {
   opacity: 0.7;
 }
@@ -4116,10 +4179,19 @@ html:has(.drawer-toggle:checked) {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .delay-75 {
   transition-delay: 75ms;
 }
+.duration-200 {
+  transition-duration: 200ms;
+}
 @tailwind typography;
+
 
 .swiper-wrapper {
   width: 100%;
@@ -4568,6 +4640,9 @@ html:has(.drawer-toggle:checked) {
 }
 .group:hover .group-hover\:to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
+}
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
 }
 .peer:checked ~ .peer-checked\:block {
   display: block;

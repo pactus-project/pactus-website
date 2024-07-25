@@ -5,12 +5,11 @@ layout = 'download'
 type = 'download'
 +++
 
-# {{<translate "dict.download_pactus" >}}
 {{<translate "dict.download.welcome">}}
 
 ---
 
-<h2 id="build">🏗️ {{<translate "dict.download.compile_from_source_code">}}</h2>
+<h2 id="build ">🏗️ {{<translate "dict.download.compile_from_source_code">}}</h2>
 
 {{<translate "dict.download.project_pactus_is_distributed">}}
 
@@ -21,6 +20,9 @@ type = 'download'
 <h2 id="binary">⬇️ {{<translate "dict.download.stable_releases">}}</h2>
 
 {{<translate "dict.download.stable_releases_desc">}}
+
+
+{{<download_links>}}
 
 <h3 id="gui">{{<translate "dict.download.pactus_gui">}}</h3>
 
