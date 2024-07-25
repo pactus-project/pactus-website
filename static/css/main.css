@@ -3535,6 +3535,9 @@ html:has(.drawer-toggle:checked) {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mt-8 {
+  margin-top: 2rem;
+}
 .mt-\[150px\] {
   margin-top: 150px;
 }
@@ -3552,9 +3555,6 @@ html:has(.drawer-toggle:checked) {
 }
 .mt-px {
   margin-top: 1px;
-}
-.mt-8 {
-  margin-top: 2rem;
 }
 .block {
   display: block;
@@ -3840,10 +3840,6 @@ html:has(.drawer-toggle:checked) {
   --tw-bg-opacity: 1;
   background-color: rgb(43 43 75 / var(--tw-bg-opacity));
 }
-.bg-\[\#4B6BFB\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 107 251 / var(--tw-bg-opacity));
-}
 .bg-\[\#fff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -3854,9 +3850,6 @@ html:has(.drawer-toggle:checked) {
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
 }
-.bg-\[url\(\'\/images\/blog\.png\'\)\] {
-  background-image: url('/images/blog.png');
-}
 .bg-empower-trust {
   background-image: url('/images/bg-empowering-trust.svg');
 }
@@ -3866,14 +3859,11 @@ html:has(.drawer-toggle:checked) {
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
-.bg-\[url\(\'\{\{\}\}\'\)\] {
-  background-image: url('{{}}');
+.bg-\[url\(\"http\:\/\/localhost\:1313\/images\/warsal\.png\"\)\] {
+  background-image: url("http://localhost:1313/images/warsal.png");
 }
-.bg-\[url\(\'\{\{\$latestPost\.Params\.\}\}\'\)\] {
-  background-image: url('{{$latestPost.Params.}}');
-}
-.bg-\[url\(\'\{\{\$latestPost\.Params\.image\}\}\'\)\] {
-  background-image: url('{{$latestPost.Params.image}}');
+.bg-\[url\(\"\"\)\] {
+  background-image: url("");
 }
 .from-\[\#5670CE\] {
   --tw-gradient-from: #5670CE var(--tw-gradient-from-position);
@@ -3961,9 +3951,6 @@ html:has(.drawer-toggle:checked) {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -3990,9 +3977,6 @@ html:has(.drawer-toggle:checked) {
 }
 .pt-10 {
   padding-top: 2.5rem;
-}
-.pt-2 {
-  padding-top: 0.5rem;
 }
 .pt-20 {
   padding-top: 5rem;

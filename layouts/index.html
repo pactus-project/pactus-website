@@ -4,12 +4,14 @@
 <section class="z-10 relative" style="position: relative;">
     <div class="text-center px-5 md:px-0 z-20 pt-[10rem] md:pt-[15rem] bg-transparent">
         <h1 data-aos-duration="1000"
-            class="font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999]" data-aos="zoom-in">
+            class="font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999]"
+            data-aos="zoom-in">
             Welcome to Pactus</h1>
         <h1 data-aos="zoom-in" data-aos-duration="1500"
             class="mt-4 font-bold text-2xl md:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-[#5670CE] to-[#31ABC6]">
             Where Community Builds Trust!</h1>
-        <h1 data-aos="zoom-in" data-aos-duration="2000" class="mt-14 font-bold md:text-lg text-neutral-50">Pactus is a community-run blockchain technology with
+        <h1 data-aos="zoom-in" data-aos-duration="2000" class="mt-14 font-bold md:text-lg text-neutral-50">Pactus is a
+            community-run blockchain technology with
             a<br class="hidden md:block"> revolutionary, secure, Solid State Proof of Stake Consensus.<br
                 class="hidden md:block"> Come join us and build a
             decentralized future together!</h1>
@@ -17,7 +19,7 @@
     <div class="mt-10 text-center items-center w-full">
         <div class="flex gap-x-2 justify-center" data-aos-duration="1000" data-aos="fade-up">
             <a href="https://docs.pactus.org/get-started/become-a-validator"
-                class="btn text-neutral-50 rounded-lg bg-[#217AFF] hover:bg-[#217AFF] hover:bg-opacity-80" >Become a
+                class="btn text-neutral-50 rounded-lg bg-[#217AFF] hover:bg-[#217AFF] hover:bg-opacity-80">Become a
                 validator</a>
             <a href="{{ .Site.BaseURL }}/{{.Site.LanguageCode}}/community"
                 class="btn btn-ghost rounded-lg shadow-top-left-to-bottom-right text-neutral-50">Join Community</a>
@@ -28,16 +30,16 @@
     <div class="mt-[6rem] md:mt-[10rem] z-10 relative">
         <div class="container mx-auto p-0 rounded-xl pt-10 bg-empower-trust relative z-0 bg-[#15161C]">
             <div class="flex flex-col items-center justify-center">
-                <h1 data-aos="fade-in " data-aos-duration="1000"
+                <h1
                     class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] to-[#999999]">
                     Empowering Trust</h1>
-                <h1 data-aos="fade-in " data-aos-duration="1000"
+                <h1
                     class="font-extralight text-3xl md:text-5xl text-transparent bg-clip-text mt-4 bg-gradient-to-b from-[#FFFFFF] to-[#999999]">
                     One Block at a Time</h1>
             </div>
             <div class="mt-10 grid grid-cols-1 md:grid-cols-2 pb-20">
                 <div class="block md:border-r-2 md:border-[#9C9C9C] md:pr-20">
-                    <div data-aos="flip-down" data-aos-duration="1000"
+                    <div
                         class="p-5 py-10 bg-[#0B0B0F] md:shadow-get-pac md:drop-shadow-lg md:rounded-tr-2xl md:rounded-br-2xl mt-5 text-center md:text-left md:pl-28">
                         <h1 class="text-[#0F6CBD] font-bold text-3xl">Get PAC</h1>
                         <p class="mt-5 text-neutral-50">
@@ -47,16 +49,18 @@
                         </p>
                     </div>
                     <div class="mt-14 md:pl-24 text-center md:text-left">
-                        <a href="https://docs.pactus.org/get-started/become-a-validator" target="_blank" data-aos="fade-right" data-aos-duration="1000"
+                        <a href="https://docs.pactus.org/get-started/become-a-validator" target="_blank"
+                            data-aos="fade-right" data-aos-duration="1000"
                             class="btn btn-ghost text-xl md:text-2xl text-neutral-50 font-medium">Become a Validator</a>
                     </div>
                     <div class="mt-14 md:pl-24 text-center md:text-left">
-                        <a href="{{ .Site.BaseURL }}/{{.Site.LanguageCode}}/contributing" data-aos="fade-left" data-aos-duration="1000"
+                        <a href="{{ .Site.BaseURL }}/{{.Site.LanguageCode}}/contributing" data-aos="fade-left"
+                            data-aos-duration="1000"
                             class="btn btn-ghost text-xl md:text-2xl text-neutral-50 font-medium">Make Pactus Better</a>
                     </div>
                 </div>
                 <div class="text-center justify-self-center hidden md:block">
-                    <img class=" items-center relative md:bottom-8" src="/images/empower-trust.svg" alt="" data-aos="fade-left" data-aos-duration="1000"> 
+                    <img class=" items-center relative md:bottom-8" src="/images/empower-trust.svg" alt="">
                 </div>
             </div>
         </div>
@@ -66,148 +70,29 @@
     <div class="mt-[6rem] md:mt-[10rem]">
 
         <div class="container mx-auto">
-            <h1 data-aos="fade-right" data-aos-duration="1000" class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999] self-center">
+            <h1
+                class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999] self-center">
                 NewsRoom</h1>
             <div class="mt-20">
                 <div class="w-full relative overflow-hidden md:px-10">
                     <div class="swiper vertical-slide-carousel swiper-container relative" id="mySwiper">
                         <div class="swiper-wrapper">
+                            {{ range first 10 (where .Site.RegularPages "Type" "blog") }}
                             <div class="swiper-slide">
                                 <div class="container mx-auto">
                                     <div class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                                        <h1 class="text-2xl font-bold text-neutral-50">Get PAC</h1>
-                                        <h6 class="font-medium text-sm">06 July 2024</h6>
-                                        <p class="mt-5 text-neutral-50">Before you can utilize all that Pactus has to
-                                            offer, you will
-                                            need
-                                            to obtain our native coin. PAC is a currency that can be exchanged for
-                                            products, services
-                                            and
-                                            other currencies with a percentage fee based model of 0.01% per tx...</p>
-                                        <br><br>
-                                        <a href="#" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read More</a>
+                                        <h1 class="text-2xl font-bold text-neutral-50">{{.Title}}</h1>
+                                        <h6 class="font-medium text-sm mt-2">{{ .Date.Format "January 2, 2006" }}</h6>
+                                        <p class="mt-5 text-neutral-50">
+                                            {{ $summary := .Summary | plainify | truncate 300 " ..." }}
+                                            {{ $summary }}
+                                            <br><br>
+                                            <a href="{{.Permalink}}" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read
+                                                More</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="container mx-auto">
-                                    <div class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                                        <h1 class="text-2xl font-bold text-neutral-50">Get PAC</h1>
-                                        <h6 class="font-medium text-sm">06 July 2024</h6>
-                                        <p class="mt-5 text-neutral-50">Before you can utilize all that Pactus has to
-                                            offer, you will
-                                            need
-                                            to obtain our native coin. PAC is a currency that can be exchanged for
-                                            products, services
-                                            and
-                                            other currencies with a percentage fee based model of 0.01% per tx...</p>
-                                        <br><br>
-                                        <a href="#" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="container mx-auto">
-                                    <div class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                                        <h1 class="text-2xl font-bold text-neutral-50">Get PAC</h1>
-                                        <h6 class="font-medium text-sm">06 July 2024</h6>
-                                        <p class="mt-5 text-neutral-50">Before you can utilize all that Pactus has to
-                                            offer, you will
-                                            need
-                                            to obtain our native coin. PAC is a currency that can be exchanged for
-                                            products, services
-                                            and
-                                            other currencies with a percentage fee based model of 0.01% per tx...</p>
-                                        <br><br>
-                                        <a href="#" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="container mx-auto">
-                                    <div class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                                        <h1 class="text-2xl font-bold text-neutral-50">Get PAC</h1>
-                                        <h6 class="font-medium text-sm">06 July 2024</h6>
-                                        <p class="mt-5 text-neutral-50">Before you can utilize all that Pactus has to
-                                            offer, you will
-                                            need
-                                            to obtain our native coin. PAC is a currency that can be exchanged for
-                                            products, services
-                                            and
-                                            other currencies with a percentage fee based model of 0.01% per tx...</p>
-                                        <br><br>
-                                        <a href="#" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="container mx-auto">
-                                    <div class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                                        <h1 class="text-2xl font-bold text-neutral-50">Get PAC</h1>
-                                        <h6 class="font-medium text-sm">06 July 2024</h6>
-                                        <p class="mt-5 text-neutral-50">Before you can utilize all that Pactus has to
-                                            offer, you will
-                                            need
-                                            to obtain our native coin. PAC is a currency that can be exchanged for
-                                            products, services
-                                            and
-                                            other currencies with a percentage fee based model of 0.01% per tx...</p>
-                                        <br><br>
-                                        <a href="#" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="container mx-auto">
-                                    <div class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                                        <h1 class="text-2xl font-bold text-neutral-50">Get PAC</h1>
-                                        <h6 class="font-medium text-sm">06 July 2024</h6>
-                                        <p class="mt-5 text-neutral-50">Before you can utilize all that Pactus has to
-                                            offer, you will
-                                            need
-                                            to obtain our native coin. PAC is a currency that can be exchanged for
-                                            products, services
-                                            and
-                                            other currencies with a percentage fee based model of 0.01% per tx...</p>
-                                        <br><br>
-                                        <a href="#" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="container mx-auto">
-                                    <div class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                                        <h1 class="text-2xl font-bold text-neutral-50">Get PAC</h1>
-                                        <h6 class="font-medium text-sm">06 July 2024</h6>
-                                        <p class="mt-5 text-neutral-50">Before you can utilize all that Pactus has to
-                                            offer, you will
-                                            need
-                                            to obtain our native coin. PAC is a currency that can be exchanged for
-                                            products, services
-                                            and
-                                            other currencies with a percentage fee based model of 0.01% per tx...</p>
-                                        <br><br>
-                                        <a href="#" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="container mx-auto">
-                                    <div class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                                        <h1 class="text-2xl font-bold text-neutral-50">Get PAC</h1>
-                                        <h6 class="font-medium text-sm">06 July 2024</h6>
-                                        <p class="mt-5 text-neutral-50">Before you can utilize all that Pactus has to
-                                            offer, you will
-                                            need
-                                            to obtain our native coin. PAC is a currency that can be exchanged for
-                                            products, services
-                                            and
-                                            other currencies with a percentage fee based model of 0.01% per tx...</p>
-                                        <br><br>
-                                        <a href="#" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
+                            {{end}}
                         </div>
                     </div>
                     <div class="swiper-pagination !right-10 !left-full !top-1/3 !translate-y-8"></div>
@@ -216,8 +101,9 @@
         </div>
     </div>
     <div class="mt-[6rem] md:mt-[10rem] text-center">
-        <svg  viewBox="0 0 954 954" fill="none" xmlns="http://www.w3.org/2000/svg"
-            class="absolute max-w-full max-h-full m-auto left-0 right-0 -z-10 w-full" style="height: -webkit-fill-available;">
+        <svg viewBox="0 0 954 954" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="absolute max-w-full max-h-full m-auto left-0 right-0 -z-10 w-full"
+            style="height: -webkit-fill-available;">
             <circle cx="477" cy="477" r="477" fill="url(#paint0_radial_1812_11454)" fill-opacity="0.15" />
             <defs>
                 <radialGradient id="paint0_radial_1812_11454" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
@@ -231,13 +117,16 @@
             class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999] self-center">
             Join Our Community</h1>
         <div class="mt-5 w-full text-center" style="text-align: -webkit-center;">
-            <div class="container mx-auto md:px-40 w-full absolute right-10 text-right lg:mt-16 mt-5 mr-5 lg:mr-0" style="text-align: -webkit-right;">
+            <div class="container mx-auto md:px-40 w-full absolute right-10 text-right lg:mt-16 mt-5 mr-5 lg:mr-0"
+                style="text-align: -webkit-right;">
                 <img src="/images/star.svg" alt="" class="w-10 lg:w-20">
             </div>
-            <div class="container mx-auto px-20 md:px-40 w-full absolute right-10 text-right lg:mt-[450px] mt-[150px] mr-12 md:mr-56" style="text-align: -webkit-right;">
+            <div class="container mx-auto px-20 md:px-40 w-full absolute right-10 text-right lg:mt-[450px] mt-[150px] mr-12 md:mr-56"
+                style="text-align: -webkit-right;">
                 <img src="/images/star.svg" alt="" class="w-6 lg:w-16">
             </div>
-            <div class="container mx-auto px-20 md:px-40 w-full absolute right-10 text-left lg:mt-[40rem] md:mt-[400px] mt-[150px] ml-12 lg:ml-20" style="text-align: -webkit-left;">
+            <div class="container mx-auto px-20 md:px-40 w-full absolute right-10 text-left lg:mt-[40rem] md:mt-[400px] mt-[150px] ml-12 lg:ml-20"
+                style="text-align: -webkit-left;">
                 <img src="/images/pactus-robot.svg" alt="" class="w-20 lg:w-40">
             </div>
             <img class="w-full" src="/images/map-ezgif.com-optimize.gif" alt="">
@@ -265,7 +154,7 @@
         var swiper = new Swiper(".vertical-slide-carousel", {
             loop: false,
             direction: 'vertical',
-            mousewheelControl: true ,
+            mousewheelControl: true,
             mousewheel: {
                 releaseOnEdges: false,
             },

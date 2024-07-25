@@ -3,8 +3,8 @@
 <section
     class="container mx-auto px-4 py-8 pt-[8rem] md:pt-[10rem] relative z-20 flex-grow pb-20 flex flex-col min-h-full">
     {{ $latestPost := index (.Pages.ByDate.Reverse) 0 }}
-    <div class="relative w-full min-h-[300px] h-auto rounded-xl block fill-neutral-content">
-        <div class="absolute inset-0 bg-[url('{{$latestPost.Params.image}}')] bg-cover bg-top bg-no-repeat rounded-xl"></div>
+    <a href="{{$latestPost.Permalink}}" class="relative w-full min-h-[300px] h-auto rounded-xl block fill-neutral-content">
+        <div class='absolute inset-0 bg-cover bg-top bg-no-repeat rounded-xl' style="background-image: url('{{ $latestPost.Params.image | absURL }}');"></div>
         <div class="absolute inset-0 bg-[#000] bg-opacity-40 rounded-xl"></div>
         <div class="relative z-10 md:p-10 p-5">
             <div class="mt-20 block">
@@ -27,7 +27,7 @@
             </div>
 
         </div>
-    </div>
+    </a>
     <div class="mt-10">
         <h1 class="text-neutral-50 font-bold text-xl">Latest Posts</h1>
         <div class="mt-5 grid grid-flow-row grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4">

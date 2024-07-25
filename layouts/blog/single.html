@@ -19,10 +19,24 @@
     <div class="block text-center items-center">
         <div class="mt-20 text-center items-center w-full">
             <div class="flex gap-x-4 justify-center" data-aos-duration="1000" data-aos="fade-up">
-                <a href="#"
-                    class="btn btn-ghost rounded-lg shadow-top-left-to-bottom-right text-neutral-50">Previus</a>
-                <a href="#"
-                    class="btn text-neutral-50 rounded-lg bg-[#217AFF] hover:bg-[#217AFF] hover:bg-opacity-80">Next</a>
+                {{if .PrevInSection}}
+                <a href="{{.PrevInSection.Permalink}}"
+                    class="btn btn-ghost rounded-lg shadow-top-left-to-bottom-right text-neutral-50"
+                    rel="prev">Previus</a>
+                {{else}}
+                <a
+                    class="btn-disabled btn btn-ghost rounded-lg shadow-top-left-to-bottom-right text-neutral-50">Previus</a>
+                {{end}}
+                {{if .NextInSection}}
+                <a href="{{.NextInSection.Permalink}}"
+                    class="btn text-neutral-50 rounded-lg bg-[#217AFF] hover:bg-[#217AFF] hover:bg-opacity-80"
+                    rel="next">Next</a>
+                {{else}}
+                <a 
+                    class="btn btn-disabled text-neutral-50 rounded-lg bg-[#217AFF] hover:bg-[#217AFF] hover:bg-opacity-80"
+                    rel="next">Next</a>
+
+                {{end}}
             </div>
         </div>
     </div>
