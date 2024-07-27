@@ -3412,6 +3412,22 @@ html:has(.drawer-toggle:checked) {
   height: 1rem;
   width: 1rem;
 }
+.prose {
+    max-width: unset !important;
+  }
+.prose hr {
+  margin-top: 1rem;
+}
+.prose pre {
+    background-color: #000 !important;
+    color: #f9fafb;
+    border: 1px solid #747474 !important;
+    border-radius: 1rem;
+  }
+.prose code {
+    background-color: inherit;
+    color: inherit;
+  }
 .collapse {
   visibility: collapse;
 }
@@ -3508,13 +3524,13 @@ html:has(.drawer-toggle:checked) {
 .m-auto {
   margin: auto;
 }
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
 .\!my-0 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .ml-1 {
   margin-left: 0.25rem;
@@ -3962,9 +3978,6 @@ html:has(.drawer-toggle:checked) {
 .p-2 {
   padding: 0.5rem;
 }
-.p-4 {
-  padding: 1rem;
-}
 .p-5 {
   padding: 1.25rem;
 }
@@ -3978,6 +3991,10 @@ html:has(.drawer-toggle:checked) {
 .\!px-8 {
   padding-left: 2rem !important;
   padding-right: 2rem !important;
+}
+.\!py-0 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 .px-1 {
   padding-left: 0.25rem;
@@ -4002,14 +4019,6 @@ html:has(.drawer-toggle:checked) {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-.\!py-0 {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
 }
 .pb-20 {
   padding-bottom: 5rem;
@@ -4885,6 +4894,18 @@ html:has(.drawer-toggle:checked) {
 
   .lg\:mt-\[450px\] {
     margin-top: 450px;
+  }
+
+  .lg\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .lg\:mt-\[\] {
+    margin-top: ;
+  }
+
+  .lg\:mt-\[76px\] {
+    margin-top: 76px;
   }
 
   .lg\:flex {

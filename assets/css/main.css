@@ -44,6 +44,26 @@
   .prose h6 .group-hover\:opacity-100 svg {
     @apply w-4 h-4;
   }
+
+  .prose {
+    max-width: unset !important;
+  }
+
+  .prose hr {
+    @apply mt-4
+  }
+
+  .prose pre {
+    background-color: #000 !important;
+    color: #f9fafb;
+    border: 1px solid #747474 !important;
+    border-radius: 1rem;
+  }
+
+  .prose code {
+    background-color: inherit;
+    color: inherit;
+  }
 }
 
 

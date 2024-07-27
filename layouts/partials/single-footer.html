@@ -3,19 +3,19 @@
         <nav class="self-center ">
             <ul class="grid grid-cols-2 md:grid-cols-5 gap-y-4 justify-center pt-5 pb-5 font-bold">
                 <li class="pr-5">
-                    <a href="#" class="text-neutral-20 hover:text-primary-20 link link-hover">About Us</a>
+                    <a href="{{ .Site.BaseURL }}/{{.Site.LanguageCode}}/about/what-is-pactus" class="text-neutral-20 hover:text-primary-20 link link-hover">{{T "dict.what_is.title"}}</a>
                 </li>
                 <li class="pr-5">
-                    <a href="#" class="text-neutral-20 hover:text-primary-20 link link-hover">Roadmap</a>
+                    <a href="{{ .Site.BaseURL }}/{{.Site.LanguageCode}}/about/roadmap" class="text-neutral-20 hover:text-primary-20 link link-hover">{{T "dict.roadmap.title"}}</a>
                 </li>
                 <li class="pr-5">
-                    <a href="//download" class="text-neutral-20 hover:text-primary-20 link link-hover">Download</a>
+                    <a href="{{ .Site.BaseURL }}/{{.Site.LanguageCode}}/download" class="text-neutral-20 hover:text-primary-20 link link-hover">{{T "dict.download.title"}}</a>
                 </li>
                 <li class="pr-5">
-                    <a href="#" class="text-neutral-20 hover:text-primary-20 link link-hover">Learn</a>
+                    <a href="https://docs.pactus.org" target="_blank" class="text-neutral-20 hover:text-primary-20 link link-hover">{{T "dict.documentation"}}</a>
                 </li>
                 <li class="pr-5">
-                    <a href="#" class="text-neutral-20 hover:text-primary-20 link link-hover">FAQs</a>
+                    <a href="{{ .Site.BaseURL }}/{{.Site.LanguageCode}}/about/faq" class="text-neutral-20 hover:text-primary-20 link link-hover">{{T "dict.faq.title"}}</a>
                 </li>
             </ul>
         </nav>

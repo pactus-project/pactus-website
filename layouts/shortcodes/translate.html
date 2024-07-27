@@ -1,2 +1,2 @@
 {{- $key := .Get 0 -}}
-{{- T $key -}}
+{{- T $key | markdownify | safeHTML -}}

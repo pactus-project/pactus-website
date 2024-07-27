@@ -1,0 +1,93 @@
+<div class="mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div class="p-5 border border-neutral-400 rounded-xl cursor-pointer"
+            id="gui-btn">
+            <h3 class="font-bold text-neutral-50">{{T "dict.download.pactus_gui"}}</h3>
+            <p class="mt-5 text-neutral-50">{{T "dict.download.download_gui"}}</p>
+            <div class="w-full text-center" style="text-align: -webkit-center;">
+                <img src="/images/pactus-gui.png" class="mt-5 w-full" alt="">
+            </div>
+        </div>
+        <div class="p-5 border border-neutral-400 rounded-xl hover:bg-[#000] cursor-pointer" id="cli-btn">
+            <h3 class="font-bold text-neutral-50">{{T "dict.download.pactus_cli"}}</h3>
+            <p class="mt-5 text-neutral-50">{{T "dict.download.download_cli"}}</p>
+            <div class="w-full text-center" style="text-align: -webkit-center;">
+                <img src="/images/pactus-cli.png" class="lg:mt-[76px] mt-5 w-full" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14">
+        <div>
+            <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+                <div
+                    class="md:text-lg w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center h-[64px]">
+                    Windows</div>
+            </div>
+            <div class="flex mt-5 items-center">
+                <span class="text-neutral-50 text-bold">.zip</span>
+                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64</a>
+            </div>
+            <div class="flex mt-5 items-center">
+                <span class="text-neutral-50 text-bold">.exe</span>
+                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64_installer</a>
+            </div>
+        </div>
+        <div>
+            <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+                <button
+                    class="btn md:btn-lg md:text-lg w-full h-full rounded-xl no-animation bg-[#141B25] text-neutral-50">Windows</button>
+            </div>
+            <div class="flex mt-5 items-center">
+                <span class="text-neutral-50 text-bold">.zip</span>
+                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64</a>
+            </div>
+            <div class="flex mt-5 items-center">
+                <span class="text-neutral-50 text-bold">.exe</span>
+                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64_installer</a>
+            </div>
+        </div>
+        <div>
+            <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+                <button
+                    class="btn md:btn-lg md:text-lg w-full h-full rounded-xl no-animation bg-[#141B25] text-neutral-50">Windows</button>
+            </div>
+            <div class="flex mt-5 items-center">
+                <span class="text-neutral-50 text-bold">.zip</span>
+                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64</a>
+            </div>
+            <div class="flex mt-5 items-center">
+                <span class="text-neutral-50 text-bold">.exe</span>
+                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64_installer</a>
+            </div>
+        </div>
+        <div>
+            <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+                <button
+                    class="btn md:btn-lg md:text-lg w-full h-full rounded-xl no-animation bg-[#141B25] text-neutral-50">Windows</button>
+            </div>
+            <div class="flex mt-5 items-center">
+                <span class="text-neutral-50 text-bold">.zip</span>
+                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64</a>
+            </div>
+            <div class="flex mt-5 items-center">
+                <span class="text-neutral-50 text-bold">.exe</span>
+                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64_installer</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        const selectedClassess = `bg-[#2b2b4b] hover:bg-[#2b2b4b]`
+        const notSelectedClasses = `hover:bg-[#000]`
+        $("#gui-btn").addClass(selectedClassess)
+        $('#gui-btn').click(function () {
+            window.location.href = '/download/gui';
+        });
+        $('#cli-btn').click(function () {
+            window.location.href = '/download/cli';
+        });
+    });
+</script>
