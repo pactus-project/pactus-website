@@ -2,7 +2,7 @@ gui:
   os:
     - windows:
       title: Windows 
-      icon: "svg icon"
+      icon: "icon"
       kind:
         - zip:
           format: .zip
@@ -20,7 +20,7 @@ gui:
               link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
     - macos:
       title: MacOS 
-      icon: "svg icon"
+      icon: "icon"
       kind:
         - zip:
           format: .zip
@@ -38,7 +38,7 @@ gui:
               link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
     - linux:
       title: Linux 
-      icon: "svg icon"
+      icon: "icon"
       kind:
         - zip:
           format: .zip
@@ -76,7 +76,7 @@ cli:
   os:
     - windows:
       title: Windows 
-      icon: "svg icon"
+      icon: "icon"
       kind:
         - zip:
           format: .zip
@@ -94,7 +94,7 @@ cli:
               link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
     - macos:
       title: MacOS 
-      icon: "svg icon"
+      icon: "icon"
       kind:
         - zip:
           format: .zip

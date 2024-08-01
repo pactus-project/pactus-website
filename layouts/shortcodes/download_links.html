@@ -1,7 +1,6 @@
 <div class="mt-10">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <div class="p-5 border border-neutral-400 rounded-xl cursor-pointer"
-            id="gui-btn">
+        <div class="p-5 border border-neutral-400 rounded-xl cursor-pointer" id="gui-btn">
             <h3 class="font-bold text-neutral-50">{{T "dict.download.pactus_gui"}}</h3>
             <p class="mt-5 text-neutral-50">{{T "dict.download.download_gui"}}</p>
             <div class="w-full text-center" style="text-align: -webkit-center;">
@@ -80,14 +79,37 @@
 </div>
 <script>
     $(document).ready(function () {
-        const selectedClassess = `bg-[#2b2b4b] hover:bg-[#2b2b4b]`
-        const notSelectedClasses = `hover:bg-[#000]`
-        $("#gui-btn").addClass(selectedClassess)
+
+        const selectedClasses = `bg-[#2b2b4b]`;
+        const notSelectedClasses = `hover:bg-[#000]`;
+
+        // Initially select the GUI button
+        $("#gui-btn").addClass(selectedClasses);
+        $("#cli-btn").addClass(notSelectedClasses);
+
+        // Show GUI content initially
+        showContent('gui');
+
         $('#gui-btn').click(function () {
-            window.location.href = '/download/gui';
+            $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
+            $('#cli-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
+            showContent('gui');
         });
+
         $('#cli-btn').click(function () {
-            window.location.href = '/download/cli';
+            $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
+            $('#gui-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
+            showContent('cli');
         });
+
+        function showContent(type) {
+            if (type === 'gui') {
+                $('#gui-content').show();
+                $('#cli-content').hide();
+            } else {
+                $('#gui-content').hide();
+                $('#cli-content').show();
+            }
+        }
     });
 </script>

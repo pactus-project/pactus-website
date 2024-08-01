@@ -228,8 +228,7 @@ You can also download the latest stable releases of Pactus. These releases are u
 <br>
 <div class="mt-10">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <div class="p-5 border border-neutral-400 rounded-xl cursor-pointer"
-            id="gui-btn">
+        <div class="p-5 border border-neutral-400 rounded-xl cursor-pointer" id="gui-btn">
             <h3 class="font-bold text-neutral-50">Pactus Graphical User Interface (GUI)</h3>
             <p class="mt-5 text-neutral-50">You can run Pactus in a graphical user interface (GUI) mode and it is suitable for both beginners and advanced users.
 </p>
@@ -310,17 +309,40 @@ You can also download the latest stable releases of Pactus. These releases are u
 </div>
 <script>
     $(document).ready(function () {
-        const selectedClassess = `bg-[#2b2b4b] hover:bg-[#2b2b4b]`
-        const notSelectedClasses = `hover:bg-[#000]`
-        $("#gui-btn").addClass(selectedClassess)
-        $('#gui-btn').click(function () {
-            window.location.href = '/download/gui';
-        });
-        $('#cli-btn').click(function () {
-            window.location.href = '/download/cli';
-        });
+<pre><code>    const selectedClasses = `bg-[#2b2b4b]`;
+    const notSelectedClasses = `hover:bg-[#000]`;
+
+    
+    $(&quot;#gui-btn&quot;).addClass(selectedClasses);
+    $(&quot;#cli-btn&quot;).addClass(notSelectedClasses);
+
+    
+    showContent('gui');
+
+    $('#gui-btn').click(function () {
+        $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
+        $('#cli-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
+        showContent('gui');
     });
-</script>
+
+    $('#cli-btn').click(function () {
+        $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
+        $('#gui-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
+        showContent('cli');
+    });
+
+    function showContent(type) {
+        if (type === 'gui') {
+            $('#gui-content').show();
+            $('#cli-content').hide();
+        } else {
+            $('#gui-content').hide();
+            $('#cli-content').show();
+        }
+    }
+});
+</code></pre>
+<p></script></p>
 <h3 id="downloader_script">Downloader script</h3>
 For <a href="https://en.wikipedia.org/wiki/Unix-like">Unix-like systems</a> (e.g., Linux, macOS, or <a href="https://en.wikipedia.org/wiki/Mingw-w64#MSYS2">MSYS2</a> on Windows), there is a downloader script available. This script can download the archived file, verify it, and extract it for you. To use it, simply run the following command in your terminal:
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl --proto <span style="color:#e6db74">&#39;=https&#39;</span> --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v<span style="color:#f92672">{{</span> site.latest_version <span style="color:#f92672">}}</span>/pactus_downloader.sh | sh
@@ -522,34 +544,23 @@ Advanced users can get the Pactus docker image from <a href="https://hub.docker.
       }
     });
   });
-</script>
-
-
-<script src="../../js/mathjax.js"></script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['\\[', '\\]'], ['$$', '$$']], ,
-        displayMath: [['\[','\]', ['$', '$']]],
-        processEscapes: true,
-        processEnvironments: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-        TeX: { equationNumbers: { autoNumber: "AMS" },
-             extensions: ["AMSmath.js", "AMSsymbols.js"] }
-      }
+</script><link type="text/css" rel="stylesheet" href="../../lib/katex/katex.min.7e5db7914b97e596a36c1abb67ccc7f174f8bb71d38c9a88c55b262ed1737f97.css" integrity="sha256-fl23kUuX5ZajbBq7Z8zH8XT4u3HTjJqIxVsmLtFzf5c=" />
+<script defer src="../../lib/katex/katex.min.9f45307c5794ed247a0d095f3a62e52ef2215a67b2327203a7fd919959ae79d1.js" integrity="sha256-n0UwfFeU7SR6DQlfOmLlLvIhWmeyMnIDp/2RmVmuedE="></script>
+<script defer src="../../lib/katex/auto-render.min.7b57d427ac6270677daf8d8380ded2cc73336f9149a167b8e1fe0d6ef66604ae.js" integrity="sha256-e1fUJ6xicGd9r42DgN7SzHMzb5FJoWe44f4NbvZmBK4="></script>
+<script defer src="../../lib/katex/mhchem.min.f0ca03df194b8c3d6017ff455db6a0ef98857905663fa311a6cded788b15340b.js" integrity="sha256-8MoD3xlLjD1gF/9FXbag75iFeQVmP6MRps3teIsVNAs="></script>
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true },
+      ],
+      throwOnError: false,
     });
-    </script>
-
-<script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        // Fix <code> tags after MathJax finishes running. This is a
-        // hack to overcome a shortcoming of Markdown. Discussion at
-        // https://github.com/mojombo/jekyll/issues/199
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i = 0; i &lt; all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
+  });
 </script>
     
 <script>

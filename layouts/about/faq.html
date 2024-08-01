@@ -82,7 +82,7 @@
                     {{ $en := T (printf "dict.faq.%s" $a_key) "en" }}
                     {{ $tr := T (printf "dict.faq.%s" $a_key) .Lang }}
 
-                    {{ index (split $tr "]") 1 | safeHTML}}
+                    {{ index (split $tr "]") 1 | markdownify | safeHTML}}
                     {{ with .Params.img }}
                     <img src="{{ .Site.BaseURL }}/assets/images/{{ . }}" alt="{{ T (printf " dict.faq.%s" $item.id)
                         }}" />
