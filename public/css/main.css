@@ -3444,6 +3444,63 @@ html:has(.drawer-toggle:checked) {
 .top-7 {
   top: 1.75rem;
 }
+.top-5 {
+  top: 1.25rem;
+}
+.top-3 {
+  top: 0.75rem;
+}
+.top-3\.5 {
+  top: 0.875rem;
+}
+.left-10 {
+  left: 2.5rem;
+}
+.-top-40 {
+  top: -10rem;
+}
+.-top-1\/2 {
+  top: -50%;
+}
+.-top-1 {
+  top: -0.25rem;
+}
+.-top-\[10rem\] {
+  top: -10rem;
+}
+.top-\[10rem\] {
+  top: 10rem;
+}
+.top-\[-10rem\] {
+  top: -10rem;
+}
+.top-\[-20rem\] {
+  top: -20rem;
+}
+.top-\[-2rem\] {
+  top: -2rem;
+}
+.top-\[-24rem\] {
+  top: -24rem;
+}
+.top-\[-5rem\] {
+  top: -5rem;
+}
+.top-\[-4rem\] {
+  top: -4rem;
+}
+.top-\[-rem\] {
+  top: -rem;
+}
+.top-\[-9rem\] {
+  top: -9rem;
+}
+.left-5 {
+  left: 1.25rem;
+}
+.left-56 {
+  left: 14rem;
+}
 .-z-10 {
   z-index: -10;
 }
@@ -4834,6 +4891,22 @@ body {
 }
 
 @media (min-width: 1024px) {
+
+  .lg\:top-\[-24rem\] {
+    top: -24rem;
+  }
+
+  .lg\:top-\[-20rem\] {
+    top: -20rem;
+  }
+
+  .lg\:top-\[-19rem\] {
+    top: -19rem;
+  }
+
+  .lg\:left-56 {
+    left: 14rem;
+  }
 
   .lg\:ml-0 {
     margin-left: 0px;
