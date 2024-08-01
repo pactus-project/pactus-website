@@ -9,6 +9,7 @@ relativeURLs = true
   blog = "/blog/:year/:month/:day/:slug/"
 
 [params]
+  latestVersion = "1.3.0"
   mainCSS = "css/main.css"
   subtitle = 'Building decentralized future together!'
   [params.contact]

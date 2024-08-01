@@ -3488,6 +3488,12 @@ html:has(.drawer-toggle:checked) {
   margin-left: auto;
   margin-right: auto;
 }
+.\!mb-0 {
+  margin-bottom: 0px !important;
+}
+.\!mt-0 {
+  margin-top: 0px !important;
+}
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -3517,6 +3523,9 @@ html:has(.drawer-toggle:checked) {
 }
 .mr-5 {
   margin-right: 1.25rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
@@ -3589,9 +3598,6 @@ html:has(.drawer-toggle:checked) {
 }
 .h-\[25px\] {
   height: 25px;
-}
-.h-\[64px\] {
-  height: 64px;
 }
 .h-auto {
   height: auto;
@@ -3760,6 +3766,9 @@ html:has(.drawer-toggle:checked) {
 }
 .justify-self-center {
   justify-self: center;
+}
+.overflow-auto {
+  overflow: auto;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -4105,6 +4114,9 @@ html:has(.drawer-toggle:checked) {
 }
 .text-transparent {
   color: transparent;
+}
+.no-underline {
+  text-decoration-line: none;
 }
 .opacity-0 {
   opacity: 0;
@@ -4885,6 +4897,11 @@ body {
 
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 

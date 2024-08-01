@@ -2,7 +2,7 @@ gui:
   os:
     - windows:
       title: Windows 
-      icon: "icon"
+      icon: "/images/windows.svg"
       kind:
         - zip:
           format: .zip
@@ -20,7 +20,7 @@ gui:
               link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
     - macos:
       title: MacOS 
-      icon: "icon"
+      icon: "/images/apple.svg"
       kind:
         - zip:
           format: .zip
@@ -38,7 +38,7 @@ gui:
               link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
     - linux:
       title: Linux 
-      icon: "icon"
+      icon: "/images/linux.svg"
       kind:
         - zip:
           format: .zip
@@ -56,7 +56,7 @@ gui:
               link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
     - android:
       title: Android 
-      icon: "svg icon"
+      icon: "/images/android.svg"
       kind:
         - zip:
           format: .zip
@@ -76,7 +76,7 @@ cli:
   os:
     - windows:
       title: Windows 
-      icon: "icon"
+      icon: "/images/windows.svg"
       kind:
         - zip:
           format: .zip
@@ -94,7 +94,7 @@ cli:
               link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
     - macos:
       title: MacOS 
-      icon: "icon"
+      icon: "/images/apple.svg"
       kind:
         - zip:
           format: .zip
@@ -111,8 +111,8 @@ cli:
             - title: arm64_installer
               link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
     - linux:
-      title: linux 
-      icon: "svg icon"
+      title: Linux 
+      icon: "/images/linux.svg"
       kind:
         - zip:
           format: .zip
@@ -129,8 +129,8 @@ cli:
             - title: arm64_installer
               link: https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz 
     - android:
-      title: android 
-      icon: "svg icon"
+      title: Android 
+      icon: "/images/android.svg"
       kind:
         - zip:
           format: .zip

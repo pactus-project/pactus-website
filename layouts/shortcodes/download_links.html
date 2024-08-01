@@ -1,14 +1,14 @@
 <div class="mt-10">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <div class="p-5 border border-neutral-400 rounded-xl cursor-pointer" id="gui-btn">
-            <h3 class="font-bold text-neutral-50">{{T "dict.download.pactus_gui"}}</h3>
+        <div class="p-5 border border-neutral-400 rounded-xl cursor-pointer bg-[#2b2b4b]" id="gui-btn">
+            <h4 class="font-bold lg:text-2xl text-lg text-neutral-50">{{T "dict.download.pactus_gui"}}</h4>
             <p class="mt-5 text-neutral-50">{{T "dict.download.download_gui"}}</p>
             <div class="w-full text-center" style="text-align: -webkit-center;">
                 <img src="/images/pactus-gui.png" class="mt-5 w-full" alt="">
             </div>
         </div>
         <div class="p-5 border border-neutral-400 rounded-xl hover:bg-[#000] cursor-pointer" id="cli-btn">
-            <h3 class="font-bold text-neutral-50">{{T "dict.download.pactus_cli"}}</h3>
+            <h4 class="font-bold lg:text-2xl text-lg text-neutral-50">{{T "dict.download.pactus_cli"}}</h4>
             <p class="mt-5 text-neutral-50">{{T "dict.download.download_cli"}}</p>
             <div class="w-full text-center" style="text-align: -webkit-center;">
                 <img src="/images/pactus-cli.png" class="lg:mt-[76px] mt-5 w-full" alt="">
@@ -17,99 +17,61 @@
     </div>
 </div>
 <div class="mt-10">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14" id="gui">
+        {{ range .Site.Data.download.gui.os }}
         <div>
             <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
                 <div
-                    class="md:text-lg w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center h-[64px]">
-                    Windows</div>
+                    class="md:text-lg items-center flex text-sm w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center pt-5 pb-5">
+                    <img src="{{.icon}}" alt="" class="!mt-0 !mb-0">
+                    <span class="ml-3 mt-1">
+                        {{ .title }}
+                    </span>
+                </div>
             </div>
-            <div class="flex mt-5 items-center">
-                <span class="text-neutral-50 text-bold">.zip</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64</a>
+            {{ range .kind }}
+            <div class="flex items-center mt-5 overflow-auto">
+                <span class="text-neutral-50 text-bold">{{ .format }}</span>
+                {{ range .arch }}
+                <div class="flex items-center">
+                    <a href="{{ .link }}"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">{{
+                        .title
+                        }}</a>
+                </div>
+                {{ end }}
             </div>
-            <div class="flex mt-5 items-center">
-                <span class="text-neutral-50 text-bold">.exe</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64_installer</a>
-            </div>
+            {{ end }}
         </div>
+        {{ end }}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14 hidden" id="cli">
+        {{ range .Site.Data.download.cli.os }}
         <div>
             <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-                <button
-                    class="btn md:btn-lg md:text-lg w-full h-full rounded-xl no-animation bg-[#141B25] text-neutral-50">Windows</button>
+                <div
+                    class="md:text-lg items-center flex text-sm w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center pt-5 pb-5">
+                    <img src="{{.icon}}" alt="" class="!mt-0 !mb-0">
+                    <span class="ml-3 mt-1">
+                        {{ .title }}
+                    </span>
+                </div>
             </div>
-            <div class="flex mt-5 items-center">
-                <span class="text-neutral-50 text-bold">.zip</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64</a>
+            {{ range .kind }}
+            <div class="flex items-center mt-5 overflow-auto">
+                <span class="text-neutral-50 text-bold">{{ .format }}</span>
+                {{ range .arch }}
+                <div class="flex items-center">
+                    <a href="{{ .link }}"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">{{
+                        .title
+                        }}</a>
+                </div>
+                {{ end }}
             </div>
-            <div class="flex mt-5 items-center">
-                <span class="text-neutral-50 text-bold">.exe</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64_installer</a>
-            </div>
+            {{ end }}
         </div>
-        <div>
-            <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-                <button
-                    class="btn md:btn-lg md:text-lg w-full h-full rounded-xl no-animation bg-[#141B25] text-neutral-50">Windows</button>
-            </div>
-            <div class="flex mt-5 items-center">
-                <span class="text-neutral-50 text-bold">.zip</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64</a>
-            </div>
-            <div class="flex mt-5 items-center">
-                <span class="text-neutral-50 text-bold">.exe</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64_installer</a>
-            </div>
-        </div>
-        <div>
-            <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-                <button
-                    class="btn md:btn-lg md:text-lg w-full h-full rounded-xl no-animation bg-[#141B25] text-neutral-50">Windows</button>
-            </div>
-            <div class="flex mt-5 items-center">
-                <span class="text-neutral-50 text-bold">.zip</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64</a>
-            </div>
-            <div class="flex mt-5 items-center">
-                <span class="text-neutral-50 text-bold">.exe</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64_installer</a>
-            </div>
-        </div>
+        {{ end }}
     </div>
 </div>
-<script>
-    $(document).ready(function () {
-
-        const selectedClasses = `bg-[#2b2b4b]`;
-        const notSelectedClasses = `hover:bg-[#000]`;
-
-        // Initially select the GUI button
-        $("#gui-btn").addClass(selectedClasses);
-        $("#cli-btn").addClass(notSelectedClasses);
-
-        // Show GUI content initially
-        showContent('gui');
-
-        $('#gui-btn').click(function () {
-            $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
-            $('#cli-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
-            showContent('gui');
-        });
-
-        $('#cli-btn').click(function () {
-            $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
-            $('#gui-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
-            showContent('cli');
-        });
-
-        function showContent(type) {
-            if (type === 'gui') {
-                $('#gui-content').show();
-                $('#cli-content').hide();
-            } else {
-                $('#gui-content').hide();
-                $('#cli-content').show();
-            }
-        }
-    });
-</script>

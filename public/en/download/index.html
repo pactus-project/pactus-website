@@ -217,19 +217,18 @@
             </svg>
         </div>
     </div>
-    <article class="prose lg:prose-xl"><p>On this page you can find how to download and get the latest version of the Pactus software.</p>
+    <article class="prose lg:prose-xl">On this page you can find how to download and get the latest version of the Pactus software.
 <hr>
-<h2 id="build ">🏗️ Compile from Source Code</h2>
+<h3 id="build ">🏗️ Compile from Source Code</h3>
 Project Pactus is distributed as open source software, so the preferred way for installing it is to clone the source code from the <a href="https://github.com/pactus-project/pactus">GitHub</a> repository and compile the source code.
 Instructions for compiling Pactus is provided on the <a href="https://github.com/pactus-project/pactus/blob/main/docs/install.md">install</a> page.
 <hr>
-<h2 id="binary">⬇️ Download Stable Releases</h2>
+<h3 id="binary">⬇️ Download Stable Releases</h3>
 You can also download the latest stable releases of Pactus. These releases are updated automatically when a new version is released in <a href="https://github.com/pactus-project/pactus">GitHub repository</a>.
-<br>
 <div class="mt-10">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <div class="p-5 border border-neutral-400 rounded-xl cursor-pointer" id="gui-btn">
-            <h3 class="font-bold text-neutral-50">Pactus Graphical User Interface (GUI)</h3>
+        <div class="p-5 border border-neutral-400 rounded-xl cursor-pointer bg-[#2b2b4b]" id="gui-btn">
+            <h4 class="font-bold lg:text-2xl text-lg text-neutral-50">Pactus Graphical User Interface (GUI)</h4>
             <p class="mt-5 text-neutral-50">You can run Pactus in a graphical user interface (GUI) mode and it is suitable for both beginners and advanced users.
 </p>
             <div class="w-full text-center" style="text-align: -webkit-center;">
@@ -237,7 +236,7 @@ You can also download the latest stable releases of Pactus. These releases are u
             </div>
         </div>
         <div class="p-5 border border-neutral-400 rounded-xl hover:bg-[#000] cursor-pointer" id="cli-btn">
-            <h3 class="font-bold text-neutral-50">Pactus Command Line Interface (CLI)</h3>
+            <h4 class="font-bold lg:text-2xl text-lg text-neutral-50">Pactus Command Line Interface (CLI)</h4>
             <p class="mt-5 text-neutral-50">Advanced users can run Pactus in command line interface (CLI) mode.
 </p>
             <div class="w-full text-center" style="text-align: -webkit-center;">
@@ -247,107 +246,363 @@ You can also download the latest stable releases of Pactus. These releases are u
     </div>
 </div>
 <div class="mt-10">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14" id="gui">
+        
         <div>
             <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
                 <div
-                    class="md:text-lg w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center h-[64px]">
-                    Windows</div>
+                    class="md:text-lg items-center flex text-sm w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center pt-5 pb-5">
+                    <img src="../../images/windows.svg" alt="" class="!mt-0 !mb-0">
+                    <span class="ml-3 mt-1">
+                        Windows
+                    </span>
+                </div>
             </div>
-            <div class="flex mt-5 items-center">
+            
+            <div class="flex items-center mt-5 overflow-auto">
                 <span class="text-neutral-50 text-bold">.zip</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64</a>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
             </div>
-            <div class="flex mt-5 items-center">
+            
+            <div class="flex items-center mt-5 overflow-auto">
                 <span class="text-neutral-50 text-bold">.exe</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64_installer</a>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
             </div>
+            
         </div>
+        
         <div>
             <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-                <button
-                    class="btn md:btn-lg md:text-lg w-full h-full rounded-xl no-animation bg-[#141B25] text-neutral-50">Windows</button>
+                <div
+                    class="md:text-lg items-center flex text-sm w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center pt-5 pb-5">
+                    <img src="../../images/apple.svg" alt="" class="!mt-0 !mb-0">
+                    <span class="ml-3 mt-1">
+                        MacOS
+                    </span>
+                </div>
             </div>
-            <div class="flex mt-5 items-center">
+            
+            <div class="flex items-center mt-5 overflow-auto">
                 <span class="text-neutral-50 text-bold">.zip</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64</a>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
             </div>
-            <div class="flex mt-5 items-center">
+            
+            <div class="flex items-center mt-5 overflow-auto">
                 <span class="text-neutral-50 text-bold">.exe</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64_installer</a>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
             </div>
+            
         </div>
+        
         <div>
             <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-                <button
-                    class="btn md:btn-lg md:text-lg w-full h-full rounded-xl no-animation bg-[#141B25] text-neutral-50">Windows</button>
+                <div
+                    class="md:text-lg items-center flex text-sm w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center pt-5 pb-5">
+                    <img src="../../images/linux.svg" alt="" class="!mt-0 !mb-0">
+                    <span class="ml-3 mt-1">
+                        Linux
+                    </span>
+                </div>
             </div>
-            <div class="flex mt-5 items-center">
+            
+            <div class="flex items-center mt-5 overflow-auto">
                 <span class="text-neutral-50 text-bold">.zip</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64</a>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
             </div>
-            <div class="flex mt-5 items-center">
+            
+            <div class="flex items-center mt-5 overflow-auto">
                 <span class="text-neutral-50 text-bold">.exe</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64_installer</a>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
             </div>
+            
         </div>
+        
         <div>
             <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-                <button
-                    class="btn md:btn-lg md:text-lg w-full h-full rounded-xl no-animation bg-[#141B25] text-neutral-50">Windows</button>
+                <div
+                    class="md:text-lg items-center flex text-sm w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center pt-5 pb-5">
+                    <img src="../../images/android.svg" alt="" class="!mt-0 !mb-0">
+                    <span class="ml-3 mt-1">
+                        Android
+                    </span>
+                </div>
             </div>
-            <div class="flex mt-5 items-center">
+            
+            <div class="flex items-center mt-5 overflow-auto">
                 <span class="text-neutral-50 text-bold">.zip</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64</a>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
             </div>
-            <div class="flex mt-5 items-center">
+            
+            <div class="flex items-center mt-5 overflow-auto">
                 <span class="text-neutral-50 text-bold">.exe</span>
-                <a href="#" class="bg-[#217AFF] p-2 pl-4 pr-4 rounded-2xl text-neutral-50 ml-5">amd64_installer</a>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
             </div>
+            
         </div>
+        
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14 hidden" id="cli">
+        
+        <div>
+            <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+                <div
+                    class="md:text-lg items-center flex text-sm w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center pt-5 pb-5">
+                    <img src="../../images/windows.svg" alt="" class="!mt-0 !mb-0">
+                    <span class="ml-3 mt-1">
+                        Windows
+                    </span>
+                </div>
+            </div>
+            
+            <div class="flex items-center mt-5 overflow-auto">
+                <span class="text-neutral-50 text-bold">.zip</span>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
+            </div>
+            
+            <div class="flex items-center mt-5 overflow-auto">
+                <span class="text-neutral-50 text-bold">.exe</span>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div>
+            <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+                <div
+                    class="md:text-lg items-center flex text-sm w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center pt-5 pb-5">
+                    <img src="../../images/apple.svg" alt="" class="!mt-0 !mb-0">
+                    <span class="ml-3 mt-1">
+                        MacOS
+                    </span>
+                </div>
+            </div>
+            
+            <div class="flex items-center mt-5 overflow-auto">
+                <span class="text-neutral-50 text-bold">.zip</span>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
+            </div>
+            
+            <div class="flex items-center mt-5 overflow-auto">
+                <span class="text-neutral-50 text-bold">.exe</span>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div>
+            <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+                <div
+                    class="md:text-lg items-center flex text-sm w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center pt-5 pb-5">
+                    <img src="../../images/linux.svg" alt="" class="!mt-0 !mb-0">
+                    <span class="ml-3 mt-1">
+                        Linux
+                    </span>
+                </div>
+            </div>
+            
+            <div class="flex items-center mt-5 overflow-auto">
+                <span class="text-neutral-50 text-bold">.zip</span>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
+            </div>
+            
+            <div class="flex items-center mt-5 overflow-auto">
+                <span class="text-neutral-50 text-bold">.exe</span>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div>
+            <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
+                <div
+                    class="md:text-lg items-center flex text-sm w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center pt-5 pb-5">
+                    <img src="../../images/android.svg" alt="" class="!mt-0 !mb-0">
+                    <span class="ml-3 mt-1">
+                        Android
+                    </span>
+                </div>
+            </div>
+            
+            <div class="flex items-center mt-5 overflow-auto">
+                <span class="text-neutral-50 text-bold">.zip</span>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
+            </div>
+            
+            <div class="flex items-center mt-5 overflow-auto">
+                <span class="text-neutral-50 text-bold">.exe</span>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">amd64</a>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus-gui_1.3.0_darwin_amd64.tar.gz"
+                        class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5">arm64_installer</a>
+                </div>
+                
+            </div>
+            
+        </div>
+        
     </div>
 </div>
-<script>
-    $(document).ready(function () {
-<pre><code>    const selectedClasses = `bg-[#2b2b4b]`;
-    const notSelectedClasses = `hover:bg-[#000]`;
-
-    
-    $(&quot;#gui-btn&quot;).addClass(selectedClasses);
-    $(&quot;#cli-btn&quot;).addClass(notSelectedClasses);
-
-    
-    showContent('gui');
-
-    $('#gui-btn').click(function () {
-        $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
-        $('#cli-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
-        showContent('gui');
-    });
-
-    $('#cli-btn').click(function () {
-        $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
-        $('#gui-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
-        showContent('cli');
-    });
-
-    function showContent(type) {
-        if (type === 'gui') {
-            $('#gui-content').show();
-            $('#cli-content').hide();
-        } else {
-            $('#gui-content').hide();
-            $('#cli-content').show();
-        }
-    }
-});
-</code></pre>
-<p></script></p>
 <h3 id="downloader_script">Downloader script</h3>
 For <a href="https://en.wikipedia.org/wiki/Unix-like">Unix-like systems</a> (e.g., Linux, macOS, or <a href="https://en.wikipedia.org/wiki/Mingw-w64#MSYS2">MSYS2</a> on Windows), there is a downloader script available. This script can download the archived file, verify it, and extract it for you. To use it, simply run the following command in your terminal:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl --proto <span style="color:#e6db74">&#39;=https&#39;</span> --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v<span style="color:#f92672">{{</span> site.latest_version <span style="color:#f92672">}}</span>/pactus_downloader.sh | sh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl --proto <span style="color:#e6db74">&#39;=https&#39;</span> --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v1.3.0/pactus_downloader.sh | sh
 </span></span></code></pre></div><hr>
-<h2 id="docker">🐳 Docker Container</h2>
+<h3 id="docker">🐳 Docker Container</h3>
 Advanced users can get the Pactus docker image from <a href="https://hub.docker.com/r/pactus/pactus">Docker Hub</a>.
 <p>You may follow this tutorial to set up and run your node using Docker: <a href="https://docs.pactus.org/get-started/pactus-docker">How to run Pactus using Docker?</a></p>
 </article>
@@ -543,6 +798,41 @@ Advanced users can get the Pactus docker image from <a href="https://hub.docker.
         history.pushState(null, null, this.getAttribute('href'));
       }
     });
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    const selectedClasses = 'bg-[#2b2b4b]';
+    const notSelectedClasses = 'hover:bg-[#000]';
+
+    $("#gui-btn").addClass(selectedClasses);
+    $("#cli-btn").addClass(notSelectedClasses);
+    $("#cli").hide()
+    $("#cli").removeClass("hidden")
+
+    
+    $('#gui-btn').click(function () {
+      $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
+      $('#cli-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
+      showContent('gui');
+    });
+
+    $('#cli-btn').click(function () {
+      $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
+      $('#gui-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
+      showContent('cli');
+    });
+
+    function showContent(type) {
+      if (type === 'gui') {
+        $('#gui').slideDown();
+        $('#cli').slideUp();
+      } else {
+        $('#cli').slideDown();
+        $('#gui').slideUp();
+      }
+    }
   });
 </script><link type="text/css" rel="stylesheet" href="../../lib/katex/katex.min.7e5db7914b97e596a36c1abb67ccc7f174f8bb71d38c9a88c55b262ed1737f97.css" integrity="sha256-fl23kUuX5ZajbBq7Z8zH8XT4u3HTjJqIxVsmLtFzf5c=" />
 <script defer src="../../lib/katex/katex.min.9f45307c5794ed247a0d095f3a62e52ef2215a67b2327203a7fd919959ae79d1.js" integrity="sha256-n0UwfFeU7SR6DQlfOmLlLvIhWmeyMnIDp/2RmVmuedE="></script>

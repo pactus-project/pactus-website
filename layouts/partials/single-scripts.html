@@ -53,6 +53,41 @@
   });
 </script>
 
+<script>
+  $(document).ready(function () {
+    const selectedClasses = 'bg-[#2b2b4b]';
+    const notSelectedClasses = 'hover:bg-[#000]';
+
+    $("#gui-btn").addClass(selectedClasses);
+    $("#cli-btn").addClass(notSelectedClasses);
+    $("#cli").hide()
+    $("#cli").removeClass("hidden")
+
+    
+    $('#gui-btn').click(function () {
+      $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
+      $('#cli-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
+      showContent('gui');
+    });
+
+    $('#cli-btn').click(function () {
+      $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
+      $('#gui-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
+      showContent('cli');
+    });
+
+    function showContent(type) {
+      if (type === 'gui') {
+        $('#gui').slideDown();
+        $('#cli').slideUp();
+      } else {
+        $('#cli').slideDown();
+        $('#gui').slideUp();
+      }
+    }
+  });
+</script>
+
 {{- $katexCSS := resources.Get "lib/katex/katex.min.css" | fingerprint -}}
 {{- $katexJS := resources.Get "lib/katex/katex.min.js" | fingerprint -}}
 {{- $mhchemJS := resources.Get "lib/katex/mhchem.min.js" | fingerprint -}}
