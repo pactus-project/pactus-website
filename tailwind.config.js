@@ -28,7 +28,7 @@ module.exports = {
     },
     container: {
       padding: "10px"
-    }
+    },
   },
   plugins: [
     require('daisyui'),
