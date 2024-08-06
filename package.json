@@ -7,7 +7,7 @@
   "scripts": {
     "build:css": "postcss assets/css/main.css -o static/css/main.css",
     "watch:css": "postcss assets/css/main.css -o static/css/main.css --watch",
-    "start": "hugo server -D --noHTTPCache --disableFastRender",
+    "start": "concurrently \"hugo server -D --noHTTPCache --disableFastRender\" \"npm run watch:css\"",
     "build": "hugo --gc --minify",
     "clean:destination": "hugo --cleanDestinationDir",
     "htmlproofer:setup": "gem install html-proofer",
