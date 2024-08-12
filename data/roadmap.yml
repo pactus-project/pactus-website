@@ -7,6 +7,8 @@
 - status: upcoming
   title: Decentralized Domain Name System
   date: Q4 2025
+  icon_url: "/images/roadmap-decentralized.svg"
+  color: "#0F6CBD"
 
 - status: upcoming
   title: Decentralized Password Manger

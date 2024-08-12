@@ -17,7 +17,7 @@ relativeURLs = true
 
 [languages]
   [languages.en]
-    contentDir = 'content/en'
+    contentDir = 'content/'
     disabled = false
     languageCode = 'en'
     languageDirection = 'ltr'

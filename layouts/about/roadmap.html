@@ -1,5 +1,6 @@
 {{define "title"}}{{.Page.Title}}{{end}}
 {{define "main"}}
+{{$roadmap := .Site.Data.roadmap}}
 <section class="container mx-auto px-4 py-2 pt-[4rem] lg:pt-[8rem] relative z-20 flex-grow pb-20 flex-col min-h-full">
     <div class="flex-grow">
         <h1 class="text-5xl font-bold mt-10 text-neutral-50 flex z-10 absolute">
@@ -18,105 +19,97 @@
 
             <span class="mt-7 ml-5">Roadmap</span>
         </h1>
-        <div class="w-full text-right" style="text-align: -webkit-right;">
-            <img src="/images/gate.png"  alt=""
+        <div class="w-full text-right relative bottom-[1.06em]" style="text-align: -webkit-right;">
+            <img src="/images/gate.png" alt=""
                  class="relative max-w-[81%]">
         </div>
-        <div class="relative bottom-5">
+        <div class="relative bottom-[1.06em] hidden lg:block">
             <div class="text-right w-full" style="text-align: -webkit-right;">
                 <div class="absolute w-full z-10">
-                    <div class="min-w-full relative bottom-[35px] grid grid-flow-col grid-cols-4">
-<!--                        <div>-->
-<!--                            <div class="flex min-w-full place-content-center">-->
-<!--                                <div class="flex min-w-full place-content-center">-->
-<!--                                    <div class="bg-[#223241] p-3 rounded-full">-->
-<!--                                        <div class="bg-[#0F6CBD] rounded-full p-1">-->
-<!--                                            <img src="/images/roadmap-decentralized.svg" alt=""/>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="text-center block mt-2">-->
-<!--                                    <span class="text-neutral-50 font-bold">.title</span>-->
-<!--                                </div>-->
-<!--                                <div class="text-center block mt-2">-->
-<!--                                    <span class="text-neutral-50 font-light">.date</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div>-->
-<!--                            <div class="flex min-w-full place-content-center">-->
-<!--                                <div class="flex min-w-full place-content-center">-->
-<!--                                    <div class="bg-[#223241] p-3 rounded-full">-->
-<!--                                        <div class="bg-[#0F6CBD] rounded-full p-1">-->
-<!--                                            <img src="/images/roadmap-decentralized.svg" alt=""/>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="text-center block mt-2">-->
-<!--                                    <span class="text-neutral-50 font-bold">.title</span>-->
-<!--                                </div>-->
-<!--                                <div class="text-center block mt-2">-->
-<!--                                    <span class="text-neutral-50 font-light">.date</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-                        {{ range  (first 2 .Site.Data.roadmap) }}
-
+                    <div class="min-w-full relative bottom-[3.06em] grid grid-flow-col grid-cols-4">
+                        <div>
+                        </div>
+                        <div>
+                        </div>
+                        {{ range (first 2 $roadmap) }}
+                        <div>
+                            <div class="inline-grid min-w-full place-content-center">
+                                <div class="flex min-w-full place-content-center">
+                                    <div class="bg-[#223241] p-3 rounded-full">
+                                        <div class="rounded-full p-2" style="background: {{.color}}">
+                                            <img src="{{.icon_url}}" alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center block mt-2 max-w-[70%] place-items-center justify-self-center">
+                                    <span class="text-neutral-50 font-bold">{{.title}}</span>
+                                </div>
+                                <div class="text-center block mt-2">
+                                    <span class="text-neutral-50 font-light">{{.date}}</span>
+                                </div>
+                            </div>
+                        </div>
                         {{end}}
 
                     </div>
                 </div>
-                <svg class="relative max-w-[81%]" viewBox="0 0 989 305" fill="none"
+                <svg class="relative max-w-[81%] bottom-[1.06em]" viewBox="0 0 989 305" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path
                             d="M0.12561 296.317C0.12561 296.317 629.768 296.317 829.673 296.317C1029.58 296.317 1031.21 9.92742 829.673 9.92742C628.137 9.92742 492.437 8.62268 492.437 8.62268"
-                            stroke="#223241" stroke-opacity="0.8" stroke-width="15.6568"/>
+                            stroke="#223241" stroke-opacity="1" stroke-width="15.6568"/>
                 </svg>
             </div>
             {{$count := math.Sub (len .Site.Data.roadmap) 2}}
             {{$lines := math.Div $count 4 }}
             {{$extra := math.Mod $count 4 }}
             {{range $i, $num := seq $lines}}
+            {{ $startItem := add (mul (sub $i 1) 4) 2 }}
+            {{ $endItem := math.Min $count (add $startItem 4) }}
             {{$top := math.Mul 17 (math.Add $i 1)}}
             {{$bottom := math.Add $top 35}}
             {{if eq (math.Mod $i 2) 0}}
-            <div class="text-left w-full" style="text-align: -webkit-left;">
-<!--                <div class="absolute w-full z-10">-->
-<!--                    <div class="min-w-full relative grid grid-flow-col grid-cols-4" style="bottom: {{$bottom}}px">-->
-<!--                        <div class="flex min-w-full place-content-center">-->
-<!--                        </div>-->
-<!--                        <div class="flex min-w-full place-content-center">-->
-<!--                        </div>-->
-<!--                        <div class="flex min-w-full place-content-center">-->
-<!--                            <div class="bg-[#223241] p-3 rounded-full">-->
-<!--                                <div class="bg-[#0F6CBD] rounded-full p-1">-->
-<!--                                    <img src="/images/roadmap-decentralized.svg" alt=""/>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="flex min-w-full place-content-center">-->
-<!--                            <div class="bg-[#223241] p-3 rounded-full">-->
-<!--                                <div class="bg-[#0F6CBD] rounded-full p-1">-->
-<!--                                    <img src="/images/roadmap-decentralized.svg" alt=""/>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
+            <div class="text-left w-full relative"
+                 style="text-align: -webkit-left; bottom: {{math.Add 1.06 (math.Add $i 1)}}em">
+                <div class="absolute w-full z-10">
+                    <div class="min-w-full relative bottom-[3.06em] grid grid-flow-col grid-cols-4">
+                        {{ range $itemIndex := (seq $startItem $endItem) }}
+                        {{$data := (index $roadmap $itemIndex)}}
+                        <div>
+                            <div class="inline-grid min-w-full place-content-center">
+                                <div class="flex min-w-full place-content-center">
+                                    <div class="bg-[#223241] p-3 rounded-full">
+                                        <div class="rounded-full p-2" style="background: {{$data.color}}">
+                                            <img src="{{$data.icon_url}}" alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center block mt-2 max-w-[70%] place-items-center justify-self-center">
+                                    <span class="text-neutral-50 font-bold">{{$data.title}}</span>
+                                </div>
+                                <div class="text-center block mt-2">
+                                    <span class="text-neutral-50 font-light">{{$data.date}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
                 <svg class="relative max-w-[81%]" viewBox="0 0 1021 304"
                      fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                             d="M988.089 8.3169C988.089 8.3169 358.447 8.31696 158.541 8.31697C-41.3642 8.31698 -42.9951 294.706 158.541 294.706C360.078 294.706 1020.04 296.011 1020.04 296.011"
-                            stroke="#223241" stroke-opacity="0.8" stroke-width="15.6568"/>
+                            stroke="#223241" stroke-opacity="1" stroke-width="15.6568"/>
                 </svg>
             </div>
             {{else}}
-            <div class="text-left w-right" style="text-align: -webkit-right;">
+            <div class="text-left w-right relative bottom-[1.06em]"
+                 style="text-align: -webkit-right; bottom: {{math.Add 1.06 (math.Add $i 1)}}em">
                 <svg class="relative max-w-[81%]" viewBox="0 0 1021 305"
                      fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                             d="M32.126 296.4C32.126 296.4 661.768 296.4 861.674 296.4C1061.58 296.4 1063.21 10.0109 861.674 10.0109C660.137 10.0109 0.176636 8.70618 0.176636 8.70618"
-                            stroke="#223241" stroke-opacity="0.8" stroke-width="15.6568"/>
+                            stroke="#223241" stroke-opacity="1" stroke-width="15.6568"/>
                 </svg>
             </div>
             {{end}}
