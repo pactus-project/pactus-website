@@ -23,3 +23,8 @@ go.work.sum
 node_modules/
 public/
 resources/
+.hugo_build.lock
+.idea
+.code
+.package-lock.json
+yarn.lock
