@@ -1,10 +1,11 @@
 {{ define "title" }}{{ .Title }}{{ end }}
 {{ define "main" }}
-  <img
-    src="/images/landing-top-bg.svg"
-    alt=""
-    class="min-w-full absolute -top-10" />
-  <section class="z-10 relative" style="position: relative;">
+<img
+  src="/images/landing-top-bg.svg"
+  alt=""
+  class="min-w-full absolute -top-10" />
+<section class="z-10 relative flex flex-col min-h-full flex-grow" style="position: relative;">
+  <div class="flex-grow">
     <div
       class="text-center px-5 md:px-0 z-20 pt-[10rem] md:pt-[15rem] bg-transparent">
       <h1
@@ -24,9 +25,9 @@
         data-aos-duration="2000"
         class="mt-14 font-bold md:text-lg text-neutral-50">
         Pactus is a community-run blockchain technology with a<br
-          class="hidden md:block" />
+        class="hidden md:block" />
         revolutionary, secure, Solid State Proof of Stake Consensus.<br
-          class="hidden md:block" />
+        class="hidden md:block" />
         Come join us and build a decentralized future together!
       </h1>
     </div>
@@ -38,12 +39,12 @@
         <a
           href="https://docs.pactus.org/get-started/become-a-validator"
           class="btn text-neutral-50 rounded-lg bg-[#217AFF] hover:bg-[#217AFF] hover:bg-opacity-80"
-          >Become a validator</a
+        >Become a validator</a
         >
         <a
           href="{{ .Site.BaseURL }}/{{ .Site.LanguageCode }}/community"
           class="btn btn-ghost rounded-lg shadow-top-left-to-bottom-right text-neutral-50"
-          >Join Community</a
+        >Join Community</a
         >
       </div>
     </div>
@@ -81,7 +82,7 @@
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 class="btn btn-ghost text-xl md:text-2xl text-neutral-50 font-medium"
-                >Become a Validator</a
+              >Become a Validator</a
               >
             </div>
             <div class="mt-14 md:pl-24 text-center md:text-left">
@@ -90,7 +91,7 @@
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 class="btn btn-ghost text-xl md:text-2xl text-neutral-50 font-medium"
-                >Make Pactus Better</a
+              >Make Pactus Better</a
               >
             </div>
           </div>
@@ -103,10 +104,10 @@
         </div>
       </div>
     </div>
-    <img
-      src="/images/roadmap-bg.svg"
-      class="absolute right-0 -z-20 min-w-full max-h-full"
-      alt="" />
+<!--    <img-->
+<!--      src="/images/roadmap-bg.svg"-->
+<!--      class="absolute right-0 -z-20 min-w-full max-h-full overflow-hidden"-->
+<!--      alt="" />-->
     <img class="absolute -z-10 right-9" src="/images/chains.svg" alt="" />
     <div class="mt-[6rem] md:mt-[10rem]">
       <div class="container mx-auto">
@@ -121,29 +122,29 @@
               id="mySwiper">
               <div class="swiper-wrapper">
                 {{ range first 10 (where .Site.RegularPages "Type" "blog") }}
-                  <div class="swiper-slide">
-                    <div class="container mx-auto">
-                      <div
-                        class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
-                        <h1 class="text-2xl font-bold text-neutral-50">
-                          {{ .Title }}
-                        </h1>
-                        <h6 class="font-medium text-sm mt-2">
-                          {{ .Date.Format "January 2, 2006" }}
-                        </h6>
-                        <p class="mt-5 text-neutral-50">
-                          {{ $summary := .Summary | plainify | truncate 300 " ..." }}
-                          {{ $summary }}
-                          <br /><br />
-                          <a
-                            href="{{ .Permalink }}"
-                            class="hover:text-opacity-80 font-bold text-[#1EA4E8]"
-                            >Read More</a
-                          >
-                        </p>
-                      </div>
+                <div class="swiper-slide">
+                  <div class="container mx-auto">
+                    <div
+                      class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F]">
+                      <h1 class="text-2xl font-bold text-neutral-50">
+                        {{ .Title }}
+                      </h1>
+                      <h6 class="font-medium text-sm mt-2">
+                        {{ .Date.Format "January 2, 2006" }}
+                      </h6>
+                      <p class="mt-5 text-neutral-50">
+                        {{ $summary := .Summary | plainify | truncate 300 " ..." }}
+                        {{ $summary }}
+                        <br /><br />
+                        <a
+                          href="{{ .Permalink }}"
+                          class="hover:text-opacity-80 font-bold text-[#1EA4E8]"
+                        >Read More</a
+                        >
+                      </p>
                     </div>
                   </div>
+                </div>
                 {{ end }}
               </div>
             </div>
@@ -197,57 +198,58 @@
         <img class="w-full" src="/images/map-ezgif.com-optimize.gif" alt="" />
       </div>
     </div>
-  </section>
+  </div>
+</section>
 {{ end }}
 {{ define "page_script" }}
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      function updateSwiperHeight() {
-        const swiperEl = document.querySelector("#mySwiper");
-        const slides = swiperEl.querySelectorAll(".swiper-slide");
-        const spaceBetween = 30;
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    function updateSwiperHeight() {
+      const swiperEl = document.querySelector("#mySwiper");
+      const slides = swiperEl.querySelectorAll(".swiper-slide");
+      const spaceBetween = 30;
 
-        if (slides.length >= 2) {
-          const height =
-            slides[0].offsetHeight + slides[1].offsetHeight + spaceBetween;
-          swiperEl.style.height = `${height}px`;
-          console.log("Updated Swiper height:", height);
-        } else {
-          console.warn("Not enough slides to calculate height");
+      if (slides.length >= 2) {
+        const height =
+          slides[0].offsetHeight + slides[1].offsetHeight + spaceBetween;
+        swiperEl.style.height = `${height}px`;
+        console.log("Updated Swiper height:", height);
+      } else {
+        console.warn("Not enough slides to calculate height");
+      }
+    }
+
+    var swiper = new Swiper(".vertical-slide-carousel", {
+      loop: false,
+      direction: "vertical",
+      mousewheelControl: true,
+      mousewheel: {
+        releaseOnEdges: false
+      },
+      grabCursor: true,
+      slidesPerView: 2,
+      pagination: {
+        el: ".swiper-pagination"
+        // clickable: true,
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      on: {
+        init: function() {
+          this.update();
+        },
+        imagesReady: function() {
+          this.el.style.height = getHeightOfTwoSlides(this) + "px";
+        },
+        resize: function() {
+          this.el.style.height = getHeightOfTwoSlides(this) + "px";
         }
       }
-
-      var swiper = new Swiper(".vertical-slide-carousel", {
-        loop: false,
-        direction: "vertical",
-        mousewheelControl: true,
-        mousewheel: {
-          releaseOnEdges: false,
-        },
-        grabCursor: true,
-        slidesPerView: 2,
-        pagination: {
-          el: ".swiper-pagination",
-          // clickable: true,
-        },
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        on: {
-          init: function () {
-            this.update();
-          },
-          imagesReady: function () {
-            this.el.style.height = getHeightOfTwoSlides(this) + "px";
-          },
-          resize: function () {
-            this.el.style.height = getHeightOfTwoSlides(this) + "px";
-          },
-        },
-      });
-
-      setTimeout(updateSwiperHeight, 500);
     });
-  </script>
+
+    setTimeout(updateSwiperHeight, 500);
+  });
+</script>
 {{ end }}
