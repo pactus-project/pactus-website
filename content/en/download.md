@@ -38,4 +38,3 @@ curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/re
 {{<translate "dict.download.docker_desc">}}
 
 {{<translate "dict.download.docker_after_download">}} [{{<translate "dict.guide.run_pactus_docker">}}](https://docs.pactus.org/get-started/pactus-docker)
-

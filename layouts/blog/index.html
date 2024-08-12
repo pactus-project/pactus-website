@@ -1,60 +1,74 @@
-{{define "title"}}{{.Page.Title}}{{end}}
-{{define "main"}}
-<section
+{{ define "title" }}{{ .Page.Title }}{{ end }}
+{{ define "main" }}
+  <section
     class="container mx-auto px-4 py-8 pt-[8rem] md:pt-[10rem] relative z-20 flex-grow pb-20 flex flex-col min-h-full">
     {{ $latestPost := index (.Pages.ByDate.Reverse) 0 }}
-    <a href="{{$latestPost.Permalink}}" class="relative w-full min-h-[300px] h-auto rounded-xl block fill-neutral-content">
-        <div class='absolute inset-0 bg-cover bg-top bg-no-repeat rounded-xl' style="background-image: url('{{ $latestPost.Params.image | absURL }}');"></div>
-        <div class="absolute inset-0 bg-[#000] bg-opacity-40 rounded-xl"></div>
-        <div class="relative z-10 md:p-10 p-5">
-            <div class="mt-20 block">
-            </div>
-            <div class="mt-3 block">
-                <h1 class="rounded-xl inline-block text-neutral-50 font-bold text-3xl">
-                    {{$latestPost.Title}}
-                </h1>
-            </div>
-            <div class="mt-3 block">
-                <p class="rounded-xl inline-block text-neutral-50 font-light text-lg">
-                    {{ $summary := $latestPost.Summary | plainify | truncate 300 " ..." }}
-                    {{ $summary }}
-                </p>
-            </div>
-            <div class="mt-5 flex">
-                <img src="/images/author.svg" alt="{{.Title}}">
-                <span class="font-bold text ml-3 mt-[7px] text-neutral-50">{{$latestPost.Params.author}}</span>
-                <span class="font-medium text-sm ml-3 mt-[9px] text-neutral-50">{{ $latestPost.Date.Format "January 2, 2006"}}</span>
-            </div>
-
+    <a
+      href="{{ $latestPost.Permalink }}"
+      class="relative w-full min-h-[300px] h-auto rounded-xl block fill-neutral-content">
+      <div
+        class="absolute inset-0 bg-cover bg-top bg-no-repeat rounded-xl"
+        style="background-image: url('{{ $latestPost.Params.image | absURL }}');"></div>
+      <div class="absolute inset-0 bg-[#000] bg-opacity-40 rounded-xl"></div>
+      <div class="relative z-10 md:p-10 p-5">
+        <div class="mt-20 block"></div>
+        <div class="mt-3 block">
+          <h1
+            class="rounded-xl inline-block text-neutral-50 font-bold text-3xl">
+            {{ $latestPost.Title }}
+          </h1>
         </div>
+        <div class="mt-3 block">
+          <p class="rounded-xl inline-block text-neutral-50 font-light text-lg">
+            {{ $summary := $latestPost.Summary | plainify | truncate 300 " ..." }}
+            {{ $summary }}
+          </p>
+        </div>
+        <div class="mt-5 flex">
+          <img src="/images/author.svg" alt="{{ .Title }}" />
+          <span class="font-bold text ml-3 mt-[7px] text-neutral-50"
+            >{{ $latestPost.Params.author }}</span
+          >
+          <span class="font-medium text-sm ml-3 mt-[9px] text-neutral-50"
+            >{{ $latestPost.Date.Format "January 2, 2006" }}</span
+          >
+        </div>
+      </div>
     </a>
     <div class="mt-10">
-        <h1 class="text-neutral-50 font-bold text-xl">Latest Posts</h1>
-        <div class="mt-5 grid grid-flow-row grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4">
-            {{ range .Pages.ByDate.Reverse }}
-            <div class="bg-[#242535] p-5 rounded-xl">
-                <div class="block relative overflow-hidden group">
-                    <a href="{{ .Permalink }}">
-                        <img src="{{.Params.image}}" alt="{{ .Title }}" class="w-full object-cover rounded-xl">
+      <h1 class="text-neutral-50 font-bold text-xl">Latest Posts</h1>
+      <div
+        class="mt-5 grid grid-flow-row grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4">
+        {{ range .Pages.ByDate.Reverse }}
+          <div class="bg-[#242535] p-5 rounded-xl">
+            <div class="block relative overflow-hidden group">
+              <a href="{{ .Permalink }}">
+                <img
+                  src="{{ .Params.image }}"
+                  alt="{{ .Title }}"
+                  class="w-full object-cover rounded-xl" />
 
-                        <div
-                            class="absolute rounded-xl transition-all delay-75 inset-0 group-hover:bg-gradient-to-br group-hover:from-[#fff]/40 group-hover:to-transparent">
-                        </div>
-                    </a>
-                </div>
-                <div class="block mt-5">
-                    <a href="{{ .Permalink }}">
-                        <h1 class="text-neutral-50 font-bold text-xl hover:text-[#7318CE]">{{ .Title }}
-                        </h1>
-                    </a>
-                </div>
-                <div class="block mt-8">
-                    <h1 class="text-[#97989F] font-medium text-sm">{{ .Date.Format "January 2, 2006" }}</h1>
-                </div>
+                <div
+                  class="absolute rounded-xl transition-all delay-75 inset-0 group-hover:bg-gradient-to-br group-hover:from-[#fff]/40 group-hover:to-transparent"></div>
+              </a>
             </div>
-            {{end}}
+            <div class="block mt-5">
+              <a href="{{ .Permalink }}">
+                <h1
+                  class="text-neutral-50 font-bold text-xl hover:text-[#7318CE]">
+                  {{ .Title }}
+                </h1>
+              </a>
+            </div>
+            <div class="block mt-8">
+              <h1 class="text-[#97989F] font-medium text-sm">
+                {{ .Date.Format "January 2, 2006" }}
+              </h1>
+            </div>
+          </div>
+        {{ end }}
 
-        </div>
+      </div>
     </div>
-</section>
-{{end}}
+  </section>
+{{ end }}

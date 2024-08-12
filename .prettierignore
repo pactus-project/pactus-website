@@ -1,0 +1,5 @@
+public/
+resources/
+node_modules/
+vendor/
+layouts/_default/_markup/

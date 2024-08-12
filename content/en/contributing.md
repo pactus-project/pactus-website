@@ -3,6 +3,7 @@ title = 'Contributing'
 layout = 'contributing'
 type = 'contributing'
 +++
+
 As an open-source platform, Pactus blockchain empoers from its community.
 Whether you're a developer, designer, or enthusiast, your contributions can make a meaningful impact.
 

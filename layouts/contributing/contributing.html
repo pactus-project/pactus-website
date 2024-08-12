@@ -1,14 +1,18 @@
-{{define "title"}}{{.Page.Title}}{{end}}
-{{define "main"}}
-<section class="container mx-auto px-4 py-8 pt-[8rem] relative z-20 flex-grow pb-20 flex flex-col min-h-full">
+{{ define "title" }}{{ .Page.Title }}{{ end }}
+{{ define "main" }}
+  <section
+    class="container mx-auto px-4 py-8 pt-[8rem] relative z-20 flex-grow pb-20 flex flex-col min-h-full">
     <div class="grid grid-cols-3">
-        <div class="col-span-2">
-            <h1 class="md:text-4xl text-3xl font-bold text-neutral-50 text-left">{{T "dict.contributing"}}</h1>
-            <p class="mt-6 text-xl">{{.Description}}</p>
-        </div>
-        <div class="col-span-1 text-right" style="text-align: -webkit-right;">
-        </div>
+      <div class="col-span-2">
+        <h1 class="md:text-4xl text-3xl font-bold text-neutral-50 text-left">
+          {{ T "dict.contributing" }}
+        </h1>
+        <p class="mt-6 text-xl">{{ .Description }}</p>
+      </div>
+      <div
+        class="col-span-1 text-right"
+        style="text-align: -webkit-right;"></div>
     </div>
-    <article class="prose lg:prose-xl">{{.Content }}</article>
-</section>
-{{end}}
+    <article class="prose lg:prose-xl">{{ .Content }}</article>
+  </section>
+{{ end }}

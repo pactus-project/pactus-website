@@ -29,7 +29,6 @@ This release includes the following applications:
   The wallet software that allows users to manage their wallet and send transactions
   without the need to sync the entire blockchain.
 
-
 ## Highlights
 
 This version includes some improvements and new features, such as:
@@ -92,7 +91,7 @@ This version includes several changes and improvements, such as:
 - **network**: add block and transaction topics ([#1319](https://github.com/pactus-project/pactus/pull/1319))
 - **gRPC**: prevent concurrent map iteration and map write ([#1279](https://github.com/pactus-project/pactus/pull/1279))
 - **api**: add swagger schemes ([#1270](https://github.com/pactus-project/pactus/pull/1270))
-- **network**: set infinite limit for resource manager  ([#1261](https://github.com/pactus-project/pactus/pull/1261))
+- **network**: set infinite limit for resource manager ([#1261](https://github.com/pactus-project/pactus/pull/1261))
 - **sync**: introduce session manager ([#1257](https://github.com/pactus-project/pactus/pull/1257))
 - **HTTP**: using amount type for fee in transaction details ([#1255](https://github.com/pactus-project/pactus/pull/1255))
 - **network**: disconnect from peers that has no protocol ([#1243](https://github.com/pactus-project/pactus/pull/1243))

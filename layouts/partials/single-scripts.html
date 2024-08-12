@@ -1,53 +1,60 @@
 <script src="/js/jquery.min.js"></script>
-{{with resources.Get "js/main.js" | js.Build (dict "minify" true) | fingerprint}}
-<script src="{{.RelPermalink}}"></script>
-{{end}}
+{{ with resources.Get "js/main.js" | js.Build (dict "minify" true) | fingerprint }}
+  <script src="{{ .RelPermalink }}"></script>
+{{ end }}
+
 
 <script>
   $(document).ready(function () {
-    $('.prose h2, .prose h3, .prose h4, .prose h5, .prose h6').each(function () {
-      var $header = $(this);
-      var id = $header.attr('id');
+    $(".prose h2, .prose h3, .prose h4, .prose h5, .prose h6").each(
+      function () {
+        var $header = $(this);
+        var id = $header.attr("id");
 
-      if (id) {
-        var $link = $('<a>', {
-          href: '#' + id,
-          class: 'ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200',
-          'aria-label': 'Link to this section'
-        }).append(
-          $('<svg>', {
-            xmlns: "http://www.w3.org/2000/svg",
-            fill: "none",
-            viewBox: "0 0 24 24",
-            'stroke-width': "1.5",
-            stroke: "currentColor",
-            class: "w-5 h-5"
+        if (id) {
+          var $link = $("<a>", {
+            href: "#" + id,
+            class:
+              "ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200",
+            "aria-label": "Link to this section",
           }).append(
-            $('<path>', {
-              'stroke-linecap': "round",
-              'stroke-linejoin': "round",
-              d: "M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
-            })
-          )
-        );
+            $("<svg>", {
+              xmlns: "http://www.w3.org/2000/svg",
+              fill: "none",
+              viewBox: "0 0 24 24",
+              "stroke-width": "1.5",
+              stroke: "currentColor",
+              class: "w-5 h-5",
+            }).append(
+              $("<path>", {
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round",
+                d: "M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5",
+              }),
+            ),
+          );
 
-        $header.append($link);
-        $header.addClass('group flex items-center');
-      }
-    });
+          $header.append($link);
+          $header.addClass("group flex items-center");
+        }
+      },
+    );
 
-    $('.prose a[href^="#"]').on('click', function (event) {
+    $('.prose a[href^="#"]').on("click", function (event) {
       event.preventDefault();
 
-      var target = $(this.getAttribute('href'));
+      var target = $(this.getAttribute("href"));
 
       if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top - 100 // Adjust the '100' value as needed for your layout
-        }, 500); // Adjust the duration (in milliseconds) as needed
+        $("html, body").animate(
+          {
+            scrollTop: target.offset().top - 100, // Adjust the '100' value as needed for your layout
+          },
+          500,
+        ); // Adjust the duration (in milliseconds) as needed
 
         // Update URL without reloading the page
-        history.pushState(null, null, this.getAttribute('href'));
+        history.pushState(null, null, this.getAttribute("href"));
       }
     });
   });
@@ -55,34 +62,33 @@
 
 <script>
   $(document).ready(function () {
-    const selectedClasses = 'bg-[#2b2b4b]';
-    const notSelectedClasses = 'hover:bg-[#000]';
+    const selectedClasses = "bg-[#2b2b4b]";
+    const notSelectedClasses = "hover:bg-[#000]";
 
     $("#gui-btn").addClass(selectedClasses);
     $("#cli-btn").addClass(notSelectedClasses);
-    $("#cli").hide()
-    $("#cli").removeClass("hidden")
+    $("#cli").hide();
+    $("#cli").removeClass("hidden");
 
-    
-    $('#gui-btn').click(function () {
+    $("#gui-btn").click(function () {
       $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
-      $('#cli-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
-      showContent('gui');
+      $("#cli-btn").removeClass(selectedClasses).addClass(notSelectedClasses);
+      showContent("gui");
     });
 
-    $('#cli-btn').click(function () {
+    $("#cli-btn").click(function () {
       $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
-      $('#gui-btn').removeClass(selectedClasses).addClass(notSelectedClasses);
-      showContent('cli');
+      $("#gui-btn").removeClass(selectedClasses).addClass(notSelectedClasses);
+      showContent("cli");
     });
 
     function showContent(type) {
-      if (type === 'gui') {
-        $('#gui').slideDown();
-        $('#cli').slideUp();
+      if (type === "gui") {
+        $("#gui").slideDown();
+        $("#cli").slideUp();
       } else {
-        $('#cli').slideDown();
-        $('#gui').slideUp();
+        $("#cli").slideDown();
+        $("#gui").slideUp();
       }
     }
   });
@@ -92,13 +98,26 @@
 {{- $katexJS := resources.Get "lib/katex/katex.min.js" | fingerprint -}}
 {{- $mhchemJS := resources.Get "lib/katex/mhchem.min.js" | fingerprint -}}
 {{- $katexAutoRenderJS := resources.Get "lib/katex/auto-render.min.js" | fingerprint -}}
-<link type="text/css" rel="stylesheet" href="{{ $katexCSS.RelPermalink }}" integrity="{{ $katexCSS.Data.Integrity }}" />
-<script defer src="{{ $katexJS.RelPermalink }}" integrity="{{ $katexJS.Data.Integrity }}"></script>
-<script defer src="{{ $katexAutoRenderJS.RelPermalink }}" integrity="{{ $katexAutoRenderJS.Data.Integrity }}"></script>
-<script defer src="{{ $mhchemJS.RelPermalink }}" integrity="{{ $mhchemJS.Data.Integrity }}"></script>
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="{{ $katexCSS.RelPermalink }}"
+  integrity="{{ $katexCSS.Data.Integrity }}" />
+<script
+  defer
+  src="{{ $katexJS.RelPermalink }}"
+  integrity="{{ $katexJS.Data.Integrity }}"></script>
+<script
+  defer
+  src="{{ $katexAutoRenderJS.RelPermalink }}"
+  integrity="{{ $katexAutoRenderJS.Data.Integrity }}"></script>
+<script
+  defer
+  src="{{ $mhchemJS.RelPermalink }}"
+  integrity="{{ $mhchemJS.Data.Integrity }}"></script>
 {{ $katexFonts := resources.Match "lib/katex/fonts/*" }}
 {{- range $katexFonts -}}
-{{ .Publish }}
+  {{ .Publish }}
 {{- end -}}
 <script>
   // TODO: make render options configurable
