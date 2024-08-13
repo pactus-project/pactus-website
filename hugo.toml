@@ -1,4 +1,4 @@
-baseURL = 'https://pactus.org'
+baseURL = 'https://beta.pactus.org'
 title = 'Pactus blockchain'
 languageCode = 'en'
 defaultContentLanguage = 'en'

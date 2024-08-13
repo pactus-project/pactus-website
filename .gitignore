@@ -26,5 +26,5 @@ resources/
 .hugo_build.lock
 .idea
 .code
-.package-lock.json
+package-lock.json
 yarn.lock
