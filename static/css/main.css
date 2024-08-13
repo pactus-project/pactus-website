@@ -3071,9 +3071,6 @@ html:has(.drawer-toggle:checked) {
 .inline-grid {
   display: inline-grid;
 }
-.contents {
-  display: contents;
-}
 .hidden {
   display: none;
 }
@@ -3092,23 +3089,20 @@ html:has(.drawer-toggle:checked) {
 .h-full {
   height: 100%;
 }
-.h-\[3em\] {
-  height: 3em;
-}
 .max-h-full {
   max-height: 100%;
 }
 .min-h-\[300px\] {
   min-height: 300px;
 }
+.min-h-\[3rem\] {
+  min-height: 3rem;
+}
 .min-h-full {
   min-height: 100%;
 }
 .min-h-screen {
   min-height: 100vh;
-}
-.min-h-\[3rem\] {
-  min-height: 3rem;
 }
 .w-10 {
   width: 2.5rem;
@@ -3507,6 +3501,9 @@ html:has(.drawer-toggle:checked) {
 .pb-5 {
   padding-bottom: 1.25rem;
 }
+.pb-\[20px\] {
+  padding-bottom: 20px;
+}
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -3546,8 +3543,8 @@ html:has(.drawer-toggle:checked) {
 .pt-\[8rem\] {
   padding-top: 8rem;
 }
-.pb-\[20px\] {
-  padding-bottom: 20px;
+.pl-\[18px\] {
+  padding-left: 18px;
 }
 .text-left {
   text-align: left;
