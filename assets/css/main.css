@@ -288,3 +288,8 @@ body {
 em, i, .italic {
   font-style: italic !important;
 }
+
+details {
+  position: relative;
+  transition: all 0.3s ease;
+}
