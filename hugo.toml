@@ -1,7 +1,5 @@
 baseURL = 'https://beta.pactus.org'
 title = 'Pactus blockchain'
-languageCode = 'en'
-defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = true
 relativeURLs = true
 
@@ -14,40 +12,6 @@ relativeURLs = true
   subtitle = 'Building decentralized future together!'
   [params.contact]
     email = 'info@pactus.org'
-
-[languages]
-  [languages.en]
-    contentDir = 'content/'
-    disabled = false
-    languageCode = 'en'
-    languageDirection = 'ltr'
-    languageName = 'English'
-    title = 'Pactus blockchain'
-    weight = 1
-    [languages.en.params]
-      subtitle = 'Building decentralized future together!'
-
-  [languages.ar]
-    contentDir = 'content/ar'
-    disabled = false
-    languageCode = 'ar'
-    languageDirection = 'rtl'
-    languageName = 'العربية'
-    title = 'بلوكشين بكتوس"'
-    weight = 2
-    [languages.ar.params]
-      subtitle = 'نبني مستقبل لامركزي معا!'
-
-  [languages.zh]
-    contentDir = 'content/zh'
-    disabled = false
-    languageCode = 'zh'
-    languageDirection = 'ltr'
-    languageName = '中文'
-    title = 'Pactus 区块链'
-    weight = 3
-    [languages.zh.params]
-      subtitle = '共同构建去中心化的未来！'
 
 [markup]
   [markup.goldmark]

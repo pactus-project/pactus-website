@@ -104,10 +104,10 @@
         </div>
       </div>
     </div>
-<!--    <img-->
-<!--      src="/images/roadmap-bg.svg"-->
-<!--      class="absolute right-0 -z-20 min-w-full max-h-full overflow-hidden"-->
-<!--      alt="" />-->
+    <!--    <img-->
+    <!--      src="/images/roadmap-bg.svg"-->
+    <!--      class="absolute right-0 -z-20 min-w-full max-h-full overflow-hidden"-->
+    <!--      alt="" />-->
     <img class="absolute -z-10 right-9" src="/images/chains.svg" alt="" />
     <div class="mt-[6rem] md:mt-[10rem]">
       <div class="container mx-auto">
@@ -204,6 +204,19 @@
 {{ define "page_script" }}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
+    function getHeightOfTwoSlides(swiper) {
+      const slides = swiper.slides;
+      const spaceBetween = swiper.params.spaceBetween || 0;
+
+      if (slides.length >= 2) {
+        const height = slides[0].offsetHeight + slides[1].offsetHeight + spaceBetween + 30;
+        return height;
+      } else {
+        console.warn("Not enough slides to calculate height");
+        return 0;
+      }
+    }
+
     function updateSwiperHeight() {
       const swiperEl = document.querySelector("#mySwiper");
       const slides = swiperEl.querySelectorAll(".swiper-slide");
@@ -213,7 +226,6 @@
         const height =
           slides[0].offsetHeight + slides[1].offsetHeight + spaceBetween;
         swiperEl.style.height = `${height}px`;
-        console.log("Updated Swiper height:", height);
       } else {
         console.warn("Not enough slides to calculate height");
       }
@@ -230,7 +242,6 @@
       slidesPerView: 2,
       pagination: {
         el: ".swiper-pagination"
-        // clickable: true,
       },
       autoplay: {
         delay: 5000,
