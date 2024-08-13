@@ -3071,6 +3071,9 @@ html:has(.drawer-toggle:checked) {
 .inline-grid {
   display: inline-grid;
 }
+.contents {
+  display: contents;
+}
 .hidden {
   display: none;
 }
@@ -3089,6 +3092,9 @@ html:has(.drawer-toggle:checked) {
 .h-full {
   height: 100%;
 }
+.h-\[3em\] {
+  height: 3em;
+}
 .max-h-full {
   max-height: 100%;
 }
@@ -3100,6 +3106,9 @@ html:has(.drawer-toggle:checked) {
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.min-h-\[3rem\] {
+  min-height: 3rem;
 }
 .w-10 {
   width: 2.5rem;
@@ -3536,6 +3545,9 @@ html:has(.drawer-toggle:checked) {
 }
 .pt-\[8rem\] {
   padding-top: 8rem;
+}
+.pb-\[20px\] {
+  padding-bottom: 20px;
 }
 .text-left {
   text-align: left;
@@ -4489,6 +4501,10 @@ details {
 
   .lg\:grid {
     display: grid;
+  }
+
+  .lg\:contents {
+    display: contents;
   }
 
   .lg\:hidden {

@@ -10,9 +10,10 @@
       class="text-center px-5 md:px-0 z-20 pt-[10rem] md:pt-[15rem] bg-transparent">
       <h1
         data-aos-duration="1000"
-        class="font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999]"
+        class="font-bold text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999] pb-[20px] block"
         data-aos="zoom-in">
-        Welcome to Pactus
+        <span class="block lg:contents">Welcome to</span>
+        <div class="w-full min-h-[3rem] lg:contents"><span id="pactus-name"></span></div>
       </h1>
       <h1
         data-aos="zoom-in"
@@ -261,6 +262,49 @@
     });
 
     setTimeout(updateSwiperHeight, 500);
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const translations = [
+      "Պակտուս",   // Armenian
+      "بكتوس",     // Arabic
+      "পাক্টাস",   // Bengali
+      "Пактус",    // Russian
+      "帕克图斯",   // Chinese
+      "პაქტუსი",   // Georgian
+      "Πάκτους",   // Greek
+      "פקטוס",     // Hebrew
+      "पेक्टस",    // Hindi
+      "パクトゥス",  // Japanese
+      "پکتوس",     // Urdu
+      "பக்டஸ்",    // Tamil
+      "แพคตัส",    // Thai
+      "پاکٹس"      // Urdu (Alternative script)
+    ];
+
+    function shuffleArray(array) {
+      const shuffledArray = array.slice();
+
+      for (let i = shuffledArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+      }
+
+      return shuffledArray;
+    }
+
+    const options = {
+      strings: ["Pactus", ...shuffleArray(translations)],
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 1000,
+      startDelay: 500,
+      loop: true,
+      showCursor: true,
+    };
+
+    new Typed("#pactus-name", options);
   });
 </script>
 {{ end }}
