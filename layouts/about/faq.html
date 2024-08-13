@@ -135,7 +135,7 @@
                 {{ index (split $tr "]") 1 | markdownify | safeHTML }}
                 {{ with .Params.img }}
                   <img
-                    src="{{ .Site.BaseURL }}/assets/images/{{ . }}"
+                    src="{{ .Site.BaseURL }}assets/images/{{ . }}"
                     alt="{{ T (printf " dict.faq.%s" $item.id) }}" />
                 {{ end }}
                 {{ if isset $item "more" }}

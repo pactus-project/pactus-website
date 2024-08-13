@@ -1,6 +1,5 @@
 baseURL = 'https://beta.pactus.org'
 title = 'Pactus blockchain'
-defaultContentLanguageInSubdir = true
 relativeURLs = true
 
 [permalinks]
