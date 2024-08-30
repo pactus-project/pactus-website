@@ -2865,6 +2865,9 @@ html:has(.drawer-toggle:checked) {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .inset-0 {
   inset: 0px;
 }
@@ -3132,6 +3135,12 @@ html:has(.drawer-toggle:checked) {
   width: -moz-max-content;
   width: max-content;
 }
+.w-\[\] {
+  width: ;
+}
+.w-\[80\%\] {
+  width: 80%;
+}
 .min-w-full {
   min-width: 100%;
 }
@@ -3268,6 +3277,9 @@ html:has(.drawer-toggle:checked) {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 .overflow-y-scroll {
   overflow-y: scroll;
@@ -3513,6 +3525,9 @@ html:has(.drawer-toggle:checked) {
 .pl-4 {
   padding-left: 1rem;
 }
+.pl-\[18px\] {
+  padding-left: 18px;
+}
 .pr-10 {
   padding-right: 2.5rem;
 }
@@ -3542,9 +3557,6 @@ html:has(.drawer-toggle:checked) {
 }
 .pt-\[8rem\] {
   padding-top: 8rem;
-}
-.pl-\[18px\] {
-  padding-left: 18px;
 }
 .text-left {
   text-align: left;
@@ -4310,6 +4322,30 @@ details {
 
   .md\:w-40 {
     width: 10rem;
+  }
+
+  .md\:w-\[\] {
+    width: ;
+  }
+
+  .md\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
   }
 
   .md\:grid-cols-2 {
