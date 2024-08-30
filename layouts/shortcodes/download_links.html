@@ -1,8 +1,6 @@
 <div class="mt-10">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-    <div
-      class="p-5 border border-neutral-400 rounded-xl cursor-pointer bg-[#2b2b4b]"
-      id="gui-btn">
+    <a href="#release-tables-gui" class="p-5 border border-neutral-400 rounded-xl cursor-pointer bg-[#2b2b4b] no-underline" id="gui-btn">
       <h4 class="font-bold lg:text-2xl text-lg text-neutral-50">
         {{ T "dict.download.pactus_gui" }}
       </h4>
@@ -10,85 +8,146 @@
       <div class="w-full text-center" style="text-align: -webkit-center;">
         <img src="/images/pactus-gui.png" class="mt-5 w-full" alt="" />
       </div>
-    </div>
-    <div
-      class="p-5 border border-neutral-400 rounded-xl hover:bg-[#000] cursor-pointer"
-      id="cli-btn">
+    </a>
+    <a href="#release-tables-cli" class="p-5 border border-neutral-400 rounded-xl hover:bg-[#000] cursor-pointer no-underline" id="cli-btn">
       <h4 class="font-bold lg:text-2xl text-lg text-neutral-50">
         {{ T "dict.download.pactus_cli" }}
       </h4>
       <p class="mt-5 text-neutral-50">{{ T "dict.download.download_cli" }}</p>
       <div class="w-full text-center" style="text-align: -webkit-center;">
-        <img
-          src="/images/pactus-cli.png"
-          class="lg:mt-[76px] mt-5 w-full"
-          alt="" />
+        <img src="/images/pactus-cli.png" class="lg:mt-[76px] mt-5 w-full" alt="" />
       </div>
-    </div>
+    </a>
   </div>
 </div>
 <div class="mt-10">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14" id="gui">
-    {{ range .Site.Data.download.gui.os }}
-      <div>
-        <div
-          class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-          <div
-            class="md:text-lg items-center flex text-sm w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center pt-5 pb-5">
-            <img src="{{ .icon }}" alt="" class="!mt-0 !mb-0" />
-            <span class="ml-3 mt-1">
-              {{ .title }}
-            </span>
-          </div>
-        </div>
-        {{ range .kind }}
-          <div class="flex items-center mt-5 overflow-auto">
-            <span class="text-neutral-50 text-bold">{{ .format }}</span>
-            {{ range .arch }}
-              <div class="flex items-center">
-                <a
-                  href="{{ .link }}"
-                  class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5"
-                  >{{ .title }}</a
-                >
-              </div>
-            {{ end }}
-          </div>
-        {{ end }}
-      </div>
-    {{ end }}
-  </div>
+  <div id="release-tables-gui" class="overflow-x-auto">
+    <h3>GUI releases</h3>
+    <div id="loading">Loading releases from github...</div>
 
-  <div
-    class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14 hidden"
-    id="cli">
-    {{ range .Site.Data.download.cli.os }}
-      <div>
-        <div
-          class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl">
-          <div
-            class="md:text-lg items-center flex text-sm w-full rounded-xl font-bold content-center bg-[#141B25] text-neutral-50 justify-center text-center pt-5 pb-5">
-            <img src="{{ .icon }}" alt="" class="!mt-0 !mb-0" />
-            <span class="ml-3 mt-1">
-              {{ .title }}
-            </span>
-          </div>
-        </div>
-        {{ range .kind }}
-          <div class="flex items-center mt-5 overflow-auto">
-            <span class="text-neutral-50 text-bold">{{ .format }}</span>
-            {{ range .arch }}
-              <div class="flex items-center">
-                <a
-                  href="{{ .link }}"
-                  class="bg-[#217AFF] no-underline p-2 pl-4 pr-4 text-sm md:text-lg rounded-2xl text-neutral-50 ml-5"
-                  >{{ .title }}</a
-                >
-              </div>
-            {{ end }}
-          </div>
-        {{ end }}
-      </div>
-    {{ end }}
+  </div>
+  <div id="release-tables-cli" class="overflow-x-auto">
+    <h3>CLI releases</h3>
+    <div id="loading1">Loading releases from github...</div>
   </div>
 </div>
+<script>
+  // Function to fetch the latest release data
+  async function fetchLatestRelease() {
+    const response = await fetch('https://api.github.com/repos/pactus-project/pactus/releases/latest');
+    return response.json();
+  }
+
+  // Function to get OS icon
+  function getOSIcon(os) {
+    const icons = {
+      windows: '<i class="fa-brands fa-windows"></i>',
+      macos: '<i class="fa-brands fa-apple"></i>',
+      linux: '<i class="fa-brands fa-linux"></i>',
+      freebsd: '<i class="fa-brands fa-freebsd"></i>'
+    };
+    return icons[os.toLowerCase()] || '';
+  }
+
+  // Function to get human-readable file size
+  function formatFileSize(bytes) {
+    const units = ['B', 'KB', 'MB', 'GB'];
+    let size = bytes;
+    let unitIndex = 0;
+    while (size >= 1024 && unitIndex < units.length - 1) {
+      size /= 1024;
+      unitIndex++;
+    }
+    return `${size.toFixed(2)} ${units[unitIndex]}`;
+  }
+
+  // Function to determine the kind of release
+  function getKind(fileName) {
+    const archiveFormats = ['zip', 'tar.gz', 'tgz'];
+    const installerFormats = ['exe', 'pkg', 'deb', 'rpm'];
+
+    const extension = fileName.split('.').pop().toLowerCase();
+
+    if (archiveFormats.includes(extension)) return 'Archive';
+    if (installerFormats.includes(extension)) return 'Installer';
+    return extension.toUpperCase();
+  }
+
+  // Function to determine OS from file name
+  function getOS(fileName) {
+    if (fileName.toLowerCase().includes('windows')) return 'Windows';
+    if (fileName.toLowerCase().includes('darwin')) return 'macOS';
+    if (fileName.toLowerCase().includes('linux')) return 'Linux';
+    if (fileName.toLowerCase().includes('freebsd')) return 'FreeBSD';
+    if (fileName.toLowerCase().includes('android')) return 'Android';
+    return 'Unknown';
+  }
+
+  // Function to determine architecture from file name
+  function getArch(fileName) {
+    if (fileName.toLowerCase().includes('amd64')) return '64-bit';
+    if (fileName.toLowerCase().includes('386')) return '32-bit';
+    if (fileName.toLowerCase().includes('arm64')) return 'ARM64';
+    if (fileName.toLowerCase().includes('arm')) return 'ARM';
+    return 'Unknown';
+  }
+
+  // Function to create the table
+  function createTable(assets, type) {
+    const table = document.createElement('table');
+    table.className = "table rounded-lg"
+    table.innerHTML = `
+    <thead>
+      <tr class="font-bold">
+
+        <th>Name</th>
+        <th>Kind</th>
+        <th>OS</th>
+        <th>Arch</th>
+        <th>Size</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${assets.filter(asset => asset.name.toLowerCase().includes(type)).map(asset => {
+      const kind = getKind(asset.name);
+      const os = getOS(asset.name);
+      const arch = getArch(asset.name);
+      return `
+          <tr>
+            <td><a href="${asset.browser_download_url}" target="_blank">${asset.name}</a></td>
+            <td>${kind}</td>
+            <td class="flex" style="align-items:center">${getOSIcon(os)} <span class="ml-1">${os}</span></td>
+            <td>${arch}</td>
+            <td>${formatFileSize(asset.size)}</td>
+          </tr>
+        `;
+    }).join('')}
+    </tbody>
+  `;
+    return table;
+  }
+
+  // Main function to fetch data and create the tables
+  async function displayLatestRelease() {
+    try {
+      document.getElementById("loading").innerHTML = ""
+      document.getElementById("loading1").innerHTML = ""
+      const release = await fetchLatestRelease();
+
+      const cliTable = createTable(release.assets, 'cli');
+      const guiTable = createTable(release.assets, 'gui');
+
+      const container_gui = document.getElementById('release-tables-gui');
+      const container_cli = document.getElementById('release-tables-cli');
+      container_gui.appendChild(guiTable);
+      container_cli.appendChild(cliTable);
+    } catch (error) {
+      console.error('Error fetching release data:', error);
+      document.getElementById("loading").innerHTML = '<p>Error fetching release data. Please try again later.</p>';
+      document.getElementById("loading1").innerHTML = '<p>Error fetching release data. Please try again later.</p>';
+    }
+  }
+
+  // Call the main function when the page loads
+  window.addEventListener('load', displayLatestRelease);
+</script>

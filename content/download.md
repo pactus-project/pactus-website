@@ -27,6 +27,7 @@ type = 'download'
 
 {{<translate "dict.download.downloader_script_explained">}}
 
+
 ```sh
 curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v{{<latest_version>}}/pactus_downloader.sh | sh
 ```
