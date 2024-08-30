@@ -139,10 +139,11 @@
           style="text-align: -webkit-right;">
           <img src="/images/star.svg" alt="" class="w-6 lg:w-16" />
         </div>
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-        
-        <dotlottie-player src="/images/map.json"
-          background="transparent" speed="1" class="w-full md:w-[60%]" loop autoplay></dotlottie-player>
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"></script>
+
+        <dotlottie-player src="/images/map.json" background="transparent" speed="1" class="w-full md:w-[60%]" loop
+          autoplay></dotlottie-player>
       </div>
     </div>
   </div>
@@ -182,15 +183,10 @@
       loop: false,
       direction: "vertical",
       mousewheelControl: true,
-      mousewheel: {
-        releaseOnEdges: true,
-        sensitivity: 1,
-        thresholdDelta: 50,
-        thresholdTime: 50
-      },
+      paginationClickable: true,
       touchRatio: 1,
       touchAngle: 45,
-      longSwipes: true,
+      longSwipes: false,
       longSwipesRatio: 0.5,
       freeMode: {
         enabled: true,
