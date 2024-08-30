@@ -1,158 +1,82 @@
 {{ define "title" }}{{ .Page.Title }}{{ end }}
 {{ define "main" }}
-  {{ $roadmap := .Site.Data.roadmap }}
-  <section
-    class="container mx-auto px-4 py-2 pt-[4rem] lg:pt-[8rem] relative z-20 flex-grow pb-20 flex-col min-h-full">
-    <div class="flex-grow">
-      <h1 class="text-5xl font-bold mt-10 text-neutral-50 flex z-10 absolute">
-        <svg
-          width="84"
-          height="84"
-          viewBox="0 0 84 84"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_1239_17249)">
-            <path
-              d="M82.3594 28.875C83.0066 28.875 83.5933 28.4945 83.8574 27.9034C84.1212 27.3125 84.0131 26.6218 83.5813 26.1396L77.9474 19.8516L83.5813 13.5635C84.0131 13.0815 84.1212 12.3907 83.8574 11.7997C83.5933 11.2086 83.0066 10.8281 82.3594 10.8281H61.8517C60.9458 10.8281 60.2111 11.5628 60.2111 12.4688V43.6406H39.4124V33.1285C41.5523 32.4348 43.1038 30.4226 43.1038 28.0547C43.1038 25.1145 40.7119 22.7227 37.7718 22.7227C34.8316 22.7227 32.4398 25.1145 32.4398 28.0547C32.4398 30.4226 33.9913 32.435 36.1312 33.1285V43.6406H15.3323V37.8453C17.4722 37.1518 19.0239 35.1394 19.0239 32.7715C19.0239 29.8313 16.6318 27.4395 13.6917 27.4395C10.7515 27.4395 8.35964 29.8313 8.35964 32.7715C8.35964 35.1394 9.91118 37.1518 12.051 37.8453V43.6406H1.64062C0.734672 43.6406 0 44.3753 0 45.2812V71.5312C0 72.4372 0.734672 73.1719 1.64062 73.1719H73.8803C74.4373 73.1719 74.9562 72.8892 75.2583 72.4216L83.7372 59.2966C84.0873 58.7546 84.0873 58.0579 83.7372 57.5159L75.2583 44.3909C74.9561 43.9231 74.4371 43.6406 73.8803 43.6406H63.4924V28.875H82.3594ZM63.4924 14.1094H78.6865L74.5226 18.7568C73.9645 19.3799 73.9645 20.3232 74.5226 20.9464L78.6865 25.5938H63.4924V14.1094ZM37.7718 26.0039C38.9027 26.0039 39.8226 26.9238 39.8226 28.0547C39.8226 29.1856 38.9027 30.1055 37.7718 30.1055C36.6409 30.1055 35.721 29.1856 35.721 28.0547C35.721 26.9238 36.6409 26.0039 37.7718 26.0039ZM13.6917 30.7207C14.8226 30.7207 15.7426 31.6406 15.7426 32.7715C15.7426 33.9024 14.8226 34.8223 13.6917 34.8223C12.5608 34.8223 11.6409 33.9024 11.6409 32.7715C11.6409 31.6406 12.561 30.7207 13.6917 30.7207ZM28.7336 69.8906L35.5774 59.2966C35.9276 58.7546 35.9276 58.0579 35.5774 57.5159L28.7336 46.9219H48.907L56.3261 58.4062L48.907 69.8906H28.7336ZM3.28125 46.9219H24.8273L32.2463 58.4062L24.8273 69.8906H3.28125V46.9219ZM80.406 58.4062L72.987 69.8906H52.8135L59.6574 59.2966C60.0075 58.7546 60.0075 58.0579 59.6574 57.5159L52.8134 46.9219H72.987L80.406 58.4062Z"
-              fill="#F0F0F0" />
-          </g>
-          <defs>
-            <clipPath id="clip0_1239_17249">
-              <rect width="84" height="84" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
+{{ $roadmap := .Site.Data.roadmap }}
+<section class="container mx-auto px-4 py-2 pt-[4rem] lg:pt-[8rem] relative z-20 flex-grow pb-20 flex-col min-h-full">
+  <div class="flex-grow">
+    <h1 class="text-5xl font-bold mt-10 text-neutral-50 flex z-10 absolute">
+      <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1239_17249)">
+          <path
+            d="M82.3594 28.875C83.0066 28.875 83.5933 28.4945 83.8574 27.9034C84.1212 27.3125 84.0131 26.6218 83.5813 26.1396L77.9474 19.8516L83.5813 13.5635C84.0131 13.0815 84.1212 12.3907 83.8574 11.7997C83.5933 11.2086 83.0066 10.8281 82.3594 10.8281H61.8517C60.9458 10.8281 60.2111 11.5628 60.2111 12.4688V43.6406H39.4124V33.1285C41.5523 32.4348 43.1038 30.4226 43.1038 28.0547C43.1038 25.1145 40.7119 22.7227 37.7718 22.7227C34.8316 22.7227 32.4398 25.1145 32.4398 28.0547C32.4398 30.4226 33.9913 32.435 36.1312 33.1285V43.6406H15.3323V37.8453C17.4722 37.1518 19.0239 35.1394 19.0239 32.7715C19.0239 29.8313 16.6318 27.4395 13.6917 27.4395C10.7515 27.4395 8.35964 29.8313 8.35964 32.7715C8.35964 35.1394 9.91118 37.1518 12.051 37.8453V43.6406H1.64062C0.734672 43.6406 0 44.3753 0 45.2812V71.5312C0 72.4372 0.734672 73.1719 1.64062 73.1719H73.8803C74.4373 73.1719 74.9562 72.8892 75.2583 72.4216L83.7372 59.2966C84.0873 58.7546 84.0873 58.0579 83.7372 57.5159L75.2583 44.3909C74.9561 43.9231 74.4371 43.6406 73.8803 43.6406H63.4924V28.875H82.3594ZM63.4924 14.1094H78.6865L74.5226 18.7568C73.9645 19.3799 73.9645 20.3232 74.5226 20.9464L78.6865 25.5938H63.4924V14.1094ZM37.7718 26.0039C38.9027 26.0039 39.8226 26.9238 39.8226 28.0547C39.8226 29.1856 38.9027 30.1055 37.7718 30.1055C36.6409 30.1055 35.721 29.1856 35.721 28.0547C35.721 26.9238 36.6409 26.0039 37.7718 26.0039ZM13.6917 30.7207C14.8226 30.7207 15.7426 31.6406 15.7426 32.7715C15.7426 33.9024 14.8226 34.8223 13.6917 34.8223C12.5608 34.8223 11.6409 33.9024 11.6409 32.7715C11.6409 31.6406 12.561 30.7207 13.6917 30.7207ZM28.7336 69.8906L35.5774 59.2966C35.9276 58.7546 35.9276 58.0579 35.5774 57.5159L28.7336 46.9219H48.907L56.3261 58.4062L48.907 69.8906H28.7336ZM3.28125 46.9219H24.8273L32.2463 58.4062L24.8273 69.8906H3.28125V46.9219ZM80.406 58.4062L72.987 69.8906H52.8135L59.6574 59.2966C60.0075 58.7546 60.0075 58.0579 59.6574 57.5159L52.8134 46.9219H72.987L80.406 58.4062Z"
+            fill="#F0F0F0" />
+        </g>
+        <defs>
+          <clipPath id="clip0_1239_17249">
+            <rect width="84" height="84" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
 
-        <span class="mt-7 ml-5">Roadmap</span>
-      </h1>
-      <div
-        class="w-full text-right relative bottom-[1.06em]"
-        style="text-align: -webkit-right;">
-        <img src="/images/gate.png" alt="" class="relative max-w-[81%]" />
-      </div>
-      <div class="relative bottom-[1.06em] hidden lg:block">
-        <div class="text-right w-full" style="text-align: -webkit-right;">
-          <div class="absolute w-full z-10">
-            <div
-              class="min-w-full relative bottom-[3.06em] grid grid-flow-col grid-cols-4">
-              <div></div>
-              <div></div>
-              {{ range (first 2 $roadmap) }}
-                <div>
-                  <div class="inline-grid min-w-full place-content-center">
-                    <div class="flex min-w-full place-content-center">
-                      <div class="bg-[#223241] p-3 rounded-full">
-                        <div
-                          class="rounded-full p-2"
-                          style="background: {{ .color }}">
-                          <img src="{{ .icon_url }}" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="text-center block mt-2 max-w-[70%] place-items-center justify-self-center">
-                      <span class="text-neutral-50 font-bold"
-                        >{{ .title }}</span
-                      >
-                    </div>
-                    <div class="text-center block mt-2">
-                      <span class="text-neutral-50 font-light"
-                        >{{ .date }}</span
-                      >
-                    </div>
-                  </div>
-                </div>
-              {{ end }}
-
+      <span class="mt-7 ml-5">Roadmap</span>
+    </h1>
+    <div class="w-full text-right relative bottom-[1.06em]" style="text-align: -webkit-right;">
+      <img src="/images/gate.png" alt="" class="relative max-w-[81%]" />
+    </div>
+    <div class="relative">
+      <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+        {{range $key, $value := $roadmap}}
+        {{$color := "#0F6CBD"}}
+        {{if in $value.state "completed"}}
+        {{$color = "#2CD776"}}
+        {{else if in $value.state "construct"}}
+        {{$color = "#F08C16"}}
+        {{end}}
+        {{if eq (math.Mod $key 2) 1}}
+        <li class="my-timeline-row">
+          <div class="timeline-middle">
+            <div class="rounded-full p-2 bg-opacity-70 bg" style="background-color: #223241;">
+              <i class="fas {{$value.icon}} text-lg w-[55px] h-[55px] text-center content-center place-content-center rounded-full shadow-lg"
+                style="color: white;background-color: {{$color}};"></i>
             </div>
           </div>
-          <svg
-            class="relative max-w-[81%] bottom-[1.06em]"
-            viewBox="0 0 989 305"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0.12561 296.317C0.12561 296.317 629.768 296.317 829.673 296.317C1029.58 296.317 1031.21 9.92742 829.673 9.92742C628.137 9.92742 492.437 8.62268 492.437 8.62268"
-              stroke="#223241"
-              stroke-opacity="1"
-              stroke-width="15.6568" />
-          </svg>
-        </div>
-        {{ $count := math.Sub (len .Site.Data.roadmap) 2 }}
-        {{ $lines := math.Div $count 4 }}
-        {{ $extra := math.Mod $count 4 }}
-        {{ range $i, $num := seq $lines }}
-          {{ $startItem := add (mul (sub $i 1) 4) 2 }}
-          {{ $endItem := math.Min $count (add $startItem 4) }}
-          {{ $top := math.Mul 17 (math.Add $i 1) }}
-          {{ $bottom := math.Add $top 35 }}
-          {{ if eq (math.Mod $i 2) 0 }}
-            <div
-              class="text-left w-full relative"
-              style="text-align: -webkit-left; bottom: {{ math.Add 1.06 (math.Add $i 1) }}em">
-              <div class="absolute w-full z-10">
-                <div
-                  class="min-w-full relative bottom-[3.06em] grid grid-flow-col grid-cols-4">
-                  {{ range $itemIndex := (seq $startItem $endItem) }}
-                    {{ $data := (index $roadmap $itemIndex) }}
-                    <div>
-                      <div class="inline-grid min-w-full place-content-center">
-                        <div class="flex min-w-full place-content-center">
-                          <div class="bg-[#223241] p-3 rounded-full">
-                            <div
-                              class="rounded-full p-2"
-                              style="background: {{ $data.color }}">
-                              <img src="{{ $data.icon_url }}" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="text-center block mt-2 max-w-[70%] place-items-center justify-self-center">
-                          <span class="text-neutral-50 font-bold"
-                            >{{ $data.title }}</span
-                          >
-                        </div>
-                        <div class="text-center block mt-2">
-                          <span class="text-neutral-50 font-light"
-                            >{{ $data.date }}</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  {{ end }}
-                </div>
-              </div>
-              <svg
-                class="relative max-w-[81%]"
-                viewBox="0 0 1021 304"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M988.089 8.3169C988.089 8.3169 358.447 8.31696 158.541 8.31697C-41.3642 8.31698 -42.9951 294.706 158.541 294.706C360.078 294.706 1020.04 296.011 1020.04 296.011"
-                  stroke="#223241"
-                  stroke-opacity="1"
-                  stroke-width="15.6568" />
-              </svg>
+          <div class="timeline-start mb-10 md:text-end p-4 b-1 bg-[#242535] ml-4 mr-0 md:ml-0 md:mr-4 rounded-md" style="margin-left: 12px;">
+            <time class="font-mono italic">{{$value.date}}</time>
+            <div class="text-lg font-black">
+              {{if $value.reference }}
+              <a href="{{$value.reference}}" class="link">{{$value.title}}</a>
+              {{else}}
+              {{$value.title}}
+              {{end}}
             </div>
-          {{ else }}
-            <div
-              class="text-left w-right relative bottom-[1.06em]"
-              style="text-align: -webkit-right; bottom: {{ math.Add 1.06 (math.Add $i 1) }}em">
-              <svg
-                class="relative max-w-[81%]"
-                viewBox="0 0 1021 305"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M32.126 296.4C32.126 296.4 661.768 296.4 861.674 296.4C1061.58 296.4 1063.21 10.0109 861.674 10.0109C660.137 10.0109 0.176636 8.70618 0.176636 8.70618"
-                  stroke="#223241"
-                  stroke-opacity="1"
-                  stroke-width="15.6568" />
-              </svg>
+            {{$value.description}}
+          </div>
+          <hr />
+        </li>
+        {{else}}
+        <li class="my-timeline-row">
+          <div class="timeline-middle">
+            <div class="rounded-full p-2 bg-opacity-70 bg" style="background-color: #223241;">
+              <i class="fas {{$value.icon}} text-lg w-[55px] h-[55px] text-center content-center place-content-center rounded-full shadow-lg"
+                style="color: white;background-color: {{$color}};"></i>
             </div>
-          {{ end }}
-        {{ end }}
-      </div>
+          </div>
+          <div class="timeline-end mb-10 md:text-start p-4 bg-[#242535] ml-4 rounded-md">
+            <time class="font-mono italic">{{$value.date}}</time>
+            <div class="text-lg font-black">
+              {{if $value.reference }}
+              <a href="{{$value.reference}}" class="link">{{$value.title}}</a>
+              {{else}}
+              {{$value.title}}
+              {{end}}
+            </div>
+            {{$value.description}}
+          </div>
+          <hr />
+        </li>
+        {{end}}
+        {{end}}
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
 {{ end }}
