@@ -1,6 +1,6 @@
 +++
 title = 'Pactus 1.2.0 (Sydney) Released'
-summary = 'Pactus Blockchain Version 1.2.0 (Sydney) is now available for download, featuring applications such as Pactus GUI, Daemon, Shell, and Wallet. Key updates include clock offset calculations, configurable minimum fees, IP blocking, rate limits, and a new wallet manager. Users should download the latest version from the official site and follow the upgrade instructions provided. For detailed changes and improvements'
+description = 'Pactus Blockchain Version 1.2.0 (Sydney) is now available for download, featuring applications such as Pactus GUI, Daemon, Shell, and Wallet. Key updates include clock offset calculations, configurable minimum fees, IP blocking, rate limits, and a new wallet manager. Users should download the latest version from the official site and follow the upgrade instructions provided. For detailed changes and improvements'
 author = 'Pactus Team'
 date = 2024-06-20T09:49:12+03:30
 draft = false

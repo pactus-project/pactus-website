@@ -20,7 +20,7 @@
         </div>
         <div class="mt-3 block">
           <p class="rounded-xl inline-block text-neutral-50 font-light text-lg">
-            {{ $summary := $latestPost.Summary | plainify | truncate 300 " ..." }}
+            {{ $summary := $latestPost.Params.description  | plainify | truncate 300 " ..." }}
             {{ $summary }}
           </p>
         </div>

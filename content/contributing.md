@@ -2,6 +2,7 @@
 title = 'Contributing'
 layout = 'contributing'
 type = 'contributing'
+description = 'Pactus is a community-run blockchain technology with a revolutionary, secure, Solid State Proof of Stake Consensus. Come join us and build a decentralized future together!'
 +++
 
 As an open-source platform, Pactus blockchain empoers from its community.

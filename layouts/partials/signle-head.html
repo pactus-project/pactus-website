@@ -3,12 +3,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ .Title }} | Pactus.org | Pactus</title>
-  <meta name="description" content="{{ T " dict.home.motto" }}" />
+  <meta name="description" content="{{.Page.Params.description}}" />
 
-  <meta property="og:title" content="{{ .Title }}" />
-  <meta property="og:description" content="{{ T " dict.home.motto" }}" />
-  <meta property="og:site_name" content="{{ T " dict.pactus_blockchain" }}" />
-  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:title" content="{{.Page.Params.title}} | Pactus" />
+  <meta property="og:description" content="{{.Page.Params.description}}" />
+  <meta property="og:site_name" content="Pactus" />
+  <meta property="og:url" content="{{ .Page.Permalink }}" />
   <meta property="og:type" content="website" />
 
   <!-- {{ with resources.Get "css/main.css" | postCSS | minify | fingerprint }}

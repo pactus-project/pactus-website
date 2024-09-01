@@ -1,6 +1,6 @@
 +++
 title = ''
-summary = ''
+description = ''
 author = ''
 date = {{ .Date }}
 draft = true
