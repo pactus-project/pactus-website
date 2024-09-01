@@ -74,6 +74,7 @@
   date: Q3 2024
   reference: 
   state: construct
+  current: true
 
 # - title: Batch Transactions
 #   description: 

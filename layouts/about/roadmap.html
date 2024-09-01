@@ -3,7 +3,8 @@
 {{ $roadmap := .Site.Data.roadmap }}
 <section class="container mx-auto px-4 py-2 pt-[4rem] lg:pt-[8rem] relative z-20 flex-grow pb-20 flex-col min-h-full">
   <div class="flex-grow">
-    <h1 class="text-5xl font-bold mt-10 text-neutral-50 flex z-10 absolute">
+    <div class="absolute z-10">
+    <h1 class="text-5xl font-bold mt-10 text-neutral-50 flex z-10">
       <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1239_17249)">
           <path
@@ -17,8 +18,15 @@
         </defs>
       </svg>
 
-      <span class="mt-7 ml-5">Roadmap</span>
+      <span class="mt-7 ml-5">Roadmap</span>      
     </h1>
+    <a href="#current" class="learn-more z-10 mt-10 hidden lg:block !bg-[#242535]">
+      <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+      </span>
+      <span class="button-text">Go to where we are!</span>
+    </a>
+  </div>
     <div class="w-full text-right relative bottom-[1.06em]" style="text-align: -webkit-right;">
       <img src="/images/gate.png" alt="" class="relative max-w-[81%]" />
     </div>
@@ -39,9 +47,10 @@
                 style="color: white;background-color: {{$color}};"></i>
             </div>
           </div>
-          <div class="timeline-start mb-10 md:text-end p-4 b-1 bg-[#242535] ml-4 mr-0 md:ml-0 md:mr-4 rounded-md" style="margin-left: 12px;">
-            <time class="font-mono italic">{{$value.date}}</time>
-            <div class="text-lg font-black">
+          
+          <div {{if $value.current}}id="current"{{end}} class="timeline-start mb-10 md:text-end p-4 b-1 bg-[#242535] ml-4 mr-0 md:ml-0 md:mr-4 rounded-md" style="margin-left: 12px;">
+            <time class="font-mono">{{$value.date}}</time>
+            <div class="text-lg font-bold">
               {{if $value.reference }}
               <a href="{{$value.reference}}" class="link">{{$value.title}}</a>
               {{else}}
@@ -60,9 +69,9 @@
                 style="color: white;background-color: {{$color}};"></i>
             </div>
           </div>
-          <div class="timeline-end mb-10 md:text-start p-4 bg-[#242535] ml-4 rounded-md">
-            <time class="font-mono italic">{{$value.date}}</time>
-            <div class="text-lg font-black">
+          <div {{if $value.current}}id="current"{{end}} class="timeline-end  mb-10 md:text-start p-4 bg-[#242535] ml-4 rounded-md">
+            <time class="font-mono">{{$value.date}}</time>
+            <div class="text-lg font-bold">
               {{if $value.reference }}
               <a href="{{$value.reference}}" class="link">{{$value.title}}</a>
               {{else}}
