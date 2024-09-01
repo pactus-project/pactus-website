@@ -74,16 +74,16 @@
       {{ range $i,$group := .Site.Data.faq }}
         <div
           class="join join-vertical w-full"
-          id="{{ $group.title }}"
           id="{{ $group.title }}">
           {{ range $j, $item := $group.items }}
             {{ $titleKey := T (printf "dict.faq.%s" $item.id) }}
-            <div class="collapse join-item">
+            <div class="collapse join-item" id="{{printf "%s.%s" $group.title $item.id}}" onclick="changeUrlID({{printf "%s.%s" $group.title $item.id}})">
               <input
                 type="checkbox"
                 name="{{ $group.title }}"
                 class="peer"
-                aria-checked="false" />
+                aria-checked="false" 
+                />
               <div
                 class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
                 <div>{{ $titleKey }}</div>
@@ -182,4 +182,26 @@
       });
     });
   </script>
+  <script>
+    function changeUrlID(id) {
+      let currentUrl = window.location.href.split('#')[0];
+      let newUrl = currentUrl + '#' + id;
+      history.pushState({}, '', newUrl);
+    }
+  </script>
+  <script>
+    function scrollToElement(elementId) {
+      $('html, body').animate({
+          scrollTop: $('#' + elementId).offset().top
+      }, 1000);
+    }
+    $(document).ready(function () {
+      let element = document.getElementById(window.location.href.split('#')[1])
+      if (element) {
+        element.classList.add("collapse-open")
+        scrollToElement(window.location.href.split('#')[1])
+      }
+    });
+  </script>
+  
 {{ end }}
