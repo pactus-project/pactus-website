@@ -160,12 +160,21 @@
 <script>
 
   document.addEventListener("DOMContentLoaded", function () {
+    let cachedStars = localStorage.getItem("githubStars");
     const githubStars = document.getElementById("github_stars");
     const githubStarsUrl = "https://api.github.com/repos/pactus-project/pactus";
     fetch(githubStarsUrl)
-      .then((response) => response.json())
-      .then((data) => {
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Invalid response from GitHub API");
+        }
+        return response.json()
+      }).then((data) => {
         githubStars.innerText = data.stargazers_count;
+        localStorage.setItem("githubStars", data.stargazers_count);
+      }).catch((error) => {
+        githubStars.innerText = cachedStars || "Github";
+        console.error("Error fetching GitHub stars", error);
       });
   });
 </script>

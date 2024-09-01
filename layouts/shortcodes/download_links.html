@@ -34,8 +34,14 @@
 <script>
   // Function to fetch the latest release data
   async function fetchLatestRelease() {
+    let cachedRelease = localStorage.getItem('latestRelease');
     const response = await fetch('https://api.github.com/repos/pactus-project/pactus/releases/latest');
-    return response.json();
+    if (!response.ok) {
+      return JSON.parse(cachedRelease) || {}
+    }
+    let resp = await response.json()
+    localStorage.setItem("latestRelease", JSON.stringify(resp));
+    return resp;
   }
 
   // Function to get OS icon
