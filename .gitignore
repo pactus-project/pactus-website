@@ -28,3 +28,4 @@ resources/
 .code
 package-lock.json
 yarn.lock
+.build_build.lock
