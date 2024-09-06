@@ -39,7 +39,7 @@ These guides can help you to send a Bond transaction and stake some coins:
 
 Pactus is an open-source project that welcomes and encourages contributions from developers.
 By contributing to the project, you can help improve the Pactus platform and create new features that
-benefit the entire community.
+benefit the entire ecosystem.
 
 You can check our [Contributing](https://github.com/pactus-project/pactus/blob/main/CONTRIBUTING.md) page
 for more information on how to get involved and contribute to the project.
