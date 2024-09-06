@@ -2,13 +2,13 @@
 title = 'Contributing'
 layout = 'contributing'
 type = 'contributing'
-description = 'Pactus is a community-run blockchain technology with a revolutionary, secure, Solid State Proof of Stake Consensus. Come join us and build a decentralized future together!'
+description = ''
 +++
 
-As an open-source platform, Pactus blockchain empoers from its community.
-Whether you're a developer, designer, or enthusiast, your contributions can make a meaningful impact.
+Pactus blockchain is an open-source platform that thrives on the contributions of its community. 
+Whether you're a developer, designer, or enthusiast, your contribution can truly make a difference.
 
-There are several ways to support the Pactus project:
+Here are various ways you can support the Pactus project:
 
 ## Run a Node
 
