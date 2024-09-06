@@ -5,7 +5,7 @@ type = 'contributing'
 description = ''
 +++
 
-Pactus blockchain is an open-source platform that thrives on the contributions of its community. 
+Pactus is an open-source platform that thrives on the contributions of its community. 
 Whether you're a developer, designer, or enthusiast, your contribution can truly make a difference.
 
 Here are various ways you can support the Pactus project:
