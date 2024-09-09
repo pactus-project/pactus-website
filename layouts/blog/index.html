@@ -59,6 +59,8 @@
                   {{ .Title }}
                 </h1>
               </a>
+              {{ $summary := .Params.description | plainify | truncate 150 " ..." }}    
+              <p class="text-sm mt-2">{{ $summary }}</p>
             </div>
             <div class="block mt-8">
               <h1 class="text-[#97989F] font-medium text-sm">
