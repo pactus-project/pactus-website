@@ -592,3 +592,8 @@ canvas {
 #earth canvas{
   width: 100% !important;
 }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
