@@ -589,3 +589,6 @@ canvas {
 	border-radius: 50%;
 	background: white;
 }
+#earth canvas{
+  width: 100% !important;
+}
