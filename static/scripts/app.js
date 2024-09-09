@@ -44,7 +44,7 @@ class App {
     if (window.innerWidth < 768) {
       pos = 75
     }
-    this.camera = new THREE.PerspectiveCamera(pos, this.ratio, 0.1, 10000);
+    this.camera = new THREE.PerspectiveCamera(55, this.ratio, 0.1, 10000);
     this.camera.lookAt(this.scene.position);
     this.camera.position.set(0, 10, 30);
   }
