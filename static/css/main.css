@@ -3177,9 +3177,6 @@ html:has(.drawer-toggle:checked) {
 .right-0 {
   right: 0px;
 }
-.right-10 {
-  right: 2.5rem;
-}
 .right-2 {
   right: 0.5rem;
 }
@@ -3278,14 +3275,8 @@ html:has(.drawer-toggle:checked) {
 .mr-1 {
   margin-right: 0.25rem;
 }
-.mr-12 {
-  margin-right: 3rem;
-}
 .mr-2 {
   margin-right: 0.5rem;
-}
-.mr-5 {
-  margin-right: 1.25rem;
 }
 .mr-\[3px\] {
   margin-right: 3px;
@@ -3319,9 +3310,6 @@ html:has(.drawer-toggle:checked) {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mt-\[150px\] {
-  margin-top: 150px;
 }
 .mt-\[6rem\] {
   margin-top: 6rem;
@@ -3401,9 +3389,6 @@ html:has(.drawer-toggle:checked) {
 .min-h-screen {
   min-height: 100vh;
 }
-.w-10 {
-  width: 2.5rem;
-}
 .w-2\.5 {
   width: 0.625rem;
 }
@@ -3415,9 +3400,6 @@ html:has(.drawer-toggle:checked) {
 }
 .w-5 {
   width: 1.25rem;
-}
-.w-6 {
-  width: 1.5rem;
 }
 .w-80 {
   width: 20rem;
@@ -3775,10 +3757,6 @@ html:has(.drawer-toggle:checked) {
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-}
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -4480,6 +4458,36 @@ details {
  color: #fff;
 }
 
+canvas {
+  vertical-align: top;
+}
+
+.dg.a {
+	margin-top: 10px;
+	min-width: 300px;
+}
+
+
+.markers {
+	position: relative;
+	padding: 0;
+	list-style-type: none;
+}
+
+.marker {
+	color: white;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.marker:before {
+	content: '';
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: white;
+}
+
 @media not all and (min-width: 768px) {
 
   .max-md\:timeline-compact,.max-md\:timeline-compact
@@ -5017,10 +5025,6 @@ details {
     margin-right: 1rem;
   }
 
-  .md\:mr-56 {
-    margin-right: 14rem;
-  }
-
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -5055,10 +5059,6 @@ details {
 
   .md\:w-40 {
     width: 10rem;
-  }
-
-  .md\:w-\[60\%\] {
-    width: 60%;
   }
 
   .md\:w-full {
@@ -5229,20 +5229,12 @@ details {
     top: -19rem;
   }
 
+  .lg\:top-\[-18rem\] {
+    top: -18rem;
+  }
+
   .lg\:ml-0 {
     margin-left: 0px;
-  }
-
-  .lg\:mr-0 {
-    margin-right: 0px;
-  }
-
-  .lg\:mt-16 {
-    margin-top: 4rem;
-  }
-
-  .lg\:mt-\[450px\] {
-    margin-top: 450px;
   }
 
   .lg\:mt-\[76px\] {
@@ -5269,16 +5261,24 @@ details {
     display: none;
   }
 
-  .lg\:w-16 {
-    width: 4rem;
-  }
-
-  .lg\:w-20 {
-    width: 5rem;
-  }
-
   .lg\:w-40 {
     width: 10rem;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:w-80 {
+    width: 20rem;
+  }
+
+  .lg\:w-\[\] {
+    width: ;
+  }
+
+  .lg\:w-\[150px\] {
+    width: 150px;
   }
 
   .lg\:grid-cols-3 {

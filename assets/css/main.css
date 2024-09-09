@@ -559,3 +559,33 @@ details {
 .learn-more:hover .button-text {
  color: #fff;
 }
+
+canvas {
+  vertical-align: top;
+}
+
+.dg.a {
+	margin-top: 10px;
+	min-width: 300px;
+}
+
+
+.markers {
+	position: relative;
+	padding: 0;
+	list-style-type: none;
+}
+
+.marker {
+	color: white;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.marker:before {
+	content: '';
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: white;
+}
