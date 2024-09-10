@@ -3515,6 +3515,9 @@ html:has(.drawer-toggle:checked) {
 .top-\[26px\] {
   top: 26px;
 }
+.top-\[51px\] {
+  top: 51px;
+}
 .-z-10 {
   z-index: -10;
 }
