@@ -32,42 +32,134 @@
     {{ partial "partners.html" }}
     <img class="absolute -z-10 mt-10" src="/images/blocks.svg" alt="" />
     <div class="mt-[6rem] md:mt-[10rem] z-10 relative">
-      <div class="container mx-auto p-0 rounded-xl pt-10 bg-empower-trust relative z-0 bg-[#15161C]">
-        <div class="flex flex-col items-center justify-center">
-          <h1
-            class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] to-[#999999]">
-            Empowering Trust
-          </h1>
-          <h1
-            class="font-extralight text-3xl md:text-5xl text-transparent bg-clip-text mt-4 bg-gradient-to-b from-[#FFFFFF] to-[#999999]">
-            One Block at a Time
-          </h1>
-        </div>
-        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 pb-20">
-          <div class="block md:border-r-2 md:border-[#9C9C9C] md:pr-20">
-            <div
-              class="p-5 py-10 bg-[#0B0B0F] md:shadow-get-pac md:drop-shadow-lg md:rounded-tr-2xl md:rounded-br-2xl mt-5 text-center md:text-left md:pl-28">
-              <h1 class="text-[#0F6CBD] font-bold text-3xl">Get PAC</h1>
-              <p class="mt-5 text-neutral-50">
-                Before you can utilize all that Pactus has to offer, you will
-                need to obtain our native coin. PAC is a currency that can be
-                exchanged for products, services and other currencies with a
-                percentage fee based model of 0.01% per tx.
-              </p>
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="card h-full w-full rounded-xl">
+          <div class="inner h-full w-full relative text-center group icon-target p-5 rounded-xl">
+            <div class="block">
+              <lord-icon style="width: 50px; height: 50px;" target=".icon-target" trigger="hover"
+                src="/icons/system-regular-50-file-hover-file-1.json" colors="primary:#7064e9,secondary:#7064e9">
+              </lord-icon>
             </div>
-            <div class="mt-14 md:pl-24 text-center md:text-left">
-              <a href="https://docs.pactus.org/get-started/become-a-validator" target="_blank"
-                class="btn btn-ghost text-xl md:text-2xl text-neutral-50 font-medium">Become a Validator</a>
+            <div class="mt-4 block">
+              <a href="https://pactus.org/download" target="_blank"
+                class="font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">Get
+                Started</a>
             </div>
-            <div class="mt-14 md:pl-24 text-center md:text-left">
-              <a href="{{ .Site.BaseURL }}contributing"
-                class="btn btn-ghost text-xl md:text-2xl text-neutral-50 font-medium">Improve Pactus</a>
-            </div>
+            <p class="mt-4">
+              To start your Pactus journey, you will need to download the latest software. Pactus is designed to be
+              lightweight and user-friendly, offering support for all operating systems and infrastructures with our GUI
+              and CLI applications.
+            </p>
           </div>
-          <div class="text-center justify-self-center hidden md:block">
-            <img class=" items-center relative md:bottom-8" src="/images/empower-trust.svg" alt="" />
-          </div>
+          <div class="blob"></div>
+          <div class="fakeblob"></div>
         </div>
+        <div class="card h-full w-full rounded-xl">
+          <div class="inner h-full w-full relative text-center group icon-target p-5 rounded-xl">
+            <div class="block">
+              <lord-icon style="width: 50px; height: 50px;" target=".icon-target" trigger="hover"
+                src="/icons/system-regular-50-file-hover-file-1.json" colors="primary:#7064e9,secondary:#7064e9">
+              </lord-icon>
+            </div>
+            <div class="mt-4 block">
+              <a href="https://pactus.org/download" target="_blank"
+                class="font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">Get
+                Started</a>
+            </div>
+            <p class="mt-4">
+              To start your Pactus journey, you will need to download the latest software. Pactus is designed to be
+              lightweight and user-friendly, offering support for all operating systems and infrastructures with our GUI
+              and CLI applications.
+            </p>
+          </div>
+          <div class="blob"></div>
+          <div class="fakeblob"></div>
+        </div>
+        <div class="card h-full w-full rounded-xl">
+          <div class="inner h-full w-full relative text-center group icon-target p-5 rounded-xl">
+            <div class="block">
+              <lord-icon style="width: 50px; height: 50px;" target=".icon-target" trigger="hover"
+                src="/icons/system-regular-50-file-hover-file-1.json" colors="primary:#7064e9,secondary:#7064e9">
+              </lord-icon>
+            </div>
+            <div class="mt-4 block">
+              <a href="https://pactus.org/download" target="_blank"
+                class="font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">Get
+                Started</a>
+            </div>
+            <p class="mt-4">
+              To start your Pactus journey, you will need to download the latest software. Pactus is designed to be
+              lightweight and user-friendly, offering support for all operating systems and infrastructures with our GUI
+              and CLI applications.
+            </p>
+          </div>
+          <div class="blob"></div>
+          <div class="fakeblob"></div>
+        </div>
+        <div class="card h-full w-full rounded-xl">
+          <div class="inner h-full w-full relative text-center group icon-target p-5 rounded-xl">
+            <div class="block">
+              <lord-icon style="width: 50px; height: 50px;" target=".icon-target" trigger="hover"
+                src="/icons/system-regular-50-file-hover-file-1.json" colors="primary:#7064e9,secondary:#7064e9">
+              </lord-icon>
+            </div>
+            <div class="mt-4 block">
+              <a href="https://pactus.org/download" target="_blank"
+                class="font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">Get
+                Started</a>
+            </div>
+            <p class="mt-4">
+              To start your Pactus journey, you will need to download the latest software. Pactus is designed to be
+              lightweight and user-friendly, offering support for all operating systems and infrastructures with our GUI
+              and CLI applications.
+            </p>
+          </div>
+          <div class="blob"></div>
+          <div class="fakeblob"></div>
+        </div>
+        <div class="card h-full w-full rounded-xl">
+          <div class="inner h-full w-full relative text-center group icon-target p-5 rounded-xl">
+            <div class="block">
+              <lord-icon style="width: 50px; height: 50px;" target=".icon-target" trigger="hover"
+                src="/icons/system-regular-50-file-hover-file-1.json" colors="primary:#7064e9,secondary:#7064e9">
+              </lord-icon>
+            </div>
+            <div class="mt-4 block">
+              <a href="https://pactus.org/download" target="_blank"
+                class="font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">Get
+                Started</a>
+            </div>
+            <p class="mt-4">
+              To start your Pactus journey, you will need to download the latest software. Pactus is designed to be
+              lightweight and user-friendly, offering support for all operating systems and infrastructures with our GUI
+              and CLI applications.
+            </p>
+          </div>
+          <div class="blob"></div>
+          <div class="fakeblob"></div>
+        </div>
+        <div class="card h-full w-full rounded-xl">
+          <div class="inner h-full w-full relative text-center group icon-target p-5 rounded-xl">
+            <div class="block">
+              <lord-icon style="width: 50px; height: 50px;" target=".icon-target" trigger="hover"
+                src="/icons/system-regular-50-file-hover-file-1.json" colors="primary:#7064e9,secondary:#7064e9">
+              </lord-icon>
+            </div>
+            <div class="mt-4 block">
+              <a href="https://pactus.org/download" target="_blank"
+                class="font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">Get
+                Started</a>
+            </div>
+            <p class="mt-4">
+              To start your Pactus journey, you will need to download the latest software. Pactus is designed to be
+              lightweight and user-friendly, offering support for all operating systems and infrastructures with our GUI
+              and CLI applications.
+            </p>
+          </div>
+          <div class="blob"></div>
+          <div class="fakeblob"></div>
+        </div>
+
       </div>
     </div>
     <!--    <img-->
@@ -337,6 +429,32 @@
     };
 
     new Typed("#pactus-name", options);
+  });
+</script>
+<script>
+  const all = document.querySelectorAll(".card");
+
+  window.addEventListener("mousemove", (ev) => {
+
+    all.forEach((e) => {
+      const blob = e.querySelector(".blob");
+      const fblob = e.querySelector(".fakeblob");
+      const rec = fblob.getBoundingClientRect();
+      blob.style.opacity = "1";
+
+      blob.animate(
+        [
+          {
+            transform: `translate(${(ev.clientX - rec.left) - (rec.width / 2)
+              }px,${(ev.clientY - rec.top) - (rec.height / 2)}px)`
+          }
+        ],
+        {
+          duration: 300,
+          fill: "forwards"
+        }
+      );
+    });
   });
 </script>
 {{ end }}

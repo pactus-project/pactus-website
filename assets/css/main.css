@@ -597,3 +597,47 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+.blob {
+  filter: blur(40px);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgb(112, 100, 233, 0.7);
+  transition: all 300ms ease-in-out;
+}
+
+.fakeblob {
+  display: hidden;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.card {
+  overflow: hidden;
+  padding: 3px;
+  margin: 0;
+  border-radius: 10px;
+  position: relative;
+  transition: all 300ms ease-in-out;
+}
+
+.inner {
+  background: #14161D;
+  backdrop-filter: blur(80px);
+  transition: all 300ms ease-in-out;
+}
+
+.card:hover > .inner {
+  backdrop-filter: blur(80px);
+}
