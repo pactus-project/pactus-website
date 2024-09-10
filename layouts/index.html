@@ -22,9 +22,17 @@
     </div>
     <div class="mt-10 text-center items-center w-full">
       <div class="flex gap-x-2 justify-center" data-aos-duration="1000" data-aos="fade-up">
-        <a href="https://docs.pactus.org/get-started/become-a-validator"
-          class="btn text-neutral-50 rounded-lg bg-[#217AFF] hover:bg-[#217AFF] hover:bg-opacity-80">Become a
-          validator</a>
+        <button type="button" class="btn-become-validator">
+          <strong>Become a validator</strong>
+          <div id="container-stars">
+            <div id="stars"></div>
+          </div>
+
+          <div id="glow">
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </button>
         <a href="{{ .Site.BaseURL }}community"
           class="btn btn-ghost rounded-lg shadow-top-left-to-bottom-right text-neutral-50">Join Community</a>
       </div>
@@ -202,11 +210,16 @@
               style="visibility: visible; animation-duration: 0.9s; animation-delay: 0.4s; animation-name: tfFadeUp;">
               <div class="inner-wrapper group icon-target">
                 <lord-icon style="width: 50px; height: 50px;" target=".icon-target" trigger="hover"
-                  src="/icons/system-solid-134-celebration-hover-celebration.json" colors="primary:#7064e9,secondary:#217AFF">
+                  src="/icons/system-solid-134-celebration-hover-celebration.json"
+                  colors="primary:#7064e9,secondary:#217AFF">
                 </lord-icon>
                 <div class="ta-content mt-16">
-                  <a target="_blank" href="/download" class="mb-15 font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">Get started</a>
-                  <p class="mt-4">To start your Pactus journey, you will need to download the latest software. Pactus is designed to be lightweight and user-friendly, offering support for all operating systems and infrastructures with our GUI and CLI applications.
+                  <a target="_blank" href="/download"
+                    class="mb-15 font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">Get
+                    started</a>
+                  <p class="mt-4">To start your Pactus journey, you will need to download the latest software. Pactus is
+                    designed to be lightweight and user-friendly, offering support for all operating systems and
+                    infrastructures with our GUI and CLI applications.
                   </p>
                 </div>
               </div>
@@ -222,8 +235,12 @@
                   src="/icons/system-solid-8-account-hover-account.json" colors="primary:#7064e9,secondary:#217AFF">
                 </lord-icon>
                 <div class="ta-content mt-16">
-                  <a target="_blank" href="https://docs.pactus.org/" class="mb-15 font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">Become a validator</a>
-                  <p class="mt-4">You can become a Pactus validator by staking some coins to your node. As a Pactus validator you will earn rewards, these are given for collecting valid transactions and creating new blocks. The emission is one coin per block.</p>
+                  <a target="_blank" href="https://docs.pactus.org/"
+                    class="mb-15 font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">Become
+                    a validator</a>
+                  <p class="mt-4">You can become a Pactus validator by staking some coins to your node. As a Pactus
+                    validator you will earn rewards, these are given for collecting valid transactions and creating new
+                    blocks. The emission is one coin per block.</p>
                 </div>
               </div>
             </div>
@@ -236,8 +253,12 @@
                   src="/icons/system-solid-5-wallet-hover-wallet.json" colors="primary:#7064e9,secondary:#217AFF">
                 </lord-icon>
                 <div class="ta-content mt-16">
-                  <a target="_blank" href="/community" class="mb-15 font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">Get PAC</a>
-                  <p class="mt-4">Before you can utilize all that Pactus has to offer, you will need to obtain our native coin. PAC is a currency that can be exchanged for products, services and other currencies with a percentage fee based model of 0.01% per tx.</p>
+                  <a target="_blank" href="/community"
+                    class="mb-15 font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">Get
+                    PAC</a>
+                  <p class="mt-4">Before you can utilize all that Pactus has to offer, you will need to obtain our
+                    native coin. PAC is a currency that can be exchanged for products, services and other currencies
+                    with a percentage fee based model of 0.01% per tx.</p>
                 </div>
               </div>
               <span class="count count__3 mt-40">03</span>
@@ -249,11 +270,16 @@
               <span class="count count__4 mb-40">04</span>
               <div class="inner-wrapper group icon-target">
                 <lord-icon style="width: 50px; height: 50px;" target=".icon-target" trigger="hover"
-                  src="/icons/system-solid-156-thumbs-up-down-hover-thumbs.json" colors="primary:#7064e9,secondary:#217AFF">
+                  src="/icons/system-solid-156-thumbs-up-down-hover-thumbs.json"
+                  colors="primary:#7064e9,secondary:#217AFF">
                 </lord-icon>
                 <div class="ta-content mt-16">
-                  <a target="_blank" href="/contributing" class="mb-15 font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100 ">Make Pactus better</a>
-                  <p class="mt-4">There are many ways you can support Pactus and help it grow, from being a valuable community member and sharing with your friends to contributing to our core development. Let's work together to make Pactus even better!</p>
+                  <a target="_blank" href="/contributing"
+                    class="mb-15 font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100 ">Make
+                    Pactus better</a>
+                  <p class="mt-4">There are many ways you can support Pactus and help it grow, from being a valuable
+                    community member and sharing with your friends to contributing to our core development. Let's work
+                    together to make Pactus even better!</p>
                 </div>
               </div>
             </div>
