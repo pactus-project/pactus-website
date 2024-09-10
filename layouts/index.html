@@ -771,7 +771,7 @@
       1400: {
         slidesPerView: 4
       }
-    }
+    },
   });
   let n = 100 / (swiper2.params.loop ? swiper2.slides.length - 2 : swiper2.slides.length)
   let i = $(".step_in");
@@ -779,6 +779,7 @@
     roadmapStep(this, i, n);
   });
 
+  swiper2.slideTo(swiper2.slides.length / 2)
 
 </script>
 {{ end }}
