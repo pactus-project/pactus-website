@@ -5298,7 +5298,7 @@ html {
   border-radius: 0.5rem;
 }
 
-strong {
+.btn-become-validator strong {
   z-index: 2;
   color: #ffffff;
   text-shadow: 0 0 4px white;
