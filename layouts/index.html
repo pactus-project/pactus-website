@@ -34,8 +34,18 @@
             <div class="circle"></div>
           </div>
         </a>
-        <a href="{{ .Site.BaseURL }}community"
-          class="btn btn-ghost rounded-lg shadow-top-left-to-bottom-right text-neutral-50">Join Community</a>
+          <a target="_blank" href="/community" type="button"
+          class="btn-join-community">
+          <strong>Join community</strong>
+          <div id="container-stars">
+            <div id="stars"></div>
+          </div>
+
+          <div id="glow">
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </a>
       </div>
     </div>
     {{ partial "partners.html" }}
