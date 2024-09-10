@@ -1,7 +1,7 @@
 <script src="/js/jquery.min.js"></script>
 
 {{ with resources.Get "js/main.js" | js.Build (dict "minify" true) | fingerprint }}
-  <script src="{{ .RelPermalink }}"></script>
+<script src="{{ .RelPermalink }}"></script>
 {{ end }}
 
 
@@ -12,4 +12,6 @@
   });
 </script>
 <script src="/js/typed.js"></script>
+<script src="/js/jquery.waypoints.min.js"></script>
+<script src="/js/jquery.countup.min.js"></script>
 <script src="/js/swiper-bundle.min.js"></script>
