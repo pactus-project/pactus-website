@@ -1066,13 +1066,11 @@ html {
   animation: gradient_301 5s ease infinite;
   border: double 4px transparent;
   background-image: linear-gradient(#161a25, #161a25),
-    linear-gradient(
-      137.48deg,
+    linear-gradient(137.48deg,
       #217AFF 10%,
       #14376b 45%,
       #000000 67%,
-      #161a25 87%
-    );
+      #161a25 87%);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -1091,7 +1089,6 @@ html {
 .btn-become-validator strong {
   z-index: 2;
   color: #ffffff;
-  text-shadow: 0 0 4px white;
 }
 
 #glow {
@@ -1149,6 +1146,7 @@ html {
   from {
     transform: rotate(0deg) translateX(100px) rotate(0deg);
   }
+
   to {
     transform: rotate(360deg) translateX(100px) rotate(-360deg);
   }
@@ -1298,4 +1296,120 @@ html {
   bottom: unset;
   /* transform: translateY(-30px); */
   transition-duration: 0.3s;
+}
+
+
+.fn_cs_roadmap .step_holder {
+  padding: 50px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.fn_cs_roadmap .step_holder .fn__svg {
+  width: auto;
+  height: 15px;
+  position: absolute
+}
+
+.fn_cs_roadmap .step_in {
+  width: 0;
+  height: 22px;
+  position: relative;
+  overflow: hidden;
+  transition: .5s;
+  background-image: url(/images/roadmap.png);
+  background-repeat: repeat-x;
+  max-width: 100%!important
+}
+
+.fn_cs_hero_slider,.frenify_cards_gallery .o_img,.ripple {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center
+}
+
+.fn_cs_roadmap .swiper-slide .item {
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(112, 100, 233, 0.3);
+  position: relative
+}
+
+.fn_cs_roadmap .swiper-wrapper {
+  padding: 60px 0 20px
+}
+
+.fn_cs_roadmap .swiper-slide .icon {
+  position: absolute;
+  display: block;
+  left: 40px;
+  width: 20px;
+  height: 20px;
+  background: -moz-linear-gradient(90deg,#7064e9,#217AFF);
+  background: -webkit-linear-gradient(90deg,#7064e9,#217AFF);
+  background: linear-gradient(to right,#7064e9,#217AFF);
+  border-radius: 100%;
+  bottom: 100%;
+  margin-bottom: 41px
+}
+
+.fn_cs_roadmap .swiper-slide .icon:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #1d1224;
+  top: 50%;
+  left: 50%;
+  margin: -5px 0 0 -5px
+}
+
+.fn_cs_roadmap .swiper-slide .phase {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  color: #9ba0b8;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 40px;
+  background-color: rgba(255,255,255,.1);
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden
+}
+
+.fn_cs_roadmap .swiper-slide .item_in {
+  padding: 25px 40px 40px
+}
+
+.fn_cs_roadmap .swiper-slide .date {
+  margin: 0 0 7px
+}
+
+.fn_cs_roadmap .swiper-slide .title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 20px
+}
+
+.slider_holder:after {
+  z-index: -1;
+  position: absolute;
+  top: 23px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, .1);
+  content: '';
+}
+.slider_holder {
+  position: relative;
 }

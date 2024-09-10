@@ -22,7 +22,8 @@
     </div>
     <div class="mt-10 text-center items-center w-full">
       <div class="flex gap-x-2 justify-center" data-aos-duration="1000" data-aos="fade-up">
-        <a target="_blank" href="https://docs.pactus.org/get-started/become-a-validator/" type="button" class="btn-become-validator">
+        <a target="_blank" href="https://docs.pactus.org/get-started/become-a-validator/" type="button"
+          class="btn-become-validator">
           <strong>Become a validator</strong>
           <div id="container-stars">
             <div id="stars"></div>
@@ -282,6 +283,117 @@
                     together to make Pactus even better!</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-[6rem] md:mt-[10rem]">
+      <div class="container mx-auto">
+        {{ $roadmap := .Site.Data.roadmap }}
+        <h1
+          class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999] self-center">
+          Roadmap
+        </h1>
+        <div class="fn_cs_roadmap">
+          <div class="step_holder" style="margin-top: 50px;">
+            <div class="step_in" style="width: 88.8889%;"></div>
+          </div>
+          <div class="slider_holder">
+            <div class="swiper-container swiper-container-horizontal overflow-hidden">
+              <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1775px, 0px, 0px);">
+                {{ $length := len $roadmap }}
+                {{ range $i := seq 0 (sub $length 1) }}
+                {{ $ri := sub (sub $length 1) $i }}
+                {{$value := index $roadmap $ri}}
+                {{$color := "#0F6CBD"}}
+                {{if in $value.state "completed"}}
+                {{$color = "#2CD776"}}
+                {{else if in $value.state "construct"}}
+                {{$color = "#F08C16"}}
+                {{end}}
+                <div class="swiper-slide" style="width: 315px; margin-right: 40px;">
+                  <div class="item group">
+                    <span class="icon"></span>
+                    <span class="phase" style="background-color: {{$color}};color:white">{{$value.date}}</span>
+                    <div class="item_in">
+                      <div class="block w-full">
+                        <i class="fas {{$value.icon}} text-lg w-[55px] mt-5 h-[55px] text-center content-center place-content-center rounded-xl shadow-lg"
+                          style="color: white;background-color: #14161D;"></i>
+                      </div>
+                      {{if and $value.reference (gt (len $value.reference) 0)}}
+                      <p class="mt-4"><a target="_blank" href="{{$value.reference}}"
+                          class="mb-15 font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100">{{$value.title}}</a>
+                      </p>
+                      {{else}}
+                      <p class="mb-15 mt-4 font-bold md:text-2xl text-xl transition ease-linear duration-100">
+                        {{$value.title}}</p>
+                      {{end}}
+                      <p class="desc">{{$value.description}}</p>
+                    </div>
+                  </div>
+                </div>
+                {{end}}
+              </div>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span
+                class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
             </div>
           </div>
         </div>
@@ -589,6 +701,11 @@
         url: 'https://api.pacviewer.com/v1/counts',
         method: 'GET',
         dataType: 'json',
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET',
+          'Access-Control-Allow-Headers': 'Content-Type',
+        },
         success: function (data) {
           $('#totalBlocks').text(data.totalBlocks || 0);
           $('#totalTransactions').text(data.totalTransactions || 0);
@@ -604,5 +721,64 @@
 
     updateCountsFromAPI();
   });
+</script>
+
+<script>
+  var roadmapStep = function (t, e, a) {
+    var n, o = parseInt(t.currentBreakpoint);
+    switch (o) {
+      case 1400:
+      case 1040:
+      default:
+        n = 4;
+        break;
+      case 1200:
+        n = 3;
+        break;
+      case 768:
+        n = 1;
+    }
+    e.css({
+      width: (t.activeIndex + n) * a + "%"
+    });
+  };
+
+  var swiper2 = new Swiper(".fn_cs_roadmap .swiper-container", {
+    loop: !1,
+    speed: 1500,
+    autoplay: {
+      delay: 5e3,
+      disableOnInteraction: !1
+    },
+    slidesPerView: 4,
+    spaceBetween: 40,
+    direction: "horizontal",
+    loopAdditionalSlides: 10,
+    watchSlidesProgress: !0,
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 1
+      },
+      1040: {
+        slidesPerView: 2
+      },
+      1200: {
+        slidesPerView: 3
+      },
+      1400: {
+        slidesPerView: 4
+      }
+    }
+  });
+  let n = 100 / (swiper2.params.loop ? swiper2.slides.length - 2 : swiper2.slides.length)
+  let i = $(".step_in");
+  swiper2.on("slideChange", function () {
+    roadmapStep(this, i, n);
+  });
+
+
 </script>
 {{ end }}

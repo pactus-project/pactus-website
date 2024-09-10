@@ -2584,6 +2584,36 @@ details.collapse summary::-webkit-details-marker {
   --animation-btn: 0;
   --animation-input: 0;
 }
+.artboard.phone-1.horizontal,
+      .artboard.phone-1.artboard-horizontal {
+  width: 568px;
+  height: 320px;
+}
+.artboard.phone-2.horizontal,
+      .artboard.phone-2.artboard-horizontal {
+  width: 667px;
+  height: 375px;
+}
+.artboard.phone-3.horizontal,
+      .artboard.phone-3.artboard-horizontal {
+  width: 736px;
+  height: 414px;
+}
+.artboard.phone-4.horizontal,
+      .artboard.phone-4.artboard-horizontal {
+  width: 812px;
+  height: 375px;
+}
+.artboard.phone-5.horizontal,
+      .artboard.phone-5.artboard-horizontal {
+  width: 896px;
+  height: 414px;
+}
+.artboard.phone-6.horizontal,
+      .artboard.phone-6.artboard-horizontal {
+  width: 1024px;
+  height: 320px;
+}
 .btm-nav-xs > *:where(.active) {
   border-top-width: 1px;
 }
@@ -5269,13 +5299,11 @@ html {
   animation: gradient_301 5s ease infinite;
   border: double 4px transparent;
   background-image: linear-gradient(#161a25, #161a25),
-    linear-gradient(
-      137.48deg,
+    linear-gradient(137.48deg,
       #217AFF 10%,
       #14376b 45%,
       #000000 67%,
-      #161a25 87%
-    );
+      #161a25 87%);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -5295,7 +5323,6 @@ html {
 .btn-become-validator strong {
   z-index: 2;
   color: #ffffff;
-  text-shadow: 0 0 4px white;
 }
 
 #glow {
@@ -5353,6 +5380,7 @@ html {
   from {
     transform: rotate(0deg) translateX(100px) rotate(0deg);
   }
+
   to {
     transform: rotate(360deg) translateX(100px) rotate(-360deg);
   }
@@ -5498,6 +5526,120 @@ html {
   transition-duration: 0.3s;
 }
 
+
+.fn_cs_roadmap .step_holder {
+  padding: 50px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.fn_cs_roadmap .step_holder .fn__svg {
+  width: auto;
+  height: 15px;
+  position: absolute
+}
+
+.fn_cs_roadmap .step_in {
+  width: 0;
+  height: 22px;
+  position: relative;
+  overflow: hidden;
+  transition: .5s;
+  background-image: url(/images/roadmap.png);
+  background-repeat: repeat-x;
+  max-width: 100%!important
+}
+
+.fn_cs_hero_slider,.frenify_cards_gallery .o_img,.ripple {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center
+}
+
+.fn_cs_roadmap .swiper-slide .item {
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(112, 100, 233, 0.3);
+  position: relative
+}
+
+.fn_cs_roadmap .swiper-wrapper {
+  padding: 60px 0 20px
+}
+
+.fn_cs_roadmap .swiper-slide .icon {
+  position: absolute;
+  display: block;
+  left: 40px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to right,#7064e9,#217AFF);
+  border-radius: 100%;
+  bottom: 100%;
+  margin-bottom: 41px
+}
+
+.fn_cs_roadmap .swiper-slide .icon:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #1d1224;
+  top: 50%;
+  left: 50%;
+  margin: -5px 0 0 -5px
+}
+
+.fn_cs_roadmap .swiper-slide .phase {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  color: #9ba0b8;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 40px;
+  background-color: rgba(255,255,255,.1);
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden
+}
+
+.fn_cs_roadmap .swiper-slide .item_in {
+  padding: 25px 40px 40px
+}
+
+.fn_cs_roadmap .swiper-slide .date {
+  margin: 0 0 7px
+}
+
+.fn_cs_roadmap .swiper-slide .title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 20px
+}
+
+.slider_holder:after {
+  z-index: -1;
+  position: absolute;
+  top: 23px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, .1);
+  content: '';
+}
+.slider_holder {
+  position: relative;
+}
 @media not all and (min-width: 768px) {
 
   .max-md\:timeline-compact,.max-md\:timeline-compact
@@ -5665,7 +5807,6 @@ html {
     grid-row-start: none;
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:btn-lg {
@@ -5689,7 +5830,6 @@ html {
     padding: 0px;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:prose-xl {
@@ -5939,89 +6079,70 @@ html {
     margin-bottom: 0;
   }
 }
-
 .hover\:bg-\[\#000\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-
 .hover\:bg-\[\#217AFF\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(33 122 255 / var(--tw-bg-opacity));
 }
-
 .hover\:bg-\[\#fff\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-
 .hover\:bg-opacity-80:hover {
   --tw-bg-opacity: 0.8;
 }
-
 .hover\:text-\[\#7064e9\]:hover {
   --tw-text-opacity: 1;
   color: rgb(112 100 233 / var(--tw-text-opacity));
 }
-
 .hover\:text-opacity-80:hover {
   --tw-text-opacity: 0.8;
 }
-
 .hover\:opacity-50:hover {
   opacity: 0.5;
 }
-
 .hover\:opacity-80:hover {
   opacity: 0.8;
 }
-
 .group:hover .group-hover\:bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
-
 .group:hover .group-hover\:from-\[\#fff\]\/40 {
   --tw-gradient-from: rgb(255 255 255 / 0.4) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
-
 .group:hover .group-hover\:to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
-
 .group:hover .group-hover\:text-\[\#7064e9\] {
   --tw-text-opacity: 1;
   color: rgb(112 100 233 / var(--tw-text-opacity));
 }
-
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
 }
-
 .peer:checked ~ .peer-checked\:block {
   display: block;
 }
-
 .peer:checked ~ .peer-checked\:hidden {
   display: none;
 }
-
 .peer:checked ~ .peer-checked\:rotate-0 {
   --tw-rotate: 0deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
 .peer:checked ~ .peer-checked\:bg-\[\#217AFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(33 122 255 / var(--tw-bg-opacity));
 }
-
 .peer:checked ~ .peer-checked\:hover\:bg-\[\#217AFF\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(33 122 255 / var(--tw-bg-opacity));
 }
-
 @media (min-width: 640px) {
 
   .sm\:block {
@@ -6032,7 +6153,6 @@ html {
     padding-left: 130px;
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:col-span-2 {
@@ -6220,7 +6340,6 @@ html {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:left-56 {
@@ -6284,15 +6403,12 @@ html {
     line-height: 2rem;
   }
 }
-
 .\[\&\>\*\]\:w-full>* {
   width: 100%;
 }
-
 .\[\&\>svg\>\#arrow\]\:stroke-\[\#4A3AFF\]>svg>#arrow {
   stroke: #4A3AFF;
 }
-
 .peer:checked ~ .peer-checked\:\[\&\>svg\>\#arrow\]\:stroke-\[\#fff\]>svg>#arrow {
   stroke: #fff;
 }
