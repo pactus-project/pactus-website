@@ -4,7 +4,9 @@
 @tailwind typography;
 
 @layer components {
-
+  .lazy {
+    @apply skeleton border-none
+  }
   .my-timeline-row {
     --timeline-row-start: 0px !important;
   }
@@ -1323,10 +1325,12 @@ html {
   transition: .5s;
   background-image: url(/images/roadmap.png);
   background-repeat: repeat-x;
-  max-width: 100%!important
+  max-width: 100% !important
 }
 
-.fn_cs_hero_slider,.frenify_cards_gallery .o_img,.ripple {
+.fn_cs_hero_slider,
+.frenify_cards_gallery .o_img,
+.ripple {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center
@@ -1348,9 +1352,9 @@ html {
   left: 40px;
   width: 20px;
   height: 20px;
-  background: -moz-linear-gradient(90deg,#7064e9,#217AFF);
-  background: -webkit-linear-gradient(90deg,#7064e9,#217AFF);
-  background: linear-gradient(to right,#7064e9,#217AFF);
+  background: -moz-linear-gradient(90deg, #7064e9, #217AFF);
+  background: -webkit-linear-gradient(90deg, #7064e9, #217AFF);
+  background: linear-gradient(to right, #7064e9, #217AFF);
   border-radius: 100%;
   bottom: 100%;
   margin-bottom: 41px
@@ -1377,7 +1381,7 @@ html {
   font-weight: 500;
   text-transform: uppercase;
   padding: 0 40px;
-  background-color: rgba(255,255,255,.1);
+  background-color: rgba(255, 255, 255, .1);
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   height: 40px;
@@ -1409,6 +1413,7 @@ html {
   background-color: rgba(255, 255, 255, .1);
   content: '';
 }
+
 .slider_holder {
   position: relative;
 }
@@ -1428,7 +1433,7 @@ html {
   border: double 4px transparent;
   background-image: linear-gradient(#161a25, #161a25),
     linear-gradient(137.48deg,
-    rgba(112, 100, 233, 1) 10%,
+      rgba(112, 100, 233, 1) 10%,
       #14376b 45%,
       #000000 67%,
       #161a25 87%);
@@ -1604,4 +1609,8 @@ html {
 
 .swiper-slide .item {
   height: 100% !important;
+}
+
+.lazy.loaded {
+  background-color: transparent;
 }

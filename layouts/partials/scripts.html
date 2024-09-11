@@ -4,7 +4,15 @@
 <script src="{{ .RelPermalink }}"></script>
 {{ end }}
 
-
+<script src="/js/lazyload.min.js"></script>
+<script>
+  var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy",
+    callback_loaded: (el) => {
+      el.classList.add("loaded");
+    }
+  });
+</script>
 <script src="/js/aos.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
