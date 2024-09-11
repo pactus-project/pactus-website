@@ -1,4 +1,4 @@
-baseURL = 'https://beta.pactus.org'
+baseURL = 'https://pactus.org'
 title = 'Pactus blockchain'
 relativeURLs = true
 
