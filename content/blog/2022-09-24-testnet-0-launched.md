@@ -10,7 +10,7 @@ image = "/images/pactus-blog-post-default.jpg"
 +++
 
 The Pactus blockchain Testnet-0 is now accessible.
-To participate, simply [download](https://pactus.org/download) the Pactus application version 0.9.0 and
+To participate, simply [download](/download) the Pactus application version 0.9.0 and
 connect to the Testnet without any special configurations.
 For test coins, please visit our [Discord](https://discord.gg/H5vZkNnXCu) channel and share your validator address.
 

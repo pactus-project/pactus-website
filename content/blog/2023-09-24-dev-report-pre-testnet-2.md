@@ -15,7 +15,7 @@ there is several activities in Pactus github in September month, here is a clear
 
 ## Implementing PIP 2, 3 and 4
 
-After starting [Pactus Labs and PIPs](https://pactus.org/2023/09/04/introduction-to-pips.html),
+After starting [Pactus Labs and PIPs](/2023/09/04/introduction-to-pips.html),
 we start implementing each accepted PIP one by one to improve Pactus, here is a list of implemented PIPs:
 
 - [PIP 2 and 3, Adding lock time to transactions and removing sequence field](https://github.com/pactus-project/pactus/pull/699)

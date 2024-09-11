@@ -12,7 +12,7 @@ image = "/images/pactus-blog-post-default.jpg"
 ## Overview
 
 Exciting news for the Pactus Community: Testnet-2 is has launched!
-The journey through [Testnet-1](https://pactus.org/blog/2023/08/01/testnet-1-concluded.html)
+The journey through [Testnet-1](/2023/08/01/testnet-1-concluded.html)
 brought success and invaluable experiences, with over 500 validators joining the network.
 Despite its noteworthy achievements, it also faced challenges that led to a tough decision: to pause the Testnet and
 thoroughly address these issues.
@@ -26,7 +26,7 @@ At this point, we want to assure the Pactus community that this version of
 and our main focus is on improving its overall performance and launching the Mainnet.
 
 If you're new to the concept of Testnet, check out our informative post:
-[What is the Testnet?](https://pactus.org/blog/2023/03/01/what-is-testnet.html)
+[What is the Testnet?](/2023/03/01/what-is-testnet.html)
 
 ## Key Focus Areas
 
@@ -43,7 +43,7 @@ ensuring it manages its regular duties seamlessly.
 ## How To Join
 
 Want to join the Testnet-2? Great! It's super easy.
-Just [download](https://pactus.org/download) the latest Pactus software and you're good to go.
+Just [download](/download) the latest Pactus software and you're good to go.
 no fancy setups or special gear needed.
 You can run the software straight from your personal computer or laptop.
 Need some test coins? Pop over to our [Discord](https://discord.gg/H5vZkNnXCu) channel and share your validator address there.
