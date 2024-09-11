@@ -718,13 +718,16 @@
           'Access-Control-Allow-Headers': 'Content-Type',
         },
         success: function (data) {
+          const currentTime = new Date().getTime();
+          const storeData = {
+            data: data,
+            timestamp: currentTime
+          };
+          localStorage.setItem('apiData', JSON.stringify(storeData));
 
-          $('#totalBlocks').text(data.data.totalBlocks || 0);
-          $('#totalTransactions').text(data.data.totalTransactions || 0);
-          $('#totalAccounts').text(data.data.totalAccounts || 0);
-          $('#totalValidators').text(data.data.totalValidators || 0);
+          updateUI(data);
+
           $('.counter').countUp();
-
         },
         error: function (xhr, status, error) {
           console.error('Error fetching data:', error);
@@ -733,8 +736,34 @@
       });
     }
 
-    updateCountsFromAPI();
+    function updateUI(data) {
+      $('#totalBlocks').text(data.data.totalBlocks || 0);
+      $('#totalTransactions').text(data.data.totalTransactions || 0);
+      $('#totalAccounts').text(data.data.totalAccounts || 0);
+      $('#totalValidators').text(data.data.totalValidators || 0);
+    }
+
+    function checkAndUpdateCounts() {
+      const storedData = localStorage.getItem('apiData');
+
+      if (storedData) {
+        const parsedData = JSON.parse(storedData);
+        const currentTime = new Date().getTime();
+        const oneDay = 24 * 60 * 60 * 1000; // 1 day in milliseconds
+
+        if (currentTime - parsedData.timestamp < oneDay) {
+          updateUI(parsedData.data);
+          $('.counter').countUp();
+          return;
+        }
+      }
+
+      updateCountsFromAPI();
+    }
+
+    checkAndUpdateCounts();
   });
+
 </script>
 
 <script>
