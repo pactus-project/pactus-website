@@ -1,4 +1,4 @@
-ss
+
 <script src="/js/jquery.min.js"></script>
 {{ with resources.Get "js/main.js" | js.Build (dict "minify" true) | fingerprint }}
 <script src="{{ .RelPermalink }}"></script>
@@ -107,8 +107,7 @@ ss
 {{- range $katexFonts -}}
 {{ .Publish }}
 {{- end -}}
-<s>
-  // TODO: make render options configurable
+<script>
   document.addEventListener("DOMContentLoaded", function () {
   renderMathInElement(document.body, {
   delimiters: [
