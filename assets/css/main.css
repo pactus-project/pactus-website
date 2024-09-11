@@ -744,7 +744,6 @@ html {
   max-width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 60px;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1;
@@ -768,7 +767,7 @@ html {
 
   .fn__gradient_title,
   .fn__maintitle.big {
-    font-size: 40px;
+    /* font-size: 40px; */
   }
 
   .fn_cs_slider .slider_top li.prev {

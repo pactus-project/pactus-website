@@ -3509,9 +3509,6 @@ html:has(.drawer-toggle:checked) {
 .top-7 {
   top: 1.75rem;
 }
-.top-\[-12rem\] {
-  top: -12rem;
-}
 .top-\[26px\] {
   top: 26px;
 }
@@ -3861,10 +3858,6 @@ html:has(.drawer-toggle:checked) {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
 }
-.gap-x-2 {
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
-}
 .gap-x-3 {
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
@@ -4076,6 +4069,9 @@ html:has(.drawer-toggle:checked) {
 }
 .p-2 {
   padding: 0.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
 }
 .p-4 {
   padding: 1rem;
@@ -4987,7 +4983,6 @@ html {
   max-width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 60px;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1;
@@ -5009,7 +5004,7 @@ html {
 
   .fn__gradient_title,
   .fn__maintitle.big {
-    font-size: 40px;
+    /* font-size: 40px; */
   }
 
   .fn_cs_slider .slider_top li.prev {
@@ -6558,10 +6553,6 @@ html {
     left: 14rem;
   }
 
-  .lg\:top-\[-20rem\] {
-    top: -20rem;
-  }
-
   .lg\:ml-0 {
     margin-left: 0px;
   }
@@ -6613,6 +6604,11 @@ html {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

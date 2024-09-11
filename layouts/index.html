@@ -17,7 +17,7 @@
         class="mt-14 font-bold md:text-lg text-neutral-50">
         Pactus is an open source, layer-1 blockchain technology with a<br class="hidden md:block" />
         revolutionary, secure, Solid State Proof of Stake Consensus.<br class="hidden md:block" />
-        Come join us and build a decentralized future together!        
+        Come join us and build a decentralized future together!
       </h1>
     </div>
     <div class="mt-10 text-center items-center w-full">
@@ -34,8 +34,7 @@
             <div class="circle"></div>
           </div>
         </a>
-          <a target="_blank" href="/community" type="button"
-          class="btn-join-community">
+        <a target="_blank" href="/community" type="button" class="btn-join-community">
           <strong>Join community</strong>
           <div id="container-stars">
             <div id="stars"></div>
@@ -178,32 +177,36 @@
             <ul>
               <li class="p-0">
                 <div class="item">
-                  <h3 class="fn__gradient_title"><span class="prefix"></span><span data-from="0"
-                      class="fn_cs_counter counter" id="totalBlocks">---</span><span class="suffix"></span></h3>
+                  <h3 class="fn__gradient_title text-2xl"><span class="prefix"></span><span data-from="0"
+                      class="fn_cs_counter counter p-3" id="totalBlocks">---
+                    </span><span class="suffix"></span></h3>
                   <p>Blocks</p>
                   <div class="divider hidden sm:block"></div>
                 </div>
               </li>
               <li class="p-0 sm:pl-[130px]">
                 <div class="item">
-                  <h3 class="fn__gradient_title"><span class="prefix"></span><span data-from="0"
-                      class="fn_cs_counter counter" id="totalTransactions">---</span><span class="suffix"></span></h3>
+                  <h3 class="fn__gradient_title text-2xl"><span class="prefix"></span><span data-from="0"
+                      class="fn_cs_counter counter p-3" id="totalTransactions">---
+                    </span><span class="suffix"></span></h3>
                   <p>Transactions</p>
                   <div class="divider hidden md:block mr-5" style="left: 90% !important;"></div>
                 </div>
               </li>
               <li class="p-0 md:pl-[130px]">
                 <div class="item">
-                  <h3 class="fn__gradient_title"><span class="prefix"></span><span data-from="0"
-                      class="fn_cs_counter counter" id="totalAccounts">---</span><span class="suffix"></span></h3>
+                  <h3 class="fn__gradient_title text-2xl"><span class="prefix"></span><span data-from="0"
+                      class="fn_cs_counter counter p-3" id="totalAccounts">---
+                    </span><span class="suffix"></span></h3>
                   <p>Accounts</p>
                   <div class="divider hidden sm:block"></div>
                 </div>
               </li>
               <li class="p-0 sm:pl-[130px]">
                 <div class="item">
-                  <h3 class="fn__gradient_title"><span class="prefix"></span><span data-from="0"
-                      class="fn_cs_counter counter" id="totalValidators">---</span><span class="suffix"></span></h3>
+                  <h3 class="fn__gradient_title text-2xl"><span class="prefix"></span><span data-from="0"
+                      class="fn_cs_counter counter p-3" id="totalValidators">---
+                    </span><span class="suffix"></span></h3>
                   <p>Validators</p>
                   <div class="divider hidden sm:block"></div>
                 </div>
@@ -704,8 +707,6 @@
 <script>
   $(document).ready(function () {
 
-    $('.counter').countUp();
-
     function updateCountsFromAPI() {
       $.ajax({
         url: 'https://api.pacviewer.com/v1/counts',
@@ -717,10 +718,13 @@
           'Access-Control-Allow-Headers': 'Content-Type',
         },
         success: function (data) {
-          $('#totalBlocks').text(data.totalBlocks || 0);
-          $('#totalTransactions').text(data.totalTransactions || 0);
-          $('#totalAccounts').text(data.totalAccounts || 0);
-          $('#totalValidators').text(data.totalValidators || 0);
+
+          $('#totalBlocks').text(data.data.totalBlocks || 0);
+          $('#totalTransactions').text(data.data.totalTransactions || 0);
+          $('#totalAccounts').text(data.data.totalAccounts || 0);
+          $('#totalValidators').text(data.data.totalValidators || 0);
+          $('.counter').countUp();
+
         },
         error: function (xhr, status, error) {
           console.error('Error fetching data:', error);
