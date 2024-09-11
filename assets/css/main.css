@@ -1601,3 +1601,7 @@ html {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
+
+.swiper-slide .item {
+  height: 100% !important;
+}

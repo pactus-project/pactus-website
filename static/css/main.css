@@ -5824,6 +5824,10 @@ html {
   }
 }
 
+.swiper-slide .item {
+  height: 100% !important;
+}
+
 @media not all and (min-width: 768px) {
 
   .max-md\:timeline-compact,.max-md\:timeline-compact
@@ -6604,11 +6608,6 @@ html {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 
