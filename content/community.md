@@ -9,25 +9,25 @@ By joining the Pactus community, you become a part of a global network of innova
 
 {{<translate "dict.community.community_ran">}}
 
-<ul class="list-unstyled community_ran">
-  <li>
-    <a href="https://t.me/pactuschat">
-      {{<translate "dict.community.telegram_chat">}}
+<ul class="list-none">
+  <li class="group">
+    <a href="https://t.me/pactuschat" class="hover:text-[#7064e9]">
+      <i class="fa-brands fa-telegram mr-3 text-2xl"></i>{{<translate "dict.community.telegram_chat">}}
     </a>
   </li>
-   <li>
-    <a href="https://www.facebook.com/PactusChain">
-      {{<translate "dict.community.facebook">}}
+   <li class="group">
+    <a href="https://www.facebook.com/PactusChain" class="hover:text-[#7064e9]">
+      <i class="fa-brands fa-facebook mr-3 text-2xl"></i>{{<translate "dict.community.facebook">}}
     </a>
   </li>
-  <li>
-    <a href="https://t.me/nodesync_top">
-      {{<translate "dict.community.nodesync">}}
+  <li class="group">
+    <a href="https://t.me/nodesync_top" class="hover:text-[#7064e9]">
+      <i class="fa-brands fa-telegram mr-3 text-2xl"></i>{{<translate "dict.community.nodesync">}}
     </a>
   </li>
-  <li>
-    <a href="https://discord.gg/H5vZkNnXCu">
-      {{<translate "dict.community.wechat">}}
+  <li class="group">
+    <a href="https://discord.gg/H5vZkNnXCu" class="hover:text-[#7064e9]">
+      <i class="fa-brands fa-weixin mr-3 text-2xl"></i>{{<translate "dict.community.wechat">}}
     </a>
   </li>
 </ul>
