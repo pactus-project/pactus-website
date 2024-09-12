@@ -12,7 +12,7 @@ image = "/images/pactus-blog-post-default.jpg"
 ## Overview
 
 Exciting news for the Pactus Community: Testnet-2 is has launched!
-The journey through [Testnet-1](/2023/08/01/testnet-1-concluded.html)
+The journey through [Testnet-1](/2023/08/01/testnet-1-concluded)
 brought success and invaluable experiences, with over 500 validators joining the network.
 Despite its noteworthy achievements, it also faced challenges that led to a tough decision: to pause the Testnet and
 thoroughly address these issues.
@@ -26,7 +26,7 @@ At this point, we want to assure the Pactus community that this version of
 and our main focus is on improving its overall performance and launching the Mainnet.
 
 If you're new to the concept of Testnet, check out our informative post:
-[What is the Testnet?](/2023/03/01/what-is-testnet.html)
+[What is the Testnet?](/2023/03/01/what-is-testnet)
 
 ## Key Focus Areas
 

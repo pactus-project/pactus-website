@@ -3,7 +3,7 @@ title = 'Pactus blockchain'
 relativeURLs = true
 
 [permalinks]
-  blog = "/blog/:year/:month/:day/:slug/"
+  blog = "/:year/:month/:day/:slug/"
 
 [params]
   latestVersion = "1.4.0"
