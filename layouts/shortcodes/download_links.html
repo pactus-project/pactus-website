@@ -1,6 +1,6 @@
 <div class="mt-10">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-    <a href="#release-tables-gui" class="p-5 border border-neutral-400 rounded-xl cursor-pointer bg-[#2b2b4b] no-underline" id="gui-btn">
+    <a href="#gui" class="p-5 border border-neutral-400 rounded-xl cursor-pointer bg-[#2b2b4b] no-underline" id="gui-btn">
       <h4 class="font-bold lg:text-2xl text-lg text-neutral-50">
         {{ T "dict.download.pactus_gui" }}
       </h4>
@@ -9,7 +9,7 @@
         <img src="/images/pactus-gui.png" class="mt-5 w-full" alt="" />
       </div>
     </a>
-    <a href="#release-tables-cli" class="p-5 border border-neutral-400 rounded-xl hover:bg-[#000] cursor-pointer no-underline" id="cli-btn">
+    <a href="#cli" class="p-5 border border-neutral-400 rounded-xl hover:bg-[#000] cursor-pointer no-underline" id="cli-btn">
       <h4 class="font-bold lg:text-2xl text-lg text-neutral-50">
         {{ T "dict.download.pactus_cli" }}
       </h4>
@@ -21,12 +21,12 @@
   </div>
 </div>
 <div class="mt-10">
-  <div id="release-tables-gui" class="overflow-x-auto">
+  <div id="gui" class="overflow-x-auto">
     <h3>GUI releases</h3>
     <div id="loading">Loading releases from github...</div>
 
   </div>
-  <div id="release-tables-cli" class="overflow-x-auto">
+  <div id="cli" class="overflow-x-auto">
     <h3>CLI releases</h3>
     <div id="loading1">Loading releases from github...</div>
   </div>
@@ -143,8 +143,8 @@
       const cliTable = createTable(release.assets, 'cli');
       const guiTable = createTable(release.assets, 'gui');
 
-      const container_gui = document.getElementById('release-tables-gui');
-      const container_cli = document.getElementById('release-tables-cli');
+      const container_gui = document.getElementById('gui');
+      const container_cli = document.getElementById('cli');
       container_gui.appendChild(guiTable);
       container_cli.appendChild(cliTable);
     } catch (error) {
