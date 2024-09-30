@@ -84,8 +84,16 @@ Make sure to fill all the fields carefully as they are important for SEO and use
 After creating the file, you can start writing your blog post.\
 You can see your blog post in `http://localhost:1313/blog/your-post-slug`
 
-### Images and static assets
-For adding images and other static assets, you can use the `assets` directory.
+### Images
+For adding images, you can use the `assets/images` directory.
+
+### Image optmization
+For optimizing images in markdown files use image shortcode: \
+`{{< image  url="/images/image.png" optimize="1000x webp q50">}}`
+
+
+### Static assets
+For adding static assets, you can use the `static` directory.
 
 ### Translations in markdowon
 For using translation in markdown files, you can use the `{{<translate "dict.download.welcome">}}` shortcode. translations are in [i18n](./i18n/) directory.

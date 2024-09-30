@@ -1,0 +1,3 @@
+{{ $image := resources.Get (.Get "url") }}
+{{ $resized := $image.Resize (.Get "optimize") }}
+{{ $resized.RelPermalink }}
