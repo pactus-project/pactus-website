@@ -40,7 +40,7 @@
           <a href="{{ .Permalink }}">
             {{ $image := resources.Get .Params.image }}
             {{ $resized := $image.Resize "600x webp q30" }}
-            <img src="{{ $resized.RelPermalink }}" loading="lazy" alt="Optimized Image" class="rounded-xl h-56 w-full">
+            <img src="{{ $resized.RelPermalink }}" loading="lazy" alt="Optimized Image" class="w-full object-cover rounded-xl h-56">
 
             <div
               class="absolute rounded-xl transition-all delay-75 inset-0 group-hover:bg-gradient-to-br group-hover:from-[#fff]/40 group-hover:to-transparent">
