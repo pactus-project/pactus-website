@@ -85,7 +85,7 @@ After creating the file, you can start writing your blog post.\
 You can see your blog post in `http://localhost:1313/blog/your-post-slug`
 
 ### Images and static assets
-For adding images and other static assets, you can use the `static` directory.
+For adding images and other static assets, you can use the `assets` directory.
 
 ### Translations in markdowon
 For using translation in markdown files, you can use the `{{<translate "dict.download.welcome">}}` shortcode. translations are in [i18n](./i18n/) directory.
