@@ -1,6 +1,6 @@
 {{ define "title" }}{{ .Title }}{{ end }}
 {{ define "main" }}
-<img src="/images/landing-top-bg1.png" alt="" class="min-w-full absolute -top-10" loading="eager"/>
+{{partial "image.html" (dict "src" "/images/landing-top-bg1.png" "alt" "" "class" "min-w-full absolute -top-10")}}
 <section class="z-10 relative flex flex-col min-h-full flex-grow" style="position: relative;">
   <div class="flex-grow">
     <div class="text-center px-5 md:px-0 z-20 pt-[10rem] md:pt-[15rem] bg-transparent">
@@ -426,12 +426,9 @@
                 {{ range first 10 (where .Site.RegularPages "Type" "blog") }}
                 <div class="swiper-slide">
                   <div class="container mx-auto">
-                    {{ $image := resources.Get .Params.image }}
-                    {{ $resized := $image.Resize "600x webp q30" }}
                     <div
                       class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F] flex flex-col md:flex-row items-start md:items-center gap-3">
-                      <img data-src="{{ $resized.Permalink }}" loading="lazy"
-                        class="lazy w-full md:w-1/4 h-auto md:h-48 object-cover rounded-2xl mb-4 md:mb-0">
+                        {{partial "image.html" (dict "src" .Params.image "alt" .Title "class" "w-full md:w-1/4 h-auto md:h-48 object-cover rounded-2xl mb-4 md:mb-0")}}
                       <div class="flex-1">
                         <h1 class="text-2xl font-bold text-neutral-50">
                           {{ .Title }}
@@ -460,15 +457,12 @@
             <div class="">
               {{ range first 3 (where .Site.RegularPages "Type" "blog") }}
               {{$link := .Permalink}}
-              {{ $image := resources.Get .Params.image }}
-              {{ $resized := $image.Resize "600x webp q30" }}
               <div class="swiper-slide">
                 <div class="container mx-auto">
                   <div
                     class="w-full p-10 bg-[#14161D] rounded-2xl shadow-xl shadow-[#0B0B0F] flex flex-col items-start gap-3">
                     <a href="{{$link}}" class="w-full">
-                      <img src="{{ $resized.Permalink }}" loading="lazy" alt="{{ .Title }}"
-                        class="w-full h-auto md:h-48 object-cover rounded-2xl mb-4 md:mb-0">
+                      {{partial "image.html" (dict "src" .Params.image "alt" .Title "class" "w-full h-auto md:h-48 object-cover rounded-2xl mb-4 md:mb-0")}}
                     </a>
                     <div class="flex-1">
                       <h1 class="text-2xl font-bold text-neutral-50">

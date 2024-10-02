@@ -1,0 +1,3 @@
+{{ $image := resources.Get .src }}
+{{ $resized := $image.Resize (printf "%dx webp q60" $image.Width) }}
+<img src="{{$resized.Permalink}}" alt="{{.alt}}" class="{{.class}}" loading="lazy"/>

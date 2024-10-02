@@ -72,3 +72,9 @@ relativeURLs = true
       hardWraps = false
       unsafe = true
       xhtml = false
+[imaging]
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = false
+    excludeFields = ''
+    includeFields = ''

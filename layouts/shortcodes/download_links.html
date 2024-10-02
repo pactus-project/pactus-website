@@ -6,7 +6,8 @@
       </h4>
       <p class="mt-5 text-neutral-50">{{ T "dict.download.download_gui" }}</p>
       <div class="w-full text-center" style="text-align: -webkit-center;">
-        <img src="/images/pactus-gui.png" class="mt-5 w-full" alt="" />
+        {{partial "image.html" (dict "src" "/images/pactus-gui.png" "alt" "" "class" "mt-5 w-full")}}
+
       </div>
     </a>
     <a href="#cli" class="p-5 border border-neutral-400 rounded-xl hover:bg-[#000] cursor-pointer no-underline" id="cli-btn">
@@ -15,7 +16,7 @@
       </h4>
       <p class="mt-5 text-neutral-50">{{ T "dict.download.download_cli" }}</p>
       <div class="w-full text-center" style="text-align: -webkit-center;">
-        <img src="/images/pactus-cli.png" class="lg:mt-[76px] mt-5 w-full" alt="" />
+        {{partial "image.html" (dict "src" "/images/pactus-cli.png" "alt" "" "class" "lg:mt-[31px] mt-5 w-full")}}
       </div>
     </a>
   </div>

@@ -73,7 +73,7 @@ This command will create a new markdown file in the `content/blog` directory wit
 title = ''
 description = ''
 author = ''
-date = date of creation
+date = 2022-08-29T00:00:00+00:00
 draft = true
 tags = ['']
 slug = ''
@@ -87,10 +87,15 @@ You can see your blog post in `http://localhost:1313/blog/your-post-slug`
 ### Images
 For adding images, you can use the `assets/images` directory.
 
-### Image optmization
+### Image in md files
 For optimizing images in markdown files use image shortcode: \
-`{{< image  url="/images/image.png" optimize="1000x webp q50">}}`
+`{{<image  url="/images/image.png" title="image title" class="">}}` \
+for class parameter check [tailwindcss](https://tailwindcss.com/) or just leave it empty
 
+### Image in html files
+For optimizing images in html files use image shortcode: \
+`{{partial "image.html" (dict "src" "images/image.png" "alt" "image title" "class" "")}}` \
+for class parameter check [tailwindcss](https://tailwindcss.com/) or just leave it empty
 
 ### Static assets
 For adding static assets, you can use the `static` directory.
@@ -136,12 +141,6 @@ First you need Install [yarn](https://yarnpkg.com/).
   ```bash
   yarn run htmlproofer:setup
   yarn run htmlproofer
-  ```
-
-- Remove all metadata from PNG images using [ExifTool](https://exiftool.org/):
-
-  ```bash
-  yarn run exif
   ```
 
 ## Markdown

@@ -32,18 +32,19 @@ The size of the blockchain is about 300 megabytes.
 About 300,000 coins were staked during this period, it was almost 50% of the total generated coins.
 It shows that users, even in Testnet, tend to stake their coins.
 
-![Staking chart](/images/staked-coins.png)
+{{< image url="/images/staked-coins.png" title="Staking chart" class="" >}}
 
 We were able to extract the confirmation time of transactions.
 More than 97% of transactions were confirmed in just one block after submission.
 This indicates that the transaction pool and broadcasting models are working fine.
 
-![Transaction confirmation chart](/images/transaction-confirmation.png)
+{{< image url="/images/transaction-confirmation.png" title="Transaction confirmation chart" class="" >}}
+
 
 Based on logs from one of the validators, the time for creating a block is about 3 seconds in normal cases.
 More than 97% of blocks are committed in the first rounds.
 
-![Consensus round chart](/images/consensus-round.png)
+{{< image url="/images/consensus-round.png" title="Consensus round chart" class="" >}}
 
 ## Major updates
 
