@@ -1,73 +1,45 @@
 # Pactus website
 
-This repository contains all the content for the https://beta.pactus.org website.
+This repository contains all the content for the [https://pactus.org](https://pactus.org) website.
 
 ## Contributing to Documentation
-Contributions to the website, including fixing typos or grammatical errors, are always welcome. To contribute, simply edit the relevant page or open a pull request.
 
-## Install Prerequisites
+Contributions to the website, including fixing typos or grammatical errors, are always welcome.
+To contribute, simply edit the relevant page or open a pull request.
+
+## Running Locally
+
 For running the website locally, you need to have the following installed on your machine:
 - [Hugo](https://gohugo.io/)
 - [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
-- [Git](https://git-scm.com/)
 
-So if you already have these installed, you can skip this step.
-### Hugo
 Pactus website is powered by [Hugo](https://gohugo.io/).
-so make sure to install the `extended` version of hugo on your machine.
-Click [here](https://gohugo.io/installation/) for more info.\
-Confirm that you have installed the `extended` version by running the following command:
-```bash
-hugo version
-```
-You should see a version number with `extended` in it. for example:
-```bach
-hugo v0.131.0+extended linux/amd64 BuildDate=unknown
-```
-### yarn or npm
-for yarn run:
-```bash
-yarn --version
-```
-for npm run:
-```bash
-npm --version
-```
-### Git
-for git run:
-```bash
-git --version
-```
-## Running the website locally
-1. Clone the repository and navigate to the project directory:
+Make sure you have installed the `extended` version of hugo on your machine.
+
+Now, clone this repository and run it locally using the following commands:
+
 ```bash
 git clone https://github.com/pactus-project/pactus-website.git
 cd pactus-website
-```
-2. Install the dependencies:
-```bash
+
 yarn install
-```
-or
-```bash
-npm install
-```
-3. Run the website:
-```bash
 hugo server
 ```
-4. Open your browser and navigate to `http://localhost:1313/` to see the website running.
 
 ## Guidelines
 
 Follow these guidelines to ensure high-quality contributions to the Pactus website project.
 
 ### Creating a new blog post
+
 For creating new blog post run:
+
 ```bash
 hugo new content --kind blog blog/your-post-name.md
 ```
+
 This command will create a new markdown file in the `content/blog` directory with the following front matter:
+
 ```markdown
 +++
 title = ''
@@ -80,35 +52,38 @@ slug = ''
 image = "/images/pic.jpg"
 +++
 ```
+
 Make sure to fill all the fields carefully as they are important for SEO and user-friendly URLs.\
 After creating the file, you can start writing your blog post.\
 You can see your blog post in `http://localhost:1313/blog/your-post-slug`
 
 ### Images
+
 For adding images, you can use the `assets/images` directory.
 
 ### Image in md files
+
 For optimizing images in markdown files use image shortcode: \
 `{{<image  url="/images/image.png" title="image title" class="">}}` \
 for class parameter check [tailwindcss](https://tailwindcss.com/) or just leave it empty
 
 ### Image in html files
+
 For optimizing images in html files use image shortcode: \
 `{{partial "image.html" (dict "src" "images/image.png" "alt" "image title" "class" "")}}` \
 for class parameter check [tailwindcss](https://tailwindcss.com/) or just leave it empty
 
 ### Static assets
+
 For adding static assets, you can use the `static` directory.
 
-### Translations in markdowon
-For using translation in markdown files, you can use the `{{<translate "dict.download.welcome">}}` shortcode. translations are in [i18n](./i18n/) directory.
-
 ### Style change
+
 For changing style in `assets/css/main.css` and running website concurrently run:
+
 ```bash
 npm run start
 ```
-
 
 ### Additional commands
 
@@ -117,31 +92,31 @@ First you need Install [yarn](https://yarnpkg.com/).
 
 - Check all HTML and markdown files:
 
-  ```bash
-  yarn run prettier::setup
-  yarn run prettier
-  ```
+```bash
+yarn run prettier::setup
+yarn run prettier
+```
 
 - Lint markdown files:
 
-  ```bash
-  yarn run lint:md:setup
-  yarn run lint:md
-  ```
+```bash
+yarn run lint:md:setup
+yarn run lint:md
+```
 
 - Lint YAML files:
 
-  ```bash
-  yarn run lint:yml:setup
-  yarn run lint:yml
-  ```
+```bash
+yarn run lint:yml:setup
+yarn run lint:yml
+```
 
 - Check for broken links:
 
-  ```bash
-  yarn run htmlproofer:setup
-  yarn run htmlproofer
-  ```
+```bash
+yarn run htmlproofer:setup
+yarn run htmlproofer
+```
 
 ## Markdown
 
@@ -173,4 +148,5 @@ This command will check all documents in the `content` folder for any linting is
 
 ## Deployment
 
-Updating the main branch will automatically deploy this repository through [deploy](.github/workflows/deploy.yml) Github action.
+Updating the main branch will automatically deploy this repository through
+[deploy](.github/workflows/deploy.yml) Github action.
