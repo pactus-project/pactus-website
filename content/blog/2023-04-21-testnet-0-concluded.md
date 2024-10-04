@@ -1,6 +1,5 @@
 +++
 title = 'Story of Testnet-0'
-description = 'The Pactus blockchain Testnet-0 is now available for participation.'
 author = 'Pactus Team'
 date = 2023-04-21T00:00:00+00:00
 draft = false
@@ -15,11 +14,11 @@ Testnet is a testing environment where developers and users can try out the func
 without putting real assets or data at risk.
 It helps to ensure that the final product is reliable and secure for users to use.
 If you like to read more about the Testnet you can check out our post on
-"[What is Testnet?](/2023/03/01/what-is-testnet)".
+"[What is Testnet?](/2023/03/31/what-is-testnet/)".
 
 ## Summary of Testnet-0
 
-In September 2022, we launched [Testnet-0](/2022/09/24/testnet-0-launched).
+In September 2022, we launched [Testnet-0](/2022/09/24/testnet-0-launched/).
 The purpose of this Testnet was to
 check the [consensus protocol](https://docs.pactus.org/protocol/consensus/protocol/),
 test different [transaction](https://docs.pactus.org/protocol/transaction/format/) types,
