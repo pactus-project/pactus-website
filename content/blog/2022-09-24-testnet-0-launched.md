@@ -1,13 +1,12 @@
 +++
 title = 'Testnet-0 launch announcement'
-description = 'The Pactus blockchain Testnet-0 is now available for participation.'
 author = 'Pactus Team'
 date = 2022-09-24T00:00:00+00:00
-draft = false
 tags = ['announcement', 'pactus', 'testnet']
-slug = 'testnet-0-launched'
 image = "/images/pactus-blog-post-default.jpg"
 +++
+
+## Overview
 
 The Pactus blockchain Testnet-0 is now accessible.
 To participate, simply [download](/download) the Pactus application version 0.9.0 and

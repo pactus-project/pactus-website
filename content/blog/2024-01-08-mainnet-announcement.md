@@ -1,13 +1,12 @@
 +++
 title = 'Mainnet announcement'
-description = 'The much-awaited Mainnet Launch of The Pactus Blockchain is finally here!'
 author = 'Pactus Team'
 date = 2024-01-08T00:00:00+00:00
-draft = false
 tags = ['announcement', 'mainnet', 'pactus', 'blockchain']
-slug = 'mainnet-announcement'
 image = "/images/pactus-blog-post-default.jpg"
 +++
+
+## Overview
 
 The much-awaited Mainnet Launch of The Pactus Blockchain is finally here!
 On January 24, 2024, at 20:24:00 UTC, the first block, known as the [Genesis block](https://docs.pactus.org/protocol/blockchain/genesis/),

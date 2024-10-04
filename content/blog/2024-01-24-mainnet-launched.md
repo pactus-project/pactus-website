@@ -1,11 +1,8 @@
 +++
 title = 'Mainnet launched 🚀'
-description = 'Pactus Mainnet started creating the first block on 24 January 2024 at 20:24:10 UTC time. Pactus Mainnet is the result of years of hard work, research, and innovation.'
 author = 'Pactus Team'
 date = 2024-01-24T00:00:00+00:00
-draft = false
 tags = ['announcement', 'mainnet', 'pactus', 'blockchain']
-slug = 'mainnet-launched'
 image = "/images/pactus-blog-post-default.jpg"
 +++
 

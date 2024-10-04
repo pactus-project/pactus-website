@@ -1,11 +1,8 @@
 +++
-title = 'Dev meeting'
-description = 'The meeting took place on 09 July 2023, at 2:00 PM UTC via Google Meet, with team members from different time zones joining to discuss key aspects of the Pactus project.'
+title = 'Dev meeting - July 2023'
 author = 'Pactus Team'
 date = 2023-07-09T00:00:00+00:00
-draft = false
 tags = ['pactus', 'dev-meeting']
-slug = 'dev-meeting'
 image = "/images/pactus-blog-post-default.jpg"
 +++
 

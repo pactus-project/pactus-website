@@ -1,9 +1,10 @@
 baseURL = 'https://pactus.org'
 title = 'Pactus blockchain'
 relativeURLs = true
+canonifyURLs = true
 
 [permalinks]
-  blog = "/:year/:month/:day/:slug/"
+  blog = "/:year/:month/:day/:title/"
 
 [params]
   latestVersion = "1.4.0"
