@@ -3,7 +3,7 @@ title = 'Dev meeting - September 2022'
 author = 'Pactus Team'
 date = 2022-09-04T00:00:00+00:00
 tags = ['pactus', 'dev-meeting']
-image = "/images/pactus-blog-post-default.jpg"
+image = "pactus-blog-post-default.jpg"
 +++
 
 ## Meeting Summary

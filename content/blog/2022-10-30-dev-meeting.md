@@ -3,7 +3,7 @@ title = 'Dev meeting - October 2022'
 author = 'Pactus Team'
 date = 2022-10-30T00:00:00+00:00
 tags = ['pactus', 'dev-meeting']
-image = "/images/pactus-blog-post-default.jpg"
+image = "pactus-blog-post-default.jpg"
 +++
 
 ## Meeting Summary
@@ -16,7 +16,7 @@ with team members from different time zones joining to discuss key aspects of th
 The meeting started in memory of [Mahsa Amini](https://en.wikipedia.org/wiki/Death_of_Mahsa_Amini).
 We in the Pactus family stand in solidarity with courageous people who are fighting for equality, equity and freedom in Iran.
 
-{{< image url="/images/women-life-freedom.png" title="Woman Life Freedom" >}}
+{{< image url="women-life-freedom.png" title="Woman Life Freedom" >}}
 
 
 ### Launching Block explorer

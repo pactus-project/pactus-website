@@ -3,7 +3,7 @@ title = 'Mainnet launched 🚀'
 author = 'Pactus Team'
 date = 2024-01-24T00:00:00+00:00
 tags = ['announcement', 'mainnet', 'pactus', 'blockchain']
-image = "/images/pactus-blog-post-default.jpg"
+image = "pactus-blog-post-default.jpg"
 +++
 
 ## Years to Launch
