@@ -3,7 +3,9 @@ title = 'Download'
 draft = false
 layout = 'download'
 type = 'download'
-description = 'actus is a community-run blockchain technology with a revolutionary, secure, Solid State Proof of Stake Consensus. Come join us and build a decentralized future together!'
+description = """
+The Pactus Download page provides access to the latest software releases.
+"""
 +++
 
 On this page you can find how to download and get the latest version of the Pactus software.
@@ -37,7 +39,6 @@ For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like)
 there is a downloader script available.
 This script can download the archived file, verify it, and extract it for you.
 To use it, simply run the following command in your terminal:
-
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v{{<latest_version>}}/pactus_downloader.sh | sh

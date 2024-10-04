@@ -1,167 +1,167 @@
 - title: Pactus Onchain Governance
-  description:  
+  description:
   icon: fa-gavel
   date: Q1 2026
-  reference: 
+  reference:
   state: planned
 
 - title: Decentralized Domain Name System
-  description: 
+  description:
   icon: fa-globe
   date: Q4 2025
-  reference: 
+  reference:
   state: planned
 
 - title: Decentralized Password Manager
-  description: 
+  description:
   icon: fa-lock
   date: Q4 2025
-  reference: 
+  reference:
   state: planned
 
 - title: Browser Extension
-  description: 
+  description:
   icon: fa-plug
   date: Q3 2025
-  reference: 
+  reference:
   state: planned
 
 - title: Pactus Virtual Machine (PVM)
-  description: 
+  description:
   icon: fa-microchip
   date: Q3 2025
-  reference: 
+  reference:
   state: planned
 
 - title: Mobile Friendly GUI
-  description: 
+  description:
   icon: fa-mobile-alt
   date: Q2 2025
-  reference: 
+  reference:
   state: planned
 
 - title: Decentralized Storage Platform
-  description: 
+  description:
   icon: fa-database
   date: Q2 2025
-  reference: 
+  reference:
   state: planned
 
 - title: Integrating with Wallets applications
-  description: 
+  description:
   icon: fa-wallet
   date: Q1 2025
-  reference: 
+  reference:
   state: planned
 
 - title: Consumptional Fee Model
-  description: 
+  description:
   icon: fa-coins
   date: Q4 2024
-  reference: 
+  reference:
   state: construct
 
 - title: Nanomsg service
-  description: 
+  description:
   icon: fa-network-wired
   date: Q3 2024
-  reference: 
+  reference:
   state: construct
 
 - title: Supporting Ed25519 Curve
-  description: 
+  description:
   icon: fa-chart-line
   date: Q3 2024
-  reference: 
+  reference:
   state: construct
   current: true
 
 # - title: Batch Transactions
-#   description: 
+#   description:
 #   icon: fa-list-ol
 #   date: Q3 2024
-#   reference: 
+#   reference:
 #   state: construct
 
 - title: Pruned Node
-  description: 
+  description:
   icon: fa-tree
   date: August 2024
-  reference: 
+  reference:
   state: completed
 
 - title: Wallet Manager
-  description: 
+  description:
   icon: fa-wallet
   date: Jun 2024
   reference: https://docs.pactus.org/tutorials/grpc-sign-transactions/
   state: completed
 
 - title: Pactus Shell
-  description: 
+  description:
   icon: fa-terminal
   date: April 2024
   reference: https://docs.pactus.org/tutorials/pactus-shell/
   state: completed
 
 - title: Block Explorer
-  description: 
+  description:
   icon: fa-search
   date: April 2024
   reference: https://pacviewer.com/
   state: completed
 
 - title: Public Phoenix Testnet Launched
-  description: 
+  description:
   icon: fa-fire
   date: March 2024
   reference: /2024/03/16/testnet-phoenix-launched
   state: completed
 
 - title: Main Net Launched 🚀
-  description: 
+  description:
   icon: fa-rocket
   date: 24 January 2024
   reference: /2024/01/24/mainnet-launched
   state: completed
 
 - title: Testnet-2 Concluded
-  description: 
+  description:
   icon: fa-check
   date: January 2024
   reference: /2024/01/22/testnet-2-concluded
   state: completed
 
 - title: Testnet-2 Launched 🧪
-  description: 
+  description:
   icon: fa-flask
   date: October 2023
   reference: /2023/10/15/testnet-2-launched
   state: completed
 
 - title: Testnet-1 Concluded
-  description: 
+  description:
   icon: fa-check
   date: August 2023
   reference: /2023/08/01/testnet-1-concluded
   state: completed
 
 - title: Testnet-1 Launched 🧪
-  description: 
+  description:
   icon: fa-flask
   date: May 2023
   reference: /2023/05/09/testnet-1-launched
   state: completed
 
 - title: Testnet-0 Concluded
-  description: 
+  description:
   icon: fa-check
   date: April 2023
   reference: /2023/04/21/testnet-0-concluded
   state: completed
 
 - title: Testnet-0 Launched 🧪
-  description: 
+  description:
   icon: fa-flask
   date: September 2022
   reference: /2022/09/24/testnet-0-launched
