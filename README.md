@@ -55,7 +55,8 @@ image = "/images/pic.jpg"
 
 Make sure to fill all the fields carefully as they are important for SEO and user-friendly URLs.\
 After creating the file, you can start writing your blog post.\
-You can see your blog post in `http://localhost:1313/blog/your-post-slug`
+You can see your blog post in `http://localhost:1313/blog/your-post-slug` \
+**Note that description field is optional**
 
 ### Images
 

@@ -437,8 +437,7 @@
                           {{ .Date.Format "January 2, 2006" }}
                         </h6>
                         <p class="mt-5 text-neutral-50">
-                          {{ $summary := .Params.description | plainify | truncate 300 " ..." }}
-                          {{ $summary }}
+                          {{ partial "desc.html" (dict "description" .Params.description "summary" .Content "charCount" 150)}}
                           <br /><br />
                           <a href="{{ .Permalink }}" class="hover:text-opacity-80 font-bold text-[#1EA4E8]">Read
                             More</a>

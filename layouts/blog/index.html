@@ -4,7 +4,7 @@
   class="container mx-auto px-4 py-8 pt-[8rem] md:pt-[10rem] relative z-20 flex-grow pb-20 flex flex-col min-h-full">
   {{ $latestPost := index (.Pages.ByDate.Reverse) 0 }}
   {{ $image := resources.Get $latestPost.Params.image }}
-  {{ $resized := $image.Resize "800x webp q60" }}
+  {{ $resized := $image.Resize "1000x webp q70" }}
   <a href="{{ $latestPost.Permalink }}"
     class="relative w-full min-h-[300px] h-auto rounded-xl block fill-neutral-content">
     <div class="absolute inset-0 bg-cover bg-top bg-no-repeat rounded-xl"
@@ -19,8 +19,7 @@
       </div>
       <div class="mt-3 block">
         <p class="rounded-xl inline-block text-neutral-50 font-light text-lg">
-          {{ $summary := $latestPost.Params.description | plainify | truncate 300 " ..." }}
-          {{ $summary }}
+          {{ partial "desc.html" (dict "description" $latestPost.Params.description "summary" $latestPost.Content "charCount" 300)}}
         </p>
       </div>
       <div class="mt-5 flex">
@@ -50,8 +49,7 @@
               {{ .Title }}
             </h1>
           </a>
-          {{ $summary := .Params.description | plainify | truncate 150 " ..." }}
-          <p class="text-sm mt-2">{{ $summary }}</p>
+          <p class="text-sm mt-2">{{ partial "desc.html" (dict "description" .Params.description "summary" .Content "charCount" 150)}}</p>
         </div>
         <div class="block mt-8">
           <h1 class="text-[#97989F] font-medium text-sm">

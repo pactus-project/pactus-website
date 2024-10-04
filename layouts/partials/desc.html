@@ -1,0 +1,6 @@
+{{if .description}}
+{{.description | plainify | truncate .charCount " ..." | safeHTML}}
+{{else}}
+{{ $summary := findRE "(?s)<p.*?>.*?</p>" .summary }}
+{{ delimit $summary " " | plainify | truncate .charCount " ..." | safeHTML }}
+{{end}}
