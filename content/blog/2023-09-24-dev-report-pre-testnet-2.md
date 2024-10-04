@@ -2,9 +2,7 @@
 title = 'Dev Report pre-testnet2'
 author = 'Pactus Team'
 date = 2023-09-24T00:00:00+00:00
-draft = false
 tags = ['pactus', 'dev-report']
-slug = 'dev-report-pre-testnet-2'
 image = "/images/github-pactus.png"
 +++
 

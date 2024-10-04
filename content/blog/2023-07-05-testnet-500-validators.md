@@ -2,9 +2,7 @@
 title = '500 validators joined Testnet'
 author = 'Pactus Team'
 date = 2023-07-05T00:00:00+00:00
-draft = false
 tags = ['announcement', 'pactus', 'testnet']
-slug = 'testnet-500-validators'
 image = "/images/500-validators.png"
 +++
 

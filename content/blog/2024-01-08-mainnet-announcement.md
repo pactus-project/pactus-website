@@ -2,9 +2,7 @@
 title = 'Mainnet announcement'
 author = 'Pactus Team'
 date = 2024-01-08T00:00:00+00:00
-draft = false
 tags = ['announcement', 'mainnet', 'pactus', 'blockchain']
-slug = 'mainnet-announcement'
 image = "/images/pactus-blog-post-default.jpg"
 +++
 

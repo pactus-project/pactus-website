@@ -2,9 +2,7 @@
 title = 'Story of Testnet-1'
 author = 'Pactus Team'
 date = 2023-08-01T00:00:00+00:00
-draft = false
 tags = ['announcement', 'pactus', 'testnet']
-slug = 'testnet-1-concluded'
 image = "/images/pactus-blog-post-default.jpg"
 +++
 
