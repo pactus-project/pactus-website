@@ -1,8 +1,7 @@
 +++
 title = 'Pactus Newsletter, September 2024'
 description = """
-September Highlights: TOKEN2049: Pactus Hits 4 Million Transactions,
-Token2049: A Remarkable Experience in Singapore & more
+September Highlights: TOKEN2049, 4 Million Transactions, New Website & more ...
 """
 author = 'Pactus Team'
 date = 2024-10-03T00:00:00+00:00
@@ -97,17 +96,6 @@ one of the most popular programming languages.
 Supporting both BLS and Ed25519 signature schemes, the SDK simplifies tasks like transaction creation,
 signing, and API interactions.
 The SDK is available under the MIT license, and developers can start building with it today.
-
-### New Website, New Look
-
-We’re thrilled to unveil the new Pactus website!
-With a fresh design and improved functionality, we’ve received lots of positive feedback from the community.
-The previous version of the website has been archived and is still accessible at
-[https://old.pactus.org/](https://old.pactus.org/).
-
-We encourage everyone to explore the new site, and we welcome your feedback to help us make it even better.
-The website's code is open-source and available on GitHub at
-[Pactus Website Repository](https://github.com/pactus-project/pactus-website/).
 
 ### Pactus Improvement Proposals (PIPs)
 
