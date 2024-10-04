@@ -3,9 +3,7 @@ title = '500 validators joined Testnet'
 description = 'For a Proof of Stake blockchain, validators are important for maintaining the network integrity and security. They are similar to miners in Proof of Work blockchains like Bitcoin.'
 author = 'Pactus Team'
 date = 2023-07-05T00:00:00+00:00
-draft = false
 tags = ['announcement', 'pactus', 'testnet']
-slug = 'testnet-500-validators'
 image = "/images/500-validators.png"
 +++
 

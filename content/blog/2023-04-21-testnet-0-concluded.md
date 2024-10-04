@@ -3,9 +3,7 @@ title = 'Story of Testnet-0'
 description = 'The Pactus blockchain Testnet-0 is now available for participation.'
 author = 'Pactus Team'
 date = 2023-04-21T00:00:00+00:00
-draft = false
 tags = ['announcement', 'pactus', 'testnet']
-slug = 'testnet-0-concluded'
 image = "/images/pactus-blog-post-default.jpg"
 +++
 

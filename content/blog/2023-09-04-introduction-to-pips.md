@@ -3,9 +3,7 @@ title = 'Introduction to PIPs'
 description = 'In our commitment to transparency and innovation, were excited to introduce a major step in Pactus journey, the Pactus Improvement Proposals, or PIPs.'
 author = 'Pactus Team'
 date = 2023-09-04T00:00:00+00:00
-draft = false
 tags = ['pactus', 'pip']
-slug = 'introduction-to-pips'
 image = "/images/PIP.png"
 +++
 
