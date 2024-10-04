@@ -23,7 +23,7 @@
       <div class="hidden lg:grid"></div>
     </div>
     <div class="block text-center items-center">
-      <div class="mt-20 text-center items-center w-full">
+      <div class="mt-20 text-center items-center w-full relative">
         <div
           class="flex gap-x-4 justify-center"
           data-aos-duration="1000"
@@ -56,6 +56,17 @@
             >
           {{ end }}
         </div>
+        <a
+              href="https://github.com/pactus-project/pactus-website/edit/main/content/blog/{{ .File.BaseFileName }}.md"
+              class="btn btn-ghost rounded-lg !px-8 mt-5 text-neutral-50 icon-target"
+              rel="prev"
+              target="_blank"
+              >Improve this page
+              <lord-icon class="h-[25px] md:h-[30px]" target=".icon-target"
+                trigger="hover" src="/icons/wired-outline-245-edit-document-hover-pinch.json" colors="primary:#fff,secondary:#fff">
+              </lord-icon>
+              </a
+            >
       </div>
     </div>
   </section>
