@@ -29,3 +29,5 @@ resources/
 package-lock.json
 yarn.lock
 .build_build.lock
+
+.todo
