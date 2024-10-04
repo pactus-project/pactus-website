@@ -1,6 +1,5 @@
 +++
 title = 'Dev report'
-description = 'there is several activities in Pactus github this month, here is a clear report and explain of activities.'
 author = 'Pactus Team'
 date = 2023-08-22T00:00:00+00:00
 draft = false

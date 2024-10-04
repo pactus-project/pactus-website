@@ -1,6 +1,5 @@
 +++
-title = 'Dev meeting'
-description = 'The meeting took place on 18 September 2022, at 2:00 PM UTC via Google Meet, with team members from different time zones joining to discuss key aspects of the Pactus project.'
+title = 'Dev meeting - September 2022'
 author = 'Pactus Team'
 date = 2022-09-18T00:00:00+00:00
 draft = false

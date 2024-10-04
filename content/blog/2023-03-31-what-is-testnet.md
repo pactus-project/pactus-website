@@ -1,6 +1,5 @@
 +++
 title = 'What is a Testnet?'
-description = 'If you have ever wondered what Testnet is and how it is different from Mainnet, read this article to the end to find out!'
 author = 'Pactus Team'
 date = 2023-03-31T00:00:00+00:00
 draft = false

@@ -1,6 +1,5 @@
 +++
 title = 'Testnet-2 launch announcement'
-description = 'Exciting news for the Pactus Community: Testnet-2 is has launched! The journey through Testnet-1 brought success and invaluable experiences, with over 500 validators joining the network.'
 author = 'Pactus Team'
 date = 2023-10-15T00:00:00+00:00
 draft = false

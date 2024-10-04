@@ -1,6 +1,5 @@
 +++
 title = 'How SSPoS (Solid State Proof of Stake) works in simple word'
-description = 'In all Blockchain protocols, there is a concept called a consensus mechanism.'
 author = 'Pactus Team'
 date = 2023-09-28T00:00:00+00:00
 draft = false

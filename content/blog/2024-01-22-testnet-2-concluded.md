@@ -1,6 +1,5 @@
 +++
 title = 'Story of Testnet-2'
-description = 'Testnet is a testing environment where developers and users can try out the functionality of a blockchain project, without putting real assets or data at risk.'
 author = 'Pactus Team'
 date = 2024-01-22T00:00:00+00:00
 draft = false
