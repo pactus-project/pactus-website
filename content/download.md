@@ -6,27 +6,37 @@ type = 'download'
 description = 'actus is a community-run blockchain technology with a revolutionary, secure, Solid State Proof of Stake Consensus. Come join us and build a decentralized future together!'
 +++
 
-{{<translate "dict.download.welcome">}}
+On this page you can find how to download and get the latest version of the Pactus software.
 
 ---
 
-<h3 id="build ">🏗️ {{<translate "dict.download.compile_from_source_code">}}</h3>
+<h3 id="build">🏗️ Compile from Source Code</h3>
 
-{{<translate "dict.download.project_pactus_is_distributed">}}
+Project Pactus is distributed as open source software,
+so the preferred way for installing it is to clone the source code from
+the [GitHub](https://github.com/pactus-project/pactus) repository and compile the source code.
 
-{{<translate "dict.download.instructions_for_compiling">}}
+
+Instructions for compiling Pactus is provided on the
+[install](https://github.com/pactus-project/pactus/blob/main/docs/install.md) page.
 
 ---
 
-<h3 id="binary">⬇️ {{<translate "dict.download.stable_releases">}}</h3>
+<h3 id="binary">⬇️ Download Stable Releases</h3>
 
-{{<translate "dict.download.stable_releases_desc">}}
+You can also download the latest stable releases of Pactus.
+These releases are updated automatically when a new version is released in
+[GitHub repository](https://github.com/pactus-project/pactus).
 
 {{<download_links>}}
 
-<h3 id="downloader_script">{{<translate "dict.download.downloader_script">}}</h3>
+<h3 id="downloader_script">Downloader script</h3>
 
-{{<translate "dict.download.downloader_script_explained">}}
+For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like)
+(e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows),
+there is a downloader script available.
+This script can download the archived file, verify it, and extract it for you.
+To use it, simply run the following command in your terminal:
 
 
 ```sh
@@ -35,8 +45,9 @@ curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/re
 
 ---
 
-<h3 id="docker">🐳 {{<translate "dict.download.docker">}}</h3>
+<h3 id="docker">🐳 Docker Container</h3>
 
-{{<translate "dict.download.docker_desc">}}
+Advanced users can get the Pactus docker image from [Docker Hub](https://hub.docker.com/r/pactus/pactus).
 
-{{<translate "dict.download.docker_after_download">}} [{{<translate "dict.guide.run_pactus_docker">}}](https://docs.pactus.org/get-started/pactus-docker)
+You may follow this tutorial to set up and run your node using Docker:
+[Run Pactus using Docker](https://docs.pactus.org/get-started/pactus-docker)
