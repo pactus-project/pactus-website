@@ -67,7 +67,13 @@ For adding images, you can use the `/assets/blog/post-filename/image.png` direct
 ### Image
 
 For optimizing images in markdown files use image shortcode: \
-`{{<image "image.png">}}` \
+`{{<image "image.png">}}` 
+
+Also you can specify full image url like: \
+`{{<image "/images/image.png">}}`
+
+
+
 
 ### asset url
 
