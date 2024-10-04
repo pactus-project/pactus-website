@@ -54,24 +54,31 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
 
-      - name: Install Bootstrap
-        run: npm install
-
-      - name: Build the website
+      - name: Install NPM dependencies
         run: |
-          bundle install
-          bundle exec jekyll build
+          npm install
+
+      - name: Setup Hugo
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          hugo \
+            --gc --minify \
+            --baseURL "https://pactus.org/"
 
       - name: HTML5Validator
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
           root: _site/
 
-      - name: Check translation keys
-        run: python .github/workflows/check_translations.py ./website/_i18n
-
       - name: Check images
-        run: python .github/workflows/check_images.py ./website
+        run: python .github/workflows/check_images.py ./public
 
       - name: Install html-proofer
         run: |
@@ -85,4 +92,4 @@ jobs:
       ##
       ## By swap-urls, we don't get error if we rename or move a document.
       - name: Check for broken links
-        run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403,0" --ignore-urls=/github.com/,/cdn./,/discord.gg/,/t.me/,/tools.ietf.org/ ./_site
+        run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403,0" --ignore-urls=/github.com/,/cdn./,/discord.gg/,/t.me/,/tools.ietf.org/ ./public
