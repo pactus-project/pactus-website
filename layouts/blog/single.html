@@ -13,10 +13,8 @@
             {{ dateFormat "January 2, 2006" .Page.Date }}
           </span>
         </div>
-        {{ $image := resources.Get .Params.image }}
-        {{ $resized := $image.Resize "1000x webp q70" }}
         <img
-          src="{{ $resized.Permalink }}"
+          src="{{ partial "image.html" (dict "src" .Params.image "filename" .Page.File.BaseFileName) }}"
           alt="{{ .Title }}"
           loading="lazy"
           class="rounded-xl mt-6 w-full object-cover" />

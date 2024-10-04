@@ -1,3 +1,0 @@
-{{ $image := resources.Get (.Get "url") }}
-{{ $resized := $image.Resize (printf "%dx webp q70" $image.Width) }}
-<img src='/assets/blog/{{- .Page.File.TranslationBaseName -}}/{{ $resized.RelPermalink }}' alt='{{ .Get "alt" }}' class='{{ .Get "class" }}' width="{{$image.Width}}" height="{{$image.Height}}"/>

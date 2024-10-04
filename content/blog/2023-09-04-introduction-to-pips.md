@@ -45,4 +45,4 @@ Without approval from Pactus Laboratory team, changes won't be approved and adde
 For a complete list of Pactus Improvement Proposals, visit [this link](https://pips.pactus.org/).
 The corresponding GitHub repository is accessible [here](https://github.com/pactus-project/piPs/).
 
-{{< image url="repository.png" title="PIPs repository on Github" class="" >}}
+![PIPs repository on Github]({{<image "repository.png">}})
