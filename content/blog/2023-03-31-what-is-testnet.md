@@ -3,7 +3,7 @@ title = 'What is a Testnet?'
 author = 'Pactus Team'
 date = 2023-03-31T00:00:00+00:00
 tags = ['tutorial', 'pactus', 'testnet']
-image = "pactus-blog-post-default.jpg"
+image = "/images/pactus-blog-post-default.jpg"
 +++
 
 ## Mainnet vs Testnet?

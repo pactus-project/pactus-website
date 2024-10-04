@@ -3,7 +3,7 @@ title = 'How SSPoS (Solid State Proof of Stake) works in simple word'
 author = 'Pactus Team'
 date = 2023-09-28T00:00:00+00:00
 tags = ['pactus', 'sspos']
-image = "pactus-blog-post-default.jpg"
+image = "/images/pactus-blog-post-default.jpg"
 +++
 
 # Abstract

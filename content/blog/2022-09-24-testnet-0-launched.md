@@ -3,7 +3,7 @@ title = 'Testnet-0 launch announcement'
 author = 'Pactus Team'
 date = 2022-09-24T00:00:00+00:00
 tags = ['announcement', 'pactus', 'testnet']
-image = "pactus-blog-post-default.jpg"
+image = "/images/pactus-blog-post-default.jpg"
 +++
 
 ## Overview

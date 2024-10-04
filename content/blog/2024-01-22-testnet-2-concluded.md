@@ -3,7 +3,7 @@ title = 'Story of Testnet-2'
 author = 'Pactus Team'
 date = 2024-01-22T00:00:00+00:00
 tags = ['announcement', 'testnet', 'pactus', 'blockchain']
-image = "pactus-blog-post-default.jpg"
+image = "/images/pactus-blog-post-default.jpg"
 +++
 
 ## What is Testnet?
