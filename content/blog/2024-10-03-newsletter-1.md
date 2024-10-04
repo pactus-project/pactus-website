@@ -12,16 +12,19 @@ image = "/images/pactus-blog-post-default.jpg"
 # image = "pactus-newsletter-september-2024.png"
 +++
 
-
 Welcome to the September 2024 edition of our newsletter.
-This month has been packed with major milestones, exciting developments, and a fantastic experience at TOKEN2049.
-Read on for a detailed breakdown of everything we’ve achieved together!
+
+{{<image url="/images/blog/pactus-development-report-september-2024.png"
+title="Development Report - September 2024" class="">}}
 
 ## Pactus Highlights
 
+This month has been packed with major milestones, exciting developments, and a fantastic experience at TOKEN2049.
+Read on for a detailed breakdown of everything we’ve achieved together.
+
 ### TOKEN2049: A Remarkable Experience in Singapore
 
-We just wrapped up [TOKEN2049](https://www.token2049.com/), and it was an unforgettable experience!
+We just wrapped up [TOKEN2049](https://www.token2049.com/), and it was an unforgettable experience.
 From rubbing shoulders with the brightest minds in blockchain to discussing potential collaborations,
 the event was a game-changer for Pactus. The innovation and energy we witnessed have left us more inspired than ever.
 This milestone also highlights how far we’ve come since our mainnet launch.
@@ -30,34 +33,38 @@ TOKEN2049 is just the start of something even bigger, and we’re excited for wh
 
 ### 4 Million Transactions Processed on Pactus
 
-We’re beyond excited to announce that Pactus has officially processed over 4 million transactions!
+Pactus has processed over 4 million transactions.
 This isn't just a statistic; it's a testament to the trust and strength of our growing community.
 Every transaction reinforces our commitment to speed, low fees, and scalability.
 With your ongoing support, we're ready to tackle the next big milestone.
-Stay tuned—there’s plenty more to come as we continue to build a stronger, more connected blockchain!
 
 ### Pactus Listed on Azbit Exchange
 
-We’re thrilled to announce that Pactus is now officially listed on the Azbit exchange!
-This listing marks another significant step in our mission to make Pactus more accessible to a global audience. Azbit’s platform offers a user-friendly experience with a wide range of trading pairs, helping us reach new users and increase liquidity for Pactus.
-This is just one of many exciting milestones in our journey toward widespread adoption. We’re continuing to explore more exchange listings and opportunities to increase visibility for Pactus. Stay tuned for more updates, and feel free to check out our listing on Azbit here.
+Pactus is now officially listed on the [Azbit](https://azbit.com/) exchange.
+This listing marks another significant step in our mission to make Pactus more accessible to a global audience.
+Azbit’s platform offers a user-friendly experience with a wide range of trading pairs,
+helping us reach new users and increase liquidity for Pactus.
+This is just one of many exciting milestones in our journey toward widespread adoption.
+We’re continuing to explore more exchange listings and opportunities to increase visibility for Pactus.
 
 ### The New Pactus Website is Live
 
-We are excited to share that the brand-new Pactus website is officially live! With a fresh design,
-enhanced functionality, and a user-friendly interface.
+The brand-new Pactus website is live! With a fresh design, enhanced functionality, and a user-friendly interface.
 This revamped platform is built with our community in mind.
 Our goal is to make it easier for both newcomers and experienced users to access information, explore Pactus features,
 and get involved.
-Explore the new design here.
-And for those of you feeling nostalgic, don’t worry—you can still visit the previous version of the website here.
+The previous version of the website has been archived and is still accessible at
+[https://old.pactus.org/](https://old.pactus.org/).
+
+Explore the new website: [https://pactus.org/](https://pactus.org/).
 
 ## Development Report
 
 This past month, the Pactus development team has made significant progress across various fronts,
 focusing on both technical improvements and ecosystem expansion.
 
-{{<image url="/images/blog/pactus-development-report-september-2024.png" title="Development Report - September 2024" class="">}}
+{{<image url="/images/blog/pactus-development-report-september-2024.png"
+title="Development Report - September 2024" class="">}}
 
 ###  Ed25519 Curve Support
 
