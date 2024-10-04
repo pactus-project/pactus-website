@@ -52,17 +52,19 @@ image = "pic.jpg"
 +++
 ```
 
-Make sure to fill all the fields carefully as they are important for SEO and user-friendly URLs.\
-After creating the file, you can start writing your blog post.\
-You can see your blog post in `http://localhost:1313/blog/your-post-slug` \
-
 - **Note that description field is optional**
 
-- **Note that for image only use the image name, the image should be in the `/assets/blog/post-filename/pic.jpg` directory**
+- **Note that for image only use the image name, the image should be in the `/assets/blog/{post-filename}/pic.jpg` directory**
 
-### static assets
+### Blog assets
 
-For adding images, you can use the `/assets/blog/post-filename/image.png` directory.
+create a directory in `/assets/blog/{post-filename}/` and put all the images in that directory.
+
+**IMPORTANT:** Your blog post file name and the directory you create for its asssets should have the same name
+
+### Static assets
+
+For adding static assets, you can use the `/assets/blog/post-filename/image.png` directory.
 
 ### Image
 
