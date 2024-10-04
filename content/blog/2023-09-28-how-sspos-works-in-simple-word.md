@@ -6,7 +6,7 @@ tags = ['pactus', 'sspos']
 image = "/images/pactus-blog-post-default.jpg"
 +++
 
-# Abstract
+## Abstract
 
 In all Blockchain protocols, there is a concept called a consensus mechanism.
 This mechanism is used to enable nodes to reach an agreement
@@ -19,7 +19,8 @@ Pactus Blockchain uses the SSPoS (Solid State Proof of State) which is a new con
 To explain how it works let's start with explaining one of the first and simplest
 consensus mechanisms (or if you already know them, just jump into the last part named SSPoS).
 
-{{< image url="/images/SSPoS.png" title="Solid State Proof of Stake" class="" >}}
+![Solid State Proof of Stake]({{<image "SSPoS.png">}})
+
 
 ## PoW (Proof of Work)
 

@@ -3,12 +3,10 @@
 <section
   class="container mx-auto px-4 py-8 pt-[8rem] md:pt-[10rem] relative z-20 flex-grow pb-20 flex flex-col min-h-full">
   {{ $latestPost := index (.Pages.ByDate.Reverse) 0 }}
-  {{ $image := resources.Get $latestPost.Params.image }}
-  {{ $resized := $image.Resize "1000x webp q70" }}
   <a href="{{ $latestPost.Permalink }}"
     class="relative w-full min-h-[300px] h-auto rounded-xl block fill-neutral-content">
     <div class="absolute inset-0 bg-cover bg-top bg-no-repeat rounded-xl"
-      style="background-image: url('{{ $resized.RelPermalink | absURL }}');"></div>
+      style="background-image: url('{{ partial "image.html" (dict "src" $latestPost.Params.image "filename" $latestPost.Page.File.BaseFileName) }}');"></div>
     <div class="absolute inset-0 bg-[#000] bg-opacity-40 rounded-xl"></div>
     <div class="relative z-10 md:p-10 p-5">
       <div class="mt-20 block"></div>
@@ -37,7 +35,7 @@
       <div class="bg-[#242535] p-5 rounded-xl">
         <div class="block relative overflow-hidden group">
           <a href="{{ .Permalink }}">
-            {{partial "image.html" (dict "src" .Params.image "alt" .Title "class" "w-full object-cover rounded-xl h-56")}}
+            <img src="{{ partial "image.html" (dict "src" .Params.image "filename" .Page.File.BaseFileName) }}" loading="lazy" alt="{{.Title}}" class="w-full object-cover rounded-xl h-56">
             <div
               class="absolute rounded-xl transition-all delay-75 inset-0 group-hover:bg-gradient-to-br group-hover:from-[#fff]/40 group-hover:to-transparent">
             </div>

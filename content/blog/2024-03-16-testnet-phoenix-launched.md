@@ -3,7 +3,7 @@ title = 'Pactus Permanent Phoenix Testnet Launched'
 author = 'Pactus Team'
 date = 2024-03-16T00:00:00+00:00
 tags = ['announcement', 'testnet', 'pactus']
-image = "/images/pactus-public-testnet-phoenix.png"
+image = "pactus-public-testnet-phoenix.png"
 +++
 
 ## Overview

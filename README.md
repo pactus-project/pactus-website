@@ -10,6 +10,7 @@ To contribute, simply edit the relevant page or open a pull request.
 ## Running Locally
 
 For running the website locally, you need to have the following installed on your machine:
+
 - [Hugo](https://gohugo.io/)
 - [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
 
@@ -46,37 +47,43 @@ title = ''
 description = ''
 author = ''
 date = 2022-08-29T00:00:00+00:00
-draft = true
 tags = ['']
-slug = ''
-image = "/images/pic.jpg"
+image = "pic.jpg"
 +++
 ```
 
-Make sure to fill all the fields carefully as they are important for SEO and user-friendly URLs.\
-After creating the file, you can start writing your blog post.\
-You can see your blog post in `http://localhost:1313/blog/your-post-slug` \
-**Note that description field is optional**
+- **Note that description field is optional**
 
-### Images
+- **Note that for image only use the image name, the image should be in the `/assets/blog/{post-filename}/pic.jpg` directory**
 
-For adding images, you can use the `assets/images` directory.
+### Blog assets
 
-### Image in md files
+create a directory in `/assets/blog/{post-filename}/` and put all the images in that directory.
 
-For optimizing images in markdown files use image shortcode: \
-`{{<image  url="/images/image.png" title="image title" class="">}}` \
-for class parameter check [tailwindcss](https://tailwindcss.com/) or just leave it empty
-
-### Image in html files
-
-For optimizing images in html files use image shortcode: \
-`{{partial "image.html" (dict "src" "images/image.png" "alt" "image title" "class" "")}}` \
-for class parameter check [tailwindcss](https://tailwindcss.com/) or just leave it empty
+**IMPORTANT:** Your blog post file name and the directory you create for its asssets should have the same name
 
 ### Static assets
 
-For adding static assets, you can use the `static` directory.
+For adding static assets, you can use the `/assets/blog/post-filename/image.png` directory.
+
+### Image
+
+For optimizing images in markdown files use image shortcode: \
+`{{<image "image.png">}}` 
+
+Also you can specify full image url like: \
+`{{<image "/images/image.png">}}`
+
+
+
+
+### asset url
+
+`{{<asset "asset.pdf">}}`
+
+example use:
+
+`[link]({{<asset "asset.pdf">}})`
 
 ### Style change
 
