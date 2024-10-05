@@ -74,6 +74,9 @@ For optimizing images in markdown files use image shortcode: \
 Also you can specify full image url like: \
 `{{<image "/images/image.png">}}`
 
+example use:
+
+`![link]({{<asset "asset.pdf">}})`
 
 
 
