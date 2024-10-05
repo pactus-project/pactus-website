@@ -21,7 +21,6 @@ consensus mechanisms (or if you already know them, just jump into the last part 
 
 ![Solid State Proof of Stake]({{<image "SSPoS.png">}})
 
-
 ## PoW (Proof of Work)
 
 In the proof of work model, each node in the network should solve a complex mathematical

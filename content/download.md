@@ -18,7 +18,6 @@ Project Pactus is distributed as open source software,
 so the preferred way for installing it is to clone the source code from
 the [GitHub](https://github.com/pactus-project/pactus) repository and compile the source code.
 
-
 Instructions for compiling Pactus is provided on the
 [install](https://github.com/pactus-project/pactus/blob/main/docs/install.md) page.
 
