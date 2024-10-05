@@ -55,7 +55,7 @@
   </div>
   <div class="mt-10 bg-[#141B25] rounded-xl p-10 md:p-20" id="grouds-bundler">
     {{ range $i,$group := .Site.Data.faq }}
-    {{ $group_id := lower $group.title }}
+    {{ $group_id := $group.title }}
     <div class="join join-vertical w-full" id="{{ $group_id }}">
       {{ range $j, $item := $group.items }}
       <div class="collapse join-item" id="{{printf `%s.%s` $group_id $item.id}}"
