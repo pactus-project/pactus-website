@@ -68,19 +68,15 @@
 
     $("#gui-btn").addClass(selectedClasses);
     $("#cli-btn").addClass(notSelectedClasses);
-    $("#cli").hide();
-    $("#cli").removeClass("hidden");
 
     $("#gui-btn").click(function () {
       $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
       $("#cli-btn").removeClass(selectedClasses).addClass(notSelectedClasses);
-      showContent("gui");
     });
 
     $("#cli-btn").click(function () {
       $(this).addClass(selectedClasses).removeClass(notSelectedClasses);
       $("#gui-btn").removeClass(selectedClasses).addClass(notSelectedClasses);
-      showContent("cli");
     });
 
     function showContent(type) {
