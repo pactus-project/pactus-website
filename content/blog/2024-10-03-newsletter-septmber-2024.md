@@ -60,7 +60,7 @@ focusing on both technical improvements and ecosystem expansion.
 
 {{<image "pactus-development-report-september-2024.png" >}}
 
-###  Ed25519 Curve Support
+### Ed25519 Curve Support
 
 In September, we integrated support for the Ed25519 cryptographic curve on the Pactus blockchain.
 This brings multiple benefits, including more efficient transaction verification,
