@@ -49,7 +49,7 @@
     {{ $titleKey := $item.title }}
     <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
       <input class="btn btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn" type="radio"
-        name="groups" aria-label="{{ $titleKey }}" {{ if eq $i 0 }}checked{{ end }} aria-value="{{ lower $item.title }}" />
+        name="groups" aria-label="{{ $titleKey }}" {{ if eq $i 0 }}checked{{ end }} data-pcatus-value="{{ lower $item.title }}" />
     </div>
     {{ end }}
   </div>
@@ -111,9 +111,9 @@
       });
     $("input[type=radio][name=groups]").change(() => {
       const value = $("input[type=radio][name=groups]:checked").attr(
-        "aria-value",
+        "data-pcatus-value",
       );
-      if ($(this).attr("aria-value") !== value) {
+      if ($(this).attr("data-pcatus-value") !== value) {
         $("#grouds-bundler div.join").hide();
         $(`#${value}`).fadeIn();
       }
