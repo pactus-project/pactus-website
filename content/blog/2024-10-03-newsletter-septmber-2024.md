@@ -58,7 +58,7 @@ Explore the new website: [https://pactus.org/](https://pactus.org/).
 This past month, the Pactus development team has made significant progress across various fronts,
 focusing on both technical improvements and ecosystem expansion.
 
-{{<image "pactus-development-report-september-2024.png" >}}
+![Development Report]({{<image "pactus-development-report-september-2024.png" >}})
 
 ### Ed25519 Curve Support
 
