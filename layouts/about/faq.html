@@ -43,60 +43,55 @@
       </svg>
     </div>
   </div>
-  <div
-    class="mt-10 justify-between flex md:grid md:grid-cols-{{ len .Site.Data.faq }} overflow-y-scroll gap-3 mad:gap-6 md:overflow-y-auto">
-    {{ range $i, $item := .Site.Data.faq }}
-    {{ $titleKey := $item.title }}
-    <div class="p-px bg-gradient-to-b to-[#393939] from-[#C3C3C3] rounded-xl faq-btn-parent">
-      <input class="btn btn-lg md:text-lg w-full h-full bg-[#141B25] !rounded-xl no-animation faq-btn" type="radio"
-        name="groups" aria-label="{{ $titleKey }}" {{ if eq $i 0 }}checked{{ end }} data-pcatus-value="{{ lower $item.title }}" />
-    </div>
-    {{ end }}
-  </div>
-  <div class="mt-10 bg-[#141B25] rounded-xl p-10 md:p-20" id="grouds-bundler">
     {{ range $i,$group := .Site.Data.faq }}
     {{ $group_id := lower $group.title }}
-    <div class="join join-vertical w-full" id="{{ $group_id }}">
-      {{ range $j, $item := $group.items }}
-      <div class="collapse join-item" id="{{printf `%s.%s` $group_id $item.id}}"
-        onclick="changeUrlID({{printf `%s.%s` $group_id $item.id}})">
-        <input type="checkbox" name="{{ $group_id }}" class="peer" aria-checked="false" />
-        <div class="collapse-title text-xl md:text-2xl font-bold text-neutral-50 items-center">
-          <div>{{ $item.q }}</div>
+    <div class="mt-10 bg-[#141B25] rounded-xl p-10 md:p-20" id="grouds-bundler">
+
+      <div class="join join-vertical w-full" id="{{ $group_id }}">
+        <div class="join-title text-2xl md:text-3xl font-bold text-neutral-50 items-center mb-5">
+          <div>{{ $group.title }}</div>
         </div>
-        <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
-          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block"
-          style="text-align: -webkit-center;">
-          <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </button>
-        <div class="collapse-content prose lg:prose-xl">
-          {{ $item.a | markdownify | safeHTML }}
-          {{ with .Params.img }}
-          <img src="{{ .Site.BaseURL }}assets/images/{{ . }}" alt="{{ $item.a }}" />
-          {{ end }}
-          {{ if isset $item "more" }}
-          <a href="{{ $item.more }}" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read
-            more...</a>
-          {{ end }}
+        <div class="divider"></div>
+        {{ range $j, $item := $group.items }}
+        <div class="collapse join-item" id="{{printf `%s.%s` $group_id $item.id}}"
+          onclick="changeUrlID({{printf `%s.%s` $group_id $item.id}})">
+          <input type="checkbox" name="{{ $group_id }}" class="peer" aria-checked="false" />
+          <div class="collapse-title text-lg md:text-xl text-neutral-50 items-center">
+            <div>{{ $item.q }}</div>
+          </div>
+          <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.2859 2.33252V21.2915" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M1.8064 11.812H20.7654" stroke="white" stroke-width="2.70843" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block"
+            style="text-align: -webkit-center;">
+            <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.28711 1.67773H21.2461" stroke="#217AFF" stroke-width="2.70843" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="collapse-content prose lg:prose-lg">
+            {{ $item.a | markdownify | safeHTML }}
+            {{ with .Params.img }}
+            <img src="{{ .Site.BaseURL }}assets/images/{{ . }}" alt="{{ $item.a }}" />
+            {{ end }}
+            {{ if isset $item "more" }}
+            <a href="{{ $item.more }}" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5">Read
+              more...</a>
+            {{ end }}
+          </div>
         </div>
+        <div class="justify-center w-full text-center" style="text-align: -webkit-center;">
+          <div class="divider"></div>
+        </div>
+        {{ end }}
       </div>
-      <div class="justify-center w-full text-center" style="text-align: -webkit-center;">
-        <div class="divider w-9/12"></div>
-      </div>
-      {{ end }}
     </div>
     {{ end }}
-  </div>
 </section>
 {{ end }}
 {{ define "page_script" }}
@@ -133,13 +128,6 @@
       scrollTop: $('#' + elementId).offset().top
     }, 1000);
   }
-  $(document).ready(function () {
-    let element = document.getElementById(window.location.href.split('#')[1])
-    if (element) {
-      element.classList.add("collapse-open")
-      scrollToElement(window.location.href.split('#')[1])
-    }
-  });
 </script>
 
 {{ end }}
