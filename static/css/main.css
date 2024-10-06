@@ -2579,11 +2579,6 @@ details.collapse summary::-webkit-details-marker {
     text-shadow: 0 1px rgb(0 0 0 / var(--glass-text-shadow-opacity, 5%));
   }
 }
-.no-animation {
-  --btn-focus-scale: 1;
-  --animation-btn: 0;
-  --animation-input: 0;
-}
 .artboard.phone-1.horizontal,
       .artboard.phone-1.artboard-horizontal {
   width: 568px;
@@ -3422,15 +3417,8 @@ html:has(.drawer-toggle:checked) {
 .my-timeline-row {
     --timeline-row-start: 0px !important;
   }
-.faq-btn:is(input[type="radio"]:checked) {
-    background-color: #217AFF !important;
-    color: white;
-  }
 .what-is-according:has(input:checked) {
     border: 2px solid #fff;
-  }
-.faq-btn-parent:has(input:checked) {
-    background-image: none !important;
   }
 .prose h2:hover .group-hover\:opacity-100,
   .prose h3:hover .group-hover\:opacity-100,
@@ -3595,6 +3583,9 @@ html:has(.drawer-toggle:checked) {
 .mb-40 {
   margin-bottom: 10rem;
 }
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .mb-\[3px\] {
   margin-bottom: 3px;
 }
@@ -3679,9 +3670,6 @@ html:has(.drawer-toggle:checked) {
 .mt-px {
   margin-top: 1px;
 }
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
 .block {
   display: block;
 }
@@ -3759,9 +3747,6 @@ html:has(.drawer-toggle:checked) {
 }
 .w-80 {
   width: 20rem;
-}
-.w-9\/12 {
-  width: 75%;
 }
 .w-\[23px\] {
   width: 23px;
@@ -3856,9 +3841,6 @@ html:has(.drawer-toggle:checked) {
 .justify-center {
   justify-content: center;
 }
-.justify-between {
-  justify-content: space-between;
-}
 .justify-items-center {
   justify-items: center;
 }
@@ -3899,11 +3881,6 @@ html:has(.drawer-toggle:checked) {
 .gap-y-8 {
   row-gap: 2rem;
 }
-.divide-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-x-reverse: 0;
-  border-right-width: calc(2px * var(--tw-divide-x-reverse));
-  border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
-}
 .place-self-center {
   place-self: center;
 }
@@ -3922,16 +3899,10 @@ html:has(.drawer-toggle:checked) {
 .overflow-x-hidden {
   overflow-x: hidden;
 }
-.overflow-y-scroll {
-  overflow-y: scroll;
-}
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.\!rounded-xl {
-  border-radius: 0.75rem !important;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -4034,20 +4005,12 @@ html:has(.drawer-toggle:checked) {
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
 }
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 .from-\[\#5670CE\] {
   --tw-gradient-from: #5670CE var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(86 112 206 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.from-\[\#C3C3C3\] {
-  --tw-gradient-from: #C3C3C3 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(195 195 195 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .from-\[\#FFFFFF\] {
@@ -4057,9 +4020,6 @@ html:has(.drawer-toggle:checked) {
 }
 .to-\[\#31ABC6\] {
   --tw-gradient-to: #31ABC6 var(--tw-gradient-to-position);
-}
-.to-\[\#393939\] {
-  --tw-gradient-to: #393939 var(--tw-gradient-to-position);
 }
 .to-\[\#999999\] {
   --tw-gradient-to: #999999 var(--tw-gradient-to-position);
@@ -4107,9 +4067,6 @@ html:has(.drawer-toggle:checked) {
 }
 .p-5 {
   padding: 1.25rem;
-}
-.p-px {
-  padding: 1px;
 }
 .\!px-10 {
   padding-left: 2.5rem !important;
@@ -4171,6 +4128,9 @@ html:has(.drawer-toggle:checked) {
 .pr-5 {
   padding-right: 1.25rem;
 }
+.pt-10 {
+  padding-top: 2.5rem;
+}
 .pt-20 {
   padding-top: 5rem;
 }
@@ -4188,9 +4148,6 @@ html:has(.drawer-toggle:checked) {
 }
 .pt-\[8rem\] {
   padding-top: 8rem;
-}
-.pt-10 {
-  padding-top: 2.5rem;
 }
 .text-left {
   text-align: left;
@@ -6728,10 +6685,6 @@ html {
     display: flex;
   }
 
-  .md\:grid {
-    display: grid;
-  }
-
   .md\:h-14 {
     height: 3.5rem;
   }
@@ -6774,10 +6727,6 @@ html {
 
   .md\:items-center {
     align-items: center;
-  }
-
-  .md\:overflow-y-auto {
-    overflow-y: auto;
   }
 
   .md\:bg-\[\#15161C\] {

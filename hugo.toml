@@ -79,3 +79,9 @@ canonifyURLs = true
     disableLatLong = false
     excludeFields = ''
     includeFields = ''
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
