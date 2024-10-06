@@ -74,6 +74,13 @@
     color: inherit;
   }
 
+  .prose p {
+    line-height: 1.4;
+  }
+
+  .prose li {
+    line-height: 1.4;
+  }
 
 }
 
@@ -1660,3 +1667,7 @@ html {
   text-align: -webkit-center;
 }
 
+.single-bg {
+  opacity: 0.5;
+  max-height: 100%;
+}
