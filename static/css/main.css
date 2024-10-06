@@ -4189,6 +4189,9 @@ html:has(.drawer-toggle:checked) {
 .pt-\[8rem\] {
   padding-top: 8rem;
 }
+.pt-10 {
+  padding-top: 2.5rem;
+}
 .text-left {
   text-align: left;
 }
