@@ -74,6 +74,13 @@
     color: inherit;
   }
 
+  .prose p {
+    line-height: 1.4;
+  }
+
+  .prose li {
+    line-height: 1.4;
+  }
 
 }
 

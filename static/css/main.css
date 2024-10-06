@@ -3470,6 +3470,12 @@ html:has(.drawer-toggle:checked) {
     background-color: inherit;
     color: inherit;
   }
+.prose p {
+    line-height: 1.4;
+  }
+.prose li {
+    line-height: 1.4;
+  }
 .visible {
   visibility: visible;
 }
@@ -3508,9 +3514,6 @@ html:has(.drawer-toggle:checked) {
 }
 .bottom-\[1\.06em\] {
   bottom: 1.06em;
-}
-.left-0 {
-  left: 0px;
 }
 .left-10 {
   left: 2.5rem;
@@ -3575,9 +3578,6 @@ html:has(.drawer-toggle:checked) {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
-.m-auto {
-  margin: auto;
-}
 .\!my-0 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
@@ -3618,12 +3618,6 @@ html:has(.drawer-toggle:checked) {
 }
 .mr-0 {
   margin-right: 0px;
-}
-.mr-1 {
-  margin-right: 0.25rem;
-}
-.mr-2 {
-  margin-right: 0.5rem;
 }
 .mr-3 {
   margin-right: 0.75rem;
@@ -3690,9 +3684,6 @@ html:has(.drawer-toggle:checked) {
 }
 .inline-block {
   display: inline-block;
-}
-.inline {
-  display: inline;
 }
 .flex {
   display: flex;
@@ -3923,9 +3914,6 @@ html:has(.drawer-toggle:checked) {
 .overflow-x-hidden {
   overflow-x: hidden;
 }
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
 .overflow-y-scroll {
   overflow-y: scroll;
 }
@@ -4034,9 +4022,6 @@ html:has(.drawer-toggle:checked) {
 }
 .bg-transparent {
   background-color: transparent;
-}
-.bg-opacity-40 {
-  --tw-bg-opacity: 0.4;
 }
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
@@ -4255,10 +4240,6 @@ html:has(.drawer-toggle:checked) {
 .text-\[\#1EA4E8\] {
   --tw-text-opacity: 1;
   color: rgb(30 164 232 / var(--tw-text-opacity));
-}
-.text-\[\#217AFF\] {
-  --tw-text-opacity: 1;
-  color: rgb(33 122 255 / var(--tw-text-opacity));
 }
 .text-\[\#696A75\] {
   --tw-text-opacity: 1;
