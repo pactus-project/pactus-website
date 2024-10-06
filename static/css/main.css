@@ -3727,9 +3727,6 @@ html:has(.drawer-toggle:checked) {
 .h-full {
   height: 100%;
 }
-.h-6 {
-  height: 1.5rem;
-}
 .max-h-full {
   max-height: 100%;
 }
@@ -3779,9 +3776,6 @@ html:has(.drawer-toggle:checked) {
   width: -moz-max-content;
   width: max-content;
 }
-.w-6 {
-  width: 1.5rem;
-}
 .min-w-full {
   min-width: 100%;
 }
@@ -3796,9 +3790,6 @@ html:has(.drawer-toggle:checked) {
 }
 .flex-none {
   flex: none;
-}
-.shrink-0 {
-  flex-shrink: 0;
 }
 .flex-grow {
   flex-grow: 1;
@@ -4084,9 +4075,6 @@ html:has(.drawer-toggle:checked) {
 .fill-neutral-content {
   fill: var(--fallback-nc,oklch(var(--nc)/1));
 }
-.stroke-current {
-  stroke: currentColor;
-}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -4192,6 +4180,9 @@ html:has(.drawer-toggle:checked) {
 }
 .pt-\[8rem\] {
   padding-top: 8rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
 }
 .text-left {
   text-align: left;

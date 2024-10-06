@@ -1,5 +1,27 @@
+{{if eq .Page.RelPermalink "/"}}
+<div class="relative w-full top-[51px]">
+  <img loading="lazy" src="{{partial "image.html" (dict "src" "/images/pactus-robot.png")}}" alt="" class="w-20 lg:w-[150px] absolute bottom-0 left-10 z-10 lg:left-56">
+</div>
+{{end}}
+<div class="relative w-full text-center top-[26px]" style="text-align: -webkit-center;">
+  <button class="button-go-to-top z-20" onclick="gototop()">
+      <svg class="svgIcon" viewBox="0 0 384 512">
+          <path
+              d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+          </path>
+      </svg>
+  </button>
+</div>
+<script>
+  function gototop() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  }
+</script>
 <footer
-  class="footer bg-[#17181F] pl-10 pr-10 text-center border-t-[1px] border-[#242222] relative shadow-single-footer-shadow">
+  class="footer bg-[#17181F] pl-10 pr-10 text-center border-t-[1px] border-[#242222] relative shadow-single-footer-shadow pt-10 pb-5">
   <div class="footer container mx-auto place-items-center md:place-items-start">
     <nav class="self-center ">
       <ul class="grid grid-cols-2 md:grid-cols-5 gap-y-4 justify-center pt-5 pb-5 font-bold">
