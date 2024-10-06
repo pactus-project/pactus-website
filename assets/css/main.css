@@ -1667,3 +1667,7 @@ html {
   text-align: -webkit-center;
 }
 
+.single-bg {
+  opacity: 0.5;
+  max-height: 100%;
+}
