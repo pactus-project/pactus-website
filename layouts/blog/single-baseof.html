@@ -6,13 +6,12 @@
 
   <body class="bg-[#0B0B0F] flex flex-col min-h-screen">
     {{ partial "header.html" . }}
+    <img loading="lazy" src="{{partial "image.html" (dict "src" "/images/landing-top-bg1.png")}}" alt="" class="min-w-full absolute -top-10 single-bg">
     <div class="other-top-bg-back"></div>
 
     <div class="drawer flex-grow">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content relative overflow-hidden">
-        <div class="other-left-bg-back"></div>
-        <div class="other-right-bg-back"></div>
 
         {{ block "main" . }}{{ end }}
       </div>
