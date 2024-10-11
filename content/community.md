@@ -49,12 +49,12 @@ To explore the communities managed by members of the community, you can follow t
   </li>
     <li class="group">
     <a target="_blank" href="https://t.me/pactusrus" class="hover:text-[#7064e9]">
-      <i class="fa-brands fa-telegram mr-3 text-2xl"></i>Pactus Russian TG group 
+      <i class="fa-brands fa-telegram mr-3 text-2xl"></i>Pactus Russian TG group
     </a>
   </li>
     <li class="group">
     <a target="_blank" href="https://t.me/pactustr" class="hover:text-[#7064e9]">
-      <i class="fa-brands fa-telegram mr-3 text-2xl"></i>Pactus Turkey TG 
+      <i class="fa-brands fa-telegram mr-3 text-2xl"></i>Pactus Turkey TG
     </a>
   </li>
 </ul>
