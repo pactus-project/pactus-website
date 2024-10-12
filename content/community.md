@@ -39,4 +39,22 @@ To explore the communities managed by members of the community, you can follow t
       <i class="fa-brands fa-weixin mr-3 text-2xl"></i>WeChat Community
     </a> - Please Join Discord and Request Invite from Community
   </li>
+  <li class="group">
+    <a target="_blank" href="https://www.instagram.com/pactus.blockchain/" class="hover:text-[#7064e9]">
+      <i class="fa-brands fa-instagram mr-3 text-2xl"></i>Pactus Instagram
+  </li>
+    <li class="group">
+    <a target="_blank" href="https://www.tiktok.com/@pactusblockchain" class="hover:text-[#7064e9]">
+      <i class="fa-brands fa-tiktok mr-3 text-2xl"></i>Pactus Tiktok
+  </li>
+    <li class="group">
+    <a target="_blank" href="https://t.me/pactusrus" class="hover:text-[#7064e9]">
+      <i class="fa-brands fa-telegram mr-3 text-2xl"></i>Pactus Russian TG group
+    </a>
+  </li>
+    <li class="group">
+    <a target="_blank" href="https://t.me/pactustr" class="hover:text-[#7064e9]">
+      <i class="fa-brands fa-telegram mr-3 text-2xl"></i>Pactus Turkey TG
+    </a>
+  </li>
 </ul>
