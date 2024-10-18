@@ -129,6 +129,13 @@ yarn run htmlproofer:setup
 yarn run htmlproofer
 ```
 
+- Validate HTML5
+
+```bash
+pip install html5validator
+html5validator --root layouts/
+```
+
 ## Markdown
 
 Markdown is a lightweight markup language that uses plain text formatting syntax to convert text into HTML,
