@@ -39,9 +39,9 @@ there is a downloader script available.
 This script can download the archived file, verify it, and extract it for you.
 To use it, simply run the following command in your terminal:
 
-```sh
-curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/v{{<latest_version>}}/pactus_downloader.sh | sh
-```
+<pre> 
+curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/<span class="latest-version">---</span>/pactus_downloader.sh | sh
+</pre>
 
 ---
 

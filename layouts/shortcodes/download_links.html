@@ -41,7 +41,7 @@
     </p>
   </div>
   <p class="text">
-    Once you have downloaded the Pactus GUI, you may follow this tutorial to set up and run your node: 
+    Once you have downloaded the Pactus GUI, you may follow this tutorial to set up and run your node:
     <a href="https://docs.pactus.org/get-started/pactus-gui" target="_blank">How to run Pactus in Graphic Mode?</a>
   </p>
   <div id="cli" class="overflow-x-auto">
@@ -157,6 +157,11 @@
       document.getElementById("loading").innerHTML = ""
       document.getElementById("loading1").innerHTML = ""
       const release = await fetchLatestRelease();
+
+      const latestVersionElements = document.getElementsByClassName("latest-version")
+      for (let i = 0; i < latestVersionElements.length; i++) {
+        latestVersionElements[i].innerHTML = release.tag_name
+      }
 
       const cliTable = createTable(release.assets, 'cli');
       const guiTable = createTable(release.assets, 'gui');
