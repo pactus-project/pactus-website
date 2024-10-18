@@ -89,4 +89,4 @@ jobs:
       ##
       ## By swap-urls, we don't get error if we rename or move a document.
       - name: Check for broken links
-        run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403,0" --ignore-urls=/github.com/,/cdn./,/discord.gg/,/t.me/,/tools.ietf.org/ ./public
+        run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403,0" --ignore-urls=/github.com/,/cdn./,/discord.gg/,/t.me/,/tools.ietf.org/,/www.googletagmanager.com/,/googletagmanager.com/ ./public
