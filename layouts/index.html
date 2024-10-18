@@ -722,10 +722,10 @@
     }
 
     function updateUI(data) {
-      $('#totalBlocks').text(data.data.totalBlocks || 0);
-      $('#totalTransactions').text(data.data.totalTransactions || 0);
-      $('#totalAccounts').text(data.data.totalAccounts || 0);
-      $('#totalValidators').text(data.data.totalValidators || 0);
+      $('#totalBlocks').text(data.data.TotalBlocks || 0);
+      $('#totalTransactions').text(data.data.TotalTxs || 0);
+      $('#totalAccounts').text(data.data.TotalAccounts || 0);
+      $('#totalValidators').text(data.data.TotalValidators || 0);
     }
 
     function checkAndUpdateCounts() {
