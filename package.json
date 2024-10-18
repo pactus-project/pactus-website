@@ -10,15 +10,14 @@
     "start": "concurrently \"hugo server -D --noHTTPCache --disableFastRender\" \"npm run watch:css\"",
     "build": "hugo --gc --minify",
     "clean:destination": "hugo --cleanDestinationDir",
-    "htmlproofer:setup": "gem install html-proofer",
+    "htmlproofer:setup": "gem install html-proofer -v 4.3",
     "htmlproofer": "htmlproofer --swap-urls 'http\\://localhost\\:1313:' --ignore-status-codes 999,429  --enforce-https false --ignore-urls /cdn./,/discord.gg/,/t.me/,/x.com/,/github.com/,/ietf.org/ ./public",
     "prettier:setup": "yarn add prettier prettier-plugin-go-template --dev",
     "prettier": "prettier --write \"content/**/*.md\" \"layouts/**/*.html\"",
     "lint:md:setup": "gem install mdl",
     "lint:md": "mdl --style=.mdlrc.rb ./content",
     "lint:yml:setup": "pip install --upgrade yamllint",
-    "lint:yml": "yamllint ./data ./content",
-    "exif": "for i in $(find ./ -name node_modules -prune *.png -o -name *.gif -o -name *.jpg -o -name *.jpeg); do echo \"Processing $i\"; exiftool -all= \"$i\"; done"
+    "lint:yml": "yamllint ./data ./content"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",
