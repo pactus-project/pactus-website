@@ -1,11 +1,11 @@
 {{- $imageURL := printf "/blog/%s/%s" .Page.File.BaseFileName (.Get 0) -}}
 
 {{- if eq (substr (.Get 0) 0 1) "/" -}}
-    {{- $imageURL = .Get 0 -}}
+  {{- $imageURL = .Get 0 -}}
 {{- end -}}
 
 {{- $image := resources.Get $imageURL -}}
 {{- if $image -}}
-    {{- $resized := $image.Resize (printf "%dx webp q70" $image.Width) -}}
-    {{- printf "%s" $resized.RelPermalink | safeURL -}}
+  {{- $resized := $image.Resize (printf "%dx webp q70" $image.Width) -}}
+  {{- printf "%s" $resized.RelPermalink | safeURL -}}
 {{- end -}}

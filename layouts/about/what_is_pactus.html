@@ -1,142 +1,237 @@
 {{ define "title" }}{{ .Page.Title }}{{ end }}
 {{ define "main" }}
-<section class="container mx-auto px-4 py-8 pt-[8rem] relative z-20 flex-grow pb-20">
-  <div class="w-full h-full p-10 md:p-20 justify-center text-center border border-[#C3C3C3] rounded-xl grid-cols-4">
-    <div></div>
-    <div class="col-span-2">
-      <h1
-        class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999]">
-        Want to stay updated?
-      </h1>
-      <p class="mt-5 text text-2xl md:text-3xl font-light text-[#6F6C90]">
-        We will reach out to you with our latest developments.
-      </p>
-      <form method="POST" id="zcampaignOptinForm" target="_blank"
-        action="https://zcsub-cmpzourl.maillist-manage.com/weboptin.zc" onsubmit="zcScptlessSubmit(this)">
-        <div class="block md:flex gap-x-3 place-content-center place-items-center mt-14">
-          <div class="block">
-            <label
-              class="input flex items-center shadow-top-left-to-bottom-right gap-2 glass bg-transparent w-full md:h-14 ">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                class="h-4 w-4 opacity-70">
-                <path
-                  d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
-                <path
-                  d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
-              </svg>
-              <input type="text" class="grow" name="CONTACT_EMAIL" id="EMBED_FORM_EMAIL_LABEL" required
-                placeholder="Enter your email address" />
-            </label>
+  <section
+    class="container mx-auto px-4 py-8 pt-[8rem] relative z-20 flex-grow pb-20">
+    <div
+      class="w-full h-full p-10 md:p-20 justify-center text-center border border-[#C3C3C3] rounded-xl grid-cols-4">
+      <div class="col-span-2">
+        <h1
+          class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999]">
+          Want to stay updated?
+        </h1>
+        <p class="mt-5 text text-2xl md:text-3xl font-light text-[#6F6C90]">
+          We will reach out to you with our latest developments.
+        </p>
+        <form
+          method="POST"
+          id="zcampaignOptinForm"
+          target="_blank"
+          action="https://zcsub-cmpzourl.maillist-manage.com/weboptin.zc"
+          onsubmit="zcScptlessSubmit(this)">
+          <div
+            class="block md:flex gap-x-3 place-content-center place-items-center mt-14">
+            <div class="block">
+              <label
+                class="input flex items-center shadow-top-left-to-bottom-right gap-2 glass bg-transparent w-full md:h-14 ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="h-4 w-4 opacity-70">
+                  <path
+                    d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+                  <path
+                    d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+                </svg>
+                <input
+                  type="text"
+                  class="grow"
+                  name="CONTACT_EMAIL"
+                  id="EMBED_FORM_EMAIL_LABEL"
+                  required
+                  placeholder="Enter your email address" />
+              </label>
+            </div>
+            <button
+              type="submit"
+              class="btn rounded-xl block w-full md:w-40 md:h-14 md:btn-lg mt-4 md:mt-0 text-neutral-50 text-sm bg-[#217AFF] border-none hover:bg-[#217AFF] hover:opacity-80"
+              href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf">
+              Subscribe
+            </button>
           </div>
-          <button type="submit"
-            class="btn rounded-xl block w-full md:w-40 md:h-14 md:btn-lg mt-4 md:mt-0 text-neutral-50 text-sm bg-[#217AFF] border-none hover:bg-[#217AFF] hover:opacity-80"
-            href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf">
-            Subscribe
+          <input type="hidden" id="fieldBorder" value="" />
+          <input
+            type="hidden"
+            id="submitType"
+            name="submitType"
+            value="optinCustomView" />
+          <input
+            type="hidden"
+            id="emailReportId"
+            name="emailReportId"
+            value="" />
+          <input
+            type="hidden"
+            id="formType"
+            name="formType"
+            value="QuickForm" />
+          <input type="hidden" name="zx" id="cmpZuid" value="13218bf6c" />
+          <input type="hidden" name="zcvers" value="3.0" />
+          <input
+            type="hidden"
+            name="oldListIds"
+            id="allCheckedListIds"
+            value="" />
+          <input type="hidden" id="mode" name="mode" value="OptinCreateView" />
+          <input
+            type="hidden"
+            id="zcld"
+            name="zcld"
+            value="112123bce6a87486f" />
+          <input
+            type="hidden"
+            id="zctd"
+            name="zctd"
+            value="112123bce6a8747a9" />
+          <input type="hidden" id="document_domain" value="" />
+          <input
+            type="hidden"
+            id="zc_Url"
+            value="zcsub-cmpzourl.maillist-manage.com" />
+          <input type="hidden" id="new_optin_response_in" value="0" />
+          <input type="hidden" id="duplicate_optin_response_in" value="0" />
+          <input
+            type="hidden"
+            name="zc_trackCode"
+            id="zc_trackCode"
+            value="ZCFORMVIEW" />
+          <input
+            type="hidden"
+            id="zc_formIx"
+            name="zc_formIx"
+            value="3zd8832f02d940dff7bd0ec77975118cec6c023867c41b055633e07139162e2519" />
+          <input type="hidden" id="viewFrom" value="URL_ACTION" />
+          <input type="hidden" id="scriptless" name="scriptless" value="yes" />
+          <input
+            type="hidden"
+            id="zc_spmSubmit"
+            name="zc_spmSubmit"
+            value="ZCSPMSUBMIT" />
+          <div
+            class="flex gap-x-3 place-content-center place-items-center mt-14"></div>
+        </form>
+      </div>
+    </div>
+    <div class="w-full h-full p-10 border border-[#C3C3C3] rounded-xl mt-10">
+      <h1 class="text-neutral-50 text-bold flex">
+        <svg
+          width="38"
+          height="39"
+          viewBox="0 0 38 39"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.6622 2.92968L17.3226 1.46497L17.9832 0H16.2539H14.5249L14.0591 1.44942L13.5936 2.89884H6.79208C3.05151 2.89884 -0.00509781 2.92836 6.3833e-06 2.96473C0.00511058 3.00109 0.413177 4.15721 0.906672 5.53416L1.80394 8.0377L13.4565 8.16947C26.1848 8.31336 26.3731 8.33629 27.6159 9.88611C28.0712 10.4538 28.1983 10.9692 28.1983 12.2476C28.1983 15.6812 26.1332 18.1697 21.2058 20.6735C18.9605 21.8143 14.9292 23.2975 14.504 23.1391C14.3855 23.0951 15.3631 20.1536 16.6765 16.6025C17.9896 13.0514 19.0639 10.1133 19.0642 10.0735C19.0644 10.0334 17.177 10.0334 14.8701 10.0735L10.6758 10.146L7.48974 19.1701L4.30392 28.1942L6.24405 33.5958C7.31136 36.5668 8.24516 38.9987 8.31957 39C8.39399 39.0016 9.3431 36.5297 10.4284 33.5075C11.514 30.485 12.4806 27.8874 12.5767 27.7351C12.6726 27.5828 14.746 26.9598 17.184 26.3508C23.8627 24.6821 26.6804 23.5481 31.0937 20.7528C33.9096 18.9692 36.1643 16.685 37.2714 14.4942C37.8968 13.2562 38.0032 12.718 37.9999 10.8048C37.9967 8.88575 37.8922 8.37028 37.2703 7.20784C36.3894 5.56104 35.0043 4.39465 33.0338 3.64016C31.7779 3.15948 30.8414 3.05696 26.7879 2.95735C24.1654 2.89278 22.0195 2.74969 22.0195 2.639C22.0195 2.52858 22.2008 1.93379 22.4225 1.31766C22.6441 0.701521 22.8254 0.152849 22.8254 0.0985617C22.8254 0.0442743 22.1162 0 21.2496 0H19.6737L19.1394 1.38354C18.6438 2.66773 18.5355 2.77288 17.6339 2.84851L16.6622 2.92968Z"
+            fill="#F0F0F0" />
+        </svg>
+        <span class="ml-3 mt-2 text-xl font-bold">What is Pactus?</span>
+      </h1>
+      <div class="divider"></div>
+      <div>
+        <div class="collapse bg-[#141B25] p-5 what-is-according">
+          <input
+            type="checkbox"
+            name="my-accordion-2"
+            checked="checked"
+            class="peer" />
+          <div class="collapse-title text-xl font-medium text-neutral-50">
+            Pactus is a blockchain focused on decentralization
+          </div>
+          <button
+            class="btn btn-circle absolute right-5 top-7 bg-[#fff] hover:bg-[#fff] -rotate-90 peer-checked:rotate-0 peer-checked:bg-[#217AFF] peer-checked:hover:bg-[#217AFF] peer-checked:[&>svg>#arrow]:stroke-[#fff] [&>svg>#arrow]:stroke-[#4A3AFF]">
+            <svg
+              width="17"
+              height="13"
+              class="ml-px mt-px"
+              viewBox="0 0 23 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.47314 1.43994L11.2927 11.2151L21.1122 1.43994"
+                stroke-width="2.37859"
+                id="arrow"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
+          <div class="collapse-content">
+            <p>
+              Pactus is built on the principle that a fair and transparent
+              system can only be achieved through decentralization. Unlike many
+              other blockchain platforms, Pactus aims to eliminate the potential
+              for centralization and manipulation by removing the need for
+              delegation and miners. This allows anyone to become a part of the
+              ecosystem and ensures that the platform remains truly
+              decentralized.
+            </p>
+          </div>
         </div>
-        <input type="hidden" id="fieldBorder" value="">
-        <input type="hidden" id="submitType" name="submitType" value="optinCustomView">
-        <input type="hidden" id="emailReportId" name="emailReportId" value="">
-        <input type="hidden" id="formType" name="formType" value="QuickForm">
-        <input type="hidden" name="zx" id="cmpZuid" value="13218bf6c">
-        <input type="hidden" name="zcvers" value="3.0">
-        <input type="hidden" name="oldListIds" id="allCheckedListIds" value="">
-        <input type="hidden" id="mode" name="mode" value="OptinCreateView">
-        <input type="hidden" id="zcld" name="zcld" value="112123bce6a87486f">
-        <input type="hidden" id="zctd" name="zctd" value="112123bce6a8747a9">
-        <input type="hidden" id="document_domain" value="">
-        <input type="hidden" id="zc_Url" value="zcsub-cmpzourl.maillist-manage.com">
-        <input type="hidden" id="new_optin_response_in" value="0">
-        <input type="hidden" id="duplicate_optin_response_in" value="0">
-        <input type="hidden" name="zc_trackCode" id="zc_trackCode" value="ZCFORMVIEW">
-        <input type="hidden" id="zc_formIx" name="zc_formIx"
-          value="3zd8832f02d940dff7bd0ec77975118cec6c023867c41b055633e07139162e2519">
-        <input type="hidden" id="viewFrom" value="URL_ACTION">
-        <input type="hidden" id="scriptless" name="scriptless" value="yes">
-        <input type="hidden" id="zc_spmSubmit" name="zc_spmSubmit" value="ZCSPMSUBMIT">
-        <div class="flex gap-x-3 place-content-center place-items-center mt-14">
-      </form>
-
-    </div>
-  </div>
-  <div></div>
-  </div>
-  <div class="w-full h-full p-10 border border-[#C3C3C3] rounded-xl mt-10">
-    <h1 class="text-neutral-50 text-bold flex">
-      <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M16.6622 2.92968L17.3226 1.46497L17.9832 0H16.2539H14.5249L14.0591 1.44942L13.5936 2.89884H6.79208C3.05151 2.89884 -0.00509781 2.92836 6.3833e-06 2.96473C0.00511058 3.00109 0.413177 4.15721 0.906672 5.53416L1.80394 8.0377L13.4565 8.16947C26.1848 8.31336 26.3731 8.33629 27.6159 9.88611C28.0712 10.4538 28.1983 10.9692 28.1983 12.2476C28.1983 15.6812 26.1332 18.1697 21.2058 20.6735C18.9605 21.8143 14.9292 23.2975 14.504 23.1391C14.3855 23.0951 15.3631 20.1536 16.6765 16.6025C17.9896 13.0514 19.0639 10.1133 19.0642 10.0735C19.0644 10.0334 17.177 10.0334 14.8701 10.0735L10.6758 10.146L7.48974 19.1701L4.30392 28.1942L6.24405 33.5958C7.31136 36.5668 8.24516 38.9987 8.31957 39C8.39399 39.0016 9.3431 36.5297 10.4284 33.5075C11.514 30.485 12.4806 27.8874 12.5767 27.7351C12.6726 27.5828 14.746 26.9598 17.184 26.3508C23.8627 24.6821 26.6804 23.5481 31.0937 20.7528C33.9096 18.9692 36.1643 16.685 37.2714 14.4942C37.8968 13.2562 38.0032 12.718 37.9999 10.8048C37.9967 8.88575 37.8922 8.37028 37.2703 7.20784C36.3894 5.56104 35.0043 4.39465 33.0338 3.64016C31.7779 3.15948 30.8414 3.05696 26.7879 2.95735C24.1654 2.89278 22.0195 2.74969 22.0195 2.639C22.0195 2.52858 22.2008 1.93379 22.4225 1.31766C22.6441 0.701521 22.8254 0.152849 22.8254 0.0985617C22.8254 0.0442743 22.1162 0 21.2496 0H19.6737L19.1394 1.38354C18.6438 2.66773 18.5355 2.77288 17.6339 2.84851L16.6622 2.92968Z"
-          fill="#F0F0F0" />
-      </svg>
-      <span class="ml-3 mt-2 text-xl font-bold">What is Pactus?</span>
-    </h1>
-    <div class="divider"></div>
-    <div>
-      <div class="collapse bg-[#141B25] p-5 what-is-according">
-        <input type="checkbox" name="my-accordion-2" checked="checked" class="peer" />
-        <div class="collapse-title text-xl font-medium text-neutral-50">
-          Pactus is a blockchain focused on decentralization
+        <div
+          class="collapse collapse-arrow bg-[#141B25] mt-5 p-5 what-is-according">
+          <input type="checkbox" name="my-accordion-2" class="peer" />
+          <div class="collapse-title text-xl font-medium text-neutral-50">
+            Pactus is a user-friendly blockchain
+          </div>
+          <button
+            class="btn btn-circle absolute right-5 top-7 bg-[#fff] hover:bg-[#fff] -rotate-90 peer-checked:rotate-0 peer-checked:bg-[#217AFF] peer-checked:hover:bg-[#217AFF] peer-checked:[&>svg>#arrow]:stroke-[#fff] [&>svg>#arrow]:stroke-[#4A3AFF]">
+            <svg
+              width="17"
+              height="13"
+              class="ml-px mt-px"
+              viewBox="0 0 23 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.47314 1.43994L11.2927 11.2151L21.1122 1.43994"
+                stroke-width="2.37859"
+                id="arrow"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="collapse-content">
+            <p>
+              Pactus aims to create a user-friendly blockchain that can be
+              easily used by anyone, not just tech experts. Our protocol is
+              designed to be simple, easy to maintain, and develop. Pactus
+              offers a simple GUI application that makes it easy for users to
+              run a node.
+            </p>
+          </div>
         </div>
-        <button
-          class="btn btn-circle absolute right-5 top-7 bg-[#fff] hover:bg-[#fff] -rotate-90 peer-checked:rotate-0 peer-checked:bg-[#217AFF] peer-checked:hover:bg-[#217AFF] peer-checked:[&>svg>#arrow]:stroke-[#fff] [&>svg>#arrow]:stroke-[#4A3AFF]">
-          <svg width="17" height="13" class="ml-px mt-px" viewBox="0 0 23 13" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.47314 1.43994L11.2927 11.2151L21.1122 1.43994" stroke-width="2.37859" id="arrow"
-              stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-        <div class="collapse-content">
-          <p>
-            Pactus is built on the principle that a fair and transparent system can only be achieved through
-            decentralization. Unlike many other blockchain platforms, Pactus aims to eliminate the potential for
-            centralization and manipulation by removing the need for delegation and miners. This allows anyone to become
-            a part of the ecosystem and ensures that the platform remains truly decentralized.
-          </p>
-        </div>
-      </div>
-      <div class="collapse collapse-arrow bg-[#141B25] mt-5 p-5 what-is-according">
-        <input type="checkbox" name="my-accordion-2" class="peer" />
-        <div class="collapse-title text-xl font-medium text-neutral-50">
-          Pactus is a user-friendly blockchain
-        </div>
-        <button
-          class="btn btn-circle absolute right-5 top-7 bg-[#fff] hover:bg-[#fff] -rotate-90 peer-checked:rotate-0 peer-checked:bg-[#217AFF] peer-checked:hover:bg-[#217AFF] peer-checked:[&>svg>#arrow]:stroke-[#fff] [&>svg>#arrow]:stroke-[#4A3AFF]">
-          <svg width="17" height="13" class="ml-px mt-px" viewBox="0 0 23 13" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.47314 1.43994L11.2927 11.2151L21.1122 1.43994" stroke-width="2.37859" id="arrow"
-              stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-        <div class="collapse-content">
-          <p>
-            Pactus aims to create a user-friendly blockchain that can be easily used by anyone, not just tech experts.
-            Our protocol is designed to be simple, easy to maintain, and develop.
-            Pactus offers a simple GUI application that makes it easy for users to run a node.
-          </p>
-        </div>
-      </div>
-      <div class="collapse collapse-arrow bg-[#141B25] mt-5 p-5 what-is-according">
-        <input type="checkbox" name="my-accordion-2" class="peer" />
-        <div class="collapse-title text-xl font-medium text-neutral-50">
-          Dedicated Decentralized Storage in Pactus
-        </div>
-        <button
-          class="btn btn-circle absolute right-5 top-7 bg-[#fff] hover:bg-[#fff] -rotate-90 peer-checked:rotate-0 peer-checked:bg-[#217AFF] peer-checked:hover:bg-[#217AFF] peer-checked:[&>svg>#arrow]:stroke-[#fff] [&>svg>#arrow]:stroke-[#4A3AFF]">
-          <svg width="17" height="13" class="ml-px mt-px" viewBox="0 0 23 13" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.47314 1.43994L11.2927 11.2151L21.1122 1.43994" stroke-width="2.37859" id="arrow"
-              stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-        <div class="collapse-content">
-          <p>
-            In Pactus, users can purchase a dedicated storage file that can be renewed annually, leading to reduced
-            costs for storage and smart contract execution. This unique feature can pave the way for a new protocols in
-            the decentralized platforms.
-          </p>
+        <div
+          class="collapse collapse-arrow bg-[#141B25] mt-5 p-5 what-is-according">
+          <input type="checkbox" name="my-accordion-2" class="peer" />
+          <div class="collapse-title text-xl font-medium text-neutral-50">
+            Dedicated Decentralized Storage in Pactus
+          </div>
+          <button
+            class="btn btn-circle absolute right-5 top-7 bg-[#fff] hover:bg-[#fff] -rotate-90 peer-checked:rotate-0 peer-checked:bg-[#217AFF] peer-checked:hover:bg-[#217AFF] peer-checked:[&>svg>#arrow]:stroke-[#fff] [&>svg>#arrow]:stroke-[#4A3AFF]">
+            <svg
+              width="17"
+              height="13"
+              class="ml-px mt-px"
+              viewBox="0 0 23 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.47314 1.43994L11.2927 11.2151L21.1122 1.43994"
+                stroke-width="2.37859"
+                id="arrow"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="collapse-content">
+            <p>
+              In Pactus, users can purchase a dedicated storage file that can be
+              renewed annually, leading to reduced costs for storage and smart
+              contract execution. This unique feature can pave the way for a new
+              protocols in the decentralized platforms.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 {{ end }}

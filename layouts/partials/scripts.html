@@ -1,8 +1,9 @@
 <script src="/js/jquery.min.js"></script>
 
 {{ with resources.Get "js/main.js" | js.Build (dict "minify" true) | fingerprint }}
-<script src="{{ .RelPermalink }}"></script>
+  <script src="{{ .RelPermalink }}"></script>
 {{ end }}
+
 
 <script src="/js/lazyload.min.js"></script>
 <script>
@@ -10,7 +11,7 @@
     elements_selector: ".lazy",
     callback_loaded: (el) => {
       el.classList.add("loaded");
-    }
+    },
   });
 </script>
 <script src="/js/aos.js"></script>
