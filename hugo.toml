@@ -1,5 +1,5 @@
-baseURL = 'https://pactus.org'
-title = 'Pactus blockchain'
+baseURL = "https://pactus.org"
+title = "Pactus blockchain"
 relativeURLs = true
 canonifyURLs = true
 
@@ -9,66 +9,18 @@ canonifyURLs = true
 [params]
   latestVersion = "1.4.0"
   mainCSS = "css/main.css"
-  subtitle = 'Building decentralized future together!'
+  subtitle = "Building decentralized future together!"
   [params.contact]
-    email = 'info@pactus.org'
+    email = "info@pactus.org"
 
 [markup]
   [markup.goldmark]
-    duplicateResourceFiles = false
     [markup.goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      linkifyProtocol = 'https'
-      strikethrough = true
-      table = true
-      taskList = true
-      [markup.goldmark.extensions.cjk]
-        eastAsianLineBreaks = false
-        eastAsianLineBreaksStyle = 'simple'
-        enable = false
-        escapedSpace = false
-      [markup.goldmark.extensions.extras]
-        [markup.goldmark.extensions.extras.delete]
-          enable = false
-        [markup.goldmark.extensions.extras.insert]
-          enable = false
-        [markup.goldmark.extensions.extras.mark]
-          enable = false
-        [markup.goldmark.extensions.extras.subscript]
-          enable = false
-        [markup.goldmark.extensions.extras.superscript]
-          enable = false
       [markup.goldmark.extensions.passthrough]
         enable = true
         [markup.goldmark.extensions.passthrough.delimiters]
-          block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)'], ['$', '$']]
-      [markup.goldmark.extensions.typographer]
-        apostrophe = '&rsquo;'
-        disable = false
-        ellipsis = '&hellip;'
-        emDash = '&mdash;'
-        enDash = '&ndash;'
-        leftAngleQuote = '&laquo;'
-        leftDoubleQuote = '&ldquo;'
-        leftSingleQuote = '&lsquo;'
-        rightAngleQuote = '&raquo;'
-        rightDoubleQuote = '&rdquo;'
-        rightSingleQuote = '&rsquo;'
-    [markup.goldmark.parser]
-      autoHeadingID = true
-      autoHeadingIDType = 'github'
-      wrapStandAloneImageWithinParagraph = true
-      [markup.goldmark.parser.attribute]
-        block = false
-        title = true
-    [markup.goldmark.renderHooks]
-      [markup.goldmark.renderHooks.image]
-        enableDefault = false
-      [markup.goldmark.renderHooks.link]
-        enableDefault = false
+          block = [["[", "]"], ["$$", "$$"]]
+          inline = [["(", ")"], ["$", "$"]]
     [markup.goldmark.renderer]
       hardWraps = false
       unsafe = true
@@ -77,11 +29,11 @@ canonifyURLs = true
   [imaging.exif]
     disableDate = false
     disableLatLong = false
-    excludeFields = ''
-    includeFields = ''
+    excludeFields = ""
+    includeFields = ""
 
 [outputs]
-  home = ['html', 'rss']
-  section = ['html', 'rss']
-  taxonomy = ['html']
-  term = ['html']
+  home = ["html", "rss"]
+  section = ["html", "rss"]
+  taxonomy = ["html"]
+  term = ["html"]
