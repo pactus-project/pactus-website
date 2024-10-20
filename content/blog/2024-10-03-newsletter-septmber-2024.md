@@ -1,12 +1,12 @@
 +++
-title = 'Pactus Newsletter, September 2024'
+title = "Pactus Newsletter, September 2024"
 description = """
 September Highlights: TOKEN2049, 4 Million Transactions, New Website & more ...
 """
-author = 'Pactus Team'
+author = "Pactus Team"
 date = 2024-10-03T00:00:00+00:00
 draft = false
-tags = ['newsletter']
+tags = ["newsletter"]
 image = "pactus-newsletter-september-2024.png"
 +++
 

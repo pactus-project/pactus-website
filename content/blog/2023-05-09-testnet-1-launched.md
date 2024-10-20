@@ -1,8 +1,8 @@
 +++
-title = 'Testnet-1 launch announcement'
-author = 'Pactus Team'
+title = "Testnet-1 launch announcement"
+author = "Pactus Team"
 date = 2023-05-09T00:00:00+00:00
-tags = ['announcement', 'pactus', 'testnet']
+tags = ["announcement", "testnet"]
 image = "/images/pactus-blog-post-default.jpg"
 +++
 

@@ -1,7 +1,7 @@
 +++
-title = 'Term of Use'
-layout = 'term_of_use'
-type = 'term_of_use'
+title = "Term of Use"
+layout = "term_of_use"
+type = "term_of_use"
 description = """
 """
 +++
