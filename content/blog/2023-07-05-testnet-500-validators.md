@@ -1,8 +1,8 @@
 +++
-title = '500 validators joined Testnet'
-author = 'Pactus Team'
+title = "500 validators joined Testnet"
+author = "Pactus Team"
 date = 2023-07-05T00:00:00+00:00
-tags = ['announcement', 'pactus', 'testnet']
+tags = ["announcement""testnet"]
 image = "500-validators.png"
 +++
 

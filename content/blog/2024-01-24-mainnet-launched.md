@@ -1,8 +1,8 @@
 +++
-title = 'Mainnet launched 🚀'
-author = 'Pactus Team'
+title = "Mainnet launched 🚀"
+author = "Pactus Team"
 date = 2024-01-24T00:00:00+00:00
-tags = ['announcement', 'mainnet', 'pactus', 'blockchain']
+tags = ["announcement", 'mainnet']
 image = "/images/pactus-blog-post-default.jpg"
 +++
 

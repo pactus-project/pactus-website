@@ -1,8 +1,8 @@
 +++
-title = 'Introduction to PIPs'
-author = 'Pactus Team'
+title = "Introduction to PIPs"
+author = "Pactus Team"
 date = 2023-09-04T00:00:00+00:00
-tags = ['pactus', 'pip']
+tags = ["pip"]
 image = "PIP.png"
 +++
 

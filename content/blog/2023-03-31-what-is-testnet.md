@@ -1,8 +1,8 @@
 +++
-title = 'What is a Testnet?'
-author = 'Pactus Team'
+title = "What is a Testnet?"
+author = "Pactus Team"
 date = 2023-03-31T00:00:00+00:00
-tags = ['tutorial', 'pactus', 'testnet']
+tags = ["tutorial""testnet"]
 image = "/images/pactus-blog-post-default.jpg"
 +++
 

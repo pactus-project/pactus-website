@@ -1,8 +1,8 @@
 +++
-title = 'Dev meeting - August 2022'
-author = 'Pactus Team'
+title = "Dev meeting - August 2022"
+author = "Pactus Team"
 date = 2022-08-29T00:00:00+00:00
-tags = ['pactus', 'dev-meeting']
+tags = ["dev-meeting"]
 image = "/images/pactus-blog-post-default.jpg"
 +++
 
