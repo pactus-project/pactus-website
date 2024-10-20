@@ -2,7 +2,7 @@
 title = "500 validators joined Testnet"
 author = "Pactus Team"
 date = 2023-07-05T00:00:00+00:00
-tags = ["announcement""testnet"]
+tags = ["announcement", "testnet"]
 image = "500-validators.png"
 +++
 
@@ -14,8 +14,6 @@ More than 500 validators joined the [Testnet](/2023/05/09/testnet-1-launched/)
 in less than 2 months.
 This accomplishment proves that Pactus is reliable, resilient, and trustworthy. More importantly, it sets new standards
 in the blockchain world. In fact, **the Pactus Testnet is even more decentralized than some well-known blockchains.**
-
-{{<image url="500-validators.png" title="500 validators of Testnet" class="">}}
 
 One key reason why Pactus can accommodate more validators is its powerful
 [consensus mechanism](https://docs.pactus.org/protocol/consensus/protocol/).

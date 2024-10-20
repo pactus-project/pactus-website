@@ -1,7 +1,7 @@
 +++
-title = 'Contributing'
-layout = 'contributing'
-type = 'contributing'
+title = "Contributing"
+layout = "contributing"
+type = "contributing"
 description = """
 Pactus is an open-source platform that thrives on the contributions of its community.
 Whether you're a developer, designer, or enthusiast, your contribution can truly make a difference.

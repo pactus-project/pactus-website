@@ -1,8 +1,8 @@
 +++
-title = 'Download'
+title = "Download"
 draft = false
-layout = 'download'
-type = 'download'
+layout = "download"
+type = "download"
 description = """
 The Pactus Download page provides access to the latest software releases.
 """
@@ -39,7 +39,7 @@ there is a downloader script available.
 This script can download the archived file, verify it, and extract it for you.
 To use it, simply run the following command in your terminal:
 
-<pre> 
+<pre>
 curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/<span class="latest-version">---</span>/pactus_downloader.sh | sh
 </pre>
 

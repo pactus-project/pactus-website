@@ -1,8 +1,8 @@
 +++
-title = ''
-description = ''
-author = ''
+title = "Title goes here"
+description = "Description goes here (Optional)"
+author = "Your Name"
 date = {{ .Date }}
-tags = ['']
-image = "pic.jpg"
+tags = [""]
+image = "post-picture.jpg"
 +++
