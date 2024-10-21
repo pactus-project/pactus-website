@@ -1,8 +1,8 @@
-
 <script src="/js/jquery.min.js"></script>
 {{ with resources.Get "js/main.js" | js.Build (dict "minify" true) | fingerprint }}
-<script src="{{ .RelPermalink }}"></script>
+  <script src="{{ .RelPermalink }}"></script>
 {{ end }}
+
 
 <script src="/js/lazyload.min.js"></script>
 <script>
@@ -95,32 +95,45 @@
 {{- $katexJS := resources.Get "lib/katex/katex.min.js" | fingerprint -}}
 {{- $mhchemJS := resources.Get "lib/katex/mhchem.min.js" | fingerprint -}}
 {{- $katexAutoRenderJS := resources.Get "lib/katex/auto-render.min.js" | fingerprint -}}
-<link type="text/css" rel="stylesheet" href="{{ $katexCSS.RelPermalink }}" integrity="{{ $katexCSS.Data.Integrity }}" />
-<script defer src="{{ $katexJS.RelPermalink }}" integrity="{{ $katexJS.Data.Integrity }}"></script>
-<script defer src="{{ $katexAutoRenderJS.RelPermalink }}" integrity="{{ $katexAutoRenderJS.Data.Integrity }}"></script>
-<script defer src="{{ $mhchemJS.RelPermalink }}" integrity="{{ $mhchemJS.Data.Integrity }}"></script>
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="{{ $katexCSS.RelPermalink }}"
+  integrity="{{ $katexCSS.Data.Integrity }}" />
+<script
+  defer
+  src="{{ $katexJS.RelPermalink }}"
+  integrity="{{ $katexJS.Data.Integrity }}"></script>
+<script
+  defer
+  src="{{ $katexAutoRenderJS.RelPermalink }}"
+  integrity="{{ $katexAutoRenderJS.Data.Integrity }}"></script>
+<script
+  defer
+  src="{{ $mhchemJS.RelPermalink }}"
+  integrity="{{ $mhchemJS.Data.Integrity }}"></script>
 {{ $katexFonts := resources.Match "lib/katex/fonts/*" }}
 {{- range $katexFonts -}}
-{{ .Publish }}
+  {{ .Publish }}
 {{- end -}}
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-  renderMathInElement(document.body, {
-  delimiters: [
-  { left: "$$", right: "$$", display: true },
-  { left: "$", right: "$", display: false },
-  { left: "\\(", right: "\\)", display: false },
-  { left: "\\[", right: "\\]", display: true },
-  ],
-  throwOnError: false,
-  });
-  });
-  </script>
-  <script>
-    var lazyLoadInstance = new LazyLoad({
-      elements_selector: ".lazy",
-      callback_loaded: (el) => {
-        el.classList.add("loaded");
-      }
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true },
+      ],
+      throwOnError: false,
     });
-  </script>
+  });
+</script>
+<script>
+  var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy",
+    callback_loaded: (el) => {
+      el.classList.add("loaded");
+    },
+  });
+</script>
