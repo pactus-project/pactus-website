@@ -62,16 +62,16 @@ The blog post file name and the directory you create for its assets should have 
 For optimizing images in markdown files, use the image [shortcode](https://gohugo.io/content-management/shortcodes/):
 
 ```md
-[Post Image]{{<image "post-image.png">}}
+![Post Image]{{<image "post-image.png">}}
 ```
 
 You can specify the absolute image path like this:
 
 ```md
-[Post Image]{{<image "/images/post-image.png">}}
+![Post Image]{{<image "/images/post-image.png">}}
 ```
 
-### Other Assets
+#### Other Assets
 
 Other assets, like PDF files, can be linked similarly:
 
