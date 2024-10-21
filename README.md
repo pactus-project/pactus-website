@@ -31,9 +31,9 @@ hugo server
 
 Follow these guidelines to ensure high-quality contributions to the Pactus website project.
 
-### Creating a new blog post
+### New Blog Post
 
-For creating new blog post run:
+To create a new blog post, run:
 
 ```bash
 hugo new content --kind blog blog/your-post-name.md
@@ -43,90 +43,40 @@ This command will create a new markdown file in the `content/blog` directory wit
 
 ```markdown
 +++
-title = ''
-description = ''
-author = ''
-date = 2022-08-29T00:00:00+00:00
-tags = ['']
-image = "pic.jpg"
+title = "Title goes here"
+description = "Description goes here (Optional)"
+author = "Your Name"
+date = 2024-10-20T16:39:03+08:00
+tags = [""]
+image = "post-image.png"
 +++
 ```
 
-- **Note that description field is optional**
+### Blog Assets
 
-- **Note that for image only use the image name, the image should be in the `/assets/blog/{post-filename}/pic.jpg` directory**
+All blog post assets, including images, should be kept inside the `/assets/blog/<post-filename>/` folder.
+The blog post file name and the directory you create for its assets should have the same name.
 
-### Blog assets
+#### Images
 
-create a directory in `/assets/blog/{post-filename}/` and put all the images in that directory.
+For optimizing images in markdown files, use the image [shortcode](https://gohugo.io/content-management/shortcodes/):
 
-**IMPORTANT:** Your blog post file name and the directory you create for its asssets should have the same name
-
-### Static assets
-
-For adding static assets, you can use the `/assets/blog/post-filename/image.png` directory.
-
-### Image
-
-For optimizing images in markdown files use image shortcode: \
-`{{<image "image.png">}}` 
-
-Also you can specify full image url like: \
-`{{<image "/images/image.png">}}`
-
-example use:
-
-`![link]({{<asset "asset.pdf">}})`
-
-
-
-### asset url
-
-`{{<asset "asset.pdf">}}`
-
-example use:
-
-`[link]({{<asset "asset.pdf">}})`
-
-### Style change
-
-For changing style in `assets/css/main.css` and running website concurrently run:
-
-```bash
-npm run start
+```md
+[Post Image]{{<image "post-image.png">}}
 ```
 
-### Additional commands
+You can specify the absolute image path like this:
 
-There are some additional commands that help you to check and improve your changes.
-First you need Install [yarn](https://yarnpkg.com/).
-
-- Check all HTML and markdown files:
-
-```bash
-yarn run prettier::setup
-yarn run prettier
+```md
+[Post Image]{{<image "/images/post-image.png">}}
 ```
 
-- Lint markdown files:
+### Other Assets
 
-```bash
-yarn run lint:md:setup
-yarn run lint:md
-```
+Other assets, like PDF files, can be linked similarly:
 
-- Lint YAML files:
-
-```bash
-yarn run lint:yml:setup
-yarn run lint:yml
-```
-
-- Check for broken links:
-
-```bash
-yarn run htmlproofer:setup
-yarn run htmlproofer
+```md
+[Post Doc]{{<asset "post-doc.pdf">}}
 ```
 
 ## Markdown
@@ -134,7 +84,7 @@ yarn run htmlproofer
 Markdown is a lightweight markup language that uses plain text formatting syntax to convert text into HTML,
 making it easy to read and write for web content.
 
-### Linting
+#### Linting
 
 Markdown linting helps ensure consistent style and formatting, detects syntax errors, improves readability,
 and maintains best practices in Markdown documents.
@@ -156,6 +106,25 @@ mdl --style=.mdlrc.rb ./content
 ```
 
 This command will check all documents in the `content` folder for any linting issues and output them in the terminal.
+
+## Additional Commands
+
+There are some additional commands to check and improve the changes.
+Below are some useful commands:
+
+| Command                      | Task                                                                               |
+| ---------------------------- | ---------------------------------------------------------------------------------- |
+| `yarn run start`             | Start the website locally and watch for css changes                                |
+| `yarn run build`             | Build the website locally                                                          |
+| `yarn run prettier:setup`    | Set up [Prettier](https://prettier.io/)                                            |
+| `yarn run prettier`          | Check all HTML and Markdown files using Prettier                                   |
+| `yarn run lint:md:setup`     | Set up Markdown linting                                                            |
+| `yarn run lint:md`           | Lint Markdown files                                                                |
+| `yarn run lint:yml:setup`    | Set up YAML linting                                                                |
+| `yarn run lint:yml`          | Lint YAML files                                                                    |
+| `yarn run htmlproofer:setup` | Set up [html-proofer](https://github.com/gjtorikian/html-proofer) for link checker |
+| `yarn run htmlproofer`       | Check for broken links using html-proofer                                          |
+| `yarn run exif`              | Remove Meta Information from images using [ExifTool](https://exiftool.org/)        |
 
 ## Deployment
 

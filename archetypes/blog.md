@@ -4,5 +4,5 @@ description = "Description goes here (Optional)"
 author = "Your Name"
 date = {{ .Date }}
 tags = [""]
-image = "post-picture.png"
+image = "post-image.png"
 +++
