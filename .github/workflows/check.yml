@@ -42,6 +42,8 @@ jobs:
   html-proofer:
     name: Check for broken links and HTML5 Validator
     runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.121.2
     steps:
       - name: Clone repository
         uses: actions/checkout@v4
@@ -75,10 +77,10 @@ jobs:
       - name: HTML5Validator
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
-          root: _site/
+          root: public/
 
       - name: Check images
-        run: python .github/workflows/check_images.py ./public
+        run: python .github/workflows/check_images.py ./assets
 
       - name: Install html-proofer
         run: |
