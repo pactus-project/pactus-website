@@ -1,5 +1,5 @@
 +++
-title = "Testnet-1 launch announcement"
+title = "Testnet-1 Launched"
 author = "Pactus Team"
 date = 2023-05-09T00:00:00+00:00
 tags = ["announcement", "testnet"]
