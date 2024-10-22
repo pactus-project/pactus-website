@@ -40,7 +40,8 @@ This script can download the archived file, verify it, and extract it for you.
 To use it, simply run the following command in your terminal:
 
 <pre>
-curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/<span class="latest-version">---</span>/pactus_downloader.sh | sh
+curl --proto '=https' --tlsv1.2 -sSL https://github.com/pactus-project/pactus/releases/download/
+<span class="latest-version">---</span>/pactus_downloader.sh | sh
 </pre>
 
 ---
