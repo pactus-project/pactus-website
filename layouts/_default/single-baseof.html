@@ -2,8 +2,6 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
   {{ partial "single-head.html" . }}
-
-
   <body class="bg-[#0B0B0F] flex flex-col min-h-screen">
     {{ partial "header.html" . }}
     <img
@@ -18,7 +16,7 @@
       <div class="drawer-content relative overflow-hidden">
         {{ block "main" . }}{{ end }}
       </div>
-      <div class="drawer-side z-50">
+      <div class="drawer-side z-[51]">
         <label
           for="my-drawer"
           aria-label="close sidebar"
