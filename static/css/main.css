@@ -105,7 +105,7 @@
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }/*
-! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -496,7 +496,7 @@ video {
 }
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
-[hidden] {
+[hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
 
@@ -1402,20 +1402,6 @@ html {
   border-radius: var(--rounded-box, 1rem);
   background-color: var(--fallback-bc,oklch(var(--bc)/0.2));
 }
-.radio {
-  flex-shrink: 0;
-  --chkbg: var(--bc);
-  height: 1.5rem;
-  width: 1.5rem;
-  cursor: pointer;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-radius: 9999px;
-  border-width: 1px;
-  border-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-border-opacity)));
-  --tw-border-opacity: 0.2;
-}
 .range {
   height: 1.5rem;
   width: 100%;
@@ -2184,28 +2170,6 @@ details.collapse summary::-webkit-details-marker {
   50% {
     background-position-x: -115%;
   }
-}
-.radio:focus {
-  box-shadow: none;
-}
-.radio:focus-visible {
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-  outline-color: var(--fallback-bc,oklch(var(--bc)/1));
-}
-.radio:checked,
-  .radio[aria-checked="true"] {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
-  background-image: none;
-  animation: radiomark var(--animation-input, 0.2s) ease-out;
-  box-shadow: 0 0 0 4px var(--fallback-b1,oklch(var(--b1)/1)) inset,
-      0 0 0 4px var(--fallback-b1,oklch(var(--b1)/1)) inset;
-}
-.radio:disabled {
-  cursor: not-allowed;
-  opacity: 0.2;
 }
 @keyframes radiomark {
 
@@ -3544,9 +3508,6 @@ html:has(.drawer-toggle:checked) {
 .z-20 {
   z-index: 20;
 }
-.z-50 {
-  z-index: 50;
-}
 .z-\[51\] {
   z-index: 51;
 }
@@ -4139,11 +4100,11 @@ html:has(.drawer-toggle:checked) {
 .pt-\[10rem\] {
   padding-top: 10rem;
 }
+.pt-\[15px\] {
+  padding-top: 15px;
+}
 .pt-\[4rem\] {
   padding-top: 4rem;
-}
-.pt-\[80px\] {
-  padding-top: 80px;
 }
 .pt-\[8rem\] {
   padding-top: 8rem;
@@ -5290,7 +5251,7 @@ html {
   background-clip: content-box, border-box;
 }
 
-#container-stars {
+.container-stars {
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -5307,7 +5268,7 @@ html {
   color: #ffffff;
 }
 
-#glow {
+.glow {
   position: absolute;
   display: flex;
   width: 12rem;
@@ -5338,7 +5299,7 @@ html {
   animation: orbit 10s linear infinite;
 }
 
-.btn-become-validator:hover #container-stars {
+.btn-become-validator:hover .container-stars {
   z-index: 1;
   background-color: #161a25;
 }
@@ -5368,14 +5329,14 @@ html {
   }
 }
 
-#stars {
+.stars {
   position: relative;
   background: transparent;
   width: 200rem;
   height: 200rem;
 }
 
-#stars::after {
+.stars::after {
   content: "";
   position: absolute;
   top: -10rem;
@@ -5387,7 +5348,7 @@ html {
   background-size: 50px 50px;
 }
 
-#stars::before {
+.stars::before {
   content: "";
   position: absolute;
   top: 0;
@@ -5650,7 +5611,7 @@ html {
   background-clip: content-box, border-box;
 }
 
-#container-stars {
+.container-stars {
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -5667,7 +5628,7 @@ html {
   color: #ffffff;
 }
 
-#glow {
+.glow {
   position: absolute;
   display: flex;
   width: 12rem;
@@ -5698,7 +5659,7 @@ html {
   animation: orbit 10s linear infinite;
 }
 
-.btn-join-community:hover #container-stars {
+.btn-join-community:hover .container-stars {
   z-index: 1;
   background-color: #161a25;
 }
@@ -5728,14 +5689,14 @@ html {
   }
 }
 
-#stars {
+.stars {
   position: relative;
   background: transparent;
   width: 200rem;
   height: 200rem;
 }
 
-#stars::after {
+.stars::after {
   content: "";
   position: absolute;
   top: -10rem;
@@ -5747,7 +5708,7 @@ html {
   background-size: 50px 50px;
 }
 
-#stars::before {
+.stars::before {
   content: "";
   position: absolute;
   top: 0;
@@ -6890,10 +6851,10 @@ html {
   width: 100%;
 }
 
-.\[\&\>svg\>\#arrow\]\:stroke-\[\#4A3AFF\]>svg>#arrow {
+.\[\&\>svg\>\.arrow\]\:stroke-\[\#4A3AFF\]>svg>.arrow {
   stroke: #4A3AFF;
 }
 
-.peer:checked ~ .peer-checked\:\[\&\>svg\>\#arrow\]\:stroke-\[\#fff\]>svg>#arrow {
+.peer:checked ~ .peer-checked\:\[\&\>svg\>\.arrow\]\:stroke-\[\#fff\]>svg>.arrow {
   stroke: #fff;
 }
