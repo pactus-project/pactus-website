@@ -72,7 +72,7 @@
   async function fetchLatestRelease() {
     let cachedRelease = localStorage.getItem("latestRelease");
     const response = await fetch(
-      "https://api.github.com/repos/pactus-project/pactus/releases/latest",
+      "https://api.github.com/repos/pactus-project/pactus/releases/tags/{{.Site.Params.releaseTag}}",
     );
     if (!response.ok) {
       return JSON.parse(cachedRelease) || {};
@@ -184,7 +184,7 @@
       const latestVersionElements =
         document.getElementsByClassName("latest-version");
       for (let i = 0; i < latestVersionElements.length; i++) {
-        latestVersionElements[i].innerHTML = release.tag_name;
+        latestVersionElements[i].innerHTML = `https://github.com/pactus-project/pactus/releases/download/${release.tag_name}`;
       }
 
       const cliTable = createTable(release.assets, "cli");
