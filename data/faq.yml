@@ -323,14 +323,13 @@
           </li>
           <li><b>Foundation</b>:
             The foundation coins are reserved for future use, potentially in supporting strong projects that
-            align with Pactus's objectives.
+            align with Pactus`s objectives.
           </li>
         </ul>
-        '
 
         Transparency is a key aspect of this allocation, as all movements of these
         coins are trackable due to the fully transparent nature of the blockchain.
-
+        '
 ################################################################################
 - title: Transaction
   items:
