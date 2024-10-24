@@ -182,7 +182,7 @@
       const release = await fetchLatestRelease();
 
       const latestVersionElements =
-        document.getElementsByClassName("latest-version");
+        document.getElementsByClassName("release-tag-link");
       for (let i = 0; i < latestVersionElements.length; i++) {
         latestVersionElements[i].innerHTML = `https://github.com/pactus-project/pactus/releases/download/${release.tag_name}`;
       }
