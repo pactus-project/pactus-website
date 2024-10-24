@@ -230,9 +230,8 @@
 
     - id: genesis_allocation
       q: How are Genesis Coins allocated in Pactus?
-      a: >
+      a: '
         The initial allocation of Genesis Coins in the Pactus blockchain is distributed as follows:
-        <br><br>
         <div class="overflow-x-auto">
         <table class="table w-full table-zebra">
           <caption>Genesis Coin Allocation for Pactus</caption>
@@ -272,6 +271,7 @@
           </tbody>
         </table>
         </div>
+        '
       img: pactus-coin-allocation.png
 
     - id: treasury_account
@@ -299,7 +299,7 @@
 
     - id: support_distribution
       q: How will the Support coins be spent?
-      a: >
+      a: '
         The support accounts are designed to provide financial backing for the project.
         Initially, Pactus Genesis contained only the Treasury accounts without any Backup or Support accounts.
         The introduction of support coins was a strategic response to the absence of investors,
@@ -323,13 +323,13 @@
           </li>
           <li><b>Foundation</b>:
             The foundation coins are reserved for future use, potentially in supporting strong projects that
-            align with Pactus's objectives.
+            align with Pactus`s objectives.
           </li>
         </ul>
 
         Transparency is a key aspect of this allocation, as all movements of these
         coins are trackable due to the fully transparent nature of the blockchain.
-
+        '
 ################################################################################
 - title: Transaction
   items:

@@ -70,7 +70,7 @@
                   {{ if $value.current }}id="current"{{ end }}
                   class="timeline-start mb-10 md:text-end p-4 b-1 bg-[#242535] ml-4 mr-0 md:ml-0 md:mr-4 rounded-md"
                   style="margin-left: 12px;">
-                  <time class="font-mono">{{ $value.date }}</time>
+                  <div class="font-mono">{{ $value.date }}</div>
                   <div class="text-lg font-bold">
                     {{ if $value.reference }}
                       <a href="{{ $value.reference }}" class="link"
@@ -98,7 +98,7 @@
                 <div
                   {{ if $value.current }}id="current"{{ end }}
                   class="timeline-end  mb-10 md:text-start p-4 bg-[#242535] ml-4 rounded-md">
-                  <time class="font-mono">{{ $value.date }}</time>
+                  <div class="font-mono">{{ $value.date }}</div>
                   <div class="text-lg font-bold">
                     {{ if $value.reference }}
                       <a href="{{ $value.reference }}" class="link"
