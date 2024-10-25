@@ -12,7 +12,7 @@ Testnet is a testing environment where developers and users can try out the func
 without putting real assets or data at risk.
 It helps to ensure that the final product is reliable and secure for users to use.
 If you like to read more about the Testnet you can check out our post on
-"[What is Testnet?](/2023/03/01/what-is-testnet)".
+"[What is Testnet?](/2023/03/31/what-is-testnet/)".
 
 ## Summary
 
@@ -20,7 +20,7 @@ In October 2023, we launched [Testnet-2](/2023/10/15/testnet-2-launched).
 The main purpose of this Testnet was to closely monitor the new consensus mechanism and the stability of the P2P network.
 
 The [committee](https://docs.pactus.org/protocol/consensus/committee/) for Testnet-2 was set to 51 validators,
-and 2084 validators [joined](/2023/07/05/testnet-500-validators) during the Testnet period.
+and 2084 validators [joined](/2023/07/05/500-validators-joined-testnet/) during the Testnet period.
 More than 1500 computers and servers joined the network, and we experienced a high volume of data transmission in the network.
 More than 800,000 blocks were created, and about 2 million transactions were processed during this time.
 The size of the blockchain is about 450 megabytes.
@@ -31,7 +31,7 @@ It shows that users, even in Testnet, tend to stake their coins.
 ## Stability of Consensus
 
 In Testnet-1, we had one consensus failure that caused us to
-[conclude the Testnet-1](/2023/08/01/testnet-1-concluded).
+[conclude the Testnet-1](/2023/08/01/story-of-testnet-1/).
 During Testnet-2, there were no issues with the consensus mechanism, and
 we had no case of failure during the testing period,
 although the number of validators and nodes significantly increased on Testnet-2 compared to its predecessor.
@@ -51,12 +51,12 @@ no major problems were reported till the end of Testnet.
 ## Major updates
 
 During Testnet-2, we introduced several updates, including versions
-[0.15.0](/2023/10/15/release-0-15-0),
-[0.16.0](/2023/10/29/release-0-16-0),
-[0.17.0](/2023/11/12/release-0-17-0),
-[0.18.0](/2023/12/12/release-0-18-0),
-[0.19.0](/2024/01/04/release-0-19-0), and
-[0.20.0](/2024/01/11/release-0-20-0).
+[0.15.0](/2023/10/15/pactus-0.15.0-released/),
+[0.16.0](/2023/10/29/pactus-0.16.0-released/),
+[0.17.0](/2023/11/12/pactus-0.17.0-released/),
+[0.18.0](/2023/12/12/pactus-0.18.0-released/),
+[0.19.0](/2024/01/04/pactus-0.19.0-released/), and
+[0.20.0](/2024/01/11/pactus-0.20.0-released/).
 The update process went smoothly, and with the stability of Version 0.20.0 confirmed,
 the development team shifted its focus to the Mainnet launch.
 

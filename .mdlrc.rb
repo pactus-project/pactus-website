@@ -23,6 +23,3 @@ exclude_rule 'MD033'
 
 # First line in file should be a top level header
 exclude_rule 'MD041'
-
-# Exclude bare URLs rule
-exclude_rule 'MD034'

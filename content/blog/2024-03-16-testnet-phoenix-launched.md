@@ -8,7 +8,7 @@ image = "pactus-public-testnet-phoenix.png"
 
 ## Overview
 
-The public and permanent Phoenix [Testnet](/2023/03/01/what-is-testnet)
+The public and permanent Phoenix [Testnet](/2023/03/31/what-is-testnet/)
 for the Pactus blockchain has been launched.
 This Testnet serves as a valuable platform for developers to thoroughly examine their projects,
 providing a safe playground to test and deploy their applications before transitioning to the Mainnet.
