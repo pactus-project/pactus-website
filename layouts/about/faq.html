@@ -7,7 +7,7 @@
           class="md:text-4xl text-2xl text-bold text-neutral-50 font-medium text-left">
           {{ .Title }}
         </h1>
-        <p class="mt-6 text-lg">{{ .Description }}</p>
+        {{if .Description}}<p class="mt-6 text-lg">{{ .Description }}</p>{{end}}
       </div>
       <div class="col-span-1 text-right" style="text-align: -webkit-right;">
         <svg
@@ -57,8 +57,7 @@
     {{ range $i,$group := .Site.Data.faq }}
       {{ $group_id := lower $group.title }}
       <div
-        class="mt-10 bg-[#141B25] rounded-xl p-10 md:p-20"
-        id="grouds-bundler">
+        class="mt-10 bg-[#141B25] rounded-xl p-10 md:p-20 grouds-bundler">
         <div class="join join-vertical w-full" id="{{ $group_id }}">
           <div
             class="join-title text-2xl md:text-3xl font-bold text-neutral-50 items-center mb-5">
@@ -147,26 +146,6 @@
   </section>
 {{ end }}
 {{ define "page_script" }}
-  <script>
-    $(document).ready(function () {
-      $("#grouds-bundler")
-        .children()
-        .each((i) => {
-          if (i !== 0) {
-            $(`#${$("#grouds-bundler").children().eq(i).attr("id")}`).hide();
-          }
-        });
-      $("input[type=radio][name=groups]").change(() => {
-        const value = $("input[type=radio][name=groups]:checked").attr(
-          "data-pcatus-value",
-        );
-        if ($(this).attr("data-pcatus-value") !== value) {
-          $("#grouds-bundler div.join").hide();
-          $(`#${value}`).fadeIn();
-        }
-      });
-    });
-  </script>
   <script>
     function changeUrlID(id) {
       let currentUrl = window.location.href.split("#")[0];
