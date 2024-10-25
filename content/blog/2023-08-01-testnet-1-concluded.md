@@ -12,17 +12,17 @@ Testnet is a testing environment where developers and users can try out the func
 without putting real assets or data at risk.
 It helps to ensure that the final product is reliable and secure for users to use.
 If you like to read more about the Testnet you can check out our post on
-"[What is Testnet?](/2023/03/01/what-is-testnet)".
+"[What is Testnet?](/2023/03/31/what-is-testnet/)".
 
 ## Summary
 
-In May 2023, we launched [Testnet-1](/2023/05/09/testnet-1-launched).
+In May 2023, we launched [Testnet-1](/2023/05/09/testnet-1-launched/).
 The main purpose of this Testnet was to measure block time creation and the responsiveness of the blockchain.
 The development team also focused on evaluating the network's performance.
 Additionally, the overall performance of the software and the syncing process were closely examined and assessed.
 
 The [committee](https://docs.pactus.org/protocol/consensus/committee/) for Testnet-1 was set to 21 validators,
-and 584 validators [joined](/2023/07/05/testnet-500-validators) during the Testnet period.
+and 584 validators [joined](/2023/07/05/500-validators-joined-testnet/) during the Testnet period.
 More than 600,000 blocks were created, and more than 1 million transactions were processed during this time.
 The size of the blockchain is about 300 megabytes.
 
@@ -45,9 +45,9 @@ More than 97% of blocks are committed in the first rounds.
 ## Major updates
 
 During Testnet-1, we released three versions(Version
-[0.11.0](/2023/05/29/release-0-11-0),
-[0.12.0](/2023/06/19/release-0-12-0),
-[0.13.0](/2023/07/01/release-0-13-0)), and the upgrade process was smooth.
+[0.11.0](/2023/05/29/pactus-0.11.0-released/),
+[0.12.0](/2023/06/19/pactus-0.12.0-released/),
+[0.13.0](/2023/07/01/pactus-0.13.0-released/)), and the upgrade process was smooth.
 Unfortunately, during Testnet-1, we encountered a consensus failure that may occur at any time in the future.
 The consensus failure was resolved by requiring some validators to re-sync their nodes.
 At this time, the development team decided to stop Testnet-1 and work on improvements that are not backward compatible,

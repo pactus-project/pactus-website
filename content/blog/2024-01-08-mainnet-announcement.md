@@ -21,8 +21,8 @@ These validators are Testnet participants who helped test Pactus during our test
 The community validators will receive the initial staking coins from a Discord Bot named RoboPac.
 
 To ensure everything works smoothly on the Mainnet, three different Testnets (
-[Testnet0](/2023/04/21/testnet-0-concluded),
-[Testnet1](/2023/08/01/testnet-1-concluded), and
+[Testnet0](/2023/04/21/story-of-testnet-0),
+[Testnet1](/2023/08/01/story-of-testnet-1), and
 [Testnet2](/2023/10/15/testnet-2-launched)) have been run.
 
 The Mainnet will never be stopped or interrupted by the core developers of Pactus,

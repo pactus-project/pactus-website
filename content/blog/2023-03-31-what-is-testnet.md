@@ -1,5 +1,5 @@
 +++
-title = "What is a Testnet?"
+title = "What is Testnet?"
 author = "Pactus Team"
 date = 2023-03-31T00:00:00+00:00
 tags = ["tutorial", "testnet"]

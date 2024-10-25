@@ -115,7 +115,7 @@
   description:
   icon: fa-fire
   date: March 2024
-  reference: /2024/03/16/testnet-phoenix-launched/
+  reference: /2024/03/16/pactus-permanent-phoenix-testnet-launched/
   state: completed
 
 - title: Main Net Launched 🚀
@@ -129,7 +129,7 @@
   description:
   icon: fa-check
   date: January 2024
-  reference: /2024/01/22/testnet-2-concluded/
+  reference: /2024/01/22/story-of-testnet-2/
   state: completed
 
 - title: Testnet-2 Launched 🧪
@@ -143,7 +143,7 @@
   description:
   icon: fa-check
   date: August 2023
-  reference: /2023/08/01/testnet-1-concluded/
+  reference: /2023/08/01/story-of-testnet-1/
   state: completed
 
 - title: Testnet-1 Launched 🧪
@@ -157,7 +157,7 @@
   description:
   icon: fa-check
   date: April 2023
-  reference: /2023/04/21/testnet-0-concluded/
+  reference: /2023/04/21/story-of-testnet-0/
   state: completed
 
 - title: Testnet-0 Launched 🧪
