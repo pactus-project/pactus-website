@@ -18,7 +18,7 @@
     "lint:md": "mdl --style=.mdlrc.rb ./content",
     "lint:yml:setup": "pip install --upgrade yamllint",
     "lint:yml": "yamllint ./data ./content",
-    "exif": "for i in $(find ./ -name node_modules -prune *.png -o -name *.gif -o -name *.jpg -o -name *.jpeg); do echo \"Processing $i\"; exiftool -all= \"$i\"; done"
+    "exif": "for i in $(find ./assets -name '*.png' -o -name '*.gif' -o -name '*.jpg' -o -name '*.jpeg'); do echo \"Processing $i\"; exiftool -all= \"$i\"; done"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",
