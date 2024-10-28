@@ -15,6 +15,14 @@
     </svg>
   </button>
 </div>
+<script>
+  function gototop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+</script>
 <footer
   class="footer bg-[#12141D] relative z-10 bg-[#12141D] text-neutral-50 p-10 pt-20 pb-20 relative z-10">
   <nav class="z-20 relative">
@@ -31,7 +39,7 @@
       </svg>
       <span class="text-2xl text-neutral-50 font-bold ml-3 mt-2">Pactus</span>
     </div>
-    <div class="mt-10 text-base-600">Email: info@pactus.org</div>
+    <div class="mt-10 text-base-400">Email: info@pactus.org</div>
     <div class="mt-10">
       <div class="flex gap-x-1">
         <a
@@ -112,10 +120,12 @@
     <a class="link link-hover" href="{{ .Site.BaseURL }}about/faq">FAQ</a>
   </nav>
   <nav class="z-20 relative">
-    <a class="link link-hover"
-      ><i class="fa-solid fa-gavel"></i
-      ><span class="ml-2">Terms of Use</span></a
-    >
+    <a
+        href="/term_of_use"
+        class="text-neutral-20 hover:text-primary-20 link link-hover"
+        ><i class="fa-solid fa-gavel"></i
+        ><span class="ml-2">Terms of Use</span></a
+      >
     <a href="/sitemap.xml" class="link link-hover"
       ><i class="fa-solid fa-sitemap"></i><span class="ml-2">Sitemap</span></a
     >
@@ -131,8 +141,8 @@
       target="_blank"
       action="https://zcsub-cmpzourl.maillist-manage.com/weboptin.zc"
       onsubmit="zcScptlessSubmit(this)">
-      <label
-        class="input flex items-center shadow-top-left-to-bottom-right gap-2 glass bg-transparent">
+      <div
+        class="input h-[55px] flex items-center shadow-top-left-to-bottom-right gap-2 bg-transparent pr-[2px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
@@ -150,12 +160,9 @@
           class="grow"
           placeholder="Enter your email address"
           required />
-      </label>
-      <div class="navbar-end">
-        <button
+          <button
           type="submit"
-          class="btn rounded-xl mt-2 text-neutral-50 text-sm bg-[#217AFF] border-none hover:bg-[#217AFF] hover:opacity-80"
-          href="https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf">
+          class="btn rounded-lg text-neutral-50 text-sm bg-[#217AFF] border-none hover:bg-[#217AFF] hover:opacity-80">
           Subscribe
         </button>
       </div>
@@ -200,47 +207,12 @@
     </form>
   </nav>
   <svg
-    height="614"
-    viewBox="0 0 943 614"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    class="absolute right-0 bottom-0 z-10 max-h-full max-w-full">
-    <g filter="url(#filter0_f_1772_11348)">
-      <circle
-        cx="711.383"
-        cy="105.954"
-        r="145.233"
-        fill="#4A79F3"
-        fill-opacity="0.9" />
-    </g>
-    <defs>
-      <filter
-        id="filter0_f_1772_11348"
-        x="0.333984"
-        y="-605.095"
-        width="1422.1"
-        height="1422.1"
-        filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="BackgroundImageFix"
-          result="shape" />
-        <feGaussianBlur
-          stdDeviation="282.908"
-          result="effect1_foregroundBlur_1772_11348" />
-      </filter>
-    </defs>
-  </svg>
-  <svg
     class="absolute bottom-0 z-10 max-w-full"
     height="614"
     viewBox="0 0 944 614"
     fill="none"
     xmlns="http://www.w3.org/2000/svg">
-    <g filter="url(#filter0_f_1772_11349)">
+    <g filter="url(#filter0_f_1772_11350)">
       <circle
         cx="132.276"
         cy="657.732"
@@ -250,7 +222,7 @@
     </g>
     <defs>
       <filter
-        id="filter0_f_1772_11349"
+        id="filter0_f_1772_11350"
         x="-679.194"
         y="-153.738"
         width="1622.94"

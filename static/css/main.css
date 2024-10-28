@@ -3636,6 +3636,9 @@ html:has(.drawer-toggle:checked) {
 .inline-block {
   display: inline-block;
 }
+.inline {
+  display: inline;
+}
 .flex {
   display: flex;
 }
@@ -3677,9 +3680,6 @@ html:has(.drawer-toggle:checked) {
 }
 .h-full {
   height: 100%;
-}
-.max-h-full {
-  max-height: 100%;
 }
 .min-h-\[300px\] {
   min-height: 300px;
@@ -4087,6 +4087,9 @@ html:has(.drawer-toggle:checked) {
 }
 .pr-5 {
   padding-right: 1.25rem;
+}
+.pr-\[2px\] {
+  padding-right: 2px;
 }
 .pt-10 {
   padding-top: 2.5rem;
