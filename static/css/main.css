@@ -3636,6 +3636,9 @@ html:has(.drawer-toggle:checked) {
 .inline-block {
   display: inline-block;
 }
+.inline {
+  display: inline;
+}
 .flex {
   display: flex;
 }
@@ -3677,6 +3680,9 @@ html:has(.drawer-toggle:checked) {
 }
 .h-full {
   height: 100%;
+}
+.h-\[\] {
+  height: ;
 }
 .max-h-full {
   max-height: 100%;
@@ -4109,6 +4115,12 @@ html:has(.drawer-toggle:checked) {
 .pt-\[8rem\] {
   padding-top: 8rem;
 }
+.pr-0 {
+  padding-right: 0px;
+}
+.pr-\[2px\] {
+  padding-right: 2px;
+}
 .text-left {
   text-align: left;
 }
@@ -4191,6 +4203,10 @@ html:has(.drawer-toggle:checked) {
 }
 .text-transparent {
   color: transparent;
+}
+.text-base-300 {
+  --tw-text-opacity: 1;
+  color: var(--fallback-b3,oklch(var(--b3)/var(--tw-text-opacity)));
 }
 .no-underline {
   text-decoration-line: none;
