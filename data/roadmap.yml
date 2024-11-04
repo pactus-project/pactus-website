@@ -54,27 +54,27 @@
   reference:
   state: planned
 
+- title: Javascript-SDK
+  description:
+  icon: fa-brands fa-js
+  date: Q4 2024
+  reference:
+  state: construct
+
 - title: Consumptional Fee Model
   description:
   icon: fa-coins
   date: Q4 2024
   reference:
   state: construct
-
-- title: Nanomsg service
-  description:
-  icon: fa-network-wired
-  date: Q3 2024
-  reference:
-  state: construct
+  current: true
 
 - title: Supporting Ed25519 Curve
   description:
   icon: fa-chart-line
   date: Q3 2024
-  reference:
-  state: construct
-  current: true
+  reference: https://pactus.org/2024/10/08/pactus-1.5.0-singapore-released/
+  state: completed
 
 # - title: Batch Transactions
 #   description:
