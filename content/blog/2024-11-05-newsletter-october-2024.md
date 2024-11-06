@@ -69,7 +69,7 @@ truly embodying our mission of making blockchain accessible to everyone!
 ### Version 1.5.0 (Singapore) Release
 
 We successfully launched
-[Pactus v1.5.0 (Singapore)](http://pactus.org/2024/10/08/pactus-1.5.0-singapore-released/),
+[Pactus v1.5.0 (Singapore)](https://pactus.org/2024/10/08/pactus-1.5.0-singapore-released/),
 featuring the integration of the Ed25519 cryptographic curve.
 This significant upgrade went live at block 2,320,000,
 enhancing our compatibility with third-party applications, particularly mobile wallets,
@@ -78,7 +78,7 @@ while improving overall network performance.
 ### TPS Performance Breakthrough
 
 We're excited to announce that our latest Testnet performance tests have achieved
-an impressive [100 transactions per second](http://pactus.org/2024/10/25/pactus-reaches-100-tps/)!
+an impressive [100 transactions per second](https://pactus.org/2024/10/25/pactus-reaches-100-tps/)!
 This testing was conducted under conditions that mirror our Mainnet environment,
 indicating that similar performance levels can be expected on our production network.
 These results demonstrate our blockchain's robust scalability potential.
