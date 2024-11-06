@@ -38,7 +38,7 @@ These guides can help you to send a Bond transaction and stake some coins:
 - [How to send transactions in Graphic Mode?](https://docs.pactus.org/tutorials/send-transaction-gui/)
 - [How to use Pactus Wallet?](https://docs.pactus.org/tutorials/pactus-wallet)
 
-## Develop
+## Development
 
 Pactus is an open-source project that welcomes and encourages contributions from developers.
 By contributing to the project, you can help improve the Pactus platform and create new features that
@@ -47,15 +47,12 @@ benefit the entire ecosystem.
 You can check our [Contributing](https://github.com/pactus-project/pactus/blob/main/CONTRIBUTING.md) page
 for more information on how to get involved and contribute to the project.
 
-## Translation
-
-Another way to contribute to the Pactus project is by translating this website into other languages and
-improving its content.
-
-## Spread the Word
+## Spread the Word 📣
 
 The more people who know about Pactus, the more opportunities there are for collaboration and growth.
 Share our project on social media, attend Pactus events, or simply tell your friends and colleagues about us.
+Join the [community channels](https://pactus.org/community/), stay updated, and
+share the content with your local networks to help spread the word about Pactus.
 
 ---
 
