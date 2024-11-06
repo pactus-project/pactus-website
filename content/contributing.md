@@ -51,8 +51,8 @@ for more information on how to get involved and contribute to the project.
 
 The more people who know about Pactus, the more opportunities there are for collaboration and growth.
 Share our project on social media, attend Pactus events, or simply tell your friends and colleagues about us.
-Join the [community channels](https://pactus.org/community/), stay updated, and share the content with your local networks to
-help spread the word about Pactus.
+Join the [community channels](https://pactus.org/community/), stay updated, and
+share the content with your local networks to help spread the word about Pactus.
 
 ---
 
