@@ -78,7 +78,7 @@ while improving overall network performance.
 ### TPS Performance Breakthrough
 
 We're excited to announce that our latest Testnet performance tests have achieved
-an impressive [100 transactions per second](https://pactus.org/2024/10/25/pactus-reaches-100-tps/)!
+an impressive [100 transactions per second](https://pactus.org/2024/10/10/pactus-reaches-100-tps/)!
 This testing was conducted under conditions that mirror our Mainnet environment,
 indicating that similar performance levels can be expected on our production network.
 These results demonstrate our blockchain's robust scalability potential.
