@@ -60,14 +60,15 @@
   date: Q4 2024
   reference:
   state: construct
+  current: true
 
 - title: Consumptional Fee Model
   description:
   icon: fa-coins
   date: Q4 2024
   reference:
-  state: construct
-  current: true
+  reference: https://pactus.org/2024/11/14/pactus-1.6.0-mumbai-released/
+  state: completed
 
 - title: Supporting Ed25519 Curve
   description:
