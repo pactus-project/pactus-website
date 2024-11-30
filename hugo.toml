@@ -7,7 +7,7 @@ canonifyURLs = true
   blog = "/:year/:month/:day/:title/"
 
 [params]
-  releaseTag = "v1.6.2"
+  releaseTag = "v1.6.3"
   mainCSS = "css/main.css"
   subtitle = "Building decentralized future together!"
   [params.contact]
