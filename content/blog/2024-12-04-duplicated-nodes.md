@@ -40,20 +40,19 @@ Running duplicated nodes results in duplicate votes and double proposals in the 
 Pactus is designed to identify and reject such invalid inputs.
 
 For instance, a duplicated node might send two proposals simultaneously,
-each with different block data (e.g., distinct sets of transactions).
+each with different block data (e.g., different sets of transactions).
 This scenario, known as double proposing, creates conflicting proposals.
 
-When other validators receive these conflicting proposals, the network becomes inconsistent.
-This inconsistency makes it unlikely for either proposal to get enough votes to reach consensus.
+In this situation, some validators vote for the first proposal, while the rest vote for the second.
+This disagreement makes it unlikely for either proposal to gather enough votes to reach consensus.
 As a result, the validator loses the opportunity to finalize their block and misses out on potential rewards.
 
 ## Network Disruption
 
-For example, duplicated nodes may become unsynced with the network and start broadcasting expired messages.
+Duplicated nodes may become unsynced with the network and start broadcasting expired messages.
 This can cause the consensus process to require more messages to reach an agreement,
 and in some cases, it might trigger a snowball effect.
 
-To mitigate this issue, Pactus version 1.6.4 has introduced a solution.
-In this version, nodes automatically discard messages related to past blocks.
+To mitigate this issue, Pactus has introduced a solution: nodes automatically discard messages related to past blocks.
 This ensures that expired messages are contained and only affect a small group of neighboring nodes,
 preventing widespread disruption.
