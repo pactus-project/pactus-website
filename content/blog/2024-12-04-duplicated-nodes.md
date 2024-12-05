@@ -50,7 +50,7 @@ As a result, the validator loses the opportunity to finalize their block and mis
 
 ## Network Disruption
 
-Duplicated nodes may become unsynced with the network and start broadcasting expired messages.
+Duplicated nodes may become unsynced with the network and start broadcasting expired or duplicated messages.
 This can cause the consensus process to require more messages to reach an agreement,
 and in some cases, it might trigger a snowball effect.
 
