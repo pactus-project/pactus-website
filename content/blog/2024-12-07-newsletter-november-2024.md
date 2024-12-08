@@ -38,7 +38,7 @@ The discussions on DeFi scalability, security, and making blockchain more access
 Congratulations to the Zealy campaign winners!
 Your dedication and hard work have truly shone through, and we are proud to celebrate your success.
 If you are one of the winners, please remember to claim your prize before January 11th, 2025.
-To view the Prize List, click here, and for the Bonus List, click
+To view the Prize List, click [here](https://docs.google.com/spreadsheets/d/1QntkwUv-eoCB2Log_SAcBSFOKEQL38YlqZvQAzdgvz0).
 [here](https://docs.google.com/spreadsheets/d/1QntkwUv-eoCB2Log_SAcBSFOKEQL38YlqZvQAzdgvz0).
 Don't miss out on your well-deserved rewards!
 
