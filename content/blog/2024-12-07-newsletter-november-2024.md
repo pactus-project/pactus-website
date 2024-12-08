@@ -78,8 +78,8 @@ A potential candidate for implementing this system is
 
 ## Scoring Peers on the P2P Network
 
-One effective way to prevent abnormal behavior from certain peers on the P2P network is
-to assign a score based on their actions.
+To prevent abnormal behavior from certain peers on the P2P network,
+the development team is drafting a new PIP for peer scoring.
 The development team is currently working on drafting a new PIP for peer scoring on the network.
 This system will allow peers to detect and disconnect from malicious actors, ensuring network stability and security.
 
