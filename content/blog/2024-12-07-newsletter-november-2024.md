@@ -83,7 +83,7 @@ This system will allow peers to detect and disconnect from malicious actors, ens
 
 In late November, the Pactus network came under a sophisticated spamming attack.
 The attack involved spam transactions and network flooding with expired messages,
-commonly known as a replay attack.
+also known as a replay attack.
 While the spam transactions had no impact on the consensus algorithm,
 allowing validators to continue creating blocks as usual, the replay attack caused delays in the consensus process.
 Upon detecting the issue, the development team quickly worked on a patch to help validators overcome the attack.
