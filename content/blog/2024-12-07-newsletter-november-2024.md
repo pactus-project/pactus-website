@@ -78,10 +78,9 @@ A potential candidate for implementing this system is
 
 ## Scoring Peers on the P2P Network
 
-To prevent abnormal behavior from certain peers on the P2P network,
-the development team is drafting a new PIP for peer scoring.
-The development team is currently working on drafting a new PIP for peer scoring on the network.
-This system will allow peers to detect and disconnect from malicious actors, ensuring network stability and security.
+An effective approach to preventing abnormal behavior from certain peers on the P2P network is to assign scores based on their past actions.
+The development team is currently drafting a new PIP to introduce peer scoring on the network.
+This system will enable peers to identify and disconnect from malicious actors, enhancing network stability and security.
 
 ## Pactus Under Attack
 
