@@ -12,7 +12,7 @@ image = "pactus-newsletter-september-2024.png"
 
 ## Pactus Highlights
 
-Welcome to the October 2024 edition of Pactus Newsletter.
+Welcome to the October 2024 edition of the Pactus Newsletter.
 This month has been packed with major milestones, exciting developments, and a fantastic experience at TOKEN2049.
 Read on for a detailed breakdown of everything we’ve achieved together.
 

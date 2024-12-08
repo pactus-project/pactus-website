@@ -12,7 +12,7 @@ image = "pactus-newsletter-october-2024.png"
 
 ## Pactus Highlights
 
-Welcome to the October 2024 edition of Pactus Newsletter.
+Welcome to the October 2024 edition of the Pactus Newsletter.
 This month has been remarkable with significant achievements,
 including the CoinGecko listing and reaching over 4,000 validators!
 Let's dive into everything we've accomplished together.
