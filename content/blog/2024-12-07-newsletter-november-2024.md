@@ -21,7 +21,9 @@ Let's dive into all the details.
 ## Pactus Reaches 6 Million Transactions
 
 Pactus has processed over 6 million transactions!
-This significant milestone highlights the ongoing growth of our network,
+This significant milestone underscores the ongoing growth of our network,
+showcasing its resilience and continuous improvements in efficiency.
+We remain committed to enhancing both performance and accessibility as we grow.
 showcasing its resilience and the continued improvements in efficiency.
 We remain committed to enhancing both performance and accessibility as we grow.
 
