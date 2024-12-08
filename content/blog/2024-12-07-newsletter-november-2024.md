@@ -54,7 +54,7 @@ and we remain dedicated to finding more ways to make PAC accessible to everyone.
 
 This month, the [Pactus 1.6.0 (Mumbai)](https://pactus.org/2024/11/14/pactus-1.6.0-mumbai-released/) was released.
 This update introduces a new consumption fee model based on the number of bytes each address sends to the network daily.
-This model that is proposed by [PIP-31](https://pips.pactus.org/PIPs/pip-31),
+The model, proposed by [PIP-31](https://pips.pactus.org/PIPs/pip-31),
 enables the Pactus blockchain to support transactions with zero fees, also known as gas-less transactions.
 You can check out this tutorial to learn more about zero-fee transactions on Pactus:
 [How to Send Zero-Fee Transactions?](https://docs.pactus.org/tutorials/zero-fee-transactios/)
