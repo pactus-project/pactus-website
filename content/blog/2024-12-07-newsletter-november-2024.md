@@ -1,7 +1,7 @@
 +++
 title = "Pactus Newsletter, November 2024"
 description = """
-September Highlights: TOKEN2049, 4 Million Transactions, New Website & more ...
+November Highlights: Pactus under attack, Zero-Fee Transactions, 6 million transactions & more ...
 """
 author = "Pactus Team"
 date = 2024-12-07T00:00:00+00:00
