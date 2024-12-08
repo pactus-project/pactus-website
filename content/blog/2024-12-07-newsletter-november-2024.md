@@ -62,7 +62,7 @@ You can check out this tutorial to learn more about zero-fee transactions on Pac
 ## New GUI Under Development
 
 A new graphical interface for Pactus is now under development.
-The team has started working on the GUI using the popular [Flutter](https://flutter.dev/) framework,
+The team is building the GUI using the popular [Flutter](https://flutter.dev/) framework,
 which supports cross-platform compilation, including mobile devices.
 The ultimate goal of the new Pactus GUI is to enable validators to control their nodes directly from their phones.
 Stay tuned for more exciting updates from the GUI development team!
