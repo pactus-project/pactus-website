@@ -12,9 +12,9 @@ image = "pactus-newsletter-october-2024.png"
 
 ## Pactus Highlights
 
-Welcome to the October 2024 edition of our newsletter.
+Welcome to the October 2024 edition of Pactus Newsletter.
 This month has been remarkable with significant achievements,
-including our CoinGecko listing and reaching over 4,000 validators!
+including the CoinGecko listing and reaching over 4,000 validators!
 Let's dive into everything we've accomplished together.
 
 ### CoinGecko Listing
@@ -69,7 +69,7 @@ truly embodying our mission of making blockchain accessible to everyone!
 ### Version 1.5.0 (Singapore) Release
 
 We successfully launched
-[Pactus v1.5.0 (Singapore)](https://pactus.org/2024/10/08/pactus-1.5.0-singapore-released/),
+[Pactus 1.5.0 (Singapore)](https://pactus.org/2024/10/08/pactus-1.5.0-singapore-released/),
 featuring the integration of the Ed25519 cryptographic curve.
 This significant upgrade went live at block 2,320,000,
 enhancing our compatibility with third-party applications, particularly mobile wallets,
