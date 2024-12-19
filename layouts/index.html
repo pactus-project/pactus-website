@@ -198,7 +198,7 @@
                 >
               </div>
               <p class="mt-4">
-                Pactus' SSPoS consensus, verified with TLA+, ensures security and decentralization 
+                Pactus' SSPoS consensus, verified with TLA+, ensures security and decentralization
                 through dynamic, fault-tolerant validator committees, eliminating delegation.
               </p>
             </div>
@@ -1106,11 +1106,6 @@
           url: "https://api.pacviewer.com/v1/counts",
           method: "GET",
           dataType: "json",
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET",
-            "Access-Control-Allow-Headers": "Content-Type",
-          },
           success: function (data) {
             const currentTime = new Date().getTime();
             const storeData = {
