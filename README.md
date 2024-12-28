@@ -11,6 +11,7 @@ To contribute, simply edit the relevant page or open a pull request.
 
 For running the website locally, you need to have the following installed on your machine:
 
+- [Git](https://git-scm.com/downloads/)
 - [Hugo](https://gohugo.io/)
 - [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
 
