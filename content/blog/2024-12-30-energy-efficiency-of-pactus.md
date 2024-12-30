@@ -2,7 +2,7 @@
 title = "Energy Efficiency Of Pactus"
 author = "Pactus Team"
 date = 2024-12-30T17:00:24Z
-tags = ["Announcemen","Energy Effieiency"]
+tags = ["Announcemen","Energy-Effieiency"]
 image = "energy-efficiency-of-pactus.png"
 +++
 
