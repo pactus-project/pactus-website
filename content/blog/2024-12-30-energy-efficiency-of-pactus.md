@@ -18,7 +18,7 @@ Pactus ensures a balance between energy efficiency and high performance,
 thereby minimizing the environmental impact and fostering a more
 democratic network participation model.
 
-## What is SSPoS
+## What is SSPoS?
 The SSPoS consensus model adopted by Pactus is essential to its
 energy-efficient framework. This model includes a fixed committee
 of 51 validators that changes over time, limiting the number of
