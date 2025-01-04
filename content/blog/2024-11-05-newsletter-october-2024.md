@@ -12,7 +12,7 @@ image = "pactus-newsletter-october-2024.png"
 
 ## Pactus Highlights
 
-Welcome to the October 2024 edition of the Pactus Newsletter.
+Welcome to the October 2024 edition of the Pactus Newsletter[^1].
 This month has been remarkable with significant achievements,
 including the CoinGecko listing and reaching over 4,000 validators!
 Let's dive into everything we've accomplished together.
@@ -91,3 +91,7 @@ will enable gas-less transactions. This innovative feature is scheduled for
 our next major update and represents another step toward making blockchain technology more accessible to everyone.
 We hope you share our excitement about October's achievements.
 As always, your feedback and support drive our continuous improvement.
+
+[^1]: The Pactus monthly newsletter is published on our website and
+distributed to subscribers via email during the first week of each month.
+It recaps key highlights and important news from the previous month.
