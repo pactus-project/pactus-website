@@ -12,7 +12,7 @@ image = "pactus-newsletter-september-2024.png"
 
 ## Pactus Highlights
 
-Welcome to the October 2024 edition of the Pactus Newsletter.
+Welcome to the October 2024 edition of the Pactus Newsletter[^1].
 This month has been packed with major milestones, exciting developments, and a fantastic experience at TOKEN2049.
 Read on for a detailed breakdown of everything we’ve achieved together.
 
@@ -105,3 +105,7 @@ Your feedback on these PIPs is crucial to shaping the future of our blockchain.
 
 The [PacViewer](https://pacviewer.com/) has received some updates over the past month.
 Notably it includes address aliasing and [Holder](https://pacviewer.com/holders) page.
+
+[^1]: The Pactus monthly newsletter is published on our website and
+distributed to subscribers via email during the first week of each month.
+It recaps key highlights and important news from the previous month.
