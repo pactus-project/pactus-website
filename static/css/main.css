@@ -1460,6 +1460,14 @@ html {
 .range:focus {
   outline: none;
 }
+.steps {
+  display: inline-grid;
+  grid-auto-flow: column;
+  overflow: hidden;
+  overflow-x: auto;
+  counter-reset: step;
+  grid-auto-columns: 1fr;
+}
 .steps .step {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -2352,6 +2360,74 @@ details.collapse summary::-webkit-details-marker {
 }
 .steps .step[data-content]:after {
   content: attr(data-content);
+}
+.steps .step-neutral + .step-neutral:before,
+  .steps .step-neutral:after {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
+}
+.steps .step-primary + .step-primary:before,
+  .steps .step-primary:after {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
+}
+.steps .step-secondary + .step-secondary:before,
+  .steps .step-secondary:after {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-sc,oklch(var(--sc)/var(--tw-text-opacity)));
+}
+.steps .step-accent + .step-accent:before,
+  .steps .step-accent:after {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-ac,oklch(var(--ac)/var(--tw-text-opacity)));
+}
+.steps .step-info + .step-info:before {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-in,oklch(var(--in)/var(--tw-bg-opacity)));
+}
+.steps .step-info:after {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-in,oklch(var(--in)/var(--tw-bg-opacity)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-inc,oklch(var(--inc)/var(--tw-text-opacity)));
+}
+.steps .step-success + .step-success:before {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity)));
+}
+.steps .step-success:after {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-suc,oklch(var(--suc)/var(--tw-text-opacity)));
+}
+.steps .step-warning + .step-warning:before {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-bg-opacity)));
+}
+.steps .step-warning:after {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-bg-opacity)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-wac,oklch(var(--wac)/var(--tw-text-opacity)));
+}
+.steps .step-error + .step-error:before {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity)));
+}
+.steps .step-error:after {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-erc,oklch(var(--erc)/var(--tw-text-opacity)));
 }
 .swap-rotate .swap-on,
 .swap-rotate .swap-indeterminate,

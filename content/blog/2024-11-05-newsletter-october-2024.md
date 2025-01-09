@@ -5,7 +5,6 @@ October Highlights: CoinGecko listing, reaching over 4,000 validators, Pactus 1.
 """
 author = "Pactus Team"
 date = 2024-11-05T00:00:00+00:00
-draft = false
 tags = ["newsletter"]
 image = "pactus-newsletter-october-2024.png"
 +++
