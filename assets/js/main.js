@@ -5,7 +5,6 @@ import { defineElement } from "@lordicon/element";
 defineElement(lottie.loadAnimation);
 
 $(document).ready(function () {
-
     const copybtn = `<div style="background: #0F6CBD" class="p-1 place-items-center text-sm flex rounded-lg"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-3M8 7V5a2 2 0 012-2h5a2 2 0 012 2v3M8 7h8a2 2 0 012 2v8"></path></svg> Copy</div>`
     $('pre').each(function() {
         var copyButton = $('<button>')
@@ -23,10 +22,10 @@ $(document).ready(function () {
               console.error('Could not copy text: ', err);
             });
           });
-    
+
         $(this).append(copyButton);
       });
-    
+
       $('pre').addClass('relative group bg-gray-900 text-white p-4 rounded');
       $('code').addClass('bg-gray-900 text-white');
 });

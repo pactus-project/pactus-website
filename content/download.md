@@ -12,7 +12,7 @@ On this page you can find how to download and get the latest version of the Pact
 
 ---
 
-<h3 id="build">🏗️ Compile from Source Code</h3>
+### 🏗️ Compile from Source Code {#build}
 
 Project Pactus is distributed as open source software,
 so the preferred way for installing it is to clone the source code from
@@ -23,7 +23,7 @@ Instructions for compiling Pactus is provided on the
 
 ---
 
-<h3 id="binary">⬇️ Download Stable Releases</h3>
+### ⬇️ Download Stable Releases {#binary}
 
 You can also download the latest stable releases of Pactus.
 These releases are updated automatically when a new version is released in
@@ -31,7 +31,7 @@ These releases are updated automatically when a new version is released in
 
 {{<download_links>}}
 
-<h3 id="downloader_script">Downloader script</h3>
+### Downloader script {#downloader_script}
 
 For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like)
 (e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows),
@@ -45,7 +45,7 @@ curl --proto '=https' --tlsv1.2 -sSL <span class="release-tag-link">---</span>/p
 
 ---
 
-<h3 id="docker">🐳 Docker Container</h3>
+### 🐳 Docker Container {#docker}
 
 Advanced users can get the Pactus docker image from [Docker Hub](https://hub.docker.com/r/pactus/pactus).
 
