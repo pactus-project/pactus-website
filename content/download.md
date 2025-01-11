@@ -34,7 +34,7 @@ These releases are updated automatically when a new version is released in
 <h3 id="downloader_script">Downloader script</h3>
 
 For [Unix-like systems](https://en.wikipedia.org/wiki/Unix-like)
-(e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows),
+[e.g., Linux, macOS, or [MSYS2](https://en.wikipedia.org/wiki/Mingw-w64#MSYS2) on Windows],
 there is a downloader script available.
 This script can download the archived file, verify it, and extract it for you.
 To use it, simply run the following command in your terminal:
