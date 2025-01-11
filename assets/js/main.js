@@ -12,8 +12,7 @@ $(document).ready(function () {
           .addClass('absolute top-2  right-2 bg-gray-800 text-white p-1 rounded opacity-0 group-hover:opacity-100 copy-button')
           .html(copybtn)
           .click(function() {
-            var code = $(this).siblings('code').text();
-            code = code.replace(/^"|"$/g, '');
+            var code = $(this).parent().text().slice(0, -5);
             navigator.clipboard.writeText(code).then(() => {
               $(this).html('<div style="background: #0F6CBD " class="flex text-sm p-1 place-items-center rounded-lg"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Copied</div>');
               setTimeout(() => {
@@ -23,10 +22,10 @@ $(document).ready(function () {
               console.error('Could not copy text: ', err);
             });
           });
-    
+
         $(this).append(copyButton);
       });
-    
+
       $('pre').addClass('relative group bg-gray-900 text-white p-4 rounded');
       $('code').addClass('bg-gray-900 text-white');
 });
