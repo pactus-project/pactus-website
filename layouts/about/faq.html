@@ -119,10 +119,10 @@
               </button>
               <div class="collapse-content prose lg:prose-lg">
                 {{ $item.a | markdownify | safeHTML }}
-                {{ with .Params.img }}
+                {{ if isset $item "img" }}
                   <img
-                    src="{{ .Site.BaseURL }}assets/images/{{ . }}"
-                    alt="{{ $item.a }}" />
+                    src="/assets/imgs/{{ $item.img }}"
+                    alt="{{ $item.q }}" />
                 {{ end }}
                 {{ if isset $item "more" }}
                   <a
