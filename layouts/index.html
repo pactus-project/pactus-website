@@ -883,73 +883,13 @@
           </div>
         </div>
       </div>
-      <div class="mt-[6rem] md:mt-[10rem] text-center">
-        <h1
-          class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999] self-center">
-          Join Our Community
-        </h1>
-        <div
-          class="mt-5 w-full text-center"
-          style="text-align: -webkit-center;">
-          <div class="app-wrapper">
-            <ul class="markers"></ul>
-          </div>
-          <div class="relative">
-            <div class="absolute w-full h-full z-10"></div>
-            <div id="earth" class="z-0 w-full [&>*]:w-full"></div>
-          </div>
-          <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js"
-            defer></script>
-          <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"
-            defer></script>
-          <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"
-            defer></script>
-          <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.min.js"
-            defer></script>
-          <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.3.2/fabric.min.js"
-            defer></script>
-          <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.4/chroma.min.js"
-            defer></script>
-          <script src="/libs/THREE.MeshLine.js" defer></script>
-          <script src="https://d3js.org/d3-array.v1.min.js" defer></script>
-          <script src="https://d3js.org/d3-geo.v1.min.js" defer></script>
-
-          <script src="/libs/orbit-controls.js" defer></script>
-          <script src="/libs/trackball-controls.js" defer></script>
-          <script src="/libs/perlin-noise.js" defer></script>
-
-          <script src="/assets/data/processing.js" defer></script>
-
-          <script src="/scripts/config.js" defer></script>
-          <script src="/scripts/app.js" defer></script>
-          <script src="/scripts/shaders.js" defer></script>
-          <script src="/scripts/index.js" defer></script>
-
-          <script src="/assets/data/countries.js" defer></script>
-          <script src="/assets/data/connections.js" defer></script>
-          <script src="/assets/data/grid.js" defer></script>
-
-          <script src="/scripts/globe.js" defer></script>
-          <script src="/scripts/points.js" defer></script>
-          <script src="/scripts/marker.js" defer></script>
-          <script src="/scripts/markers.js" defer></script>
-          <script src="/scripts/lines.js" defer></script>
-          <script src="/scripts/dots.js" defer></script>
-          <script src="/scripts/camera.js" defer></script>
-
-          <script src="/scripts/utils.js" defer></script>
-        </div>
+      <div class="mt-[6rem] md:mt-[10rem] text-center pt-10">
       </div>
     </div>
   </section>
 {{ end }}
 {{ define "page_script" }}
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       function getHeightOfTwoSlides(swiper) {
