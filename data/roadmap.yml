@@ -62,6 +62,20 @@
   state: construct
   current: true
 
+- title: Batch Transactions
+  description:
+  icon: fa-brands fa-letterboxd
+  date: Q1 2025
+  reference: https://pips.pactus.org/PIPs/pip-37
+  state: construct
+
+- title: Notification Service
+  description:
+  icon: fa-bullhorn
+  date: Q1 2025
+  reference: https://pactus.org/2025/01/23/pactus-1.7.0-seoul-released/
+  state: completed
+
 - title: Consumptional Fee Model
   description:
   icon: fa-coins
