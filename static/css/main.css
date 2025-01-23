@@ -3475,7 +3475,7 @@ html:has(.drawer-toggle:checked) {
     line-height: 1.4;
   }
 .prose li {
-    line-height: 1.4;
+    line-height: 1.2;
   }
 .visible {
   visibility: visible;
@@ -3548,9 +3548,6 @@ html:has(.drawer-toggle:checked) {
 }
 .-z-10 {
   z-index: -10;
-}
-.z-0 {
-  z-index: 0;
 }
 .z-10 {
   z-index: 10;
@@ -4230,6 +4227,10 @@ html:has(.drawer-toggle:checked) {
   --tw-text-opacity: 1;
   color: rgb(30 164 232 / var(--tw-text-opacity, 1));
 }
+.text-\[\#217AFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(33 122 255 / var(--tw-text-opacity, 1));
+}
 .text-\[\#696A75\] {
   --tw-text-opacity: 1;
   color: rgb(105 106 117 / var(--tw-text-opacity, 1));
@@ -4328,7 +4329,6 @@ html:has(.drawer-toggle:checked) {
   transition-timing-function: linear;
 }
 @tailwind typography;
-
 
 .swiper-wrapper {
   width: 100%;
@@ -6914,10 +6914,6 @@ html {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-}
-
-.\[\&\>\*\]\:w-full>* {
-  width: 100%;
 }
 
 .\[\&\>svg\>\.arrow\]\:stroke-\[\#4A3AFF\]>svg>.arrow {
