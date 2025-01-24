@@ -1,13 +1,11 @@
 +++
-title = "One year Pactus"
+title = "One Year Pactus"
 author = "Pactus Team"
 date = 2025-01-24T00:00:00+00:00
 draft = false
 tags = ["newsletter"]
 image = "pactus-first-Anniversary.png"
 +++
-
-## One Year Pactus
 
 Pactus [began](https://pactus.org/2024/01/24/mainnet-launched/) with a dream,
 a dream to reshape blockchain technology and make it accessible to everyone.
