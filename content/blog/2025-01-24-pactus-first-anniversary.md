@@ -1,5 +1,5 @@
 +++
-title = "One Year Pactus"
+title = "Pactus at One: From Dream to Reality"
 author = "Pactus Team"
 date = 2025-01-24T00:00:00+00:00
 draft = false
