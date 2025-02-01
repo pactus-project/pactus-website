@@ -1669,3 +1669,23 @@ html {
   opacity: 0.5;
   max-height: 100%;
 }
+
+.marquee-container {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.swiper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 10px;
+  min-width: 200px;
+}
