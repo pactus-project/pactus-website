@@ -5,6 +5,6 @@
 
 {{- $image := resources.Get $imageURL -}}
 {{- if $image -}}
-  {{- $resized := $image.Resize (printf "%dx webp q70" $image.Width) -}}
+  {{- $resized := resources.Copy (printf "%v.webp" (index (split $imageURL ".") 0)) ($image.Resize (printf "%dx webp q70" $image.Width)) -}}
   {{- printf "%s" $resized.Permalink | safeURL -}}
 {{- end -}}
