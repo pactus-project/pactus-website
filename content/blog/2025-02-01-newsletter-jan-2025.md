@@ -1,5 +1,5 @@
 +++
-title = "Pactus Newsletter, January 2024"
+title = "Pactus Newsletter, January 2025"
 description = """
 January Highlights: Reflecting on Our First Year, Celebrating Milestones and New Beginnings,
 3 Million Blocks & more ...
