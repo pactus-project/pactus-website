@@ -53,10 +53,10 @@ def convert_markdown_to_html(template_file: str, md_file: str, output_html: str)
     # Check if title or description is missing or empty
     title = header.get('title', '').strip()
     description = header.get('description', '').strip()
-    image = header.get('image', '').strip()
+    image = Path(header.get('image', '').strip()).stem
 
     folder = Path(md_file).stem
-    newsletter_image = f"../assets/blog/{folder}/{image}"
+    newsletter_image = f"https://pactus.org/blog/{folder}/{image}.webp"
 
     if not title:
         print("Error: 'title' is missing in the TOML header.")
