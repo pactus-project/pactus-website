@@ -59,7 +59,10 @@
 
 
   .prose hr {
-    @apply mt-4
+    @apply mt-4;
+
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   .prose pre {
