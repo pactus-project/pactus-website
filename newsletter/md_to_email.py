@@ -87,6 +87,7 @@ def convert_markdown_to_html(template_file: str, md_file: str, output_html: str)
     template = load_template(template_file)
     html = template.replace("{{.title}}", title)
     html = html.replace("{{.preheader}}", description)
+    html = html.replace("{{.main-font}}", "font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.5; color:rgb(10,10,10);")
     html = html.replace("{{.content}}", html_content)
     html = html.replace("{{.newsletter_image}}", newsletter_image)
 
