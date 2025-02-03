@@ -11,7 +11,7 @@
 ------------------------------------- */
 
     body {
-      font-family: Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       -webkit-font-smoothing: antialiased;
       font-size: 16px;
       line-height: 1.3;
@@ -27,7 +27,6 @@
     }
 
     table td {
-      font-family: Helvetica, sans-serif;
       font-size: 16px;
       vertical-align: top;
     }
@@ -37,13 +36,22 @@
 ------------------------------------- */
 
     body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
       background-color: #f4f5f6;
       margin: 0;
       padding: 0;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
     }
 
     .body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
       background-color: #f4f5f6;
+      margin: 0;
+      padding: 0;
       width: 100%;
     }
 
@@ -91,8 +99,7 @@
     .footer p,
     .footer span,
     .footer a {
-      color: #9a9ea6;
-      font-size: 16px;
+      font-size: 14px;
       text-align: center;
     }
 
@@ -101,11 +108,12 @@
 ------------------------------------- */
 
     p {
-      font-family: Helvetica, sans-serif;
       font-size: 16px;
       font-weight: normal;
       margin: 0;
       margin-bottom: 16px;
+      line-height: 150%;
+      ;
     }
 
     a {
@@ -234,10 +242,6 @@
       border: 0px;
     }
 
-    .pctus-logo {
-      padding-bottom: 18px;
-    }
-
     /* -------------------------------------
     RESPONSIVE AND MOBILE FRIENDLY STYLES
 ------------------------------------- */
@@ -304,7 +308,6 @@
         color: inherit;
         text-decoration: none;
         font-size: inherit;
-        font-family: inherit;
         font-weight: inherit;
         line-height: inherit;
       }
@@ -327,47 +330,59 @@
             <tr>
               <td class="wrapper">
                 <a href="https://pactus.org/">
-                  <img src="https://pactus.org/assets/imgs/pactus_logo.png" alt="Pactus" class="pctus-logo" width="150" style="width:150px;">
+                  <img src="https://pactus.org/assets/imgs/newsletter/pactus_logo.png" alt="Pactus" width="150"
+                    style="width:150px;">
                 </a>
-                <img src="{{.newsletter_image}}" alt="{{.title}}">
-                <h1>Hello!</h1>
-
+              </td>
+            </tr>
+            <tr>
+              <td class="wrapper">
+                <img src="{{.newsletter_image}}" alt="{{.title}}" width="550" style="width:550px;">
+              </td>
+            </tr>
+            <tr>
+              <td class="wrapper">
                 <div class="main-content">
+                  <h1>Hello!</h1>
                   {{.content}}
                 </div>
 
               </td>
             </tr>
-
             <tr>
-              <td align="center" style="text-align: center;">
+              <td class="wrapper" align="center" style="text-align: center;">
                 <!-- SOCIAL LINKS: START -->
                 <table class="social-links" border="0" width="auto" style="width: auto;" align="center" cellpadding="0"
                   cellspacing="0">
                   <tr>
-                    <td>
-                      <a target="_blank" href="{{.Site.Data.links.discord}}">
-                        <img src="https://pactus.org/assets/imgs/social_discord.png" alt="Discord" style="width:50px;" width="50">
+                    <td style="padding:4px;">
+                      <a target="_blank" href="https://discord.gg/pactus">
+                        <img src="https://pactus.org/assets/imgs/newsletter/social_discord.png" alt="Discord"
+                          style="width:50px;" width="50">
                       </a>
                     </td>
-                    <td>
+                    <td style="padding:4px;">
                       <a target="_blank" href="https://x.com/pactuschain/">
-                        <img src="https://pactus.org/assets/imgs/social_x.png" alt="X (Twitter)" style="width:50px;" width="50">
+                        <img src="https://pactus.org/assets/imgs/newsletter/social_x.png" alt="X (Twitter)"
+                          style="width:50px;" width="50">
                       </a>
                     </td>
-                    <td>
+                    <td style="padding:4px;">
                       <a target="_blank" href="https://t.me/pactusblockchain">
-                        <img src="https://pactus.org/assets/imgs/social_telegram.png" alt="Telegram" style="width:50px;" width="50">
+                        <img src="https://pactus.org/assets/imgs/newsletter/social_telegram.png" alt="Telegram"
+                          style="width:50px;" width="50">
                       </a>
                     </td>
-                    <td>
+                    <td style="padding:4px;">
                       <a target="_blank" href="https://linkedin.com/company/pactus-blockchain">
-                        <img src="https://pactus.org/assets/imgs/social_linkedin.png" alt="LinkedIn" style="width:50px;" width="50">
+                        <img src="https://pactus.org/assets/imgs/newsletter/social_linkedin.png" alt="LinkedIn"
+                          style="width:50px;" width="50">
                       </a>
                     </td>
-                    <td>
+                    <td style="padding:4px;">
                       <a target="_blank" href="https://github.com/pactus-project">
-                        <img src="https://pactus.org/assets/imgs/social_github.png" alt="GitHub" style="width:50px;" width="50">
+                        <img src="https://pactus.org/assets/imgs/newsletter/social_github.png" alt="GitHub"
+                          style="width:50px;" width="50">
                       </a>
                     </td>
                   </tr>
@@ -384,14 +399,14 @@
             <table role="presentation" border="0" cellpadding="0" cellspacing="0">
               <tr>
                 <td class="content-block">
-                  <font color="#848484" style="line-height: 16pt;">
+                  <font color="#747474" style="line-height: 16pt;">
                     <span>You received this email because you subscribed to the Pactus newsletter.
                       If you'd like to stop receiving these emails, you can
                       <a title="unsubscribe from this mailing list" target="_blank" rel="noopener noreferrer"
-                        href="https://$[LI:UNSUBSCRIBE]$" alt="unsubscribe from this mailing list">unsubscribe</a>
+                        href="https://$[LI:UNSUBSCRIBE]$">unsubscribe</a>
                       from this mailing list or
                       <a title="update your preferences" target="_blank" rel="noopener noreferrer"
-                        href="https://$[LI:UPDATEPROFILE]$" alt="update your preferences">update your preferences</a>.
+                        href="https://$[LI:UPDATEPROFILE]$">update your preferences</a>.
                     </span>
                   </font>
                 </td>

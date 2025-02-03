@@ -13,7 +13,7 @@ image = "pactus-newsletter-january-2025.png"
 
 ## Pactus Highlights
 
-Welcome to the January 2025 edition of the Pactus Newsletter[^1].
+Welcome to the January 2025 edition of the Pactus Newsletter.
 This month marks a special milestone: our first anniversary.
 Over the past year, we’ve achieved incredible feats, from onboarding thousands of validators to
 releasing seven major updates.
@@ -95,6 +95,8 @@ where all payloads must be committed together or none at all.
 PIP-37 is currently under active discussion within the development team and
 will soon be integrated into the Pactus source code.
 
-[^1]: The Pactus monthly newsletter is published on our website and
+---
+
+**Pactus Newsletter**: The Pactus monthly newsletter is published on our website and
 distributed to subscribers via email during the first week of each month.
 It recaps key highlights and important news from the previous month.
