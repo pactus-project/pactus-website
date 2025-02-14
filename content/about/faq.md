@@ -1,6 +1,5 @@
 +++
 title = "FAQ"
-draft = false
 layout = "faq"
 type = "about"
 Description = """
