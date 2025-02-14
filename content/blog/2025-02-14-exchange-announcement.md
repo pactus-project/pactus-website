@@ -133,4 +133,3 @@ Time is of the essence, and we’re ready to take action.
 
 Together, we can create a better ecosystem for the Pactus community.
 Let’s make it happen together!
-
