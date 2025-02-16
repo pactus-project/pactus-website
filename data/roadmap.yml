@@ -33,13 +33,6 @@
   reference:
   state: planned
 
-- title: Mobile Friendly GUI
-  description:
-  icon: fa-mobile-alt
-  date: Q2 2025
-  reference:
-  state: planned
-
 - title: Decentralized Storage Platform
   description:
   icon: fa-database
@@ -47,20 +40,27 @@
   reference:
   state: planned
 
-- title: Integrating with Wallets applications
+- title: Mobile Friendly GUI (Pactus-GUI)
   description:
-  icon: fa-wallet
-  date: Q1 2025
-  reference:
-  state: planned
+  icon: fa-mobile-alt
+  date: Q2 2025
+  reference: https://github.com/pactus-project/pactus-gui
+  state: construct
 
 - title: Javascript-SDK
   description:
   icon: fa-brands fa-js
-  date: Q4 2024
+  date: Q2 2025
   reference:
-  state: construct
+  state: planned
   current: true
+
+- title: Pactus Web Wallet
+  description:
+  icon: fa-wallet
+  date: Q1 2025
+  reference: https://github.com/pactus-project/pactus-wallet
+  state: construct
 
 - title: Batch Transactions
   description:
