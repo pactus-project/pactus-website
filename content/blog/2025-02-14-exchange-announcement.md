@@ -30,7 +30,7 @@ Some exchanges offer more reasonable fees, with part of the payment covering the
 
 Once the initial payment is made, the integration process begins and this is where the next headache starts.
 Many exchanges lack knowledgeable development teams.
-The bosses there think a car can be sold without an engine, all they care about is marketing
+The bosses there think a car can be sold without an engine, all they care about is marketing.
 This leads to numerous issues during integration, often resulting in a buggy and flawed system.
 If you’ve heard of exchanges being hacked, one of the main reasons is the chaos within their development teams.
 Integration can take over a month, and once completed, the final payment is made, and your blockchain is listed.
@@ -65,6 +65,7 @@ There’s also the issue of "red exchanges", lesser-known platforms with surpris
 Listing on these exchanges is often quick and easy.
 For instance, the Pactus community listed Pactus on
 [Xeggex](https://pactus.org/2025/02/10/important-announcement-regarding-xeggex-exploit/) in less than a week.
+More than 500 projects were listed there.
 The fees are lower, and the interface is simple, but the risks are significantly higher.
 
 ## We Build an Exchange
