@@ -54,7 +54,7 @@ It was a valuable lesson.
 
 Back to square one, you might consider listing on higher-rated exchanges.
 However, the costs are too high.
-For example, listing on [MEXC](https://mexc.com) requires 100,000 USDT,
+For example, listing on [MEXC](https://www.mexc.com) requires 100,000 USDT,
 plus an additional 30,000 USDT for market making.
 Fail to pay, and you’ll get [delisted](https://www.mexc.com/support/sections/15425930840736).
 Some exchanges even demand up to 200,000 USDT. The financial burden is immense.
