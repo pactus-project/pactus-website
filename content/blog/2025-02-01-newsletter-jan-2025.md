@@ -6,7 +6,6 @@ January Highlights: Reflecting on Our First Year, Celebrating Milestones and New
 """
 author = "Pactus Team"
 date = 2025-02-01T00:00:00+00:00
-draft = false
 tags = ["newsletter"]
 image = "pactus-newsletter-january-2025.png"
 +++

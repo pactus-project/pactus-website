@@ -5,7 +5,6 @@ November Highlights: Pactus under attack, Zero-Fee Transactions, 6 million trans
 """
 author = "Pactus Team"
 date = 2024-12-07T00:00:00+00:00
-draft = false
 tags = ["newsletter"]
 image = "pactus-newsletter-november-2024.png"
 +++

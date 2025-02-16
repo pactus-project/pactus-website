@@ -5,7 +5,6 @@ December Highlights: Forbes & Bybit, Community Creations, 7 Million Transactions
 """
 author = "Pactus Team"
 date = 2025-01-04T00:00:00+00:00
-draft = false
 tags = ["newsletter"]
 image = "pactus-newsletter-december-2024.png"
 +++
