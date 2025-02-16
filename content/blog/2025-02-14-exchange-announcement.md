@@ -3,7 +3,7 @@ title = "We Are Building an Exchange, a Different One"
 author = "Pactus Team"
 date = 2025-02-10T00:00:00+00:00
 tags = ["exchange"]
-image = "/images/pactus-blog-post-default.jpg"
+image = "build-exchange.png"
 +++
 
 ## Exchange Maze
@@ -75,9 +75,9 @@ dedicate substantial funds to exchanges that may or may not have genuine users, 
 However, we’ve made a bold decision to take a different path:
 **We Build an Exchange, a Different One.**
 
-Instead of dedicating a huge amount of money to get listed on some exchanges,
+Instead of dedicating a significant amount of money to get listed on exchanges,
 we will create a fully open and transparent exchange that allows users to trade Pactus and enables anyone to join.
-It will not be the same as other exchanges on the market because:
+It will be different from other exchanges on the market because:
 
 - **Open Source**
 
@@ -100,25 +100,26 @@ It will not be the same as other exchanges on the market because:
 - **Open Listing API**
 
   Listings will be open and external.
-  Any blockchain can be listed by providing random nodes, a secure key generation algorithm, and
+  Any blockchain can be listed by providing safe and reliable RPC nodes, a secure key generation algorithm, and
   the ability to sign and broadcast deposit and withdrawal transactions.
   All listing information will be fully open source and auditable by the community. No fees will be involved.
 
 - **Fully Auditable Assets**
 
-  All deposit and withdrawal transactions, including hot and cold wallets for all assets, will be open, public,
+  All deposit and withdrawal wallets for all assets will be open, public,
   and available for users to monitor and trace.
 
 - **Open Trade**
 
   All trades will be public, including seller and buyer information.
-  Each user’s trade history will remain public for one month to prevent misconduct.
+  The trades history will remain public for one month to prevent misconduct.
   Users will be rated based on their activity.
 
-- **In-house Wallet**
+- **Non-Custodial Wallet**
 
-  Users can generate a web wallet while managing their own wallet seed.
-  We’ll manage their assets, and the wallet can be used offline to enhance security.
+  Users can generate a fully non-custodial wallet, meaning they own their private keys.
+  At the same time, we provide a simple and secure web interface for managing their assets.
+  The wallet can also be used offline to enhance security.
 
 - **Social Networking**
 
