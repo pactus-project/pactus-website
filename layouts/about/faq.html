@@ -121,7 +121,7 @@
                 {{ $item.a | markdownify | safeHTML }}
                 {{ if isset $item "img" }}
                   <img
-                    src="/assets/imgs/{{ $item.img }}"
+                    src="/images/{{ $item.img }}"
                     alt="{{ $item.q }}" />
                 {{ end }}
                 {{ if isset $item "more" }}
