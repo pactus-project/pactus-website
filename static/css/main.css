@@ -3565,9 +3565,6 @@ html:has(.drawer-toggle:checked) {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
 .\!my-0 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
@@ -3939,7 +3936,11 @@ html:has(.drawer-toggle:checked) {
 }
 .border-\[\#3E4550\] {
   --tw-border-opacity: 1;
-  border-color: rgb(62 69 80 / var(--tw-border-opacity, 1));
+  border-color: rgb(62 69 80 / var(--tw-border-opacity));
+}
+.border-\[\#4F4F4F\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(79 79 79 / var(--tw-border-opacity));
 }
 .border-\[\#5E5E5E\] {
   --tw-border-opacity: 1;
@@ -3955,11 +3956,19 @@ html:has(.drawer-toggle:checked) {
 }
 .\!bg-\[\#242535\] {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(36 37 53 / var(--tw-bg-opacity, 1)) !important;
+  background-color: rgb(36 37 53 / var(--tw-bg-opacity)) !important;
+}
+.bg-\[\#000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-\[\#0B0B0F\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(11 11 15 / var(--tw-bg-opacity, 1));
+  background-color: rgb(11 11 15 / var(--tw-bg-opacity));
+}
+.bg-\[\#0D1116\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 17 22 / var(--tw-bg-opacity));
 }
 .bg-\[\#12141D\] {
   --tw-bg-opacity: 1;
@@ -4065,14 +4074,6 @@ html:has(.drawer-toggle:checked) {
 }
 .p-5 {
   padding: 1.25rem;
-}
-.\!px-10 {
-  padding-left: 2.5rem !important;
-  padding-right: 2.5rem !important;
-}
-.\!px-8 {
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
 }
 .\!py-0 {
   padding-top: 0px !important;
@@ -4212,11 +4213,11 @@ html:has(.drawer-toggle:checked) {
 }
 .text-\[\#217AFF\] {
   --tw-text-opacity: 1;
-  color: rgb(33 122 255 / var(--tw-text-opacity, 1));
+  color: rgb(33 122 255 / var(--tw-text-opacity));
 }
 .text-\[\#696A75\] {
   --tw-text-opacity: 1;
-  color: rgb(105 106 117 / var(--tw-text-opacity, 1));
+  color: rgb(105 106 117 / var(--tw-text-opacity));
 }
 .text-\[\#6F6C90\] {
   --tw-text-opacity: 1;
@@ -6621,7 +6622,7 @@ html {
 
 .hover\:bg-\[\#fff\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-80:hover {
@@ -6904,10 +6905,6 @@ html {
     display: flex;
   }
 
-  .lg\:grid {
-    display: grid;
-  }
-
   .lg\:contents {
     display: contents;
   }
@@ -6926,10 +6923,6 @@ html {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:pt-\[8rem\] {
