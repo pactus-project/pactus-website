@@ -1692,3 +1692,26 @@ html {
   margin: 0 10px;
   min-width: 200px;
 }
+
+.social_big{
+  a {
+    padding:0px;
+  }
+
+  img {
+    padding:0px;
+    margin: 0px;
+  }
+}
+
+.social_small{
+  a {
+    padding:0px;
+  }
+
+  img {
+    padding:0px;
+    margin: 0px;
+    width: 64px;
+  }
+}
