@@ -64,10 +64,4 @@ To explore the communities managed by members of the community, you can follow t
     </a>
   </li>
 
-  <li class="group">
-    <a target="_blank" href="https://discord.gg/pactus" class="hover:text-[#7064e9]">
-      <i class="fa-brands fa-weixin mr-3 text-2xl"></i>WeChat Community
-    </a> - Please Join Discord and Request Invite from Community
-  </li>
-
 </ul>
