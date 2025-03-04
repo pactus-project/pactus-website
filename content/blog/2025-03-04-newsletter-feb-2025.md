@@ -26,7 +26,7 @@ liquidity locked for 1 year.
 Features:
 
 - Trade WPAC/WPOL on Polygon.
-- Bridge PAC to Polygon using Wrapto.
+- Bridge PAC to Polygon using [Wrapto](https://wrapto.app/).
 - Official contract address:
   [0x2f77E0afAEE06970Bf860B8267b5aFECFFF6F216](https://polygonscan.com/token/0x2f77E0afAEE06970Bf860B8267b5aFECFFF6F216).
 - This move marks a significant step toward decentralized trading and Web3 integration for Pactus.
@@ -79,12 +79,9 @@ As previously [announced](https://pactus.org/2025/02/10/we-are-building-an-excha
 Pactus is starting an exciting new project: building a new exchange.
 This decision comes from our trust in the skills of the Pactus development team and the strong support of our community.
 Our primary focus is assembling a dedicated team to lead the development of the exchange.
-While this is a significant undertaking, Pactus remains our top priority,
-and its development will continue to receive our full attention.
-We believe this initiative will empower the Pactus community and
-allow us to focus on our core mission without the need to allocate resources to listing on external exchanges.
-While other exchanges are welcome to list Pactus in the future,
-our focus will remain on delivering a robust, community-driven blockchain that aligns with the Pactus vision.
+While this is a considerable challenge, Pactus remains our foremost priority, and its development will continue
+to receive our complete attention and dedication. We remain committed in our mission to build a robust,
+community-driven blockchain that aligns with the vision of Pactus.
 
 ---
 
