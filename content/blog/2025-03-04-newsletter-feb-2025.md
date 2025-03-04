@@ -1,7 +1,8 @@
 +++
 title = "Pactus Newsletter, February 2025"
 description = """
-February Highlights:  ...
+February Highlights: Wrapped PAC (WPAC) on Uniswap, Pactus on TradeOgre, Neova x Pactus,
+Web Wallet, Pactus team building an Exchange & more...
 """
 author = "Pactus Team"
 date = 2025-03-04T00:00:00+00:00
