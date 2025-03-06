@@ -74,7 +74,7 @@ Experience the user-friendly interface designed for seamless onboarding. Downloa
 application from [here](https://pactus.org/download/).
 Check the setup and installation guide
 [here](https://github.com/pactus-project/pactus/blob/main/docs/install.md).
-    
+
 Buy Pactus coin (PAC), the native coin of Pactus blockchain, from CEX like
 [Azbit](https://azbit.com/exchange/PAC_USDT), [TradeOgre](https://tradeogre.com/exchange/PAC-USDT)
 and DEX like [Uniswap](https://app.uniswap.org/).
@@ -98,4 +98,4 @@ accessibility powers innovation, community drives security, and everyone shares 
 blockchain's true potential, all through a platform that’s fast, affordable, and designed for real people.
 
 Join the Pactus community now on [X](https://x.com/PactusChain) and [Discord](https://discord.gg/pactus)
-—where tomorrow's technology is built on fairness, innovation, and collaboration! 
+—where tomorrow's technology is built on fairness, innovation, and collaboration!
