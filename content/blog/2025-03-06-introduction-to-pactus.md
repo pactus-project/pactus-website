@@ -82,7 +82,7 @@ Withdraw your PAC from these exchanges to your Pactus wallet address. Check the 
 section from this [tutorial](https://docs.pactus.org/tutorials/pactus-wallet/)
 to begin.
 
-#### Then you can:
+#### Then you can
 
 Become a Node Operator: No barriers to entry—everyone can power the network.
 
