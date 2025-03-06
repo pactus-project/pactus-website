@@ -1,6 +1,5 @@
 +++
 title = "Introduction to Pactus Blockchain"
-description = ""
 author = "Pactus Team"
 date = 2025-03-06T15:51:54Z
 tags = ["educational"]
