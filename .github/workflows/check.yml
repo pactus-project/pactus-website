@@ -47,6 +47,8 @@ jobs:
     steps:
       - name: Clone repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -79,8 +81,11 @@ jobs:
         with:
           root: public/
 
-      - name: Check images
-        run: python .github/workflows/check_images.py ./assets
+      - name: Check PR files
+        run: |
+          pip install pillow gitpython toml markdown
+          python .github/workflows/check_pr.py
+          python .github/workflows/check_images.py
 
       - name: Install html-proofer
         run: |
