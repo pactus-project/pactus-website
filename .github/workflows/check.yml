@@ -79,11 +79,11 @@ jobs:
         with:
           root: public/
 
-      - name: Check images
+      - name: Check PR files
         run: |
-          pip install pillow gitpython toml
-          python .github/workflows/check_images.py
+          pip install pillow gitpython toml markdown
           python .github/workflows/check_pr.py
+          python .github/workflows/check_images.py
 
       - name: Install html-proofer
         run: |
