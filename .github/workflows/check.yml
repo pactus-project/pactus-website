@@ -81,8 +81,8 @@ jobs:
 
       - name: Check images
         run:
-          pip install pillow
-          python .github/workflows/check_images.py ./assets
+          pip install pillow gitpython toml
+          python .github/workflows/check_images.py
           python .github/workflows/check_pr.py
 
       - name: Install html-proofer
