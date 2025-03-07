@@ -80,7 +80,10 @@ jobs:
           root: public/
 
       - name: Check images
-        run: python .github/workflows/check_images.py ./assets
+        run:
+          pip install pillow
+          python .github/workflows/check_images.py ./assets
+          python .github/workflows/check_pr.py
 
       - name: Install html-proofer
         run: |
