@@ -1,0 +1,67 @@
+- name: "sensifai"
+  url: "https://sensifai.com/"
+  logo: "sensifai.svg"
+
+- name: "Aethir"
+  url: "https://aethir.com/"
+  logo: "aethir.svg"
+
+- name: "Dezh"
+  url: "https://dezh.tech/"
+  logo: "dezh.svg"
+
+- name: "Shield Games"
+  url: "https://shield-games.com/"
+  logo: "shield-games.svg"
+
+- name: "Xeggex Exchange"
+  url: "https://xeggex.com/"
+  logo: "xeggex.svg"
+
+- name: "Azbit Exchange"
+  url: "https://azbit.com/"
+  logo: "azbit.svg"
+
+- name: "CoinGecko"
+  url: "https://www.coingecko.com/"
+  logo: "coingecko.svg"
+
+- name: "Forbes"
+  url: "https://www.forbes.com/"
+  logo: "forbes.svg"
+
+- name: "CoinMarketCap"
+  url: "https://coinmarketcap.com/"
+  logo: "coinmarketcap.svg"
+
+- name: "CoinPaprika"
+  url: "https://coinpaprika.com/"
+  logo: "coinpaprika.svg"
+
+- name: "Live Coin Watch"
+  url: "https://www.livecoinwatch.com/"
+  logo: "livecoinwatch.svg"
+
+- name: "Coincodex"
+  url: "https://coincodex.com/"
+  logo: "coincodex.svg"
+
+- name: "blockspot"
+  url: "https://blockspot.io/"
+  logo: "blockspot.svg"
+
+- name: "Coin Ranking"
+  url: "https://coinranking.com/"
+  logo: "coinranking.svg"
+
+- name: "Bitcoin Talk"
+  url: "https://bitcointalk.org/"
+  logo: "bitcointalk.svg"
+
+- name: "ByBit"
+  url: "https://www.bybit.com/"
+  logo: "bybit.svg"
+
+- name: "PacViewer"
+  url: "https://pacviewer.com/"
+  logo: "pacviewer.svg"
