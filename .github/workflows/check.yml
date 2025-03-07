@@ -80,7 +80,7 @@ jobs:
           root: public/
 
       - name: Check images
-        run:
+        run: |
           pip install pillow gitpython toml
           python .github/workflows/check_images.py
           python .github/workflows/check_pr.py
