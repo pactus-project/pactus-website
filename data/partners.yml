@@ -14,54 +14,50 @@
   url: "https://shield-games.com/"
   logo: "shield-games.svg"
 
+- name: "PacViewer"
+  url: "https://pacviewer.com/"
+  logo: "pacviewer.svg"
+
+- name: "Bitcoin Talk"
+  url: "https://bitcointalk.org/index.php?topic=5480867.new#new"
+  logo: "bitcointalk.svg"
+
+- name: "CoinGecko"
+  url: "https://www.coingecko.com/en/coins/pactus"
+  logo: "coingecko.svg"
+
 - name: "Xeggex Exchange"
-  url: "https://xeggex.com/"
+  url: "https://xeggex.com/market/PACTUS_USDT"
   logo: "xeggex.svg"
 
 - name: "Azbit Exchange"
-  url: "https://azbit.com/"
+  url: "https://azbit.com/exchange/PAC_USDT"
   logo: "azbit.svg"
 
-- name: "CoinGecko"
-  url: "https://www.coingecko.com/"
-  logo: "coingecko.svg"
-
 - name: "Forbes"
-  url: "https://www.forbes.com/"
+  url: "https://www.forbes.com/digital-assets/assets/pactus-pac/"
   logo: "forbes.svg"
-
-- name: "CoinMarketCap"
-  url: "https://coinmarketcap.com/"
-  logo: "coinmarketcap.svg"
-
-- name: "CoinPaprika"
-  url: "https://coinpaprika.com/"
-  logo: "coinpaprika.svg"
-
-- name: "Live Coin Watch"
-  url: "https://www.livecoinwatch.com/"
-  logo: "livecoinwatch.svg"
-
-- name: "Coincodex"
-  url: "https://coincodex.com/"
-  logo: "coincodex.svg"
-
-- name: "blockspot"
-  url: "https://blockspot.io/"
-  logo: "blockspot.svg"
-
-- name: "Coin Ranking"
-  url: "https://coinranking.com/"
-  logo: "coinranking.svg"
-
-- name: "Bitcoin Talk"
-  url: "https://bitcointalk.org/"
-  logo: "bitcointalk.svg"
 
 - name: "ByBit"
   url: "https://www.bybit.com/"
   logo: "bybit.svg"
 
-- name: "PacViewer"
-  url: "https://pacviewer.com/"
-  logo: "pacviewer.svg"
+- name: "CoinPaprika"
+  url: "https://coinpaprika.com/coin/pac-pactus/"
+  logo: "coinpaprika.svg"
+
+- name: "Live Coin Watch"
+  url: "https://www.livecoinwatch.com/price/Pactus-_____PAC"
+  logo: "livecoinwatch.svg"
+
+- name: "Coincodex"
+  url: "https://coincodex.com/crypto/pactus/"
+  logo: "coincodex.svg"
+
+- name: "blockspot"
+  url: "https://blockspot.io/coin/pactus/"
+  logo: "blockspot.svg"
+
+- name: "Coin Ranking"
+  url: "https://coinranking.com/"
+  logo: "coinranking.svg"
