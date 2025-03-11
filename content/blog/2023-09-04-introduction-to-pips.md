@@ -3,7 +3,7 @@ title = "Introduction to PIPs"
 author = "Pactus Team"
 date = 2023-09-04T00:00:00+00:00
 tags = ["pip"]
-image = "PIP.png"
+image = "/images/pactus-blog-post-default.jpg"
 +++
 
 ## Introduction to PIPs
