@@ -3,7 +3,7 @@ title = "500 validators joined Testnet"
 author = "Pactus Team"
 date = 2023-07-05T00:00:00+00:00
 tags = ["announcement", "testnet"]
-image = "500-validators.png"
+image = "/images/pactus-blog-post-default.jpg"
 +++
 
 For a [Proof of Stake](https://docs.pactus.org/protocol/consensus/proof-of-stake/) blockchain, validators are important for
