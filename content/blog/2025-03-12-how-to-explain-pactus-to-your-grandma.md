@@ -64,5 +64,3 @@ She hands you a warm biscuit. *“Well, if it’s that fair, I suppose I approve
 Be part of the movement. Join the [Pactus](https://pactus.org/) community today on
 [X](https://x.com/pactuschain/) and [Discord](https://discord.com/invite/pactus) and help shape the
 future of blockchain. Because fair and decentralised should be as easy as Grandma’s recipes.
-
-
