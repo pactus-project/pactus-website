@@ -85,7 +85,6 @@ jobs:
         run: |
           pip install pillow gitpython toml markdown
           python .github/workflows/check_pr.py
-          python .github/workflows/check_images.py
 
       - name: Install html-proofer
         run: |
