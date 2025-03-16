@@ -43,8 +43,7 @@ def extract_toml_header(md_file: str):
 
     # Check that the file starts with the expected TOML front matter delimiter
     if lines[0].strip() != "+++":
-        print(f" 🔹 Skipping {file} (no TOML header)")
-        return
+        return None
 
     # Extract lines between the +++ markers
     header_lines = []
@@ -64,8 +63,11 @@ def extract_toml_header(md_file: str):
 
 def check_markdown(file):
     header = extract_toml_header(file)
-    image = header.get("image", "")
+    if header == None:
+        print(f" 🔹 Skipping {file} (no TOML header)")
+        return
 
+    image = header.get("image", "")
     if image == "" or image == "/images/pactus-blog-post-default.jpg":
         print(f" 🔹 Skipping {file} (no cover image)")
         return
