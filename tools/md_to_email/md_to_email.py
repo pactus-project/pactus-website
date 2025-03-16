@@ -104,7 +104,7 @@ def convert_markdown_to_html(template_file: str, md_file: str, output_html: str)
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python3 md_to_email.py newsletter.md")
+        print(f"Usage: python3 {sys.argv[0]} newsletter.md")
         sys.exit(1)
 
     convert_markdown_to_html(

@@ -33,7 +33,6 @@
   "dependencies": {
     "@lordicon/element": "^1.6.0",
     "lottie-web": "^5.12.2",
-    "npx": "^10.2.2",
     "postcss-cli": "^11.0.0"
   }
 }
