@@ -46,8 +46,6 @@ The brand-new Pactus website is live! With a fresh design, enhanced functionalit
 This revamped platform is built with our community in mind.
 Our goal is to make it easier for both newcomers and experienced users to access information, explore Pactus features,
 and get involved.
-The previous version of the website has been archived and is still accessible at
-[https://old.pactus.org/](https://old.pactus.org/).
 
 Explore the new website: [https://pactus.org/](https://pactus.org/).
 
