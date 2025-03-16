@@ -43,8 +43,8 @@ def extract_toml_header(md_file: str):
 
     # Check that the file starts with the expected TOML front matter delimiter
     if lines[0].strip() != "+++":
-        print(f"Error: Invalid header format in '{md_file}'")
-        sys.exit(1)
+        print(f" 🔹 Skipping {file} (no TOML header)")
+        return
 
     # Extract lines between the +++ markers
     header_lines = []
