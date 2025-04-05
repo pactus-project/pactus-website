@@ -68,6 +68,14 @@ For those active on Bluesky, we invite you to follow our official account for th
 latest updates, news, and community highlights.
 Join us at [Pactus Bluesky](https://bsky.app/profile/pactuschain.bsky.social) and be part of the conversation.
 
+### Introducing the Pactus Roundtable
+
+We believe the best ideas come from collaboration.
+That’s why we’re launching the Pactus Roundtable, a platform for community members to
+share their experiences and visions for blockchain’s future.
+Whether you’re a developer, investor, or simply passionate about decentralization,
+this is your opportunity to contribute to Pactus’ growth. Let’s shape the future together.
+
 ### Web Wallet (Beta) – Now Live
 
 We’re excited to announce the first beta release of the **Pactus Web Wallet**,
