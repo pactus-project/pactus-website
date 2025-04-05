@@ -34,5 +34,6 @@
     "@lordicon/element": "^1.6.0",
     "lottie-web": "^5.12.2",
     "postcss-cli": "^11.0.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }
