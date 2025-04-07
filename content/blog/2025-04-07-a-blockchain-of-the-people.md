@@ -8,7 +8,7 @@ image = "a-blockchain-of-the-people.png"
 
 ## A Blockchain of the People, By the People, Not the Elites
 
-Way back when blockchain first came around, it had a revolutionary promise. A world where power wasn't
+Way back when blockchain first came around, it had a revolutionary promise. A world where power was not
 centralized and people were in charge of their data, money, and online lives. It was supposed to
 eliminate intermediaries and give every individual an equal chance.
 
@@ -28,19 +28,18 @@ A decentralized network designed for the many, not the few.
 Despite its promise, blockchain technology has been held back by major barriers that limit
 widespread adoption:
 
-High fees - Transactions on large blockchains can be expensive, shutting out casual users.
-Too technical - It requires technical know-how and expensive hardware to set up a node.
-Still centralized - Most blockchains are controlled by a small group of large players,
-undermining true decentralization.
+- **High fees** – Transactions on large blockchains can be expensive, shutting out casual users.
+- **Too technical** – It requires technical know-how and expensive hardware to set up a node.
+- **Still centralized** – Most blockchains are controlled by a small group of large players, undermining, true decentralization.
 
 ### How Pactus Breaks the Mold
 
 At Pactus, we are redefining what blockchain should be. Our technology is designed to remove barriers
 and create an open, fair, and accessible digital ecosystem:
 
-Gas-less transactions - No more outrageous gas fees. Blockchain should be for everyone.
-Easy setup - No tech expertise necessary. Just a couple of clicks and you're on.
-True decentralization - No miners' pools, no delegates, just a people-driven network.
+- **Gas-less transactions** – No more outrageous gas fees. Blockchain should be for everyone.
+- **Easy setup** – No tech expertise necessary. Just a couple of clicks and you're on.
+- **True decentralization** – No miners' pools, no delegates, just a people-driven network.
 
 ### The Pactus Vision
 
