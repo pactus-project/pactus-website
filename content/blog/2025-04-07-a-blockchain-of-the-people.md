@@ -1,6 +1,6 @@
 +++
 title = "Pactus: A Blockchain of the People"
-author = "Pactus team"
+author = "Pactus Team"
 date = 2025-04-07T14:13:26+01:00
 tags = ["article"]
 image = "a-blockchain-of-the-people.png"
@@ -33,7 +33,7 @@ Too technical - It requires technical know-how and expensive hardware to set up 
 Still centralized - Most blockchains are controlled by a small group of large players,
 undermining true decentralization.
 
-###  How Pactus Breaks the Mold
+### How Pactus Breaks the Mold
 
 At Pactus, we are redefining what blockchain should be. Our technology is designed to remove barriers
 and create an open, fair, and accessible digital ecosystem:
@@ -43,11 +43,12 @@ Easy setup - No tech expertise necessary. Just a couple of clicks and you're on.
 True decentralization - No miners' pools, no delegates, just a people-driven network.
 
 ### The Pactus Vision
+
 We're not just another blockchain. We're building a system where every single individual, no matter
 where they come from, has an equal say. Decentralization shouldn't be a buzzword but a reality.
 Blockchain was never meant to make the rich richer or keep power in the hands of the few. It was
 meant to equalize the digital world. That's what we're here to do.
 
 Want to be part of a digital future that is fair and accessible to everyone? Be part of the movement.
-Join the Pactus community today on [X](https://x.com/pactuschain/) and [Discord](https://discord.gg/pactus) and help shape the future of blockchain through
-fairness, innovation, and collaboration!
+Join the Pactus community today on [X](https://x.com/pactuschain/) and [Discord](https://discord.gg/pactus)
+and help shape the future of blockchain through fairness, innovation, and collaboration!
