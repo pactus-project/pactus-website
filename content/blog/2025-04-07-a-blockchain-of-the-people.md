@@ -8,7 +8,7 @@ image = "a-blockchain-of-the-people.png"
 
 ## A Blockchain of the People, By the People, Not the Elites
 
-Way back when blockchain first came around, it had a revolutionary promise. A world where power wasn't
+Way back when blockchain first came around, it had a revolutionary promise. A world where power was not
 centralized and people were in charge of their data, money, and online lives. It was supposed to
 eliminate intermediaries and give every individual an equal chance.
 
