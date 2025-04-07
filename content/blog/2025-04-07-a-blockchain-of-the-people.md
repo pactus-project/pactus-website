@@ -30,8 +30,7 @@ widespread adoption:
 
 - **High fees** – Transactions on large blockchains can be expensive, shutting out casual users.
 - **Too technical** – It requires technical know-how and expensive hardware to set up a node.
-- **Still centralized** – Most blockchains are controlled by a small group of large players,
-undermining true decentralization.
+- **Still centralized** – Most blockchains are controlled by a small group of large players, undermining , true decentralization.
 
 ### How Pactus Breaks the Mold
 
