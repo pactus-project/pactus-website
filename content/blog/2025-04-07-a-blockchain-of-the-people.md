@@ -28,9 +28,9 @@ A decentralized network designed for the many, not the few.
 Despite its promise, blockchain technology has been held back by major barriers that limit
 widespread adoption:
 
-- **High fees** - Transactions on large blockchains can be expensive, shutting out casual users.
-- **Too technical** - It requires technical know-how and expensive hardware to set up a node.
-- **Still centralized** - Most blockchains are controlled by a small group of large players,
+- **High fees** – Transactions on large blockchains can be expensive, shutting out casual users.
+- **Too technical** – It requires technical know-how and expensive hardware to set up a node.
+- **Still centralized** – Most blockchains are controlled by a small group of large players,
 undermining true decentralization.
 
 ### How Pactus Breaks the Mold
@@ -38,9 +38,9 @@ undermining true decentralization.
 At Pactus, we are redefining what blockchain should be. Our technology is designed to remove barriers
 and create an open, fair, and accessible digital ecosystem:
 
-- **Gas-less transactions** - No more outrageous gas fees. Blockchain should be for everyone.
-- **Easy setup** - No tech expertise necessary. Just a couple of clicks and you're on.
-- **True decentralization** - No miners' pools, no delegates, just a people-driven network.
+- **Gas-less transactions** – No more outrageous gas fees. Blockchain should be for everyone.
+- **Easy setup** – No tech expertise necessary. Just a couple of clicks and you're on.
+- **True decentralization** – No miners' pools, no delegates, just a people-driven network.
 
 ### The Pactus Vision
 
