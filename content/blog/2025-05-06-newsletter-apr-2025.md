@@ -51,7 +51,7 @@ sports Web3 applications, and decentralized financial solutions.
 
 The Bronze Sprint of the Ambassador Program is set to launch soon.
 Participants can earn rewards from a 20,000 PAC pool by actively contributing to the growth of the Pactus community.
-[Apply now!](https://forms.gle/1H927mXTVNSMiLi2A.)
+[Apply now!](https://forms.gle/1H927mXTVNSMiLi2A)
 
 ### Pactus Packages for Developers
 
