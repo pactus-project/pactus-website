@@ -32,3 +32,4 @@ yarn.lock
 
 .todo
 .vscode
+hugo_stats.json
