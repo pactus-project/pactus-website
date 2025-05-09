@@ -3,7 +3,7 @@ title = "Leading the Green Blockchain Revolution"
 author = "Pactus Team"
 date = 2025-04-16T16:32:44+01:00
 tags = ["article"]
-image = "leading-the-green-blockchain-evolution.png"
+image = "leading-the-green-blockchain-revolution.png"
 +++
 
 # Pactus: Leading the Green Blockchain Revolution
