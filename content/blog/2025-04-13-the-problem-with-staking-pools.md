@@ -30,7 +30,7 @@ it has over the network.
 - A handful of massive pools end up making most of the decisions.
 - They can team up and push through whatever changes they want.
 - Instead of a decentralized system, you get a tiny group calling the shots.
-  
+
 Not exactly the trustless, open network that blockchain was supposed to be.
 
 #### 2. You’re Not Really in Control
