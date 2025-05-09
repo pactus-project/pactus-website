@@ -40,7 +40,7 @@ Let’s be honest, when you delegate your coins to a staking pool, you’re hand
 - You don’t get to decide which transactions get validated.
 - The validator votes on governance issues for you.
 - You’re just watching from the sidelines while they run the show.
-- 
+
 Isn’t decentralization supposed to be about participation, not passivity?
 
 #### What Happens When the Rules Change?
