@@ -22,7 +22,7 @@ the hands of a few? Let’s break it down.
 
 ### The Ugly Truth About Staking Pools
 
-#### 1. The Rich Get Richer
+#### The Rich Get Richer
 
 Staking pools aren’t exactly the champions of fairness. The bigger the pool, the more control
 it has over the network.
@@ -33,7 +33,7 @@ it has over the network.
 
 Not exactly the trustless, open network that blockchain was supposed to be.
 
-#### 2. You’re Not Really in Control
+#### You’re Not Really in Control
 
 Let’s be honest, when you delegate your coins to a staking pool, you’re handing over your power.
 
@@ -42,7 +42,7 @@ Let’s be honest, when you delegate your coins to a staking pool, you’re hand
 - You’re just watching from the sidelines while they run the show.
 Isn’t decentralization supposed to be about participation, not passivity?
 
-#### 3. What Happens When the Rules Change?
+#### What Happens When the Rules Change?
 
 Governments and regulators love big, centralized entities. Why? Because they’re easy to control.
 
@@ -56,7 +56,7 @@ If decentralization is about freedom, why should a few big players get to decide
 
 Instead of repeating the same old system with a different name, Pactus does things differently.
 
-#### 1. No Staking Pools = No Middlemen
+#### No Staking Pools = No Middlemen
 
 With Pactus, you don’t need to trust anyone else with your stake.
 
@@ -66,7 +66,7 @@ With Pactus, you don’t need to trust anyone else with your stake.
 
 This isn’t just decentralization in name. It’s real, user-powered security.
 
-#### 2. Fair and Square so Everyone Gets an Equal Say
+#### Fair and Square so Everyone Gets an Equal Say
 
 Traditional PoS systems give more power to those with bigger stakes. Pactus doesn’t play favorites.
 
@@ -74,7 +74,7 @@ Traditional PoS systems give more power to those with bigger stakes. Pactus does
 - No special privileges for whales or insiders.
 - True decentralization, not just an illusion of it.
 
-#### 3. No Censorship, No Surprises
+#### No Censorship, No Surprises
 
 Because no massive staking pools are controlling the network, Pactus stays neutral.
 
