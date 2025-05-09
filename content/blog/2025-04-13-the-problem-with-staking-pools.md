@@ -31,7 +31,6 @@ it has over the network.
 - They can team up and push through whatever changes they want.
 - Instead of a decentralized system, you get a tiny group calling the shots.
 
-
 Not exactly the trustless, open network that blockchain was supposed to be.
 
 #### You’re Not Really in Control
@@ -41,6 +40,7 @@ Let’s be honest, when you delegate your coins to a staking pool, you’re hand
 - You don’t get to decide which transactions get validated.
 - The validator votes on governance issues for you.
 - You’re just watching from the sidelines while they run the show.
+- 
 Isn’t decentralization supposed to be about participation, not passivity?
 
 #### What Happens When the Rules Change?
