@@ -61,8 +61,7 @@ decentralized consensus mechanism, ensuring that as the network grows, energy co
 remains low.
 
 - Efficient transaction handling can scale without compromising energy efficiency.
-- Sustainable growth, Pactus ensures that scalability and environmental responsibility go
-hand in hand.
+- Sustainable growth, Pactus ensures that scalability and environmental responsibility go hand in hand.
 
 The result is a platform that not only scales effectively but does so sustainably, allowing
 it to handle more users and transactions without increasing energy use.
@@ -73,8 +72,7 @@ With the rise of Decentralized Finance (DeFi), many are concerned about the ener
 consumption of blockchain platforms supporting these projects. Pactus offers a solution,
 providing a platform for developers to build eco-friendly DeFi solutions.
 
-- Sustainable DeFi offers a foundation for creating decentralized financial products
-that are both innovative and eco-conscious.
+- Sustainable DeFi offers a foundation for creating decentralized financial products that are both innovative and eco-conscious.
 - Security and scalability, ensure that sustainable DeFi doesn’t come at the cost of performance.
 
 In a world where financial solutions and sustainability should go hand in hand, Pactus provides
@@ -92,6 +90,7 @@ alternative. It proves that blockchain technology doesn’t have to harm the pla
 while being part of the solution.
 
 ## The Future Is Green (and Pactus)
+
 Blockchain technology has immense potential, but with that potential comes a responsibility,
 to build it in a way that benefits both people and the planet. Pactus is showing the world
 that this responsibility doesn’t have to mean sacrificing security, decentralization, or
@@ -102,4 +101,4 @@ This isn’t just about being environmentally conscious, it’s about creating a
 blockchain that grows in harmony with the planet. The world of blockchain is evolving, and
 [Pactus](https://pactus.org/) is leading the charge, showing that the future of cryptocurrency
 doesn’t have to cost the earth, be part of this green movement and join us on
-[X](https://x.com/pactuschain/) and [Discord](https://discord.com/invite/pactus). 
+[X](https://x.com/pactuschain/) and [Discord](https://discord.com/invite/pactus).
