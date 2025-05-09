@@ -31,6 +31,7 @@ it has over the network.
 - They can team up and push through whatever changes they want.
 - Instead of a decentralized system, you get a tiny group calling the shots.
 
+
 Not exactly the trustless, open network that blockchain was supposed to be.
 
 #### You’re Not Really in Control
