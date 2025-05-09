@@ -9,6 +9,7 @@ image = "article-on-staking-pools.png"
 # The Problem with Staking Pools: Why Pactus’ Model is Better for Decentralization
 
 ## The Dark Side of Staking Pools No One Talks About
+
 Think of a staking pool like chipping in for a group lottery ticket, where you hand over your
 money (or, in this case, your coins) to someone else who does the work, hoping for a reward.
 It’s convenient, but here’s the catch: the bigger the pool, the more power it has, and suddenly,
