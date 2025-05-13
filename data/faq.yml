@@ -231,8 +231,8 @@
     - id: genesis_allocation
       q: How are Genesis Coins allocated in Pactus?
       a: '
-        <font color="red">The reserved allocations are subject to transfer into the Treasury account.
-        Read more in <a href="https://pips.pactus.org/PIPs/pip-32">PIP-32</a>.</font><br><br>
+        <span style="color:red">The reserved allocations are subject to transfer into the Treasury account.
+        Read more in <a href="https://pips.pactus.org/PIPs/pip-32">PIP-32</a>.</span><br><br>
         The initial allocation of Genesis Coins in the Pactus blockchain is distributed as follows:
         <div class="overflow-x-auto">
         <table class="table w-full table-zebra">
@@ -302,8 +302,8 @@
     - id: support_distribution
       q: How will the Support coins be spent?
       a: '
-        <font color="red">The reserved allocations are subject to transfer into the Treasury account.
-        Read more in <a href="https://pips.pactus.org/PIPs/pip-32">PIP-32</a>.</font><br><br>
+        <span style="color:red">The reserved allocations are subject to transfer into the Treasury account.
+        Read more in <a href="https://pips.pactus.org/PIPs/pip-32">PIP-32</a>.</span><br><br>
         The support accounts are designed to provide financial backing for the project.
         Initially, Pactus Genesis contained only the Treasury accounts without any Backup or Support accounts.
         The introduction of support coins was a strategic response to the absence of investors,
