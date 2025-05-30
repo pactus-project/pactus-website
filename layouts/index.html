@@ -18,11 +18,16 @@
           <span class="w-full min-h-[3rem] lg:contents">
             <span id="pactus-name" class="pl-[18px]"></span>
           </span>
+          <lord-icon
+                  style="width: 50px; height: 50px;"
+                  trigger="loop"
+                  src="/icons/renewable-energy.json">
+          </lord-icon>
         </h1>
         <h2
           data-aos-duration="1000"
           data-aos="fade-up"
-          class="mt-4 font-bold text-2xla md:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-[#5670CE] to-[#31ABC6]">
+          class="mt-4 font-bold text-2xla md:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-[#00A186] to-[#31ABC6]">
           {{ .Site.Params.Subtitle }}
         </h2>
         <h1
@@ -77,7 +82,45 @@
           </a>
         </div>
       </div>
-      {{ partial "partners.html" }}
+      <div class="mt-[7rem] text-center items-center w-full container mx-auto">
+        <div class="grid grid-cols-5 gap-1">
+          <div>
+            <img
+              loading="lazy"
+              src="/images/partners/funded-by-the-european-union.svg"
+              alt="Funded by the European Union"
+              class="w-full h-auto" />
+          </div>
+          <div>
+            <img
+              loading="lazy"
+              src="/images/partners/next-generation-internet.svg"
+              alt="Next Generation Internet"
+              class="w-full h-auto" />
+          </div>
+          <div>
+            <img
+              loading="lazy"
+              src="/images/partners/trust-chain.svg"
+              alt="Trust Chain"
+              class="w-full h-auto" />
+          </div>
+          <div>
+            <img
+              loading="lazy"
+              src="/images/partners/supported-by-ngi.svg"
+              alt="Supported by NGI"
+              class="w-full h-auto" />
+          </div>
+          <div>
+            <img
+              loading="lazy"
+              src="/images/partners/funded-by-ngi.svg"
+              alt="Funded by NGI"
+              class="w-full h-auto" />
+          </div>
+        </div>
+      </div>
       <img
         class="absolute -z-10 mt-10"
         src="/images/blocks.svg"
@@ -644,6 +687,17 @@
                 >
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-[6rem] md:mt-[10rem]">
+        <div class="">
+          <h1
+            class="font-bold justify-center text-center text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#999999] self-center">
+            Our Partners
+          </h1>
+          <div class="mt-10 mb-10">
+            {{ partial "partners.html" }}
           </div>
         </div>
       </div>
