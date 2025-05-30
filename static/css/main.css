@@ -3797,6 +3797,12 @@ html:has(.drawer-toggle:checked) {
 .h-full {
   height: 100%;
 }
+.h-16 {
+  height: 4rem;
+}
+.max-h-full {
+  max-height: 100%;
+}
 .min-h-\[300px\] {
   min-height: 300px;
 }
@@ -3916,6 +3922,9 @@ html:has(.drawer-toggle:checked) {
 }
 .justify-center {
   justify-content: center;
+}
+.justify-items-center {
+  justify-items: center;
 }
 .gap-0 {
   gap: 0px;
@@ -4107,6 +4116,10 @@ html:has(.drawer-toggle:checked) {
 }
 .fill-neutral-content {
   fill: var(--fallback-nc,oklch(var(--nc)/1));
+}
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -4341,6 +4354,10 @@ html:has(.drawer-toggle:checked) {
   --tw-shadow-color: #0B0B0F;
   --tw-shadow: var(--tw-shadow-colored);
 }
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -4375,8 +4392,14 @@ html:has(.drawer-toggle:checked) {
 .duration-200 {
   transition-duration: 200ms;
 }
+.duration-300 {
+  transition-duration: 300ms;
+}
 .ease-linear {
   transition-timing-function: linear;
+}
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @tailwind typography;
 
@@ -6712,6 +6735,11 @@ html {
   opacity: 0.8;
 }
 
+.hover\:grayscale-0:hover {
+  --tw-grayscale: grayscale(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .group:hover .group-hover\:bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -6760,8 +6788,16 @@ html {
 
 @media (min-width: 640px) {
 
+  .sm\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
   .sm\:block {
     display: block;
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:pl-\[130px\] {
@@ -6819,6 +6855,10 @@ html {
     height: 30px;
   }
 
+  .md\:h-20 {
+    height: 5rem;
+  }
+
   .md\:w-1\/4 {
     width: 25%;
   }
@@ -6845,6 +6885,10 @@ html {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:bg-\[\#15161C\] {
