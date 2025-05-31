@@ -4277,9 +4277,6 @@ html:has(.drawer-toggle:checked) {
 .font-semibold {
   font-weight: 600;
 }
-.font-thin {
-  font-weight: 100;
-}
 .text-\[\#1EA4E8\] {
   --tw-text-opacity: 1;
   color: rgb(30 164 232 / var(--tw-text-opacity));
@@ -6867,6 +6864,10 @@ html {
 
   .md\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
