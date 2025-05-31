@@ -18,17 +18,17 @@
           <span class="w-full min-h-[3rem] lg:contents">
             <span id="pactus-name" class="pl-[18px]"></span>
           </span>
-          <lord-icon
-                  style="width: 50px; height: 50px;"
-                  trigger="loop"
-                  src="/icons/renewable-energy.json">
-          </lord-icon>
         </h1>
         <h2
           data-aos-duration="1000"
           data-aos="fade-up"
           class="mt-4 font-bold text-2xla md:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-[#00A186] to-[#31ABC6]">
           {{ .Site.Params.Subtitle }}
+          <lord-icon
+                  style="width: 50px; height: 50px;"
+                  trigger="loop"
+                  src="/icons/renewable-energy.json">
+          </lord-icon>
         </h2>
         <h1
           data-aos-duration="1000"
@@ -83,41 +83,33 @@
         </div>
       </div>
       <div class="mt-[7rem] text-center items-center w-full container mx-auto px-4">
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 items-center justify-items-center">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 items-center justify-items-center">
           <div class="flex items-center justify-center h-16 md:h-20 w-full">
-            <img
+            <a href="https://european-union.europa.eu/index_en" target="_blank">
+              <img
               loading="lazy"
               src="/images/partners/funded-by-the-european-union.svg"
               alt="Funded by the European Union"
-              class="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+              class="max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+            </a>
           </div>
           <div class="flex items-center justify-center h-16 md:h-20 w-full">
+            <a href="https://ngi.eu/" target="_blank">
             <img
               loading="lazy"
               src="/images/partners/next-generation-internet.svg"
               alt="Next Generation Internet"
               class="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+            </a>
           </div>
           <div class="flex items-center justify-center h-16 md:h-20 w-full">
+            <a href="https://trustchain.ngi.eu/" target="_blank">
             <img
               loading="lazy"
               src="/images/partners/trust-chain.svg"
               alt="Trust Chain"
-              class="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
-          </div>
-          <div class="flex items-center justify-center h-16 md:h-20 w-full">
-            <img
-              loading="lazy"
-              src="/images/partners/supported-by-ngi.svg"
-              alt="Supported by NGI"
-              class="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
-          </div>
-          <div class="flex items-center justify-center h-16 md:h-20 w-full col-span-2 sm:col-span-1">
-            <img
-              loading="lazy"
-              src="/images/partners/funded-by-ngi.svg"
-              alt="Funded by NGI"
-              class="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+              class="max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+            </a>
           </div>
         </div>
       </div>
