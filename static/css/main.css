@@ -6782,10 +6782,6 @@ html {
 
 @media (min-width: 640px) {
 
-  .sm\:col-span-1 {
-    grid-column: span 1 / span 1;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -6865,6 +6861,10 @@ html {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -6883,10 +6883,6 @@ html {
 
   .md\:items-center {
     align-items: center;
-  }
-
-  .md\:gap-6 {
-    gap: 1.5rem;
   }
 
   .md\:bg-\[\#15161C\] {
