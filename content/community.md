@@ -24,43 +24,16 @@ To explore the communities managed by members of the community, you can follow t
       <i class="fa-brands fa-telegram mr-3 text-2xl"></i>Pactus Chat
     </a>
   </li>
+
   <li class="group">
     <a target="_blank" href="https://t.me/nodesync_top" class="hover:text-[#7064e9]">
       <i class="fa-brands fa-telegram mr-3 text-2xl"></i>NodeSync.Top Community
-    </a>
-  </li>
-  <li class="group">
-    <a target="_blank" href="https://t.me/pactusrus" class="hover:text-[#7064e9]">
-      <i class="fa-brands fa-telegram mr-3 text-2xl"></i>Pactus Russian TG group
-    </a>
-  </li>
-  <li class="group">
-    <a target="_blank" href="https://t.me/pactustr" class="hover:text-[#7064e9]">
-      <i class="fa-brands fa-telegram mr-3 text-2xl"></i>Pactus Turkey TG
-    </a>
-  </li>
-
-  <li class="group">
-    <a target="_blank" href="https://www.tiktok.com/@pactusblockchain" class="hover:text-[#7064e9]">
-      <i class="fa-brands fa-tiktok mr-3 text-2xl"></i>Pactus Tiktok
     </a>
   </li>
 
   <li class="group">
     <a target="_blank" href="https://www.instagram.com/pactus.blockchain/" class="hover:text-[#7064e9]">
       <i class="fa-brands fa-instagram mr-3 text-2xl"></i>Pactus Instagram
-    </a>
-  </li>
-
-  <li class="group">
-    <a target="_blank" href="https://www.reddit.com/r/Pactus/s/HIfI0tAyvi" class="hover:text-[#7064e9]">
-      <i class="fa-brands fa-reddit mr-3 text-2xl"></i>Pactus Reddit
-    </a>
-  </li>
-
-  <li class="group">
-    <a target="_blank" href="https://www.facebook.com/PactusChain" class="hover:text-[#7064e9]">
-      <i class="fa-brands fa-facebook mr-3 text-2xl"></i>Pactus on Facebook
     </a>
   </li>
 
