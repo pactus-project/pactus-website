@@ -42,7 +42,7 @@ ease of use, fiat options, and customer support.
     <img src="/images/exchange/polygon.svg" style="height: 48px" class="object-contain mx-auto" alt="Polygon" />
   </a>
   <a target="_blank" href="https://dexscreener.com/bsc/0x10004a9A742ec135c686C9aCed00FA3C93D66866" title="Binance">
-    <img src="/images/exchange/binance.svg" style="height: 48px" class="object-contain mx-auto" alt="Binance" />
+    <img src="/images/exchange/bsc.svg" style="height: 48px" class="object-contain mx-auto" alt="Binance smart chain" />
   </a>
   <a target="_blank" href="https://dexscreener.com/base/0x10004a9A742ec135c686C9aCed00FA3C93D66866" title="Base">
     <img src="/images/exchange/base.svg" style="height: 48px" class="object-contain mx-auto" alt="Base" />
