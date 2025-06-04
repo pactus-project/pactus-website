@@ -22,7 +22,7 @@
         <h2
           data-aos-duration="1000"
           data-aos="fade-up"
-          class="mt-4 font-bold text-2xla md:text-[2rem] text-transparent bg-clip-text bg-gradient-to-r from-[#00A186] to-[#31ABC6]">
+          class="mt-4 font-bold text-2xl md:text-[2rem]" style="color: #00a085;">
           {{ .Site.Params.Subtitle }}
           <lord-icon
                   style="width: 50px; height: 50px;"
@@ -39,7 +39,7 @@
             a</span
           ><br class="hidden md:block" />
           <span class="ml-1 md:ml-0"
-            >revolutionary, secure, Solid State Proof of Stake Consensus.</span
+            >revolutionary, secure, and energy-efficient Solid State Proof of Stake Consensus.</span
           ><br class="hidden md:block" />
           <span class="ml-1 md:ml-0"
             >Come join us and build a decentralized future together!</span
@@ -47,39 +47,28 @@
         </h1>
       </div>
       <div class="mt-10 text-center items-center w-full">
+
         <div
           class="flex gap-x-4 justify-center"
           data-aos-duration="1000"
           data-aos="fade-up">
-          <a
-            target="_blank"
-            href="https://docs.pactus.org/get-started/become-a-validator/"
 
-            class="btn-become-validator">
-            <strong>Become a validator</strong>
-            <div class="container-stars">
-              <div class="stars"></div>
-            </div>
-
-            <div class="glow">
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
+          <a href="https://docs.pactus.org/get-started/become-a-validator/" target="_blank" rel="noopener" class="become-btn">
+            <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" class="sparkle">
+              <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z" />
+            </svg>
+            <span class="text">Become a validator</span>
           </a>
-          <a
-            target="_blank"
-            href="/community"
-            class="btn-join-community">
-            <strong>Join community</strong>
-            <div class="container-stars">
-              <div class="stars"></div>
-            </div>
 
-            <div class="glow">
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
+          <a href="/buy-pac" class="buy-button">
+            <span class="backdrop"></span>
+            <span class="galaxy"></span>
+            <svg class="sparkle" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.6622 2.92968L17.3226 1.46497L17.9832 0H16.2539H14.5249L14.0591 1.44942L13.5936 2.89884H6.79208C3.05151 2.89884 -0.00509781 2.92836 6.3833e-06 2.96473C0.00511058 3.00109 0.413177 4.15721 0.906672 5.53416L1.80394 8.0377L13.4565 8.16947C26.1848 8.31336 26.3731 8.33629 27.6159 9.88611C28.0712 10.4538 28.1983 10.9692 28.1983 12.2476C28.1983 15.6812 26.1332 18.1697 21.2058 20.6735C18.9605 21.8143 14.9292 23.2975 14.504 23.1391C14.3855 23.0951 15.3631 20.1536 16.6765 16.6025C17.9896 13.0514 19.0639 10.1133 19.0642 10.0735C19.0644 10.0334 17.177 10.0334 14.8701 10.0735L10.6758 10.146L7.48974 19.1701L4.30392 28.1942L6.24405 33.5958C7.31136 36.5668 8.24516 38.9987 8.31957 39C8.39399 39.0016 9.3431 36.5297 10.4284 33.5075C11.514 30.485 12.4806 27.8874 12.5767 27.7351C12.6726 27.5828 14.746 26.9598 17.184 26.3508C23.8627 24.6821 26.6804 23.5481 31.0937 20.7528C33.9096 18.9692 36.1643 16.685 37.2714 14.4942C37.8968 13.2562 38.0032 12.718 37.9999 10.8048C37.9967 8.88575 37.8922 8.37028 37.2703 7.20784C36.3894 5.56104 35.0043 4.39465 33.0338 3.64016C31.7779 3.15948 30.8414 3.05696 26.7879 2.95735C24.1654 2.89278 22.0195 2.74969 22.0195 2.639C22.0195 2.52858 22.2008 1.93379 22.4225 1.31766C22.6441 0.701521 22.8254 0.152849 22.8254 0.0985617C22.8254 0.0442743 22.1162 0 21.2496 0H19.6737L19.1394 1.38354C18.6438 2.66773 18.5355 2.77288 17.6339 2.84851L16.6622 2.92968Z" fill="white"/>
+            </svg>
+            <span class="text">Buy PAC</span>
           </a>
+
         </div>
       </div>
       <div class="mt-[7rem] text-center items-center w-full container mx-auto px-4">
@@ -88,7 +77,7 @@
             <a href="https://european-union.europa.eu/index_en" target="_blank">
               <img
               loading="lazy"
-              src="/images/partners/funded-by-the-european-union.svg"
+              src="/images/partners/funded-by-the-european-union-gray.svg"
               alt="Funded by the European Union"
               class="max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
             </a>
@@ -97,16 +86,16 @@
             <a href="https://ngi.eu/" target="_blank">
             <img
               loading="lazy"
-              src="/images/partners/next-generation-internet.svg"
+              src="/images/partners/ngi-gray.svg"
               alt="Next Generation Internet"
-              class="max-h-full max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
+              class="w-24 h-24 max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
             </a>
           </div>
           <div class="flex items-center justify-center h-16 md:h-20 w-full">
             <a href="https://trustchain.ngi.eu/" target="_blank">
             <img
               loading="lazy"
-              src="/images/partners/trust-chain.svg"
+              src="/images/partners/trustchain-gray.svg"
               alt="Trust Chain"
               class="max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" />
             </a>
@@ -427,16 +416,15 @@
                   <div class="ta-content mt-16">
                     <a
                       target="_blank"
-                      href="/community"
+                      href="/buy-pac"
                       class="mb-15 font-bold md:text-2xl text-xl group-hover:text-[#7064e9] transition ease-linear duration-100"
-                      >Obtain PAC</a
+                      >Buy PAC</a
                     >
                     <p class="mt-4">
-                      Before you can utilize all that Pactus has to offer, you
-                      will need to obtain our native coin. PAC is a currency
-                      that can be exchanged for products, services and other
-                      currencies with a percentage fee based model of 0.01% per
-                      tx.
+                      Buy PAC, the native token of the Pactus blockchain,
+                      on decentralized (DEXs) or centralized exchanges (CEXs).
+                      DEXs offer full control, privacy, and on-chain transparency.
+                      CEXs provide ease of use, fiat options, and customer support.
                     </p>
                   </div>
                 </div>

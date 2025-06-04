@@ -124,7 +124,7 @@ Other assets, like PDF files, can be linked similarly:
 Markdown is a lightweight markup language that uses plain text formatting syntax to convert text into HTML,
 making it easy to read and write for web content.
 
-#### Linting
+### Linting
 
 Markdown linting helps ensure consistent style and formatting, detects syntax errors, improves readability,
 and maintains best practices in Markdown documents.
