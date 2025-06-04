@@ -7217,6 +7217,33 @@ html {
   position: relative;
 }
 
+.buy-button .text::before,
+.buy-button .text::after {
+  content: "";
+  position: absolute;
+  top: -290%;
+  rotate: -45deg;
+  width: 5em;
+  height: 1px;
+  display: block;
+  z-index: -1;
+}
+
+.buy-button .text::before {
+  left: 90%;
+  background: linear-gradient(90deg, #ffffff, transparent);
+  animation: 4s shootingStar ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.buy-button .text::after {
+  left: 10%;
+  background: linear-gradient(90deg, #ffffff, transparent);
+  animation: 7s shootingStar ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+
 .buy-button .sparkle {
  fill: hsl(0 0% 86%);
   width: 24px;
@@ -7324,7 +7351,24 @@ html {
   100% { transform: translate(-10px, -20%) rotate(200deg); }
 }
 
-/* Optional: if you want to scope other keyframes, prefix with buy-button- (not required for animation compatibility) */
+@keyframes shootingStar {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-55em) translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(-70em) translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+}
 
 @supports (selector(:has(:is(+ *)))) {
   body:has(.buy-button:is(:hover, :focus-visible)) {
@@ -7345,6 +7389,7 @@ html {
   --active: 1;
   --play-state: running;
 }
+
 
 .robot-margine {
   margin-top: 250px;
