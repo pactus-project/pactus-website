@@ -27,7 +27,7 @@
   logo: "forbes.svg"
 
 - name: "ByBit"
-  url: " https://www.bybit.com/de-AUT/coin-price/pactus/"
+  url: "https://www.bybit.com/de-AUT/coin-price/pactus/"
   logo: "bybit.svg"
 
 - name: "CoinPaprika"
