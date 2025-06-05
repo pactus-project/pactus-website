@@ -2,21 +2,13 @@
   url: "https://sensifai.com/"
   logo: "sensifai.svg"
 
-- name: "Aethir"
-  url: "https://aethir.com/"
-  logo: "aethir.svg"
+- name: "PacViewer"
+  url: "https://pacviewer.com/"
+  logo: "pacviewer.png"
 
 - name: "Dezh"
   url: "https://dezh.tech/"
   logo: "dezh.svg"
-
-- name: "Shield Games"
-  url: "https://shield-games.com/"
-  logo: "shield-games.svg"
-
-- name: "PacViewer"
-  url: "https://pacviewer.com/"
-  logo: "pacviewer.svg"
 
 - name: "Bitcoin Talk"
   url: "https://bitcointalk.org/index.php?topic=5480867.new#new"
@@ -24,22 +16,18 @@
 
 - name: "CoinGecko"
   url: "https://www.coingecko.com/en/coins/pactus"
-  logo: "coingecko.svg"
+  logo: "coingecko.png"
 
-- name: "Xeggex Exchange"
-  url: "https://xeggex.com/market/PACTUS_USDT"
-  logo: "xeggex.svg"
-
-- name: "Azbit Exchange"
-  url: "https://azbit.com/exchange/PAC_USDT"
-  logo: "azbit.svg"
+- name: "CoinMarketCap"
+  url: "https://coinmarketcap.com/community/profile/pactus/"
+  logo: "coinmarketcap.svg"
 
 - name: "Forbes"
   url: "https://www.forbes.com/digital-assets/assets/pactus-pac/"
   logo: "forbes.svg"
 
 - name: "ByBit"
-  url: "https://www.bybit.com/"
+  url: "https://www.bybit.com/de-AUT/coin-price/pactus/"
   logo: "bybit.svg"
 
 - name: "CoinPaprika"
@@ -52,12 +40,20 @@
 
 - name: "Coincodex"
   url: "https://coincodex.com/crypto/pactus/"
-  logo: "coincodex.svg"
+  logo: "coincodex.png"
 
 - name: "blockspot"
   url: "https://blockspot.io/coin/pactus/"
-  logo: "blockspot.svg"
+  logo: "blockspot.png"
 
 - name: "Coin Ranking"
-  url: "https://coinranking.com/"
-  logo: "coinranking.svg"
+  url: "https://coinranking.com/coin/pactus"
+  logo: "coinranking.png"
+
+- name: "Azbit Exchange"
+  url: "https://azbit.com/exchange/PAC_USDT"
+  logo: "azbit.png"
+
+- name: "Xeggex Exchange"
+  url: "https://xeggex.com/market/PACTUS_USDT"
+  logo: "xeggex.svg"
