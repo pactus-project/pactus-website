@@ -57,10 +57,10 @@ This accomplishment perfectly demonstrates our commitment to accessibility and e
 
 Here are the impressive specifications:
 
-* Device: Raspberry Pi Zero
-* Total Cost: $29 (including microSD card and housing)
-* Power Consumption: 0.7-1W
-* Monthly Operating Cost: Less than 1 USD
+- Device: Raspberry Pi Zero
+- Total Cost: $29 (including microSD card and housing)
+- Power Consumption: 0.7-1W
+- Monthly Operating Cost: Less than 1 USD
 
 This setup proves that participating in the Pactus network can be both cost-effective and environmentally conscious,
 truly embodying our mission of making blockchain accessible to everyone!
@@ -91,6 +91,7 @@ our next major update and represents another step toward making blockchain techn
 We hope you share our excitement about October's achievements.
 As always, your feedback and support drive our continuous improvement.
 
-[^1]: The Pactus monthly newsletter is published on our website and
-distributed to subscribers via email during the first week of each month.
-It recaps key highlights and important news from the previous month.
+[^1]:
+    The Pactus monthly newsletter is published on our website and
+    distributed to subscribers via email during the first week of each month.
+    It recaps key highlights and important news from the previous month.

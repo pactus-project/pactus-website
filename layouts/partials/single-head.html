@@ -3,16 +3,21 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ .Title }} | Pactus.org | Pactus</title>
-  <meta name="description" content="{{ partial "desc.html" (dict "description" .Page.Params.description "summary" .Page.Content "charCount" 300) }}" />
+  <meta
+    name="description"
+    content="{{ partial "desc.html" (dict "description" .Page.Params.description "summary" .Page.Content "charCount" 300) }}" />
 
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ .Page.Params.title }} | Pactus" />
-  <meta property="og:description" content="{{ partial "desc.html" (dict "description" .Page.Params.description "summary" .Page.Content "charCount" 300) }}" />
-  <meta property="og:locale" content="en"/>
+  <meta
+    property="og:description"
+    content="{{ partial "desc.html" (dict "description" .Page.Params.description "summary" .Page.Content "charCount" 300) }}" />
+  <meta property="og:locale" content="en" />
   <meta property="og:site_name" content="Pactus" />
   <meta property="og:url" content="{{ .Page.Permalink }}" />
-  <meta property="og:image" content="{{ partial "image.html" (dict "src" .Params.image "filename" .Page.File.BaseFileName) }}" />
-
+  <meta
+    property="og:image"
+    content="{{ partial "image.html" (dict "src" .Params.image "filename" .Page.File.BaseFileName) }}" />
 
   <link rel="stylesheet" href="/css/main.css" />
 

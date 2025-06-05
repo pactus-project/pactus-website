@@ -52,12 +52,12 @@ on, or secretly changed by Aunt Janet when she thinks she can improve the crumbl
 You smile and say, "So Grandma, Pactus is just a fair, simple way for people to do digital transactions
 without big companies running the show!"
 
-Grandma squints, thinks for a moment, then nods. *“So it’s like a community bake sale where everyone gets*
-*a fair share?”*
+Grandma squints, thinks for a moment, then nods. _“So it’s like a community bake sale where everyone gets_
+_a fair share?”_
 
 Exactly!
 
-She hands you a warm biscuit. *“Well, if it’s that fair, I suppose I approve.”*
+She hands you a warm biscuit. _“Well, if it’s that fair, I suppose I approve.”_
 
 ### Join the Pactus Movement!
 
