@@ -7102,7 +7102,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 12px;
-  background: #00a085;
+  background: linear-gradient(0deg, #00a085, #00a085); /* Match non-hover to hover gradient structure */
   cursor: pointer;
   transition: all 450ms ease-in-out;
 }
@@ -7119,7 +7119,7 @@ html {
 }
 
 .become-btn:hover {
-  background: linear-gradient(0deg, #00a085, #00a085);
+  background: linear-gradient(0deg, #00a085, #00a085); /* Keep the same gradient */
   box-shadow:
     inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
@@ -7142,17 +7142,17 @@ html {
   --active: 1;
   --bg: radial-gradient(
       120% 120% at 126% 126%,
-      hsl(230 calc(var(--active) * 97%) 98% / calc(var(--active) * 0.9)) 40%,
+      hsl(210 calc(var(--active) * 97%) 98% / calc(var(--active) * 0.9)) 40%,
       transparent 50%
     )
     calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,
     radial-gradient(
       120% 120% at 120% 120%,
-      hsl(230 calc(var(--active) * 97%) 70% / calc(var(--active) * 1)) 30%,
+      hsl(210 calc(var(--active) * 97%) 70% / calc(var(--active) * 1)) 30%,
       transparent 70%
     )
     calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,
-    hsl(230 calc(var(--active) * 100%) calc(12% - (var(--active) * 8%)));
+    hsl(210 calc(var(--active) * 100%) calc(12% - (var(--active) * 8%)));
 
   background: var(--bg);
   font-size: medium;
@@ -7211,7 +7211,6 @@ html {
   translate: 2% -6%;
    color: hsl(230 0% calc(60% + (var(--active) * 26%)));
   z-index: 999;
-  padding: 0 7px;
   font-weight: 400;
   cursor: pointer;
   position: relative;
@@ -7250,6 +7249,11 @@ html {
   height: 24px;
   z-index: 999; /* Ensure SVG is on top */
   transition: fill 0.25s, transform 0.25s;
+}
+
+.buy-button:hover .sparkle,
+.buy-button:focus-visible .sparkle {
+  transform: scale(1.2);
 }
 
 .buy-button .galaxy {
