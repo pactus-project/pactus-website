@@ -1,21 +1,16 @@
 {{ define "main" }}
-  <section
-    class="container mx-auto px-4 py-8 md:pt-[10rem] pt-[8rem] relative z-20 flex-grow pb-20">
+  <section class="container mx-auto px-4 py-8 md:pt-[10rem] pt-[8rem] relative z-20 flex-grow pb-20">
     <div class="grid grid-cols-3">
       <div class="col-span-2">
-        <h1
-          class="md:text-4xl text-2xl text-bold text-neutral-50 font-medium text-left">
+        <h1 class="md:text-4xl text-2xl text-bold text-neutral-50 font-medium text-left">
           {{ .Title }}
         </h1>
-        {{if .Description}}<p class="mt-6 text-lg">{{ .Description }}</p>{{end}}
+        {{ if .Description }}
+          <p class="mt-6 text-lg">{{ .Description }}</p>
+        {{ end }}
       </div>
       <div class="col-span-1 text-right" style="text-align: -webkit-right;">
-        <svg
-          width="128"
-          height="129"
-          viewBox="0 0 128 129"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
+        <svg width="128" height="129" viewBox="0 0 128 129" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_1250_14702)">
             <path
               d="M86.5 80.0547C85.1195 80.0547 84 81.1739 84 82.5547V99.8047C84 106.697 78.3925 112.305 71.5 112.305H44.508C43.1278 112.305 42.009 113.423 42.008 114.803L42.0045 119.773L36.0375 113.807C35.6512 112.92 34.7673 112.305 33.7448 112.305H17.5C10.6075 112.305 5 106.697 5 99.8047V61.3047C5 54.4122 10.6075 48.8047 17.5 48.8047H42.75C44.1305 48.8047 45.25 47.6854 45.25 46.3047C45.25 44.9239 44.1305 43.8047 42.75 43.8047H17.5C7.8505 43.8047 0 51.6552 0 61.3047V99.8047C0 109.454 7.8505 117.305 17.5 117.305H32.4645L42.7323 127.572C43.2105 128.051 43.8498 128.305 44.5005 128.305C44.8223 128.305 45.147 128.242 45.4557 128.115C46.39 127.728 46.9992 126.817 47 125.806L47.006 117.305H71.5C81.1495 117.305 89 109.454 89 99.8047V82.5547C89 81.1739 87.8805 80.0547 86.5 80.0547Z"
@@ -44,11 +39,7 @@
           </g>
           <defs>
             <clipPath id="clip0_1250_14702">
-              <rect
-                width="128"
-                height="128"
-                fill="white"
-                transform="translate(0 0.304688)" />
+              <rect width="128" height="128" fill="white" transform="translate(0 0.304688)" />
             </clipPath>
           </defs>
         </svg>
@@ -56,11 +47,9 @@
     </div>
     {{ range $i,$group := .Site.Data.faq }}
       {{ $group_id := lower $group.title }}
-      <div
-        class="mt-10 bg-[#141B25] rounded-xl p-10 md:p-20 grouds-bundler">
+      <div class="mt-10 bg-[#141B25] rounded-xl p-10 md:p-20 grouds-bundler">
         <div class="join join-vertical w-full" id="{{ $group_id }}">
-          <div
-            class="join-title text-2xl md:text-3xl font-bold text-neutral-50 items-center mb-5">
+          <div class="join-title text-2xl md:text-3xl font-bold text-neutral-50 items-center mb-5">
             <div>{{ $group.title }}</div>
           </div>
           <div class="divider"></div>
@@ -69,23 +58,12 @@
               class="collapse join-item"
               id="{{ printf `%s.%s` $group_id $item.id }}"
               onclick="changeUrlID({{ printf `%s.%s` $group_id $item.id }})">
-              <input
-                type="checkbox"
-                name="{{ $group_id }}"
-                class="peer"
-                aria-checked="false" />
-              <div
-                class="collapse-title text-lg md:text-xl text-neutral-50 items-center">
+              <input type="checkbox" name="{{ $group_id }}" class="peer" aria-checked="false" />
+              <div class="collapse-title text-lg md:text-xl text-neutral-50 items-center">
                 <div>{{ $item.q }}</div>
               </div>
-              <button
-                class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
-                <svg
-                  width="23"
-                  height="23"
-                  viewBox="0 0 23 23"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+              <button class="btn btn-circle absolute right-0 btn-ghost peer-checked:hidden">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M11.2859 2.33252V21.2915"
                     stroke="white"
@@ -103,12 +81,7 @@
               <button
                 class="btn btn-circle absolute right-0 btn-ghost hidden peer-checked:block"
                 style="text-align: -webkit-center;">
-                <svg
-                  width="23"
-                  height="4"
-                  viewBox="0 0 23 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M2.28711 1.67773H21.2461"
                     stroke="#217AFF"
@@ -120,23 +93,16 @@
               <div class="collapse-content prose lg:prose-lg">
                 {{ $item.a | markdownify | safeHTML }}
                 {{ if isset $item "img" }}
-                  <img
-                    src="/images/{{ $item.img }}"
-                    alt="{{ $item.q }}" />
+                  <img src="/images/{{ $item.img }}" alt="{{ $item.q }}" />
                 {{ end }}
                 {{ if isset $item "more" }}
-                  <a
-                    href="{{ $item.more }}"
-                    target="_blank"
-                    class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5"
+                  <a href="{{ $item.more }}" target="_blank" class="hover:text-opacity-80 font-bold text-[#1EA4E8] mt-5"
                     >Read more...</a
                   >
                 {{ end }}
               </div>
             </div>
-            <div
-              class="justify-center w-full text-center"
-              style="text-align: -webkit-center;">
+            <div class="justify-center w-full text-center" style="text-align: -webkit-center;">
               <div class="divider"></div>
             </div>
           {{ end }}

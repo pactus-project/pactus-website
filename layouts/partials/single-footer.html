@@ -7,9 +7,7 @@
       class="w-20 lg:w-[150px] absolute bottom-0 left-10 z-10 lg:left-56" />
   </div>
 {{ end }}
-<div
-  class="relative w-full text-center top-[26px]"
-  style="text-align: -webkit-center;">
+<div class="relative w-full text-center top-[26px]" style="text-align: -webkit-center;">
   <button class="button-go-to-top z-20" onclick="gototop()">
     <svg class="svgIcon" viewBox="0 0 384 512">
       <path
@@ -29,8 +27,7 @@
   class="footer bg-[#17181F] pl-10 pr-10 text-center border-t-[1px] border-[#242222] relative shadow-single-footer-shadow pt-10 pb-5">
   <div class="footer container mx-auto place-items-center md:place-items-start">
     <nav class="self-center ">
-      <ul
-        class="grid grid-cols-2 md:grid-cols-5 gap-y-4 justify-center pt-5 pb-5 font-bold">
+      <ul class="grid grid-cols-2 md:grid-cols-5 gap-y-4 justify-center pt-5 pb-5 font-bold">
         <li class="pr-5">
           <a
             href="{{ .Site.BaseURL }}about/what-is-pactus"
@@ -39,16 +36,12 @@
           >
         </li>
         <li class="pr-5">
-          <a
-            href="{{ .Site.BaseURL }}about/roadmap"
-            class="text-neutral-20 hover:text-primary-20 link link-hover"
+          <a href="{{ .Site.BaseURL }}about/roadmap" class="text-neutral-20 hover:text-primary-20 link link-hover"
             >Roadmap</a
           >
         </li>
         <li class="pr-5">
-          <a
-            href="{{ .Site.BaseURL }}download"
-            class="text-neutral-20 hover:text-primary-20 link link-hover"
+          <a href="{{ .Site.BaseURL }}download" class="text-neutral-20 hover:text-primary-20 link link-hover"
             >Download</a
           >
         </li>
@@ -61,11 +54,7 @@
           >
         </li>
         <li class="pr-5">
-          <a
-            href="{{ .Site.BaseURL }}about/faq"
-            class="text-neutral-20 hover:text-primary-20 link link-hover"
-            >FAQ</a
-          >
+          <a href="{{ .Site.BaseURL }}about/faq" class="text-neutral-20 hover:text-primary-20 link link-hover">FAQ</a>
         </li>
       </ul>
     </nav>
@@ -73,44 +62,35 @@
     <nav class="self-center ">
       <ul class="grid grid-cols-3 justify-center pt-5 pb-5">
         <li>
-          <a
-            href="/term_of_use"
-            class="text-neutral-20 hover:text-primary-20 link link-hover"
-            ><i class="fa-solid fa-gavel"></i
-            ><span class="ml-2">Terms of Use</span></a
+          <a href="/term_of_use" class="text-neutral-20 hover:text-primary-20 link link-hover"
+            ><i class="fa-solid fa-gavel"></i><span class="ml-2">Terms of Use</span></a
           >
         </li>
         <li class="ml-2">
-          <a
-            href="/sitemap.xml"
-            class="text-neutral-20 hover:text-primary-20 link link-hover"
-            ><i class="fa-solid fa-sitemap"></i
-            ><span class="ml-2">Sitemap</span></a
+          <a href="/sitemap.xml" class="text-neutral-20 hover:text-primary-20 link link-hover"
+            ><i class="fa-solid fa-sitemap"></i><span class="ml-2">Sitemap</span></a
           >
         </li>
         <li>
-          <a
-            href="/index.xml"
-            class="text-neutral-20 hover:text-primary-20 link link-hover"
-            ><i class="fa-solid fa-rss"></i
-            ><span class="ml-2">RSS Feed</span></a
+          <a href="/index.xml" class="text-neutral-20 hover:text-primary-20 link link-hover"
+            ><i class="fa-solid fa-rss"></i><span class="ml-2">RSS Feed</span></a
           >
         </li>
       </ul>
     </nav>
     <nav class="self-center">
       <div class="grid grid-cols-4 mb-4 md:mb-0 social_small">
-        <a href="{{.Site.Data.links.discord}}" target="_blank">
-          <img src="/images/social_discord.svg" alt="Discord">
+        <a href="{{ .Site.Data.links.discord }}" target="_blank">
+          <img src="/images/social_discord.svg" alt="Discord" />
         </a>
-        <a href="{{.Site.Data.links.x}}" target="_blank">
-          <img src="/images/social_x.svg" alt="X (Twitter)">
+        <a href="{{ .Site.Data.links.x }}" target="_blank">
+          <img src="/images/social_x.svg" alt="X (Twitter)" />
         </a>
-        <a href="{{.Site.Data.links.telegram}}" target="_blank">
-          <img src="/images/social_telegram.svg" alt="Telegram">
+        <a href="{{ .Site.Data.links.telegram }}" target="_blank">
+          <img src="/images/social_telegram.svg" alt="Telegram" />
         </a>
-        <a href="{{.Site.Data.links.linkedin}}" target="_blank">
-          <img src="/images/social_linkedin.svg" alt="Discord">
+        <a href="{{ .Site.Data.links.linkedin }}" target="_blank">
+          <img src="/images/social_linkedin.svg" alt="Discord" />
         </a>
       </div>
     </nav>

@@ -1,7 +1,6 @@
 {{ define "title" }}{{ .Page.Title }}{{ end }}
 {{ define "main" }}
-  <section
-    class="container mx-auto px-4 py-8 pt-[10rem] relative z-20 flex-grow pb-20 flex flex-col min-h-full">
+  <section class="container mx-auto px-4 py-8 pt-[10rem] relative z-20 flex-grow pb-20 flex flex-col min-h-full">
     <div class="flex-grow">
       <div class="grid grid-cols-3 ">
         <div class="col-span-2">
@@ -10,11 +9,7 @@
           </h1>
         </div>
         <div class="col-span-1 text-right" style="text-align: -webkit-right;">
-          <svg
-            height="100"
-            viewBox="0 0 128 128"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+          <svg height="100" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1242_38647)">
               <path
                 d="M63.9987 25.4865C65.3792 25.4865 66.4987 24.367 66.4987 22.9865V10.2515C66.4987 8.87096 65.3795 7.75146 63.9987 7.75146C62.618 7.75146 61.4987 8.87071 61.4987 10.2515V22.9865C61.499 24.367 62.6182 25.4865 63.9987 25.4865Z"
@@ -46,21 +41,20 @@
     <div class="divider mt-[6rem]"></div>
     <div class="self-center">
       <p class="font-bold">
-        To explore the official communities managed by Pactus foundation, you
-        can follow the links below.
+        To explore the official communities managed by Pactus foundation, you can follow the links below.
       </p>
       <div class="flex gap-x-4 mt-5 text-center items-center justify-center social_big">
-        <a href="{{.Site.Data.links.discord}}" target="_blank">
-          <img src="/images/social_discord.svg" alt="Discord">
+        <a href="{{ .Site.Data.links.discord }}" target="_blank">
+          <img src="/images/social_discord.svg" alt="Discord" />
         </a>
-        <a href="{{.Site.Data.links.x}}" target="_blank">
-          <img src="/images/social_x.svg" alt="X (Twitter)">
+        <a href="{{ .Site.Data.links.x }}" target="_blank">
+          <img src="/images/social_x.svg" alt="X (Twitter)" />
         </a>
-        <a href="{{.Site.Data.links.telegram}}" target="_blank">
-          <img src="/images/social_telegram.svg" alt="Telegram">
+        <a href="{{ .Site.Data.links.telegram }}" target="_blank">
+          <img src="/images/social_telegram.svg" alt="Telegram" />
         </a>
-        <a href="{{.Site.Data.links.linkedin}}" target="_blank">
-          <img src="/images/social_linkedin.svg" alt="Discord">
+        <a href="{{ .Site.Data.links.linkedin }}" target="_blank">
+          <img src="/images/social_linkedin.svg" alt="Discord" />
         </a>
       </div>
     </div>

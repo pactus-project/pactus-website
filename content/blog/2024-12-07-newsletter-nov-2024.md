@@ -90,6 +90,7 @@ allowing validators to continue creating blocks as usual, the replay attack caus
 Upon detecting the issue, the development team quickly worked on a patch to help validators overcome the attack.
 The good news is that the network is now stable, and Pactus is immune to replay attacks.
 
-[^1]: The Pactus monthly newsletter is published on our website and
-distributed to subscribers via email during the first week of each month.
-It recaps key highlights and important news from the previous month.
+[^1]:
+    The Pactus monthly newsletter is published on our website and
+    distributed to subscribers via email during the first week of each month.
+    It recaps key highlights and important news from the previous month.

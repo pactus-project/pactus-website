@@ -3714,9 +3714,6 @@ html:has(.drawer-toggle:checked) {
 .mb-5 {
   margin-bottom: 1.25rem;
 }
-.mb-\[3px\] {
-  margin-bottom: 3px;
-}
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -3743,9 +3740,6 @@ html:has(.drawer-toggle:checked) {
 }
 .mr-5 {
   margin-right: 1.25rem;
-}
-.mr-\[3px\] {
-  margin-right: 3px;
 }
 .mt-10 {
   margin-top: 2.5rem;
@@ -3825,17 +3819,14 @@ html:has(.drawer-toggle:checked) {
 .h-16 {
   height: 4rem;
 }
-.h-2\.5 {
-  height: 0.625rem;
+.h-24 {
+  height: 6rem;
 }
 .h-4 {
   height: 1rem;
 }
 .h-5 {
   height: 1.25rem;
-}
-.h-\[23px\] {
-  height: 23px;
 }
 .h-\[25px\] {
   height: 25px;
@@ -3849,9 +3840,6 @@ html:has(.drawer-toggle:checked) {
 .h-full {
   height: 100%;
 }
-.max-h-full {
-  max-height: 100%;
-}
 .min-h-\[300px\] {
   min-height: 300px;
 }
@@ -3864,11 +3852,11 @@ html:has(.drawer-toggle:checked) {
 .min-h-screen {
   min-height: 100vh;
 }
-.w-2\.5 {
-  width: 0.625rem;
-}
 .w-20 {
   width: 5rem;
+}
+.w-24 {
+  width: 6rem;
 }
 .w-4 {
   width: 1rem;
@@ -3878,9 +3866,6 @@ html:has(.drawer-toggle:checked) {
 }
 .w-80 {
   width: 20rem;
-}
-.w-\[23px\] {
-  width: 23px;
 }
 .w-\[55px\] {
   width: 55px;
@@ -3987,10 +3972,6 @@ html:has(.drawer-toggle:checked) {
 .gap-5 {
   gap: 1.25rem;
 }
-.gap-x-1 {
-  -moz-column-gap: 0.25rem;
-       column-gap: 0.25rem;
-}
 .gap-x-3 {
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
@@ -3998,6 +3979,10 @@ html:has(.drawer-toggle:checked) {
 .gap-x-4 {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
+}
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
 .gap-y-4 {
   row-gap: 1rem;
@@ -4125,18 +4110,10 @@ html:has(.drawer-toggle:checked) {
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
-.from-\[\#00A186\] {
-  --tw-gradient-from: #00A186 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 161 134 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
 .from-\[\#FFFFFF\] {
   --tw-gradient-from: #FFFFFF var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.to-\[\#31ABC6\] {
-  --tw-gradient-to: #31ABC6 var(--tw-gradient-to-position);
 }
 .to-\[\#999999\] {
   --tw-gradient-to: #999999 var(--tw-gradient-to-position);
@@ -7089,308 +7066,4 @@ html {
 
 .peer:checked ~ .peer-checked\:\[\&\>svg\>\.arrow\]\:stroke-\[\#fff\]>svg>.arrow {
   stroke: #fff;
-}
-
-/* Become Button Styles */
-
-.become-btn {
-  border: none;
-  width: 13em;
-  height: 3em;
-  border-radius: 3em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  background: #1C1A1C;
-  cursor: pointer;
-  transition: all 450ms ease-in-out;
-}
-
-.become-btn .sparkle {
-  fill: #AAAAAA;
-  transition: all 800ms ease;
-}
-
-.become-btn .text {
-  font-weight: 400;
-  color: #AAAAAA;
-  font-size: medium;
-}
-
-.become-btn:hover {
-  background: linear-gradient(0deg, #6dd6c5, #00a085);
-  box-shadow:
-    inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
-    0px 0px 180px 0px #00a085;
-}
-
-.become-btn:hover .text {
-  color: white;
-}
-
-.become-btn:hover .sparkle {
-  fill: white;
-  transform: scale(1.2);
-}
-
-/* Buy Button Styles */
-.buy-button {
-  --cut: 0.1em;
-  --active: 1;
-  --bg: radial-gradient(
-      120% 120% at 126% 126%,
-      hsl(230 calc(var(--active) * 97%) 98% / calc(var(--active) * 0.9)) 40%,
-      transparent 50%
-    )
-    calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,
-    radial-gradient(
-      120% 120% at 120% 120%,
-      hsl(230 calc(var(--active) * 97%) 70% / calc(var(--active) * 1)) 30%,
-      transparent 70%
-    )
-    calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,
-    hsl(230 calc(var(--active) * 100%) calc(12% - (var(--active) * 8%)));
-
-  background: var(--bg);
-  font-size: medium;
-  font-weight: 400;
-  border: 0;
-  cursor: pointer;
-  padding: 0.9em 1.3em;
-  width: 13em;
-  height: 3.1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 0.25em;
-  white-space: nowrap;
-  border-radius: 2rem;
-  position: relative;
-  box-shadow:
-    0 0 6em 1em hsla(230, 97%, 61%, 0.3),
-    0 0.05em 0 0 hsl(230, 97%, 80%) inset,
-    0 -0.05em 0 0 hsl(230, 97%, 10%) inset;
-  transition:
-    box-shadow 0.25s ease-out,
-    scale 0.25s,
-    background 0.25s;
-  transform-style: preserve-3d;
-  perspective: 100vmin;
-  overflow: hidden;
-}
-
-.buy-button:hover,
-.buy-button:focus-visible,
-.buy-button:hover {
-  --bg: radial-gradient(
-        120% 120% at 126% 126%,
-        hsl(245 calc(var(--active) * 97%) 98% / calc(var(--active) * 0.9)) 40%,
-        transparent 50%
-      )
-      calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,
-    radial-gradient(
-        120% 120% at 120% 120%,
-        hsl(245 calc(var(--active) * 97%) 70% / calc(var(--active) * 1)) 30%,
-        transparent 70%
-      )
-      calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,
-    hsl(245 calc(var(--active) * 100%) calc(12% - (var(--active) * 8%)));
-  box-shadow:
-    0 0 6em 1em hsl(245 97% 61% / 0.5),
-    0 0.05em 0 0 hsl(245, 97%, 80%) inset,
-    0 -0.05em 0 0 hsl(245, 97%, 10%) inset;
-  background: var(--bg);
-  font-weight: 400;
-}
-
-.buy-button .text {
-  translate: 2% -6%;
-   color: hsl(230 0% calc(60% + (var(--active) * 26%)));
-  z-index: 999;
-  padding: 0 7px;
-  font-weight: 400;
-  cursor: pointer;
-  position: relative;
-}
-
-.buy-button .text::before,
-.buy-button .text::after {
-  content: "";
-  position: absolute;
-  top: -290%;
-  rotate: -45deg;
-  width: 5em;
-  height: 1px;
-  display: block;
-  z-index: -1;
-}
-
-.buy-button .text::before {
-  left: 90%;
-  background: linear-gradient(90deg, #ffffff, transparent);
-  animation: 4s shootingStar ease-in-out infinite;
-  animation-delay: 1s;
-}
-
-.buy-button .text::after {
-  left: 10%;
-  background: linear-gradient(90deg, #ffffff, transparent);
-  animation: 7s shootingStar ease-in-out infinite;
-  animation-delay: 3s;
-}
-
-
-.buy-button .sparkle {
- fill: hsl(0 0% 86%);
-  width: 24px;
-  height: 24px;
-  z-index: 999; /* Ensure SVG is on top */
-  transition: fill 0.25s, transform 0.25s;
-}
-
-.buy-button .galaxy {
-  position: absolute;
-  width: 100%;
-  aspect-ratio: 1;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  overflow: hidden;
-  opacity: var(--active);
-  transition: opacity 0.25s;
-}
-.buy-button .galaxy::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  opacity: 1;
-  box-shadow:
-    140px 20px #fff,
-    425px 20px #fff,
-    70px 120px #fff,
-    20px 130px #fff,
-    110px 80px #fff,
-    280px 80px #fff,
-    250px 350px #fff,
-    280px 230px #fff,
-    220px 190px #fff,
-    450px 100px #fff,
-    380px 80px #fff,
-    520px 50px #fff;
-  z-index: -1;
-  transition: all 1.5s ease-in-out;
-  animation: 1s glowing-stars linear alternate infinite;
-  animation-delay: 0.4s;
-}
-.buy-button .galaxy::after {
-  content: "";
-  position: absolute;
-  top: -150px;
-  left: -65px;
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  opacity: 1;
-  box-shadow:
-    490px 330px #fff,
-    420px 300px #fff,
-    320px 280px #fff,
-    380px 350px #fff,
-    546px 170px #fff,
-    420px 180px #fff,
-    370px 150px #fff,
-    200px 250px #fff,
-    80px 20px #fff,
-    190px 50px #fff,
-    270px 20px #fff,
-    120px 230px #fff,
-    350px -1px #fff,
-    150px 369px #fff;
-  z-index: -1;
-  transition: all 2s ease-in-out;
-  animation: 1s glowing-stars linear alternate infinite;
-  animation-delay: 0.8s;
-}
-.buy-button .galaxy:hover::before {
-  animation: circling 2s linear infinite;
-}
-.buy-button .galaxy:hover::after {
-  animation: circling 1.5s linear infinite;
-}
-
-.buy-button .backdrop {
-  position: absolute;
-  inset: var(--cut);
-  background: var(--bg);
-  border-radius: 2rem;
-  transition: background 0.25s;
-}
-
-/* Animation keyframes (global, but can be scoped if needed) */
-@keyframes shootingStar {
-  0% { transform: translateX(0) translateY(0); opacity: 1;}
-  50% { transform: translateX(-55em) translateY(0); opacity: 1;}
-  70% { transform: translateX(-70em) translateY(0); opacity: 0;}
-  100% { transform: translateX(0) translateY(0); opacity: 0;}
-}
-@keyframes glowing-stars {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
-}
-@keyframes circling {
-  0% { transform: translate(-10px, -20%) rotate(0deg); }
-  100% { transform: translate(-10px, -20%) rotate(200deg); }
-}
-
-@keyframes shootingStar {
-  0% {
-    transform: translateX(0) translateY(0);
-    opacity: 1;
-  }
-  50% {
-    transform: translateX(-55em) translateY(0);
-    opacity: 1;
-  }
-  70% {
-    transform: translateX(-70em) translateY(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0) translateY(0);
-    opacity: 0;
-  }
-}
-
-@supports (selector(:has(:is(+ *)))) {
-  body:has(.buy-button:is(:hover, :focus-visible)) {
-    --active: 1;
-    --play-state: running;
-  }
-  .bodydrop {
-    display: none;
-  }
-}
-
-.buy-button:is(:hover, :focus-visible) ~ :is(.bodydrop, .particle-pen) {
-  --active: 1;
-  --play-state: running;
-}
-
-.buy-button:is(:hover, :focus-visible) {
-  --active: 1;
-  --play-state: running;
-}
-
-
-.robot-margine {
-  margin-top: 250px;
 }

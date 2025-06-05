@@ -24,10 +24,7 @@
     </div>
     <div class="block text-center items-center">
       <div class="mt-20 text-center items-center w-full relative">
-        <div
-          class="flex gap-x-4 justify-center"
-          data-aos-duration="1000"
-          data-aos="fade-up">
+        <div class="flex gap-x-4 justify-center" data-aos-duration="1000" data-aos="fade-up">
           {{ if .PrevInSection }}
             <a
               href="{{ .PrevInSection.Permalink }}"
@@ -37,7 +34,7 @@
             >
           {{ else }}
             <a
-            href="#"
+              href="#"
               class="btn-disabled btn btn-ghost !px-8 rounded-lg shadow-top-left-to-bottom-right text-neutral-50"
               >Previous</a
             >

@@ -70,6 +70,7 @@ making blockchain interaction even more accessible.
 But we’re not stopping there—future plans include WhatsApp integration and a dedicated Pagu website,
 cementing Pactus with a multi-platform interactive bot.
 
-[^1]: The Pactus monthly newsletter is published on our website and
-distributed to subscribers via email during the first week of each month.
-It recaps key highlights and important news from the previous month.
+[^1]:
+    The Pactus monthly newsletter is published on our website and
+    distributed to subscribers via email during the first week of each month.
+    It recaps key highlights and important news from the previous month.

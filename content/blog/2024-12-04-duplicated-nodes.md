@@ -21,16 +21,16 @@ When considering the cost of running multiple machines, their rewards ended up d
 In the Pactus network, nodes are identified by two keys:
 
 1. **Network Key:**
-  The network key assigns an ID to the node and encrypts its messages within the peer-to-peer (P2P) network.
-  It plays no role in the consensus algorithm, meaning a node operator can delete the `network_key` file,
-  and Pactus will generate a new one for that node.
-  However, this practice is not recommended, especially for bootstrap validators.
+   The network key assigns an ID to the node and encrypts its messages within the peer-to-peer (P2P) network.
+   It plays no role in the consensus algorithm, meaning a node operator can delete the `network_key` file,
+   and Pactus will generate a new one for that node.
+   However, this practice is not recommended, especially for bootstrap validators.
 
 2. **Validator Keys:**
-  Each node can be associated with one or more validator keys,
-  which uniquely identify the validators within the consensus algorithm.
-  These keys cannot be changed arbitrarily, as the consensus algorithm relies on them to track and
-  verify the actions of each validator.
+   Each node can be associated with one or more validator keys,
+   which uniquely identify the validators within the consensus algorithm.
+   These keys cannot be changed arbitrarily, as the consensus algorithm relies on them to track and
+   verify the actions of each validator.
 
 A duplicated node is defined as a node that shares the same validator keys but
 uses a different network key and operates on a different machine.
