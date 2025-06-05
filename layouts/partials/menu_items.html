@@ -13,9 +13,12 @@
   "type" "dropdown"
   "items" (slice
   (dict "title" "Get Started" "url" "https://docs.pactus.org/get-started/" "icon" "vduvxizq.json" "external" true)
-  (dict "title" "Become a validator" "url" "https://docs.pactus.org/get-started/become-a-validator/" "icon" "system-regular-16-assessment.json" "external" true)
-  (dict "title" "Protocol" "url" "https://docs.pactus.org/protocol/" "icon" "system-regular-178-work.json" "external" true)
-  (dict "title" "Tutorial" "url" "https://docs.pactus.org/tutorials/" "icon" "system-regular-19-book.json" "external" true)
+  (dict "title" "Become a validator" "url" "https://docs.pactus.org/get-started/become-a-validator/" "icon"
+  "system-regular-16-assessment.json" "external" true)
+  (dict "title" "Protocol" "url" "https://docs.pactus.org/protocol/" "icon" "system-regular-178-work.json" "external"
+  true)
+  (dict "title" "Tutorial" "url" "https://docs.pactus.org/tutorials/" "icon" "system-regular-19-book.json" "external"
+  true)
   (dict "title" "API Reference" "url" "https://docs.pactus.org/api/" "icon" "system-regular-34-code.json" "external" true)
   )
   )
@@ -36,13 +39,21 @@
   (dict "title" "Buy PAC" "url" "buy-pac" "icon" "wired-outline-298-coins-hover-jump.json")
   (dict "title" "Community" "url" "community" "icon" "system-regular-47-chat-hover-chat.json")
   (dict "title" "Contributing" "url" "contributing" "icon" "system-regular-156-thumbs-up-down-hover-thumbs.json")
-  (dict "title" "Block Explorer" "url" "https://pacviewer.com/" "icon" "system-regular-42-search-hover-search.json" "external" true)
-  (dict "title" "Pactus wallet" "url" "https://wallet.pactus.org" "icon" "system-regular-5-wallet-hover-wallet.json" "external" true)
-  (dict "title" "Pagu" "url" "https://pagu.bot/" "icon" "wired-outline-2803-engagement-alt-hover-pinch.json" "external" true)
-  (dict "title" "PIPs" "url" "https://pips.pactus.org/" "icon" "system-regular-17-assignment-hover-assignment.json" "external" true)
-  (dict "title" "Source code" "url" "https://github.com/pactus-project/" "icon" "system-regular-50-file-hover-file-1.json" "external" true)
-  (dict "title" "Whitepaper" "url" "https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" "icon" "system-regular-14-article-hover-article.json" "external" true)
-  (dict "title" "Investor Deck" "url" "/pdf/pactus-investor-deck-public-final.pdf" "icon" "system-regular-16-assessment-hover-assessment.json" "external" true)
+  (dict "title" "Block Explorer" "url" "https://pacviewer.com/" "icon" "system-regular-42-search-hover-search.json"
+  "external" true)
+  (dict "title" "Pactus wallet" "url" "https://wallet.pactus.org" "icon" "system-regular-5-wallet-hover-wallet.json"
+  "external" true)
+  (dict "title" "Pagu" "url" "https://pagu.bot/" "icon" "wired-outline-2803-engagement-alt-hover-pinch.json" "external"
+  true)
+  (dict "title" "PIPs" "url" "https://pips.pactus.org/" "icon" "system-regular-17-assignment-hover-assignment.json"
+  "external" true)
+  (dict "title" "Source code" "url" "https://github.com/pactus-project/" "icon" "system-regular-50-file-hover-file-1.json"
+  "external" true)
+  (dict "title" "Whitepaper" "url"
+  "https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" "icon"
+  "system-regular-14-article-hover-article.json" "external" true)
+  (dict "title" "Investor Deck" "url" "/pdf/pactus-investor-deck-public-final.pdf" "icon"
+  "system-regular-16-assessment-hover-assessment.json" "external" true)
   )
   )
   }}
@@ -62,7 +73,7 @@
                   class="h-[25px] md:h-[30px]"
                   target=".icon-target"
                   trigger="hover"
-                  src="/icons/{{ .icon }}"
+                  src="/images/lottie/{{ .icon }}"
                   colors="primary:#fff,secondary:#fff">
                 </lord-icon>
                 {{ .title }}
