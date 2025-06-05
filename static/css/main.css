@@ -4341,6 +4341,9 @@ html:has(.drawer-toggle:checked) {
 .text-transparent {
   color: transparent;
 }
+.underline {
+  text-decoration-line: underline;
+}
 .no-underline {
   text-decoration-line: none;
 }
