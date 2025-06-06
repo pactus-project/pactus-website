@@ -74,7 +74,7 @@ application from [here](https://pactus.org/download/).
 Check the setup and installation guide
 [here](https://github.com/pactus-project/pactus/blob/main/docs/install.md).
 
-Buy Pactus coin (PAC), the native coin of Pactus blockchain, from CEX like
+Obtain Pactus coin (PAC), the native coin of Pactus blockchain, from CEX like
 [Azbit](https://azbit.com/exchange/PAC_USDT), [TradeOgre](https://tradeogre.com/exchange/PAC-USDT)
 and DEX like [Uniswap](https://app.uniswap.org/).
 
