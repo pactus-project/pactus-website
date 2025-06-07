@@ -20,14 +20,6 @@
       a: >
         No, Pactus didn't have any ICO or Initial Coin Offering.
 
-    - id: no_pre_sales
-      q: Where can I buy Pactus coins?
-      a: >
-        Pactus does not have any pre-sales coins.
-        The only way to obtain Pactus coins at the moment is by installing the Pactus software and
-        actively participating in block validation.
-        By engaging in the network and contributing to block validation, you will be rewarded with Pactus coins.
-
     - id: why_develop_pactus
       q: Why was  Pactus developed?
       a: >
