@@ -2048,9 +2048,8 @@ html {
     --active: 1;
     --play-state: running;
   }
+}
 
-
-  .robot-margine {
-    margin-top: 250px;
-  }
+.pagu-margine {
+  margin-top: 250px;
 }
