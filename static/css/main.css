@@ -6270,86 +6270,6 @@ html {
     transition: background 0.25s;
   }
 
-  /* Animation keyframes (global, but can be scoped if needed) */
-  @keyframes shootingStar {
-    0% {
-      transform: translateX(0) translateY(0);
-      opacity: 1;
-    }
-
-    50% {
-      transform: translateX(-55em) translateY(0);
-      opacity: 1;
-    }
-
-    70% {
-      transform: translateX(-70em) translateY(0);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateX(0) translateY(0);
-      opacity: 0;
-    }
-  }
-
-  @keyframes glowing-stars {
-    0% {
-      opacity: 0;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-
-  @keyframes circling {
-    0% {
-      transform: translate(-10px, -20%) rotate(0deg);
-    }
-
-    100% {
-      transform: translate(-10px, -20%) rotate(200deg);
-    }
-  }
-
-  @keyframes shootingStar {
-    0% {
-      transform: translateX(0) translateY(0);
-      opacity: 1;
-    }
-
-    50% {
-      transform: translateX(-55em) translateY(0);
-      opacity: 1;
-    }
-
-    70% {
-      transform: translateX(-70em) translateY(0);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateX(0) translateY(0);
-      opacity: 0;
-    }
-  }
-
-  @supports (selector(:has(:is(+ *)))) {
-    body:has(.obtain-button:is(:hover, :focus-visible)) {
-      --active: 1;
-      --play-state: running;
-    }
-
-    .bodydrop {
-      display: none;
-    }
-  }
-
   .obtain-button:is(:hover, :focus-visible)~ :is(.bodydrop, .particle-pen) {
     --active: 1;
     --play-state: running;
@@ -6358,6 +6278,86 @@ html {
   .obtain-button:is(:hover, :focus-visible) {
     --active: 1;
     --play-state: running;
+  }
+}
+
+/* Animation keyframes (global, but can be scoped if needed) */
+@keyframes shootingStar {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(-55em) translateY(0);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateX(-70em) translateY(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+}
+
+@keyframes glowing-stars {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes circling {
+  0% {
+    transform: translate(-10px, -20%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-10px, -20%) rotate(200deg);
+  }
+}
+
+@keyframes shootingStar {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(-55em) translateY(0);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateX(-70em) translateY(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+}
+
+@supports (selector(:has(:is(+ *)))) {
+  body:has(.obtain-button:is(:hover, :focus-visible)) {
+    --active: 1;
+    --play-state: running;
+  }
+
+  .bodydrop {
+    display: none;
   }
 }
 

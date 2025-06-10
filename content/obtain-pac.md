@@ -31,7 +31,7 @@ ease of use, fiat options, and customer support.
     <img src="/images/exchange/xeggex.svg" style="height: 48px" class="object-contain mx-auto" alt="Xeggex" />
   </a>
   <a target="_blank" href="https://azbit.com/exchange/PAC_USDT" title="Azbit">
-    <img src="/images/exchange/azbit.svg" style="height: 48px" class="object-contain mx-auto" alt="Azbit" />
+    <img src="/images/exchange/azbit.png" style="height: 48px" class="object-contain mx-auto" alt="Azbit" />
   </a>
 </div>
 
