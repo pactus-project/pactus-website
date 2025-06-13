@@ -1427,29 +1427,6 @@ html {
   position: relative;
 }
 
-.btn-join-community {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10rem;
-  overflow: hidden;
-  height: 3rem;
-  background-size: 300% 300%;
-  backdrop-filter: blur(1rem);
-  border-radius: 0.5rem;
-  transition: 0.5s;
-  animation: gradient_301 5s ease infinite;
-  border: double 4px transparent;
-  background-image: linear-gradient(#161a25, #161a25),
-    linear-gradient(137.48deg,
-      rgba(112, 100, 233, 1) 10%,
-      #14376b 45%,
-      #000000 67%,
-      #161a25 87%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-
 .container-stars {
   position: absolute;
   z-index: -1;
@@ -1459,11 +1436,6 @@ html {
   transition: 0.5s;
   backdrop-filter: blur(1rem);
   border-radius: 0.5rem;
-}
-
-.btn-join-community strong {
-  z-index: 2;
-  color: #ffffff;
 }
 
 .glow {
@@ -1495,26 +1467,6 @@ html {
 .circle:nth-of-type(2) {
   background: rgba(99, 30, 41, 0.704);
   animation: orbit 10s linear infinite;
-}
-
-.btn-join-community:hover .container-stars {
-  z-index: 1;
-  background-color: #161a25;
-}
-
-.btn-join-community:hover {
-  transform: scale(1.1);
-}
-
-.btn-join-community:active {
-  border: double 4px #631e29;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  animation: none;
-}
-
-.btn-join-community:active .circle {
-  background: #631e29;
 }
 
 @keyframes orbit {
