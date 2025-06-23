@@ -1651,8 +1651,10 @@ html {
   }
 
   img {
-    padding: 0px;
+    padding: 0 16px 0 0;
     margin: 0px;
+    width: 52px;
+    height: 52px;
   }
 }
 
@@ -1662,9 +1664,10 @@ html {
   }
 
   img {
-    padding: 0px;
+    padding: 0 12px 0 0;
     margin: 0px;
-    width: 64px;
+    width: 40px;
+    height: 40px;
   }
 }
 
