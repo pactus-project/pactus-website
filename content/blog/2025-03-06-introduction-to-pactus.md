@@ -96,5 +96,5 @@ Ready to create a fairer digital world? Join Pactus today and help build a techn
 accessibility powers innovation, community drives security, and everyone shares in the benefits of
 blockchain's true potential, all through a platform that’s fast, affordable, and designed for real people.
 
-Join the Pactus community now on [X](https://x.com/PactusChain) and [Discord](https://discord.gg/pactus)
+Join the Pactus community now on [X](https://x.com/PactusChain) and [Discord](https://discord.gg/H5vZkNnXCu)
 —where tomorrow's technology is built on fairness, innovation, and collaboration!
