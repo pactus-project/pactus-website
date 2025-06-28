@@ -27,9 +27,6 @@ ease of use, fiat options, and customer support.
   <a target="_blank" href="https://tradeogre.com/exchange/PAC-USDT" title="Tradeogre">
     <img src="/images/exchange/tradeogre.svg" style="height: 48px" class="object-contain mx-auto" alt="Tradeogre" />
   </a>
-  <a target="_blank" href="https://xeggex.com/market/PACTUS_USDT" title="Xeggex">
-    <img src="/images/exchange/xeggex.svg" style="height: 48px" class="object-contain mx-auto" alt="Xeggex" />
-  </a>
   <a target="_blank" href="https://azbit.com/exchange/PAC_USDT" title="Azbit">
     <img src="/images/exchange/azbit.png" style="height: 48px" class="object-contain mx-auto" alt="Azbit" />
   </a>
