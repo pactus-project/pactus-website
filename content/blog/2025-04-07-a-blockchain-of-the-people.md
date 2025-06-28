@@ -49,5 +49,5 @@ Blockchain was never meant to make the rich richer or keep power in the hands of
 meant to equalize the digital world. That's what we're here to do.
 
 Want to be part of a digital future that is fair and accessible to everyone? Be part of the movement.
-Join the Pactus community today on [X](https://x.com/pactuschain/) and [Discord](https://discord.gg/pactus)
+Join the Pactus community today on [X](https://x.com/pactuschain/) and [Discord](https://discord.gg/H5vZkNnXCu)
 and help shape the future of blockchain through fairness, innovation, and collaboration!

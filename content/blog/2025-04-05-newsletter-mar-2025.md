@@ -33,7 +33,7 @@ This initiative presents a unique opportunity for early supporters to acquire $P
 We note with appreciation that 60% of the available allocation has already been committed,
 demonstrating strong community confidence in Pactus' long-term vision.
 Interested participants may contribute through “Pagu”
-on [Discord](http://discord.gg/pactus) or
+on [Discord](https://discord.gg/H5vZkNnXCu) or
 [Telegram](https://t.me/pactus_pagu_bot) with the `crowdfund` commands.
 
 ### Pactus Expands to Binance Smart Chain
