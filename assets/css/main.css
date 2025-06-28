@@ -2008,3 +2008,8 @@ html {
 .pagu-margine {
   margin-top: 250px;
 }
+
+.alert-success a {
+  color: #000000 !important;
+  text-decoration: underline;
+}
