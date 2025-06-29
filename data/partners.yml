@@ -53,7 +53,3 @@
 - name: "Azbit Exchange"
   url: "https://azbit.com/exchange/PAC_USDT"
   logo: "azbit.png"
-
-- name: "Xeggex Exchange"
-  url: "https://xeggex.com/market/PACTUS_USDT"
-  logo: "xeggex.svg"
