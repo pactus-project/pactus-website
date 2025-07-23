@@ -24,11 +24,15 @@ ease of use, fiat options, and customer support.
 ## Centralized Exchange
 
 <div class="grid grid-cols-3 gap-x-6 items-center">
+  <a target="_blank" href="https://azbit.com/exchange/PAC_USDT" title="Azbit">
+    <img src="/images/exchange/azbit.png" style="height: 48px" class="object-contain mx-auto" alt="Azbit" />
+  </a>
   <a target="_blank" href="https://tradeogre.com/exchange/PAC-USDT" title="Tradeogre">
     <img src="/images/exchange/tradeogre.svg" style="height: 48px" class="object-contain mx-auto" alt="Tradeogre" />
   </a>
-  <a target="_blank" href="https://azbit.com/exchange/PAC_USDT" title="Azbit">
-    <img src="/images/exchange/azbit.png" style="height: 48px" class="object-contain mx-auto" alt="Azbit" />
+
+  <a target="_blank" href="https://exbitron.com/" title="Exbitron/">
+    <img src="/images/exchange/exbitron.svg" style="height: 48px" class="object-contain mx-auto" alt="Exbitron" />
   </a>
 </div>
 
