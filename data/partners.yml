@@ -1,7 +1,3 @@
-- name: "sensifai"
-  url: "https://sensifai.com/"
-  logo: "sensifai.svg"
-
 - name: "PacViewer"
   url: "https://pacviewer.com/"
   logo: "pacviewer.png"
