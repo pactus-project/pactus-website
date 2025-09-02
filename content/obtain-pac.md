@@ -21,21 +21,6 @@ ease of use, fiat options, and customer support.
   </a>
 </div>
 
-## Centralized Exchange
-
-<div class="grid grid-cols-3 gap-x-6 items-center">
-  <a target="_blank" href="https://azbit.com/exchange/PAC_USDT" title="Azbit">
-    <img src="/images/exchange/azbit.png" style="height: 48px" class="object-contain mx-auto" alt="Azbit" />
-  </a>
-  <a target="_blank" href="https://tradeogre.com/exchange/PAC-USDT" title="Tradeogre">
-    <img src="/images/exchange/tradeogre.svg" style="height: 48px" class="object-contain mx-auto" alt="Tradeogre" />
-  </a>
-
-  <a target="_blank" href="https://exbitron.com/" title="Exbitron/">
-    <img src="/images/exchange/exbitron.svg" style="height: 48px" class="object-contain mx-auto" alt="Exbitron" />
-  </a>
-</div>
-
 ## Decentralized Exchange
 
 <div class="grid grid-cols-3 gap-x-6 items-center">
@@ -47,5 +32,17 @@ ease of use, fiat options, and customer support.
   </a>
   <a target="_blank" href="https://dexscreener.com/base/0x10004a9A742ec135c686C9aCed00FA3C93D66866" title="Base">
     <img src="/images/exchange/base.svg" style="height: 48px" class="object-contain mx-auto" alt="Base" />
+  </a>
+</div>
+
+## Centralized Exchange
+
+<div class="grid grid-cols-3 gap-x-6 items-center">
+  <a target="_blank" href="https://azbit.com/exchange/PAC_USDT" title="Azbit">
+    <img src="/images/exchange/azbit.png" style="height: 48px" class="object-contain mx-auto" alt="Azbit" />
+  </a>
+
+  <a target="_blank" href="https://exbitron.com/" title="Exbitron/">
+    <img src="/images/exchange/exbitron.svg" style="height: 48px" class="object-contain mx-auto" alt="Exbitron" />
   </a>
 </div>

@@ -58,7 +58,7 @@
               class="collapse join-item"
               id="{{ printf `%s.%s` $group_id $item.id }}"
               onclick="changeUrlID({{ printf `%s.%s` $group_id $item.id }})">
-              <input type="checkbox" name="{{ $group_id }}" class="peer" aria-checked="false" />
+              <input type="checkbox" name="{{ $group_id }}" class="peer" />
               <div class="collapse-title text-lg md:text-xl text-neutral-50 items-center">
                 <div>{{ $item.q }}</div>
               </div>
