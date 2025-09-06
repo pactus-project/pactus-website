@@ -10,7 +10,7 @@ This script allows you to crop an image to a specific aspect ratio while providi
 
 ## Usage
 ```sh
-python3 image_cropper.py <input_image> <output_image> [--ratio <aspect_ratio>] [--direction <crop_direction>]
+python3 crop_image.py <input_image> <output_image> [--ratio <aspect_ratio>] [--direction <crop_direction>]
 ```
 
 ### Arguments
@@ -22,10 +22,10 @@ python3 image_cropper.py <input_image> <output_image> [--ratio <aspect_ratio>] [
 ### Examples
 Crop an image to 16:9 from the center:
 ```sh
-python3 image_cropper.py input.jpg output.jpg
+python3 crop_image.py input.jpg output.jpg
 ```
 
 Crop an image to 4:3 from the top:
 ```sh
-python3 image_cropper.py input.jpg output.jpg --ratio 4/3 --direction top
+python3 crop_image.py input.jpg output.jpg --ratio 4/3 --direction top
 ```
