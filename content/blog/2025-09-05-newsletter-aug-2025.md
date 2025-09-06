@@ -53,6 +53,7 @@ September will focus on monitoring the PIP-43 trial fork,
 ensuring progress on Testnet for a smooth and confident implementation to mainnet.
 
 We’ll also:
+
 - Engage the community in further governance discussions.
 - Continue strengthening educational outreach.
 - Release more details on the mainnet activation block.
