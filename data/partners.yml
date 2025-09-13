@@ -15,7 +15,7 @@
   logo: "coingecko.png"
 
 - name: "CoinMarketCap"
-  url: "https://coinmarketcap.com/community/profile/pactus/"
+  url: "https://coinmarketcap.com/currencies/pactus/"
   logo: "coinmarketcap.svg"
 
 - name: "Forbes"
