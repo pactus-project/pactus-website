@@ -21,7 +21,7 @@
         No, Pactus didn't have any ICO or Initial Coin Offering.
 
     - id: why_develop_pactus
-      q: Why was  Pactus developed?
+      q: Why was Pactus developed?
       a: >
         Pactus was developed with the goal of scaling blockchain without compromising security and decentralization.
         To achieve this, Pactus utilizes a unique consensus mechanism that
@@ -90,26 +90,34 @@
     - id: min_and_max_stake
       q: What are the minimum and maximum amounts I can stake?
       a: >
-        In Pactus, there is no minimum limit for staking coins, but the maximum amount you can stake is 1000 coins.
+        In Pactus, the minimum amount you can stake is 1 coin, and the maximum amount you can stake is 1000 coins.
         If you want to stake more than 1000 coins, you can run a new validator.
         Running multiple validators keeps the network more decentralized and helps maintain its security and stability.
+      more: https://docs.pactus.org/protocol/consensus/parameters/
 
     - id: min_hardware_requirements
       q: What are the minimum hardware requirements?
       a: >
         After thorough testing on multiple machines, we can conclude that the recommended minimum hardware
         requirements are as follows:<br><br>
-        VPS:<br>
-        * CPU's: 1/2 physical core / 1vCPU<br>
-        * RAM: 1 GB Ram<br>
-        * Storage (SSD): 20 GB NVMe Drive<br>
-        * Network: stable internet connection with 1 TBps speed<br><br>
-        PC:<br>
-        * CPU's: 2 physical cores / 4vCPU<br>
-        * RAM: 4 GB Ram<br>
-        * Storage (SSD): 64 GB SSD Drive<br>
-        * Network: stable internet connection with over 15 MBps speed<br><br>
-        **Note** These specifications have been tested and provide an availability score of over 0.9.
+        <b>VPS (Virtual Private Server):</b><br>
+        <ul>
+        <li>CPU: 2 physical core</li>
+        <li>RAM: 2-4 GB</li>
+        <li>Storage: 40 GB (Full Node) or 1 GB (<a href="https://docs.pactus.org/tutorials/pruned-nodes/">Pruned Node</a>)</li>
+        <li>Network: stable internet connection with 100 Mbps speed</li>
+        </ul>
+        <br>
+        <b>PC (Personal Computer):</b><br>
+        <ul>
+        <li>CPU: 2 physical cores</li>
+        <li>RAM: 2-4 GB</li>
+        <li>Storage: 40 GB (Full Node) or 1 GB (<a href="https://docs.pactus.org/tutorials/pruned-nodes/">Pruned Node</a>)</li>
+        <li>Network: stable internet connection with over 15 Mbps speed</li>
+        </ul>
+        <br>
+
+        <b>Note:</b> These specifications have been tested and provide an availability score of over 0.9.
       more: https://pips.pactus.org/PIPs/pip-19
 
     - id: staking_limit
@@ -119,6 +127,7 @@
         prevents validators from gaining too much power, which could potentially lead them to control the committee.
         The maximum staking limit is part of the consensus parameters and
         can be changed in the future through consensus among the validators.
+      more: https://docs.pactus.org/protocol/consensus/parameters/
 
     - id: multiple_validators
       q: Can I run multiple validators on one computer?
@@ -135,7 +144,8 @@
       q: How do validators get rewarded?
       a: >
         Once a validator proposes a valid block and it is accepted by the network,
-        the validator receives one coin as a block reward.
+        the validator receives 0.7 coins as a block reward (70% of the total block reward).
+        The remaining 0.3 coins (30%) are distributed to the Pactus Foundation.
         The reward is an incentive given to validators for their contribution to the network.
       more: https://docs.pactus.org/protocol/blockchain/incentive
 
@@ -143,15 +153,18 @@
       q: How much is the block reward in Pactus?
       a: >
         Block reward in Pactus is fixed, and it is always one coin per block.
+        However, this reward is now split between the validator and the Pactus Foundation:
+        0.7 coins (70%) go to the validator who proposed the block, and 0.3 coins (30%) go to the Pactus Foundation.
         This flat reward scheme helps to ensure simplicity, fairness and better coin distribution.
-      img: pactus-reward.png
+      img: pactus-flat-reward.png
       more: https://docs.pactus.org/protocol/blockchain/incentive/#flat-reward
 
     - id: coins_per_day
       q: How many PAC coins are generated per day?
       a: >
         Daily, a total amount of 8640 PAC is generated.
-        This figure translates to 241,000 every 28 days and 3,153,600 per year.
+        This figure translates to 259,200 every 30 days and 3,153,600 per year.
+      more: https://docs.pactus.org/protocol/blockchain/incentive/
 
 ################################################################################
 - title: Consensus
@@ -194,6 +207,7 @@
         The process of sortition in Pactus is random, so it's possible for more than
         one validator to enter the committee at once,
         or no validator at all. However, on average, one validator should join the committee at each block.
+      more: https://docs.pactus.org/protocol/consensus/sortition/
 
     - id: fork_possibility
       q: Is it possible to have two valid blocks at the same time?
@@ -218,114 +232,105 @@
       q: What is the total supply of Pactus coins?
       a: >
         Pactus has a total supply of 42 million coins, and each coin is divided into 1 billion units.
-        $$ 1 \  PAC = 10^9 \  SatoshiPAC $$
+        $$ 1 \text{ PAC} = 10^9 \text{ NonoPAC} $$
 
-    - id: genesis_allocation
-      q: How are Genesis Coins allocated in Pactus?
-      a: '
-        <span style="color:red">The reserved allocations are subject to transfer into the Treasury account.
-        Read more in <a href="https://pips.pactus.org/PIPs/pip-32">PIP-32</a>.</span><br><br>
-        The initial allocation of Genesis Coins in the Pactus blockchain is distributed as follows:
-        <div class="overflow-x-auto">
-        <table class="table w-full table-zebra">
-          <caption>Genesis Coin Allocation for Pactus</caption>
-          <thead class="text-left">
-              <tr>
-                  <th>Category</th>
-                  <th>Coin Allocation</th>
-                  <th>Percentage</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>Treasury</td>
-                  <td>21 Million coins</td>
-                  <td>50%</td>
-              </tr>
-              <tr>
-                  <td>Foundation</td>
-                  <td>8.4 Million coins</td>
-                  <td>20%</td>
-              </tr>
-              <tr>
-                  <td>VC Allocation</td>
-                  <td>6.3 Million coins</td>
-                  <td>15%</td>
-              </tr>
-              <tr>
-                  <td>Team and Operations</td>
-                  <td>4.2 Million coins</td>
-                  <td>10%</td>
-              </tr>
-              <tr>
-                  <td>Community</td>
-                  <td>2.1 Million coins</td>
-                  <td>5%</td>
-              </tr>
-          </tbody>
-        </table>
-        </div>
-        '
+    - id: coin_allocation
+      q: How are coins allocated in Pactus?
+      a: >
+        The coin allocation in the Pactus blockchain is distributed as follows:
+          <table class="table w-full table-zebra">
+            <caption>Coin Allocation for Pactus</caption>
+            <thead class="text-left">
+                <tr>
+                    <th>Category</th>
+                    <th>Address</th>
+                    <th>Coin Allocation</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Treasury</td>
+                    <td><a href="https://pacview.org/address/000000000000000000000000000000000000000000">
+                      000000000000000000000000000000000000000000</a></td>
+                    <td>33.6 Million coins</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>VC Allocation</td>
+                    <td><a href="https://pacview.org/address/pc1zprhnvcsy3pthekdcu28cw8muw4f432hkwgfasv">
+                      pc1zprhnvcsy3pthekdcu28cw8muw4f432hkwgfasv</a></td>
+                    <td>6.3 Million coins</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>Community</td>
+                    <td><a href="https://pacview.org/address/pc1zs64vdggjcshumjwzaskhfn0j9gfpkvche3kxd3">
+                      pc1zs64vdggjcshumjwzaskhfn0j9gfpkvche3kxd3</a></td>
+                    <td>2.1 Million coins</td>
+                    <td>5%</td>
+                </tr>
+            </tbody>
+          </table>
+
+        <b>Note:</b> This chart reflects the current allocation after the activation of
+        <a href="https://pips.pactus.org/PIPs/pip-43">PIP-43</a>.
+        The original Genesis coin allocation can be found
+        <a href="https://github.com/pactus-project/pactus/blob/main/genesis/mainnet.json">here</a>.
       img: pactus-coin-allocation.png
 
     - id: treasury_account
       q: What is the Treasury account?
       a: >
         The Treasury account is a special account in Pactus blockchain that
-        holds 21 million coins at the genesis time.
+        holds the block rewards coins.
         It has no key pair associated with it, meaning it cannot be accessed or controlled by anyone.
-        Every time a block is created, one coin from the Treasury account transfers to
-        the proposer account as a block reward.
-        more: https://docs.pactus.org/protocol/blockchain/account/#treasury-account
+        Every time a block is created, one coin from the Treasury account is distributed as a block reward.
+      more: https://docs.pactus.org/protocol/blockchain/account/#treasury-account
 
-    - id: treasury_distribution
-      q: How will the Treasury coins be distributed?
+    - id: reward_distribution
+      q: How will the block rewards be distributed?
       a: >
-        Treasury coins are distributed as block rewards to the block proposers.
-        Every 10 seconds, one coin from the Treasury account transfers to the block proposer account.
+        Every 10 seconds, one coin from the Treasury account is distributed as a block reward.
         This process is called "coin minting".
         As a result, the total number of Pactus coins in circulation gradually
         increases over time as new blocks are added to the blockchain.
         Every day, 8,640 coins are minted, resulting in approximately 3 million coins being minted annually
         by the Treasury account.
-      img: pactus-coin-distribution.png
+      img: pactus-reward-distribution.png
       more: https://docs.pactus.org/protocol/blockchain/incentive/#coin-distribution
+
+    - id: reward_split
+      q: What is the reward split mechanism?
+      a: >
+        The reward split mechanism, introduced in PIP-43, modifies how block rewards are distributed in Pactus:
+          <ul>
+            <li><b>70% to Validators:</b> The validator who proposes a block receives 0.7 coins as their reward.</li>
+            <li><b>30% to Pactus Foundation:</b> The remaining 0.3 coins are distributed to the Pactus Foundation addresses.</li>
+          </ul>
+        This mechanism enhances sustainability and trust in the Pactus economy by providing predictable,
+        transparent funding for the foundation's operations and ecosystem growth.
+      more: https://pips.pactus.org/PIPs/pip-43
 
     - id: support_distribution
       q: How will the Support coins be spent?
-      a: '
-        <span style="color:red">The reserved allocations are subject to transfer into the Treasury account.
-        Read more in <a href="https://pips.pactus.org/PIPs/pip-32">PIP-32</a>.</span><br><br>
-        The support accounts are designed to provide financial backing for the project.
-        Initially, Pactus Genesis contained only the Treasury accounts without any Backup or Support accounts.
-        The introduction of support coins was a strategic response to the absence of investors,
-        despite the significant progress of the project.
-        <br><br>
-        These coins are allocated in several ways:
-        <ul>
-          <li><b>Community</b>:
-            This portion will mainly support the community.
-            As part of this, the participants on Testnets receive initial staking coins to
+      a: >
+        The support coins (VC Allocation and Community) are designed to provide financial backing for the project.
+        These allocations serve different purposes within the Pactus ecosystem:
+          <ul>
+            <li><b>Community (2.1 Million coins - 5%):</b>
+              This portion mainly supports the community. As part of this, participants on Testnets receive initial staking coins to
             setup their validator and secure the Mainnet.
-          </li>
-          <li><b>Team and Operations</b>:
-            Another portion supports the project team.
-            Team members receive a monthly distribution of these coins, which is estimated to sustain
-            the team for over six years.
-          </li>
-          <li><b>Venture Capital (VC) Allocation</b>:
-            Another portion is set aside for any potential venture capitalists who
-            might show interest in investing in the project in the future.
-          </li>
-          <li><b>Foundation</b>:
-            The foundation coins are reserved for future use, potentially in supporting strong projects that
-            align with Pactus`s objectives.
-          </li>
-        </ul>
-
+            The community allocation mostly spends through the [Pagu](https://pagu.bot) bot.
+            </li>
+            <li><b>Venture Capital Allocation (6.3 Million coins - 15%):</b>
+              This portion is set aside for any potential venture capitalists who
+              might show interest in investing in the project.
+            </li>
+          </ul>
         Transparency is a key aspect of this allocation, as all movements of these
         coins are trackable due to the fully transparent nature of the blockchain.
-        '
+
 ################################################################################
 - title: Transaction
   items:
@@ -353,7 +358,8 @@
       q: What is an Unbond transaction?
       a: >
         An unbond transaction is a type of transaction that allows users to unbond their validator.
-        Once a validator is unbonded, they can no longer participate in the consensus mechanism.
+        <br><b>Important Note:</b> Once a validator is unbonded, they can no longer participate in the consensus mechanism
+         and they no longer receive block rewards.
       more: https://docs.pactus.org/protocol/transaction/unbond/
 
     - id: withdraw_transaction
@@ -361,4 +367,5 @@
       a: >
         A withdraw transaction is a type of transaction that allows a validator to withdraw
         their staked coins from the network.
+        The validator must wait for 21 days after unbonding to withdraw their coins.
       more: https://docs.pactus.org/protocol/transaction/withdraw/
