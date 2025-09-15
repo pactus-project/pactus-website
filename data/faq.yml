@@ -238,42 +238,40 @@
       q: How are coins allocated in Pactus?
       a: >
         The coin allocation in the Pactus blockchain is distributed as follows:
-        <div class="overflow-x-auto">
-        <table class="table w-full table-zebra">
-          <caption>Coin Allocation for Pactus</caption>
-          <thead class="text-left">
-              <tr>
-                  <th>Category</th>
-                  <th>Address</th>
-                  <th>Coin Allocation</th>
-                  <th>Percentage</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>Treasury</td>
-                  <td><a href="https://pacview.org/address/000000000000000000000000000000000000000000">
-                    000000000000000000000000000000000000000000</a></td>
-                  <td>33.6 Million coins</td>
-                  <td>80%</td>
-              </tr>
-              <tr>
-                  <td>VC Allocation</td>
-                  <td><a href="https://pacview.org/address/pc1zprhnvcsy3pthekdcu28cw8muw4f432hkwgfasv">
-                    pc1zprhnvcsy3pthekdcu28cw8muw4f432hkwgfasv</a></td>
-                  <td>6.3 Million coins</td>
-                  <td>15%</td>
-              </tr>
-              <tr>
-                  <td>Community</td>
-                  <td><a href="https://pacview.org/address/pc1zs64vdggjcshumjwzaskhfn0j9gfpkvche3kxd3">
-                    pc1zs64vdggjcshumjwzaskhfn0j9gfpkvche3kxd3</a></td>
-                  <td>2.1 Million coins</td>
-                  <td>5%</td>
-              </tr>
-          </tbody>
-        </table>
-        </div>
+          <table class="table w-full table-zebra">
+            <caption>Coin Allocation for Pactus</caption>
+            <thead class="text-left">
+                <tr>
+                    <th>Category</th>
+                    <th>Address</th>
+                    <th>Coin Allocation</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Treasury</td>
+                    <td><a href="https://pacview.org/address/000000000000000000000000000000000000000000">
+                      000000000000000000000000000000000000000000</a></td>
+                    <td>33.6 Million coins</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>VC Allocation</td>
+                    <td><a href="https://pacview.org/address/pc1zprhnvcsy3pthekdcu28cw8muw4f432hkwgfasv">
+                      pc1zprhnvcsy3pthekdcu28cw8muw4f432hkwgfasv</a></td>
+                    <td>6.3 Million coins</td>
+                    <td>15%</td>
+                </tr>
+                <tr>
+                    <td>Community</td>
+                    <td><a href="https://pacview.org/address/pc1zs64vdggjcshumjwzaskhfn0j9gfpkvche3kxd3">
+                      pc1zs64vdggjcshumjwzaskhfn0j9gfpkvche3kxd3</a></td>
+                    <td>2.1 Million coins</td>
+                    <td>5%</td>
+                </tr>
+            </tbody>
+          </table>
 
         <b>Note:</b> This chart reflects the current allocation after the activation of
         <a href="https://pips.pactus.org/PIPs/pip-43">PIP-43</a>.
@@ -306,10 +304,10 @@
       q: What is the reward split mechanism?
       a: >
         The reward split mechanism, introduced in PIP-43, modifies how block rewards are distributed in Pactus:
-        <ul>
-          <li><b>70% to Validators:</b> The validator who proposes a block receives 0.7 coins as their reward.</li>
-          <li><b>30% to Pactus Foundation:</b> The remaining 0.3 coins are distributed to the Pactus Foundation addresses.</li>
-        </ul>
+          <ul>
+            <li><b>70% to Validators:</b> The validator who proposes a block receives 0.7 coins as their reward.</li>
+            <li><b>30% to Pactus Foundation:</b> The remaining 0.3 coins are distributed to the Pactus Foundation addresses.</li>
+          </ul>
         This mechanism enhances sustainability and trust in the Pactus economy by providing predictable,
         transparent funding for the foundation's operations and ecosystem growth.
       more: https://pips.pactus.org/PIPs/pip-43
@@ -319,17 +317,17 @@
       a: >
         The support coins (VC Allocation and Community) are designed to provide financial backing for the project.
         These allocations serve different purposes within the Pactus ecosystem:
-        <ul>
-        <li><b>Community (2.1 Million coins - 5%):</b>
-          This portion mainly supports the community. As part of this, participants on Testnets receive initial staking coins to
-        setup their validator and secure the Mainnet.
-        The community allocation mostly spends through the [Pagu](https://pagu.bot) bot.
-        </li>
-        <li><b>Venture Capital Allocation (6.3 Million coins - 15%):</b>
-          This portion is set aside for any potential venture capitalists who
-          might show interest in investing in the project.
-        </li>
-        </ul>
+          <ul>
+            <li><b>Community (2.1 Million coins - 5%):</b>
+              This portion mainly supports the community. As part of this, participants on Testnets receive initial staking coins to
+            setup their validator and secure the Mainnet.
+            The community allocation mostly spends through the [Pagu](https://pagu.bot) bot.
+            </li>
+            <li><b>Venture Capital Allocation (6.3 Million coins - 15%):</b>
+              This portion is set aside for any potential venture capitalists who
+              might show interest in investing in the project.
+            </li>
+          </ul>
         Transparency is a key aspect of this allocation, as all movements of these
         coins are trackable due to the fully transparent nature of the blockchain.
 
