@@ -54,6 +54,7 @@ As part of this upgrade, the balances from the Genesis Foundation and Team & Ope
 have been successfully transferred to the Treasury account.
 
 The transactions can be viewed here:
+
 - [Foundation Transfer](https://pacviewer.com/transaction/734357c2fb3242692350b3c3792c77f91a45d0b1767be6863cd22d4242058bdb)
 - [Team & Operations Transfer](https://pacviewer.com/transaction/a336de57e89550034979da784e4d670062f52ac4f19e2e201cbe623fdb0a0b02)
 
