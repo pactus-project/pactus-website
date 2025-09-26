@@ -11,7 +11,7 @@
     "build": "rm -rf ./build && hugo --gc --minify",
     "clean:destination": "hugo --cleanDestinationDir",
     "htmlproofer:setup": "gem install html-proofer",
-    "htmlproofer": "yarn build && htmlproofer --swap-urls 'http\\://localhost\\:1313:,https\\://pactus.org:' --ignore-status-codes 999,429,403  --enforce-https false --ignore-urls /cdn./,/discord.gg/,/t.me/,/x.com/,/github.com/,/ietf.org/ ./public",
+    "htmlproofer": "yarn build && htmlproofer --swap-urls 'http\\://localhost\\:1313:,https\\://pactus.org:' --ignore-status-codes 999,429,403  --enforce-https false --ignore-urls /cdn./,/discord.gg/,/t.me/,/ietf.org/ ./public",
     "prettier:setup": "yarn add prettier prettier-plugin-go-template --dev",
     "prettier": "prettier --write \"content/**/*.md\" \"layouts/**/*.html\"",
     "lint:md:setup": "gem install mdl",
