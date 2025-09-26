@@ -8,8 +8,9 @@ image = "2025-03-06-introduction-to-pactus.png"
 
 ## Pactus : The Most Accessible Blockchain
 
-Imagine a world where blockchain isn't just for the techies - it's for everyone. With Pactus, that world is here. We’ve stripped away the complexity, making it as easy to access blockchain and its
-ecosystem like ever before.
+Imagine a world where blockchain isn't just for the techies - it's for everyone.
+With Pactus, that world is here. We’ve stripped away the complexity,
+making it as easy to access blockchain and its ecosystem like ever before.
 
 For users, it’s seamless exploration; for developers, it’s a playground of robust tools to build fast,
 secure, game-changing applications. Pactus isn't just a blockchain, it's the spark that lights up a
