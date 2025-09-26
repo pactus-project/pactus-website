@@ -1,12 +1,12 @@
 +++
-title = "Term of Use"
+title = "Terms of Use"
 layout = "term_of_use"
 type = "term_of_use"
 description = """
 """
 +++
 
-# Term of Use
+# Terms of Use
 
 **Welcome to Pactus.**
 
@@ -121,7 +121,7 @@ their content, products, services, or information.
 
 Link inclusion does not imply Pactus endorsement or affiliation.
 Users should be aware they may leave our website by clicking links.
-External site terms of use may differ from ours.Pactus is not responsible for
+External site terms of use may differ from ours. Pactus is not responsible for
 losses from users following links to external sites.
 We encourage caution and reviewing external sites' terms and policies before transacting or engaging.
 

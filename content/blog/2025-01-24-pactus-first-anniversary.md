@@ -3,7 +3,7 @@ title = "Pactus at One: From Dream to Reality"
 author = "Pactus Team"
 date = 2025-01-24T00:00:00+00:00
 tags = ["newsletter"]
-image = "pactus-first-Anniversary.png"
+image = "pactus-first-anniversary.png"
 +++
 
 Pactus [began](https://pactus.org/2024/01/24/mainnet-launched/) with a dream,

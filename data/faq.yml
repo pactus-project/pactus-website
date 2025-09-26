@@ -298,7 +298,7 @@
         Every day, 8,640 coins are minted, resulting in approximately 3 million coins being minted annually
         by the Treasury account.
       img: pactus-reward-distribution.png
-      more: https://docs.pactus.org/protocol/blockchain/incentive/#coin-distribution
+      more: https://docs.pactus.org/protocol/blockchain/incentive/#reward-distribution
 
     - id: reward_split
       q: What is the reward split mechanism?
@@ -320,7 +320,7 @@
           <ul>
             <li><b>Community (2.1 Million coins - 5%):</b>
               This portion mainly supports the community. As part of this, participants on Testnets receive initial staking coins to
-            setup their validator and secure the Mainnet.
+            set up their validator and secure the Mainnet.
             The community allocation mostly spends through the [Pagu](https://pagu.bot) bot.
             </li>
             <li><b>Venture Capital Allocation (6.3 Million coins - 15%):</b>

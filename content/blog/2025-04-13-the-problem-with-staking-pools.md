@@ -16,7 +16,7 @@ It’s convenient, but here’s the catch: the bigger the pool, the more power i
 a few ‘lucky’ winners start calling all the shots. Is that the decentralized future we were promised?
 
 It does sound like a dream. Put your coins in, sit back, and collect rewards while someone else
-does the work. Sounds easy doesn’t it? But what if I told you that staking pools are hurting
+does the work. Sounds easy, doesn't it? But what if I told you that staking pools are hurting
 decentralization? What if instead of making networks stronger, they’re concentrating power in
 the hands of a few? Let’s break it down.
 
@@ -87,7 +87,7 @@ In short: you, and only you, decide what happens with your stake.
 
 ### The Future of Staking Starts Here
 
-Staking pools had their moment, but let’s be real they’re just another way to centralize power.
+Staking pools had their moment, but let's be real: they're just another way to centralize power.
 [Pactus](https://pactus.org/) changes the game. No staking pools. No gatekeepers. Just true
 decentralization. If you’re ready to take back control, it’s time to join Pactus. You can
 start taking control today alongside a thriving community on [X](https://x.com/pactuschain/)

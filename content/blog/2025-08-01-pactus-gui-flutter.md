@@ -11,7 +11,8 @@ image = "pactus-gui-flutter.png"
 We're excited to announce the first public release of the New Pactus GUI, built with
 [Flutter](https://flutter.dev/) to deliver a beautiful, cross-platform experience for Pactus users!
 This early version represents a major leap forward in making blockchain interaction more accessible to everyone.
-Why Flutter?
+
+## Why Flutter?
 
 We chose Flutter for several key reasons:
 
@@ -57,7 +58,7 @@ As a Flutter application, we're particularly interested in:
 
 ## 🐛 Report issues
 
-If you find and issue or you need a new feature, please report
+If you find an issue or you need a new feature, please report
 [here](https://github.com/pactus-project/pactus-gui/issues).
 
 This is just the beginning, we're excited to build the best blockchain GUI experience possible!

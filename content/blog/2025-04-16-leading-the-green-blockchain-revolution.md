@@ -37,7 +37,7 @@ of cryptocurrencies.
 - Bitcoin consumes more electricity annually than some entire nations.
 - Pactus uses up to 99% less energy for the same level of security and decentralization.
 
-This isn’t just about cutting costs, Pactus is setting a new benchmark for how blockchain
+This isn't just about cutting costs; Pactus is setting a new benchmark for how blockchain
 can be both secure and environmentally conscious.
 
 ## Low Hardware, Big Impact
@@ -97,8 +97,8 @@ that this responsibility doesn’t have to mean sacrificing security, decentrali
 scalability. With its energy-efficient SSPoS consensus and commitment to sustainability,
 Pactus is redefining what’s possible in the blockchain world.
 
-This isn’t just about being environmentally conscious, it’s about creating a future-proof
+This isn't just about being environmentally conscious; it's about creating a future-proof
 blockchain that grows in harmony with the planet. The world of blockchain is evolving, and
 [Pactus](https://pactus.org/) is leading the charge, showing that the future of cryptocurrency
-doesn’t have to cost the earth, be part of this green movement and join us on
+doesn't have to cost the earth. Be part of this green movement and join us on
 [X](https://x.com/pactuschain/) and [Discord](https://discord.com/invite/pactus).
