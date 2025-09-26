@@ -30,7 +30,7 @@ We are thrilled to announce the first beta release of the Pactus Web Wallet,
 a major milestone in our journey towards our decentralized future.
 This initial release allows users to create secure, self-custody wallets instantly,
 manage multiple accounts, and track balances via an intuitive dashboard.
-Follow our open-source development on [GitHub](http://github.com/pactus-project/pactus-wallet).
+Follow our open-source development on [GitHub](https://github.com/pactus-project/pactus-wallet).
 
 ### Pactus Web Wallet - Phase 2 Beta Live Now!
 
