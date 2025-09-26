@@ -16,7 +16,7 @@ provides sustainability without compromising performance and security.
 
 ## Energy Efficiency at the Core of Pactus
 
-One of Pactus standout features is its ability to operate with minimal energy requirements.
+One of Pactus's standout features is its ability to operate with minimal energy requirements.
 Unlike most blockchain networks that demand significant computational power or high-spec dedicated servers,
 Pactus validators can run on devices as energy-efficient as a
 [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/), which consumes just 2 watts of power.
@@ -45,7 +45,7 @@ with validators regularly rotating based on a fair selection process.
 Pactus supports [pruned nodes](https://docs.pactus.org/tutorials/pruned-nodes/),
 which store only the last 10 days of blockchain data instead of the entire transaction history.
 This innovation significantly reduces storage requirements—from gigabytes to just a few hundred megabytes—and
-allows new validators to sync with the network in just [few minutes](https://snapshot.pactus.org/).
+allows new validators to sync with the network in just a [few minutes](https://snapshot.pactus.org/).
 
 ### User Friendly Interface
 

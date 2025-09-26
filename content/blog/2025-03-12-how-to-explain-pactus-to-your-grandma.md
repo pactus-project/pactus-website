@@ -1,6 +1,6 @@
 +++
-title = "How To Explain Pactus to your Grandma"
-author = "Your Name"
+title = "How to Explain Pactus to Your Grandma"
+author = "Pactus Team"
 date = 2025-03-13T12:16:06Z
 tags = ["education"]
 image = "how-to-explain-pactus-to-your-grandma.png"
@@ -31,7 +31,7 @@ and they decide who gets a seat (centralisation).
 
 Pactus, on the other hand, is a community potluck. Everyone can contribute, no one is turned away, and
 it’s built to be fair. No venture capitalists hogging the best dishes, no outrageous fees, just good
-old-fashioned participation It’s like Sunday lunch at Grandma’s and everyone gets a seat at the table.
+old-fashioned participation. It's like Sunday lunch at Grandma's and everyone gets a seat at the table.
 
 ### No Tech Headaches, Just Simple Solutions
 
@@ -43,7 +43,7 @@ Unlike other systems that need expensive mining rigs (like baking one biscuit bu
 all day), Pactus is energy-efficient. Think of it as a microwave: quick, effective, and no wasted power.
 
 And guess what? No big banks or tech billionaires pulling the strings, just regular people making fair
-and simple transactions. That’s decentralisation, it’s a fancy way of saying nobody can cheat, and
+and simple transactions. That's decentralisation, a fancy way of saying nobody can cheat, and
 everyone plays fair. Unlike Grandma’s handwritten recipes, a blockchain record can’t be lost, spilt
 on, or secretly changed by Aunt Janet when she thinks she can improve the crumble topping.
 
