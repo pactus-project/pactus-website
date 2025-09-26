@@ -54,7 +54,7 @@ This update introduces a new consumption fee model based on the number of bytes 
 The model, proposed by [PIP-31](https://pips.pactus.org/PIPs/pip-31),
 enables the Pactus blockchain to support transactions with zero fees, also known as gas-less transactions.
 You can check out this tutorial to learn more about zero-fee transactions on Pactus:
-[How to Send Zero-Fee Transactions?](https://docs.pactus.org/tutorials/zero-fee-transactios/)
+[How to Send Zero-Fee Transactions?](https://docs.pactus.org/tutorials/zero-fee-transactions/)
 
 ### New GUI Under Development
 
