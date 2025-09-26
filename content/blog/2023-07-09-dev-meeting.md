@@ -39,7 +39,7 @@ including setting limits for inbound and outbound connections.
 Moving on, the Sync module was discussed.
 Unlike the Network module, the Sync module has full knowledge about the messages and packets.
 The module handles a range of message types, which can be found
-[here](https://github.com/pactus-project/pactus/blob/239bb98120053a220c6732989d9a4541ff0c4fc9/sync/bundle/message/message.go#L41-L52).
+[here](https://github.com/pactus-project/pactus/blob/main/sync/bundle/message/message.go).
 
 It was suggested that we need to define metrics for each message type.
 There was also a discussion about the need for reducing the messages to optimize the use of network resources.
