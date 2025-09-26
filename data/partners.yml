@@ -46,6 +46,10 @@
   url: "https://coinranking.com/coin/pactus"
   logo: "coinranking.png"
 
+- name: "Coinstore Exchange"
+  url: "https://www.coinstore.com/spot/PACUSDT"
+  logo: "coinstore.png"
+
 - name: "Azbit Exchange"
   url: "https://azbit.com/exchange/PAC_USDT"
   logo: "azbit.png"

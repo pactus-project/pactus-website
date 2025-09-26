@@ -2,7 +2,7 @@
 title = "Obtain PAC"
 layout = "obtain-pac"
 type = "obtain-pac"
-Description = """
+description = """
 Obtain PAC, the native token of the Pactus blockchain, on decentralized (DEXs) or centralized
 exchanges (CEXs). DEXs offer full control, privacy, and on-chain transparency. CEXs provide
 ease of use, fiat options, and customer support.
@@ -38,6 +38,10 @@ ease of use, fiat options, and customer support.
 ## Centralized Exchange
 
 <div class="grid grid-cols-3 gap-x-6 items-center">
+  <a target="_blank" href="https://www.coinstore.com/spot/PACUSDT" title="Coinstore">
+    <img src="/images/exchange/coinstore.png" style="height: 48px" class="object-contain mx-auto" alt="Coinstore" />
+  </a>
+
   <a target="_blank" href="https://azbit.com/exchange/PAC_USDT" title="Azbit">
     <img src="/images/exchange/azbit.png" style="height: 48px" class="object-contain mx-auto" alt="Azbit" />
   </a>
