@@ -1,6 +1,7 @@
 +++
 title = "Pactus Newsletter, September 2025"
 description = """
+September milestones for Pactus: the Lisbon upgrade, first protocol upgrade, and PAC’s listings on CoinMarketCap and Coinstore.
 """
 author = "Pactus Team"
 date = 2025-10-05T00:00:00+00:00
