@@ -53,3 +53,7 @@
 - name: "Azbit Exchange"
   url: "https://azbit.com/exchange/PAC_USDT"
   logo: "azbit.png"
+
+- name: "Kyvra Tech"
+  url: "https://kyvra.xyz"
+  logo: "kyvra.png"
