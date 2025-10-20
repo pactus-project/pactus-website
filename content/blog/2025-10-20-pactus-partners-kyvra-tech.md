@@ -1,23 +1,23 @@
 +++
 title = "Pactus Partners with Kyvra Tech"
 description = "The Pactus Foundation partners with Kyvra Tech under the FUSION Program to develop the open-source Pactus Nodes Tracker for real-time network monitoring and transparency."
-author = "page900"
+author = "Pactus Team"
 date = "2025-10-20T03:57:00+01:00"
 tags = ["partnerships", "development", "tools", "FUSION"]
 image = "pactus-x-kyvra-tech.png"
 +++
 
-# Pactus Partners with Kyvra Tech
-
-The Pactus Foundation has officially partnered with [Kyvra Tech](https://kyvra.xyz) under its FUSION Program to develop the **Pactus Nodes Tracker**—an open-source system built to monitor, analyze, and visualize the Pactus network in real time.
+The Pactus Foundation has officially partnered with [Kyvra Tech](https://kyvra.xyz) under its FUSION Program to develop the **Pactus Nodes Tracker** an open-source system built to monitor, analyze, and visualize the Pactus network in real time.
 
 This collaboration represents more than just a technical milestone; it’s a bold step toward deepening transparency, decentralization, and community participation within the Pactus ecosystem.
 
 By empowering both developers and community members to see network health, node activity, and connectivity across the globe, the Pactus Nodes Tracker will make the inner workings of the network more visible, auditable, and accessible than ever.
 
-As part of Pactus’s mission to build a truly open Layer-1 protocol, the tracker ensures that every participant—from node operators to curious newcomers—can independently verify network conditions and contribute to maintaining a healthy, decentralized infrastructure.
+As part of Pactus’s mission to build a truly open Layer-1 protocol, the tracker ensures that every participant—from node operators to curious newcomers can independently verify network conditions and contribute to maintaining a healthy, decentralized infrastructure.
 
 The project will be developed in four key phases, culminating in a set of public APIs for open integration and data access. This aligns with the broader FUSION initiative, which supports builders and open-source contributors developing essential tools for the Pactus ecosystem.
+
+Notably, the FUSION Program is the same initiative through which several cornerstone ecosystem tools were born, including [Wrapto.app](https://wrapto.app/), [Pactus wallet](https://wallet.pactus.org/), and [PacViewer](https://pacviewer.com/). The Pactus Nodes Tracker now joins this growing suite of community-driven infrastructure that enhances transparency, accessibility, and engagement across the network.
 
 ## 🧭 Project Overview
 
