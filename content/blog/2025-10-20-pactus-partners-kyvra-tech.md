@@ -1,6 +1,6 @@
 +++
 title = "Pactus Partners with Kyvra Tech"
-description = "The Pactus Foundation partners with Kyvra Tech under the FUSION Program to develop the open-source Pactus Nodes Tracker for real-time network monitoring and transparency."
+description = "Pactus Foundation partners with Kyvra Tech to develop the Pactus Nodes Tracker for network monitoring."
 author = "Pactus Team"
 date = "2025-10-20T03:57:00+01:00"
 tags = ["partnerships", "development", "tools", "FUSION"]
@@ -39,8 +39,7 @@ Under this agreement, Kyvra Tech will build the tracker in four structured phase
 2. **Reachable Nodes:** Detect and visualize reachable nodes on a map with charts and public node lists.
 3. **Node Crawler:** Develop a crawler based on the [Nebula](https://github.com/dennis-tra/nebula) project,
    a decentralized peer-to-peer network crawler, to gather detailed network data.
-4. **Public APIs:** Provide and document public [JSON-RPC APIs](https://tracker.kyvra.xyz/json-rpc)
-   for developers and third-party integrations.
+4. **Public APIs:** Provide and document public JSON-RPC APIs for developers and third-party integrations.
 
 ## 🧩 What Is Nebula
 
