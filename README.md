@@ -62,7 +62,7 @@ Once you have the prerequisites in place, follow these steps to get the website 
 4. **Run the website locally:**
 
     ```bash
-    hugo server
+    npm run start
     ```
 
 This will start a local development server and open the website in your default web browser.
