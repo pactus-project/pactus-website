@@ -1,7 +1,7 @@
 +++
 title = "Dev Report pre-testnet2"
 author = "Pactus Team"
-date = 2023-09-24T00:00:00+00:00
+date = 2023-09-24T00:00:00
 tags = ["dev-report"]
 image = "github-pactus.png"
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Pactus Secured By More Than 4,000 Validators"
 author = "Pactus Team"
-date = 2024-11-08T15:48:36+01:00
+date = 2024-11-08T00:00:00
 tags = ["Announcement"]
 image = "pactus-4000-validators.png"
 +++

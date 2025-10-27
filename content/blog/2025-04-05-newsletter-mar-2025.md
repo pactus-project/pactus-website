@@ -5,7 +5,7 @@ March Highlights: Welcome to ezeX, Pactus Crowdfunding, Pactus on Binance Smart 
 10 Million Transactions, Web Wallet and more...
 """
 author = "Pactus Team"
-date = 2025-04-05T00:00:00+00:00
+date = 2025-04-05T00:00:00
 tags = ["newsletter"]
 image = "pactus-newsletter-march-2025.png"
 +++

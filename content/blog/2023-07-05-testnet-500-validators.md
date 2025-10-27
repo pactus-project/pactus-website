@@ -1,7 +1,7 @@
 +++
 title = "500 validators joined Testnet"
 author = "Pactus Team"
-date = 2023-07-05T00:00:00+00:00
+date = 2023-07-05T00:00:00
 tags = ["announcement", "testnet"]
 image = "testnet-500-validators.png"
 +++

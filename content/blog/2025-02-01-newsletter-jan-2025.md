@@ -5,7 +5,7 @@ January Highlights: Reflecting on Our First Year, Celebrating Milestones and New
 3 Million Blocks & more ...
 """
 author = "Pactus Team"
-date = 2025-02-01T00:00:00+00:00
+date = 2025-02-01T00:00:00
 tags = ["newsletter"]
 image = "pactus-newsletter-january-2025.png"
 +++

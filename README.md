@@ -86,7 +86,7 @@ This command will create a new markdown file in the `content/blog` directory wit
 title = "Title goes here"
 description = "Description goes here (Optional)"
 author = "Your Name"
-date = 2024-10-20T16:39:03+08:00
+date = 2024-10-20T00:00:00
 tags = [""]
 image = "post-image.png"
 +++

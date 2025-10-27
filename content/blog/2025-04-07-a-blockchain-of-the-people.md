@@ -1,7 +1,7 @@
 +++
 title = "Pactus: A Blockchain of the People"
 author = "Pactus Team"
-date = 2025-04-07T14:13:26+01:00
+date = 2025-04-07T00:00:00
 tags = ["article"]
 image = "a-blockchain-of-the-people.png"
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Story of Testnet-1"
 author = "Pactus Team"
-date = 2023-08-01T00:00:00+00:00
+date = 2023-08-01T00:00:00
 tags = ["announcement", "testnet"]
 image = "/images/pactus-blog-post-default.jpg"
 +++

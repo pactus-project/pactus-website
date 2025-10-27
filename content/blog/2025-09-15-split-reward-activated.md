@@ -5,7 +5,7 @@ Pactus Protocol Upgrade: Block reward split mechanism now live with
 Foundation and Team funds successfully migrated to Treasury
 """
 author = "Pactus Team"
-date = 2025-09-15T00:00:00+00:00
+date = 2025-09-15T00:00:00
 tags = ["upgrade", "announcement", "pip"]
 image = "pip-43-activated.png"
 +++
