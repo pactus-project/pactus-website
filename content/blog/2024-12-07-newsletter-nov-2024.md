@@ -15,7 +15,7 @@ Welcome to the November 2024 edition of the Pactus Newsletter[^1].
 This month has seen steady progress and notable development updates.
 Let's dive into all the details.
 
-### Pactus Reaches 6 Million Transactions
+### Pactus Reached 6 Million Transactions
 
 Pactus has processed over 6 million transactions!
 This significant milestone underscores the ongoing growth of our network,

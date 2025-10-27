@@ -86,6 +86,10 @@ jobs:
           pip install pillow gitpython toml markdown
           python .github/workflows/check_pr.py
 
+      - name: Check Public Folder
+        run: |
+          python .github/workflows/check_public.py ./public
+
       - name: Install html-proofer
         run: |
           gem install html-proofer -v 4.3
