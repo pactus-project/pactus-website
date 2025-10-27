@@ -36,8 +36,7 @@ Follow our open-source development on [GitHub](https://github.com/pactus-project
 
 Phase 2 introduces wallet recovery and address balance visibility.
 Test the latest features at [https://wallet-beta.pactus.org](https://wallet-beta.pactus.org/) and submit
-[feedback](https://docs.google.com/forms/d/e/1FAIpQLSdzhss0Z9iNCJyHlrsHEBPFVqobux3Hg71FwCXR63gbOIWZPw/viewform?usp=sharing)
-to help refine future releases.
+feedback to help refine future releases.
 
 ### Strategic Partnerships
 
