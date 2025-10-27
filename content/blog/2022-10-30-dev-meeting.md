@@ -27,7 +27,7 @@ Nagaraj explained the block explorer and some of the features.
 
 ### Project road map
 
-Project [road map](/about/roadmap/) was discussed.
+Project road map was discussed.
 
 ### IdeaKita pitch deck
 

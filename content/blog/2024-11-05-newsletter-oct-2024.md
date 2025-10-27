@@ -29,7 +29,7 @@ This listing opens up exciting new partnership opportunities and positions us fo
 even greater exposure in the crypto world.
 And yes, we're already setting our sights on CoinMarketCap for the future!
 
-### Validator Network Reaches 4,000 Strong
+### Validator Network Reached 4,000 Validators
 
 We've hit another incredible milestone - our mainnet is now powered by over 4,000 validators!
 This remarkable growth demonstrates the tremendous trust and commitment our community has in Pactus's vision.
@@ -77,7 +77,7 @@ while improving overall network performance.
 ### TPS Performance Breakthrough
 
 We're excited to announce that our latest Testnet performance tests have achieved
-an impressive [100 transactions per second](https://pactus.org/2024/10/10/pactus-reaches-100-tps/)!
+an impressive [100 transactions per second](https://pactus.org/2024/10/10/pactus-reached-100-tps/)!
 This testing was conducted under conditions that mirror our Mainnet environment,
 indicating that similar performance levels can be expected on our production network.
 These results demonstrate our blockchain's robust scalability potential.
