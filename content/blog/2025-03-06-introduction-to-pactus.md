@@ -1,7 +1,7 @@
 +++
 title = "Introduction to Pactus Blockchain"
 author = "Pactus Team"
-date = 2025-03-06T15:51:54Z
+date = "2025-03-06T00:00:00"
 tags = ["educational"]
 image = "2025-03-06-introduction-to-pactus.png"
 +++

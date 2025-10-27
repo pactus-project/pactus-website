@@ -1,7 +1,7 @@
 +++
 title = "The Problem with Staking Pools"
 author = "Pactus Team"
-date = 2025-04-13T16:28:46+01:00
+date = "2025-04-13T00:00:00"
 tags = ["article"]
 image = "article-on-staking-pools.png"
 +++

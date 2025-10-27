@@ -2,7 +2,7 @@
 title = "Pactus Partners with Kyvra Tech"
 description = "Pactus Foundation partners with Kyvra Tech to develop the Pactus Nodes Tracker for network monitoring."
 author = "Pactus Team"
-date = "2025-10-20T03:57:00+01:00"
+date = "2025-10-20T00:00:00"
 tags = ["partnerships", "development", "tools", "FUSION"]
 image = "pactus-x-kyvra-tech.png"
 +++

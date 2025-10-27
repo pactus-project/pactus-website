@@ -4,7 +4,7 @@ description = """
 September milestones for Pactus: the Lisbon upgrade, first protocol upgrade, and PAC’s listings on CoinMarketCap and Coinstore.
 """
 author = "Pactus Team"
-date = 2025-10-05T00:00:00+00:00
+date = "2025-10-05T00:00:00"
 tags = ["newsletter"]
 image = "pactus-newsletter-september-2025.png"
 +++

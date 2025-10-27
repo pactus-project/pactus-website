@@ -1,7 +1,7 @@
 +++
 title = "Introduction to PIPs"
 author = "Pactus Team"
-date = 2023-09-04T00:00:00+00:00
+date = "2023-09-04T00:00:00"
 tags = ["pip"]
 image = "introduction-to-pips.png"
 +++

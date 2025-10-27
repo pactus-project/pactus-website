@@ -4,7 +4,7 @@ description = """
 November Highlights: Pactus under attack, Zero-Fee Transactions, 6 million transactions & more ...
 """
 author = "Pactus Team"
-date = 2024-12-07T00:00:00+00:00
+date = "2024-12-07T00:00:00"
 tags = ["newsletter"]
 image = "pactus-newsletter-november-2024.png"
 +++

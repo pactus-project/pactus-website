@@ -62,7 +62,7 @@ Once you have the prerequisites in place, follow these steps to get the website 
 4. **Run the website locally:**
 
     ```bash
-    hugo server
+    npm run start
     ```
 
 This will start a local development server and open the website in your default web browser.
@@ -86,7 +86,7 @@ This command will create a new markdown file in the `content/blog` directory wit
 title = "Title goes here"
 description = "Description goes here (Optional)"
 author = "Your Name"
-date = 2024-10-20T16:39:03+08:00
+date = "2024-10-20T00:00:00"
 tags = [""]
 image = "post-image.png"
 +++

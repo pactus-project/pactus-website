@@ -1,7 +1,7 @@
 +++
 title = "How to Explain Pactus to Your Grandma"
 author = "Pactus Team"
-date = 2025-03-13T12:16:06Z
+date = "2025-03-13T00:00:00"
 tags = ["education"]
 image = "how-to-explain-pactus-to-your-grandma.png"
 +++
