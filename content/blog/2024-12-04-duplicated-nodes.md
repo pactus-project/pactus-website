@@ -1,7 +1,7 @@
 +++
 title = "The Risk of Running Duplicated Nodes"
 author = "Pactus Team"
-date = 2024-12-04T00:00:00
+date = "2024-12-04T00:00:00"
 tags = ["tutorial"]
 image = "duplicate-nodes.png"
 +++

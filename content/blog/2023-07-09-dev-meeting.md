@@ -1,7 +1,7 @@
 +++
 title = "Dev meeting - July 2023"
 author = "Pactus Team"
-date = 2023-07-09T00:00:00
+date = "2023-07-09T00:00:00"
 tags = ["dev-meeting"]
 image = "/images/pactus-blog-post-default.jpg"
 +++

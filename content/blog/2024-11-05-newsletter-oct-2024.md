@@ -4,7 +4,7 @@ description = """
 October Highlights: CoinGecko listing, reaching over 4,000 validators, Pactus 1.5.0 (Singapore) & more ...
 """
 author = "Pactus Team"
-date = 2024-11-05T00:00:00
+date = "2024-11-05T00:00:00"
 tags = ["newsletter"]
 image = "pactus-newsletter-october-2024.png"
 +++

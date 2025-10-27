@@ -1,7 +1,7 @@
 +++
 title = "Pactus at One: From Dream to Reality"
 author = "Pactus Team"
-date = 2025-01-24T00:00:00
+date = "2025-01-24T00:00:00"
 tags = ["newsletter"]
 image = "pactus-first-anniversary.png"
 +++

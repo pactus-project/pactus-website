@@ -5,7 +5,7 @@ April Highlights: Pactus Web Wallet Roadmap Unveiled, Strategic Partnerships,
 Ambassador Program, Pactus Packages for Developers and more...
 """
 author = "Pactus Team"
-date = 2025-05-06T00:00:00
+date = "2025-05-06T00:00:00"
 tags = ["newsletter"]
 image = "pactus-newsletter-april-2025.png"
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Introducing the New Pactus GUI"
 author = "Pactus Team"
-date = 2025-08-01T00:00:00
+date = "2025-08-01T00:00:00"
 tags = ["announcement", "gui"]
 image = "pactus-gui-flutter.png"
 +++

@@ -4,7 +4,7 @@ description = """
 July Highlights: Releasing Pactus 1.8.0 (Paris), Community Campaign and more...
 """
 author = "Pactus Team"
-date = 2025-08-06T00:00:00
+date = "2025-08-06T00:00:00"
 tags = ["newsletter"]
 image = "pactus-newsletter-july-2025.png"
 +++

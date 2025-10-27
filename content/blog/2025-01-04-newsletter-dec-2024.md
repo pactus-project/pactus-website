@@ -4,7 +4,7 @@ description = """
 December Highlights: Forbes & Bybit, Community Creations, 7 Million Transactions & more ...
 """
 author = "Pactus Team"
-date = 2025-01-04T00:00:00
+date = "2025-01-04T00:00:00"
 tags = ["newsletter"]
 image = "pactus-newsletter-december-2024.png"
 +++

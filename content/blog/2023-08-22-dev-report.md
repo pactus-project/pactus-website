@@ -1,7 +1,7 @@
 +++
 title = "Dev report"
 author = "Pactus Team"
-date = 2023-08-22T00:00:00
+date = "2023-08-22T00:00:00"
 tags = ["dev-report"]
 image = "github-pactus.png"
 +++
