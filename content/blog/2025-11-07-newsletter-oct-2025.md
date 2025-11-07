@@ -1,7 +1,8 @@
 +++
 title = "Pactus Newsletter, October 2025"
 description = """
-
+October highlights: Pactus 1.10.0 "Casablanca" release, 130+ validators joined the network,
+and a new partnership with Kyvra Tech under the FUSION Program.
 """
 author = "Pactus Team"
 date = "2025-11-07T00:00:00"
