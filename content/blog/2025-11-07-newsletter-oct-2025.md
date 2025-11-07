@@ -44,7 +44,7 @@ to enhance stability and user experience.
 ### Partnership Spotlight
 
 We also partnered with [Kyvra Tech](https://www.kyvra.xyz/) under the **FUSION** Program.
-Kyvra Tech will build the Pactus Nodes Tracker, an open-source platform that monitors and
+Kyvra Tech will build the **Pactus Nodes Tracker**, an open-source platform that monitors and
 visualizes network activity in real time.
 The tool will give developers and community members clear insight into node health,
 connectivity, and overall network status.
