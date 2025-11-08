@@ -1,0 +1,33 @@
+<head>
+  {{ partial "google_tag.html" }}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pactus</title>
+
+  <meta name="keywords" content="{{ .Site.Params.keywords }}" />
+
+  <meta name="description" content="{{ .Site.Params.description }}" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pactus" />
+  <meta property="og:description" content="{{ .Site.Params.description }}" />
+  <meta property="og:locale" content="en" />
+  <meta property="og:site_name" content="Pactus" />
+  <meta property="og:url" content="https://pactus.org" />
+  <meta property="og:image" content="https://pactus.org/images/pactus-blog-post-default.webp" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://pactus.org" />
+  <meta name="twitter:title" content="Pactus" />
+  <meta name="twitter:description" content="{{ .Site.Params.description }}" />
+  <meta name="twitter:image" content="https://pactus.org/images/pactus-blog-post-default.webp" />
+
+  <link rel="stylesheet" href="/css/main.css" />
+
+  {{ partial "favicon.html" }}
+
+  <link href="/css/aos.css" rel="stylesheet" />
+  <link href="/css/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="/fontawesome/css/all.min.css" rel="stylesheet" />
+  <link href="/fontawesome/css/brands.colorful.css" rel="stylesheet" />
+</head>

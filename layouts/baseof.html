@@ -1,15 +1,14 @@
 <!-- layouts/index.html -->
 <!doctype html>
 <html lang="en" data-theme="dark">
-  {{ partial "single-head.html" . }}
+  {{ partial "head.page.html" . }}
   <body class="bg-[#0B0B0F] flex flex-col min-h-screen">
     {{ partial "header.html" . }}
     <img
       loading="lazy"
-      src="{{ partial "image.html" (dict "src" "/images/landing-top-bg1.png") }}"
+    src="{{ partial "image.html" (dict "src" (default "/images/bg-default.png" .Params.background_image)) }}"
       alt=""
-      class="min-w-full absolute -top-10 single-bg" />
-    <div class="other-top-bg-back"></div>
+      class="min-w-full absolute single-bg" />
 
     <div class="drawer flex-grow">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
@@ -21,8 +20,8 @@
         {{ partial "drawer.html" . }}
       </div>
     </div>
-    {{ partial "single-footer.html" . }}
-    {{ partial "single-scripts.html" . }}
+    {{ partial "footer.page.html" . }}
+    {{ partial "scripts.page.html" . }}
     {{ block "page_script" . }}{{ end }}
   </body>
 </html>

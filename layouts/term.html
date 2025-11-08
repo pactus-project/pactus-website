@@ -1,0 +1,22 @@
+{{ define "title" }}{{ .Page.Title }}{{ end }}
+{{ define "main" }}
+  <section class="container mx-auto px-4 py-8 pt-[8rem] md:pt-[10rem] relative z-20 flex-grow pb-20 flex flex-col min-h-full">
+    <h1 class="text-neutral-50 font-bold text-3xl mb-8">{{ .Title }}</h1>
+    {{- .Content -}}
+    <div class="mt-10">
+      <div class="grid grid-flow-row grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4">
+        {{ range .Pages }}
+        <div class="bg-[#242535] p-5 rounded-xl">
+          <a href="{{ .Permalink }}">
+            <h2 class="text-neutral-50 font-bold text-xl hover:text-[#7064e9]">{{ .Title }}</h2>
+          </a>
+          {{ if .Params.description }}
+          <p class="text-sm mt-2 text-neutral-50">{{ .Params.description }}</p>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
+
