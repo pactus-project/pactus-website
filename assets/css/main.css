@@ -1576,37 +1576,6 @@ html {
   background-color: transparent;
 }
 
-.other-top-bg-back {
-  position: absolute;
-  top: 0;
-  width: 80%;
-  margin: auto;
-  height: 50vh;
-  background-color: rgba(135, 183, 255, 0.21);
-  filter: blur(100px);
-  border-radius: 0 50% 0 50%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  text-align: -webkit-center;
-}
-
-.other-right-bg-back {
-  position: absolute;
-  top: 40%;
-  width: 40%;
-  margin: auto;
-  height: 100vh;
-  background-color: rgba(17, 89, 198, 0.21);
-  filter: blur(100px);
-  border-radius: 50% 0 0 50%;
-  right: 0;
-  text-align: -webkit-center;
-}
-
-
 .other-left-bg-back {
   position: absolute;
   top: 20%;
