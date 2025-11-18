@@ -1,16 +1,15 @@
 baseURL = "https://pactus.org"
 title = "Pactus blockchain"
-relativeURLs = true
-canonifyURLs = true
+relativeURLs = false
 
 [permalinks]
   blog = "/:year/:month/:day/:title/"
 
 [params]
-  releaseTag = "v1.9.1"
-  mainCSS = "css/main.css"
+  releaseTag = "v1.10.1"
   subtitle = "Building the Most Accessible Blockchain"
   description = "Pactus is an open source, layer-1 blockchain technology with a revolutionary, secure, Solid State Proof of Stake Consensus. Come join us and build a decentralized future together!."
+  keywords = "pactus, blockchain, pactus blockchain, sspos, solid state proof of stake"
   [params.contact]
     email = "info@pactus.org"
 

@@ -1,7 +1,7 @@
 +++
 title = "We Are Building an Exchange, a Different One"
 author = "Pactus Team"
-date = 2025-02-10T00:00:00+00:00
+date = "2025-02-10T00:00:00"
 tags = ["exchange"]
 image = "build-exchange.png"
 +++

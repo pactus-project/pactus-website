@@ -4,7 +4,7 @@ description = """
 A Month of Governance and Growth: PIP-43 and Block Reward Split, Network Growth and more...
 """
 author = "Pactus Team"
-date = 2025-09-05T00:00:00+00:00
+date = "2025-09-05T00:00:00"
 tags = ["newsletter"]
 image = "pactus-newsletter-august-2025.png"
 +++

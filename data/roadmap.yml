@@ -1,124 +1,134 @@
 - title: Pactus Onchain Governance
   description:
   icon: fa-gavel
-  date: Q1 2026
   reference:
   state: planned
 
 - title: Decentralized Domain Name System
   description:
   icon: fa-globe
-  date: Q4 2025
   reference:
   state: planned
 
 - title: Decentralized Password Manager
   description:
   icon: fa-lock
-  date: Q4 2025
   reference:
   state: planned
 
 - title: Browser Extension
   description:
   icon: fa-plug
-  date: Q3 2025
   reference:
   state: planned
 
 - title: Pactus Virtual Machine (PVM)
   description:
   icon: fa-microchip
-  date: Q3 2025
+  date: Q3 2026
   reference:
   state: planned
 
 - title: Decentralized Storage Platform
   description:
   icon: fa-database
-  date: Q2 2025
+  date: Q2 2026
   reference:
   state: planned
 
 - title: Mobile Friendly GUI (Pactus-GUI)
   description:
   icon: fa-mobile-alt
-  date: Q2 2025
+  date: Q1 2026
   reference: https://github.com/pactus-project/pactus-gui
   state: construct
 
-- title: Javascript-SDK
+- title: Supprot secp256k1 Curve
   description:
-  icon: fa-brands fa-js
-  date: Q2 2025
+  icon: fa-coins
+  date: November 2025
   reference:
-  state: planned
+  state: construct
   current: true
+
+- title: Address Recovery
+  description:
+  icon: fa-trash-can-arrow-up
+  date: October 2025
+  reference: /2025/10/27/pactus-1.10.0-casablanca-released/
+  state: completed
+
+- title: Split Reward
+  description:
+  icon: fa-arrows-split-up-and-left
+  date: September 2025
+  reference: /2025/09/10/pactus-1.9.0-lisbon-released/
+  state: completed
 
 - title: Pactus Web Wallet
   description:
   icon: fa-wallet
-  date: Q1 2025
-  reference: https://github.com/pactus-project/pactus-wallet
-  state: construct
+  date: August 2025
+  reference: https://wallet.pactus.org/
+  state: completed
 
-- title: Batch Transactions
+- title: Batch Transfer
   description:
   icon: fa-brands fa-letterboxd
-  date: Q1 2025
-  reference: https://pips.pactus.org/PIPs/pip-37
-  state: construct
+  date: July 2025
+  reference: /2025/07/01/pactus-1.8.0-paris-released/
+  state: completed
 
 - title: Notification Service
   description:
   icon: fa-bullhorn
-  date: Q1 2025
-  reference: https://pactus.org/2025/01/23/pactus-1.7.0-seoul-released/
+  date: January 2025
+  reference: /2025/01/23/pactus-1.7.0-seoul-released/
   state: completed
 
 - title: Consumptional Fee Model
   description:
   icon: fa-coins
-  date: Q4 2024
-  reference: https://pactus.org/2024/11/14/pactus-1.6.0-mumbai-released/
+  date: November 2024
+  reference: /2024/11/14/pactus-1.6.0-mumbai-released/
+  state: completed
+
+- title: Pactus Reached 100 TPS
+  description:
+  icon: fa-gauge-high
+  date: October 2024
+  reference: /2024/10/10/pactus-reached-100-tps/
   state: completed
 
 - title: Supporting Ed25519 Curve
   description:
-  icon: fa-chart-line
-  date: Q3 2024
-  reference: https://pactus.org/2024/10/08/pactus-1.5.0-singapore-released/
+  icon: fa-coins
+  date: October 2024
+  reference: /2024/10/08/pactus-1.5.0-singapore-released/
   state: completed
-
-# - title: Batch Transactions
-#   description:
-#   icon: fa-list-ol
-#   date: Q3 2024
-#   reference:
-#   state: construct
 
 - title: Pruned Node
   description:
   icon: fa-tree
   date: August 2024
-  reference:
+  reference: /2024/08/01/pactus-1.4.0-amsterdam-released/
   state: completed
 
 - title: Wallet Manager
   description:
   icon: fa-wallet
   date: Jun 2024
-  reference: https://docs.pactus.org/tutorials/grpc-sign-transactions/
+  reference: /2024/06/20/pactus-1.2.0-sydney-released/
   state: completed
 
 - title: Pactus Shell
   description:
   icon: fa-terminal
   date: April 2024
-  reference: https://docs.pactus.org/tutorials/pactus-shell/
+  reference: /2024/04/14/pactus-1.1.0-hanoi-released/
   state: completed
 
-- title: Block Explorer
+- title: PacViewer - Pactus Block Explorer
   description:
   icon: fa-search
   date: April 2024

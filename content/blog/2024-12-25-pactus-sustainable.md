@@ -5,7 +5,7 @@ description = """
 Running Pactus on Raspberry Pi Zero highlights energy efficiency, accessibility, and decentralization,
 driven by innovations like SSPoS and pruned nodes.
 """
-date = 2024-12-15T00:00:00+00:00
+date = "2024-12-15T00:00:00"
 tags = ["marketing"]
 image = "pactus-sustainable-blockchain.png"
 +++

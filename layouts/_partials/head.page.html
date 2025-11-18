@@ -1,0 +1,35 @@
+<head>
+  {{ partial "google_tag.html" }}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ .Title }} | Pactus</title>
+
+  <meta name="keywords" content="{{ .Site.Params.keywords }}" />
+
+  <meta
+    name="description"
+    content="{{ partial "desc.html" (dict "description" .Page.Params.description "summary" .Page.Content "charCount" 300) }}" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ .Title }} | Pactus" />
+  <meta property="og:description"
+    content="{{ partial "desc.html" (dict "description" .Page.Params.description "summary" .Page.Content "charCount" 300) }}" />
+  <meta property="og:locale" content="en" />
+  <meta property="og:site_name" content="Pactus" />
+  <meta property="og:url" content="{{ .Page.Permalink }}" />
+  <meta property="og:image"
+    content="{{ if and .Page.File .Params.image }}{{ partial "image.html" (dict "src" .Params.image "filename" .Page.File.BaseFileName) | absURL }}{{ else }}{{ "/images/pactus-blog-post-default.webp" | absURL }}{{ end }}" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="{{ .Page.Permalink }}" />
+  <meta name="twitter:title" content="{{ .Title }} | Pactus" />
+  <meta name="twitter:description" content="{{ partial "desc.html" (dict "description" .Page.Params.description "summary" .Page.Content "charCount" 300) }}" />
+  <meta name="twitter:image" content="{{ if and .Page.File .Params.image }}{{ partial "image.html" (dict "src" .Params.image "filename" .Page.File.BaseFileName) | absURL }}{{ else }}{{ "/images/pactus-blog-post-default.webp" | absURL }}{{ end }}" />
+
+  <link rel="stylesheet" href="/css/main.css" />
+
+  {{ partial "favicon.html" }}
+
+  <link href="/fontawesome/css/all.min.css" rel="stylesheet" />
+  <link href="/fontawesome/css/brands.colorful.css" rel="stylesheet" />
+</head>

@@ -56,7 +56,7 @@ def extract_toml_header(md_file: str):
     try:
         header = toml.loads(header_content)
     except Exception as e:
-        print(f"Error parsing TOML: {e}")
+        print(f"Error parsing TOML {md_file}: {e}")
         sys.exit(1)
 
     return header

@@ -1,7 +1,7 @@
 +++
 title = "Dev meeting - October 2022"
 author = "Pactus Team"
-date = 2022-10-30T00:00:00+00:00
+date = "2022-10-30T00:00:00"
 tags = ["dev-meeting"]
 image = "/images/pactus-blog-post-default.jpg"
 +++
@@ -27,7 +27,7 @@ Nagaraj explained the block explorer and some of the features.
 
 ### Project road map
 
-Project [road map](/about/roadmap/) was discussed.
+Project road map was discussed.
 
 ### IdeaKita pitch deck
 

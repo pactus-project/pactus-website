@@ -4,7 +4,7 @@ description = """
 November Highlights: Pactus under attack, Zero-Fee Transactions, 6 million transactions & more ...
 """
 author = "Pactus Team"
-date = 2024-12-07T00:00:00+00:00
+date = "2024-12-07T00:00:00"
 tags = ["newsletter"]
 image = "pactus-newsletter-november-2024.png"
 +++
@@ -15,7 +15,7 @@ Welcome to the November 2024 edition of the Pactus Newsletter[^1].
 This month has seen steady progress and notable development updates.
 Let's dive into all the details.
 
-### Pactus Reaches 6 Million Transactions
+### Pactus Reached 6 Million Transactions
 
 Pactus has processed over 6 million transactions!
 This significant milestone underscores the ongoing growth of our network,
