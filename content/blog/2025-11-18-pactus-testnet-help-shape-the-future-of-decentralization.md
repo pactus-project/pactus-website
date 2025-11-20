@@ -1,8 +1,8 @@
 +++
-title = "Pactus Testnet: Help Shape the Future of Decentralization"
+title = "Pactus Testnet: Help Build the World's Most Accessible Blockchain"
 description = "Running a validator on Testnet."
 author = "Pactus Team"
-date = "2025-11-18T12:00:33+01:00"
+date = "2025-11-20T23:31:45+01:00"
 tags = ["testnet", "validator", "decentralization", "community"]
 image = "pactus-testnet-help-shape-the-future.png"
 +++
@@ -28,12 +28,10 @@ where we test the future before it becomes reality.
 
 **Running a Testnet ensures that:**
 
-* Protocol upgrades (like forks, governance changes, and reward models)
-are tested safely.
-* Developers can study network behavior under real conditions without
-risking user funds.
+* Protocol upgrades (like forks, governance changes, and reward models) are tested safely.
+* Developers can study network behavior under real conditions without risking user funds.
 * Bugs, performance issues, or inefficiencies can be caught early.
-* The community has a voice in shaping the blockchain’s evolution.
+* The community has a voice in shaping the blockchain's evolution.
 
 Every validator who runs Testnet strengthens this feedback loop, making
 Mainnet safer and more trustworthy.
@@ -65,7 +63,7 @@ monitor testnet activities live on [Phoenix Explorer](https://phoenix.pacviewer.
 
 To interact with the Pactus Testnet, you’ll need test coins **(tPAC)**.
 You can request up to 5 **tPAC** per day from [Pagu](https://pagu.bot),
-in our [Discord server](https://discord.gg/fEdJj84uxZ) / [Telegram chat](https://t.me/pactuschat).
+in our Discord server, Telegram chat and WhatsApp.
 This makes it easy to experiment with sending transactions.
 
 ## A Call to Validators and Community Members
