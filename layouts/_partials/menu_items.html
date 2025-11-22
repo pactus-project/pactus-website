@@ -3,23 +3,23 @@
   "title" "About"
   "type" "dropdown"
   "items" (slice
-  (dict "title" "What is Pactus?" "url" "about/what-is-pactus" "icon" "system-regular-76-newspaper.json")
-  (dict "title" "Roadmap" "url" "about/roadmap" "icon" "system-regular-24-view-1.json")
-  (dict "title" "FAQ" "url" "about/faq" "icon" "system-regular-140-help-center.json")
+  (dict "title" "What is Pactus?" "url" "about/what-is-pactus" "icon" "fa-newspaper")
+  (dict "title" "Roadmap" "url" "about/roadmap" "icon" "fa-map")
+  (dict "title" "FAQ" "url" "about/faq" "icon" "fa-circle-question")
   )
   )
   (dict
   "title" "Documentation"
   "type" "dropdown"
   "items" (slice
-  (dict "title" "Get Started" "url" "https://docs.pactus.org/get-started/" "icon" "vduvxizq.json" "external" true)
+  (dict "title" "Get Started" "url" "https://docs.pactus.org/get-started/" "icon" "fa-flag-checkered" "external" true)
   (dict "title" "Become a validator" "url" "https://docs.pactus.org/get-started/become-a-validator/" "icon"
-  "system-regular-16-assessment.json" "external" true)
-  (dict "title" "Protocol" "url" "https://docs.pactus.org/protocol/" "icon" "system-regular-178-work.json" "external"
+  "fa-user-check" "external" true)
+  (dict "title" "Protocol" "url" "https://docs.pactus.org/protocol/" "icon" "fa-book" "external"
   true)
-  (dict "title" "Tutorial" "url" "https://docs.pactus.org/tutorials/" "icon" "system-regular-19-book.json" "external"
+  (dict "title" "Tutorials" "url" "https://docs.pactus.org/tutorials/" "icon" "fa-book-open-reader" "external"
   true)
-  (dict "title" "API Reference" "url" "https://docs.pactus.org/api/" "icon" "system-regular-34-code.json" "external" true)
+  (dict "title" "API Reference" "url" "https://docs.pactus.org/api/" "icon" "fa-code" "external" true)
   )
   )
   (dict
@@ -36,20 +36,21 @@
   "title" "Resources"
   "type" "dropdown"
   "items" (slice
-  (dict "title" "Obtain PAC" "url" "obtain-pac" "icon" "wired-outline-298-coins-hover-jump.json")
-  (dict "title" "Contributing" "url" "contributing" "icon" "system-regular-156-thumbs-up-down-hover-thumbs.json")
-  (dict "title" "Block Explorer" "url" "https://pacviewer.com/" "icon" "magnifier.json"  "external" true)
-  (dict "title" "Pactus wallet" "url" "https://wallet.pactus.org" "icon" "wallet.json"  "external" true)
-  (dict "title" "Pagu" "url" "https://pagu.bot/" "icon" "chatbot.json" "external"  true)
-  (dict "title" "Charts" "url" "https://1pactus.github.io/" "icon" "chart.json" "external"  true)
-  (dict "title" "PIPs" "url" "https://pips.pactus.org/" "icon" "assignment.json"  "external" true)
-  (dict "title" "Source code" "url" "https://github.com/pactus-project/" "icon" "system-regular-50-file-hover-file-1.json"
+  (dict "title" "Obtain PAC" "url" "obtain-pac" "icon" "fa-coins")
+  (dict "title" "Contributing" "url" "contributing" "icon" "fa-hand-holding-heart")
+  (dict "title" "Block Explorer" "url" "https://pacviewer.com/" "icon" "fa-magnifying-glass"  "external" true)
+  (dict "title" "Pactus wallet" "url" "https://wallet.pactus.org" "icon" "fa-wallet"  "external" true)
+  (dict "title" "Wrapto" "url" "https://wrapto.app/" "icon" "fa-link" "external"  true)
+  (dict "title" "Pagu" "url" "https://pagu.bot/" "icon" "fa-robot" "external"  true)
+  (dict "title" "Charts" "url" "https://1pactus.github.io/" "icon" "fa-chart-line" "external"  true)
+  (dict "title" "PIPs" "url" "https://pips.pactus.org/" "icon" "fa-file-lines"  "external" true)
+  (dict "title" "Source code" "url" "https://github.com/pactus-project/" "icon" "fa-code-branch"
   "external" true)
   (dict "title" "Whitepaper" "url"
   "https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf" "icon"
-  "system-regular-14-article-hover-article.json" "external" true)
+  "fa-file-pdf" "external" true)
   (dict "title" "Investor Deck" "url" "/pdf/pactus-investor-deck-public-final.pdf" "icon"
-  "system-regular-16-assessment-hover-assessment.json" "external" true)
+  "fa-file-powerpoint" "external" true)
   )
   )
   }}
@@ -65,13 +66,7 @@
               <a
                 href="{{- if not .external -}}{{ $.Site.BaseURL }}{{- end -}}{{ .url }}"
                 {{ if .external }}target="_blank"{{ end }}>
-                <lord-icon
-                  class="h-[25px] md:h-[30px]"
-                  target=".icon-target"
-                  trigger="hover"
-                  src="/images/lottie/{{ .icon }}"
-                  colors="primary:#fff,secondary:#fff">
-                </lord-icon>
+                <span class="fa-solid {{ .icon }} mr-2"></span>
                 {{ .title }}
                 {{- if .external -}}
                   <svg width="24px" height="24px" viewBox="0 0 24 24" style="cursor:pointer">

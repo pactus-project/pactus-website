@@ -2,10 +2,6 @@
   url: "https://pacviewer.com/"
   logo: "pacviewer.png"
 
-- name: "Dezh"
-  url: "https://dezh.tech/"
-  logo: "dezh.svg"
-
 - name: "Bitcoin Talk"
   url: "https://bitcointalk.org/index.php?topic=5480867.new#new"
   logo: "bitcointalk.svg"
@@ -21,6 +17,10 @@
 - name: "Forbes"
   url: "https://www.forbes.com/digital-assets/assets/pactus-pac/"
   logo: "forbes.svg"
+
+- name: "Crypto.com"
+  url: "https://crypto.com/en/price/pactus/"
+  logo: "crypto.com-arena.png"
 
 - name: "ByBit"
   url: "https://www.bybit.com/de-AUT/coin-price/pactus/"
