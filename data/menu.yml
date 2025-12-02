@@ -1,0 +1,82 @@
+- title: "About"
+  type: "dropdown"
+  items:
+    - title: "What is Pactus?"
+      url: "about/what-is-pactus"
+      icon: "fa-newspaper"
+    - title: "Roadmap"
+      url: "about/roadmap"
+      icon: "fa-map"
+    - title: "FAQ"
+      url: "about/faq"
+      icon: "fa-circle-question"
+- title: "Documentation"
+  type: "dropdown"
+  items:
+    - title: "Get Started"
+      url: "https://docs.pactus.org/get-started/"
+      icon: "fa-flag-checkered"
+      external: true
+    - title: "Become a validator"
+      url: "https://docs.pactus.org/get-started/become-a-validator/"
+      icon: "fa-user-check"
+      external: true
+    - title: "Protocol"
+      url: "https://docs.pactus.org/protocol/"
+      icon: "fa-book"
+      external: true
+    - title: "Tutorials"
+      url: "https://docs.pactus.org/tutorials/"
+      icon: "fa-book-open-reader"
+      external: true
+    - title: "API Reference"
+      url: "https://docs.pactus.org/api/"
+      icon: "fa-code"
+      external: true
+- title: "Blog"
+  type: "link"
+  url: "blog"
+- title: "Download"
+  type: "link"
+  url: "download"
+- title: "Resources"
+  type: "dropdown"
+  items:
+    - title: "Obtain PAC"
+      url: "obtain-pac"
+      icon: "fa-coins"
+    - title: "Contributing"
+      url: "contributing"
+      icon: "fa-hand-holding-heart"
+    - title: "Block Explorer"
+      url: "https://pacviewer.com/"
+      icon: "fa-magnifying-glass"
+      external: true
+    - title: "Pactus wallet"
+      url: "https://wallet.pactus.org"
+      icon: "fa-wallet"
+      external: true
+    - title: "Wrapto"
+      url: "https://wrapto.app/"
+      icon: "fa-link"
+      external: true
+    - title: "Pagu"
+      url: "https://pagu.bot/"
+      icon: "fa-robot"
+      external: true
+    - title: "Charts"
+      url: "https://1pactus.github.io/"
+      icon: "fa-chart-line"
+      external: true
+    - title: "PIPs"
+      url: "https://pips.pactus.org/"
+      icon: "fa-file-lines"
+      external: true
+    - title: "Source code"
+      url: "https://github.com/pactus-project/"
+      icon: "fa-code-branch"
+      external: true
+    - title: "Whitepaper"
+      url: "https://github.com/pactus-project/Whitepaper/releases/latest/download/pactus_whitepaper.pdf"
+      icon: "fa-file-pdf"
+      external: true
