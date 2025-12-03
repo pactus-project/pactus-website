@@ -15,25 +15,22 @@ ease of use, fiat options, and customer support.
 
 ## Bridge
 
-<div class="grid grid-cols-3 gap-x-6 items-center">
+<div class="grid grid-cols-1 gap-x-6 items-left ">
   <a target="_blank" href="https://wrapto.app" title="Wrapto">
-    <img src="/images/exchange/wrapto.svg" style="height: 48px" class="object-contain mx-auto" alt="Wrapto" />
+    <img src="/images/exchange/wrapto_text-dark.svg" style="height: 48px" class="object-contain" alt="Wrapto" />
   </a>
+  Wrapto is a bridging platform that bridges PAC coins to other chains at a 1:1 ratio in the form of Wrapped PAC coins.<br>
+  This essentially helps Pactus users trade PAC on decentralized exchanges.
+
 </div>
 
 ## Decentralized Exchange
 
-<div class="grid grid-cols-3 gap-x-6 items-center">
-  <a target="_blank" href="https://dexscreener.com/polygon/0x17924d9a46ea07dd109f3e88cef30c2ad8602344" title="Polygon">
-    <img src="/images/exchange/polygon.svg" style="height: 48px" class="object-contain mx-auto" alt="Polygon" />
-  </a>
-  <a target="_blank" href="https://dexscreener.com/bsc/0x10004a9A742ec135c686C9aCed00FA3C93D66866" title="Binance">
-    <img src="/images/exchange/bsc.svg" style="height: 48px" class="object-contain mx-auto" alt="Binance smart chain" />
-  </a>
-  <a target="_blank" href="https://dexscreener.com/base/0x10004a9A742ec135c686C9aCed00FA3C93D66866" title="Base">
-    <img src="/images/exchange/base.svg" style="height: 48px" class="object-contain mx-auto" alt="Base" />
-  </a>
-</div>
+Trade PAC tokens directly on decentralized exchanges (DEXs) across multiple blockchain networks.
+DEXs provide non-custodial trading, meaning you maintain full control of your assets throughout the trading process.
+Below are the available liquidity pools where you can swap PAC tokens with other cryptocurrencies.
+
+{{< dex_pools >}}
 
 ## Centralized Exchange
 

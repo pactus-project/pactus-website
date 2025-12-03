@@ -25,7 +25,7 @@ liquidity locked for 1 year.
 
 Features:
 
-- Trade WPAC/WPOL on Polygon.
+- Trade WPAC/WPOL on [Polygon](https://polygon.technology/).
 - Bridge PAC to Polygon using [Wrapto](https://wrapto.app/).
 - Official contract [address](https://polygonscan.com/token/0x2f77E0afAEE06970Bf860B8267b5aFECFFF6F216).
 - This move marks a significant step toward decentralized trading and Web3 integration for Pactus.

@@ -1,7 +1,7 @@
 +++
 title = "Pactus Newsletter, March 2025"
 description = """
-March Highlights: Welcome to ezeX, Pactus Crowdfunding, Pactus on Binance Smart Chain,
+March Highlights: Welcome to ezeX, Pactus Crowdfunding, Pactus on BNB Chain,
 10 Million Transactions, Web Wallet and more...
 """
 author = "Pactus Team"
@@ -36,14 +36,14 @@ Interested participants may contribute through “Pagu”
 on [Discord](https://discord.gg/H5vZkNnXCu) or
 [Telegram](https://t.me/pactus_pagu_bot) with the `crowdfund` commands.
 
-### Pactus Expands to Binance Smart Chain
+### Pactus Expands to BNB
 
-We are thrilled to announce the launch of Wrapped PAC (WPAC) on Binance Smart Chain (BSC),
+We are thrilled to announce the launch of Wrapped PAC (WPAC) on [BNB Chain](https://www.bnbchain.org/),
 this is another step to enhance the accessibility of Pactus and its ecosystem.
 Users can now hold [WPAC](https://bscscan.com/token/0x10004a9A742ec135c686C9aCed00FA3C93D66866)
 in MetaMask or Trust Wallet for convenient asset management, trade effortlessly on
 [PancakeSwap](https://pancakeswap.finance/),
-and bridge PAC to Binance Smart Chain using
+and bridge PAC to BNB Chain using
 [Wrapto](https://wrapto.app/) (while carefully following all instructions).
 
 To safeguard investor confidence, initial liquidity has been locked for one year on Team Finance.
