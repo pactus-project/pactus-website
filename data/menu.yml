@@ -17,7 +17,7 @@
       url: "https://docs.pactus.org/get-started/"
       icon: "fa-flag-checkered"
       external: true
-    - title: "Become a validator"
+    - title: "Become a Validator"
       url: "https://docs.pactus.org/get-started/become-a-validator/"
       icon: "fa-user-check"
       external: true
