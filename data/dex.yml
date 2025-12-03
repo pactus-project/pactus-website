@@ -1,26 +1,4 @@
 pools:
-  - name: "WPAC / USDC"
-    platform: "Uniswap"
-    chain: "base"
-    chain_name: "Base"
-    pool_url: "https://app.uniswap.org/explore/pools/base/0x41c17cbd8712517d1ad21e319715d1aa35e4c067"
-    pool_contract_explorer: "https://basescan.org/address/0x41c17cbd8712517d1ad21e319715d1aa35e4c067"
-    pool_contract: "0x41c17cbd8712517d1ad21e319715d1aa35e4c067"
-
-    pool_type: "UniswapV3Pool"
-    fee: 0.3
-    dexscreener_url: "https://dexscreener.com/base/0x41c17cbd8712517d1ad21e319715d1aa35e4c067"
-    token0:
-      contract: "0x10004a9A742ec135c686C9aCed00FA3C93D66866"
-      contract_explorer: "https://basescan.org/address/0x10004a9A742ec135c686C9aCed00FA3C93D66866"
-      name: "Wrapped PAC"
-      symbol: "WPAC"
-    token1:
-      contract: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
-      contract_explorer: "https://basescan.org/address/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
-      name: "USD Coin"
-      symbol: "USDC"
-
   - name: "WPAC / WPOL"
     platform: "Uniswap"
     chain: "polygon"
@@ -29,6 +7,8 @@ pools:
     pool_contract: "0x17924D9a46EA07Dd109f3E88ceF30c2Ad8602344"
     pool_contract_explorer: "https://polygonscan.com/address/0x17924D9a46EA07Dd109f3E88ceF30c2Ad8602344"
     pool_type: "UniswapV3Pool"
+    swap_url: >-
+      https://app.uniswap.org/swap?inputCurrency=0x2f77E0afAEE06970Bf860B8267b5aFECFFF6F216&outputcurrency=0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270
     fee: 0.01
     dexscreener_url: "https://dexscreener.com/polygon/0x17924D9a46EA07Dd109f3E88ceF30c2Ad8602344"
     token0:
@@ -50,6 +30,8 @@ pools:
     pool_contract: "0xe7A01bFEdF3737a19C37CE81fe0Ba188012212c9"
     pool_contract_explorer: "https://bscscan.com/address/0xe7A01bFEdF3737a19C37CE81fe0Ba188012212c9"
     pool_type: "PancakeV3Pool"
+    swap_url: >-
+      https://pancakeswap.finance/swap?inputCurrency=0x10004a9a742ec135c686c9aced00fa3c93d66866&outputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&chain=bsc
     fee: 0.25
     dexscreener_url: "https://dexscreener.com/bsc/0xe7A01bFEdF3737a19C37CE81fe0Ba188012212c9"
     token0:
@@ -62,3 +44,26 @@ pools:
       contract_explorer: "https://bscscan.com/address/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
       name: "Wrapped BNB"
       symbol: "WBNB"
+
+  - name: "WPAC / USDC"
+    platform: "SushiSwap"
+    chain: "base"
+    chain_name: "Base"
+    pool_url: "https://www.sushi.com/base/pool/v3/0x41c17cbd8712517d1ad21e319715d1aa35e4c067"
+    pool_contract_explorer: "https://basescan.org/address/0x41c17cbd8712517d1ad21e319715d1aa35e4c067"
+    pool_contract: "0x41c17cbd8712517d1ad21e319715d1aa35e4c067"
+    pool_type: "UniswapV3Pool"
+    swap_url: >-
+      https://www.sushi.com/base/swap?token0=0x10004a9a742ec135c686c9aced00fa3c93d66866&token1=0x833589fcd6edb6e08f4c7c32d4f71b54bda02913
+    fee: 0.3
+    dexscreener_url: "https://dexscreener.com/base/0x41c17cbd8712517d1ad21e319715d1aa35e4c067"
+    token0:
+      contract: "0x10004a9A742ec135c686C9aCed00FA3C93D66866"
+      contract_explorer: "https://basescan.org/address/0x10004a9A742ec135c686C9aCed00FA3C93D66866"
+      name: "Wrapped PAC"
+      symbol: "WPAC"
+    token1:
+      contract: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      contract_explorer: "https://basescan.org/address/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      name: "USD Coin"
+      symbol: "USDC"
