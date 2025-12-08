@@ -18,7 +18,7 @@ becoming more accessible and vibrant.
 
 ### Pagu on WhatsApp
 
-We are excited to announce that **Pagu**, our helpful community bot, is now
+We are excited to announce that **[Pagu](https://pagu.bot/)**, our helpful community bot, is now
 available on **WhatsApp**! This integration brings Pactus updates, network
 stats, and alerts directly to your favorite messaging app.
 
