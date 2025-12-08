@@ -23,21 +23,15 @@ available on **WhatsApp**! This integration brings Pactus updates, network
 stats, and alerts directly to your favorite messaging app.
 
 Staying connected with the Pactus network has never been easier. You can now
-interact  and query network status without leaving
+interact and query network status without leaving
 WhatsApp. This is part of our ongoing effort to make Pactus accessible to
 everyone, everywhere.
 
 ### Wrapto Bridge: Bridging the Gap
 
-Development on **[Wrapto](https://wrapto.app)**, the bridging platform for Pactus, has
-made significant
-progress this month. The Wrapto Bridge is designed to seamlessly connect Pactus
-with other blockchain ecosystems, unlocking new liquidity and utility for PAC
-holders.
+**[Wrapto](https://wrapto.app)** is now live, enabling Pactus users to seamlessly bridge their PAC into other major blockchain ecosystems in the form of Wrapped PAC (WPAC). This unlocks new liquidity, interoperability, and utility for the Pactus community.
 
-The team is working hard to ensure a secure and efficient bridging experience.
-Expect more detailed updates and testing opportunities in the coming weeks as we
-move closer to launch.
+The team continues to enhance security, stability, and user experience across the platform. Expect further improvements, feature updates, and expanded chain support as Wrapto evolves.
 
 ### Secutor: Enter the Arena
 
@@ -53,7 +47,13 @@ check it out and cast your vote!
 ### Closing Note
 
 With Pagu reaching more users, Wrapto building bridges, and Secutor
-demonstrating the power of community builders, November was a pivotal month. We
-are excited to carry this momentum into December and the new year.
+demonstrating the power of community builders, November was a pivotal month.
+We are excited to carry this momentum into December and the new year.
 
 Thank you for your continued support and participation.
+
+---
+
+**Pactus Newsletter**: The Pactus monthly newsletter is published on our website and
+distributed to subscribers via email during the first week of each month.
+It recaps key highlights and important news from the previous month.
