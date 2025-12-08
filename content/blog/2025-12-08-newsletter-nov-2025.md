@@ -45,7 +45,7 @@ We also saw the launch of **[Secutor](https://secutor.world/)**, the first
 community-developed application on Pactus! Secutor is a decentralized ranking
 platform where you can vote for your favorite crypto influencers.
 
-As detailed in our [recent blog post](/blog/2025-11-27-secutor/), Secutor is
+As detailed in our recent blog post, Secutor is
 more than just a leaderboard; it's a testament to the power of the Pactus
 community and the ease of building on our platform. If you haven't already,
 check it out and cast your vote!
