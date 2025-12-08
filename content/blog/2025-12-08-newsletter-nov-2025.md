@@ -29,9 +29,12 @@ everyone, everywhere.
 
 ### Wrapto Bridge: Bridging the Gap
 
-**[Wrapto](https://wrapto.app)** is now live, enabling Pactus users to seamlessly bridge their PAC into other major blockchain ecosystems in the form of Wrapped PAC (WPAC). This unlocks new liquidity, interoperability, and utility for the Pactus community.
+**[Wrapto](https://wrapto.app)** is now live, enabling Pactus users to seamlessly
+bridge their PAC into other major blockchain ecosystems in the form of Wrapped PAC (WPAC).
+This unlocks new liquidity, interoperability, and utility for the Pactus community.
 
-The team continues to enhance security, stability, and user experience across the platform. Expect further improvements, feature updates, and expanded chain support as Wrapto evolves.
+The team continues to enhance security, stability, and user experience across the platform.
+Expect further improvements, feature updates, and expanded chain support as Wrapto evolves.
 
 ### Secutor: Enter the Arena
 
