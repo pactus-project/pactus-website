@@ -41,7 +41,7 @@ move closer to launch.
 
 ### Secutor: Enter the Arena
 
-We also saw the launch of **[Secutor](https://secutor.world/)**, the first
+We also saw the launch of **[Secutor](https://secutor.world/)**, a new
 community-developed application on Pactus! Secutor is a decentralized ranking
 platform where you can vote for your favorite crypto influencers.
 
