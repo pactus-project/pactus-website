@@ -29,7 +29,7 @@ everyone, everywhere.
 
 ### Wrapto Bridge: Bridging the Gap
 
-Development on **[Wrapto](https://wrapto.app)**, the wrapped Pactus solution, has
+Development on **[Wrapto](https://wrapto.app)**, the bridging platform for Pactus, has
 made significant
 progress this month. The Wrapto Bridge is designed to seamlessly connect Pactus
 with other blockchain ecosystems, unlocking new liquidity and utility for PAC
