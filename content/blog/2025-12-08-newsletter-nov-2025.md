@@ -23,7 +23,7 @@ available on **WhatsApp**! This integration brings Pactus updates, network
 stats, and alerts directly to your favorite messaging app.
 
 Staying connected with the Pactus network has never been easier. You can now
-receive real-time notifications and query network status without leaving
+interact  and query network status without leaving
 WhatsApp. This is part of our ongoing effort to make Pactus accessible to
 everyone, everywhere.
 
