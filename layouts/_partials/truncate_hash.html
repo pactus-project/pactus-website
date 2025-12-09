@@ -1,0 +1,16 @@
+{{- /*
+  Truncate hash to show first N characters and last M characters
+
+  Usage: {{ partial "truncate_hash.html" (dict "hash" "0x1234567890abcdef" "start" 8 "end" 6) }}
+  Default: start=8, end=6 (longer than address for better hash visibility)
+*/ -}}
+{{- $hash := .hash -}}
+{{- $start := default 8 .start -}}
+{{- $end := default 6 .end -}}
+{{- if $hash -}}
+  {{- $endNeg := mul $end -1 -}}
+  {{- printf "%s...%s" (substr $hash 0 $start) (substr $hash $endNeg) -}}
+{{- else -}}
+  {{- "" -}}
+{{- end -}}
+
