@@ -1,208 +1,234 @@
 <div class="w-full space-y-4">
   {{ $pools := site.Data.dex.pools }}
   {{ range $index, $pool := $pools }}
-    <div class="collapse collapse-arrow bg-gradient-to-br from-[#141B25] to-[#0F1419] border border-neutral-700/50 rounded-2xl shadow-lg hover:border-neutral-600/50 transition-all duration-300">
-      <input type="checkbox" name="dex-pools" class="peer" />
+  <div
+    class="collapse collapse-arrow bg-gradient-to-br from-[#141B25] to-[#0F1419] border border-neutral-700/50 rounded-2xl shadow-lg hover:border-neutral-600/50 transition-all duration-300">
+    <input type="checkbox" name="dex-pools" class="peer" />
 
-      <!-- Header -->
-      <div class="collapse-title text-base md:text-lg font-semibold text-neutral-50 flex items-center gap-3 min-h-[60px] py-2">
-        <div class="flex items-center gap-3 flex-1">
-          <!-- Pool Image -->
-          <div class="relative">
-            {{ $poolImage := printf "pool-%s-%s-%s-%s.svg" (lower $pool.platform) (lower $pool.chain) (lower $pool.token0.symbol) (lower $pool.token1.symbol) }}
-            <img src="/images/exchange/{{ $poolImage }}" alt="{{ $pool.name }}" class="h-10 w-10 md:h-12 md:w-12 object-contain rounded-lg bg-[#0F1419] p-1 border border-neutral-800" />
+    <!-- Header -->
+    <div
+      class="collapse-title text-base md:text-lg font-semibold text-neutral-50 flex items-center gap-3 min-h-[60px] py-2">
+      <div class="flex items-center gap-3 flex-1">
+        <!-- Pool Image -->
+        <div class="relative">
+          {{ $poolImage := printf "pool-%s-%s-%s-%s.svg" (lower $pool.platform) (lower $pool.chain) (lower
+          $pool.token0.symbol) (lower $pool.token1.symbol) }}
+          <img src="/images/exchange/{{ $poolImage }}" alt="{{ $pool.name }}"
+            class="h-10 w-10 md:h-12 md:w-12 object-contain rounded-lg bg-[#0F1419] p-1 border border-neutral-800" />
+        </div>
+
+        <!-- Pool Info -->
+        <div class="flex-1">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="font-bold text-base md:text-lg">{{ $pool.name }}</span>
+            {{ if $pool.fee }}
+            <span class="badge badge-sm bg-[#2b2b4b]/50 text-neutral-300 border-neutral-600/50">
+              {{ $pool.fee }}% fee
+            </span>
+            {{ end }}
+            {{ if $pool.new }}
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold text-white shadow-sm"
+                  style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);">
+              New
+            </span>
+            {{ end }}
           </div>
+          <div class="flex items-center gap-2 mt-0.5 flex-wrap">
+            <span class="text-xs font-medium text-neutral-400">{{ $pool.platform }}</span>
+            <span class="text-neutral-600">•</span>
+            <span class="text-xs text-neutral-400">{{ $pool.chain_name }}</span>
+          </div>
+        </div>
+      </div>
+      {{ if $pool.swap_url }}
+      {{ $platformWhiteLogo := printf "/images/exchange/%s-mono.svg" (lower $pool.platform) }}
+      <a href="{{ $pool.swap_url }}" target="_blank" onclick="event.stopPropagation();"
+        class="btn btn-xs md:btn-sm bg-gradient-to-r from-[#217AFF] to-[#217AFF] hover:from-[#318AFF] hover:to-[#318AFF] text-neutral-50 border-neutral-500/50 shadow-lg transition-all no-underline flex-shrink-0">
+        <img src="{{ $platformWhiteLogo }}" alt="{{ $pool.platform }}"
+          class="w-3 h-3 md:w-4 md:h-4 mr-1.5 object-contain" style="margin: 0px;" />
+        Swap
+      </a>
+      {{ end }}
+    </div>
 
-          <!-- Pool Info -->
-          <div class="flex-1">
-            <div class="flex items-center gap-2 flex-wrap">
-              <span class="font-bold text-base md:text-lg">{{ $pool.name }}</span>
-              {{ if $pool.fee }}
-              <span class="badge badge-sm bg-[#2b2b4b]/50 text-neutral-300 border-neutral-600/50">
-                {{ $pool.fee }}% fee
-              </span>
-              {{ end }}
+    <!-- Content -->
+    <div class="collapse-content">
+      <div class="pt-4 space-y-4 pb-3">
+        <!-- Token Pair Display -->
+        <div class="p-4">
+          <div class="flex items-center justify-center gap-3">
+            <!-- Token0 -->
+            <div class="flex flex-col items-center gap-2 flex-1 max-w-[200px]">
+              <div class="relative">
+                {{ $token0Image := printf "/images/exchange/%s-%s.svg" (lower $pool.token0.symbol) (lower $pool.chain)
+                }}
+                <img src="{{ $token0Image }}" alt="{{ $pool.token0.name }}" class="h-12 w-12 object-contain" />
+              </div>
+              <div class="text-center">
+                <div class="font-bold text-neutral-50">{{ $pool.token0.symbol }}</div>
+                <div class="text-xs text-neutral-400 mt-1">{{ $pool.token0.name }}</div>
+              </div>
+              <a href="{{ $pool.token0.contract_explorer }}" target="_blank"
+                class="text-xs text-[#5a9cf8] hover:text-[#7bb3f8] transition-colors flex items-center gap-1">
+                View Contract
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+              </a>
+              <code class="text-[10px] text-neutral-500 bg-neutral-900/50 px-2 py-1 rounded break-all font-mono cursor-pointer hover:bg-neutral-800/50 transition-colors copy-address"
+                    data-full-value="{{ $pool.token0.contract }}"
+                    title="Click to copy full address">
+                  {{ partial "truncate_address.html" (dict "address" $pool.token0.contract) }}
+                </code>
             </div>
-            <div class="flex items-center gap-2 mt-0.5 flex-wrap">
-              <span class="text-xs font-medium text-neutral-400">{{ $pool.platform }}</span>
-              <span class="text-neutral-600">•</span>
-              <span class="text-xs text-neutral-400">{{ $pool.chain_name }}</span>
+
+            <!-- VS Divider -->
+            <div class="flex flex-col items-center gap-1.5">
+              <div class="h-px w-10 bg-gradient-to-r from-transparent via-neutral-600 to-transparent"></div>
+              <div class="text-xs font-bold text-neutral-500">VS</div>
+              <div class="h-px w-10 bg-gradient-to-r from-transparent via-neutral-600 to-transparent"></div>
+            </div>
+
+            <!-- Token1 -->
+            <div class="flex flex-col items-center gap-2 flex-1 max-w-[200px]">
+              <div class="relative">
+                {{ $token1Image := printf "/images/exchange/%s-%s.svg" (lower $pool.token1.symbol) (lower $pool.chain)
+                }}
+                <img src="{{ $token1Image }}" alt="{{ $pool.token1.name }}" class="h-12 w-12 object-contain" />
+              </div>
+              <div class="text-center">
+                <div class="font-bold text-neutral-50">{{ $pool.token1.symbol }}</div>
+                <div class="text-xs text-neutral-400 mt-1">{{ $pool.token1.name }}</div>
+              </div>
+              <a href="{{ $pool.token1.contract_explorer }}" target="_blank"
+                class="text-xs text-[#5a9cf8] hover:text-[#7bb3f8] transition-colors flex items-center gap-1">
+                View Contract
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+              </a>
+              <code class="text-[10px] text-neutral-500 bg-neutral-900/50 px-2 py-1 rounded break-all font-mono cursor-pointer hover:bg-neutral-800/50 transition-colors copy-address"
+                    data-full-value="{{ $pool.token1.contract }}"
+                    title="Click to copy full address">
+                  {{ partial "truncate_address.html" (dict "address" $pool.token1.contract) }}
+                </code>
             </div>
           </div>
         </div>
-        {{ if $pool.swap_url }}
-        {{ $platformWhiteLogo := printf "/images/exchange/%s-mono.svg" (lower $pool.platform) }}
-        <a
-          href="{{ $pool.swap_url }}"
-          target="_blank"
-          onclick="event.stopPropagation();"
-          class="btn btn-xs md:btn-sm bg-gradient-to-r from-[#217AFF] to-[#217AFF] hover:from-[#318AFF] hover:to-[#318AFF] text-neutral-50 border-neutral-500/50 shadow-lg transition-all no-underline flex-shrink-0">
-          <img src="{{ $platformWhiteLogo }}" alt="{{ $pool.platform }}" class="w-3 h-3 md:w-4 md:h-4 mr-1.5 object-contain" style="margin: 0px;" />
-          Swap
-        </a>
-        {{ end }}
-      </div>
 
-      <!-- Content -->
-      <div class="collapse-content">
-        <div class="pt-4 space-y-4 pb-3">
-          <!-- Token Pair Display -->
-          <div class="p-4">
-            <div class="flex items-center justify-center gap-3">
-              <!-- Token0 -->
-              <div class="flex flex-col items-center gap-2 flex-1 max-w-[200px]">
-                <div class="relative">
-                  {{ $token0Image := printf "/images/exchange/%s-%s.svg" (lower $pool.token0.symbol) (lower $pool.chain) }}
-                  <img src="{{ $token0Image }}" alt="{{ $pool.token0.name }}" class="h-12 w-12 object-contain" />
+        <!-- Pool Details -->
+        <div class="flex justify-center">
+          <div
+            class="bg-[#0F1419]/80 rounded-xl p-4 border border-neutral-800/50 backdrop-blur-sm w-full md:w-1/2 max-w-2xl">
+            <h4 class="text-xs font-semibold text-neutral-400 mb-3 uppercase tracking-wide text-center">Pool Details
+            </h4>
+            <div class="space-y-1.5">
+              <div class="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-4 items-start">
+                <span class="text-sm text-neutral-400">
+                  {{ if $pool.pool_contract }}
+                  Pool Contract:
+                  {{ else }}
+                  Pool ID:
+                  {{ end }}
+                </span>
+                <div class="space-y-2">
+                  <code
+                    class="text-xs text-neutral-50 bg-neutral-900/80 px-3 py-2 rounded-lg break-all font-mono border border-neutral-800 block cursor-pointer hover:bg-neutral-800 transition-colors copy-address"
+                    data-full-value="{{ if $pool.pool_contract }}{{ $pool.pool_contract }}{{ else }}{{ $pool.pool_id }}{{ end }}"
+                    title="Click to copy">
+                    {{ if $pool.pool_contract }}
+                    {{ partial "truncate_address.html" (dict "address" $pool.pool_contract) }}
+                    {{ else }}
+                    {{ partial "truncate_hash.html" (dict "hash" $pool.pool_id) }}
+                    {{ end }}
+                  </code>
+
+                  <div class="flex flex-wrap items-center gap-3">
+                    {{ if $pool.pool_contract_explorer }}
+                    <a href="{{ $pool.pool_contract_explorer }}" target="_blank"
+                      class="inline-flex items-center gap-2 text-sm text-[#5a9cf8] hover:text-[#7bb3f8] transition-colors">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                      </svg>
+                      View on Block Explorer
+                    </a>
+                    {{ end }}
+                    {{ if $pool.pool_url }}
+                    <a href="{{ $pool.pool_url }}" target="_blank"
+                      class="inline-flex items-center gap-2 text-sm text-[#5a9cf8] hover:text-[#7bb3f8] transition-colors">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                      </svg>
+                      View on {{ $pool.platform }}
+                    </a>
+                    {{ end }}
+                  </div>
                 </div>
-                <div class="text-center">
-                  <div class="font-bold text-neutral-50">{{ $pool.token0.symbol }}</div>
-                  <div class="text-xs text-neutral-400 mt-1">{{ $pool.token0.name }}</div>
-                </div>
-                <a
-                  href="{{ $pool.token0.contract_explorer }}"
-                  target="_blank"
-                  class="text-xs text-[#5a9cf8] hover:text-[#7bb3f8] transition-colors flex items-center gap-1">
-                  View Contract
-                  <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                  </svg>
-                </a>
-                <code class="text-[10px] text-neutral-500 bg-neutral-900/50 px-2 py-1 rounded break-all font-mono">
-                  {{ substr $pool.token0.contract 0 6 }}...{{ substr $pool.token0.contract -4 }}
-                </code>
               </div>
 
-              <!-- VS Divider -->
-              <div class="flex flex-col items-center gap-1.5">
-                <div class="h-px w-10 bg-gradient-to-r from-transparent via-neutral-600 to-transparent"></div>
-                <div class="text-xs font-bold text-neutral-500">VS</div>
-                <div class="h-px w-10 bg-gradient-to-r from-transparent via-neutral-600 to-transparent"></div>
+              <!-- Platform -->
+              <div class="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-4 items-center">
+                <span class="text-sm text-neutral-400">Platform:</span>
+                <div class="flex items-center gap-2">
+                  {{ $platformLogo := printf "/images/exchange/%s-color.svg" (lower $pool.platform) }}
+                  <img src="{{ $platformLogo }}" alt="{{ $pool.platform }}" class="h-5 w-5 object-contain"
+                    style="margin: 0px;" />
+                  <span class="text-sm font-semibold text-neutral-50">{{ $pool.platform }}</span>
+                </div>
               </div>
 
-              <!-- Token1 -->
-              <div class="flex flex-col items-center gap-2 flex-1 max-w-[200px]">
-                <div class="relative">
-                  {{ $token1Image := printf "/images/exchange/%s-%s.svg" (lower $pool.token1.symbol) (lower $pool.chain) }}
-                  <img src="{{ $token1Image }}" alt="{{ $pool.token1.name }}" class="h-12 w-12 object-contain" />
+              <!-- Blockchain -->
+              <div class="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-4 items-center">
+                <span class="text-sm text-neutral-400">Blockchain:</span>
+                <div class="flex items-center gap-2">
+                  {{ $blockchainLogo := printf "/images/exchange/%s.svg" (lower $pool.chain) }}
+                  <img src="{{ $blockchainLogo }}" alt="{{ $pool.chain_name }}" class="h-5 w-5 object-contain"
+                    style="margin: 0px;" />
+                  <span class="text-sm font-semibold text-neutral-50">{{ $pool.chain_name }}</span>
                 </div>
-                <div class="text-center">
-                  <div class="font-bold text-neutral-50">{{ $pool.token1.symbol }}</div>
-                  <div class="text-xs text-neutral-400 mt-1">{{ $pool.token1.name }}</div>
-                </div>
-                <a
-                  href="{{ $pool.token1.contract_explorer }}"
-                  target="_blank"
-                  class="text-xs text-[#5a9cf8] hover:text-[#7bb3f8] transition-colors flex items-center gap-1">
-                  View Contract
-                  <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                  </svg>
-                </a>
-                <code class="text-[10px] text-neutral-500 bg-neutral-900/50 px-2 py-1 rounded break-all font-mono">
-                  {{ substr $pool.token1.contract 0 6 }}...{{ substr $pool.token1.contract -4 }}
-                </code>
               </div>
+
+              <!-- Type -->
+              <div class="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-4 items-center">
+                <span class="text-sm text-neutral-400">Type:</span>
+                <span class="text-sm font-semibold text-neutral-50">{{ $pool.pool_type }}</span>
+              </div>
+
+              <!-- Fee -->
+              {{ if $pool.fee }}
+              <div class="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-4 items-center">
+                <span class="text-sm text-neutral-400">Fee:</span>
+                <span class="text-sm font-semibold text-neutral-50">{{ $pool.fee }}%</span>
+              </div>
+              {{ end }}
             </div>
           </div>
+        </div>
 
-          <!-- Pool Details -->
-          <div class="flex justify-center">
-            <div class="bg-[#0F1419]/80 rounded-xl p-4 border border-neutral-800/50 backdrop-blur-sm w-full md:w-1/2 max-w-2xl">
-              <h4 class="text-xs font-semibold text-neutral-400 mb-3 uppercase tracking-wide text-center">Pool Details</h4>
-              <div class="space-y-1.5">
-                <!-- Pool Contract -->
-                <div class="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-4 items-start">
-                  <span class="text-sm text-neutral-400">Pool Contract:</span>
-                  <div class="space-y-2">
-                    <code class="text-xs text-neutral-50 bg-neutral-900/80 px-3 py-2 rounded-lg break-all font-mono border border-neutral-800 block">
-                      {{ $pool.pool_contract }}
-                    </code>
-                    <div class="flex flex-wrap items-center gap-3">
-                      <a
-                        href="{{ $pool.pool_contract_explorer }}"
-                        target="_blank"
-                        class="inline-flex items-center gap-2 text-sm text-[#5a9cf8] hover:text-[#7bb3f8] transition-colors">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                        </svg>
-                        View on Block Explorer
-                      </a>
-                      {{ if $pool.pool_url }}
-                      <a
-                        href="{{ $pool.pool_url }}"
-                        target="_blank"
-                        class="inline-flex items-center gap-2 text-sm text-[#5a9cf8] hover:text-[#7bb3f8] transition-colors">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                        </svg>
-                        View on {{ $pool.platform }}
-                      </a>
-                      {{ end }}
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Platform -->
-                <div class="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-4 items-center">
-                  <span class="text-sm text-neutral-400">Platform:</span>
-                  <div class="flex items-center gap-2">
-                    {{ $platformLogo := printf "/images/exchange/%s-color.svg" (lower $pool.platform) }}
-                    <img src="{{ $platformLogo }}" alt="{{ $pool.platform }}" class="h-5 w-5 object-contain" style="margin: 0px;" />
-                    <span class="text-sm font-semibold text-neutral-50">{{ $pool.platform }}</span>
-                  </div>
-                </div>
-
-                <!-- Blockchain -->
-                <div class="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-4 items-center">
-                  <span class="text-sm text-neutral-400">Blockchain:</span>
-                  <div class="flex items-center gap-2">
-                    {{ $blockchainLogo := printf "/images/exchange/%s.svg" (lower $pool.chain) }}
-                    <img src="{{ $blockchainLogo }}" alt="{{ $pool.chain_name }}" class="h-5 w-5 object-contain" style="margin: 0px;" />
-                    <span class="text-sm font-semibold text-neutral-50">{{ $pool.chain_name }}</span>
-                  </div>
-                </div>
-
-                <!-- Type -->
-                <div class="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-4 items-center">
-                  <span class="text-sm text-neutral-400">Type:</span>
-                  <span class="text-sm font-semibold text-neutral-50">{{ $pool.pool_type }}</span>
-                </div>
-
-                <!-- Fee -->
-                {{ if $pool.fee }}
-                <div class="grid grid-cols-1 sm:grid-cols-[120px_1fr] gap-2 sm:gap-4 items-center">
-                  <span class="text-sm text-neutral-400">Fee:</span>
-                  <span class="text-sm font-semibold text-neutral-50">{{ $pool.fee }}%</span>
-                </div>
-                {{ end }}
-              </div>
-            </div>
-          </div>
-
-          <!-- Action Buttons -->
-          <div class="flex flex-wrap gap-2 justify-center pt-1">
-            {{ if $pool.swap_url }}
-            {{ $platformWhiteLogo := printf "/images/exchange/%s-mono.svg" (lower $pool.platform) }}
-            <a
-              href="{{ $pool.swap_url }}"
-              target="_blank"
-              class="btn btn-sm md:btn-md bg-gradient-to-r from-[#217AFF] to-[#217AFF] hover:from-[#318AFF] hover:to-[#318AFF] text-neutral-50 border-neutral-500/50 shadow-lg transition-all no-underline">
-              <img src="{{ $platformWhiteLogo }}" alt="{{ $pool.platform }}" class="w-4 h-4 mr-2 object-contain" style="margin: 0px;" />
-              Swap on {{ $pool.platform }}
-            </a>
-            {{ end }}
-            <a
-              href="{{ $pool.dexscreener_url }}"
-              target="_blank"
-              class="btn btn-sm md:btn-md bg-gradient-to-r from-[#1a1a2e] to-[#2b2b4b] hover:from-[#2b2b4b] hover:to-[#3a3a5a] text-neutral-50 border-neutral-600/50 shadow-lg transition-all no-underline">
-              <img src="/images/exchange/dex-screener-white.svg" alt="DexScreener" class="w-4 h-4 mr-2 object-contain" style="margin: 0px;" />
-              View on DexScreener
-            </a>
-          </div>
+        <!-- Action Buttons -->
+        <div class="flex flex-wrap gap-2 justify-center pt-1">
+          {{ if $pool.swap_url }}
+          {{ $platformWhiteLogo := printf "/images/exchange/%s-mono.svg" (lower $pool.platform) }}
+          <a href="{{ $pool.swap_url }}" target="_blank"
+            class="btn btn-sm md:btn-md bg-gradient-to-r from-[#217AFF] to-[#217AFF] hover:from-[#318AFF] hover:to-[#318AFF] text-neutral-50 border-neutral-500/50 shadow-lg transition-all no-underline">
+            <img src="{{ $platformWhiteLogo }}" alt="{{ $pool.platform }}" class="w-4 h-4 mr-2 object-contain"
+              style="margin: 0px;" />
+            Swap on {{ $pool.platform }}
+          </a>
+          {{ end }}
+          <a href="{{ $pool.dexscreener_url }}" target="_blank"
+            class="btn btn-sm md:btn-md bg-gradient-to-r from-[#1a1a2e] to-[#2b2b4b] hover:from-[#2b2b4b] hover:to-[#3a3a5a] text-neutral-50 border-neutral-600/50 shadow-lg transition-all no-underline">
+            <img src="/images/exchange/dex-screener-white.svg" alt="DexScreener" class="w-4 h-4 mr-2 object-contain"
+              style="margin: 0px;" />
+            View on DexScreener
+          </a>
         </div>
       </div>
     </div>
+  </div>
   {{ end }}
 </div>
-

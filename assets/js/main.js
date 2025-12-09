@@ -27,4 +27,33 @@ $(document).ready(function () {
 
       $('pre').addClass('relative group bg-gray-900 text-white p-4 rounded');
       $('code').addClass('bg-gray-900 text-white');
+
+    // Copy functionality for address/hash code elements
+    $('.copy-address').on('click', function(e) {
+        e.stopPropagation();
+        const fullValue = $(this).data('full-value');
+        const $code = $(this);
+        const originalText = $code.text();
+
+        if (fullValue && navigator.clipboard) {
+            navigator.clipboard.writeText(fullValue).then(() => {
+                // Visual feedback - briefly show "Copied!"
+                $code.text('Copied!');
+                $code.addClass('text-green-400');
+
+                setTimeout(() => {
+                    $code.text(originalText);
+                    $code.removeClass('text-green-400');
+                }, 1500);
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+                // Fallback: select text
+                const range = document.createRange();
+                range.selectNodeContents($code[0]);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+            });
+        }
+    });
 });

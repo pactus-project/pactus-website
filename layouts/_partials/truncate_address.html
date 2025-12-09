@@ -1,0 +1,16 @@
+{{- /*
+  Truncate address to show first N characters and last M characters
+
+  Usage: {{ partial "truncate_address.html" (dict "address" "0x1234567890abcdef" "start" 6 "end" 4) }}
+  Default: start=6, end=4
+*/ -}}
+{{- $address := .address -}}
+{{- $start := default 6 .start -}}
+{{- $end := default 4 .end -}}
+{{- if $address -}}
+  {{- $endNeg := mul $end -1 -}}
+  {{- printf "%s...%s" (substr $address 0 $start) (substr $address $endNeg) -}}
+{{- else -}}
+  {{- "" -}}
+{{- end -}}
+
