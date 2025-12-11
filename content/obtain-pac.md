@@ -19,16 +19,16 @@ ease of use, fiat options, and customer support.
   <a target="_blank" href="https://wrapto.app" title="Wrapto">
     <img src="/images/exchange/wrapto_text-dark.svg" style="height: 48px" class="object-contain" alt="Wrapto" />
   </a>
-  Wrapto is a bridging platform that bridges PAC coins to other chains at a 1:1 ratio in the form of Wrapped PAC coins.<br>
-  This essentially helps Pactus users trade PAC on decentralized exchanges.
+  Wrapto is a bridging platform that bridges PAC coins to other chains at a 1:1 ratio in the form of Wrapped PAC (WPAC) tokens.<br>
+  This essentially helps Pactus users trade WPAC on decentralized exchanges.
 
 </div>
 
 ## Decentralized Exchange
 
-Trade PAC tokens directly on decentralized exchanges (DEXs) across multiple blockchain networks.
+Trade WPAC tokens directly on decentralized exchanges (DEXs) across multiple blockchain networks.
 DEXs provide non-custodial trading, meaning you maintain full control of your assets throughout the trading process.
-Below are the available liquidity pools where you can swap PAC tokens with other cryptocurrencies.
+Below are the available liquidity pools where you can swap WPAC tokens with other cryptocurrencies.
 
 {{< dex_pools >}}
 

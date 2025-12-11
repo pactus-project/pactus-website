@@ -68,7 +68,9 @@
                 <div class="font-bold text-neutral-50">{{ $pool.token0.symbol }}</div>
                 <div class="text-xs text-neutral-400 mt-1">{{ $pool.token0.name }}</div>
               </div>
-              <a href="{{ $pool.token0.contract_explorer }}" target="_blank"
+              {{ $token0Explorer := partial "explorer_link.html" (dict "chain" $pool.chain "address" $pool.token0.contract) }}
+              {{ if $token0Explorer }}
+              <a href="{{ $token0Explorer }}" target="_blank"
                 class="text-xs text-[#5a9cf8] hover:text-[#7bb3f8] transition-colors flex items-center gap-1">
                 View Contract
                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,6 +78,7 @@
                     d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                 </svg>
               </a>
+              {{ end }}
               <code class="text-[10px] text-neutral-500 bg-neutral-900/50 px-2 py-1 rounded break-all font-mono cursor-pointer hover:bg-neutral-800/50 transition-colors copy-address"
                     data-full-value="{{ $pool.token0.contract }}"
                     title="Click to copy full address">
@@ -101,7 +104,9 @@
                 <div class="font-bold text-neutral-50">{{ $pool.token1.symbol }}</div>
                 <div class="text-xs text-neutral-400 mt-1">{{ $pool.token1.name }}</div>
               </div>
-              <a href="{{ $pool.token1.contract_explorer }}" target="_blank"
+              {{ $token1Explorer := partial "explorer_link.html" (dict "chain" $pool.chain "address" $pool.token1.contract) }}
+              {{ if $token1Explorer }}
+              <a href="{{ $token1Explorer }}" target="_blank"
                 class="text-xs text-[#5a9cf8] hover:text-[#7bb3f8] transition-colors flex items-center gap-1">
                 View Contract
                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,6 +114,7 @@
                     d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                 </svg>
               </a>
+              {{ end }}
               <code class="text-[10px] text-neutral-500 bg-neutral-900/50 px-2 py-1 rounded break-all font-mono cursor-pointer hover:bg-neutral-800/50 transition-colors copy-address"
                     data-full-value="{{ $pool.token1.contract }}"
                     title="Click to copy full address">
@@ -146,8 +152,10 @@
                   </code>
 
                   <div class="flex flex-wrap items-center gap-3">
-                    {{ if $pool.pool_contract_explorer }}
-                    <a href="{{ $pool.pool_contract_explorer }}" target="_blank"
+                    {{ if $pool.pool_contract }}
+                    {{ $poolExplorer := partial "explorer_link.html" (dict "chain" $pool.chain "address" $pool.pool_contract) }}
+                    {{ if $poolExplorer }}
+                    <a href="{{ $poolExplorer }}" target="_blank"
                       class="inline-flex items-center gap-2 text-sm text-[#5a9cf8] hover:text-[#7bb3f8] transition-colors">
                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -155,6 +163,7 @@
                       </svg>
                       View on Block Explorer
                     </a>
+                    {{ end }}
                     {{ end }}
                     {{ if $pool.pool_url }}
                     <a href="{{ $pool.pool_url }}" target="_blank"
