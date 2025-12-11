@@ -48,6 +48,30 @@ pools:
       name: "USD Coin"
       symbol: "USDC"
 
+  - name: "WPAC / USDT"
+    platform: "PancakeSwap"
+    chain: "bnb"
+    chain_name: "BNB Chain"
+    pool_url: "https://pancakeswap.finance/info/v3/pairs/0x887de788f9972ddc0ac919da0edf63d1129ed834"
+    pool_contract_explorer: "https://bscscan.com/address/0x887de788f9972ddc0ac919da0edf63d1129ed834"
+    pool_contract: "0x887de788f9972ddc0ac919da0edf63d1129ed834"
+    pool_type: "PancakeV3Pool"
+    swap_url: >-
+      https://pancakeswap.finance/swap?inputCurrency=0x10004a9a742ec135c686c9aced00fa3c93d66866&outputCurrency=0x55d398326f99059fF775485246999027B3197955&chain=bsc
+    fee: 0.3
+    new: true
+    dexscreener_url: "https://dexscreener.com/bsc/0x887de788f9972ddc0ac919da0edf63d1129ed834"
+    token0:
+      contract: "0x10004a9A742ec135c686C9aCed00FA3C93D66866"
+      contract_explorer: "https://basescan.org/address/0x10004a9A742ec135c686C9aCed00FA3C93D66866"
+      name: "Wrapped PAC"
+      symbol: "WPAC"
+    token1:
+      contract: "0x55d398326f99059fF775485246999027B3197955"
+      contract_explorer: "https://basescan.org/address/0x55d398326f99059fF775485246999027B3197955"
+      name: "Tether USD"
+      symbol: "USDT"
+
   - name: "WPAC / WPOL"
     platform: "Uniswap"
     chain: "polygon"
