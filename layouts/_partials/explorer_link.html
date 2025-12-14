@@ -7,7 +7,6 @@
   - base -> https://basescan.org/address/
   - bnb -> https://bscscan.com/address/
   - polygon -> https://polygonscan.com/address/
-  - kava -> https://explorer.kava.io/address/
 */ -}}
 {{- $chain := .chain | lower -}}
 {{- $address := .address -}}
@@ -19,8 +18,6 @@
     {{- $baseUrl = "https://bscscan.com/address/" -}}
   {{- else if eq $chain "polygon" -}}
     {{- $baseUrl = "https://polygonscan.com/address/" -}}
-  {{- else if eq $chain "kava" -}}
-    {{- $baseUrl = "https://explorer.kava.io/address/" -}}
   {{- end -}}
   {{- if $baseUrl -}}
     {{- printf "%s%s" $baseUrl $address -}}
