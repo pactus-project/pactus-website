@@ -17,7 +17,7 @@ ease of use, fiat options, and customer support.
 
 <div class="grid grid-cols-1 gap-x-6 items-left ">
   <a target="_blank" href="https://wrapto.app" title="Wrapto">
-    <img src="/images/exchange/wrapto_text-dark.svg" style="height: 48px" class="object-contain" alt="Wrapto" />
+    <img src="/images/exchange/wrapto_text-white.svg" style="height: 48px" class="object-contain" alt="Wrapto" />
   </a>
   Wrapto is a bridging platform that bridges PAC coins to other chains at a 1:1 ratio in the form of Wrapped PAC (WPAC) tokens.<br>
   This essentially helps Pactus users trade WPAC on decentralized exchanges.
