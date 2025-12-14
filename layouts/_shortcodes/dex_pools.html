@@ -161,19 +161,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                       </svg>
-                      View on Block Explorer
+                      View contract
                     </a>
                     {{ end }}
-                    {{ end }}
-                    {{ if $pool.pool_url }}
-                    <a href="{{ $pool.pool_url }}" target="_blank"
-                      class="inline-flex items-center gap-2 text-sm text-[#5a9cf8] hover:text-[#7bb3f8] transition-colors">
-                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                      </svg>
-                      View on {{ $pool.platform }}
-                    </a>
                     {{ end }}
                   </div>
                 </div>
@@ -219,22 +209,62 @@
         </div>
 
         <!-- Action Buttons -->
-        <div class="flex flex-wrap gap-2 justify-center pt-1">
+        <div class="flex flex-wrap  gap-2 justify-center pt-1">
           {{ if $pool.swap_url }}
           {{ $platformWhiteLogo := printf "/images/exchange/%s-mono.svg" (lower $pool.platform) }}
           <a href="{{ $pool.swap_url }}" target="_blank"
-            class="btn btn-sm md:btn-md bg-gradient-to-r from-[#217AFF] to-[#217AFF] hover:from-[#318AFF] hover:to-[#318AFF] text-neutral-50 border-neutral-500/50 shadow-lg transition-all no-underline">
+            class="btn btn-sm md:btn-md min-w-56 bg-gradient-to-r from-[#217AFF] to-[#217AFF] hover:from-[#318AFF] hover:to-[#318AFF] text-neutral-50 border-neutral-500/50 shadow-lg transition-all no-underline">
             <img src="{{ $platformWhiteLogo }}" alt="{{ $pool.platform }}" class="w-4 h-4 mr-2 object-contain"
               style="margin: 0px;" />
             Swap on {{ $pool.platform }}
           </a>
           {{ end }}
-          <a href="{{ $pool.dexscreener_url }}" target="_blank"
-            class="btn btn-sm md:btn-md bg-gradient-to-r from-[#1a1a2e] to-[#2b2b4b] hover:from-[#2b2b4b] hover:to-[#3a3a5a] text-neutral-50 border-neutral-600/50 shadow-lg transition-all no-underline">
-            <img src="/images/exchange/dex-screener-white.svg" alt="DexScreener" class="w-4 h-4 mr-2 object-contain"
-              style="margin: 0px;" />
-            View on DexScreener
-          </a>
+
+          <!-- View on Dropdown -->
+          {{ $platformMonoLogo := printf "/images/exchange/%s-mono.svg" (lower $pool.platform) }}
+          <div class="dropdown dropdown-top">
+            <div tabindex="0" role="button"
+              class="btn btn-sm md:btn-md min-w-56 bg-gradient-to-r from-[#1a1a2e] to-[#2b2b4b] hover:from-[#2b2b4b] hover:to-[#3a3a5a] text-neutral-50 border-neutral-600/50 shadow-lg transition-all no-underline">
+              <img src="{{ $platformMonoLogo }}" alt="{{ $pool.platform }}" class="w-4 h-4 mr-2 object-contain"
+                style="margin: 0px;" />
+              View on {{ $pool.platform }}
+              <svg class="w-4 h-4 ml-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+            <ul tabindex="0" class="dropdown-content menu bg-[#0F1419] rounded-box min-w-56 p-0 shadow-lg border border-neutral-700/50" style="margin: 7px 0px; padding: 0px;">
+              <li>
+                <a href="{{ $pool.pool_url }}" target="_blank" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded no-underline">
+                  <img src="{{ $platformMonoLogo }}" alt="{{ $pool.platform }}" class="w-4 h-4 object-contain" width="24" height="24" style="margin: 0px;" />
+                  View on {{ $pool.platform }}
+                </a>
+              </li>
+              {{ if $pool.cmc_link }}
+              <li>
+                <a href="{{ $pool.cmc_link }}" target="_blank" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded no-underline">
+                  <img src="/images/exchange/coinmarketcap.svg" alt="CoinMarketCap" class="w-4 h-4 object-contain" width="24" height="24" style="margin: 0px;" />
+                  View on CoinMarketCap
+                </a>
+              </li>
+              {{ end }}
+              {{ if $pool.geckoterminal_url }}
+              <li>
+                <a href="{{ $pool.geckoterminal_url }}" target="_blank" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded no-underline">
+                  <img src="/images/exchange/geckoterminal.svg" alt="GeckoTerminal" class="w-4 h-4 object-contain" width="24" height="24" style="margin: 0px;" />
+                  View on GeckoTerminal
+                </a>
+              </li>
+              {{ end }}
+              {{ if $pool.dexscreener_url }}
+              <li>
+                <a href="{{ $pool.dexscreener_url }}" target="_blank" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded no-underline">
+                  <img src="/images/exchange/dex-screener-white.svg" alt="DexScreener" class="w-4 h-4 object-contain" width="24" height="24" style="margin: 0px;" />
+                  View on DexScreener
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
