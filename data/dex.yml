@@ -124,9 +124,9 @@ pools:
       https://www.sushi.com/kava/swap?token0=0xa19cE2a5855bfef29EEE8781E3e6E55BCB039C91&token1=0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b
     fee: 0.3
     new: true
-    dexscreener_url: "https://dexscreener.com/kava/0xde57295c1bccece80d3c7c37c3e2920a3a31d860"
-    geckoterminal_url: "https://www.geckoterminal.com/kava/pools/0xde57295c1bccece80d3c7c37c3e2920a3a31d860"
-    cmc_link: "https://dex.coinmarketcap.com/token/kava/0x10004a9A742ec135c686C9aCed00FA3C93D66866/"
+    # dexscreener_url: "https://dexscreener.com/kava/0xde57295c1bccece80d3c7c37c3e2920a3a31d860"
+    # geckoterminal_url: "https://www.geckoterminal.com/kava/pools/0xde57295c1bccece80d3c7c37c3e2920a3a31d860"
+    # cmc_link: "https://dex.coinmarketcap.com/token/kava/0x10004a9A742ec135c686C9aCed00FA3C93D66866/"
     token0:
       contract: "0xa19cE2a5855bfef29EEE8781E3e6E55BCB039C91"
       name: "Wrapped PAC"

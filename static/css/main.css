@@ -4123,14 +4123,11 @@ html:has(.drawer-toggle:checked) {
   width: -moz-max-content;
   width: max-content;
 }
-.min-w-full {
-  min-width: 100%;
-}
-.min-w-48 {
-  min-width: 12rem;
-}
 .min-w-56 {
   min-width: 14rem;
+}
+.min-w-full {
+  min-width: 100%;
 }
 .max-w-2xl {
   max-width: 42rem;

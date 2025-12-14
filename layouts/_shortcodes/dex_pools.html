@@ -239,24 +239,30 @@
                   View on {{ $pool.platform }}
                 </a>
               </li>
+              {{ if $pool.cmc_link }}
               <li>
                 <a href="{{ $pool.cmc_link }}" target="_blank" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded no-underline">
                   <img src="/images/exchange/coinmarketcap.svg" alt="CoinMarketCap" class="w-4 h-4 object-contain" width="24" height="24" style="margin: 0px;" />
                   View on CoinMarketCap
                 </a>
               </li>
+              {{ end }}
+              {{ if $pool.geckoterminal_url }}
               <li>
                 <a href="{{ $pool.geckoterminal_url }}" target="_blank" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded no-underline">
                   <img src="/images/exchange/geckoterminal.svg" alt="GeckoTerminal" class="w-4 h-4 object-contain" width="24" height="24" style="margin: 0px;" />
                   View on GeckoTerminal
                 </a>
               </li>
+              {{ end }}
+              {{ if $pool.dexscreener_url }}
               <li>
                 <a href="{{ $pool.dexscreener_url }}" target="_blank" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded no-underline">
                   <img src="/images/exchange/dex-screener-white.svg" alt="DexScreener" class="w-4 h-4 object-contain" width="24" height="24" style="margin: 0px;" />
                   View on DexScreener
                 </a>
               </li>
+              {{ end }}
             </ul>
           </div>
         </div>
