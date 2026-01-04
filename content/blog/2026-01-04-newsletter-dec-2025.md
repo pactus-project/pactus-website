@@ -103,11 +103,8 @@ and manage multiple accounts all from your browser.
 Here's where 2025 really shined. The community didn't just use Pactus—they
 built on it.
 
-Secutor launched in November, and it's honestly one of the coolest things to
-come out of the ecosystem. It's a decentralized ranking platform that gamifies
-blockchain participation. You engage with the network, you climb the
-leaderboard, and you earn PAC rewards. It's competitive, it's fun, and it's
-driving real activity on-chain.
+Secutor launched in November, still in Beta and it's honestly one of the
+coolest things to come out of the ecosystem.
 
 Pagu Bot evolved into something incredible. It started as a simple blockchain
 bot, but now it's available on WhatsApp, Discord, and Telegram. You can
