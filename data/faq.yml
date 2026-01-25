@@ -232,7 +232,7 @@
       q: What is the total supply of Pactus coins?
       a: >
         Pactus has a total supply of 42 million coins, and each coin is divided into 1 billion units.
-        $$ 1 \text{ PAC} = 10^9 \text{ NonoPAC} $$
+        1 PAC = 1,000,000,000 NonoPAC.
 
     - id: coin_allocation
       q: How are coins allocated in Pactus?
