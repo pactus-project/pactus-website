@@ -1624,7 +1624,7 @@ html {
 
   .become-btn {
     border: none;
-    width: 13em;
+    width: 16em;
     height: 3em;
     border-radius: 3em;
     display: flex;
@@ -1666,10 +1666,9 @@ html {
     transform: scale(1.2);
   }
 
-  /* Obtain Pac Button Styles */
-  .obtain-button {
+  .investing-button {
     border: none;
-    width: 13em;
+    width: 16em;
     height: 3em;
     border-radius: 3em;
     display: flex;
@@ -1683,38 +1682,38 @@ html {
       inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2);
   }
 
-  .obtain-button .sparkle {
+  .investing-button .sparkle {
     fill: #ffffff;
     transition: all 800ms ease;
   }
 
-  .obtain-button .text {
+  .investing-button .text {
     font-weight: 400;
     color: #ffffff;
     font-size: medium;
   }
 
-  .obtain-button:hover {
+  .investing-button:hover {
     box-shadow:
       inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
       0px 0px 120px 0px #217AFF;
   }
 
-  .obtain-button:hover .text {
+  .investing-button:hover .text {
     color: white;
   }
 
-  .obtain-button:hover .sparkle {
+  .investing-button:hover .sparkle {
     fill: white;
     transform: scale(1.2);
   }
 
-  .obtain-button .backdrop,
-  .obtain-button .galaxy {
+  .investing-button .backdrop,
+  .investing-button .galaxy {
     display: none;
   }
 
-  .obtain-button:is(:hover, :focus-visible) {
+  .investing-button:is(:hover, :focus-visible) {
     --active: 1;
     --play-state: running;
   }
@@ -1722,7 +1721,7 @@ html {
 
 
 @supports (selector(:has(:is(+ *)))) {
-  body:has(.obtain-button:is(:hover, :focus-visible)) {
+  body:has(.investing-button:is(:hover, :focus-visible)) {
     --active: 1;
     --play-state: running;
   }

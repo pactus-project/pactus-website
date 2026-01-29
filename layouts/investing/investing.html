@@ -1,0 +1,24 @@
+{{ define "title" }}{{ .Page.Title }}{{ end }}
+{{ define "main" }}
+  <section class="container mx-auto px-4 py-8 pt-[8rem] relative z-20 flex-grow pb-20 flex flex-col min-h-full">
+    <div class="flex-grow">
+      <div class="grid grid-cols-3 ">
+        <div class="col-span-2">
+          <h1 class="md:text-4xl text-3xl font-bold text-neutral-50 text-left">
+            {{ .Title }}
+          </h1>
+        </div>
+        <div class="col-span-1 text-right" style="text-align: -webkit-right;">
+          <img
+            src="/images/icons/investing-pactus.svg"
+            alt="investing in Pactus"
+            height="100" />
+        </div>
+      </div>
+      <div class="mt-10 md:mt-3 text-lg md:text-xl"></div>
+    </div>
+    <article class="prose lg:prose-xl mt-3">{{ .Content }}</article>
+  </section>
+{{ end }}
+
+
