@@ -3,15 +3,16 @@ title = "Investing in Pactus"
 layout = "investing"
 type = "investing"
 description = """
-Why investing in Pactus: stake to support decentralization, participate in long-term growth, and explore strategic opportunities for funds and enterprises.
+Why investing in Pactus: stake to support decentralization,
+participate in long-term growth, and explore strategic opportunities for enterprises.
 """
 +++
 
 Pactus is a layer-1 blockchain built for true decentralization, combining security with exceptional efficiency.
 It introduces [Solid State Proof-of-Stake (SSPoS)](https://docs.pactus.org/protocol/consensus/proof-of-stake/)
 to keep validation open and resistant to concentration, supports
-[ultra-low-resource](https://docs.pactus.org/get-started/become-a-validator/#minimum-requirements) validator nodes that
-can run on a wide range of devices—from standard Windows PCs to
+[ultra-low-resource](https://docs.pactus.org/get-started/become-a-validator/#minimum-requirements)
+validator nodes that can run on a wide range of devices—from standard Windows PCs to
 small single-board computers like Raspberry Pi—and enables
 [zero-fee transactions](https://docs.pactus.org/tutorials/zero-fee-transactions/)
 for a simpler, more accessible user experience.
@@ -35,7 +36,8 @@ Many individuals view Pactus as a long-term technology investment built on clear
   requiring each validator to participate directly.
   This ensures validation remains distributed and helps prevent power concentration.
 - **Clear, open-source development**: The protocol is fully open source under
-  [MIT license](https://github.com/pactus-project/pactus/blob/main/LICENSE), developed in public with a strong focus on testing, quality, and regular, well-documented releases.
+  [MIT license](https://github.com/pactus-project/pactus/blob/main/LICENSE),
+  developed in public with a strong focus on testing, quality, and regular, well-documented releases.
 - **Sandbox dApps**: Pactus is developing a decentralized file system solution for sandbox dApps;
   isolated applications running on top of the Pactus chain.
 - **Growing ecosystem**: Pactus continues to expand its ecosystem with integrations that
@@ -53,7 +55,7 @@ with measurable and growing adoption.
 - Millions of transactions processed
 - High throughput demonstrated in testing
 
-### Why these compounds:
+### Why these Compounds
 
 Each validator strengthens network security.
 [Cross-chain](https://wrapto.app) interoperability ensures PAC holders aren’t locked into a single ecosystem.
@@ -91,5 +93,4 @@ Organizations may view Pactus as an opportunity because:
 ### Request a pitch deck
 
 If you represent enterprise, or strategic partner and would like a pitch deck, please email us at:
-
 **invesment@pactus.org**
