@@ -93,4 +93,4 @@ Organizations may view Pactus as an opportunity because:
 ### Request a pitch deck
 
 If you represent enterprise, or strategic partner and would like a pitch deck, please email us at:
-**invesment@pactus.org**
+**investment@pactus.org**
