@@ -6,7 +6,7 @@ relativeURLs = false
   blog = "/:year/:month/:day/:title/"
 
 [params]
-  releaseTag = "v1.11.0"
+  releaseTag = "v1.11.1"
   subtitle = "Building the Most Accessible Blockchain"
   description = "Pactus is an open source, layer-1 blockchain technology with a revolutionary, secure, Solid State Proof of Stake Consensus. Come join us and build a decentralized future together!."
   keywords = "pactus, blockchain, pactus blockchain, sspos, solid state proof of stake"

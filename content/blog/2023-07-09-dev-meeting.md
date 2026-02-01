@@ -26,7 +26,7 @@ The two types of events are Gossip events and Steam events.
 ![Network messages]({{<image "network-messages.png">}})
 
 The team discussed the issue of Relay connections resetting, and explored solutions such as
-[hole punching](https://docs.libp2p.io/concepts/nat/hole-punching/) or using UDP and IPv6.
+[hole punching](https://libp2p.io/guides/hole-punching/) or using UDP and IPv6.
 
 Some users in the Testnet reported high network usage.
 The team discussed implementing metrics for LibP2P to monitor network usage effectively.
