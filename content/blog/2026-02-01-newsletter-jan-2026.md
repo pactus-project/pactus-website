@@ -32,16 +32,12 @@ On January 25, we released
 marking the first major software release of 2026. And what a way to start the
 year.
 
-Tokyo brings stability improvements, critical bug fixes, and internal
-optimizations that make running a Pactus node smoother than ever.
+the first major Pactus release of 2026 — and a big step forward for wallets, tooling, and third-party integrations.
 
-For those wondering what's new in Tokyo, here's the quick version:
-
-- Enhanced stability mechanisms to keep nodes running reliably
-- Bug fixes based on real-world testnet feedback
-- Internal code optimizations that improve performance without changing how
-  you interact with the network
-- Improved node synchronization for faster blockchain updates
+The Tokyo release introduces a new wallet engine that processes every block,
+extracts wallet-related transactions, and stores them in a dedicated database.
+This change lays the groundwork for richer wallet features and enables external
+applications to track incoming transactions directly from a Pactus node, without relying on external services.
 
 If you haven't upgraded yet, now's the time. Head over to the
 **[download page](https://pactus.org/download)** and get v1.11.0 running. Your
@@ -118,7 +114,7 @@ more details will be shared in upcoming newsletters and community town halls):
 tooling improvements
 
 **Q2-Q3 2026:** Protocol resilience features, usability enhancements, ecosystem
-expansion initiatives
+expansion initiatives and smart contract platform
 
 **Q4 2026:** Year-end optimizations, preparing for 2027 roadmap, community
 retrospectives
@@ -144,9 +140,9 @@ on protocol improvements, your voice matters. Use it.
 comfortable, join the discussions. Share ideas. Ask questions. Help newcomers.
 Build the community.
 
-**Help with documentation and translations.** Not everyone speaks English. Not
-everyone understands technical jargon. If you can help make Pactus more
-accessible, you're doing crucial work.
+**Help with documentation.** Clear, accurate documentation is critical at this stage.
+If you notice gaps, unclear explanations, or outdated sections, helping improve the docs makes
+Pactus easier to use and build on.
 
 Every contribution matters. Every voice counts.
 
@@ -176,3 +172,9 @@ to never compromising on what matters.
 **Here's to two years down and a lifetime of innovation ahead.**
 
 Welcome to 2026. Let's make it count.
+
+---
+
+**Pactus Newsletter**: The Pactus monthly newsletter is published on our website and
+distributed to subscribers via email during the first week of each month.
+It recaps key highlights and important news from the previous month.
