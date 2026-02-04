@@ -203,3 +203,9 @@ out the year, we're not just celebrating the past, we're building the future.
 more people discovering what decentralized technology can really do.
 
 **HAPPY NEW YEAR.**
+
+---
+
+**Pactus Newsletter**: The Pactus monthly newsletter is published on our website and
+distributed to subscribers via email during the first week of each month.
+It recaps key highlights and important news from the previous month.
