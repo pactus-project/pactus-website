@@ -32,7 +32,7 @@ To answer this, we need to understand something known as a stack machine.
 
 A [stack machine](https://en.wikipedia.org/wiki/Stack_machine) is a simple way to execute tasks in a specific order.
 Imagine a stack as an empty container where you can either push plates into it or pop plates out.
-Some of these plates are special, they’re called operation codes (OPcodes) and they can interpret and
+Some of these plates are special; they're called operation codes (OPcodes) and they can interpret and
 manipulate the items in the stack, such as performing addition.
 Each OPcode is designed to carry out a specific function, enabling us to execute applications through this process.
 
@@ -56,14 +56,14 @@ This is what Ethereum achieved with the introduction of the Ethereum Virtual Mac
 ## Ethereum Virtual Machine
 
 The [Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/evm/) is
-a stack-based machine and can run any kind of program.
+a stack-based machine that can run any kind of program.
 It has all the necessary [OPCodes](https://www.evm.codes/) to execute applications,
-as long as there is enough time and resources.
+as long as there is sufficient time and resources.
 
 The EVM also has persistent memory, which lets it save and
 load data on the blockchain. To use the EVM, the Ethereum team created a
 programming language called [Solidity](https://soliditylang.org/).
-Solidity compiler turns human-readable code into machine code that the EVM can run.
+The Solidity compiler turns human-readable code into machine code that the EVM can run.
 
 The EVM may look like a good option at first, but as you get closer,
 it starts to resemble a mirage, revealing many
@@ -102,7 +102,7 @@ This is why storage in blockchains can be expensive.
 
 If we can keep these costs down or reduce them, we may be able to make blockchain applications
 more accessible and cost-effective for developers and users alike.
-This is where Pactus offers an innovative solution: Storage as a file.
+This is where Pactus offers an innovative solution: storage as a file.
 
 ## Storage as File
 
