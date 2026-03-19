@@ -3,7 +3,7 @@ title = "Sandbox dApps on Pactus"
 description = """
 """
 author = "Pactus Team"
-date = "2026-03-01T00:00:00"
+date = "2026-03-19T00:00:00"
 tags = ["dapps", "smart contract"]
 image = "pactus-sandbox-dapps.png"
 +++
