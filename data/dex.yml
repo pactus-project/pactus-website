@@ -22,28 +22,6 @@ pools:
       name: "USD Coin"
       symbol: "USDC"
 
-  - name: "WPAC / USDC"
-    platform: "SushiSwap"
-    chain: "base"
-    chain_name: "Base"
-    pool_url: "https://www.sushi.com/base/pool/v3/0x41c17cbd8712517d1ad21e319715d1aa35e4c067"
-    pool_contract: "0x41c17cbd8712517d1ad21e319715d1aa35e4c067"
-    pool_type: "UniswapV3Pool"
-    swap_url: >-
-      https://www.sushi.com/base/swap?token0=0x10004a9a742ec135c686c9aced00fa3c93d66866&token1=0x833589fcd6edb6e08f4c7c32d4f71b54bda02913
-    fee: 0.3
-    dexscreener_url: "https://dexscreener.com/base/0x41c17cbd8712517d1ad21e319715d1aa35e4c067"
-    geckoterminal_url: "https://www.geckoterminal.com/base/pools/0x41c17cbd8712517d1ad21e319715d1aa35e4c067"
-    cmc_link: "https://dex.coinmarketcap.com/token/base/0x10004a9A742ec135c686C9aCed00FA3C93D66866/"
-    token0:
-      contract: "0x10004a9A742ec135c686C9aCed00FA3C93D66866"
-      name: "Wrapped PAC"
-      symbol: "WPAC"
-    token1:
-      contract: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
-      name: "USD Coin"
-      symbol: "USDC"
-
   - name: "WPAC / USDT"
     platform: "PancakeSwap"
     chain: "bnb"
