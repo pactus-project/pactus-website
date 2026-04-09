@@ -20,7 +20,7 @@ heading with smart contracts, and the community testing cycle for v1.13.0
 ## The Pactus Vision
 
 On March 19, the team published one of the most important technical articles in
-Pactus history: **[Sandbox dApps on Pactus](https://pactus.org/2026/03/19/sandbox-dapps/)**.
+Pactus history: **Sandbox dApps on Pactus**.
 
 This post answers one of the most frequently asked questions in the community:
 What is Pactus's plan for smart contracts?
@@ -38,7 +38,7 @@ permanently and expensively.
 
 If you have not read this article yet, please do. It lays the foundation for
 everything the Pactus development roadmap is building toward.
-**[Read it here.](https://pactus.org/2026/03/19/sandbox-dapps/)**
+**[Read it here.](https://pactus.org/2026/03/19/sandbox-dapps-on-pactus/)**
 
 ## Network Health
 
