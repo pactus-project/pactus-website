@@ -30,7 +30,7 @@ decision.
 
 Rather than adopting the Ethereum Virtual Machine (EVM) with all its known
 complexity and inefficiency, Pactus is introducing a completely different
-approach **"Sandbox dApps"**.
+approach **"Sandbox dApps."**
 
 This design solves one of the biggest problems in blockchain today: storage
 costs. Instead of every node in the network storing every application's data
@@ -45,7 +45,7 @@ everything the Pactus development roadmap is building toward.
 The Pactus network continues to operate smoothly and grow steadily.
 
 Tallinn (v1.13.0) was officially released on April 4, 2026. If you have not
-upgraded yet, now is the time. **[Download it here](https://pactus.org/download)**.
+upgraded yet, now is the time. **[Download it here](https://pactus.org/download/)**.
 
 18.5 million+ transactions have now been processed since mainnet launch on
 January 24, 2024. Each one represents a real person choosing to trust and use
