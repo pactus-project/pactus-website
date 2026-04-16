@@ -3,7 +3,7 @@ title = "Pactus Introduces Validator Delegation — Now Live"
 author = "Pactus Team"
 date = "2026-04-15T00:00:00"
 tags = ["announcement", "validator", "delegation"]
-image = "/images/pactus-blog-post-default.jpg"
+image = "pactus-delegation-campaign.png"
 +++
 
 We are excited to announce that **validator delegation is now live on the Pactus network**,
