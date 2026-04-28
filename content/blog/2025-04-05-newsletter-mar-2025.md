@@ -57,7 +57,7 @@ Discover more about Cryptopia’s innovative platform by visiting their official
 ### Celebrating 10 Million Transactions
 
 A major milestone deserves recognition and Pactus has now surpassed
-10 million [transactions](https://pacviewer.com/transactions) on-chain.
+10 million [transactions](https://pactusscan.com/transactions) on-chain.
 This achievement reflects the growing trust in our ecosystem and the dedication of our community.
 From developers to validators and everyday users, each transaction represents a
 step forward in our mission to build a decentralized future. Here’s to the next 10 million and beyond!

@@ -52,7 +52,7 @@
       url: "contributing"
       icon: "fa-hand-holding-heart"
     - title: "Block Explorer"
-      url: "https://pacviewer.com/"
+      url: "https://pactusscan.com/"
       icon: "fa-magnifying-glass"
       external: true
     - title: "Pactus wallet"

@@ -1,6 +1,6 @@
-- name: "PacViewer"
-  url: "https://pacviewer.com/"
-  logo: "pacviewer.png"
+# - name: "PacViewer"
+#   url: "https://pacviewer.com/"
+#   logo: "pacviewer.png"
 
 - name: "Bitcoin Talk"
   url: "https://bitcointalk.org/index.php?topic=5480867.new#new"
