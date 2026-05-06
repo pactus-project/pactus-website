@@ -99,3 +99,9 @@ This community keeps proving, month after month, that consistent, thoughtful
 execution beats hype every single time.
 
 On to April. Let's keep building.
+
+---
+
+**Pactus Newsletter**: The Pactus monthly newsletter is published on our website and
+distributed to subscribers via email during the first week of each month.
+It recaps key highlights and important news from the previous month.
