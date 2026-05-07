@@ -95,3 +95,9 @@ infrastructure that actually works for everyday users.
 
 Some months have big announcements. Some months have solid execution. February
 was solid execution, and that's exactly what builds lasting infrastructure.
+
+---
+
+**Pactus Newsletter**: The Pactus monthly newsletter is published on our website and
+distributed to subscribers via email during the first week of each month.
+It recaps key highlights and important news from the previous month.

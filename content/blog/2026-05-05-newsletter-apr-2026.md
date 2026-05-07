@@ -75,7 +75,7 @@ This is what inclusive, community-driven blockchain growth looks like.
 ## A New Block Explorer: PactusScan
 
 Pacviewer experienced some disruption, and in response, the team
-launched **PactusScan**, a more sophisticated and reliable block explorer for
+launched **[PactusScan](https://pactusscan.com)**, a more sophisticated and reliable block explorer for
 the Pactus network. Explore transactions, blocks, validators, and network
 activity in real time.
 
@@ -98,3 +98,9 @@ April was defined by a major upgrade and an open door for new participants.
 May is about keeping the momentum going.
 
 Let's keep building.
+
+---
+
+**Pactus Newsletter**: The Pactus monthly newsletter is published on our website and
+distributed to subscribers via email during the first week of each month.
+It recaps key highlights and important news from the previous month.
