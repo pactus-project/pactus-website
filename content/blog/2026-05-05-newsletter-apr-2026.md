@@ -18,8 +18,9 @@ participants. Here is a recap of the month's key highlights.
 
 ## Tallinn: A Major Protocol Upgrade
 
-The biggest news of April: **Pactus Blockchain Version 1.13.0 (Tallinn)** was
-released on **April 4, 2026**.
+The biggest news of April:
+**[Pactus Blockchain Version 1.13.0 (Tallinn)](https://pactus.org/2026/04/04/pactus-1.13.0-tallinn-released/)**
+was released on **April 4, 2026**.
 
 This was not a routine maintenance release. Tallinn introduced a
 protocol-level upgrade with one of the most requested features in Pactus
