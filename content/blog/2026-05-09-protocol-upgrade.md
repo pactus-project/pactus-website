@@ -32,6 +32,8 @@ Because Bitcoin uses Proof-of-Work, miners independently produce blocks and comp
 During upgrades, different parts of the network may temporarily produce incompatible blocks,
 which is why the process is called a “fork.”
 
+![Proof-of-Work chain]({{<image "liveness-over-safety.png">}})
+
 Bitcoin has used signaling mechanisms during upgrades to measure miner readiness before activation.
 One well-known example is the [SegWit](https://en.wikipedia.org/wiki/SegWit) upgrade,
 where miners signaled support before the new rules became active.
@@ -45,8 +47,10 @@ parts of the community continue following different rules, potentially creating 
 Pactus uses a **Proof-of-Stake** consensus model with block finality.
 This changes the upgrade process fundamentally.
 
-In Pactus, blocks are finalized by validators. Once a block becomes final,
-the network cannot continue from multiple competing histories for an extended period of time.
+In Pactus, blocks are finalized by validators.
+It means once a block becomes final, the network cannot continue from two competing histories
+
+![Proof-of-Work chain]({{<image "safety-over-liveness.png">}})
 
 Instead of miners competing to build different chains, validators coordinate on a single finalized chain.
 Because of this, Pactus upgrades are better described as **protocol upgrades** rather than “hard forks.”
