@@ -36,8 +36,8 @@ who are not yet part of the Pactus network, including those already operating on
 
 Selected participants will receive:
 
-* **16,000 PAC in delegated stake**
-* Distributed across **16 validators (1,000 PAC each)**
+* Up to **16,000 PAC in delegated stake**
+* Distributed across **your validators (1,000 PAC each)**
 * **No cost** to receive this delegation
 
 ## Rewards Structure
@@ -75,7 +75,7 @@ Joining the network is straightforward:
 
 1. Setup and [start](https://docs.pactus.org/get-started/pactus-daemon/) your Pactus validator.
 
-2. Share the addresses of your first 16 validators with us.
+2. Share the addresses of your validators address with us.
 
 3. Our team will delegate the stake to activate them.
 
