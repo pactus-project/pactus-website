@@ -60,12 +60,6 @@ was built to do.
 **Mobile-Friendly GUI** making running a node even more accessible to everyday
 users, regardless of their technical background.
 
-**Pacviewer Disruption & Restoration Efforts** The downtime was caused by the
-ongoing crisis in West Asia, which impacted infrastructure dependencies beyond
-the control of the Pactus team. In response, the team has actively worked on
-restoring Pacviewer services and keeps exploring alternative solutions to ensure
-continued accessibility.
-
 ## How You Can Help Right Now
 
 Pactus is only as strong as the people behind it. Here is how you can make a

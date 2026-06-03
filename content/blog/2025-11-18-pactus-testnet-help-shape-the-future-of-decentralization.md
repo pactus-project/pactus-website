@@ -56,8 +56,7 @@ connect to the Testnet with just a few clicks.
 Technically, you can run up to 32 validators in your node, sacrificing
 one for testnet is as good as it can be. All you have
 to do is to upgrade to the current or recent version available.
-Follow the [Testnet guide](https://docs.pactus.org/tutorials/pactus-testnet) and
-monitor testnet activities live on [Phoenix Explorer](https://phoenix.pacviewer.com/).
+Follow the [Testnet guide](https://docs.pactus.org/tutorials/pactus-testnet).
 
 ## Where Do I Get Test Tokens?
 
@@ -102,8 +101,7 @@ walks you through everything you need to know.
 
 You can also learn more about what a
 [Testnet](https://pactus.org/2023/03/31/what-is-testnet) is, read the
-full [Phoenix Testnet announcement](https://pactus.org/2024/03/16/pactus-permanent-phoenix-testnet-launched),
-or track activity live through the [Phoenix Explorer](https://phoenix.pacviewer.com).
+full [Phoenix Testnet announcement](https://pactus.org/2024/03/16/pactus-permanent-phoenix-testnet-launched).
 And if you ever get stuck, don’t worry, the team is always ready to help
 through Discord tickets.
 

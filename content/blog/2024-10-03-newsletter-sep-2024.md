@@ -98,11 +98,6 @@ While we have no plans to move any reserved coins without notifying the communit
 we are working on trustless solutions to ensure transparency and maintain confidence within the Pactus ecosystem.
 Your feedback on these PIPs is crucial to shaping the future of our blockchain.
 
-### PacViewer updates
-
-The [PacViewer](https://pacviewer.com/) has received some updates over the past month.
-Notably it includes address aliasing and [Holder](https://pacviewer.com/holders) page.
-
 [^1]:
     The Pactus monthly newsletter is published on our website and
     distributed to subscribers via email during the first week of each month.
