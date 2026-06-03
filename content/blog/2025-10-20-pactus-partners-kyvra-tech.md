@@ -28,7 +28,7 @@ developing essential tools for the Pactus ecosystem.
 
 Notably, the FUSION Program is the same initiative through which several cornerstone ecosystem tools were born,
 including [Wrapto.app](https://wrapto.app/), [Pactus wallet](https://wallet.pactus.org/),
-and [PacViewer](https://pacviewer.com/). The Pactus Nodes Tracker now joins this growing suite
+and [PactusScan](https://pactusscan.com/). The Pactus Nodes Tracker now joins this growing suite
 of community-driven infrastructure that enhances transparency, accessibility, and engagement across the network.
 
 ## 🧭 Project Overview
