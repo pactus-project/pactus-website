@@ -34,7 +34,7 @@ Below are the available liquidity pools where you can swap WPAC tokens with othe
 
 ## Centralized Exchange
 
-<div class="grid grid-cols-3 gap-x-6 items-center">
+<div class="grid grid-cols-2 gap-x-6 items-center">
   <a target="_blank" href="https://www.coinstore.com/spot/PACUSDT" title="Coinstore">
     <img src="/images/exchange/coinstore.png" style="height: 48px" class="object-contain mx-auto" alt="Coinstore" />
   </a>
@@ -43,7 +43,4 @@ Below are the available liquidity pools where you can swap WPAC tokens with othe
     <img src="/images/exchange/azbit.png" style="height: 48px" class="object-contain mx-auto" alt="Azbit" />
   </a>
 
-  <a target="_blank" href="https://exbitron.com/" title="Exbitron/">
-    <img src="/images/exchange/exbitron.svg" style="height: 48px" class="object-contain mx-auto" alt="Exbitron" />
-  </a>
 </div>
