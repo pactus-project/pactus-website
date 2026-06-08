@@ -95,7 +95,7 @@ hard problems precisely because these chains are large, complex, and have
 competing stakeholders pulling in every direction.
 
 And the RWA wave is accelerating regardless. Institutions are not waiting for the
-technology to be perfect — they are building on what is stable, auditable, and
+technology to be perfect, they are building on what is stable, auditable, and
 live.
 
 Pactus was designed for exactly this environment: lightweight, decentralized, no
