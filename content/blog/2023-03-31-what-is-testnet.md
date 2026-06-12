@@ -8,7 +8,8 @@ image = "/images/pactus-blog-post-default.jpg"
 
 ## Mainnet vs Testnet?
 
-If you have ever wondered what Testnet is and how it is different from Mainnet, read this article to the end to find out!
+If you have ever wondered what Testnet is and how it is different from Mainnet,
+read this article to the end to find out!
 
 Mainnet and Testnet are two widely used terminologies in the Blockchain ecosystem;
 so it is important to understand the meaning and differences while working in the industry or
@@ -55,7 +56,8 @@ you as a user or validator can use all the features to send, receive, bond or un
 can be used as smart-contract platforms. So the Testnet can be designed in different stages to test and improve
 different applications of the network.
 
-Please note that after a certain period of time, when developers get satisfied with the functionality and debugging process,
+Please note that after a certain period of time,
+when developers get satisfied with the functionality and debugging process,
 they launch Mainnet. Mainnet has its own independent genesis blocks;
 so the assets and addresses that users use in Testnet are not valid inside the new Mainnet Blockchain anymore.
 In fact the whole Blockchain network starts working from the scratch and users and validators start to
@@ -66,10 +68,12 @@ for the people who join the Testnet.
 ## Why should you join the Testnet?
 
 There are different contributors in a Blockchain network;
-Some people are developers and programmers that use the Testnet to contribute, enhance and lead the project to a better future.
+Some people are developers and programmers that use the Testnet to contribute,
+enhance and lead the project to a better future.
 Testnet is actually vital for them to perform their changes and try their innovations and ideas.
 
-But you might also be an end user; you might want to either be a validator and stake your assets to earn more Pactus coins,
+But you might also be an end user; you might want to
+either be a validator and stake your assets to earn more Pactus coins,
 or you might want to learn **how to use the network for future** personal applications. Either way,
 you might find it handy to give it a try and be familiar with Pactus-GUI and its different features.
 
@@ -77,7 +81,8 @@ you might find it handy to give it a try and be familiar with Pactus-GUI and its
 While using the network, running a node or testing the Pactus-GUI in Testnet period, you are contributing to
 the community to find improvement potentials, that’s why there are more advantages contemplated for the Testnet users;
 Soon our Mainnet will be launched and also Pactus network will be announced and listed in well-known exchanges.
-As an early contributor, you will have the advantage of getting some extra initial coins at the beginning of Mainnet launch.
+As an early contributor, you will have the advantage of
+getting some extra initial coins at the beginning of Mainnet launch.
 So that you can use it to run a validator node and earn more from staking your assets. This airdrop is considered
 for every individual who installs Pactus-GUI and starts a node in Testnet.
 

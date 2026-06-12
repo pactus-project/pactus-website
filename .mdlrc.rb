@@ -4,7 +4,7 @@
 all
 
 # Line length
-rule 'MD013', :line_length => 120, :ignore_code_blocks => true, :tables => false
+rule 'MD013', :line_length => 148, :ignore_code_blocks => true, :tables => false, :treat_links_as_single_words => true
 
 # Trailing punctuation in header
 rule 'MD026', :punctuation => '.,;:'
