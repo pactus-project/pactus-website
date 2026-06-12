@@ -110,7 +110,7 @@ That is not luck. That is the design working.
 The delegation campaign from April is still open. Minimal hardware. No upfront
 tokens needed. Real rewards from day one.
 
-**[Join the delegation campaign →](https://pactus.org/2026/04/15/validator-delegation-is-live/)**
+**[Join the delegation campaign →](https://pactus.org/2026/04/15/pactus-introduces-validator-delegation-now-live/)**
 
 ## Stay Connected
 
