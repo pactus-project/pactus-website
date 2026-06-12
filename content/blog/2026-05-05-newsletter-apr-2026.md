@@ -71,7 +71,7 @@ Getting started is three steps:
 
 This is what inclusive, community-driven blockchain growth looks like.
 
-**[Read the full announcement →](https://pactus.org/2026/04/15/validator-delegation-is-live/)**
+**[Read the full announcement →](https://pactus.org/2026/04/15/pactus-introduces-validator-delegation-now-live/)**
 
 ## A New Block Explorer: PactusScan
 
