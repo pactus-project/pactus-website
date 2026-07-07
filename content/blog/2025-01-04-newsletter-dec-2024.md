@@ -64,7 +64,7 @@ Stay tuned for more updates as we make progress.
 
 ### Pagu Goes Global
 
-[Pagu](https://github.com/pagu-project/pagu/), our interactive bot, has been fully integrated into
+[Pagu](https://pagu.bot/), our interactive bot, has been fully integrated into
 [Telegram](https://t.me/pactus_pagu_bot),
 making blockchain interaction even more accessible.
 But we’re not stopping there—future plans include WhatsApp integration and a dedicated Pagu website,

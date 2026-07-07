@@ -27,7 +27,7 @@ Currently, there are four active nodes running the Testnet, accessible at the fo
 
 The Testnet's name, Phoenix, was chosen by the Pactus community from various suggestions.
 It embodies the spirit of rebirth and renewal, highlighting the innovative and testing-focused nature of the network.
-Developers can utilize the [RoboPAC](https://github.com/robopac-project/RoboPac) as a faucet to receive test coins and
+Developers can utilize the [Pagu](https://pagu.bot) as a faucet to receive test coins and
 thoroughly test their applications within this environment.
 It's important to note that the coins within this Testnet hold no monetary value and are only meant for testing purpose.
 

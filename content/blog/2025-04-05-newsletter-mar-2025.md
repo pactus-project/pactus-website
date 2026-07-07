@@ -1,7 +1,7 @@
 +++
 title = "Pactus Newsletter, March 2025"
 description = """
-March Highlights: Welcome to ezeX, Pactus Crowdfunding, Pactus on BNB Chain,
+March Highlights: Welcome to Pactus Crowdfunding, Pactus on BNB Chain,
 10 Million Transactions, Web Wallet and more...
 """
 author = "Pactus Team"
@@ -17,22 +17,13 @@ We are excited to share several groundbreaking updates that mark significant pro
 From new partnerships to technical advancements,
 these developments reflect our shared commitment to building a stronger, more accessible decentralized future.
 
-### Welcome to ezeX: Our Official Exchange Name!
-
-After an enthusiastic community naming contest, we are proud to
-introduce ezeX as the official name of our upcoming exchange.
-We extend our deepest gratitude to everyone who participated in the contest,
-and congratulations to the winner, who received 200 USDT as a token of appreciation.
-ezeX represents more than just a trading platform, it embodies our vision for a
-seamless, secure, and efficient trading experience.
-
 ### Pactus Crowdfund: Your Chance to Shape the Future
 
 The Pactus Crowdfund is live now.
 This initiative presents a unique opportunity for early supporters to acquire $PAC at preferential rates.
 We note with appreciation that 60% of the available allocation has already been committed,
 demonstrating strong community confidence in Pactus' long-term vision.
-Interested participants may contribute through “Pagu”
+Interested participants may contribute through [Pagu](https://pagu.bot)
 on [Discord](https://discord.gg/H5vZkNnXCu) or
 [Telegram](https://t.me/pactus_pagu_bot) with the `crowdfund` commands.
 
@@ -100,7 +91,7 @@ For security, do not send funds to this wallet. The beta is for testing and feed
 
 ### Pagu Is Coming to WhatsApp
 
-[Pagu](https://github.com/pagu-project/pagu),
+[Pagu](https://pagu.bot),
 our **Pactus Guardian Bot**, is already helping users interact with the blockchain on **Discord and Telegram** —
 and soon, it’ll be available on **WhatsApp!**
 

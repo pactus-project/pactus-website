@@ -75,7 +75,7 @@ Check the setup and installation guide
 [here](https://github.com/pactus-project/pactus/blob/main/docs/install.md).
 
 Obtain Pactus coin (PAC), the native coin of Pactus blockchain, from CEX like
-[Azbit](https://azbit.com/exchange/PAC_USDT), [TradeOgre](https://tradeogre.com/exchange/PAC-USDT)
+[Azbit](https://azbit.com/exchange/PAC_USDT), [CoinStore](https://www.coinstore.com/spot/PACUSDT)
 and DEX like [Uniswap](https://app.uniswap.org/).
 
 Withdraw your PAC from these exchanges to your Pactus wallet address. Check the Transaction commands

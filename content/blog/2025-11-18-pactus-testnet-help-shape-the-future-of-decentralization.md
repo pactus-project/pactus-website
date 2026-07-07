@@ -103,6 +103,7 @@ You can also learn more about what a
 [Testnet](https://pactus.org/2023/03/31/what-is-testnet) is, read the
 full [Phoenix Testnet announcement](https://pactus.org/2024/03/16/pactus-permanent-phoenix-testnet-launched).
 And if you ever get stuck, don’t worry, the team is always ready to help
-through Discord tickets.
+through Discord tickets
+or track activity live through the [Phoenix Explorer](https://phoenix.pactusscan.com).
 
 Together, we can keep Pactus secure, sustainable, and truly community driven.
