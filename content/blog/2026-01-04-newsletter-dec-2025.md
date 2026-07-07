@@ -106,7 +106,7 @@ built on it.
 Secutor launched in November, still in Beta and it's honestly one of the
 coolest things to come out of the ecosystem.
 
-Pagu Bot evolved into something incredible. It started as a simple blockchain
+[Pagu](https://pagu.bot) Bot evolved into something incredible. It started as a simple blockchain
 bot, but now it's available on WhatsApp, Discord, and Telegram. You can
 literally interact with the Pactus blockchain through a chat message. Send PAC,
 check balances, monitor the network—all from apps you already use every day.

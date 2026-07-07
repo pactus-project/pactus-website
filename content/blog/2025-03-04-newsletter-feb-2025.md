@@ -30,12 +30,6 @@ Features:
 - Official contract [address](https://polygonscan.com/token/0x2f77E0afAEE06970Bf860B8267b5aFECFFF6F216).
 - This move marks a significant step toward decentralized trading and Web3 integration for Pactus.
 
-### Pactus Now Live on TradeOgre
-
-PAC/USDT trading is now available on [TradeOgre.com](https://tradeogre.com/), thanks to community member
-[Thanos](https://x.com/Thanos8912).
-Users are encouraged to conduct their own due diligence before trading.
-
 ### Partnership Announcement: Neova x Pactus
 
 Pactus has partnered with [Neova Protocol](https://neova.io/) to enhance decentralized storage and scalability.
@@ -71,16 +65,6 @@ No servers will be involved, ensuring maximum security, privacy, and user contro
 This groundbreaking innovation will empower users to easily create, recover,
 and manage their Pactus wallets from anywhere.
 Sending and receiving transactions will be effortless, providing a seamless experience for all Pactus users.
-
-### Building a New Exchange
-
-As previously [announced](https://pactus.org/2025/02/10/we-are-building-an-exchange-a-different-one/),
-Pactus is starting an exciting new project: building a new exchange.
-This decision comes from our trust in the skills of the Pactus development team and the strong support of our community.
-Our primary focus is assembling a dedicated team to lead the development of the exchange.
-While this is a considerable challenge, Pactus remains our foremost priority, and its development will continue
-to receive our complete attention and dedication. We remain committed in our mission to build a robust,
-community-driven blockchain that aligns with the vision of Pactus.
 
 ---
 

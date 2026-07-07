@@ -54,7 +54,7 @@ Your support is truly invaluable.
 
 ### Pagu Update
 
-The Pagu Testnet Faucet is now live on both
+The [Pagu](https://pagu.bot) Testnet Faucet is now live on both
 [Telegram](https://t.me/pactus_pagu_bot) and [Discord](https://discord.gg/H5vZkNnXCu),
 allowing users to easily obtain testnet tokens.
 To receive your tokens instantly, simply use the command: `/phoenix/faucet`.

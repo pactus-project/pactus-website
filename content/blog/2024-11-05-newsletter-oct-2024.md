@@ -39,7 +39,7 @@ The rapid growth of our validator network showcases the strong foundation we're 
 
 ### Pagu Launches on Telegram
 
-We're excited to announce the expansion of [Pagu](https://github.com/pagu-project/Pagu/), our dedicated assistant bot,
+We're excited to announce the expansion of [Pagu](https://pagu.bot/), our dedicated assistant bot,
 to Telegram!
 This addition makes our community resources more accessible than ever.
 Whether you prefer Telegram or Discord, Pagu is ready to assist with everything from PAC coin price updates to

@@ -18,7 +18,7 @@ It means that there is no need to wait for block confirmation to ensure a transa
 
 Later, more than 2000 community validators will secure the blockchain and make it decentralized.
 These validators are Testnet participants who helped test Pactus during our testing period.
-The community validators will receive the initial staking coins from a Discord Bot named RoboPac.
+The community validators will receive the initial staking coins from a Discord Bot named [Pagu](hrrps://pagu.bot).
 
 To ensure everything works smoothly on the Mainnet, three different Testnets (
 [Testnet0](/2023/04/21/story-of-testnet-0),
