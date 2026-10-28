@@ -42,9 +42,9 @@ feedback to help refine future releases.
 
 Pactus has formed key alliances with
 [SETAI Agents](https://aisentient.net/), [ATLETA](https://atleta.network/),
-[STRANT](https://strant.ai/), and [Orbler](https://www.orbler.io/)
+and [Orbler](https://www.orbler.io/)
 to advance blockchain innovation. These collaborations explore AI integration,
-sports Web3 applications, and decentralized financial solutions.
+sports Web3 applications, and blockchain innovation.
 
 ### Ambassador Program - Bronze Sprint Launching Soon
 

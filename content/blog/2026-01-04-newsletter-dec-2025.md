@@ -103,9 +103,6 @@ and manage multiple accounts all from your browser.
 Here's where 2025 really shined. The community didn't just use Pactus—they
 built on it.
 
-Secutor launched in November, still in Beta and it's honestly one of the
-coolest things to come out of the ecosystem.
-
 [Pagu](https://pagu.bot) Bot evolved into something incredible. It started as a simple blockchain
 bot, but now it's available on WhatsApp, Discord, and Telegram. You can
 literally interact with the Pactus blockchain through a chat message. Send PAC,
@@ -137,8 +134,8 @@ For those who prefer decentralized options, Wrapped PAC (WPAC) is available on
 both Uniswap and Binance Smart Chain, making DeFi integration seamless.
 
 We also formed strategic partnerships with SETAI Agents (AI integration),
-ATLETA (sports Web3), STRANT (decentralized finance), and Orbler (blockchain
-innovation). Each partnership expands what's possible on Pactus.
+ATLETA (sports Web3), and Orbler (blockchain innovation). Each partnership
+expands what's possible on Pactus.
 
 ## The Green Blockchain
 
