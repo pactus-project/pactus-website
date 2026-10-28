@@ -157,7 +157,7 @@
         0.7 coins (70%) go to the validator who proposed the block, and 0.3 coins (30%) go to the Pactus Foundation.
         This flat reward scheme helps to ensure simplicity, fairness and better coin distribution.
       img: pactus-flat-reward.png
-      more: https://docs.pactus.org/protocol/blockchain/incentive/#flat-reward
+      more: https://docs.pactus.org/protocol/blockchain/incentive/#block-reward
 
     - id: coins_per_day
       q: How many PAC coins are generated per day?

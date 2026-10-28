@@ -24,7 +24,7 @@ on the Pactus calendar. Take a look.
 ## August In Review
 
 **August 1, 2023** Pactus published the
-[Story of Testnet-1](https://pactus.org/2023/08/01/testnet-1-concluded/), the
+[Story of Testnet-1](https://pactus.org/2023/08/01/story-of-testnet-1/), the
 first real test of the network outside a lab environment.
 
 **August 22, 2025** The community voted to pass
