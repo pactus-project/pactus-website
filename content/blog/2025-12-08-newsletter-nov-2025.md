@@ -1,8 +1,8 @@
 +++
 title = "Pactus Newsletter, November 2025"
 description = """
-November highlights: Pagu joins WhatsApp for easier updates, Wrapto Bridge
-development progresses, and the community-led Secutor app launches.
+November highlights: Pagu joins WhatsApp for easier updates and Wrapto Bridge
+development progresses.
 """
 author = "Pactus Team"
 date = "2025-12-08T00:00:00"
@@ -36,22 +36,11 @@ This unlocks new liquidity, interoperability, and utility for the Pactus communi
 The team continues to enhance security, stability, and user experience across the platform.
 Expect further improvements, feature updates, and expanded chain support as Wrapto evolves.
 
-### Secutor: Enter the Arena
-
-We also saw the launch of **[Secutor](https://secutor.world/)**, a new
-community-developed application on Pactus! Secutor is a decentralized ranking
-platform where you can vote for your favorite crypto influencers.
-
-As detailed in our recent blog post, Secutor is
-more than just a leaderboard; it's a testament to the power of the Pactus
-community and the ease of building on our platform. If you haven't already,
-check it out and cast your vote!
-
 ### Closing Note
 
-With Pagu reaching more users, Wrapto building bridges, and Secutor
-demonstrating the power of community builders, November was a pivotal month.
-We are excited to carry this momentum into December and the new year.
+With Pagu reaching more users and Wrapto building bridges, November was a
+pivotal month. We are excited to carry this momentum into December and the new
+year.
 
 Thank you for your continued support and participation.
 

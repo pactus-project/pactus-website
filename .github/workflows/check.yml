@@ -98,8 +98,10 @@ jobs:
       ## Status code 429: https://http.dev/429
       ## Status code 999: https://http.dev/999#linkedin
       ## Status code 403: https://http.dev/403
+      ## Status code 304: https://http.dev/304 (returned intermittently by some
+      ## servers, e.g. trustwallet.com, and is not an error)
       ## Status code 0: https://github.com/gjtorikian/html-proofer/issues/716#issuecomment-1162052155
       ##
       ## By swap-urls, we don't get error if we rename or move a document.
       - name: Check for broken links
-        run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403" --ignore-urls=/cdn./,/discord.gg/,/t.me/,/tools.ietf.org/ ./public
+        run: htmlproofer --swap-urls 'https\://pactus.org:' --ignore-status-codes "999,429,403,304" --ignore-urls=/cdn./,/discord.gg/,/t.me/,/tools.ietf.org/ ./public
