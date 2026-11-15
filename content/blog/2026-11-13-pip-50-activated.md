@@ -80,7 +80,7 @@ You can follow anchoring activity on the [PactusScan](https://pactusscan.com) bl
 - The committee page shows which protocol versions the current committee supports.
 
 Developers who want to experiment first can use the
-[anchor lookup demo](https://pactusscan.com/anchor-demo), which reads anchors through the
+[anchor lookup demo](https://demo.pactusscan.com/anchor.html), which reads anchors through the
 PactusScan API.
 
 ## Important Notice for Validators and Node Operators
